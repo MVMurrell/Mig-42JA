@@ -3135,7 +3135,7 @@ const rawDecisions = await query.orderBy(desc(moderationDecisions.createdAt));
       
       const nextLevelXP = calculateXPRequiredForLevel(finalLevel + 1);
 
-      // Update user XP and level
+      // Update user XP and levelrm -rf .git
       await db
         .update(users)
         .set({
