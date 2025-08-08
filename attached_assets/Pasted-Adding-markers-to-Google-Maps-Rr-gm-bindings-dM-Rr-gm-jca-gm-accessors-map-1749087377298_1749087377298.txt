@@ -1,0 +1,116 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 User location updated to: {lat: 36.057144290544024, lng: -94.16087838310553}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Marker clicked for video: 6575dcda-cda5-4ac6-8fc8-2a55711686ea Uploads
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: 6575dcda-cda5-4ac6-8fc8-2a55711686ea
+Console.js:61 handleVideoClick called with video: 6575dcda-cda5-4ac6-8fc8-2a55711686ea
+Console.js:61 Current targetVideoId: null
+Console.js:61 Using regular video player
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+3Console.js:61 Marked video 6575dcda-cda5-4ac6-8fc8-2a55711686ea as watched
+4Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/6575dcda-cda5-4ac6-8fc8-2a55711686ea/stream can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 Marker clicked for video: 2709831b-f9f2-4cc4-97fb-095ab57e4c2e Testing bunny
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: 2709831b-f9f2-4cc4-97fb-095ab57e4c2e
+Console.js:61 handleVideoClick called with video: 2709831b-f9f2-4cc4-97fb-095ab57e4c2e
+Console.js:61 Current targetVideoId: null
+Console.js:61 Initializing HLS player for Bunny.net stream
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/1a435724-7935-4fc1-8188-062c867b17e3:1 
+            
+            
+           GET blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/1a435724-7935-4fc1-8188-062c867b17e3 net::ERR_FILE_NOT_FOUNDUnderstand this error
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/1a435724-7935-4fc1-8188-062c867b17e3 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/1a435724-7935-4fc1-8188-062c867b17e3 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Error starting video: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:229
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:209
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error
+Console.js:61 Marked video 2709831b-f9f2-4cc4-97fb-095ab57e4c2e as watched
+VideoPlayerModal.tsx:157 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/8cad7f95-7b07-43d3-83c2-289601c01879/playlist.m3u8 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=63ba92c3:27032
+loadInternal @ hls__js.js?v=63ba92c3:27006
+load @ hls__js.js?v=63ba92c3:26970
+load @ hls__js.js?v=63ba92c3:30863
+onManifestLoading @ hls__js.js?v=63ba92c3:30705
+emit @ hls__js.js?v=63ba92c3:8863
+emit @ hls__js.js?v=63ba92c3:31317
+trigger @ hls__js.js?v=63ba92c3:31324
+loadSource @ hls__js.js?v=63ba92c3:31427
+(anonymous) @ VideoPlayerModal.tsx:157
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error
+Console.js:61 HLS error: {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/2709831b-f9f2-4cc4-97fb-095ab57e4c2e/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:168
+emit @ hls__js.js?v=63ba92c3:8863
+emit @ hls__js.js?v=63ba92c3:31317
+trigger @ hls__js.js?v=63ba92c3:31324
+handleNetworkError @ hls__js.js?v=63ba92c3:31040
+onError @ hls__js.js?v=63ba92c3:30857
+readystatechange @ hls__js.js?v=63ba92c3:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=63ba92c3:27032
+loadInternal @ hls__js.js?v=63ba92c3:27006
+load @ hls__js.js?v=63ba92c3:26970
+load @ hls__js.js?v=63ba92c3:30863
+onManifestLoading @ hls__js.js?v=63ba92c3:30705
+emit @ hls__js.js?v=63ba92c3:8863
+emit @ hls__js.js?v=63ba92c3:31317
+trigger @ hls__js.js?v=63ba92c3:31324
+loadSource @ hls__js.js?v=63ba92c3:31427
+(anonymous) @ VideoPlayerModal.tsx:157
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error
+Console.js:61 Network error, trying to recover...
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video

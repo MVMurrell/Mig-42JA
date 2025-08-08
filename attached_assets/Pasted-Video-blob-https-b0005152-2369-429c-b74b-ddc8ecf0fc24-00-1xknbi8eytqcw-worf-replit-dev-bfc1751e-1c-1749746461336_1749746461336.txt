@@ -1,0 +1,72 @@
+Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/bfc1751e-1c05-428b-9152-a10476e27aa8 can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 HLS loaded successfully for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f is buffering
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f loaded data successfully
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f can play
+2Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 HLS loaded successfully for video 5c833a26-74ab-4e9a-90d4-4f69d8e7d572
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Video 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 loaded data successfully
+Console.js:61 Video 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 can play
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Video clicked: changing isPlaying from true to false
+Console.js:61 Video paused immediately
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=false
+Console.js:61 VideoFeed scroll debounced: changing from 0 to 1
+3Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=true
+Console.js:61 Video clicked: changing isPlaying from true to false
+Console.js:61 Video paused immediately
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false
+Console.js:61 All sources failed for video 7f453a4e-a675-4b32-adfb-74d4700afced, marking as failed
+Mt.forEach.n.<computed> @ Console.js:61
+loadVideo @ VideoFeedModal.tsx:198
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:254
+setTimeout
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:254
+(anonymous) @ VideoFeedModal.tsx:263
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:19328
+workLoop @ chunk-RPCDYKBN.js?v=0e1c40fa:197
+flushWork @ chunk-RPCDYKBN.js?v=0e1c40fa:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=0e1c40fa:384Understand this error
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false
+VideoFeedModal.tsx:204 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/log-video-playback-error 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:204
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:254
+setTimeout
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:254
+(anonymous) @ VideoFeedModal.tsx:263
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:19328
+workLoop @ chunk-RPCDYKBN.js?v=0e1c40fa:197
+flushWork @ chunk-RPCDYKBN.js?v=0e1c40fa:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=0e1c40fa:384Understand this error
+Console.js:61 HLS loaded successfully for video 7f453a4e-a675-4b32-adfb-74d4700afced
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false
+Console.js:61 HLS loaded successfully for video 7f453a4e-a675-4b32-adfb-74d4700afced
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false
+Console.js:61 HLS loaded successfully for video 7f453a4e-a675-4b32-adfb-74d4700afced
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false

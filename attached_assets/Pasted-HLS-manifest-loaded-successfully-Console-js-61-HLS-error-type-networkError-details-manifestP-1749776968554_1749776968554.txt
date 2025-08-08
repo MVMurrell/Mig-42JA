@@ -1,0 +1,116 @@
+HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'networkError', details: 'manifestParsingError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/240p/video.m3u8', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ ModerationDetailPage.tsx:98
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+handleManifestParsingError @ hls__js.js?v=0e1c40fa:30975
+onSuccess @ hls__js.js?v=0e1c40fa:30846
+readystatechange @ hls__js.js?v=0e1c40fa:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+load @ hls__js.js?v=0e1c40fa:26970
+load @ hls__js.js?v=0e1c40fa:30863
+onLevelLoading @ hls__js.js?v=0e1c40fa:30724
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+loadingPlaylist @ hls__js.js?v=0e1c40fa:29095
+scheduleLoading @ hls__js.js?v=0e1c40fa:15906
+loadPlaylist @ hls__js.js?v=0e1c40fa:29084
+set level @ hls__js.js?v=0e1c40fa:28970
+set nextLoadLevel @ hls__js.js?v=0e1c40fa:29113
+set nextLoadLevel @ hls__js.js?v=0e1c40fa:31646
+startLoad @ hls__js.js?v=0e1c40fa:29303
+startLoad @ hls__js.js?v=0e1c40fa:31461
+checkAutostartLoad @ hls__js.js?v=0e1c40fa:30878
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+handleMasterPlaylist @ hls__js.js?v=0e1c40fa:30922
+onSuccess @ hls__js.js?v=0e1c40fa:30853
+readystatechange @ hls__js.js?v=0e1c40fa:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+load @ hls__js.js?v=0e1c40fa:26970
+load @ hls__js.js?v=0e1c40fa:30863
+onManifestLoading @ hls__js.js?v=0e1c40fa:30705
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+loadSource @ hls__js.js?v=0e1c40fa:31427
+(anonymous) @ ModerationDetailPage.tsx:90
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0e1c40fa:555
+flush @ @tanstack_react-query.js?v=0e1c40fa:569
+batch @ @tanstack_react-query.js?v=0e1c40fa:587
+dispatch_fn @ @tanstack_react-query.js?v=0e1c40fa:996
+setData @ @tanstack_react-query.js?v=0e1c40fa:696
+onSuccess @ @tanstack_react-query.js?v=0e1c40fa:897
+resolve @ @tanstack_react-query.js?v=0e1c40fa:456
+Promise.then
+run @ @tanstack_react-query.js?v=0e1c40fa:498
+start @ @tanstack_react-query.js?v=0e1c40fa:536
+fetch @ @tanstack_react-query.js?v=0e1c40fa:926
+executeFetch_fn @ @tanstack_react-query.js?v=0e1c40fa:2211
+setOptions @ @tanstack_react-query.js?v=0e1c40fa:1955
+(anonymous) @ @tanstack_react-query.js?v=0e1c40fa:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0e1c40fa:555
+flush @ @tanstack_react-query.js?v=0e1c40fa:569
+batch @ @tanstack_react-query.js?v=0e1c40fa:587
+dispatch_fn @ @tanstack_react-query.js?v=0e1c40fa:996
+setData @ @tanstack_react-query.js?v=0e1c40fa:696
+onSuccess @ @tanstack_react-query.js?v=0e1c40fa:897
+resolve @ @tanstack_react-query.js?v=0e1c40fa:456
+Promise.then
+run @ @tanstack_react-query.js?v=0e1c40fa:498
+start @ @tanstack_react-query.js?v=0e1c40fa:536
+fetch @ @tanstack_react-query.js?v=0e1c40fa:926
+executeFetch_fn @ @tanstack_react-query.js?v=0e1c40fa:2211
+onSubscribe @ @tanstack_react-query.js?v=0e1c40fa:1898
+subscribe @ @tanstack_react-query.js?v=0e1c40fa:24
+(anonymous) @ @tanstack_react-query.js?v=0e1c40fa:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=0e1c40fa:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error

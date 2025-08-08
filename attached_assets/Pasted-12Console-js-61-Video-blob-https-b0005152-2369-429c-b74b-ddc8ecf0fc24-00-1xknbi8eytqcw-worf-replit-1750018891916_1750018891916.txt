@@ -1,0 +1,105 @@
+12Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/fa93f8e8-9454-4c4d-a565-f5c4233ece92 can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 25, commentVideoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: false, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? false
+Console.js:61 TEMP FORCE SHOW: false
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: false, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? false
+Console.js:61 TEMP FORCE SHOW: false
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 VideoCommentPlayer handlePlay called: {hasOnFullscreen: true, isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 Triggering onFullscreen callback
+Console.js:61 Opening video comment in fullscreen {duration: '0.00', durationType: 'string', comment: {…}}
+Console.js:61 COMMENTS QUERY ENABLED CHECK: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideoId: true, isVideoComment: undefined, enabled: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 25, commentVideoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: true, selectedFullscreenComment: true}
+Console.js:61 RENDERING VideoCommentPlayer in fullscreen: {videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}, isFullscreen: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: false, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? false
+Console.js:61 TEMP FORCE SHOW: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: true, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? true
+Console.js:61 TEMP FORCE SHOW: {id: 25, userId: 'google-oauth2|117032826996185616207', comment: null, commentType: 'video', commentVideoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', …}
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5/1080p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: true, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? true
+Console.js:61 TEMP FORCE SHOW: {id: 25, userId: 'google-oauth2|117032826996185616207', comment: null, commentType: 'video', commentVideoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', …}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: true, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? true
+Console.js:61 TEMP FORCE SHOW: {id: 25, userId: 'google-oauth2|117032826996185616207', comment: null, commentType: 'video', commentVideoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', …}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5'}
+Console.js:61 VideoCommentPlayer overflow menu conditions: {isFullscreen: true, hasCommentData: true, commentDataUserId: 'google-oauth2|117032826996185616207', currentUserId: 'google-oauth2|117032826996185616207', userOwnsComment: true, …}
+Console.js:61 FINAL DECISION: Should show overflow menu? true
+Console.js:61 TEMP FORCE SHOW: {id: 25, userId: 'google-oauth2|117032826996185616207', comment: null, commentType: 'video', commentVideoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', …}
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}
+Console.js:61 FETCHING COMMENTS FOR VIDEO: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', videoTitle: 'One Night Only', enabled: true, isVideoComment: undefined}
+Console.js:61 COMMENTS FETCHED: {videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', commentsCount: 1, hasVideoComments: true, videoComments: Array(1), allComments: Array(1)}

@@ -1,0 +1,54 @@
+🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 Data chunk received, size: 744128
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 Data chunk received, size: 1086384
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 Data chunk received, size: 1172664
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 Data chunk received, size: 1109050
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}

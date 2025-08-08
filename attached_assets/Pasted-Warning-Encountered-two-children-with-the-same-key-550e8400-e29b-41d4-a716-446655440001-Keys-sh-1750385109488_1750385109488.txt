@@ -1,0 +1,175 @@
+Warning: Encountered two children with the same key, `550e8400-e29b-41d4-a716-446655440001`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at GroupsPage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/groups.tsx:36:27)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-5AJU3CG7.js?v=0ebd7e91:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0ebd7e91:61:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0ebd7e91:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=0ebd7e91:521
+error @ chunk-RPCDYKBN.js?v=0ebd7e91:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=0ebd7e91:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=0ebd7e91:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=0ebd7e91:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=0ebd7e91:14292
+updateHostComponent @ chunk-RPCDYKBN.js?v=0ebd7e91:14807
+beginWork @ chunk-RPCDYKBN.js?v=0ebd7e91:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0ebd7e91:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0ebd7e91:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0ebd7e91:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0ebd7e91:555
+flush @ @tanstack_react-query.js?v=0ebd7e91:569
+batch @ @tanstack_react-query.js?v=0ebd7e91:587
+dispatch_fn @ @tanstack_react-query.js?v=0ebd7e91:996
+setData @ @tanstack_react-query.js?v=0ebd7e91:696
+onSuccess @ @tanstack_react-query.js?v=0ebd7e91:897
+resolve @ @tanstack_react-query.js?v=0ebd7e91:456
+Promise.then
+run @ @tanstack_react-query.js?v=0ebd7e91:498
+start @ @tanstack_react-query.js?v=0ebd7e91:536
+fetch @ @tanstack_react-query.js?v=0ebd7e91:926
+executeFetch_fn @ @tanstack_react-query.js?v=0ebd7e91:2211
+setOptions @ @tanstack_react-query.js?v=0ebd7e91:1955
+(anonymous) @ @tanstack_react-query.js?v=0ebd7e91:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627Understand this error
+Console.js:61 Warning: Encountered two children with the same key, `550e8400-e29b-41d4-a716-446655440002`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at GroupsPage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/groups.tsx:36:27)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0ebd7e91:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-5AJU3CG7.js?v=0ebd7e91:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0ebd7e91:61:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0ebd7e91:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=0ebd7e91:521
+error @ chunk-RPCDYKBN.js?v=0ebd7e91:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=0ebd7e91:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=0ebd7e91:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=0ebd7e91:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=0ebd7e91:14292
+updateHostComponent @ chunk-RPCDYKBN.js?v=0ebd7e91:14807
+beginWork @ chunk-RPCDYKBN.js?v=0ebd7e91:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0ebd7e91:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0ebd7e91:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0ebd7e91:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0ebd7e91:555
+flush @ @tanstack_react-query.js?v=0ebd7e91:569
+batch @ @tanstack_react-query.js?v=0ebd7e91:587
+dispatch_fn @ @tanstack_react-query.js?v=0ebd7e91:996
+setData @ @tanstack_react-query.js?v=0ebd7e91:696
+onSuccess @ @tanstack_react-query.js?v=0ebd7e91:897
+resolve @ @tanstack_react-query.js?v=0ebd7e91:456
+Promise.then
+run @ @tanstack_react-query.js?v=0ebd7e91:498
+start @ @tanstack_react-query.js?v=0ebd7e91:536
+fetch @ @tanstack_react-query.js?v=0ebd7e91:926
+executeFetch_fn @ @tanstack_react-query.js?v=0ebd7e91:2211
+setOptions @ @tanstack_react-query.js?v=0ebd7e91:1955
+(anonymous) @ @tanstack_react-query.js?v=0ebd7e91:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627Understand this error
+Console.js:61 GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…it.dev/group/ed4dc71a-d908-4b5b-99c0-4fb720810ec1'}
+Console.js:61 🔄 State change detected - showThreadMessageRejectionModal: false
+Console.js:61 🔄 State change detected - selectedThreadMessage: null
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ chunk-V3FJP6FY.js?v=0ebd7e91:337
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627Understand this warning
+Console.js:61 Navigating to profile, preserving modal state: {isOpen: true, groupId: 'ed4dc71a-d908-4b5b-99c0-4fb720810ec1', searchQuery: 'john', selectedUsers: Array(2), addedUsers: Array(0), …}
+Console.js:61 Preserving modal state to sessionStorage: {isOpen: true, groupId: 'ed4dc71a-d908-4b5b-99c0-4fb720810ec1', searchQuery: 'john', selectedUsers: Array(2), addedUsers: Array(0), …}
+Console.js:61 Verified saved state: {"isOpen":true,"groupId":"ed4dc71a-d908-4b5b-99c0-4fb720810ec1","searchQuery":"john","selectedUsers":["user003","user-alex-123"],"addedUsers":[],"currentStep":"search"}
+queryClient.ts:40 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/user-alex-123/liked 403 (Forbidden)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:40
+queryFn @ SharedProfile.tsx:71
+fetchFn @ @tanstack_react-query.js?v=0ebd7e91:840
+run @ @tanstack_react-query.js?v=0ebd7e91:494
+start @ @tanstack_react-query.js?v=0ebd7e91:536
+fetch @ @tanstack_react-query.js?v=0ebd7e91:926
+executeFetch_fn @ @tanstack_react-query.js?v=0ebd7e91:2211
+onSubscribe @ @tanstack_react-query.js?v=0ebd7e91:1898
+subscribe @ @tanstack_react-query.js?v=0ebd7e91:24
+(anonymous) @ @tanstack_react-query.js?v=0ebd7e91:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=0ebd7e91:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627Understand this error
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 GroupProfile restoration check: {shouldRestoreModal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…908-4b5b-99c0-4fb720810ec1?restoreAddMembers=true'}
+Console.js:61 Found modal state in sessionStorage: null
+Console.js:61 🔄 State change detected - showThreadMessageRejectionModal: false
+Console.js:61 🔄 State change detected - selectedThreadMessage: null
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0

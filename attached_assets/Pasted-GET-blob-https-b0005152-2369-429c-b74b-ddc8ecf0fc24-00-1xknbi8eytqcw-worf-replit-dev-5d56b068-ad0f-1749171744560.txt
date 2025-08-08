@@ -1,0 +1,1916 @@
+GET blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/5d56b068-ad0f-46a4-9cd5-4272ab1dbade net::ERR_FILE_NOT_FOUNDUnderstand this error
+Console.js:61 Video 759fd62b-1ccb-4dcf-a61a-91f7b0904a3a failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-…f.replit.dev/5d56b068-ad0f-46a4-9cd5-4272ab1dbade', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19416
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/b7ef9b83-2f78-4a61-b09f-c23603ecf42d/playlist.m3u8 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 759fd62b-1ccb-4dcf-a61a-91f7b0904a3a: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/759fd62b-1ccb-4dcf-a61a-91f7b0904a3a/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 759fd62b-1ccb-4dcf-a61a-91f7b0904a3a, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/ec6b55b8-65a2-4075-b210-7d3a683b0273 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 865dad80-ad3e-499e-8a96-f803c67ad6b6: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/865dad80-ad3e-499e-8a96-f803c67ad6b6/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 865dad80-ad3e-499e-8a96-f803c67ad6b6, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/8eaebb12-93d4-4b72-ad5b-17f06f31ed83 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 39814fdb-c227-4dde-9274-df148399257b: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/39814fdb-c227-4dde-9274-df148399257b/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 39814fdb-c227-4dde-9274-df148399257b, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/0544bfd2-ef74-45ad-b957-f017d9caa5b6 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video e55d428a-1881-447e-b88a-664be6e9e720: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/e55d428a-1881-447e-b88a-664be6e9e720/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video e55d428a-1881-447e-b88a-664be6e9e720, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/8cad7f95-7b07-43d3-83c2-289601c01879/playlist.m3u8 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 2709831b-f9f2-4cc4-97fb-095ab57e4c2e: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/2709831b-f9f2-4cc4-97fb-095ab57e4c2e/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 2709831b-f9f2-4cc4-97fb-095ab57e4c2e, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/3803e364-9d48-49b6-85d7-c4e21f5912d6 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 984ef906-4b43-44e2-9dec-8e7aa1f04282: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/984ef906-4b43-44e2-9dec-8e7aa1f04282/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 984ef906-4b43-44e2-9dec-8e7aa1f04282, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video f95c4893-a3fb-4d36-b205-f63f22f11455: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/f95c4893-a3fb-4d36-b205-f63f22f11455/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video f95c4893-a3fb-4d36-b205-f63f22f11455, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video f9c89003-ff31-472a-8f1f-b17c91d34759: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/f9c89003-ff31-472a-8f1f-b17c91d34759/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video f9c89003-ff31-472a-8f1f-b17c91d34759, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video edbc15bf-5286-4d17-952b-27e453e6771d: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/edbc15bf-5286-4d17-952b-27e453e6771d/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video edbc15bf-5286-4d17-952b-27e453e6771d, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 0bca2467-aa1e-4713-8bd6-f73cef1099c0: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/0bca2467-aa1e-4713-8bd6-f73cef1099c0/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 0bca2467-aa1e-4713-8bd6-f73cef1099c0, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 8b5e3958-72f2-43a0-a2dc-5de0f2a4bc1e: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/8b5e3958-72f2-43a0-a2dc-5de0f2a4bc1e/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 8b5e3958-72f2-43a0-a2dc-5de0f2a4bc1e, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video c50839d5-6054-4307-82cf-3c9b51188972: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/c50839d5-6054-4307-82cf-3c9b51188972/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video c50839d5-6054-4307-82cf-3c9b51188972, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 VideoFeed scroll debounced: changing from 0 to 1
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=true
+Console.js:61 Starting video 1, readyState: 0
+Console.js:61 HLS error for video 9e03cf2a-2792-47df-bcca-7d998984efdc: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/9e03cf2a-2792-47df-bcca-7d998984efdc/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 9e03cf2a-2792-47df-bcca-7d998984efdc, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 5cef7d0b-d033-4829-bffe-c4a47291e08e: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/5cef7d0b-d033-4829-bffe-c4a47291e08e/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 5cef7d0b-d033-4829-bffe-c4a47291e08e, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 405b4fa5-b2b5-469b-836b-433af405b15e: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/405b4fa5-b2b5-469b-836b-433af405b15e/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 405b4fa5-b2b5-469b-836b-433af405b15e, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 48e330a3-9288-4870-a5ce-828e6b08ac46: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/48e330a3-9288-4870-a5ce-828e6b08ac46/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 48e330a3-9288-4870-a5ce-828e6b08ac46, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video ecc924bd-a7a1-4075-aa36-e876b7923fea: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/ecc924bd-a7a1-4075-aa36-e876b7923fea/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video ecc924bd-a7a1-4075-aa36-e876b7923fea, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 VideoFeed scroll debounced: changing from 1 to 2
+Console.js:61 VideoFeed: currentVideoIndex=2, isPlaying=true
+0544bfd2-ef74-45ad-b957-f017d9caa5b6:1 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/0544bfd2-ef74-45ad-b957-f017d9caa5b6 404 (Not Found)Understand this error
+Console.js:61 Video e55d428a-1881-447e-b88a-664be6e9e720 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/e55d428a-1881-447e-b88a-664be6e9e720/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 1: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:19328
+workLoop @ chunk-WERSD76P.js?v=07fa1edf:197
+flushWork @ chunk-WERSD76P.js?v=07fa1edf:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=07fa1edf:384Understand this error
+Console.js:61 Starting video 2, readyState: 0
+Console.js:61 VideoFeed scroll debounced: changing from 2 to 1
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=true
+Console.js:61 Starting video 1, readyState: 0
+Console.js:61 Failed to play video 2: AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:19328
+workLoop @ chunk-WERSD76P.js?v=07fa1edf:197
+flushWork @ chunk-WERSD76P.js?v=07fa1edf:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=07fa1edf:384Understand this error
+Console.js:61 HLS error for video 384c70d3-5f11-4ad2-8288-c404712b0f25: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/384c70d3-5f11-4ad2-8288-c404712b0f25/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 384c70d3-5f11-4ad2-8288-c404712b0f25, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 HLS error for video 6575dcda-cda5-4ac6-8fc8-2a55711686ea: hlsError {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/6575dcda-cda5-4ac6-8fc8-2a55711686ea/stream', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video 6575dcda-cda5-4ac6-8fc8-2a55711686ea, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleManifestParsingError @ hls__js.js?v=07fa1edf:30975
+onSuccess @ hls__js.js?v=07fa1edf:30846
+readystatechange @ hls__js.js?v=07fa1edf:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+8eaebb12-93d4-4b72-ad5b-17f06f31ed83:1 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/8eaebb12-93d4-4b72-ad5b-17f06f31ed83 404 (Not Found)Understand this error
+Console.js:61 Video 39814fdb-c227-4dde-9274-df148399257b failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/39814fdb-c227-4dde-9274-df148399257b/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+0544bfd2-ef74-45ad-b957-f017d9caa5b6:1 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/0544bfd2-ef74-45ad-b957-f017d9caa5b6 404 (Not Found)Understand this error
+Console.js:61 VideoFeed scroll debounced: changing from 1 to 0
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Video e55d428a-1881-447e-b88a-664be6e9e720 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/e55d428a-1881-447e-b88a-664be6e9e720/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 1: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:19328
+workLoop @ chunk-WERSD76P.js?v=07fa1edf:197
+flushWork @ chunk-WERSD76P.js?v=07fa1edf:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=07fa1edf:384Understand this error
+Console.js:61 Starting video 0, readyState: 0
+playlist.m3u8:1 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/b7ef9b83-2f78-4a61-b09f-c23603ecf42d/playlist.m3u8 404 (Not Found)Understand this error
+Console.js:61 Video 759fd62b-1ccb-4dcf-a61a-91f7b0904a3a failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/759fd62b-1ccb-4dcf-a61a-91f7b0904a3a/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:19328
+workLoop @ chunk-WERSD76P.js?v=07fa1edf:197
+flushWork @ chunk-WERSD76P.js?v=07fa1edf:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=07fa1edf:384Understand this error
+Console.js:61 VideoFeed scroll debounced: changing from 0 to 1
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=true
+Console.js:61 Starting video 1, readyState: 0
+0544bfd2-ef74-45ad-b957-f017d9caa5b6:1 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/0544bfd2-ef74-45ad-b957-f017d9caa5b6 404 (Not Found)Understand this error
+Console.js:61 Video e55d428a-1881-447e-b88a-664be6e9e720 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/e55d428a-1881-447e-b88a-664be6e9e720/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 1: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:19328
+workLoop @ chunk-WERSD76P.js?v=07fa1edf:197
+flushWork @ chunk-WERSD76P.js?v=07fa1edf:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=07fa1edf:384Understand this error
+Console.js:61 HLS error for video cfd1e4cd-cd7b-4281-be6b-db6f69cf4117: hlsError {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/cfd1e4cd-cd7b-4281-be6b-db6f69cf4117/stream', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:208
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Fatal HLS error for video cfd1e4cd-cd7b-4281-be6b-db6f69cf4117, trying fallback
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:210
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+handleNetworkError @ hls__js.js?v=07fa1edf:31040
+onError @ hls__js.js?v=07fa1edf:30857
+readystatechange @ hls__js.js?v=07fa1edf:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+VideoFeedModal.tsx:204 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/cfd1e4cd-cd7b-4281-be6b-db6f69cf4117/stream net::ERR_TOO_MANY_REDIRECTS
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=07fa1edf:27032
+loadInternal @ hls__js.js?v=07fa1edf:27006
+load @ hls__js.js?v=07fa1edf:26970
+load @ hls__js.js?v=07fa1edf:30863
+onManifestLoading @ hls__js.js?v=07fa1edf:30705
+emit @ hls__js.js?v=07fa1edf:8863
+emit @ hls__js.js?v=07fa1edf:31317
+trigger @ hls__js.js?v=07fa1edf:31324
+loadSource @ hls__js.js?v=07fa1edf:31427
+ref @ VideoFeedModal.tsx:204
+commitAttachRef @ chunk-WERSD76P.js?v=07fa1edf:17279
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=07fa1edf:17168
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=07fa1edf:17920
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19353
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 VideoFeed scroll debounced: changing from 1 to 2
+Console.js:61 VideoFeed: currentVideoIndex=2, isPlaying=true
+Console.js:61 Starting video 2, readyState: 0
+8eaebb12-93d4-4b72-ad5b-17f06f31ed83:1 
+            
+            
+           GET https://vz-7c674c55-8ff.b-cdn.net/videos/8eaebb12-93d4-4b72-ad5b-17f06f31ed83 net::ERR_ABORTED 404 (Not Found)Understand this error
+Console.js:61 Video 39814fdb-c227-4dde-9274-df148399257b failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:235
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/39814fdb-c227-4dde-9274-df148399257b/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 2: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:122
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:85
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:19328
+workLoop @ chunk-WERSD76P.js?v=07fa1edf:197
+flushWork @ chunk-WERSD76P.js?v=07fa1edf:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=07fa1edf:384Understand this error
+Console.js:61 Audio tracks found: 1
+Console.js:61 Video tracks found: 1
+Console.js:61 Using robust WebM VP8/Opus recording: video/webm; codecs="vp8,opus"
+Console.js:61 Recording with audio tracks: 1
+Console.js:61 MediaRecorder MIME type: video/webm; codecs="vp8,opus"
+Console.js:61 Data chunk received, size: 160977
+Console.js:61 Data chunk received, size: 230622
+Console.js:61 Data chunk received, size: 234289
+Console.js:61 Data chunk received, size: 257280
+Console.js:61 Final recording duration captured: 4.147 seconds
+Console.js:61 Data chunk received, size: 53183
+Console.js:61 Final blob created, size: 936351 type: video/webm;codecs=vp8,opus
+Console.js:61 🔍 Testing local video playback before upload...
+Console.js:61 📥 Local Playback: Starting to load video...
+Console.js:61 ✅ Local Playback: Video loaded metadata successfully!
+Console.js:61 ✅ Local Playback: Duration: Infinity seconds
+Console.js:61 ✅ Local Playback: Video dimensions: 640x480
+Console.js:61 ✅ Local Playback: Ready state: 4
+Console.js:61 Using actual recorded duration: 0 seconds
+Console.js:61 ✅ Local Playback: Video can start playing
+Console.js:61 Preview video duration change: Infinity
+Console.js:61 Preview video duration: Infinity readyState: 1
+Console.js:61 Preview video duration change: 4.145
+Console.js:61 Using recorded video duration: 4.145 seconds

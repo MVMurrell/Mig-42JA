@@ -1,0 +1,76 @@
+Places Autocomplete service initialized
+Console.js:61 🎯 QUEST CREATE: Form submitted with data: {title: 'Dragon Quest', description: 'here there are you in there', latitude: 36.0571, longitude: -94.1606, radiusInFeet: 100, …}
+Console.js:61 🎯 QUEST CREATE: Auth check response: {status: 200, ok: true, statusText: 'OK'}
+Console.js:61 🎯 QUEST CREATE: Current user: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/844df016-2c95-4ba2-9029-c4238dafdbf0.jpg', …}
+Console.js:61 🎯 QUEST CREATE: Starting image upload...
+CreateQuestModal.tsx:328 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/upload/image?type=quest 401 (Unauthorized)
+window.fetch @ Network.js:219
+uploadImage @ CreateQuestModal.tsx:328
+onSubmit @ CreateQuestModal.tsx:405
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 🎯 QUEST CREATE: Image upload response: 401 false
+Console.js:61 Error creating quest: Error: Unauthorized
+    at uploadImage (CreateQuestModal.tsx:344:13)
+    at async onSubmit (CreateQuestModal.tsx:405:20)
+    at async chunk-4BFJKWC4.js?v=0aec14a9:1465:9
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:433
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 Full error details: {message: 'Unauthorized', stack: 'Error: Unauthorized\n    at uploadImage (https://b0…es/.vite/deps/chunk-4BFJKWC4.js?v=0aec14a9:1465:9', type: 'object', stringified: '{}'}
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:434
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error

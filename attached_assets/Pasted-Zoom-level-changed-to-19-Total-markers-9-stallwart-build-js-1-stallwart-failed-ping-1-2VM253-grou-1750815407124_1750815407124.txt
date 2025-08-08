@@ -1,0 +1,161 @@
+Zoom level changed to: 19 Total markers: 9
+stallwart.build.js:1 stallwart: failed ping 1
+2VM253 group-profile.tsx:138 Uncaught ReferenceError: threads is not defined
+    at GroupProfilePage (VM253 group-profile.tsx:138:16)
+    at renderWithHooks (VM28 chunk-RPCDYKBN.js:11548:26)
+    at mountIndeterminateComponent (VM28 chunk-RPCDYKBN.js:14926:21)
+    at beginWork (VM28 chunk-RPCDYKBN.js:15914:22)
+    at HTMLUnknownElement.callCallback2 (VM28 chunk-RPCDYKBN.js:3674:22)
+    at Object.invokeGuardedCallbackDev (VM28 chunk-RPCDYKBN.js:3699:24)
+    at invokeGuardedCallback (VM28 chunk-RPCDYKBN.js:3733:39)
+    at beginWork$1 (VM28 chunk-RPCDYKBN.js:19765:15)
+    at performUnitOfWork (VM28 chunk-RPCDYKBN.js:19198:20)
+    at workLoopSync (VM28 chunk-RPCDYKBN.js:19137:13)Understand this error
+VM6 eruda.js:2 The above error occurred in the <GroupProfilePage> component:
+
+    at GroupProfilePage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/group-profile.tsx:48:22)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=8a2efd69:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=8a2efd69:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=8a2efd69:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=8a2efd69:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=8a2efd69:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=8a2efd69:62:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=8a2efd69:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+Mt.forEach.n.<computed> @ VM6 eruda.js:2Understand this error
+VM28 chunk-RPCDYKBN.js:9129 Uncaught ReferenceError: threads is not defined
+    at GroupProfilePage (VM253 group-profile.tsx:138:16)
+    at renderWithHooks (VM28 chunk-RPCDYKBN.js:11548:26)
+    at mountIndeterminateComponent (VM28 chunk-RPCDYKBN.js:14926:21)
+    at beginWork (VM28 chunk-RPCDYKBN.js:15914:22)
+    at beginWork$1 (VM28 chunk-RPCDYKBN.js:19753:22)
+    at performUnitOfWork (VM28 chunk-RPCDYKBN.js:19198:20)
+    at workLoopSync (VM28 chunk-RPCDYKBN.js:19137:13)
+    at renderRootSync (VM28 chunk-RPCDYKBN.js:19116:15)
+    at recoverFromConcurrentError (VM28 chunk-RPCDYKBN.js:18736:28)
+    at performSyncWorkOnRoot (VM28 chunk-RPCDYKBN.js:18879:28)Understand this error
+3920-b43bf6844b127181.js:1 WebSocket is already in CLOSING or CLOSED state.
+send @ 3920-b43bf6844b127181.js:1
+D @ 3920-b43bf6844b127181.js:1
+send @ 3920-b43bf6844b127181.js:1
+(anonymous) @ 3920-b43bf6844b127181.js:1
+writeCb @ 3920-b43bf6844b127181.js:1
+write @ 3920-b43bf6844b127181.js:1
+onResizeTerminal @ 8655-21ecb216141e2012.js:1
+(anonymous) @ 8655-21ecb216141e2012.js:1
+fire @ 1c7fb644.16dd096024c4a698.js:3
+(anonymous) @ 1c7fb644.16dd096024c4a698.js:3
+fire @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+fit @ 1669.1a222de2369d3729.js:1
+fit @ 8655-21ecb216141e2012.js:1
+B.type @ 8655-21ecb216141e2012.js:1
+(anonymous) @ _app-f1648e34dd1e08d6.js:11
+v @ _app-f1648e34dd1e08d6.js:26
+S @ _app-f1648e34dd1e08d6.js:26
+E @ _app-f1648e34dd1e08d6.js:26
+n @ _app-f1648e34dd1e08d6.js:38
+setTimeout
+(anonymous) @ _app-f1648e34dd1e08d6.js:38
+_ @ _app-f1648e34dd1e08d6.js:26
+(anonymous) @ _app-f1648e34dd1e08d6.js:11
+n @ _app-f1648e34dd1e08d6.js:38
+requestAnimationFrame
+(anonymous) @ _app-f1648e34dd1e08d6.js:38
+(anonymous) @ _app-f1648e34dd1e08d6.js:11Understand this error
+VM6 eruda.js:2 [vite] server connection lost. Polling for restart...
+VM6 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/ 502 (Bad Gateway)
+window.fetch @ VM6 eruda.js:2
+ping @ VM220 client:736
+waitForSuccessfulPing @ VM220 client:749
+(anonymous) @ VM220 client:561Understand this error
+VM220 client:562 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/group/0a82e3c5-3698-4b59-a925-a6d86898e177 502 (Bad Gateway)
+(anonymous) @ VM220 client:562Understand this error
+3920-b43bf6844b127181.js:1 WebSocket is already in CLOSING or CLOSED state.
+send @ 3920-b43bf6844b127181.js:1
+D @ 3920-b43bf6844b127181.js:1
+send @ 3920-b43bf6844b127181.js:1
+(anonymous) @ 3920-b43bf6844b127181.js:1
+writeCb @ 3920-b43bf6844b127181.js:1
+write @ 3920-b43bf6844b127181.js:1
+onResizeTerminal @ 8655-21ecb216141e2012.js:1
+(anonymous) @ 8655-21ecb216141e2012.js:1
+fire @ 1c7fb644.16dd096024c4a698.js:3
+(anonymous) @ 1c7fb644.16dd096024c4a698.js:3
+fire @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+resize @ 1c7fb644.16dd096024c4a698.js:3
+(anonymous) @ 8655-21ecb216141e2012.js:1
+oO @ framework-3f1963d5faa8e2fa.js:1
+uB @ framework-3f1963d5faa8e2fa.js:1
+u_ @ framework-3f1963d5faa8e2fa.js:1
+r6 @ framework-3f1963d5faa8e2fa.js:1
+(anonymous) @ framework-3f1963d5faa8e2fa.js:1
+uO @ framework-3f1963d5faa8e2fa.js:1
+uS @ framework-3f1963d5faa8e2fa.js:1
+C @ framework-3f1963d5faa8e2fa.js:1
+z @ framework-3f1963d5faa8e2fa.js:1
+(anonymous) @ setImmediate.js:40
+y @ setImmediate.js:69
+c @ setImmediate.js:109
+postMessage
+n @ setImmediate.js:120
+(anonymous) @ setImmediate.js:27
+r @ framework-3f1963d5faa8e2fa.js:1
+I @ framework-3f1963d5faa8e2fa.js:1
+t.unstable_scheduleCallback @ framework-3f1963d5faa8e2fa.js:1
+uw @ framework-3f1963d5faa8e2fa.js:1
+uk @ framework-3f1963d5faa8e2fa.js:1
+lj @ framework-3f1963d5faa8e2fa.js:1
+(anonymous) @ _app-f1648e34dd1e08d6.js:25
+i @ _app-f1648e34dd1e08d6.js:25
+(anonymous) @ _app-f1648e34dd1e08d6.js:25
+set @ _app-f1648e34dd1e08d6.js:25
+(anonymous) @ _app-f1648e34dd1e08d6.js:25
+e @ 8655-21ecb216141e2012.js:1
+n @ _app-f1648e34dd1e08d6.js:38Understand this error
+3920-b43bf6844b127181.js:1 WebSocket is already in CLOSING or CLOSED state.
+send @ 3920-b43bf6844b127181.js:1
+D @ 3920-b43bf6844b127181.js:1
+send @ 3920-b43bf6844b127181.js:1
+(anonymous) @ 3920-b43bf6844b127181.js:1
+(anonymous) @ 3920-b43bf6844b127181.js:1
+(anonymous) @ 3920-b43bf6844b127181.js:1
+apply @ 3920-b43bf6844b127181.js:1
+(anonymous) @ 8655-21ecb216141e2012.js:1
+(anonymous) @ main-f8c1c946988867a5.js:1
+n @ main-f8c1c946988867a5.js:1
+u @ main-f8c1c946988867a5.js:1
+(anonymous) @ main-f8c1c946988867a5.js:1
+(anonymous) @ main-f8c1c946988867a5.js:1
+(anonymous) @ 8655-21ecb216141e2012.js:1
+(anonymous) @ main-f8c1c946988867a5.js:1
+n @ main-f8c1c946988867a5.js:1
+u @ main-f8c1c946988867a5.js:1
+(anonymous) @ main-f8c1c946988867a5.js:1
+(anonymous) @ main-f8c1c946988867a5.js:1
+u @ 8830-11787f9b33045110.js:1
+(anonymous) @ 8830-11787f9b33045110.js:1
+n @ _app-f1648e34dd1e08d6.js:38
+setTimeout
+(anonymous) @ _app-f1648e34dd1e08d6.js:38
+push.57829.Object.assign.isScheduled @ 8830-11787f9b33045110.js:1
+(anonymous) @ 8655-21ecb216141e2012.js:1
+n @ 8655-21ecb216141e2012.js:1
+n @ _app-f1648e34dd1e08d6.js:38Understand this error

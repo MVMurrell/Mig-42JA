@@ -1,0 +1,32 @@
+🗺️ LOCATION SEARCH: Navigating to: {lat: 40.7127753, lng: -74.0059728} for query: New York, NY, USA
+home.tsx:502 Uncaught (in promise) ReferenceError: setZoomLevel is not defined
+    at handleLocationSearch (home.tsx:502:9)
+    at selectSuggestion (DualModeSearch.tsx:181:7)
+    at onClick (DualModeSearch.tsx:336:36)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=6442c1a8:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=6442c1a8:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=6442c1a8:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=6442c1a8:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=6442c1a8:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=6442c1a8:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=6442c1a8:7043:13)
+handleLocationSearch @ home.tsx:502
+selectSuggestion @ DualModeSearch.tsx:181
+onClick @ DualModeSearch.tsx:336
+callCallback2 @ chunk-RPCDYKBN.js?v=6442c1a8:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=6442c1a8:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=6442c1a8:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=6442c1a8:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=6442c1a8:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=6442c1a8:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=6442c1a8:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=6442c1a8:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=6442c1a8:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=6442c1a8:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=6442c1a8:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=6442c1a8:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=6442c1a8:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=6442c1a8:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=6442c1a8:5449Understand this error
+Console.js:61 🔍 VIDEO SEARCH: Searching for "New York, NY, USA"
+Console.js:61 🔍 VIDEO SEARCH: Found 0 videos matching "New York, NY, USA"

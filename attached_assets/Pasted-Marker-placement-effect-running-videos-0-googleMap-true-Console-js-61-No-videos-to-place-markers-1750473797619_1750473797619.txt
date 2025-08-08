@@ -1,0 +1,103 @@
+Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 6
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true

@@ -1,0 +1,54 @@
+Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 User location updated to: {lat: 36.0571711896892, lng: -94.16069233831843}
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Zoom level changed to: 19 Total markers: 0
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 19 Total markers: 0
+Console.js:61 Marker placement effect running - videos: 9 googleMap: true
+Console.js:61 Adding markers to Google Maps: 9 videos
+Console.js:61 Processing video for marker: 5587d8d9-67e3-457d-8243-6e1fb0ca4bcc test events
+Console.js:61 Creating marker at position: {lat: 36.05712824, lng: -94.16046022}
+Console.js:61 Existing marker found: false
+Console.js:61 Event countdown for test (new marker): Live startDate: 2025-06-23 startTime: 13:33
+Console.js:61 New AdvancedMarkerElement created for: test
+Console.js:61 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+Console.js:61 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Rocking Chair
+Console.js:61 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+Console.js:61 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: My weekend
+Console.js:61 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+Console.js:61 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Is the form forming?
+Console.js:61 Processing video for marker: 97556b02-0832-488a-a508-16af97a5c103 Quest 2 challenge
+Console.js:61 Creating marker at position: {lat: 36.05723564, lng: -94.16074099}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Quest 2
+Console.js:61 Processing video for marker: 9934c6ac-523f-4ed4-8d26-ef8882f6398b Quest mane challenge
+Console.js:61 Creating marker at position: {lat: 36.05712884, lng: -94.16042896}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Quest mane
+Console.js:61 Processing video for marker: a4cde367-7fd3-40e3-9360-64a262792c8a Testing bro nature
+Console.js:61 Creating marker at position: {lat: 36.05720446, lng: -94.16069737}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Testing bro
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: One Night Only
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Higher breh
+Console.js:61 Zoom level changed to: 19 Total markers: 9

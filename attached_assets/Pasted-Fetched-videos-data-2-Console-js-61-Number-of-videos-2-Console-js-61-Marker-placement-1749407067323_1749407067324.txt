@@ -1,0 +1,39 @@
+Fetched videos data: (2) [{…}, {…}]
+Console.js:61 Number of videos: 2
+Console.js:61 Marker placement effect running - videos: 2 googleMap: true
+Console.js:61 Adding markers to Google Maps: 2 videos
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.io {__gm: {…}, gm_accessors_: {…}, position: _.om, gm_bindings_: {…}, map: _.Rr, …} visible: true
+Console.js:61 Processing video for marker: e98c7182-d3c1-4587-acee-70fc6f680134 Test success games
+Console.js:61 Creating marker at position: {lat: 36.05720337, lng: -94.16068143}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.io {__gm: {…}, gm_accessors_: {…}, position: _.om, gm_bindings_: {…}, map: _.Rr, …} visible: true
+queryClient.ts:32 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/groups/0a82e3c5-3698-4b59-a925-a6d86898e177/videos 403 (Forbidden)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=f48af010:840
+run @ @tanstack_react-query.js?v=f48af010:494
+start @ @tanstack_react-query.js?v=f48af010:536
+fetch @ @tanstack_react-query.js?v=f48af010:926
+executeFetch_fn @ @tanstack_react-query.js?v=f48af010:2211
+onSubscribe @ @tanstack_react-query.js?v=f48af010:1898
+subscribe @ @tanstack_react-query.js?v=f48af010:24
+(anonymous) @ @tanstack_react-query.js?v=f48af010:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f48af010:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19416
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+(anonymous) @ chunk-WERSD76P.js?v=f48af010:18627Understand this error

@@ -1,0 +1,95 @@
+🔔 OneSignal: Permission granted, setting up user mapping...
+OneSignalApiBase.ts:106 
+            
+            
+           PATCH https://onesignal.com/api/v1/apps/89816e8e-3d7d-4b33-a45c-58090f1257c9/users/by/onesignal_id/fe37e944-d2aa-41cf-8a45-728fef7262df/identity 409 (Conflict)
+executeFetch @ OneSignalApiBase.ts:106
+call @ OneSignalApiBase.ts:92
+patch @ OneSignalApiBase.ts:55
+addAlias @ RequestService.ts:146
+identifyUser @ LoginManager.ts:323
+await in identifyUser
+identifyOrUpsertUser @ LoginManager.ts:220
+_login @ LoginManager.ts:101
+await in _login
+login @ LoginManager.ts:24
+login @ OneSignal.ts:109
+setExternalUserId @ oneSignal.ts:235
+await in setExternalUserId
+handlePushToggle @ NotificationSettings.tsx:271
+await in handlePushToggle
+(anonymous) @ chunk-5AJU3CG7.js?v=0ebd7e91:99
+(anonymous) @ chunk-VRF373B3.js?v=0ebd7e91:38
+(anonymous) @ @radix-ui_react-switch.js?v=0ebd7e91:76
+handleEvent @ chunk-VRF373B3.js?v=0ebd7e91:16
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+LoginManager.ts:415 ^^^ Handling 409 HTTP response reported by the browser above. This is an expected result when the User already exists. Push subscription is being transferred the existing User.
+transferSubscription @ LoginManager.ts:415
+identifyUser @ LoginManager.ts:342
+await in identifyUser
+identifyOrUpsertUser @ LoginManager.ts:220
+_login @ LoginManager.ts:101
+await in _login
+login @ LoginManager.ts:24
+login @ OneSignal.ts:109
+setExternalUserId @ oneSignal.ts:235
+await in setExternalUserId
+handlePushToggle @ NotificationSettings.tsx:271
+await in handlePushToggle
+(anonymous) @ chunk-5AJU3CG7.js?v=0ebd7e91:99
+(anonymous) @ chunk-VRF373B3.js?v=0ebd7e91:38
+(anonymous) @ @radix-ui_react-switch.js?v=0ebd7e91:76
+handleEvent @ chunk-VRF373B3.js?v=0ebd7e91:16
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+oneSignal.ts:236 OneSignal external user ID set: google-oauth2|117032826996185616207
+NotificationSettings.tsx:272 🔔 OneSignal: External user ID set to: google-oauth2|117032826996185616207
+oneSignal.ts:192 🔔 OneSignal: Got user ID from PushSubscription.id: 98512e6f-c1c7-449a-9c28-49527b9c5e59
+NotificationSettings.tsx:278 🔔 OneSignal: Setup complete - subscribed: true userId: 98512e6f-c1c7-449a-9c28-49527b9c5e59
+NotificationSettings.tsx:350 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/notifications/push/test 400 (Bad Request)
+handleTestPushNotification @ NotificationSettings.tsx:350
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error

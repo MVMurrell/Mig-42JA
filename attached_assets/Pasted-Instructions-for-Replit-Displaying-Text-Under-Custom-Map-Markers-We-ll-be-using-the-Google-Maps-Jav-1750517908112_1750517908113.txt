@@ -1,0 +1,182 @@
+Instructions for Replit: Displaying Text Under Custom Map Markers
+We'll be using the Google Maps JavaScript API's AdvancedMarkerElement to achieve this. This allows you to define your marker using standard HTML and CSS, making the text positioning much more reliable.
+
+Assumptions:
+
+You have a Replit project set up for a web application (HTML, CSS, JavaScript).
+You have an active Google Maps API Key with the Maps JavaScript API enabled.
+Step 1: Set up your index.html
+Your index.html file will contain the basic structure of your map and the script to load the Google Maps API.
+
+HTML
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Map Markers with Text</title>
+    <style>
+        /* Always set the map height explicitly */
+        #map {
+            height: 100vh; /* Full viewport height */
+            width: 100vw;  /* Full viewport width */
+        }
+
+        /* Basic styling for the body to remove default margins */
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+        }
+
+        /* --- CUSTOM MARKER CSS --- */
+        .custom-marker-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end; /* Align icon to bottom of its container */
+            /* This transform is crucial for anchoring the marker correctly.
+               It shifts the marker content up by 100% of its height and left by 50% of its width,
+               making the *bottom-center* of the entire custom marker (icon + text)
+               align with the geographical position. */
+            transform: translate(-50%, -100%);
+        }
+
+        .marker-icon {
+            width: 40px; /* Adjust to the actual width of your PNG icon */
+            height: 40px; /* Adjust to the actual height of your PNG icon */
+            display: block; /* Ensures no extra space below the image */
+        }
+
+        .marker-text {
+            font-family: sans-serif;
+            font-size: 14px;
+            color: black;
+            text-align: center;
+            background-color: white;
+            padding: 2px 5px;
+            border-radius: 3px;
+            margin-top: 5px; /* Space between icon and text */
+            white-space: nowrap; /* Prevents text from wrapping */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Optional: adds a subtle shadow */
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script>
+        // Replace 'YOUR_API_KEY' with your actual Google Maps API key.
+        // Make sure to load the 'marker' library.
+        async function initMap() {
+            const { Map } = await google.maps.importLibrary("maps");
+            const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+            const map = new Map(document.getElementById("map"), {
+                center: { lat: 34.052235, lng: -118.243683 }, // Example: Los Angeles
+                zoom: 12,
+                mapId: "DEMO_MAP_ID" // A map ID is required for Advanced Markers
+            });
+
+            // Create your custom marker content
+            function createCustomMarkerContent(iconUrl, text) {
+                const markerContent = document.createElement('div');
+                markerContent.className = 'custom-marker-content';
+                markerContent.innerHTML = `
+                    <img src="${iconUrl}" class="marker-icon">
+                    <div class="marker-text">${text}</div>
+                `;
+                return markerContent;
+            }
+
+            // Example Marker 1
+            const marker1Content = createCustomMarkerContent(
+                'https://i.imgur.com/your-custom-icon-1.png', // Replace with your actual PNG URL
+                'My Home'
+            );
+            new AdvancedMarkerElement({
+                map: map,
+                position: { lat: 34.052235, lng: -118.243683 },
+                content: marker1Content,
+            });
+
+            // Example Marker 2
+            const marker2Content = createCustomMarkerContent(
+                'https://i.imgur.com/your-custom-icon-2.png', // Replace with another PNG URL
+                'Work Office'
+            );
+            new AdvancedMarkerElement({
+                map: map,
+                position: { lat: 34.000000, lng: -118.500000 },
+                content: marker2Content,
+            });
+
+            // You can add more markers here following the same pattern
+        }
+
+        // Initialize the map when the API is loaded
+        window.initMap = initMap;
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=marker"></script>
+</body>
+</html>
+Step 2: Replace Placeholders
+Crucial Steps for Replit to Check:
+
+YOUR_API_KEY:
+
+Location: In the script tag at the bottom of index.html: src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=marker"
+Action: Replace YOUR_API_KEY with your actual Google Maps API Key.
+Replit Check: Replit can prompt you to use its "Secrets" tool for API keys. If you use the Secrets tool, make sure the environment variable (e.g., process.env.Maps_API_KEY) is correctly referenced in your index.html or JavaScript. A common pattern in Replit is to have a server-side script inject this, or to directly use process.env.YOUR_SECRET_NAME in a Node.js context if your Replit is a Node.js project. For a simple HTML/JS Replit, you might need to manually insert the key or use a build step to inject it. If you're building a static site, directly embedding the key (while not ideal for production) might be the easiest for testing in Replit.
+How Replit can check: "Is YOUR_API_KEY replaced with a valid Google Maps API Key? Is the API Key correctly exposed to the frontend environment if using Replit's Secrets?"
+mapId: "DEMO_MAP_ID":
+
+Location: Inside the Map constructor: mapId: "DEMO_MAP_ID"
+Action: Replace "DEMO_MAP_ID" with a valid Map ID that you've created in the Google Cloud Console for your project. Advanced Markers require a Map ID. If you don't have one, create a new map style in the Google Cloud Console and associate it with a Map ID.
+Replit Check: "Does a valid mapId exist and is it correctly assigned?"
+your-custom-icon-1.png and your-custom-icon-2.png:
+
+Location: In the createCustomMarkerContent calls: 'https://i.imgur.com/your-custom-icon-1.png'
+Action: Replace these placeholder URLs with the direct URLs to your custom PNG marker images. Ensure these URLs are publicly accessible. You can upload them to a service like Imgur or serve them from your Replit project's public directory if it has one.
+Replit Check: "Are the src attributes for marker-icon pointing to valid, accessible PNG image files?"
+Step 3: Understand and Adjust the CSS
+The CSS is key to positioning.
+
+.custom-marker-content:
+
+display: flex; flex-direction: column; align-items: center;: This makes the icon and text stack vertically and centered horizontally within their container.
+transform: translate(-50%, -100%);: This is critical.
+-50% horizontally: Shifts the entire marker content left by half its width, effectively centering it horizontally on the map's position.
+-100% vertically: Shifts the entire marker content up by its full height, effectively making the bottom edge of the entire marker (including the text) align with the position you set on the map.
+Replit Check: "Is the transform property applied to .custom-marker-content? Are its values translate(-50%, -100%) to ensure bottom-center anchoring, or adjusted as per specific design requirements?"
+.marker-icon:
+
+width and height: Adjust these to the actual pixel dimensions of your PNG icons. If your PNG is 60x60px, set width: 60px; height: 60px;. Incorrect sizes can cause misalignment or blurriness.
+Replit Check: "Are the width and height in .marker-icon CSS matching the actual dimensions of your PNG files? Is display: block; applied to prevent any extra line-height issues?"
+.marker-text:
+
+margin-top: 5px;: Adjust this value to control the vertical space between your PNG icon and the text.
+white-space: nowrap;: This is important to keep the text on a single line. Remove it if you want text to wrap.
+Replit Check: "Is there a margin-top value on .marker-text to create separation from the icon? Is white-space: nowrap; present if single-line text is desired?"
+Step 4: Run Your Replit Project
+Hit the "Run" button in Replit. Your browser preview should now display the map with your custom markers, each featuring your PNG icon and the text displayed neatly underneath.
+
+Troubleshooting / Replit's Self-Checks:
+If the text still isn't showing, or things look off, here's what Replit (and you!) should check:
+
+Console Errors (Browser Developer Tools):
+
+How Replit can check: "Are there any errors in the browser's JavaScript console (e.g., Failed to load resource, Invalid API Key, initMap is not a function, mapId not found)?"
+Your Action: Open your browser's developer console (usually F12 or right-click -> Inspect -> Console tab) and look for error messages. These are often the quickest way to diagnose issues.
+Network Tab (Browser Developer Tools):
+
+How Replit can check: "Are the Google Maps API script and the custom PNG images loading successfully (status 200 OK) in the network tab?"
+Your Action: In the browser's developer tools, go to the "Network" tab and refresh the page. Look for your Google Maps API script URL and your PNG image URLs. Ensure they have a 200 OK status code. If it's a 403 Forbidden for the API key, your key might be incorrect or restricted. If it's 404 Not Found for your PNG, the URL is wrong.
+Elements Tab (Browser Developer Tools) & CSS Inspection:
+
+How Replit can check: "Is the custom-marker-content div with its marker-icon img and marker-text div present in the DOM for each marker? Are the CSS styles (especially display: flex, flex-direction, align-items, and transform) correctly applied to .custom-marker-content and .marker-text?"
+Your Action: Use the "Elements" (or "Inspector") tab in your browser's developer tools. Hover over your markers on the map. You should see a div element for each AdvancedMarkerElement content. Expand it and verify that your <img> and <div> for the text are inside. Select these elements and inspect their computed CSS styles to ensure display: flex, transform, width, height, margin-top, etc., are applied as expected. Look for any CSS rules that might be overriding your styles (indicated by strikethrough).
+Google Maps API Key Restrictions:
+
+How Replit can check: "Is the Google Maps API Key properly restricted to prevent unauthorized usage, and does it allow requests from replit.dev domains (or localhost if running locally)?"
+Your Action: Go to your Google Cloud Console -> APIs & Services -> Credentials. Select your API key. Under "Application restrictions," ensure "HTTP referrers (web sites)" is selected and you have *.replit.dev/* (and potentially *://localhost/* if testing locally) added to the list.
+By following these instructions and performing these checks, Replit should be able to help you get your custom markers with text displaying perfectly!

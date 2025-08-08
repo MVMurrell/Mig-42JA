@@ -1,0 +1,17 @@
+📸 CAMERA: Starting camera access...
+Console.js:61 📸 CAMERA: Stream obtained successfully MediaStream {id: '1872f4ff-a9b0-4a4f-8e98-f3fb87077f67', active: true, onaddtrack: null, onremovetrack: null, onactive: null, …}
+Console.js:61 📸 CAMERA: Setting video source and playing...
+Console.js:61 📸 CAMERA: Video playing successfully
+Console.js:61 🔥 FRONTEND: Starting profile picture upload mutation (quest pattern)
+Console.js:61 🔥 FRONTEND: FormData prepared, making request to /api/users/profile-picture
+Console.js:61 🔥 FRONTEND: Response received: 200 OK
+Console.js:61 🔥 FRONTEND: GCS upload successful: {message: 'Profile picture updated successfully', url: 'https://storage.googleapis.com/jemzy-images-storag…05419fc5dd05f20889c3bd7a4e8a4ad8d9058ee17e5725f61', gcsPath: 'gs://jemzy-images-storage/profiles/google-oauth2|1…85616207/cc71d3be-13b6-4bb7-b381-d53bec716f14.jpg', userId: 'google-oauth2|117032826996185616207', moderation: {…}}
+Console.js:61 🔄 FRONTEND: Now updating database with URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2%7C117032826996185616207/cc71d3be-13b6-4bb7-b381-d53bec716f14.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=content-moderation-worker%40steam-house-461401-t7.iam.gserviceaccount.com%2F20250629%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250629T005916Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&response-content-type=application%2Foctet-stream&X-Goog-Signature=3fbd12a58c731f6d39c3961ad2ffec70bbe0f0925fd9b084358fe544bf837f747e456cdf4244c5f8482b021aa85121348e56fa6e3ffcd621a3eccedcaaf82ba7405cf091fec7105840785494edb1d4c0bb88bc839b0a92f325a3c651bd25792fedeaecc61bc748c9a8694966459fc8558d6c26e43938556fc7f701ebb7a302b9d8e5d0cf1d5d4a51653340d8b906dfce0daa20bcd3923b2799e747f1d5fc3931f82c009180321fdce26ff1f07ef125625f6a98b1c7110cbfc17438ea66ff2e5d216608bcb564d9cc8aea7a251dc3533f67b1fdd5d9423b46204dc91a892a6cced627989d32ab16205419fc5dd05f20889c3bd7a4e8a4ad8d9058ee17e5725f61
+Console.js:61 🔄 FRONTEND: Making database update request with credentials
+Console.js:61 🔄 FRONTEND: Database response status: 200
+Console.js:61 🔄 FRONTEND: Database response headers: {content-length: '53', content-type: 'application/json; charset=utf-8', date: 'Sun, 29 Jun 2025 00:59:16 GMT', etag: 'W/"35-ZvyEuDJTR5iKL6jgn5NF8ieMM1k"', replit-cluster: 'worf', …}
+Console.js:61 ✅ FRONTEND: Database update successful: {message: 'Profile picture URL updated in database'}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…05419fc5dd05f20889c3bd7a4e8a4ad8d9058ee17e5725f61', …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}

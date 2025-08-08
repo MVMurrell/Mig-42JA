@@ -1,0 +1,67 @@
+This is a fantastic design challenge that perfectly balances user engagement, virality, and your app's core mechanic! You absolutely can utilize sharing effectively with the Advanced Markers and clever implementation, especially with your "pay 1 digital coin" idea.
+
+Here's a recommendation on how to handle video sharing while maintaining your proximity constraint and incentivizing unlocks:
+
+1. How Deep Links Should Behave
+When a user shares a link to a video, and another user opens it, the app needs to handle two main scenarios:
+
+Scenario A: The User is NOT within 100ft of the Video
+
+This is the primary challenge and opportunity for your "pay to unlock" feature.
+
+Open the App to the Video's Location: The deep link should still navigate the user's map to the exact location of the shared video. This immediately shows them where the video is.
+Do NOT Auto-Play the Video: This maintains your core constraint.
+Display a Clear "Proximity Locked" UI: Instead of playing, show a prominent overlay or message that explains:
+"Video Locked! You are currently [X distance, e.g., 500ft] away from this video."
+Explain why it's locked ("Videos in this app are unlocked when you are physically close to their location.")
+Present the "Pay to Unlock Remotely" Option:
+Immediately below the "locked" message, have a clear call-to-action: "Unlock Video Remotely for 1 Coin" (or whatever the cost is).
+Show the user's current digital coin balance.
+If they don't have enough coins, show "You need [X more] coins to unlock this video remotely. [Link to earn/buy more coins]".
+Encourage Travel (Optional): You could also display their current location relative to the video's location on the map within the UI, subtly encouraging them to physically travel there if they prefer not to spend coins.
+Scenario B: The User IS within 100ft of the Video
+
+Seamless Unlock and Play: If the user opens the deep link and is within the 100ft radius, the video should unlock and play automatically, just as if they had walked up to it organically. This rewards immediate proximity.
+2. Implementing the "Pay 1 Digital Coin to Unlock Remotely" Feature
+This is a critical monetization and virality lever.
+
+Frontend (UI and Trigger):
+When the "Unlock Video Remotely for 1 Coin" button is pressed, trigger a function in your JavaScript.
+This function should visually indicate a loading state (e.g., a spinner).
+Backend (Secure Logic - Highly Recommended):
+Never handle coin deduction or video unlocking purely on the frontend. This is highly susceptible to cheating.
+Your JavaScript function should send a request to your backend server. This request would include:
+The User ID of the requesting user.
+The Video ID of the video they want to unlock.
+The backend server would then:
+Verify User's Coin Balance: Check if the user has at least 1 digital coin.
+Deduct Coin: If they do, deduct 1 coin from their balance in your database.
+Record Remote Unlock: Mark this video as "remotely unlocked" for this specific user in your database.
+Send Confirmation: Respond to the frontend with a success message or an error (e.g., "Not enough coins," "Transaction failed").
+Frontend (Response and Video Playback):
+If the backend confirms success, the frontend JavaScript can then trigger the video to play and update the UI (e.g., hide the "locked" message, show the "play" button).
+If there's an error, display an appropriate message to the user.
+3. Promoting Virality While Maintaining Constraints
+Preview Snippets (Optional but powerful):
+When a remote user opens a deep link, instead of just the "locked" message, consider playing a very short (e.g., 3-5 second) blurred, low-resolution, or heavily watermarked preview of the video. This creates immense curiosity without giving away the full content.
+This "teaser" might be enough to encourage them to pay the coin or travel to the location.
+"Share this amazing video!" Prompt:
+When a user does unlock a video (either by proximity or paying coins), provide a prominent "Share" button on the video player itself. This encourages them to spread the content.
+Gamified Incentives for Sharing:
+Consider a system where the sharer gets a small reward (e.g., 0.1 or 0.2 coins) each time someone else unlocks their shared video (either by walking to it or paying a coin). This directly incentivizes sharing.
+Leaderboards/Discovery:
+"Most Unlocked Videos This Week" leaderboards can encourage users to create and share compelling content that gets unlocked often.
+"Popular Videos Near You" sections in the app can drive local discovery.
+Narrative/Quest Integration:
+Frame the sharing experience within the "quest" theme. "Help fellow adventurers discover this hidden gem!"
+Users might share videos to help friends on their "quests."
+Technical Deep Link Implementation (Web App)
+Unique Video URLs: Each video should have a unique URL in your web app, e.g., your-app-domain.com/video/[video_id].
+JavaScript URL Parsing: When your web app loads, JavaScript needs to check the URL (e.g., window.location.pathname or window.location.search) to extract the video_id.
+Fetch Video Data: Use the video_id to fetch the video's metadata (including its geographical coordinates) from your backend.
+Proximity Check:
+Get the user's current geolocation (using navigator.geolocation.getCurrentPosition()).
+Calculate the distance between the user's current location and the video's coordinates.
+Important: While you can do an initial check on the frontend, the authoritative check for unlocking should ideally involve a request to your backend to prevent users from manipulating their client-side location data.
+Conditional UI: Based on the distance check (and whether they've previously unlocked it or chosen to pay), display the appropriate UI and initiate playback or the "pay to unlock" flow.
+By implementing these layers, you can preserve the unique "physical discovery" aspect of your app while still harnessing the power of sharing for wider reach and monetization.

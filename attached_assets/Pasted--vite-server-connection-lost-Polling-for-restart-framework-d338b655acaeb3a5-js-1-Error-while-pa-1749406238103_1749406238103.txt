@@ -1,0 +1,249 @@
+[vite] server connection lost. Polling for restart...
+framework-d338b655acaeb3a5.js:1 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-d338b655acaeb3a5.js:1
+(anonymous) @ framework-d338b655acaeb3a5.js:1
+uD @ framework-d338b655acaeb3a5.js:1
+uI @ framework-d338b655acaeb3a5.js:1
+uM @ framework-d338b655acaeb3a5.js:1
+uS @ framework-d338b655acaeb3a5.js:1
+C @ framework-d338b655acaeb3a5.js:1
+z @ framework-d338b655acaeb3a5.js:1Understand this error
+framework-d338b655acaeb3a5.js:1 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-d338b655acaeb3a5.js:1
+(anonymous) @ framework-d338b655acaeb3a5.js:1
+uD @ framework-d338b655acaeb3a5.js:1
+uI @ framework-d338b655acaeb3a5.js:1
+uM @ framework-d338b655acaeb3a5.js:1
+uS @ framework-d338b655acaeb3a5.js:1
+C @ framework-d338b655acaeb3a5.js:1
+z @ framework-d338b655acaeb3a5.js:1Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM148 eruda.js:2
+(anonymous) @ VM184 queryClient.ts:19
+fetchFn @ VM179 @tanstack_react-query.js:840
+run @ VM179 @tanstack_react-query.js:494
+start @ VM179 @tanstack_react-query.js:536
+fetch @ VM179 @tanstack_react-query.js:926
+executeFetch_fn @ VM179 @tanstack_react-query.js:2211
+onSubscribe @ VM179 @tanstack_react-query.js:1898
+subscribe @ VM179 @tanstack_react-query.js:24
+(anonymous) @ VM179 @tanstack_react-query.js:3022
+subscribeToStore @ VM176 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM176 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM176 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM176 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM176 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM176 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM176 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM176 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM176 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM176 chunk-WERSD76P.js:9119
+commitRootImpl @ VM176 chunk-WERSD76P.js:19432
+commitRoot @ VM176 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM176 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM176 chunk-WERSD76P.js:18718
+workLoop @ VM176 chunk-WERSD76P.js:197
+flushWork @ VM176 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM176 chunk-WERSD76P.js:384Understand this error
+Refused to frame 'https://jemzy.us.auth0.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'none'".
+Understand this error
+framework-d338b655acaeb3a5.js:1 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-d338b655acaeb3a5.js:1
+(anonymous) @ framework-d338b655acaeb3a5.js:1
+uD @ framework-d338b655acaeb3a5.js:1
+uI @ framework-d338b655acaeb3a5.js:1
+uM @ framework-d338b655acaeb3a5.js:1
+uS @ framework-d338b655acaeb3a5.js:1
+C @ framework-d338b655acaeb3a5.js:1
+z @ framework-d338b655acaeb3a5.js:1Understand this error
+queryClient.ts:32 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=f48af010:840
+run @ @tanstack_react-query.js?v=f48af010:494
+start @ @tanstack_react-query.js?v=f48af010:536
+fetch @ @tanstack_react-query.js?v=f48af010:926
+executeFetch_fn @ @tanstack_react-query.js?v=f48af010:2211
+onSubscribe @ @tanstack_react-query.js?v=f48af010:1898
+subscribe @ @tanstack_react-query.js?v=f48af010:24
+(anonymous) @ @tanstack_react-query.js?v=f48af010:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f48af010:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19432
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=f48af010:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18718
+workLoop @ chunk-WERSD76P.js?v=f48af010:197
+flushWork @ chunk-WERSD76P.js?v=f48af010:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=f48af010:384Understand this error
+ 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ eruda.js:2
+(anonymous) @ queryClient.ts:19
+fetchFn @ @tanstack_react-query.js:840
+run @ @tanstack_react-query.js:494
+start @ @tanstack_react-query.js:536
+fetch @ @tanstack_react-query.js:926
+executeFetch_fn @ @tanstack_react-query.js:2211
+onSubscribe @ @tanstack_react-query.js:1898
+subscribe @ @tanstack_react-query.js:24
+(anonymous) @ @tanstack_react-query.js:3022
+subscribeToStore @ chunk-WERSD76P.js:11984
+commitHookEffectListMount @ chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js:19490
+flushPassiveEffects @ chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js:18868
+flushSyncCallbacks @ chunk-WERSD76P.js:9119
+commitRootImpl @ chunk-WERSD76P.js:19432
+commitRoot @ chunk-WERSD76P.js:19277
+finishConcurrentRender @ chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js:18718
+workLoop @ chunk-WERSD76P.js:197
+flushWork @ chunk-WERSD76P.js:176
+performWorkUntilDeadline @ chunk-WERSD76P.js:384Understand this error
+ 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ eruda.js:2
+(anonymous) @ queryClient.ts:19
+fetchFn @ @tanstack_react-query.js:840
+run @ @tanstack_react-query.js:494
+start @ @tanstack_react-query.js:536
+fetch @ @tanstack_react-query.js:926
+executeFetch_fn @ @tanstack_react-query.js:2211
+onSubscribe @ @tanstack_react-query.js:1898
+subscribe @ @tanstack_react-query.js:24
+(anonymous) @ @tanstack_react-query.js:3022
+subscribeToStore @ chunk-WERSD76P.js:11984
+commitHookEffectListMount @ chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js:19490
+flushPassiveEffects @ chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js:18868
+flushSyncCallbacks @ chunk-WERSD76P.js:9119
+commitRootImpl @ chunk-WERSD76P.js:19432
+commitRoot @ chunk-WERSD76P.js:19277
+finishConcurrentRender @ chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js:18718
+workLoop @ chunk-WERSD76P.js:197
+flushWork @ chunk-WERSD76P.js:176
+performWorkUntilDeadline @ chunk-WERSD76P.js:384Understand this error
+queryClient.ts:32 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=f48af010:840
+run @ @tanstack_react-query.js?v=f48af010:494
+start @ @tanstack_react-query.js?v=f48af010:536
+fetch @ @tanstack_react-query.js?v=f48af010:926
+executeFetch_fn @ @tanstack_react-query.js?v=f48af010:2211
+onSubscribe @ @tanstack_react-query.js?v=f48af010:1898
+subscribe @ @tanstack_react-query.js?v=f48af010:24
+(anonymous) @ @tanstack_react-query.js?v=f48af010:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f48af010:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19432
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=f48af010:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18718
+workLoop @ chunk-WERSD76P.js?v=f48af010:197
+flushWork @ chunk-WERSD76P.js?v=f48af010:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=f48af010:384Understand this error
+ 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ eruda.js:2
+(anonymous) @ queryClient.ts:19
+fetchFn @ @tanstack_react-query.js:840
+run @ @tanstack_react-query.js:494
+start @ @tanstack_react-query.js:536
+fetch @ @tanstack_react-query.js:926
+executeFetch_fn @ @tanstack_react-query.js:2211
+onSubscribe @ @tanstack_react-query.js:1898
+subscribe @ @tanstack_react-query.js:24
+(anonymous) @ @tanstack_react-query.js:3022
+subscribeToStore @ chunk-WERSD76P.js:11984
+commitHookEffectListMount @ chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js:19490
+flushPassiveEffects @ chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js:18868
+flushSyncCallbacks @ chunk-WERSD76P.js:9119
+commitRootImpl @ chunk-WERSD76P.js:19432
+commitRoot @ chunk-WERSD76P.js:19277
+finishConcurrentRender @ chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js:18718
+workLoop @ chunk-WERSD76P.js:197
+flushWork @ chunk-WERSD76P.js:176
+performWorkUntilDeadline @ chunk-WERSD76P.js:384Understand this error
+VM262 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM262 eruda.js:2
+(anonymous) @ VM299 queryClient.ts:19
+fetchFn @ VM297 @tanstack_react-query.js:840
+run @ VM297 @tanstack_react-query.js:494
+start @ VM297 @tanstack_react-query.js:536
+fetch @ VM297 @tanstack_react-query.js:926
+executeFetch_fn @ VM297 @tanstack_react-query.js:2211
+onSubscribe @ VM297 @tanstack_react-query.js:1898
+subscribe @ VM297 @tanstack_react-query.js:24
+(anonymous) @ VM297 @tanstack_react-query.js:3022
+subscribeToStore @ VM291 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM291 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM291 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM291 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM291 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM291 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM291 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM291 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM291 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM291 chunk-WERSD76P.js:9119
+commitRootImpl @ VM291 chunk-WERSD76P.js:19432
+commitRoot @ VM291 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM291 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM291 chunk-WERSD76P.js:18718
+workLoop @ VM291 chunk-WERSD76P.js:197
+flushWork @ VM291 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM291 chunk-WERSD76P.js:384Understand this error
+Refused to frame 'https://jemzy.us.auth0.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'none'".
+Understand this error

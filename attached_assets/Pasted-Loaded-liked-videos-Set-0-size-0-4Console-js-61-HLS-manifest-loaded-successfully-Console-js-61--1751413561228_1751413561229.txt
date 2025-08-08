@@ -1,0 +1,248 @@
+Loaded liked videos: Set(0) {size: 0}
+4Console.js:61 HLS manifest loaded successfully
+Console.js:61 Error loading collected videos: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Mt.forEach.n.<computed> @ Console.js:61
+loadCollectedVideos @ ScrollableVideoFeed.tsx:265
+await in loadCollectedVideos
+(anonymous) @ ScrollableVideoFeed.tsx:269
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Console.js:61 Video 0 loaded, duration: 11.162355999999999s
+Console.js:61 Started playing video 0
+Console.js:61 🎬 SCROLL FEED: Marking video as watched and incrementing views: c73e6869-083d-4c97-a1cb-dd3988b5fc70
+Console.js:61 Started playing initial video 0
+Console.js:61 🎬 SCROLL FEED: Marking initial video as watched and incrementing views: c73e6869-083d-4c97-a1cb-dd3988b5fc70
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: c73e6869-083d-4c97-a1cb-dd3988b5fc70
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: c73e6869-083d-4c97-a1cb-dd3988b5fc70
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: c73e6869-083d-4c97-a1cb-dd3988b5fc70
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: c73e6869-083d-4c97-a1cb-dd3988b5fc70
+Console.js:61 🎬 WATCH TRACKING: Failed to mark video as watched: c73e6869-083d-4c97-a1cb-dd3988b5fc70 TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:78:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ ScrollableVideoFeed.tsx:89
+execute @ @tanstack_react-query.js?v=0aec14a9:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:453
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:446
+basicStateReducer @ chunk-RPCDYKBN.js?v=0aec14a9:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=0aec14a9:12385
+handleIntersection @ ScrollableVideoFeed.tsx:421Understand this error
+Console.js:61 📊 VIEW TRACKING: Failed to increment view count for video: c73e6869-083d-4c97-a1cb-dd3988b5fc70 TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:97:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ ScrollableVideoFeed.tsx:107
+execute @ @tanstack_react-query.js?v=0aec14a9:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:454
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:446
+basicStateReducer @ chunk-RPCDYKBN.js?v=0aec14a9:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=0aec14a9:12385
+handleIntersection @ ScrollableVideoFeed.tsx:421Understand this error
+Console.js:61 🎬 WATCH TRACKING: Failed to mark video as watched: c73e6869-083d-4c97-a1cb-dd3988b5fc70 TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:78:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ ScrollableVideoFeed.tsx:89
+execute @ @tanstack_react-query.js?v=0aec14a9:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:514
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:507
+setTimeout
+(anonymous) @ ScrollableVideoFeed.tsx:493
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Console.js:61 📊 VIEW TRACKING: Failed to increment view count for video: c73e6869-083d-4c97-a1cb-dd3988b5fc70 TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:97:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ ScrollableVideoFeed.tsx:107
+execute @ @tanstack_react-query.js?v=0aec14a9:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:515
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:507
+setTimeout
+(anonymous) @ ScrollableVideoFeed.tsx:493
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Network.js:219 Uncaught (in promise) TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:78:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:53
+mutationFn @ ScrollableVideoFeed.tsx:78
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:453
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:446
+basicStateReducer @ chunk-RPCDYKBN.js?v=0aec14a9:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=0aec14a9:12385
+handleIntersection @ ScrollableVideoFeed.tsx:421Understand this error
+Network.js:219 Uncaught (in promise) TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:97:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:53
+mutationFn @ ScrollableVideoFeed.tsx:97
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:454
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:446
+basicStateReducer @ chunk-RPCDYKBN.js?v=0aec14a9:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=0aec14a9:12385
+handleIntersection @ ScrollableVideoFeed.tsx:421Understand this error
+Network.js:219 Uncaught (in promise) TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:78:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:53
+mutationFn @ ScrollableVideoFeed.tsx:78
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:514
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:507
+setTimeout
+(anonymous) @ ScrollableVideoFeed.tsx:493
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Network.js:219 Uncaught (in promise) TypeError: Failed to execute 'fetch' on 'Window': '[object Object]' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:53:23)
+    at Object.mutationFn (ScrollableVideoFeed.tsx:97:14)
+    at Object.fn (@tanstack_react-query.js?v=0aec14a9:1189:29)
+    at run (@tanstack_react-query.js?v=0aec14a9:494:49)
+    at Object.start (@tanstack_react-query.js?v=0aec14a9:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=0aec14a9:1225:56)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:53
+mutationFn @ ScrollableVideoFeed.tsx:97
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+(anonymous) @ ScrollableVideoFeed.tsx:515
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:507
+setTimeout
+(anonymous) @ ScrollableVideoFeed.tsx:493
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error

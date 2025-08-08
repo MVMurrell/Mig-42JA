@@ -1,0 +1,282 @@
+🎬 VideoFeedModal: Component render - isPlaying state: true
+queryClient.ts:57 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/location 503 (Service Unavailable)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:57
+fetchFn @ @tanstack_react-query.js?v=8a2efd69:840
+run @ @tanstack_react-query.js?v=8a2efd69:494
+start @ @tanstack_react-query.js?v=8a2efd69:536
+fetch @ @tanstack_react-query.js?v=8a2efd69:926
+executeFetch_fn @ @tanstack_react-query.js?v=8a2efd69:2211
+onSubscribe @ @tanstack_react-query.js?v=8a2efd69:1898
+subscribe @ @tanstack_react-query.js?v=8a2efd69:24
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=8a2efd69:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+VideoFeedModal.tsx:135 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/c1647877-54ed-410e-be34-c8aa666d226e/like-status 503 (Service Unavailable)
+window.fetch @ Network.js:219
+checkLikeStatus @ VideoFeedModal.tsx:135
+(anonymous) @ VideoFeedModal.tsx:145
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+VideoFeedModal.tsx:454 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/c1647877-54ed-410e-be34-c8aa666d226e/comments 503 (Service Unavailable)
+window.fetch @ Network.js:219
+loadComments @ VideoFeedModal.tsx:454
+(anonymous) @ VideoFeedModal.tsx:146
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+Console.js:61 Failed to load comments: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Mt.forEach.n.<computed> @ Console.js:61
+loadComments @ VideoFeedModal.tsx:458
+await in loadComments
+(anonymous) @ VideoFeedModal.tsx:146
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+VideoFeedModal.tsx:179 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3 503 (Service Unavailable)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=8a2efd69:27032
+loadInternal @ hls__js.js?v=8a2efd69:27006
+load @ hls__js.js?v=8a2efd69:26970
+load @ hls__js.js?v=8a2efd69:30863
+onManifestLoading @ hls__js.js?v=8a2efd69:30705
+emit @ hls__js.js?v=8a2efd69:8863
+emit @ hls__js.js?v=8a2efd69:31317
+trigger @ hls__js.js?v=8a2efd69:31324
+loadSource @ hls__js.js?v=8a2efd69:31427
+(anonymous) @ VideoFeedModal.tsx:179
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+VideoFeedModal.tsx:454 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/c1647877-54ed-410e-be34-c8aa666d226e/comments 503 (Service Unavailable)
+window.fetch @ Network.js:219
+loadComments @ VideoFeedModal.tsx:454
+(anonymous) @ VideoFeedModal.tsx:225
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+Console.js:61 Failed to load comments: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Mt.forEach.n.<computed> @ Console.js:61
+loadComments @ VideoFeedModal.tsx:458
+await in loadComments
+(anonymous) @ VideoFeedModal.tsx:225
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+VideoFeedModal.tsx:179 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3 503 (Service Unavailable)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=8a2efd69:27032
+loadInternal @ hls__js.js?v=8a2efd69:27006
+setTimeout
+retry @ hls__js.js?v=8a2efd69:27131
+readystatechange @ hls__js.js?v=8a2efd69:27092
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=8a2efd69:27032
+loadInternal @ hls__js.js?v=8a2efd69:27006
+load @ hls__js.js?v=8a2efd69:26970
+load @ hls__js.js?v=8a2efd69:30863
+onManifestLoading @ hls__js.js?v=8a2efd69:30705
+emit @ hls__js.js?v=8a2efd69:8863
+emit @ hls__js.js?v=8a2efd69:31317
+trigger @ hls__js.js?v=8a2efd69:31324
+loadSource @ hls__js.js?v=8a2efd69:31427
+(anonymous) @ VideoFeedModal.tsx:179
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+Console.js:61 🎬 VideoFeedModal: HLS error: {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:187
+emit @ hls__js.js?v=8a2efd69:8863
+emit @ hls__js.js?v=8a2efd69:31317
+trigger @ hls__js.js?v=8a2efd69:31324
+handleNetworkError @ hls__js.js?v=8a2efd69:31040
+onError @ hls__js.js?v=8a2efd69:30857
+readystatechange @ hls__js.js?v=8a2efd69:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=8a2efd69:27032
+loadInternal @ hls__js.js?v=8a2efd69:27006
+setTimeout
+retry @ hls__js.js?v=8a2efd69:27131
+readystatechange @ hls__js.js?v=8a2efd69:27092
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=8a2efd69:27032
+loadInternal @ hls__js.js?v=8a2efd69:27006
+load @ hls__js.js?v=8a2efd69:26970
+load @ hls__js.js?v=8a2efd69:30863
+onManifestLoading @ hls__js.js?v=8a2efd69:30705
+emit @ hls__js.js?v=8a2efd69:8863
+emit @ hls__js.js?v=8a2efd69:31317
+trigger @ hls__js.js?v=8a2efd69:31324
+loadSource @ hls__js.js?v=8a2efd69:31427
+(anonymous) @ VideoFeedModal.tsx:179
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+Console.js:61 🎬 VideoFeedModal: Network error, trying to recover...
+Console.js:61 🎬 VideoFeedModal: Play button clicked
+Console.js:61 🎬 VideoFeedModal: togglePlayPause called, current isPlaying: true
+Console.js:61 🎬 VideoFeedModal: User pausing video
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: VideoCommentRecorder onMainVideoControl called with action: resume
+Console.js:61 🎬 VideoFeedModal: 🚨 VideoCommentRecorder requesting resume - this might be auto-triggering!
+VideoFeedModal.tsx:1329 🎬 VideoFeedModal: Stack trace for VideoCommentRecorder resume
+onMainVideoControl @ VideoFeedModal.tsx:1329
+(anonymous) @ VideoCommentRecorder.tsx:53
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19416
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:18627
+Console.js:61 🎬 VideoFeedModal: Ignoring resume request because user has manually paused
+Console.js:61 🎬 VideoFeedModal: Play button clicked
+Console.js:61 🎬 VideoFeedModal: togglePlayPause called, current isPlaying: true
+Console.js:61 🎬 VideoFeedModal: User pausing video

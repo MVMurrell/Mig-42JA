@@ -1,0 +1,32 @@
+Adding markers to Google Maps: _.Ho {gm_bindings_: {…}, eM: _.Ho, __gm: yfa, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoPlayer: currentIndex=1, isPlaying=true
+Console.js:61 Video 2898d52d-80fb-4aca-a409-1d1c1e393e7b can play - format is supported
+Console.js:61 Video 384c70d3-5f11-4ad2-8288-c404712b0f25 can play - format is supported
+Console.js:61 Video 8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3 can play - format is supported
+Console.js:61 Video 405b4fa5-b2b5-469b-836b-433af405b15e can play - format is supported
+Console.js:61 Video 6575dcda-cda5-4ac6-8fc8-2a55711686ea can play - format is supported
+Console.js:61 Attempting to play video 1, readyState: 1
+Console.js:61 Video 1 not ready, waiting for loadeddata event
+Console.js:61 Video 8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3 can play - format is supported
+Console.js:61 Video 2898d52d-80fb-4aca-a409-1d1c1e393e7b can play - format is supported
+Console.js:61 Video 405b4fa5-b2b5-469b-836b-433af405b15e can play - format is supported
+Console.js:61 Video 6575dcda-cda5-4ac6-8fc8-2a55711686ea can play - format is supported
+Console.js:61 Video 384c70d3-5f11-4ad2-8288-c404712b0f25 can play - format is supported
+Console.js:61 Video 48e330a3-9288-4870-a5ce-828e6b08ac46 can play - format is supported
+Console.js:61 VideoPlayer: currentIndex=1, isPlaying=false
+Console.js:61 Not playing video 1: currentVideo=true, isPlaying=false
+Console.js:61 Video 8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3 can play - format is supported
+Console.js:61 Video 405b4fa5-b2b5-469b-836b-433af405b15e can play - format is supported
+Console.js:61 Video 384c70d3-5f11-4ad2-8288-c404712b0f25 can play - format is supported
+Console.js:61 Video 2898d52d-80fb-4aca-a409-1d1c1e393e7b can play - format is supported
+Console.js:61 Video 6575dcda-cda5-4ac6-8fc8-2a55711686ea can play - format is supported
+Console.js:61 Video 48e330a3-9288-4870-a5ce-828e6b08ac46 can play - format is supported
+Console.js:61 VideoPlayer: currentIndex=1, isPlaying=true
+Console.js:61 Attempting to play video 1, readyState: 1
+Console.js:61 Video 1 not ready, waiting for loadeddata event
+Console.js:61 Video 48e330a3-9288-4870-a5ce-828e6b08ac46 can play - format is supported
+Console.js:61 Video 8a8cf1cc-a1f5-4cdd-aa65-9cf92743fdc3 can play - format is supported
+Console.js:61 Video 405b4fa5-b2b5-469b-836b-433af405b15e can play - format is supported
+Console.js:61 Video 384c70d3-5f11-4ad2-8288-c404712b0f25 can play - format is supported
+Console.js:61 Video 2898d52d-80fb-4aca-a409-1d1c1e393e7b can play - format is supported
+Console.js:61 Video 6575dcda-cda5-4ac6-8fc8-2a55711686ea can play - format is supported

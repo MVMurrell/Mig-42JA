@@ -1,0 +1,63 @@
+Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.jo {__gm: {…}, gm_accessors_: {…}, position: _.pm, gm_bindings_: {…}, map: _.Tr, …} visible: true
+Console.js:61 Zoom level changed to: 15 Total markers: 5
+Console.js:61 === MODAL RENDERING SECTION ===
+Console.js:61 selectedThreadMessage: null
+Console.js:61 selectedThreadMessage truthiness: false
+Console.js:61 selectedThreadMessage type: object
+Console.js:61 isModalOpen calculated: false
+Console.js:61 VideoRejectionModal - isOpen: false
+Console.js:61 VideoRejectionModal - comment: undefined
+Console.js:61 VideoRejectionModal - video: undefined
+Console.js:61 VideoRejectionModal - isComment: true
+Console.js:61 VideoRejectionModal - not rendering because isOpen is false
+Console.js:61 === MODAL RENDERING SECTION ===
+Console.js:61 selectedThreadMessage: null
+Console.js:61 selectedThreadMessage truthiness: false
+Console.js:61 selectedThreadMessage type: object
+Console.js:61 isModalOpen calculated: false
+Console.js:61 VideoRejectionModal - isOpen: false
+Console.js:61 VideoRejectionModal - comment: undefined
+Console.js:61 VideoRejectionModal - video: undefined
+Console.js:61 VideoRejectionModal - isComment: true
+Console.js:61 VideoRejectionModal - not rendering because isOpen is false
+Console.js:61 === MODAL RENDERING SECTION ===
+Console.js:61 selectedThreadMessage: null
+Console.js:61 selectedThreadMessage truthiness: false
+Console.js:61 selectedThreadMessage type: object
+Console.js:61 isModalOpen calculated: false
+Console.js:61 VideoRejectionModal - isOpen: false
+Console.js:61 VideoRejectionModal - comment: undefined
+Console.js:61 VideoRejectionModal - video: undefined
+Console.js:61 VideoRejectionModal - isComment: true
+Console.js:61 VideoRejectionModal - not rendering because isOpen is false
+Console.js:61 handleThreadMessageClick called with: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. showThreadMessageRejectionModal: false
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. selectedThreadMessage: null
+Console.js:61 Inside handleThreadMessageClick - Setting selectedThreadMessage to: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 Inside handleThreadMessageClick - Setting showThreadMessageRejectionModal to true
+Console.js:61 Inside handleThreadMessageClick - AFTER state update calls (setters were called)
+Console.js:61 handleThreadMessageClick received messageData: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 handleThreadMessageClick called with: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. showThreadMessageRejectionModal: true
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. selectedThreadMessage: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 Inside handleThreadMessageClick - Setting selectedThreadMessage to: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}
+Console.js:61 Inside handleThreadMessageClick - Setting showThreadMessageRejectionModal to true
+Console.js:61 Inside handleThreadMessageClick - AFTER state update calls (setters were called)
+Console.js:61 handleThreadMessageClick received messageData: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}
+Console.js:61 handleThreadMessageClick called with: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. showThreadMessageRejectionModal: true
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. selectedThreadMessage: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}
+Console.js:61 Inside handleThreadMessageClick - Setting selectedThreadMessage to: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 Inside handleThreadMessageClick - Setting showThreadMessageRejectionModal to true
+Console.js:61 Inside handleThreadMessageClick - AFTER state update calls (setters were called)
+Console.js:61 handleThreadMessageClick received messageData: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 handleThreadMessageClick called with: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. showThreadMessageRejectionModal: true
+Console.js:61 Inside handleThreadMessageClick - BEFORE state update. selectedThreadMessage: {id: 14, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237', bunnyVideoId: '53c24430-78a9-4d5b-be24-4bc2d3b2c237', …}
+Console.js:61 Inside handleThreadMessageClick - Setting selectedThreadMessage to: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}
+Console.js:61 Inside handleThreadMessageClick - Setting showThreadMessageRejectionModal to true
+Console.js:61 Inside handleThreadMessageClick - AFTER state update calls (setters were called)
+Console.js:61 handleThreadMessageClick received messageData: {id: 15, message: null, messageType: 'video', videoUrl: '/api/videos/bunny-proxy/a0c652b1-ec05-4d5b-b98d-eea94c189d9f', bunnyVideoId: 'a0c652b1-ec05-4d5b-b98d-eea94c189d9f', …}

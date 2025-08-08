@@ -1,0 +1,46 @@
+Prompt Title: URGENT: Pinpoint Exact MIME Type Received by Multer and Adjust Filter
+
+Current Situation:
+I understand the upload is still failing with a "file filter error," despite the Blob to File conversion on the frontend. This means multer on the server is rejecting the file based on its mimetype.
+
+Your plan to "debug this by adding logging to see what mimetype is actually being received and fix the file filter" is precisely the right approach. We need to confirm the exact MIME type string that multer is processing.
+
+Here are the critical instructions to proceed and provide the necessary diagnostic information:
+
+Implement Server-Side Logging for Received Mimetype (Crucial Step):
+
+Modify your multer configuration on the server (likely in server/simpleVideoProcessor.ts or where your upload route is defined).
+Inside the fileFilter function, add a console.log statement to output the file.mimetype property. Also, log the entire file object if possible, to see all its properties.
+Example (typical multer setup):
+TypeScript
+
+const upload = multer({
+    storage: multer.memoryStorage(), // Or diskStorage, depending on your setup
+    fileFilter: (req, file, cb) => {
+        console.log('MULTER FILE FILTER - Received Mimetype:', file.mimetype); // <-- ADD THIS LOG
+        console.log('MULTER FILE FILTER - Full File Object:', file);        // <-- ADD THIS LOG
+
+        // Your existing mimetype validation logic will follow here.
+        // For now, temporarily allow ALL types for debugging if needed,
+        // or just observe what's logged before it's rejected.
+        // For example:
+        if (file.mimetype.startsWith('video/')) { // Temporarily allow any video type for logging
+            cb(null, true);
+        } else {
+            cb(new Error('Invalid file type detected by temporary filter.'), false);
+        }
+    }
+});
+Confirm Frontend MediaRecorder Configuration:
+
+Explicitly state the exact mimeType string you are now using in the MediaRecorder constructor on the frontend. (e.g., video/webm; codecs="vp8,opus" or video/mp4; codecs="avc1.42E01E, mp4a.40.2")
+Explicitly state the exact type string you are passing to the new File() constructor on the frontend. This should ideally be the same as the MediaRecorder's output type.
+Perform a New Upload Attempt:
+
+Run a new video recording and upload test after implementing the server-side logging.
+Provide Complete Backend Logs:
+
+Crucially, provide the complete backend logs from this new attempt. I need to see the exact string that MULTER FILE FILTER - Received Mimetype: outputs, along with the full file object.
+Once we have this precise mimetype information directly from multer on the server, we can then accurately adjust the fileFilter to accept it. This will clarify if the MIME type is simply unexpected by the filter, or if there's a more subtle issue with how the frontend is setting it.
+
+Let's get this precise mimetype information from the server's perspective."

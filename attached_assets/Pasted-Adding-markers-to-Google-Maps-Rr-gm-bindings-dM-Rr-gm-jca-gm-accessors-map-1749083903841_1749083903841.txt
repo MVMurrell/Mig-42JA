@@ -1,0 +1,49 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 User location updated to: {lat: 36.05727981634661, lng: -94.16075738188603}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Audio tracks found: 1
+Console.js:61 Video tracks found: 1
+Console.js:61 Using supported format: video/webm;codecs=vp8,opus
+Console.js:61 Recording with audio tracks: 1
+Console.js:61 MediaRecorder MIME type: video/webm;codecs=vp8,opus
+Console.js:61 Final recording duration captured: 4.827 seconds
+Console.js:61 Data chunk received, size: 1355492
+Console.js:61 Final blob created, size: 1355492 type: video/webm;codecs=vp8,opus
+Console.js:61 Using actual recorded duration: 0 seconds
+Console.js:61 Preview video duration change: Infinity
+Console.js:61 Preview video duration: Infinity readyState: 1
+Console.js:61 Preview video duration change: 4.828
+queryClient.ts:15 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:15
+mutationFn @ VideoUploadModal.tsx:480
+fn @ @tanstack_react-query.js?v=c8e1e52a:1189
+run @ @tanstack_react-query.js?v=c8e1e52a:494
+start @ @tanstack_react-query.js?v=c8e1e52a:536
+execute @ @tanstack_react-query.js?v=c8e1e52a:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=c8e1e52a:2630
+(anonymous) @ @tanstack_react-query.js?v=c8e1e52a:3295
+handleSubmit @ VideoUploadModal.tsx:564
+await in handleSubmit
+callCallback2 @ chunk-WERSD76P.js?v=c8e1e52a:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=c8e1e52a:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=c8e1e52a:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=c8e1e52a:3736
+executeDispatch @ chunk-WERSD76P.js?v=c8e1e52a:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=c8e1e52a:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=c8e1e52a:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=c8e1e52a:7051
+(anonymous) @ chunk-WERSD76P.js?v=c8e1e52a:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=c8e1e52a:18913
+batchedUpdates @ chunk-WERSD76P.js?v=c8e1e52a:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=c8e1e52a:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=c8e1e52a:5478
+dispatchEvent @ chunk-WERSD76P.js?v=c8e1e52a:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=c8e1e52a:5449Understand this error

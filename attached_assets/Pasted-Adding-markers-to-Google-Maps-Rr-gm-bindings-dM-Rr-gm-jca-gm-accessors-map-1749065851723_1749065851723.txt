@@ -1,0 +1,92 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+GroupEditModal.tsx:163 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    at GroupEditModal (GroupEditModal.tsx:163:37)
+    at renderWithHooks (chunk-WERSD76P.js?v=c8e1e52a:11548:26)
+    at mountIndeterminateComponent (chunk-WERSD76P.js?v=c8e1e52a:14926:21)
+    at beginWork (chunk-WERSD76P.js?v=c8e1e52a:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=c8e1e52a:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=c8e1e52a:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=c8e1e52a:3733:39)
+    at beginWork$1 (chunk-WERSD76P.js?v=c8e1e52a:19765:15)
+    at performUnitOfWork (chunk-WERSD76P.js?v=c8e1e52a:19198:20)
+    at workLoopSync (chunk-WERSD76P.js?v=c8e1e52a:19137:13)
+GroupEditModal @ GroupEditModal.tsx:163
+renderWithHooks @ chunk-WERSD76P.js?v=c8e1e52a:11548
+mountIndeterminateComponent @ chunk-WERSD76P.js?v=c8e1e52a:14926
+beginWork @ chunk-WERSD76P.js?v=c8e1e52a:15914
+callCallback2 @ chunk-WERSD76P.js?v=c8e1e52a:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=c8e1e52a:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=c8e1e52a:3733
+beginWork$1 @ chunk-WERSD76P.js?v=c8e1e52a:19765
+performUnitOfWork @ chunk-WERSD76P.js?v=c8e1e52a:19198
+workLoopSync @ chunk-WERSD76P.js?v=c8e1e52a:19137
+renderRootSync @ chunk-WERSD76P.js?v=c8e1e52a:19116
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=c8e1e52a:18874
+flushSyncCallbacks @ chunk-WERSD76P.js?v=c8e1e52a:9119
+(anonymous) @ chunk-WERSD76P.js?v=c8e1e52a:18627Understand this error
+GroupEditModal.tsx:163 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    at GroupEditModal (GroupEditModal.tsx:163:37)
+    at renderWithHooks (chunk-WERSD76P.js?v=c8e1e52a:11548:26)
+    at mountIndeterminateComponent (chunk-WERSD76P.js?v=c8e1e52a:14926:21)
+    at beginWork (chunk-WERSD76P.js?v=c8e1e52a:15914:22)
+    at HTMLUnknownElement.callCallback2 (chunk-WERSD76P.js?v=c8e1e52a:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-WERSD76P.js?v=c8e1e52a:3699:24)
+    at invokeGuardedCallback (chunk-WERSD76P.js?v=c8e1e52a:3733:39)
+    at beginWork$1 (chunk-WERSD76P.js?v=c8e1e52a:19765:15)
+    at performUnitOfWork (chunk-WERSD76P.js?v=c8e1e52a:19198:20)
+    at workLoopSync (chunk-WERSD76P.js?v=c8e1e52a:19137:13)
+GroupEditModal @ GroupEditModal.tsx:163
+renderWithHooks @ chunk-WERSD76P.js?v=c8e1e52a:11548
+mountIndeterminateComponent @ chunk-WERSD76P.js?v=c8e1e52a:14926
+beginWork @ chunk-WERSD76P.js?v=c8e1e52a:15914
+callCallback2 @ chunk-WERSD76P.js?v=c8e1e52a:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=c8e1e52a:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=c8e1e52a:3733
+beginWork$1 @ chunk-WERSD76P.js?v=c8e1e52a:19765
+performUnitOfWork @ chunk-WERSD76P.js?v=c8e1e52a:19198
+workLoopSync @ chunk-WERSD76P.js?v=c8e1e52a:19137
+renderRootSync @ chunk-WERSD76P.js?v=c8e1e52a:19116
+recoverFromConcurrentError @ chunk-WERSD76P.js?v=c8e1e52a:18736
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=c8e1e52a:18879
+flushSyncCallbacks @ chunk-WERSD76P.js?v=c8e1e52a:9119
+(anonymous) @ chunk-WERSD76P.js?v=c8e1e52a:18627Understand this error
+Console.js:61 The above error occurred in the <GroupEditModal> component:
+
+    at GroupEditModal (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/GroupEditModal.tsx:29:42)
+    at div
+    at GroupProfilePage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/group-profile.tsx:32:22)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=c8e1e52a:323:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=c8e1e52a:379:17)
+    at Router (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/App.tsx?v=lkQ9yNQxBs8kMPwIrW2eq:31:42)
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-VJRUVGTI.js?v=c8e1e52a:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=c8e1e52a:61:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=c8e1e52a:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+Mt.forEach.n.<computed> @ Console.js:61
+logCapturedError @ chunk-WERSD76P.js?v=c8e1e52a:14032
+update.callback @ chunk-WERSD76P.js?v=c8e1e52a:14052
+callCallback @ chunk-WERSD76P.js?v=c8e1e52a:11248
+commitUpdateQueue @ chunk-WERSD76P.js?v=c8e1e52a:11265
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17093
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=c8e1e52a:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=c8e1e52a:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=c8e1e52a:17920
+commitRootImpl @ chunk-WERSD76P.js?v=c8e1e52a:19353
+commitRoot @ chunk-WERSD76P.js?v=c8e1e52a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=c8e1e52a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=c8e1e52a:9119
+(anonymous) @ chunk-WERSD76P.js?v=c8e1e52a:18627Understand this error
+chunk-WERSD76P.js?v=c8e1e52a:9129 Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+    at GroupEditModal (GroupEditModal.tsx:163:37)
+    at renderWithHooks (chunk-WERSD76P.js?v=c8e1e52a:11548:26)
+    at mountIndeterminateComponent (chunk-WERSD76P.js?v=c8e1e52a:14926:21)
+    at beginWork (chunk-WERSD76P.js?v=c8e1e52a:15914:22)
+    at beginWork$1 (chunk-WERSD76P.js?v=c8e1e52a:19753:22)
+    at performUnitOfWork (chunk-WERSD76P.js?v=c8e1e52a:19198:20)
+    at workLoopSync (chunk-WERSD76P.js?v=c8e1e52a:19137:13)
+    at renderRootSync (chunk-WERSD76P.js?v=c8e1e52a:19116:15)
+    at recoverFromConcurrentError (chunk-WERSD76P.js?v=c8e1e52a:18736:28)
+    at performSyncWorkOnRoot (chunk-WERSD76P.js?v=c8e1e52a:18879:28)

@@ -1,0 +1,53 @@
+PaymentForm hasSavedMethods: false
+2Console.js:61 PaymentForm hasSavedMethods: false
+shared-ba5b8fc4a0533893844b1f056723dfa2.js:1 
+            
+            
+           GET https://api.stripe.com/v1/elements/sessions?client_secret=pi_3RZaIQPtOf9J62YC1XNDJgnB_secret_tNkLUXCqqL6C1vKmAfLxRAxOB&key=pk_live_51RYd2cLLG2kHnUC33hP28uNjo0017hR6QcapU8FvrRKViH76Q3e7NFEA6mv6yMCIASeSQGncOhO9Qp5705MlyMBp00bIqsDwKI&_stripe_version=2025-03-31.basil&elements_init_source=stripe.elements&referrer_host=b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev&stripe_js_id=9778a0f7-bd17-4bb4-9e24-39ce7e38c81c&top_level_referrer_host=replit.com&expand[0]=payment_method_preference.payment_intent.payment_method&locale=en-US&type=payment_intent 400 (Bad Request)
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+e @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+l @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+s @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+e @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+n @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+a @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+_ @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+I @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+t.clientSecret @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+jy @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+By.singleFlightCreateAndParse @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+n @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+a @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+n @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+a @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+value @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1Understand this error
+[Violation] Potential permissions policy violation: publickey-credentials-get is not allowed in this document.Understand this error
+[Violation] Potential permissions policy violation: publickey-credentials-get is not allowed in this document.Understand this error
+Jemzy-App:1 Unable to download payment manifest "https://pay.google.com/about/redirect/".Understand this error
+Jemzy-App:1 Unable to download payment manifest "https://pay.google.com/about/redirect/".Understand this error
+Jemzy-App:1 Unable to download payment manifest "https://pay.google.com/about/redirect/".Understand this error
+Jemzy-App:1 Unable to download payment manifest "https://pay.google.com/about/redirect/".Understand this error

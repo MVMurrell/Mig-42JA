@@ -1,0 +1,134 @@
+✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…29d6d20302e876dc996cf84122014696c0d150f96d3a8676f', …}
+Console.js:61 Ready Player Me message received: {"source":"readyplayerme","eventName":"v1.frame.ready"}
+index-e_N3IeuJ.js:13 
+            
+            
+           POST https://api.readyplayer.me/v1/auth/refresh 401 (Unauthorized)
+(anonymous) @ index-e_N3IeuJ.js:13
+fQ @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+c @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+i @ index-e_N3IeuJ.js:504
+Promise.then
+s @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+Lh @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:506
+c @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+Lh @ index-e_N3IeuJ.js:504
+f @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+c @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+V0 @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:704
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+(anonymous) @ index-e_N3IeuJ.js:9
+E @ index-e_N3IeuJ.js:2
+H @ index-e_N3IeuJ.js:2Understand this error
+index-e_N3IeuJ.js:13 Error id: 8f2b26678b1549a1adc836301dac517b, message: [401] [UnauthorizedError] Unauthorized
+(anonymous) @ index-e_N3IeuJ.js:13
+logError @ index-e_N3IeuJ.js:510
+captureAsEvent @ index-e_N3IeuJ.js:510
+catch @ index-e_N3IeuJ.js:510
+capture @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:510
+withScope @ index-e_N3IeuJ.js:15
+Age @ index-e_N3IeuJ.js:15
+Fo @ index-e_N3IeuJ.js:15
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+c @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+a @ index-e_N3IeuJ.js:481
+Promise.then
+s @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+V0 @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:704
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+(anonymous) @ index-e_N3IeuJ.js:9
+E @ index-e_N3IeuJ.js:2
+H @ index-e_N3IeuJ.js:2Understand this error
+index-e_N3IeuJ.js:510 Uncaught (in promise) {error: {…}, isUnhandledError: false, meta: {…}, __sentry_captured__: true}
+c @ index-e_N3IeuJ.js:510
+Promise.then
+u @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:510
+Pa @ index-e_N3IeuJ.js:510
+onQueryStarted @ index-e_N3IeuJ.js:510
+u @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+c @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+V0 @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:704
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+(anonymous) @ index-e_N3IeuJ.js:9
+E @ index-e_N3IeuJ.js:2
+H @ index-e_N3IeuJ.js:2Understand this error
+avatar:1 Uncaught (in promise) {status: 401, data: {…}}
+Promise.then
+(anonymous) @ index-e_N3IeuJ.js:704
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+(anonymous) @ index-e_N3IeuJ.js:9
+E @ index-e_N3IeuJ.js:2
+H @ index-e_N3IeuJ.js:2Understand this error
+index-e_N3IeuJ.js:13 appName and environment are static. They can't be updated with updateContext.
+(anonymous) @ index-e_N3IeuJ.js:13
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+Wa @ index-e_N3IeuJ.js:702
+t.updateContext @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:704
+(anonymous) @ index-e_N3IeuJ.js:700
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this warning

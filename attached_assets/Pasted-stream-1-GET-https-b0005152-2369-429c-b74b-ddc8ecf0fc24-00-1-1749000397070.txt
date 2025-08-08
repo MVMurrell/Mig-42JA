@@ -1,0 +1,36 @@
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/48548f71-2cd7-4d66-94d9-7be9f4d6076b/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/415285db-eea1-4211-aa0e-602f4defab9e/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/2d82b9b8-e173-4309-a626-62d0e25141f0/stream 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/b5bec030-2dbb-46e2-8f3c-dd2bf06df154/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/b5bec030-2dbb-46e2-8f3c-dd2bf06df154/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/b5bec030-2dbb-46e2-8f3c-dd2bf06df154/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/b5bec030-2dbb-46e2-8f3c-dd2bf06df154/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream 400 (Bad Request)

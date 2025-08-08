@@ -1,0 +1,42 @@
+Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error
+Console.js:61 Failed to spawn dragon: Unable to spawn dragon at this time
+Mt.forEach.n.<computed> @ Console.js:61Understand this error
+MapInterface.tsx:2407  POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/dragons/spawn 400 (Bad Request)
+window.fetch @ Network.js:219
+handleSpawnDragon @ MapInterface.tsx:2407
+onClick @ MapInterface.tsx:2479
+callCallback2 @ chunk-RPCDYKBN.js?v=e65489cd:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=e65489cd:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=e65489cd:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=e65489cd:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=e65489cd:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=e65489cd:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=e65489cd:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=e65489cd:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=e65489cd:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=e65489cd:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=e65489cd:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=e65489cd:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=e65489cd:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=e65489cd:5449Understand this error
+Console.js:61 Failed to spawn dragon: Unable to spawn dragon at this time
+Mt.forEach.n.<computed> @ Console.js:61
+handleSpawnDragon @ MapInterface.tsx:2422
+await in handleSpawnDragon
+onClick @ MapInterface.tsx:2479
+callCallback2 @ chunk-RPCDYKBN.js?v=e65489cd:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=e65489cd:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=e65489cd:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=e65489cd:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=e65489cd:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=e65489cd:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=e65489cd:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=e65489cd:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=e65489cd:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=e65489cd:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=e65489cd:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=e65489cd:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=e65489cd:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=e65489cd:5449Understand this error

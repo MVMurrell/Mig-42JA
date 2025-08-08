@@ -1,0 +1,761 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=5a2a6800:840
+run @ @tanstack_react-query.js?v=5a2a6800:494
+start @ @tanstack_react-query.js?v=5a2a6800:536
+fetch @ @tanstack_react-query.js?v=5a2a6800:926
+executeFetch_fn @ @tanstack_react-query.js?v=5a2a6800:2211
+onSubscribe @ @tanstack_react-query.js?v=5a2a6800:1898
+subscribe @ @tanstack_react-query.js?v=5a2a6800:24
+(anonymous) @ @tanstack_react-query.js?v=5a2a6800:3022
+subscribeToStore @ chunk-WERSD76P.js?v=7912b80a:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=7912b80a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=7912b80a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=7912b80a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=7912b80a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=7912b80a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=7912b80a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=7912b80a:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=7912b80a:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=7912b80a:9119
+commitRootImpl @ chunk-WERSD76P.js?v=7912b80a:19432
+commitRoot @ chunk-WERSD76P.js?v=7912b80a:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=7912b80a:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=7912b80a:18718
+workLoop @ chunk-WERSD76P.js?v=7912b80a:197
+flushWork @ chunk-WERSD76P.js?v=7912b80a:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=7912b80a:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=5a2a6800:840
+run @ @tanstack_react-query.js?v=5a2a6800:494
+start @ @tanstack_react-query.js?v=5a2a6800:536
+fetch @ @tanstack_react-query.js?v=5a2a6800:926
+executeFetch_fn @ @tanstack_react-query.js?v=5a2a6800:2211
+onSubscribe @ @tanstack_react-query.js?v=5a2a6800:1898
+subscribe @ @tanstack_react-query.js?v=5a2a6800:24
+(anonymous) @ @tanstack_react-query.js?v=5a2a6800:3022
+subscribeToStore @ chunk-WERSD76P.js?v=7912b80a:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=7912b80a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=7912b80a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=7912b80a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=7912b80a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=7912b80a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=7912b80a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=7912b80a:19447
+commitRootImpl @ chunk-WERSD76P.js?v=7912b80a:19416
+commitRoot @ chunk-WERSD76P.js?v=7912b80a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=7912b80a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=7912b80a:9119
+flushSync @ chunk-WERSD76P.js?v=7912b80a:18959
+scheduleRefresh @ chunk-WERSD76P.js?v=7912b80a:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ OtherUserProfileModal.tsx:27
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=5a2a6800:840
+run @ @tanstack_react-query.js?v=5a2a6800:494
+start @ @tanstack_react-query.js?v=5a2a6800:536
+fetch @ @tanstack_react-query.js?v=5a2a6800:926
+executeFetch_fn @ @tanstack_react-query.js?v=5a2a6800:2211
+onSubscribe @ @tanstack_react-query.js?v=5a2a6800:1898
+subscribe @ @tanstack_react-query.js?v=5a2a6800:24
+(anonymous) @ @tanstack_react-query.js?v=5a2a6800:3022
+subscribeToStore @ chunk-WERSD76P.js?v=7912b80a:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=7912b80a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=7912b80a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=7912b80a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=7912b80a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=7912b80a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=7912b80a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=7912b80a:19447
+commitRootImpl @ chunk-WERSD76P.js?v=7912b80a:19416
+commitRoot @ chunk-WERSD76P.js?v=7912b80a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=7912b80a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=7912b80a:9119
+flushSync @ chunk-WERSD76P.js?v=7912b80a:18959
+scheduleRefresh @ chunk-WERSD76P.js?v=7912b80a:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ App.tsx?t=1749393026857&v=qtZNmNVuyJAlvYlsLzdES:109
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ b0005152-2369-429c-b…da/3.2.3/eruda.js:2
+(anonymous) @ b0005152-2369-429c-b…b/queryClient.ts:19
+fetchFn @ b0005152-2369-429c-b…y.js?v=8656e124:840
+run @ b0005152-2369-429c-b…y.js?v=8656e124:494
+start @ b0005152-2369-429c-b…y.js?v=8656e124:536
+fetch @ b0005152-2369-429c-b…y.js?v=8656e124:926
+executeFetch_fn @ b0005152-2369-429c-b….js?v=8656e124:2211
+onSubscribe @ b0005152-2369-429c-b….js?v=8656e124:1898
+subscribe @ b0005152-2369-429c-b…ry.js?v=8656e124:24
+(anonymous) @ b0005152-2369-429c-b….js?v=8656e124:3022
+subscribeToStore @ b0005152-2369-429c-b…js?v=8656e124:11984
+commitHookEffectListMount @ b0005152-2369-429c-b…js?v=8656e124:16915
+commitPassiveMountOnFiber @ b0005152-2369-429c-b…js?v=8656e124:18156
+commitPassiveMountEffects_complete @ b0005152-2369-429c-b…js?v=8656e124:18129
+commitPassiveMountEffects_begin @ b0005152-2369-429c-b…js?v=8656e124:18119
+commitPassiveMountEffects @ b0005152-2369-429c-b…js?v=8656e124:18109
+flushPassiveEffectsImpl @ b0005152-2369-429c-b…js?v=8656e124:19490
+flushPassiveEffects @ b0005152-2369-429c-b…js?v=8656e124:19447
+performSyncWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18868
+flushSyncCallbacks @ b0005152-2369-429c-b….js?v=8656e124:9119
+commitRootImpl @ b0005152-2369-429c-b…js?v=8656e124:19432
+commitRoot @ b0005152-2369-429c-b…js?v=8656e124:19277
+finishConcurrentRender @ b0005152-2369-429c-b…js?v=8656e124:18805
+performConcurrentWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18718
+workLoop @ b0005152-2369-429c-b…P.js?v=8656e124:197
+flushWork @ b0005152-2369-429c-b…P.js?v=8656e124:176
+performWorkUntilDeadline @ b0005152-2369-429c-b…P.js?v=8656e124:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM124 eruda.js:2
+(anonymous) @ VM160 queryClient.ts:19
+fetchFn @ VM157 @tanstack_react-query.js:840
+run @ VM157 @tanstack_react-query.js:494
+start @ VM157 @tanstack_react-query.js:536
+fetch @ VM157 @tanstack_react-query.js:926
+executeFetch_fn @ VM157 @tanstack_react-query.js:2211
+onSubscribe @ VM157 @tanstack_react-query.js:1898
+subscribe @ VM157 @tanstack_react-query.js:24
+(anonymous) @ VM157 @tanstack_react-query.js:3022
+subscribeToStore @ VM152 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM152 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM152 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM152 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM152 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM152 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM152 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM152 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM152 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM152 chunk-WERSD76P.js:9119
+commitRootImpl @ VM152 chunk-WERSD76P.js:19432
+commitRoot @ VM152 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM152 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM152 chunk-WERSD76P.js:18718
+workLoop @ VM152 chunk-WERSD76P.js:197
+flushWork @ VM152 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM152 chunk-WERSD76P.js:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM239 eruda.js:2
+(anonymous) @ VM276 queryClient.ts:19
+fetchFn @ VM274 @tanstack_react-query.js:840
+run @ VM274 @tanstack_react-query.js:494
+start @ VM274 @tanstack_react-query.js:536
+fetch @ VM274 @tanstack_react-query.js:926
+executeFetch_fn @ VM274 @tanstack_react-query.js:2211
+onSubscribe @ VM274 @tanstack_react-query.js:1898
+subscribe @ VM274 @tanstack_react-query.js:24
+(anonymous) @ VM274 @tanstack_react-query.js:3022
+subscribeToStore @ VM268 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM268 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM268 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM268 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM268 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM268 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM268 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM268 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM268 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM268 chunk-WERSD76P.js:9119
+commitRootImpl @ VM268 chunk-WERSD76P.js:19432
+commitRoot @ VM268 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM268 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM268 chunk-WERSD76P.js:18718
+workLoop @ VM268 chunk-WERSD76P.js:197
+flushWork @ VM268 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM268 chunk-WERSD76P.js:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ b0005152-2369-429c-b…da/3.2.3/eruda.js:2
+(anonymous) @ b0005152-2369-429c-b…b/queryClient.ts:19
+fetchFn @ b0005152-2369-429c-b…y.js?v=8656e124:840
+run @ b0005152-2369-429c-b…y.js?v=8656e124:494
+start @ b0005152-2369-429c-b…y.js?v=8656e124:536
+fetch @ b0005152-2369-429c-b…y.js?v=8656e124:926
+executeFetch_fn @ b0005152-2369-429c-b….js?v=8656e124:2211
+onSubscribe @ b0005152-2369-429c-b….js?v=8656e124:1898
+subscribe @ b0005152-2369-429c-b…ry.js?v=8656e124:24
+(anonymous) @ b0005152-2369-429c-b….js?v=8656e124:3022
+subscribeToStore @ b0005152-2369-429c-b…js?v=8656e124:11984
+commitHookEffectListMount @ b0005152-2369-429c-b…js?v=8656e124:16915
+commitPassiveMountOnFiber @ b0005152-2369-429c-b…js?v=8656e124:18156
+commitPassiveMountEffects_complete @ b0005152-2369-429c-b…js?v=8656e124:18129
+commitPassiveMountEffects_begin @ b0005152-2369-429c-b…js?v=8656e124:18119
+commitPassiveMountEffects @ b0005152-2369-429c-b…js?v=8656e124:18109
+flushPassiveEffectsImpl @ b0005152-2369-429c-b…js?v=8656e124:19490
+flushPassiveEffects @ b0005152-2369-429c-b…js?v=8656e124:19447
+performSyncWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18868
+flushSyncCallbacks @ b0005152-2369-429c-b….js?v=8656e124:9119
+commitRootImpl @ b0005152-2369-429c-b…js?v=8656e124:19432
+commitRoot @ b0005152-2369-429c-b…js?v=8656e124:19277
+finishConcurrentRender @ b0005152-2369-429c-b…js?v=8656e124:18805
+performConcurrentWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18718
+workLoop @ b0005152-2369-429c-b…P.js?v=8656e124:197
+flushWork @ b0005152-2369-429c-b…P.js?v=8656e124:176
+performWorkUntilDeadline @ b0005152-2369-429c-b…P.js?v=8656e124:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM123 eruda.js:2
+(anonymous) @ VM160 queryClient.ts:19
+fetchFn @ VM158 @tanstack_react-query.js:840
+run @ VM158 @tanstack_react-query.js:494
+start @ VM158 @tanstack_react-query.js:536
+fetch @ VM158 @tanstack_react-query.js:926
+executeFetch_fn @ VM158 @tanstack_react-query.js:2211
+onSubscribe @ VM158 @tanstack_react-query.js:1898
+subscribe @ VM158 @tanstack_react-query.js:24
+(anonymous) @ VM158 @tanstack_react-query.js:3022
+subscribeToStore @ VM152 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM152 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM152 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM152 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM152 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM152 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM152 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM152 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM152 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM152 chunk-WERSD76P.js:9119
+commitRootImpl @ VM152 chunk-WERSD76P.js:19432
+commitRoot @ VM152 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM152 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM152 chunk-WERSD76P.js:18718
+workLoop @ VM152 chunk-WERSD76P.js:197
+flushWork @ VM152 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM152 chunk-WERSD76P.js:384Understand this error
+jemzy.us.auth0.com/authorize?client_id=UtgZyeSZnOWdiDUYgoVEedgg7trFh6lN&scope=openid%20profile%20email&response_type=id_token&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fapi%2Fauth%2Fcallback&response_mode=form_post&nonce=OHBcvmCR12ryyVdbw_wmimXOtD0VBAaFie7gMHknYw4&state=eyJyZXR1cm5UbyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCJ9:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM31 eruda.js:2
+(anonymous) @ VM68 queryClient.ts:19
+fetchFn @ VM65 @tanstack_react-query.js:840
+run @ VM65 @tanstack_react-query.js:494
+start @ VM65 @tanstack_react-query.js:536
+fetch @ VM65 @tanstack_react-query.js:926
+executeFetch_fn @ VM65 @tanstack_react-query.js:2211
+onSubscribe @ VM65 @tanstack_react-query.js:1898
+subscribe @ VM65 @tanstack_react-query.js:24
+(anonymous) @ VM65 @tanstack_react-query.js:3022
+subscribeToStore @ VM59 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM59 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM59 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM59 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM59 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM59 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM59 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM59 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM59 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM59 chunk-WERSD76P.js:9119
+commitRootImpl @ VM59 chunk-WERSD76P.js:19432
+commitRoot @ VM59 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM59 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM59 chunk-WERSD76P.js:18718
+workLoop @ VM59 chunk-WERSD76P.js:197
+flushWork @ VM59 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM59 chunk-WERSD76P.js:384Understand this error
+jemzy.us.auth0.com/authorize?client_id=UtgZyeSZnOWdiDUYgoVEedgg7trFh6lN&scope=openid%20profile%20email&response_type=id_token&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fapi%2Fauth%2Fcallback&response_mode=form_post&nonce=KyYRVsdcDTVftOEmjSn0IsBFHLdkbX5cLItLmqp8mjU&state=eyJyZXR1cm5UbyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCJ9:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ b0005152-2369-429c-b…da/3.2.3/eruda.js:2
+(anonymous) @ b0005152-2369-429c-b…b/queryClient.ts:19
+fetchFn @ b0005152-2369-429c-b…y.js?v=8656e124:840
+run @ b0005152-2369-429c-b…y.js?v=8656e124:494
+start @ b0005152-2369-429c-b…y.js?v=8656e124:536
+fetch @ b0005152-2369-429c-b…y.js?v=8656e124:926
+executeFetch_fn @ b0005152-2369-429c-b….js?v=8656e124:2211
+onSubscribe @ b0005152-2369-429c-b….js?v=8656e124:1898
+subscribe @ b0005152-2369-429c-b…ry.js?v=8656e124:24
+(anonymous) @ b0005152-2369-429c-b….js?v=8656e124:3022
+subscribeToStore @ b0005152-2369-429c-b…js?v=8656e124:11984
+commitHookEffectListMount @ b0005152-2369-429c-b…js?v=8656e124:16915
+commitPassiveMountOnFiber @ b0005152-2369-429c-b…js?v=8656e124:18156
+commitPassiveMountEffects_complete @ b0005152-2369-429c-b…js?v=8656e124:18129
+commitPassiveMountEffects_begin @ b0005152-2369-429c-b…js?v=8656e124:18119
+commitPassiveMountEffects @ b0005152-2369-429c-b…js?v=8656e124:18109
+flushPassiveEffectsImpl @ b0005152-2369-429c-b…js?v=8656e124:19490
+flushPassiveEffects @ b0005152-2369-429c-b…js?v=8656e124:19447
+performSyncWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18868
+flushSyncCallbacks @ b0005152-2369-429c-b….js?v=8656e124:9119
+commitRootImpl @ b0005152-2369-429c-b…js?v=8656e124:19432
+commitRoot @ b0005152-2369-429c-b…js?v=8656e124:19277
+finishConcurrentRender @ b0005152-2369-429c-b…js?v=8656e124:18805
+performConcurrentWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18718
+workLoop @ b0005152-2369-429c-b…P.js?v=8656e124:197
+flushWork @ b0005152-2369-429c-b…P.js?v=8656e124:176
+performWorkUntilDeadline @ b0005152-2369-429c-b…P.js?v=8656e124:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM123 eruda.js:2
+(anonymous) @ VM160 queryClient.ts:19
+fetchFn @ VM158 @tanstack_react-query.js:840
+run @ VM158 @tanstack_react-query.js:494
+start @ VM158 @tanstack_react-query.js:536
+fetch @ VM158 @tanstack_react-query.js:926
+executeFetch_fn @ VM158 @tanstack_react-query.js:2211
+onSubscribe @ VM158 @tanstack_react-query.js:1898
+subscribe @ VM158 @tanstack_react-query.js:24
+(anonymous) @ VM158 @tanstack_react-query.js:3022
+subscribeToStore @ VM152 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM152 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM152 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM152 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM152 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM152 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM152 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM152 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM152 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM152 chunk-WERSD76P.js:9119
+commitRootImpl @ VM152 chunk-WERSD76P.js:19432
+commitRoot @ VM152 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM152 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM152 chunk-WERSD76P.js:18718
+workLoop @ VM152 chunk-WERSD76P.js:197
+flushWork @ VM152 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM152 chunk-WERSD76P.js:384Understand this error
+jemzy.us.auth0.com/authorize?client_id=UtgZyeSZnOWdiDUYgoVEedgg7trFh6lN&scope=openid%20profile%20email&response_type=id_token&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fapi%2Fauth%2Fcallback&response_mode=form_post&nonce=8EFos4nMLJWje-utXLjV4Qd8tbFV7CC6JMC6AbyYxVU&state=eyJyZXR1cm5UbyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCJ9:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/static/devtools/eruda/3.2.3/eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ b0005152-2369-429c-b…da/3.2.3/eruda.js:2
+(anonymous) @ b0005152-2369-429c-b…b/queryClient.ts:19
+fetchFn @ b0005152-2369-429c-b…y.js?v=8656e124:840
+run @ b0005152-2369-429c-b…y.js?v=8656e124:494
+start @ b0005152-2369-429c-b…y.js?v=8656e124:536
+fetch @ b0005152-2369-429c-b…y.js?v=8656e124:926
+executeFetch_fn @ b0005152-2369-429c-b….js?v=8656e124:2211
+onSubscribe @ b0005152-2369-429c-b….js?v=8656e124:1898
+subscribe @ b0005152-2369-429c-b…ry.js?v=8656e124:24
+(anonymous) @ b0005152-2369-429c-b….js?v=8656e124:3022
+subscribeToStore @ b0005152-2369-429c-b…js?v=8656e124:11984
+commitHookEffectListMount @ b0005152-2369-429c-b…js?v=8656e124:16915
+commitPassiveMountOnFiber @ b0005152-2369-429c-b…js?v=8656e124:18156
+commitPassiveMountEffects_complete @ b0005152-2369-429c-b…js?v=8656e124:18129
+commitPassiveMountEffects_begin @ b0005152-2369-429c-b…js?v=8656e124:18119
+commitPassiveMountEffects @ b0005152-2369-429c-b…js?v=8656e124:18109
+flushPassiveEffectsImpl @ b0005152-2369-429c-b…js?v=8656e124:19490
+flushPassiveEffects @ b0005152-2369-429c-b…js?v=8656e124:19447
+performSyncWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18868
+flushSyncCallbacks @ b0005152-2369-429c-b….js?v=8656e124:9119
+commitRootImpl @ b0005152-2369-429c-b…js?v=8656e124:19432
+commitRoot @ b0005152-2369-429c-b…js?v=8656e124:19277
+finishConcurrentRender @ b0005152-2369-429c-b…js?v=8656e124:18805
+performConcurrentWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18718
+workLoop @ b0005152-2369-429c-b…P.js?v=8656e124:197
+flushWork @ b0005152-2369-429c-b…P.js?v=8656e124:176
+performWorkUntilDeadline @ b0005152-2369-429c-b…P.js?v=8656e124:384Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM123 eruda.js:2
+(anonymous) @ VM160 queryClient.ts:19
+fetchFn @ VM157 @tanstack_react-query.js:840
+run @ VM157 @tanstack_react-query.js:494
+start @ VM157 @tanstack_react-query.js:536
+fetch @ VM157 @tanstack_react-query.js:926
+executeFetch_fn @ VM157 @tanstack_react-query.js:2211
+onSubscribe @ VM157 @tanstack_react-query.js:1898
+subscribe @ VM157 @tanstack_react-query.js:24
+(anonymous) @ VM157 @tanstack_react-query.js:3022
+subscribeToStore @ VM152 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM152 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM152 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM152 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM152 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM152 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM152 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM152 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM152 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM152 chunk-WERSD76P.js:9119
+commitRootImpl @ VM152 chunk-WERSD76P.js:19432
+commitRoot @ VM152 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM152 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM152 chunk-WERSD76P.js:18718
+workLoop @ VM152 chunk-WERSD76P.js:197
+flushWork @ VM152 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM152 chunk-WERSD76P.js:384Understand this error
+jemzy.us.auth0.com/authorize?client_id=UtgZyeSZnOWdiDUYgoVEedgg7trFh6lN&scope=openid%20profile%20email&response_type=id_token&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fapi%2Fauth%2Fcallback&response_mode=form_post&nonce=ZqQfLZHoQE1JfqaTu0SC-WUMDjXyeydII2lp7RyEUbg&state=eyJyZXR1cm5UbyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCJ9:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM122 eruda.js:2
+(anonymous) @ VM159 queryClient.ts:19
+fetchFn @ VM157 @tanstack_react-query.js:840
+run @ VM157 @tanstack_react-query.js:494
+start @ VM157 @tanstack_react-query.js:536
+fetch @ VM157 @tanstack_react-query.js:926
+executeFetch_fn @ VM157 @tanstack_react-query.js:2211
+onSubscribe @ VM157 @tanstack_react-query.js:1898
+subscribe @ VM157 @tanstack_react-query.js:24
+(anonymous) @ VM157 @tanstack_react-query.js:3022
+subscribeToStore @ VM151 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM151 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM151 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM151 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM151 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM151 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM151 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM151 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM151 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM151 chunk-WERSD76P.js:9119
+commitRootImpl @ VM151 chunk-WERSD76P.js:19432
+commitRoot @ VM151 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM151 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM151 chunk-WERSD76P.js:18718
+workLoop @ VM151 chunk-WERSD76P.js:197
+flushWork @ VM151 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM151 chunk-WERSD76P.js:384Understand this error
+jemzy.us.auth0.com/authorize?client_id=UtgZyeSZnOWdiDUYgoVEedgg7trFh6lN&scope=openid%20profile%20email&response_type=id_token&redirect_uri=http%3A%2F%2Flocalhost%3A5000%2Fapi%2Fauth%2Fcallback&response_mode=form_post&nonce=XKSYUzqVMk8ZsA2_6u_1mP_4pb0ynS0ea_74jjbC7ic&state=eyJyZXR1cm5UbyI6Imh0dHA6Ly9sb2NhbGhvc3Q6NTAwMCJ9:1 
+            
+            
+           Failed to load resource: the server responded with a status of 403 ()Understand this error
+queryClient.ts:32 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error
+ 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ b0005152-2369-429c-b…da/3.2.3/eruda.js:2
+(anonymous) @ b0005152-2369-429c-b…b/queryClient.ts:19
+fetchFn @ b0005152-2369-429c-b…y.js?v=8656e124:840
+run @ b0005152-2369-429c-b…y.js?v=8656e124:494
+start @ b0005152-2369-429c-b…y.js?v=8656e124:536
+fetch @ b0005152-2369-429c-b…y.js?v=8656e124:926
+executeFetch_fn @ b0005152-2369-429c-b….js?v=8656e124:2211
+onSubscribe @ b0005152-2369-429c-b….js?v=8656e124:1898
+subscribe @ b0005152-2369-429c-b…ry.js?v=8656e124:24
+(anonymous) @ b0005152-2369-429c-b….js?v=8656e124:3022
+subscribeToStore @ b0005152-2369-429c-b…js?v=8656e124:11984
+commitHookEffectListMount @ b0005152-2369-429c-b…js?v=8656e124:16915
+commitPassiveMountOnFiber @ b0005152-2369-429c-b…js?v=8656e124:18156
+commitPassiveMountEffects_complete @ b0005152-2369-429c-b…js?v=8656e124:18129
+commitPassiveMountEffects_begin @ b0005152-2369-429c-b…js?v=8656e124:18119
+commitPassiveMountEffects @ b0005152-2369-429c-b…js?v=8656e124:18109
+flushPassiveEffectsImpl @ b0005152-2369-429c-b…js?v=8656e124:19490
+flushPassiveEffects @ b0005152-2369-429c-b…js?v=8656e124:19447
+performSyncWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18868
+flushSyncCallbacks @ b0005152-2369-429c-b….js?v=8656e124:9119
+commitRootImpl @ b0005152-2369-429c-b…js?v=8656e124:19432
+commitRoot @ b0005152-2369-429c-b…js?v=8656e124:19277
+finishConcurrentRender @ b0005152-2369-429c-b…js?v=8656e124:18805
+performConcurrentWorkOnRoot @ b0005152-2369-429c-b…js?v=8656e124:18718
+workLoop @ b0005152-2369-429c-b…P.js?v=8656e124:197
+flushWork @ b0005152-2369-429c-b…P.js?v=8656e124:176
+performWorkUntilDeadline @ b0005152-2369-429c-b…P.js?v=8656e124:384Understand this error
+VM123 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM123 eruda.js:2
+(anonymous) @ VM160 queryClient.ts:19
+fetchFn @ VM158 @tanstack_react-query.js:840
+run @ VM158 @tanstack_react-query.js:494
+start @ VM158 @tanstack_react-query.js:536
+fetch @ VM158 @tanstack_react-query.js:926
+executeFetch_fn @ VM158 @tanstack_react-query.js:2211
+onSubscribe @ VM158 @tanstack_react-query.js:1898
+subscribe @ VM158 @tanstack_react-query.js:24
+(anonymous) @ VM158 @tanstack_react-query.js:3022
+subscribeToStore @ VM152 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM152 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM152 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM152 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM152 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM152 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM152 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM152 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM152 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM152 chunk-WERSD76P.js:9119
+commitRootImpl @ VM152 chunk-WERSD76P.js:19432
+commitRoot @ VM152 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM152 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM152 chunk-WERSD76P.js:18718
+workLoop @ VM152 chunk-WERSD76P.js:197
+flushWork @ VM152 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM152 chunk-WERSD76P.js:384Understand this error
+queryClient.ts:32 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 500 (Internal Server Error)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=8656e124:840
+run @ @tanstack_react-query.js?v=8656e124:494
+start @ @tanstack_react-query.js?v=8656e124:536
+fetch @ @tanstack_react-query.js?v=8656e124:926
+executeFetch_fn @ @tanstack_react-query.js?v=8656e124:2211
+onSubscribe @ @tanstack_react-query.js?v=8656e124:1898
+subscribe @ @tanstack_react-query.js?v=8656e124:24
+(anonymous) @ @tanstack_react-query.js?v=8656e124:3022
+subscribeToStore @ chunk-WERSD76P.js?v=8656e124:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19432
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=8656e124:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18718
+workLoop @ chunk-WERSD76P.js?v=8656e124:197
+flushWork @ chunk-WERSD76P.js?v=8656e124:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=8656e124:384Understand this error

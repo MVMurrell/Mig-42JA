@@ -1,0 +1,43 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 User location updated to: {lat: 36.05711021057141, lng: -94.16043984151047}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Marker clicked for video: 0bca2467-aa1e-4713-8bd6-f73cef1099c0 don't dry pants
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: 0bca2467-aa1e-4713-8bd6-f73cef1099c0
+Console.js:61 handleVideoClick called with video: 0bca2467-aa1e-4713-8bd6-f73cef1099c0
+Console.js:61 Current targetVideoId: null
+Console.js:61 Using regular video player
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+3Console.js:61 Marked video 0bca2467-aa1e-4713-8bd6-f73cef1099c0 as watched
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/0bca2467-aa1e-4713-8bd6-f73cef1099c0/stream failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video /api/videos/0bca2467-aa1e-4713-8bd6-f73cef1099c0/stream failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Mt.forEach.n.<computed> @ Console.js:61
+handleError @ VideoPlayerModal.tsx:200Understand this error
+Console.js:61 MediaError details: {code: 4, message: 'DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed', MEDIA_ERR_ABORTED: 1, MEDIA_ERR_NETWORK: 2, MEDIA_ERR_DECODE: 3, …}
+Mt.forEach.n.<computed> @ Console.js:61
+handleError @ VideoPlayerModal.tsx:201Understand this error
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/0bca2467-aa1e-4713-8bd6-f73cef1099c0/stream failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/0bca2467-aa1e-4713-8bd6-f73cef1099c0/stream failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Error starting video: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:256
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:236
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}

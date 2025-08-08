@@ -1,0 +1,60 @@
+Prompt Title: IMMEDIATE CORRECTION & COMPLETION: Address EBML Corruption, Re-integrate Moderation, and Implement Accurate UX
+
+Priority: CRITICAL. This is the path forward to a working solution. Abandon the local storage workaround completely.
+
+Understanding the Root Cause:
+I acknowledge and appreciate the accurate diagnosis: the WebM files from MediaRecorder have corrupted EBML headers that FFmpeg cannot process. This is a challenging issue, and your proposal to bypass FFmpeg and send the raw WebM directly to Bunny.net is a valid and effective strategy for video ingestion and playback.
+
+Problem with Current Replit Actions (and what to fix):
+
+Local Storage Workaround (UNACCEPTABLE): The previous "temporary solution" of storing videos locally for immediate playback was NOT acceptable. This hides the real problem and provides a false sense of completion to the user. All code related to storing videos locally for playback must be reverted immediately. Please confirm this has been done.
+Missing Moderation Re-integration: While sending raw WebM to Bunny.net is great for playback, your plan did not explicitly re-integrate the Google Cloud Video AI moderation step. This is paramount.
+Revised & Corrected Pipeline (Based on EBML Diagnosis):
+
+The pipeline needs to be modified as follows:
+
+Frontend Upload: User uploads video. Frontend immediately shows "Video Uploaded. Processing for Content Safety and Playback..."
+Backend Receive (HTTP Endpoint):
+Receives the raw video.webm Blob and its duration from the frontend.
+Saves the raw video.webm temporarily (e.g., in /tmp).
+Delegates the heavy processing to an asynchronous worker/task.
+Returns a 202 Accepted response with a unique video_id to the frontend.
+Asynchronous Worker (Background Process/Thread):
+Step 1: Upload Raw WebM to Google Cloud Storage (for Video AI):
+Take the raw video.webm file (from /tmp).
+Upload this original WebM file directly to the designated, private GCS bucket. (This assumes Google Cloud Video AI can tolerate the EBML corruption, which is often the case for Google's own services).
+Step 2: Upload Raw WebM to Bunny.net Stream (for Playback Transcoding):
+Take the same original video.webm file (from /tmp).
+Upload this file directly to our Bunny.net Stream Library using the Bunny.net Stream API (PUT /library/{libraryId}/videos/{videoId}). Bunny.net's robust transcoder will handle the WebM and generate playable formats.
+Crucial: Ensure the requests.put call for Bunny.net Stream uses data=file_handle to stream the file from disk, rather than data=file_handle.read(), which can cause memory issues or incomplete uploads for larger files.
+Step 3: Google Cloud Video AI Analysis (on GCS WebM):
+Call the Google Cloud Video Intelligence API on the raw WebM file in GCS.
+Request EXPLICIT_CONTENT_DETECTION.
+Wait for the analysis results.
+Step 4: Decision Logic & Final Storage:
+Based on the Video AI results:
+If approved (no explicit content): Update the video's status in the database to 'approved'. The video is already in Bunny.net Stream.
+If flagged (explicit content): You have two options, implement one:
+Option A (Recommended): Update the video's status in the database to 'flagged' and potentially PENDING_APPEAL. The video is already in Bunny.net Stream. You might then remove it from public view by manipulating its visibility via Bunny.net's API or your own application logic based on its status. This is simpler as it avoids moving the file.
+Option B (More Complex): Delete the video from Bunny.net Stream (since it's not approved for public playback) and then upload the same raw WebM file to a Bunny.net Storage Zone for temporary storage and appeal.
+Store relevant IDs and flagging reasons in the database.
+Step 5: User Notification & UI Update:
+Update the video's status in your database (e.g., 'approved', 'flagged').
+Trigger a notification to the user (via email, in-app notification, or WebSocket) ONLY when this entire background process is complete.
+The frontend should then update the video's display on the user's profile from "Processing" to its final approved/flagged state.
+Specific Code Instructions to Replit:
+
+Revert any FFmpeg-related processing for the initial conversion in process_video_in_background. The temp_local_path will now directly be the raw WebM from the browser.
+Modify process_video_in_background to:
+First, upload temp_local_path (the raw WebM) to GCS.
+Then, upload the same temp_local_path (the raw WebM) to Bunny.net Stream using the create_bunny_stream_video helper.
+Then, initiate the Google Cloud Video AI analysis using the GCS URI of the raw WebM.
+Proceed with the moderation decision and database updates.
+Ensure create_bunny_stream_video correctly handles the raw WebM input:
+Confirm it takes local_file_path which will now be the WebM file.
+Ensure the requests.put part inside this function uses data=f (the file object itself) for robust streaming of the file, rather than data=f.read().
+Frontend UX (Reiteration):
+
+Upon initial upload, after receiving 202 Accepted from the backend, the frontend MUST display a "Processing..." message.
+The video should appear on the user's profile with a "Pending" icon/text overlay and be non-playable until the backend's asynchronous process is complete and sends a final status update. This could take a few minutes.
+Focus on making this complete, asynchronous, and accurate pipeline work without shortcuts. The "EBML header parsing failed" is a breakthrough, let's build the right solution on top of it."

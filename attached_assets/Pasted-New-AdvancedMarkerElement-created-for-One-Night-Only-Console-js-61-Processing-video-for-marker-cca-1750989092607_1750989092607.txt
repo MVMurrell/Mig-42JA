@@ -1,0 +1,18 @@
+New AdvancedMarkerElement created for: One Night Only
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Higher breh
+Console.js:61 Zoom level changed to: 15 Total markers: 11
+Console.js:61 Adding quest markers to Google Maps: 1 quests
+Console.js:61 Updated existing quest marker for: testing
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 🔥 FRONTEND: Starting profile picture upload mutation
+Console.js:61 🔥 FRONTEND: FormData prepared, making request to /api/users/profile-picture
+Console.js:61 🔥 FRONTEND: Response received: 200 OK
+Console.js:61 🔥 FRONTEND: Upload successful: {message: 'Profile picture updated successfully', url: 'https://storage.googleapis.com/jemzy-images-storag…fb3e97032076378bddc9f0cf64637c2bdfc010085684345ab', gcsPath: 'gs://jemzy-images-storage/profiles/google-oauth2|1…85616207/53c7832b-f8ef-4bc6-9510-ea50feb14935.jpg', moderation: {…}}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…fb3e97032076378bddc9f0cf64637c2bdfc010085684345ab', …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}

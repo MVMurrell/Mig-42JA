@@ -1,0 +1,113 @@
+Places Autocomplete service initialized
+Console.js:61 Warning: Received NaN for the `children` attribute. If this is expected, cast the value to a string.
+    at span
+    at div
+    at div
+    at div
+    at _c9 (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/ui/card.tsx:114:12)
+    at div
+    at _c (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/ui/card.tsx:20:11)
+    at div
+    at form
+    at div
+    at div
+    at div
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=0aec14a9:42:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AFLIZ4FI.js?v=0aec14a9:61:7
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=0aec14a9:79:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=0aec14a9:56:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=0aec14a9:42:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-HG7P5XMB.js?v=0aec14a9:29:5
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-V4SDQJCY.js?v=0aec14a9:235:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-V4SDQJCY.js?v=0aec14a9:158:58
+    at Presence (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-LUE5KDWX.js?v=0aec14a9:24:11)
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-V4SDQJCY.js?v=0aec14a9:149:64
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=0aec14a9:79:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=0aec14a9:56:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AXMZZQ2X.js?v=0aec14a9:42:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-AFLIZ4FI.js?v=0aec14a9:260:22
+    at Presence (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-LUE5KDWX.js?v=0aec14a9:24:11)
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0aec14a9:38:15)
+    at DialogPortal (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-V4SDQJCY.js?v=0aec14a9:111:11)
+    at _c3 (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/ui/dialog.tsx:52:12)
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0aec14a9:38:15)
+    at Dialog (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-V4SDQJCY.js?v=0aec14a9:52:5)
+    at CreateQuestModal (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/CreateQuestModal.tsx:57:36)
+    at div
+    at QuestPage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/quest-simple.tsx:31:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0aec14a9:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0aec14a9:64:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0aec14a9:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=0aec14a9:521
+error @ chunk-RPCDYKBN.js?v=0aec14a9:505
+validateProperty$1 @ chunk-RPCDYKBN.js?v=0aec14a9:3413
+warnUnknownProperties @ chunk-RPCDYKBN.js?v=0aec14a9:3459
+validateProperties$2 @ chunk-RPCDYKBN.js?v=0aec14a9:3478
+validatePropertiesInDevelopment @ chunk-RPCDYKBN.js?v=0aec14a9:7346
+diffProperties @ chunk-RPCDYKBN.js?v=0aec14a9:7620
+prepareUpdate @ chunk-RPCDYKBN.js?v=0aec14a9:8367
+updateHostComponent$1 @ chunk-RPCDYKBN.js?v=0aec14a9:16047
+completeWork @ chunk-RPCDYKBN.js?v=0aec14a9:16271
+completeUnitOfWork @ chunk-RPCDYKBN.js?v=0aec14a9:19224
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0aec14a9:19206
+workLoopSync @ chunk-RPCDYKBN.js?v=0aec14a9:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0aec14a9:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+flushSync @ chunk-RPCDYKBN.js?v=0aec14a9:18959
+finishEventHandler @ chunk-RPCDYKBN.js?v=0aec14a9:3569
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3582
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 Error creating quest: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:385
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 Full error details: {message: `Unexpected token '<', "<!DOCTYPE "... is not valid JSON`, stack: `SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON`, type: 'object', stringified: '{}'}
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:386
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error

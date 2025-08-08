@@ -1,0 +1,49 @@
+Thread video three-dot button clicked! SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: div#radix-:ra:.w-12.h-12.rounded-full.bg-black/60.text-white.hover:bg-black/80.flex.items-center.ju…, …}
+Console.js:61 Flagging thread video: 20
+group-profile.tsx:122 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/content/flag 404 (Not Found)
+window.fetch @ Network.js:219
+handleFlagThreadVideo @ group-profile.tsx:122
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:93
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 Flag response status: 404
+Console.js:61 Flag error response: {message: 'Content not found'}
+Mt.forEach.n.<computed> @ Console.js:61
+handleFlagThreadVideo @ group-profile.tsx:143
+await in handleFlagThreadVideo
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:93
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c'}

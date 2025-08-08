@@ -1,0 +1,38 @@
+Zoom level changed to: 15 Total markers: 4
+b0005152-2369-429c-b….worf.replit.dev/:1 Uncaught (in promise) AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22Understand this error
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed to load: Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:112Understand this error
+Console.js:61 Video URL: /api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:113Understand this error
+Console.js:61 Video error details: {code: 4, message: 'DEMUXER_ERROR_DETECTED_HLS', networkState: 3, readyState: 0}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:114Understand this error
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed to load: Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:112Understand this error
+Console.js:61 Video URL: /api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:113Understand this error
+Console.js:61 Video error details: {code: 4, message: 'DEMUXER_ERROR_DETECTED_HLS', networkState: 3, readyState: 0}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:114Understand this error
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed to load: Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:112Understand this error
+Console.js:61 Video URL: /api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:113Understand this error
+Console.js:61 Video error details: {code: 4, message: 'DEMUXER_ERROR_DETECTED_HLS', networkState: 3, readyState: 0}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:114Understand this error
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed to load: Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:112Understand this error
+Console.js:61 Video URL: /api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:113Understand this error
+Console.js:61 Video error details: {code: 4, message: 'DEMUXER_ERROR_DETECTED_HLS', networkState: 3, readyState: 0}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:114Understand this error

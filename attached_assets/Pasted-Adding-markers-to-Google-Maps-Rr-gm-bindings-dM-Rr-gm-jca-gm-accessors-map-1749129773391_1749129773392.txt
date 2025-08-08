@@ -1,0 +1,59 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 User location updated to: {lat: 36.05716838367893, lng: -94.16042990151216}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Audio tracks found: 1
+Console.js:61 Video tracks found: 1
+Console.js:61 Using robust WebM VP8/Opus recording: video/webm; codecs="vp8,opus"
+Console.js:61 Recording with audio tracks: 1
+Console.js:61 MediaRecorder MIME type: video/webm; codecs="vp8,opus"
+Console.js:61 Data chunk received, size: 246150
+Console.js:61 Data chunk received, size: 369302
+Console.js:61 Data chunk received, size: 354054
+Console.js:61 Final recording duration captured: 3.803 seconds
+Console.js:61 Data chunk received, size: 315941
+Console.js:61 Final blob created, size: 1285447 type: video/webm;codecs=vp8,opus
+Console.js:61 🔍 Testing local video playback before upload...
+Console.js:61 📥 Local Playback: Starting to load video...
+Console.js:61 ✅ Local Playback: Video loaded metadata successfully!
+Console.js:61 ✅ Local Playback: Duration: Infinity seconds
+Console.js:61 ✅ Local Playback: Video dimensions: 640x480
+Console.js:61 ✅ Local Playback: Ready state: 4
+Console.js:61 Using actual recorded duration: 0 seconds
+Console.js:61 ✅ Local Playback: Video can start playing
+Console.js:61 Preview video duration change: Infinity
+Console.js:61 Preview video duration: Infinity readyState: 1
+Console.js:61 Preview video duration change: 3.816
+queryClient.ts:15 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:15
+mutationFn @ VideoUploadModal.tsx:545
+fn @ @tanstack_react-query.js?v=63ba92c3:1189
+run @ @tanstack_react-query.js?v=63ba92c3:494
+start @ @tanstack_react-query.js?v=63ba92c3:536
+execute @ @tanstack_react-query.js?v=63ba92c3:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=63ba92c3:2630
+(anonymous) @ @tanstack_react-query.js?v=63ba92c3:3295
+handleSubmit @ VideoUploadModal.tsx:629
+await in handleSubmit
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=63ba92c3:5449Understand this error

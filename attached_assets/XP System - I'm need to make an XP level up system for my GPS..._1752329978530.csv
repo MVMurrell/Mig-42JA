@@ -1,0 +1,16 @@
+Activity,XP Reward (Suggested Range),Coin Reward (Suggested Range),Notes
+Post Videos,High (20XP),None,"Core content creation, should be well rewarded for effort. Consider a bonus if videos receive high engagement (likes, comments)."
+Watch Videos,Low (1 XP),None,"This is a frequent activity, so small XP per video is good."
+Like a Video,None,None,"Simple engagement, frequent action."
+Text Comment on Video,Low (2 XP),None,Slightly more effort than a like.
+Video Comment on Video,Medium (5 XP),None,More effort and engagement than text.
+Flag Video (Confirmed Bad Content),High (25 XP),Medium (15),Crucial for community moderation. High reward encourages vigilance.
+Create a Group,Medium (10 XP),None,Rewards community building.
+Track Location (Walking/Biking),Medium (XP/distance),Medium (Coins/distance),Example: 5 XP and 1 coins per mile. Encourages real-world exploration. Adjust rates based on desired activity levels.
+Find Treasure Chest,Low (5 XP),Varies (5-100),Primary reward is coins. XP is a bonus for discovering it.
+Participate in Quest (Post Videos),Medium (10 XP per video),Rewarded upon completion,XP for individual contributions. Quest completion provides group coin reward.
+Complete a Quest (All Participants),High (20 XP),Rewarded upon completion,"Significant group achievement, warrants good XP and coin rewards."
+Help Defeat Dragon (Watch Videos),Medium (1 XP per video),Rewarded upon defeat,XP for individual contribution to the group effort.
+Defeat Dragon (All Participants),High (25 XP),Rewarded upon defeat,"Major group event, significant rewards."
+Play Videos within 100ft Radius (Free),Low (1 XP per video),N/A,"Encourages real-world exploration and discovery. Same as watching videos, but highlights the in-person benefit."
+Play Videos Outside Radius (Cost Coin),Low (1 XP per video),N/A (costs 1 coin),"Same as watching videos, but emphasizes the convenience cost."

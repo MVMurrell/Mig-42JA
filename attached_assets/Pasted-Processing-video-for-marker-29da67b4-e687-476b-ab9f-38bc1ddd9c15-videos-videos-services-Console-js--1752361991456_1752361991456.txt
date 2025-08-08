@@ -1,0 +1,42 @@
+Processing video for marker: 29da67b4-e687-476b-ab9f-38bc1ddd9c15 videos videos services
+Console.js:61 Creating marker at position: {lat: 36.05723296, lng: -94.16076388}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: videos videos
+Console.js:61 Zoom level changed to: 19 Total markers: 1
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleOnBlur @ SessionManager.ts:258Understand this error
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleVisibilityChange @ SessionManager.ts:160Understand this error
+Console.js:61 PWA: Checked for updates
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToUpsertSession @ SessionManager.ts:46
+handleOnFocus @ SessionManager.ts:228Understand this error
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleOnBlur @ SessionManager.ts:258Understand this error
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleVisibilityChange @ SessionManager.ts:160Understand this error
+Console.js:61 PWA: Checked for updates

@@ -1,0 +1,102 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Marker clicked for video: e98c7182-d3c1-4587-acee-70fc6f680134 Test success
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: e98c7182-d3c1-4587-acee-70fc6f680134
+Console.js:61 handleVideoClick called with video: e98c7182-d3c1-4587-acee-70fc6f680134
+Console.js:61 Current targetVideoId: null
+Console.js:61 Video format detection: {videoUrl: '/api/videos/bunny-proxy/451d4c3f-f170-4ee8-830b-a9444a8d64a7', videoDbUrl: '/api/videos/bunny-proxy/451d4c3f-f170-4ee8-830b-a9444a8d64a7', bunnyVideoId: undefined, isHLS: true, hlsSupported: true}
+Console.js:61 Initializing HLS player for Bunny.net stream
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Marked video e98c7182-d3c1-4587-acee-70fc6f680134 as watched
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+7Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/bc404c3d-5bfa-4ae4-836c-1aff9573718d can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 HLS manifest loaded successfully
+66Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/b462b29d-7b45-4255-96ba-179598edc460 can play - format is supported
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+110Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/b462b29d-7b45-4255-96ba-179598edc460 can play - format is supported
+Console.js:61 HLS manifest loaded successfully
+346Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/45f27999-85de-4c6e-b9f8-e4c1d8d6edec can play - format is supported
+VideoPlayerModal.tsx:504 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/451d4c3f-f170-4ee8-830b-a9444a8d64a7/720p/video.m3u8 404 (Not Found)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=3ed1ae57:27032
+loadInternal @ hls__js.js?v=3ed1ae57:27006
+load @ hls__js.js?v=3ed1ae57:26970
+load @ hls__js.js?v=3ed1ae57:30863
+onManifestLoading @ hls__js.js?v=3ed1ae57:30705
+emit @ hls__js.js?v=3ed1ae57:8863
+emit @ hls__js.js?v=3ed1ae57:31317
+trigger @ hls__js.js?v=3ed1ae57:31324
+loadSource @ hls__js.js?v=3ed1ae57:31427
+handleQualityChange @ VideoPlayerModal.tsx:504
+onClick @ VideoPlayerModal.tsx:741
+handleEvent @ chunk-KPO4B3UQ.js?v=3ed1ae57:14
+callCallback2 @ chunk-WERSD76P.js?v=3ed1ae57:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=3ed1ae57:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=3ed1ae57:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=3ed1ae57:3736
+executeDispatch @ chunk-WERSD76P.js?v=3ed1ae57:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=3ed1ae57:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=3ed1ae57:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=3ed1ae57:7051
+(anonymous) @ chunk-WERSD76P.js?v=3ed1ae57:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=3ed1ae57:18913
+batchedUpdates @ chunk-WERSD76P.js?v=3ed1ae57:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=3ed1ae57:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=3ed1ae57:5478
+dispatchEvent @ chunk-WERSD76P.js?v=3ed1ae57:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=3ed1ae57:5449Understand this error
+Console.js:61 HLS error: {type: 'networkError', details: 'manifestLoadError', fatal: true, url: '/api/videos/bunny-proxy/451d4c3f-f170-4ee8-830b-a9444a8d64a7/720p/video.m3u8', loader: XhrLoader, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:193
+emit @ hls__js.js?v=3ed1ae57:8863
+emit @ hls__js.js?v=3ed1ae57:31317
+trigger @ hls__js.js?v=3ed1ae57:31324
+handleNetworkError @ hls__js.js?v=3ed1ae57:31040
+onError @ hls__js.js?v=3ed1ae57:30857
+readystatechange @ hls__js.js?v=3ed1ae57:27096
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=3ed1ae57:27032
+loadInternal @ hls__js.js?v=3ed1ae57:27006
+load @ hls__js.js?v=3ed1ae57:26970
+load @ hls__js.js?v=3ed1ae57:30863
+onManifestLoading @ hls__js.js?v=3ed1ae57:30705
+emit @ hls__js.js?v=3ed1ae57:8863
+emit @ hls__js.js?v=3ed1ae57:31317
+trigger @ hls__js.js?v=3ed1ae57:31324
+loadSource @ hls__js.js?v=3ed1ae57:31427
+handleQualityChange @ VideoPlayerModal.tsx:504
+onClick @ VideoPlayerModal.tsx:741
+handleEvent @ chunk-KPO4B3UQ.js?v=3ed1ae57:14
+callCallback2 @ chunk-WERSD76P.js?v=3ed1ae57:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=3ed1ae57:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=3ed1ae57:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=3ed1ae57:3736
+executeDispatch @ chunk-WERSD76P.js?v=3ed1ae57:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=3ed1ae57:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=3ed1ae57:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=3ed1ae57:7051
+(anonymous) @ chunk-WERSD76P.js?v=3ed1ae57:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=3ed1ae57:18913
+batchedUpdates @ chunk-WERSD76P.js?v=3ed1ae57:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=3ed1ae57:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=3ed1ae57:5478
+dispatchEvent @ chunk-WERSD76P.js?v=3ed1ae57:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=3ed1ae57:5449Understand this error
+Console.js:61 Network error, trying to recover...

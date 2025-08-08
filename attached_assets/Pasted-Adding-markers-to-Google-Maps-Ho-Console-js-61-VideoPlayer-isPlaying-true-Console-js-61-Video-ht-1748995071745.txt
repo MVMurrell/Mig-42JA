@@ -1,0 +1,30 @@
+Adding markers to Google Maps: _.Ho
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 Profile clicked - currentUser: {id: '43317410', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD…MeM6ZLdULIrKMZXg6XJZRFAP5VGANT9MzmSqc84I51As//9k=', …}
+Console.js:61 Profile clicked - video.userId: user003
+Console.js:61 Profile clicked - video: {id: '9191b4ff-fcdb-4fdd-a9af-3820abb29806', title: 'Coding Bootcamp Experience', description: 'My journey through an intensive coding bootcamp program', category: 'education', latitude: '34.05220000', …}
+Console.js:61 `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ @radix-ui_react-dialog.js?v=f0b7f74a:325
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f0b7f74a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f0b7f74a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f0b7f74a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f0b7f74a:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19416
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627Understand this error
+Console.js:61 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.

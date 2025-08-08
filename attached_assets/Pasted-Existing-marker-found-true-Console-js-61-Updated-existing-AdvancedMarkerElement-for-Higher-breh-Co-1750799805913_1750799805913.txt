@@ -1,0 +1,52 @@
+Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Higher breh
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05719557, -94.16058985)
+Console.js:61 Zoom level changed to: 15 Total markers: 9
+Console.js:61 🎬 VideoFeedModal: Native play event - setting isPlaying to true
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: false should show play button: true
+Console.js:61 🎬 VideoFeedModal: Native pause event - setting isPlaying to false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: false should show play button: true
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: false should show play button: true
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Native play event - setting isPlaying to true
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: false should show play button: true
+Console.js:61 🎬 VideoFeedModal: Native pause event - setting isPlaying to false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: false should show play button: true
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: false should show play button: true
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: true
+Console.js:61 🎬 VideoFeedModal: Render check - isPlaying: true should show play button: false

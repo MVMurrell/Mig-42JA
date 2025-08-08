@@ -1,0 +1,47 @@
+Replit, the state is definitely updating. The core issue is that the component responsible for rendering the modal is not re-rendering itself (or not receiving updated props) even after its state changes.
+
+Your task is to provide the following code snippets:
+
+The entire component where showThreadMessageRejectionModal and selectedThreadMessage are declared using useState. This includes the useState lines and the function body of that component.
+The entire JSX return statement (or render method for a class component) from that same component. This will show how VideoRejectionModal is conditionally rendered.
+Focus on the component that contains handleThreadMessageClick, the useState hooks, and the conditional JSX for the modal.
+
+Example of what I'm looking for (please provide the actual code):
+
+TypeScript
+
+// Inside the component that is handling the message thread and modal logic
+// e.g., MessageThreadView.tsx or similar
+
+// 1. Where useState is declared
+const MyMessageThreadComponent = () => { // Or export default function MyMessageThreadComponent() {
+    const [showThreadMessageRejectionModal, setShowThreadMessageRejectionModal] = useState(false);
+    const [selectedThreadMessage, setSelectedThreadMessage] = useState(null);
+
+    // ... (other state, useEffects, functions like handleThreadMessageClick) ...
+
+    // 2. The JSX return statement
+    return (
+        <div>
+            {/* ... other thread content ... */}
+
+            {/* This is the critical conditional rendering part */}
+            {showThreadMessageRejectionModal && selectedThreadMessage && ( // <--- Check this condition carefully in your code!
+                <VideoRejectionModal
+                    isOpen={showThreadMessageRejectionModal}
+                    comment={selectedThreadMessage.comment} // Assuming selectedThreadMessage has these properties
+                    video={selectedThreadMessage.video}
+                    isComment={selectedThreadMessage.messageType === 'comment'} // Or similar logic
+                    onClose={() => {
+                        setShowThreadMessageRejectionModal(false);
+                        setSelectedThreadMessage(null);
+                    }}
+                />
+            )}
+        </div>
+    );
+};
+
+// Check if this component is wrapped in React.memo
+// e.g., export default React.memo(MyMessageThreadComponent);
+Once you provide this code, I can identify why the component isn't re-rendering or why the conditional rendering is still failing despite the state update.

@@ -1,0 +1,63 @@
+RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 1, videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', showComments: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+119Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/86613567-eb07-452c-b821-317f87954b08 can play - format is supported
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81'}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 26, commentVideoUrl: '/api/videos/bunny-proxy/cb5871cc-ed7a-4a17-ab9a-ce02dcdc6c81', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 1, videoId: 'c1647877-54ed-410e-be34-c8aa666d226e', showComments: false}
+282Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/86613567-eb07-452c-b821-317f87954b08 can play - format is supported
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+350Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/86613567-eb07-452c-b821-317f87954b08 can play - format is supported

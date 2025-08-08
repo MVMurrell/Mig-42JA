@@ -1,0 +1,31 @@
+group-profile.tsx:485 Uncaught ReferenceError: AlertTriangle is not defined
+    at group-profile.tsx:485:28
+    at Array.map (<anonymous>)
+    at GroupProfilePage (group-profile.tsx:454:35)
+
+group-profile.tsx:485 Uncaught ReferenceError: AlertTriangle is not defined
+    at group-profile.tsx:485:28
+    at Array.map (<anonymous>)
+    at GroupProfilePage (group-profile.tsx:454:35)
+Console.js:61 The above error occurred in the <GroupProfilePage> component:
+
+    at GroupProfilePage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/group-profile.tsx:37:22)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=39a88b9d:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=39a88b9d:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=39a88b9d:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=39a88b9d:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…unner/workspace/node_modules/.vite/deps/chunk-7SUNRGEF.js?v=39a88b9d:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…rkspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=39a88b9d:59:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.d…rkspace/node_modules/.vite/deps/@tanstack_react-query.js?v=39a88b9d:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+chunk-RPCDYKBN.js?v=39a88b9d:9129 Uncaught ReferenceError: AlertTriangle is not defined
+    at group-profile.tsx:485:28
+    at Array.map (<anonymous>)
+    at GroupProfilePage (group-profile.tsx:454:35)
+﻿
+

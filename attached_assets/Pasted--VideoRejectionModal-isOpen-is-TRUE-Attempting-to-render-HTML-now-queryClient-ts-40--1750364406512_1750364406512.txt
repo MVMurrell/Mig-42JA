@@ -1,0 +1,116 @@
+🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+queryClient.ts:40 
+            
+            
+           DELETE https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/video-comments/746e535e-d5e9-4392-9b0c-f51f2e0cf8f3 404 (Not Found)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:40
+mutationFn @ VideoRejectionModal.tsx:95
+fn @ @tanstack_react-query.js?v=5e0aadeb:1189
+run @ @tanstack_react-query.js?v=5e0aadeb:494
+start @ @tanstack_react-query.js?v=5e0aadeb:536
+execute @ @tanstack_react-query.js?v=5e0aadeb:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=5e0aadeb:2630
+(anonymous) @ @tanstack_react-query.js?v=5e0aadeb:3295
+handleDeleteVideo @ VideoRejectionModal.tsx:147
+callCallback2 @ chunk-RPCDYKBN.js?v=5e0aadeb:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=5e0aadeb:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=5e0aadeb:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=5e0aadeb:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=5e0aadeb:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=5e0aadeb:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=5e0aadeb:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=5e0aadeb:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=5e0aadeb:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=5e0aadeb:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=5e0aadeb:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=5e0aadeb:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=5e0aadeb:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5449Understand this error
+Console.js:61 Video comment deletion error: Error: 404: {"message":"Video comment not found"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:47:3)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoRejectionModal.tsx:134
+execute @ @tanstack_react-query.js?v=5e0aadeb:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=5e0aadeb:2630
+(anonymous) @ @tanstack_react-query.js?v=5e0aadeb:3295
+handleDeleteVideo @ VideoRejectionModal.tsx:147
+callCallback2 @ chunk-RPCDYKBN.js?v=5e0aadeb:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=5e0aadeb:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=5e0aadeb:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=5e0aadeb:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=5e0aadeb:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=5e0aadeb:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=5e0aadeb:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=5e0aadeb:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=5e0aadeb:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=5e0aadeb:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=5e0aadeb:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=5e0aadeb:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=5e0aadeb:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5449Understand this error
+2Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🗑️ DELETE REQUEST: Using endpoint /api/video-comments/746e535e-d5e9-4392-9b0c-f51f2e0cf8f3 for video comment
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+queryClient.ts:40 
+            
+            
+           DELETE https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/video-comments/746e535e-d5e9-4392-9b0c-f51f2e0cf8f3 404 (Not Found)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:40
+mutationFn @ VideoRejectionModal.tsx:95
+fn @ @tanstack_react-query.js?v=5e0aadeb:1189
+run @ @tanstack_react-query.js?v=5e0aadeb:494
+start @ @tanstack_react-query.js?v=5e0aadeb:536
+execute @ @tanstack_react-query.js?v=5e0aadeb:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=5e0aadeb:2630
+(anonymous) @ @tanstack_react-query.js?v=5e0aadeb:3295
+handleDeleteVideo @ VideoRejectionModal.tsx:147
+callCallback2 @ chunk-RPCDYKBN.js?v=5e0aadeb:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=5e0aadeb:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=5e0aadeb:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=5e0aadeb:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=5e0aadeb:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=5e0aadeb:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=5e0aadeb:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=5e0aadeb:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=5e0aadeb:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=5e0aadeb:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=5e0aadeb:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=5e0aadeb:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=5e0aadeb:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5449Understand this error
+Console.js:61 Video comment deletion error: Error: 404: {"message":"Video comment not found"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:47:3)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoRejectionModal.tsx:134
+execute @ @tanstack_react-query.js?v=5e0aadeb:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=5e0aadeb:2630
+(anonymous) @ @tanstack_react-query.js?v=5e0aadeb:3295
+handleDeleteVideo @ VideoRejectionModal.tsx:147
+callCallback2 @ chunk-RPCDYKBN.js?v=5e0aadeb:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=5e0aadeb:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=5e0aadeb:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=5e0aadeb:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=5e0aadeb:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=5e0aadeb:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=5e0aadeb:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=5e0aadeb:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=5e0aadeb:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=5e0aadeb:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=5e0aadeb:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=5e0aadeb:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=5e0aadeb:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=5e0aadeb:5449Understand this error
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!

@@ -1,0 +1,87 @@
+POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/collector-3/uncollect 500 (Internal Server Error)
+window.fetch @ Network.js:219
+mutationFn @ Collecting.tsx:47
+fn @ @tanstack_react-query.js?v=0e1c40fa:1189
+run @ @tanstack_react-query.js?v=0e1c40fa:494
+start @ @tanstack_react-query.js?v=0e1c40fa:536
+execute @ @tanstack_react-query.js?v=0e1c40fa:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0e1c40fa:2630
+(anonymous) @ @tanstack_react-query.js?v=0e1c40fa:3295
+handleStopCollecting @ Collecting.tsx:130
+onClick @ Collecting.tsx:261
+callCallback2 @ chunk-RPCDYKBN.js?v=0e1c40fa:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0e1c40fa:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0e1c40fa:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0e1c40fa:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0e1c40fa:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0e1c40fa:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0e1c40fa:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0e1c40fa:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0e1c40fa:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0e1c40fa:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0e1c40fa:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0e1c40fa:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0e1c40fa:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0e1c40fa:5449Understand this error
+Collecting.tsx:47 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/collector-3/uncollect 500 (Internal Server Error)
+window.fetch @ Network.js:219
+mutationFn @ Collecting.tsx:47
+fn @ @tanstack_react-query.js?v=0e1c40fa:1189
+run @ @tanstack_react-query.js?v=0e1c40fa:494
+start @ @tanstack_react-query.js?v=0e1c40fa:536
+execute @ @tanstack_react-query.js?v=0e1c40fa:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0e1c40fa:2630
+(anonymous) @ @tanstack_react-query.js?v=0e1c40fa:3295
+handleStopCollecting @ Collecting.tsx:130
+onClick @ Collecting.tsx:261
+callCallback2 @ chunk-RPCDYKBN.js?v=0e1c40fa:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0e1c40fa:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0e1c40fa:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0e1c40fa:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0e1c40fa:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0e1c40fa:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0e1c40fa:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0e1c40fa:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0e1c40fa:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0e1c40fa:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0e1c40fa:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0e1c40fa:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0e1c40fa:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0e1c40fa:5449Understand this error
+Collecting.tsx:47 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/collector-3/uncollect 500 (Internal Server Error)
+window.fetch @ Network.js:219
+mutationFn @ Collecting.tsx:47
+fn @ @tanstack_react-query.js?v=0e1c40fa:1189
+run @ @tanstack_react-query.js?v=0e1c40fa:494
+start @ @tanstack_react-query.js?v=0e1c40fa:536
+execute @ @tanstack_react-query.js?v=0e1c40fa:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0e1c40fa:2630
+(anonymous) @ @tanstack_react-query.js?v=0e1c40fa:3295
+handleStopCollecting @ Collecting.tsx:130
+onClick @ Collecting.tsx:261
+callCallback2 @ chunk-RPCDYKBN.js?v=0e1c40fa:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0e1c40fa:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0e1c40fa:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0e1c40fa:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0e1c40fa:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0e1c40fa:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0e1c40fa:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0e1c40fa:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0e1c40fa:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0e1c40fa:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0e1c40fa:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0e1c40fa:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0e1c40fa:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0e1c40fa:5449Understand this error

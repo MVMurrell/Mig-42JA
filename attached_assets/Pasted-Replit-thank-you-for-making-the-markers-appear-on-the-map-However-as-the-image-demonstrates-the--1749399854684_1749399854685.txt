@@ -1,0 +1,61 @@
+Replit, thank you for making the markers appear on the map! However, as the image demonstrates, the gem icons are distorted and cut off. The red gem is losing its specific square shape, and the green gem (which should be tall and skinny) is squished. This means they are not maintaining their original aspect ratios.
+
+The problem lies in how the size and scaledSize properties are being defined in the google.maps.Icon object. While the URLs are now correct, the dimensions are forcing the icons to fit into a shape that doesn't match their original proportions.
+
+To fix this, we need to ensure that the scaledSize for each gem icon precisely matches (or proportionally scales) the original aspect ratio of its corresponding PNG image.
+
+Here are the specific instructions to resolve this:
+
+Determine the EXACT Original Dimensions for EACH Gem PNG:
+
+Action: For every unique gem PNG image (red, green, etc.), determine its precise pixel width and height.
+Provide these dimensions: For example, tell me:
+"Red gem PNG: 32px wide, 32px high"
+"Green gem PNG: 20px wide, 60px high" (if it's truly tall and skinny)
+"Blue gem PNG: 40px wide, 40px high"
+Method: You can do this by inspecting the image file properties on your local machine, or by using a simple image viewer. If Replit has command-line access, it can use tools like identify (ImageMagick) or a Node.js image library to get these programmatically.
+Adjust scaledSize to Match Original Aspect Ratios (Crucial Step):
+
+Action: In your frontend JavaScript code where you define the google.maps.Icon object for each marker, the scaledSize property must reflect the original aspect ratio of that specific gem PNG.
+Explanation:
+size: This is the total size of the image file. For a single icon PNG, this is usually the same as its original dimensions.
+scaledSize: This is the display size of the icon on the map. If you want to scale the icon down while maintaining its aspect ratio, you must scale both the width and height proportionally.
+Example (assuming you know the original dimensions):
+JavaScript
+
+// Example for the Red Gem (if it's originally 32x32 pixels and you want to display it at that size):
+const redGemIconProperties = {
+    url: '/map_icons/gems/red_gem.png', // Correct public URL
+    size: new google.maps.Size(32, 32),
+    scaledSize: new google.maps.Size(32, 32), // Display at its original square shape
+    anchor: new google.maps.Point(16, 32) // Example: bottom-center for a 32x32 icon
+};
+
+// Example for the Green Gem (if it's originally 20x60 pixels, tall and skinny):
+const greenGemIconProperties = {
+    url: '/map_icons/gems/green_gem.png', // Correct public URL
+    size: new google.maps.Size(20, 60), // Original dimensions
+    scaledSize: new google.maps.Size(20, 60), // Display at its original tall & skinny shape
+    anchor: new google.maps.Point(10, 60) // Example: bottom-center for a 20x60 icon
+};
+
+// If you want to scale down the green gem while maintaining aspect ratio (e.g., to half size):
+const greenGemScaledIconProperties = {
+    url: '/map_icons/gems/green_gem.png',
+    size: new google.maps.Size(20, 60),
+    scaledSize: new google.maps.Size(10, 30), // Scaled proportionally
+    anchor: new google.maps.Point(5, 30) // Adjusted anchor
+};
+
+// ... then use these icon property objects for your google.maps.Marker instances
+Provide the CURRENT Code Snippet for Icon Creation:
+
+Action: Please provide the exact JavaScript code snippet where you are currently defining the google.maps.Icon objects (including url, size, scaledSize, and anchor) for the red gem, green gem, and any other unique gem categories. This will allow me to pinpoint any specific errors.
+Implementation Steps & Verification:
+
+First, get the precise original pixel dimensions of each gem PNG.
+Then, modify the scaledSize for each icon in your code to match its original aspect ratio.
+If you intend to scale them down, ensure you scale both width and height proportionally.
+Test with a new map visualization.
+Provide screenshots of the map with the corrected gems, and the updated code snippet for icon creation.
+This will ensure your gems display with their unique, intended shapes on the map.

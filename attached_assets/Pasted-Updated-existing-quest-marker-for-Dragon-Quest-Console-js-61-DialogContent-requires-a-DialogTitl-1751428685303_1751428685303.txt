@@ -1,0 +1,73 @@
+Updated existing quest marker for: Dragon Quest
+Console.js:61 `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ chunk-V4SDQJCY.js?v=0aec14a9:325
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Console.js:61 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ chunk-V4SDQJCY.js?v=0aec14a9:339
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this warning
+queryClient.ts:55 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/claim-ad-reward 404 (Not Found)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:55
+mutationFn @ GemCoinsModal.tsx:122
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+handleAdReward @ GemCoinsModal.tsx:229
+(anonymous) @ AdRewardModal.tsx:51
+setTimeout
+(anonymous) @ AdRewardModal.tsx:49
+basicStateReducer @ chunk-RPCDYKBN.js?v=0aec14a9:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=0aec14a9:12385
+(anonymous) @ AdRewardModal.tsx:45
+setInterval
+startAdTimer @ AdRewardModal.tsx:44
+(anonymous) @ AdRewardModal.tsx:38
+setTimeout
+(anonymous) @ AdRewardModal.tsx:36
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error

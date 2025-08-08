@@ -1,0 +1,518 @@
+Console.js:61 As of February 21st, 2024, google.maps.Marker is deprecated. Please use google.maps.marker.AdvancedMarkerElement instead. At this time, google.maps.Marker is not scheduled to be discontinued, but google.maps.marker.AdvancedMarkerElement is recommended over google.maps.Marker. While google.maps.Marker will continue to receive bug fixes for any major regressions, existing bugs in google.maps.Marker will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/deprecations for additional details and https://developers.google.com/maps/documentation/javascript/advanced-markers/migration for the migration guide.
+Mt.forEach.n.<computed> @ Console.js:61
+_.Kl @ main.js:184
+createUserMarker @ MapInterface.tsx:271
+initializeMap @ MapInterface.tsx:181
+await in initializeMap
+(anonymous) @ MapInterface.tsx:188
+commitHookEffectListMount @ chunk-WERSD76P.js?v=44dec0b4:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=44dec0b4:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=44dec0b4:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=44dec0b4:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=44dec0b4:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=44dec0b4:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=44dec0b4:19447
+commitRootImpl @ chunk-WERSD76P.js?v=44dec0b4:19416
+commitRoot @ chunk-WERSD76P.js?v=44dec0b4:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=44dec0b4:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=44dec0b4:9119
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=44dec0b4:555
+flush @ @tanstack_react-query.js?v=44dec0b4:569
+batch @ @tanstack_react-query.js?v=44dec0b4:587
+dispatch_fn @ @tanstack_react-query.js?v=44dec0b4:996
+setData @ @tanstack_react-query.js?v=44dec0b4:696
+onSuccess @ @tanstack_react-query.js?v=44dec0b4:897
+resolve @ @tanstack_react-query.js?v=44dec0b4:456
+Promise.then
+run @ @tanstack_react-query.js?v=44dec0b4:498
+start @ @tanstack_react-query.js?v=44dec0b4:536
+fetch @ @tanstack_react-query.js?v=44dec0b4:926
+executeFetch_fn @ @tanstack_react-query.js?v=44dec0b4:2211
+onSubscribe @ @tanstack_react-query.js?v=44dec0b4:1898
+subscribe @ @tanstack_react-query.js?v=44dec0b4:24
+(anonymous) @ @tanstack_react-query.js?v=44dec0b4:3022
+subscribeToStore @ chunk-WERSD76P.js?v=44dec0b4:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=44dec0b4:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=44dec0b4:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=44dec0b4:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=44dec0b4:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=44dec0b4:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=44dec0b4:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=44dec0b4:19447
+commitRootImpl @ chunk-WERSD76P.js?v=44dec0b4:19416
+commitRoot @ chunk-WERSD76P.js?v=44dec0b4:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=44dec0b4:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=44dec0b4:9119
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=44dec0b4:555
+flush @ @tanstack_react-query.js?v=44dec0b4:569
+batch @ @tanstack_react-query.js?v=44dec0b4:587
+dispatch_fn @ @tanstack_react-query.js?v=44dec0b4:996
+setData @ @tanstack_react-query.js?v=44dec0b4:696
+onSuccess @ @tanstack_react-query.js?v=44dec0b4:897
+resolve @ @tanstack_react-query.js?v=44dec0b4:456
+Promise.then
+run @ @tanstack_react-query.js?v=44dec0b4:498
+start @ @tanstack_react-query.js?v=44dec0b4:536
+fetch @ @tanstack_react-query.js?v=44dec0b4:926
+executeFetch_fn @ @tanstack_react-query.js?v=44dec0b4:2211
+onSubscribe @ @tanstack_react-query.js?v=44dec0b4:1898
+subscribe @ @tanstack_react-query.js?v=44dec0b4:24
+(anonymous) @ @tanstack_react-query.js?v=44dec0b4:3022
+subscribeToStore @ chunk-WERSD76P.js?v=44dec0b4:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=44dec0b4:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=44dec0b4:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=44dec0b4:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=44dec0b4:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=44dec0b4:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=44dec0b4:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=44dec0b4:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=44dec0b4:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=44dec0b4:9119
+commitRootImpl @ chunk-WERSD76P.js?v=44dec0b4:19432
+commitRoot @ chunk-WERSD76P.js?v=44dec0b4:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=44dec0b4:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=44dec0b4:18718
+workLoop @ chunk-WERSD76P.js?v=44dec0b4:197
+flushWork @ chunk-WERSD76P.js?v=44dec0b4:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=44dec0b4:384Understand this warning
+Console.js:61 Adding markers to Google Maps: _.Ho {gm_bindings_: {…}, eM: _.Ho, __gm: yfa, gm_accessors_: {…}, mapCapabilities: {…}, …}
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/66922669-36b9-407e-ac8a-447418bdcf36/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/66922669-36b9-407e-ac8a-447418bdcf36/stream net::ERR_ABORTED 404 (Not Found)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/c4996576-c345-4a40-906b-3bdec88809c8/stream net::ERR_ABORTED 404 (Not Found)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/4e426e28-a319-45d7-a996-cd01b5ef07f9/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/d1b21ff8-e916-4152-8889-a25ffef511b9/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/951b3101-3483-4bb2-9e3a-77d8a97d3a6b/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/a3983b33-7a7c-43d1-8f21-4435bcb78b0c/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/477b365c-d06f-47ee-b7da-50c81bb7fcc9/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/3fb55130-bfb5-4e35-a331-e7e74b29c4d5/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/a53ccba0-c714-42ca-911b-a892de5536bb/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/967710bb-e6b4-4b22-9620-ed3b2e92e36a/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/8df9dfe3-1e28-433e-bdd6-25442da6b690/stream 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/f5dee914-a253-4c9a-97c6-6027d8ed881c/stream 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9d6e076d-0b08-495f-82d7-f2556a32910b/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9d6e076d-0b08-495f-82d7-f2556a32910b/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/4c6a25ea-6fd5-46b2-9665-91d1c27d2459/stream 400 (Bad Request)Understand this error
+Console.js:61 Video be5a5f00-042a-4851-b276-69fcf6662c83 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video daffdf14-eff3-4b27-bf8b-83993bf6d6a8 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video 0ae0c28f-3434-4d39-a9ea-8892a7f1ad0d failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video e407b31b-8786-4c5b-b677-76492eebd336 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video 493c7d29-9ce4-44a4-b12a-fd54453abe18 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video 184f9456-51e6-419a-a99b-70b4068de723 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/c4996576-c345-4a40-906b-3bdec88809c8/stream 404 (Not Found)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/66922669-36b9-407e-ac8a-447418bdcf36/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/66922669-36b9-407e-ac8a-447418bdcf36/stream net::ERR_ABORTED 404 (Not Found)Understand this error
+Console.js:61 Video c4996576-c345-4a40-906b-3bdec88809c8 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video 66922669-36b9-407e-ac8a-447418bdcf36 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/4e426e28-a319-45d7-a996-cd01b5ef07f9/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/d1b21ff8-e916-4152-8889-a25ffef511b9/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+Console.js:61 Video 4e426e28-a319-45d7-a996-cd01b5ef07f9 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video d1b21ff8-e916-4152-8889-a25ffef511b9 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/951b3101-3483-4bb2-9e3a-77d8a97d3a6b/stream 400 (Bad Request)Understand this error
+Console.js:61 Video 951b3101-3483-4bb2-9e3a-77d8a97d3a6b failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/3fb55130-bfb5-4e35-a331-e7e74b29c4d5/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/477b365c-d06f-47ee-b7da-50c81bb7fcc9/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+Console.js:61 Video 3fb55130-bfb5-4e35-a331-e7e74b29c4d5 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video 477b365c-d06f-47ee-b7da-50c81bb7fcc9 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/8df9dfe3-1e28-433e-bdd6-25442da6b690/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+Console.js:61 Video 8df9dfe3-1e28-433e-bdd6-25442da6b690 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/a3983b33-7a7c-43d1-8f21-4435bcb78b0c/stream 400 (Bad Request)Understand this error
+Console.js:61 Video a3983b33-7a7c-43d1-8f21-4435bcb78b0c failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/a53ccba0-c714-42ca-911b-a892de5536bb/stream 400 (Bad Request)Understand this error
+Console.js:61 Video a53ccba0-c714-42ca-911b-a892de5536bb failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/967710bb-e6b4-4b22-9620-ed3b2e92e36a/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+Console.js:61 Video 967710bb-e6b4-4b22-9620-ed3b2e92e36a failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/4c6a25ea-6fd5-46b2-9665-91d1c27d2459/stream 400 (Bad Request)Understand this error
+Console.js:61 Video 4c6a25ea-6fd5-46b2-9665-91d1c27d2459 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/f5dee914-a253-4c9a-97c6-6027d8ed881c/stream 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9d6e076d-0b08-495f-82d7-f2556a32910b/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9d6e076d-0b08-495f-82d7-f2556a32910b/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+Console.js:61 Video f5dee914-a253-4c9a-97c6-6027d8ed881c failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoPlayerModal.tsx:161
+callCallback2 @ chunk-WERSD76P.js?v=44dec0b4:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=44dec0b4:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=44dec0b4:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=44dec0b4:3736
+executeDispatch @ chunk-WERSD76P.js?v=44dec0b4:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=44dec0b4:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=44dec0b4:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=44dec0b4:7051
+(anonymous) @ chunk-WERSD76P.js?v=44dec0b4:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=44dec0b4:18913
+batchedUpdates @ chunk-WERSD76P.js?v=44dec0b4:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=44dec0b4:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=44dec0b4:5478
+dispatchEvent @ chunk-WERSD76P.js?v=44dec0b4:5472Understand this error
+Console.js:61 Video 9d6e076d-0b08-495f-82d7-f2556a32910b failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}

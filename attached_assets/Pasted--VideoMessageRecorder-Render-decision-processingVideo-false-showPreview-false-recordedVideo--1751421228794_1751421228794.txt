@@ -1,0 +1,18 @@
+🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: false recordedVideo: false recordedVideoUrl: false
+Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: false recordedVideo: false recordedVideoUrl: false
+Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: false recordedVideo: false recordedVideoUrl: false
+48Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: false recordedVideo: false recordedVideoUrl: false
+Console.js:61 🎬 VideoMessageRecorder: Recording stopped, creating blob URL: blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/a9255fd6-6352-4280-aef7-8784bd63ae10
+Console.js:61 🎬 VideoMessageRecorder: Blob size: 1638913 bytes
+Console.js:61 🎬 VideoMessageRecorder: Camera stream stopped
+Console.js:61 🎬 VideoMessageRecorder: State updated - showPreview: true, isRecording: false
+2Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: true recordedVideo: true recordedVideoUrl: true
+Console.js:61 🎬 VideoMessageRecorder: Preview video started playing
+Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: true recordedVideo: true recordedVideoUrl: true
+14Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: false showPreview: true recordedVideo: true recordedVideoUrl: true
+Console.js:61 🎬 VideoMessageRecorder: Render decision - processingVideo: true showPreview: false recordedVideo: true recordedVideoUrl: true
+Console.js:61 🎬 THREAD VIDEO MESSAGE: Starting chunked upload - thread-message-1751421109279.webm (1638913 bytes, 2 chunks)
+Console.js:61 🎬 THREAD VIDEO MESSAGE: Upload initialized with ID: cbebd418-f9d3-4871-9f26-fdf6f0291e37
+Console.js:61 🎬 THREAD VIDEO MESSAGE: Uploaded chunk 1/2
+Console.js:61 🎬 THREAD VIDEO MESSAGE: Uploaded chunk 2/2
+Console.js:61 🎬 THREAD VIDEO MESSAGE: Upload completed successfully

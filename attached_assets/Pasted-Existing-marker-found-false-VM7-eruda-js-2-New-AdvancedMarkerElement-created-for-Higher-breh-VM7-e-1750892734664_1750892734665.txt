@@ -1,0 +1,24 @@
+Existing marker found: false
+VM7 eruda.js:2 New AdvancedMarkerElement created for: Higher breh
+VM7 eruda.js:2 Zoom level changed to: 19 Total markers: 9
+VM7 eruda.js:2 GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…it.dev/group/0a82e3c5-3698-4b59-a925-a6d86898e177', currentModalState: false}
+VM7 eruda.js:2 🔄 State change detected - showThreadMessageRejectionModal: false
+VM7 eruda.js:2 🔄 State change detected - selectedThreadMessage: null
+VM7 eruda.js:2 🔄 Checking for group video restoration context: false 0 loading: true
+VM7 eruda.js:2 🔄 Checking for group video restoration context: false 0 loading: true
+VM7 eruda.js:2 🔄 Checking for group video restoration context: false 2 loading: false
+VM7 eruda.js:2 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+VM7 eruda.js:2 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+2VM7 eruda.js:2 HLS manifest loaded successfully
+VM7 eruda.js:2 Video comment loaded successfully: /api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800
+VM7 eruda.js:2 Video comment loaded successfully: /api/videos/bunny-proxy/086f68a9-661c-4691-a8c7-7c705a5b1b29
+VM7 eruda.js:2 Thread message: Navigating to user profile: google-oauth2|117032826996185616207
+Console.js:61 Profile: Using stored referrer context: {path: '/group/0a82e3c5-3698-4b59-a925-a6d86898e177', source: 'group_thread_username', modalContext: {…}}
+Console.js:61 Profile: Restoring thread modal context: {isInThread: true, threadId: '222d6b36-351c-4caa-b5a9-d9c8eb986cc8'}
+Console.js:61 GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…=222d6b36-351c-4caa-b5a9-d9c8eb986cc8&threadName=', currentModalState: false}
+Console.js:61 🔄 State change detected - showThreadMessageRejectionModal: false
+Console.js:61 🔄 State change detected - selectedThreadMessage: null
+Console.js:61 🔄 Checking for group video restoration context: false 0 loading: true
+Console.js:61 🔄 Checking for group video restoration context: false 0 loading: true
+Console.js:61 🔄 Checking for group video restoration context: false 2 loading: false
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0

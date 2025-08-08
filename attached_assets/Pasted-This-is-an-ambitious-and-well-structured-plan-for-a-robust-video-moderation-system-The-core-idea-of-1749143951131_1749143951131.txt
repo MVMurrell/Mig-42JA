@@ -1,0 +1,455 @@
+This is an ambitious and well-structured plan for a robust video moderation system! The core idea of asynchronous processing to ensure content safety and packaging videos properly is excellent. Your "processing" message and notification idea is also key for good user experience.
+
+Here's how we can set this up, broken down into architectural components and then a detailed prompt for Replit.
+
+First, let's gather some information to ensure accuracy in the steps.
+The search results confirm that Google Cloud Video Intelligence API is suitable for explicit content detection and works well with videos in Google Cloud Storage. Bunny.net has both Stream (for long-term serving with encoding) and Storage (for raw file storage). FFmpeg and ffprobe are suitable for video processing and getting duration on the backend. Asynchronous tasks in Replit can be managed, though robust solutions like Celery might require more setup.
+
+Video Processing and Moderation Pipeline
+Here's a comprehensive process for handling video uploads, moderation, and storage:
+
+Architecture Overview
+Frontend (User Interface):
+Allows users to upload videos.
+Displays a "Processing" message immediately after upload.
+Will eventually receive notifications about the video's status (approved/flagged).
+Replit Backend (Main App):
+Receives video uploads from the frontend.
+Saves the raw uploaded video to a temporary location (/tmp).
+Delegates video processing to an asynchronous task/worker. This is crucial so the user request doesn't time out.
+Returns an immediate response to the frontend (e.g., 202 Accepted, with a video_id for tracking).
+Replit Backend (Asynchronous Worker/Process):
+FFmpeg Pre-processing: Takes the raw uploaded video, standardizes its format (e.g., to MP4 H.264/AAC), and fixes any MediaRecorder quirks (like Infinity duration). This ensures compatibility with Google Cloud Video AI.
+Upload to Google Cloud Storage (GCS): Uploads the pre-processed video to a dedicated, private GCS bucket. This is where Google Cloud Video AI will access it.
+Google Cloud Video AI Analysis: Calls the Google Cloud Video Intelligence API on the video in GCS, specifically requesting EXPLICIT_CONTENT_DETECTION and potentially SPEECH_TRANSCRIPTION for audio content.
+Decision Logic: Based on the Video AI results:
+Approved: Uploads the video to your Bunny.net Stream library (for long-term, transcoded serving). Deletes the video from GCS.
+Flagged: Uploads the video to a Bunny.net Storage Zone specifically for temporary, flagged content. This keeps it separate from publicly accessible content. Deletes the video from GCS.
+Database Update: Updates the video's status in your database (e.g., approved, flagged, pending_appeal). Stores relevant IDs (Bunny Stream ID, Bunny Storage path, flagging reasons).
+Notification Trigger: Notifies the user (via email, in-app notification, or WebSocket) about the video's status.
+Database (e.g., SQLite, PostgreSQL/MongoDB):
+Stores metadata for each video: video_id, user_id, upload_timestamp, status (e.g., 'processing', 'approved', 'flagged', 'appeal_pending', 'appeal_approved', 'appeal_denied'), flagging_reason, bunny_stream_id (if approved), bunny_storage_path (if flagged temp), gcs_url (during processing), original_filename.
+Bunny.net Stream (Long-term storage):
+For approved videos. Handles transcoding for various resolutions/formats for seamless playback.
+Bunny.net Storage Zone (Temporary storage):
+For flagged videos awaiting appeal. Raw file storage.
+Appeal Process (Backend Endpoints):
+Users can access their flagged videos and initiate an appeal.
+Backend logic (potentially with manual review) processes the appeal.
+If appeal is approved: moves video from temporary Bunny.net Storage to Bunny.net Stream (using Bunny.net's copy/move API or by re-uploading and deleting). Updates database status.
+Detailed Steps for Replit Implementation
+1. Google Cloud Setup (One-time)
+Google Cloud Project: Ensure you have a Google Cloud Project set up and billing enabled.
+Enable APIs: In the Google Cloud Console, navigate to "APIs & Services" > "Library" and enable:
+Cloud Video Intelligence API
+Cloud Storage API
+Service Account:
+Go to "IAM & Admin" > "Service Accounts."
+Create a new service account.
+Grant it roles: Storage Object Admin (for GCS operations) and Video Intelligence Editor (for video analysis).
+Create a JSON Key: After creating the service account, generate a new JSON key and download it.
+Replit Secrets: Store the entire content of this JSON key file in a Replit Secret (e.g., named GOOGLE_APPLICATION_CREDENTIALS_JSON). This is critical for security. Your Python code will load this from the environment.
+2. Bunny.net Setup (One-time)
+Bunny.net Stream Library: Create at least one Video Library for your long-term, approved videos. Get its Library ID and API Key (Stream API key, separate from Storage API key).
+Bunny.net Storage Zone: Create at least one Storage Zone for temporary, flagged videos. Get its Storage Zone Name and API Key (Storage API key).
+Replit Secrets: Store Bunny.net Stream API Key (BUNNY_STREAM_API_KEY), Stream Library ID (BUNNY_STREAM_LIBRARY_ID), Bunny.net Storage API Key (BUNNY_STORAGE_API_KEY), and Storage Zone Name (BUNNY_STORAGE_ZONE_NAME) as Replit Secrets.
+3. Replit Backend Code (Python/Flask Example)
+requirements.txt:
+
+Flask
+Flask-WTF
+Werkzeug
+google-cloud-storage
+google-cloud-videointelligence
+requests
+python-dotenv # For local testing with .env, Replit handles secrets automatically
+ffmpeg-python # For robust FFmpeg interaction
+app.py (Main Web App - Simplified)
+
+Python
+
+import os
+import uuid
+from flask import Flask, request, jsonify
+from werkzeug.utils import secure_filename
+import threading # Simple background task for Replit. For production, consider a queue.
+
+# Google Cloud & Bunny.net client setup (from Replit Secrets)
+# It's best practice to initialize these outside functions if they don't change
+# For Google Cloud, the GOOGLE_APPLICATION_CREDENTIALS_JSON secret is automatically picked up
+# if you set GOOGLE_APPLICATION_CREDENTIALS environment variable to a path.
+# Or, load directly:
+import json
+from google.cloud import storage, videointelligence
+import requests
+import subprocess
+import time
+
+app = Flask(__name__)
+
+# Load secrets (Replit injects these as environment variables)
+BUNNY_STREAM_API_KEY = os.environ.get("BUNNY_STREAM_API_KEY")
+BUNNY_STREAM_LIBRARY_ID = os.environ.get("BUNNY_STREAM_LIBRARY_ID")
+BUNNY_STORAGE_API_KEY = os.environ.get("BUNNY_STORAGE_API_KEY")
+BUNNY_STORAGE_ZONE_NAME = os.environ.get("BUNNY_STORAGE_ZONE_NAME")
+
+# Google Cloud Storage Client (ensure GOOGLE_APPLICATION_CREDENTIALS_JSON is set as a secret)
+# If GOOGLE_APPLICATION_CREDENTIALS_JSON is not a file path but raw JSON, you'll need to write it to a temp file.
+# A simpler way is to configure the client directly if your project allows for it.
+# For Replit, setting GOOGLE_APPLICATION_CREDENTIALS_JSON secret should generally make `storage.Client()` work.
+# If it doesn't, you might need to write the JSON to a file in /tmp:
+temp_gcp_creds_file = "/tmp/gcp_creds.json"
+if os.environ.get("GOOGLE_APPLICATION_CREDENTIALS_JSON"):
+    with open(temp_gcp_creds_file, "w") as f:
+        f.write(os.environ["GOOGLE_APPLICATION_CREDENTIALS_JSON"])
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = temp_gcp_creds_file
+
+gcs_client = storage.Client()
+video_ai_client = videointelligence.VideoIntelligenceServiceClient()
+
+# Define your GCS bucket for temporary processing
+GCS_PROCESSING_BUCKET = "your-gcs-processing-bucket-name" # Change this!
+
+@app.route('/api/videos', methods=['POST'])
+def upload_video():
+    if 'video' not in request.files:
+        return jsonify({"error": "No video file provided"}), 400
+
+    file = request.files['video']
+    original_filename = secure_filename(file.filename)
+    duration = float(request.form.get('duration', 0)) # Get duration from frontend
+
+    # Generate a unique ID for this video (for tracking)
+    video_upload_id = str(uuid.uuid4())
+    temp_local_path = os.path.join("/tmp", f"{video_upload_id}_original_{original_filename}")
+
+    try:
+        file.save(temp_local_path)
+        print(f"[{video_upload_id}] Saved original file to: {temp_local_path}")
+        print(f"[{video_upload_id}] Frontend reported duration: {duration} seconds")
+
+        # Start background processing
+        # For simplicity, using threading. In production, consider Celery/Redis, or a dedicated worker.
+        thread = threading.Thread(target=process_video_in_background, args=(video_upload_id, temp_local_path, original_filename, duration))
+        thread.start()
+
+        return jsonify({
+            "message": "Video upload initiated. Processing in background.",
+            "video_id": video_upload_id,
+            "status": "processing"
+        }), 202 # 202 Accepted
+
+    except Exception as e:
+        print(f"[{video_upload_id}] Error saving video: {e}")
+        return jsonify({"error": "Failed to initiate video upload processing", "details": str(e)}), 500
+
+def process_video_in_background(video_id, temp_local_path, original_filename, frontend_duration):
+    """
+    This function runs in a separate thread/process to handle video processing.
+    """
+    processed_video_path = None
+    gcs_blob_name = f"processing/{video_id}/{original_filename}.mp4"
+    gcs_uri = f"gs://{GCS_PROCESSING_BUCKET}/{gcs_blob_name}"
+
+    try:
+        # Step 1: FFmpeg Pre-processing
+        # This will convert to a standard format and fix metadata
+        processed_video_path = os.path.join("/tmp", f"{video_id}_processed.mp4")
+        print(f"[{video_id}] Starting FFmpeg pre-processing...")
+        ffmpeg_command = [
+            "ffmpeg",
+            "-i", temp_local_path,
+            "-t", str(frontend_duration) if frontend_duration else None, # Use frontend duration if available
+            "-c:v", "libx264",
+            "-preset", "veryfast",
+            "-crf", "23",
+            "-vf", "scale=trunc(iw/2)*2:trunc(ih/2)*2,format=yuv420p", # Ensure correct pixel format
+            "-profile:v", "high",
+            "-level", "4.0",
+            "-c:a", "aac",
+            "-b:a", "128k",
+            "-strict", "experimental",
+            "-movflags", "faststart",
+            "-threads", "0",
+            "-y",
+            "-fflags", "+genpts", "+discardcorrupt",
+            processed_video_path
+        ]
+        ffmpeg_command = [cmd for cmd in ffmpeg_command if cmd is not None] # Remove None for -t
+
+        process = subprocess.run(ffmpeg_command, capture_output=True, text=True, check=False)
+        if process.returncode != 0:
+            print(f"[{video_id}] FFmpeg failed:")
+            print(f"STDOUT: {process.stdout}")
+            print(f"STDERR: {process.stderr}")
+            raise Exception(f"FFmpeg processing failed: {process.stderr}")
+        print(f"[{video_id}] FFmpeg processing complete. Processed file size: {os.path.getsize(processed_video_path)} bytes")
+
+        # Get actual duration from ffprobe if frontend duration was missing or for double-check
+        actual_duration = get_video_duration_ffprobe(processed_video_path)
+        print(f"[{video_id}] FFprobe detected duration: {actual_duration} seconds")
+
+
+        # Step 2: Upload to Google Cloud Storage
+        print(f"[{video_id}] Uploading to GCS: {gcs_blob_name}...")
+        bucket = gcs_client.bucket(GCS_PROCESSING_BUCKET)
+        blob = bucket.blob(gcs_blob_name)
+        blob.upload_from_filename(processed_video_path)
+        print(f"[{video_id}] Uploaded to GCS: {gcs_uri}")
+
+        # Step 3: Google Cloud Video AI Analysis
+        print(f"[{video_id}] Starting Video AI analysis for explicit content...")
+        features = [videointelligence.Feature.EXPLICIT_CONTENT_DETECTION]
+        # You can add SPEECH_TRANSCRIPTION if you want to analyze audio for bad content
+        # features.append(videointelligence.Feature.SPEECH_TRANSCRIPTION)
+        # config = videointelligence.SpeechTranscriptionConfig(
+        #     language_code="en-US", enable_automatic_punctuation=True
+        # )
+        # video_context = videointelligence.VideoContext(speech_transcription_config=config)
+
+        request = videointelligence.AnnotateVideoRequest(
+            input_uri=gcs_uri,
+            features=features,
+            # video_context=video_context # Uncomment if using speech transcription
+        )
+
+        operation = video_ai_client.annotate_video(request=request)
+        print(f"[{video_id}] Video AI operation started. Waiting for results...")
+        result = operation.result(timeout=600) # Wait for up to 10 minutes for analysis
+
+        # Step 4: Decision Logic
+        explicit_content_flagged = False
+        print(f"[{video_id}] Video AI results:")
+        for segment in result.annotation_results[0].explicit_content_annotation.frames:
+            if segment.pornography_likelihood > videointelligence.Likelihood.POSSIBLE or \
+               segment.violence_likelihood > videointelligence.Likelihood.POSSIBLE:
+                explicit_content_flagged = True
+                print(f"[{video_id}] Explicit content detected at {segment.time_offset.seconds}s: Pornography={segment.pornography_likelihood}, Violence={segment.violence_likelihood}")
+                break # Flag if any frame is problematic
+
+        # Example for speech transcription (if enabled):
+        # if videointelligence.Feature.SPEECH_TRANSCRIPTION in features:
+        #     for speech_transcription in result.annotation_results[0].speech_transcriptions:
+        #         for alternative in speech_transcription.alternatives:
+        #             print(f"[{video_id}] Transcript: {alternative.transcript}")
+        #             # Implement your logic to check for bad words in alternative.transcript
+
+        # Store video based on moderation result
+        if explicit_content_flagged:
+            print(f"[{video_id}] Video FLAGGED for explicit content.")
+            bunny_target_path = f"flagged/{video_id}/{original_filename}.mp4"
+            upload_to_bunny_storage(processed_video_path, bunny_target_path)
+            # Update database status to 'flagged', store bunny_storage_path, flagging_reason
+            print(f"[{video_id}] Video stored in temporary Bunny Storage: {bunny_target_path}")
+            # Notify user: "Your video was flagged for review. You can appeal..."
+        else:
+            print(f"[{video_id}] Video APPROVED! No explicit content detected.")
+            # Upload to Bunny Stream (long-term)
+            bunny_stream_id = create_bunny_stream_video(video_id, original_filename, processed_video_path)
+            # Update database status to 'approved', store bunny_stream_id
+            print(f"[{video_id}] Video uploaded to Bunny Stream. ID: {bunny_stream_id}")
+            # Notify user: "Your video has been posted!"
+
+    except Exception as e:
+        print(f"[{video_id}] Error during background processing: {e}")
+        # Update database status to 'failed'
+        # Notify user: "Video processing failed. Please try again later."
+    finally:
+        # Clean up temporary files
+        if os.path.exists(temp_local_path):
+            os.remove(temp_local_path)
+            print(f"[{video_id}] Cleaned up original local file: {temp_local_path}")
+        if processed_video_path and os.path.exists(processed_video_path):
+            os.remove(processed_video_path)
+            print(f"[{video_id}] Cleaned up processed local file: {processed_video_path}")
+        # Delete from GCS after processing (whether approved or flagged)
+        if 'blob' in locals() and blob.exists(): # Ensure blob was created and exists
+            blob.delete()
+            print(f"[{video_id}] Deleted GCS object: {gcs_blob_name}")
+
+
+# Helper function to get video duration using ffprobe
+def get_video_duration_ffprobe(filepath):
+    try:
+        cmd = [
+            "ffprobe",
+            "-v", "error",
+            "-show_entries", "format=duration",
+            "-of", "default=noprint_wrappers=1:nokey=1",
+            filepath
+        ]
+        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
+        return float(result.stdout.strip())
+    except Exception as e:
+        print(f"Error getting duration with ffprobe: {e}")
+        return 0 # Default to 0 or handle error
+
+# Helper functions for Bunny.net interactions
+def upload_to_bunny_storage(local_file_path, remote_path):
+    """Uploads a file to Bunny.net Storage Zone."""
+    url = f"https://storage.bunnycdn.com/{BUNNY_STORAGE_ZONE_NAME}/{remote_path}"
+    headers = {
+        "AccessKey": BUNNY_STORAGE_API_KEY,
+        "Content-Type": "application/octet-stream"
+    }
+    with open(local_file_path, 'rb') as f:
+        response = requests.put(url, headers=headers, data=f.read())
+    response.raise_for_status() # Raise HTTPError for bad responses (4xx or 5xx)
+    return response.json() # Or check response.status_code
+
+def create_bunny_stream_video(video_id, original_filename, local_file_path):
+    """Creates a video object in Bunny Stream and uploads the file."""
+    # Step 1: Create a video object in Stream library to get a videoId
+    create_url = f"https://video.bunnycdn.com/library/{BUNNY_STREAM_LIBRARY_ID}/videos"
+    create_headers = {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "AccessKey": BUNNY_STREAM_API_KEY
+    }
+    create_payload = {"title": original_filename}
+    create_response = requests.post(create_url, headers=create_headers, json=create_payload)
+    create_response.raise_for_status()
+    bunny_video_id = create_response.json()["guid"]
+
+    # Step 2: Upload the actual video file to the created videoId
+    upload_url = f"https://video.bunnycdn.com/library/{BUNNY_STREAM_LIBRARY_ID}/videos/{bunny_video_id}"
+    upload_headers = {
+        "AccessKey": BUNNY_STREAM_API_KEY,
+        "Content-Type": "application/octet-stream"
+    }
+    with open(local_file_path, 'rb') as f:
+        upload_response = requests.put(upload_url, headers=upload_headers, data=f.read())
+    upload_response.raise_for_status()
+    return bunny_video_id
+
+# Example appeal endpoint (to be implemented)
+@app.route('/api/videos/<video_id>/appeal', methods=['POST'])
+def appeal_video(video_id):
+    # Lookup video_id in database, check status (must be 'flagged')
+    # Trigger a review process (could be manual or automated)
+    # If appeal approved, move from Bunny Storage to Bunny Stream, update DB
+    # If appeal denied, update DB status, keep in temp storage or delete
+    return jsonify({"message": f"Appeal for video {video_id} received."})
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8080)
+Frontend (VideoUploadModal.tsx - Key changes)
+
+When uploading, include the recordedDuration in the FormData.
+Handle the 202 Accepted response from the backend and display the "Processing" message.
+Implement a way to notify the user later (e.g., polling an API endpoint, WebSockets for real-time updates).
+TypeScript
+
+// Example in your handleSubmit or uploadVideo function
+const uploadVideo = async (videoBlob: Blob, recordedDuration: number) => {
+    const formData = new FormData();
+    formData.append("video", videoBlob, "recorded_video.webm");
+    formData.append("duration", recordedDuration.toString()); // Send duration to backend
+
+    try {
+        const response = await fetch('/api/videos', {
+            method: 'POST',
+            body: formData,
+        });
+
+        if (response.status === 202) {
+            const data = await response.json();
+            console.log(`Video upload initiated. Video ID: ${data.video_id}. Status: ${data.status}`);
+            // Show "Processing" message to user
+            // Set up a mechanism to check status later or wait for notification
+        } else {
+            const errorData = await response.json();
+            console.error("Upload failed:", errorData.error);
+            // Display error message
+        }
+    } catch (error) {
+        console.error("Network or unexpected error during upload:", error);
+        // Display generic error
+    }
+};
+
+// ... inside your MediaRecorder.onstop ...
+mediaRecorder.onstop = async () => {
+    // ... existing blob creation and local playback test ...
+
+    const finalBlob = new Blob(recordedChunks, { type: mediaRecorder.mimeType });
+    const recordedDuration = previewVideoRef.current?.duration || 0; // Use the actual duration detected by the browser
+
+    if (previewVideoRef.current?.readyState >= 1 && recordedDuration > 0 && recordedDuration !== Infinity) {
+        console.log(`Using recorded video duration: ${recordedDuration} seconds`);
+        await uploadVideo(finalBlob, recordedDuration);
+        // ... (close modal, show success message)
+    } else {
+        console.error("Local playback failed or duration invalid. Not uploading problematic video.");
+        // Inform the user that recording failed
+    }
+    // ... (stop camera/mic)
+};
+Prompt for Replit AI Agent
+Here's a prompt you can give to your Replit AI agent to guide them through implementing this:
+
+Prompt Title: Implementing Asynchronous Video Upload, Moderation (Google Cloud Video AI), and Conditional Storage (Bunny.net)
+
+Goal: Implement a robust backend pipeline for video uploads that includes asynchronous processing, content moderation using Google Cloud Video AI, and conditional long-term or temporary storage on Bunny.net based on moderation results. Users should receive an immediate "processing" message and later a notification about their video's status.
+
+Current State:
+
+Frontend successfully records WebM (VP8/Opus) videos.
+Frontend passes the Blob and a calculated duration to the backend.
+Backend receives the file, but current synchronous processing leads to timeouts or errors.
+We have existing Bunny.net Stream and Storage accounts.
+We have a Google Cloud Console account with billing enabled.
+Desired Pipeline:
+
+Frontend Upload: User uploads video, frontend shows "Processing..." immediately.
+Backend Receive (HTTP Endpoint):
+Receives video Blob and its duration from frontend FormData.
+Saves the raw video temporarily (e.g., in /tmp).
+Delegates the heavy processing to an asynchronous worker/task.
+Returns a 202 Accepted response with a unique video_id to the frontend.
+Asynchronous Worker (Background Process/Thread):
+FFmpeg Pre-processing:
+Take the raw uploaded video.
+Use FFmpeg to transcode it to a standardized MP4 format (H.264 video, AAC audio). This should fix any MediaRecorder quirks (like Infinity duration) and ensure compatibility for Google Cloud Video AI.
+Utilize FFmpeg flags for error recovery: -err_detect aggressive, -fflags +genpts, -fflags +discardcorrupt, -t <duration_from_frontend>.
+Crucial: Log FFmpeg stdout and stderr to the Replit console for debugging.
+Google Cloud Storage (GCS) Upload:
+Upload the FFmpeg-processed video to a designated, private GCS bucket. This is necessary for Google Cloud Video AI.
+Google Cloud Video AI Analysis:
+Call the Google Cloud Video Intelligence API on the GCS video.
+Request EXPLICIT_CONTENT_DETECTION. (Consider adding SPEECH_TRANSCRIPTION if audio content moderation is also desired, which requires configuring SpeechTranscriptionConfig).
+Wait for the analysis results (with a reasonable timeout).
+Decision Logic:
+If approved (no explicit content detected above a certain likelihood threshold):
+Upload the final processed video from GCS to a Bunny.net Stream Library (long-term storage for serving).
+Store the Bunny Stream Video ID in a database.
+Delete the video from GCS.
+If flagged (explicit content detected):
+Upload the final processed video from GCS to a Bunny.net Storage Zone (temporary storage for appeals).
+Store the Bunny Storage path and flagging reason in a database.
+Delete the video from GCS.
+Database Update: Update the video's status (processing, approved, flagged, appeal_pending, appeal_approved, appeal_denied) and relevant IDs in a database (e.g., SQLite file, or integrate with an external DB if available).
+User Notification: Implement a basic notification (e.g., print to console for now, but indicate where email/WebSocket notification logic would go).
+Appeal Mechanism (Future Extension): Outline a placeholder for a separate backend endpoint where users can appeal flagged videos. If approved, the video would move from temporary Bunny.net Storage to Bunny.net Stream.
+Implementation Details & Requirements:
+
+Replit Secrets:
+GOOGLE_APPLICATION_CREDENTIALS_JSON (contents of your Google Service Account JSON key)
+BUNNY_STREAM_API_KEY
+BUNNY_STREAM_LIBRARY_ID
+BUNNY_STORAGE_API_KEY
+BUNNY_STORAGE_ZONE_NAME
+GCS_PROCESSING_BUCKET (Name of the GCS bucket for temporary processing)
+Python Libraries: Flask, Werkzeug, google-cloud-storage, google-cloud-videointelligence, requests, ffmpeg-python. Ensure ffmpeg and ffprobe are installed in the Replit environment (often pre-installed, but confirm).
+Asynchronous Processing: For Replit, simple threading.Thread can work for initial setup. Acknowledge that for true scalability and long-running tasks, a dedicated worker deployment or a message queue (like Celery with Redis) would be ideal, but start with threading for simplicity.
+Error Handling: Implement try-except blocks for all external API calls (FFmpeg, GCS, Video AI, Bunny.net) and file operations. Log errors clearly to the Replit console.
+Temporary File Management: Ensure all temporary files created in /tmp are cleaned up using finally blocks.
+Logging: Add extensive print() statements (or a proper Python logging setup) at each stage to track progress and debug. Include video_id in logs for traceability.
+Deliverables:
+
+Updated app.py or equivalent backend code with the described pipeline.
+Updated requirements.txt.
+Guidance on setting up Google Cloud and Bunny.net secrets.
+Example frontend JavaScript changes to send duration and handle the 202 response.
+Let's begin by structuring the backend code as described.

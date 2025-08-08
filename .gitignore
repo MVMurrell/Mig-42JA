@@ -1,0 +1,18 @@
+# builds & tooling
+dist/
+build/
+.vercel/
+.next/
+.out/
+coverage/
+*.log
+
+# deps & caches
+node_modules/
+pnpm-lock.yaml
+
+# local env
+.env
+.env.*
+*.local
+.gitattributes

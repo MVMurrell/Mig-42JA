@@ -1,0 +1,171 @@
+Zoom level changed to: 19 Total markers: 0
+Console.js:61 🎁 Adding treasure chest markers: 1
+chunk-RPCDYKBN.js?v=e65489cd:16670 Uncaught InvalidValueError: <gmp-advanced-marker>: Cannot set property "content" to data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iNjIiIHZpZXdCb3g9IjAgMCAzMiA2MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxmaWx0ZXIgaWQ9InRyZWFzdXJlU2hhZG93IiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSIzMDAlIiBoZWlnaHQ9IjMwMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1jb2xvcj0icmdiYSgwLDAsMCwwLjUpIi8+CiAgICA8L2ZpbHRlcj4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idHJlYXN1cmVHbG93IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2VmNDQ0NDtzdG9wLW9wYWNpdHk6MC4zIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlZjQ0NDQ7c3RvcC1vcGFjaXR5OjAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGJhY2tncm91bmQgY2lyY2xlIC0tPgogIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE2IiBmaWxsPSIjZWY0NDQ0IiBvcGFjaXR5PSIwLjIiIGZpbHRlcj0idXJsKCN0cmVhc3VyZVNoYWRvdykiLz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGljb24gKHdvdWxkIGxvYWQgZnJvbSB0cmVhc3VyZUljb24pIC0tPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzhCNDUxMyIgcng9IjIiLz4KICA8cmVjdCB4PSI4IiB5PSI4IiB3aWR0aD0iMTYiIGhlaWdodD0iOCIgZmlsbD0iI0RBQTUyMCIgcng9IjIiLz4KICA8IS0tIENvaW4gcmV3YXJkIHRleHQgLS0+CiAgPHRleHQgeD0iMTYiIHk9IjE5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj40MDwvdGV4dD4KICA8IS0tIENvdW50ZG93biBiYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHg9IjAiIHk9IjM2IiB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIGZpbGw9InJnYmEoMCwwLDAsMC44KSIgcng9IjkiLz4KICA8IS0tIENvdW50ZG93biB0ZXh0IC0tPgogIDx0ZXh0IHg9IjE2IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjRoIDZtPC90ZXh0Pgo8L3N2Zz4=: not an instance of Node; and data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iNjIiIHZpZXdCb3g9IjAgMCAzMiA2MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxmaWx0ZXIgaWQ9InRyZWFzdXJlU2hhZG93IiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSIzMDAlIiBoZWlnaHQ9IjMwMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1jb2xvcj0icmdiYSgwLDAsMCwwLjUpIi8+CiAgICA8L2ZpbHRlcj4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idHJlYXN1cmVHbG93IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2VmNDQ0NDtzdG9wLW9wYWNpdHk6MC4zIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlZjQ0NDQ7c3RvcC1vcGFjaXR5OjAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGJhY2tncm91bmQgY2lyY2xlIC0tPgogIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE2IiBmaWxsPSIjZWY0NDQ0IiBvcGFjaXR5PSIwLjIiIGZpbHRlcj0idXJsKCN0cmVhc3VyZVNoYWRvdykiLz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGljb24gKHdvdWxkIGxvYWQgZnJvbSB0cmVhc3VyZUljb24pIC0tPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzhCNDUxMyIgcng9IjIiLz4KICA8cmVjdCB4PSI4IiB5PSI4IiB3aWR0aD0iMTYiIGhlaWdodD0iOCIgZmlsbD0iI0RBQTUyMCIgcng9IjIiLz4KICA8IS0tIENvaW4gcmV3YXJkIHRleHQgLS0+CiAgPHRleHQgeD0iMTYiIHk9IjE5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj40MDwvdGV4dD4KICA8IS0tIENvdW50ZG93biBiYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHg9IjAiIHk9IjM2IiB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIGZpbGw9InJnYmEoMCwwLDAsMC44KSIgcng9IjkiLz4KICA8IS0tIENvdW50ZG93biB0ZXh0IC0tPgogIDx0ZXh0IHg9IjE2IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjRoIDZtPC90ZXh0Pgo8L3N2Zz4=
+    at _.cl (main.js:147:445)
+    at QS.eh (main.js:403:184)
+    at set content (marker.js:122:177)
+    at new QS (marker.js:117:456)
+    at MapInterface.tsx:963:32
+    at Array.forEach (<anonymous>)
+    at MapInterface.tsx:953:20
+    at commitHookEffectListMount (chunk-RPCDYKBN.js?v=e65489cd:16915:34)
+    at commitPassiveMountOnFiber (chunk-RPCDYKBN.js?v=e65489cd:18156:19)
+    at commitPassiveMountEffects_complete (chunk-RPCDYKBN.js?v=e65489cd:18129:17)
+_.cl @ main.js:147
+eh @ main.js:403
+set content @ marker.js:122
+QS @ marker.js:117
+(anonymous) @ MapInterface.tsx:963
+(anonymous) @ MapInterface.tsx:953
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=e65489cd:555
+flush @ @tanstack_react-query.js?v=e65489cd:569
+batch @ @tanstack_react-query.js?v=e65489cd:587
+dispatch_fn @ @tanstack_react-query.js?v=e65489cd:996
+setData @ @tanstack_react-query.js?v=e65489cd:696
+onSuccess @ @tanstack_react-query.js?v=e65489cd:897
+resolve @ @tanstack_react-query.js?v=e65489cd:456
+Promise.then
+run @ @tanstack_react-query.js?v=e65489cd:498
+start @ @tanstack_react-query.js?v=e65489cd:536
+fetch @ @tanstack_react-query.js?v=e65489cd:926
+executeFetch_fn @ @tanstack_react-query.js?v=e65489cd:2211
+setOptions @ @tanstack_react-query.js?v=e65489cd:1955
+(anonymous) @ @tanstack_react-query.js?v=e65489cd:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:19328
+workLoop @ chunk-RPCDYKBN.js?v=e65489cd:197
+flushWork @ chunk-RPCDYKBN.js?v=e65489cd:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=e65489cd:384Understand this error
+Console.js:61 The above error occurred in the <MapInterface> component:
+
+    at MapInterface (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/MapInterface.tsx:445:40)
+    at div
+    at div
+    at Home (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/home.tsx:95:44)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e65489cd:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e65489cd:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e65489cd:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=e65489cd:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=e65489cd:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=e65489cd:64:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=e65489cd:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+Mt.forEach.n.<computed> @ Console.js:61
+logCapturedError @ chunk-RPCDYKBN.js?v=e65489cd:14032
+update.callback @ chunk-RPCDYKBN.js?v=e65489cd:14052
+callCallback @ chunk-RPCDYKBN.js?v=e65489cd:11248
+commitUpdateQueue @ chunk-RPCDYKBN.js?v=e65489cd:11265
+commitLayoutEffectOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:17093
+commitLayoutMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:17980
+commitLayoutEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:17969
+commitLayoutEffects @ chunk-RPCDYKBN.js?v=e65489cd:17920
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19353
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=e65489cd:555
+flush @ @tanstack_react-query.js?v=e65489cd:569
+batch @ @tanstack_react-query.js?v=e65489cd:587
+dispatch_fn @ @tanstack_react-query.js?v=e65489cd:996
+setData @ @tanstack_react-query.js?v=e65489cd:696
+onSuccess @ @tanstack_react-query.js?v=e65489cd:897
+resolve @ @tanstack_react-query.js?v=e65489cd:456
+Promise.then
+run @ @tanstack_react-query.js?v=e65489cd:498
+start @ @tanstack_react-query.js?v=e65489cd:536
+fetch @ @tanstack_react-query.js?v=e65489cd:926
+executeFetch_fn @ @tanstack_react-query.js?v=e65489cd:2211
+setOptions @ @tanstack_react-query.js?v=e65489cd:1955
+(anonymous) @ @tanstack_react-query.js?v=e65489cd:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:19328
+workLoop @ chunk-RPCDYKBN.js?v=e65489cd:197
+flushWork @ chunk-RPCDYKBN.js?v=e65489cd:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=e65489cd:384Understand this error
+chunk-RPCDYKBN.js?v=e65489cd:9129 Uncaught InvalidValueError: <gmp-advanced-marker>: Cannot set property "content" to data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iNjIiIHZpZXdCb3g9IjAgMCAzMiA2MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxmaWx0ZXIgaWQ9InRyZWFzdXJlU2hhZG93IiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSIzMDAlIiBoZWlnaHQ9IjMwMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1jb2xvcj0icmdiYSgwLDAsMCwwLjUpIi8+CiAgICA8L2ZpbHRlcj4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idHJlYXN1cmVHbG93IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2VmNDQ0NDtzdG9wLW9wYWNpdHk6MC4zIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlZjQ0NDQ7c3RvcC1vcGFjaXR5OjAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGJhY2tncm91bmQgY2lyY2xlIC0tPgogIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE2IiBmaWxsPSIjZWY0NDQ0IiBvcGFjaXR5PSIwLjIiIGZpbHRlcj0idXJsKCN0cmVhc3VyZVNoYWRvdykiLz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGljb24gKHdvdWxkIGxvYWQgZnJvbSB0cmVhc3VyZUljb24pIC0tPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzhCNDUxMyIgcng9IjIiLz4KICA8cmVjdCB4PSI4IiB5PSI4IiB3aWR0aD0iMTYiIGhlaWdodD0iOCIgZmlsbD0iI0RBQTUyMCIgcng9IjIiLz4KICA8IS0tIENvaW4gcmV3YXJkIHRleHQgLS0+CiAgPHRleHQgeD0iMTYiIHk9IjE5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj40MDwvdGV4dD4KICA8IS0tIENvdW50ZG93biBiYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHg9IjAiIHk9IjM2IiB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIGZpbGw9InJnYmEoMCwwLDAsMC44KSIgcng9IjkiLz4KICA8IS0tIENvdW50ZG93biB0ZXh0IC0tPgogIDx0ZXh0IHg9IjE2IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjRoIDZtPC90ZXh0Pgo8L3N2Zz4=: not an instance of Node; and data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iNjIiIHZpZXdCb3g9IjAgMCAzMiA2MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxmaWx0ZXIgaWQ9InRyZWFzdXJlU2hhZG93IiB4PSItMTAwJSIgeT0iLTEwMCUiIHdpZHRoPSIzMDAlIiBoZWlnaHQ9IjMwMCUiPgogICAgICA8ZmVEcm9wU2hhZG93IGR4PSIwIiBkeT0iMiIgc3RkRGV2aWF0aW9uPSIzIiBmbG9vZC1jb2xvcj0icmdiYSgwLDAsMCwwLjUpIi8+CiAgICA8L2ZpbHRlcj4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0idHJlYXN1cmVHbG93IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6I2VmNDQ0NDtzdG9wLW9wYWNpdHk6MC4zIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiNlZjQ0NDQ7c3RvcC1vcGFjaXR5OjAiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGJhY2tncm91bmQgY2lyY2xlIC0tPgogIDxjaXJjbGUgY3g9IjE2IiBjeT0iMTYiIHI9IjE2IiBmaWxsPSIjZWY0NDQ0IiBvcGFjaXR5PSIwLjIiIGZpbHRlcj0idXJsKCN0cmVhc3VyZVNoYWRvdykiLz4KICA8IS0tIFRyZWFzdXJlIGNoZXN0IGljb24gKHdvdWxkIGxvYWQgZnJvbSB0cmVhc3VyZUljb24pIC0tPgogIDxyZWN0IHg9IjgiIHk9IjgiIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iIzhCNDUxMyIgcng9IjIiLz4KICA8cmVjdCB4PSI4IiB5PSI4IiB3aWR0aD0iMTYiIGhlaWdodD0iOCIgZmlsbD0iI0RBQTUyMCIgcng9IjIiLz4KICA8IS0tIENvaW4gcmV3YXJkIHRleHQgLS0+CiAgPHRleHQgeD0iMTYiIHk9IjE5IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iOCIgZm9udC13ZWlnaHQ9ImJvbGQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IndoaXRlIj40MDwvdGV4dD4KICA8IS0tIENvdW50ZG93biBiYWNrZ3JvdW5kIC0tPgogIDxyZWN0IHg9IjAiIHk9IjM2IiB3aWR0aD0iMzIiIGhlaWdodD0iMTgiIGZpbGw9InJnYmEoMCwwLDAsMC44KSIgcng9IjkiLz4KICA8IS0tIENvdW50ZG93biB0ZXh0IC0tPgogIDx0ZXh0IHg9IjE2IiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBmb250LXdlaWdodD0iYm9sZCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0id2hpdGUiPjRoIDZtPC90ZXh0Pgo8L3N2Zz4=
+    at _.cl (main.js:147:445)
+    at QS.eh (main.js:403:184)
+    at set content (marker.js:122:177)
+    at new QS (marker.js:117:456)
+    at MapInterface.tsx:963:32
+    at Array.forEach (<anonymous>)
+    at MapInterface.tsx:953:20
+    at commitHookEffectListMount (chunk-RPCDYKBN.js?v=e65489cd:16915:34)
+    at commitPassiveMountOnFiber (chunk-RPCDYKBN.js?v=e65489cd:18156:19)
+    at commitPassiveMountEffects_complete (chunk-RPCDYKBN.js?v=e65489cd:18129:17)
+_.cl @ main.js:147
+eh @ main.js:403
+set content @ marker.js:122
+QS @ marker.js:117
+(anonymous) @ MapInterface.tsx:963
+(anonymous) @ MapInterface.tsx:953
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=e65489cd:555
+flush @ @tanstack_react-query.js?v=e65489cd:569
+batch @ @tanstack_react-query.js?v=e65489cd:587
+dispatch_fn @ @tanstack_react-query.js?v=e65489cd:996
+setData @ @tanstack_react-query.js?v=e65489cd:696
+onSuccess @ @tanstack_react-query.js?v=e65489cd:897
+resolve @ @tanstack_react-query.js?v=e65489cd:456
+Promise.then
+run @ @tanstack_react-query.js?v=e65489cd:498
+start @ @tanstack_react-query.js?v=e65489cd:536
+fetch @ @tanstack_react-query.js?v=e65489cd:926
+executeFetch_fn @ @tanstack_react-query.js?v=e65489cd:2211
+setOptions @ @tanstack_react-query.js?v=e65489cd:1955
+(anonymous) @ @tanstack_react-query.js?v=e65489cd:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:19328
+workLoop @ chunk-RPCDYKBN.js?v=e65489cd:197
+flushWork @ chunk-RPCDYKBN.js?v=e65489cd:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=e65489cd:384Understand this error

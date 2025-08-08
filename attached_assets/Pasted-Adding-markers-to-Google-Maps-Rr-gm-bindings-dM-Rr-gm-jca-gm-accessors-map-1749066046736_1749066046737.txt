@@ -1,0 +1,109 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Warning: A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://reactjs.org/link/controlled-components
+    at input
+    at _c (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/ui/input.tsx:20:11)
+    at div
+    at form
+    at div
+    at div
+    at GroupEditModal (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/GroupEditModal.tsx:29:42)
+    at div
+    at GroupProfilePage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/group-profile.tsx:32:22)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=c8e1e52a:323:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=c8e1e52a:379:17)
+    at Router (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/App.tsx?v=cZBzjOXiyJWgC5MY7xlVs:31:42)
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-VJRUVGTI.js?v=c8e1e52a:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=c8e1e52a:61:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=c8e1e52a:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-WERSD76P.js?v=c8e1e52a:521
+error @ chunk-WERSD76P.js?v=c8e1e52a:505
+updateWrapper @ chunk-WERSD76P.js?v=c8e1e52a:1968
+updateProperties @ chunk-WERSD76P.js?v=c8e1e52a:7762
+commitUpdate @ chunk-WERSD76P.js?v=c8e1e52a:8419
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17763
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17737
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17737
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17737
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17737
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17737
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17896
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17896
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17896
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17699
+recursivelyTraverseMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17685
+commitMutationEffectsOnFiber @ chunk-WERSD76P.js?v=c8e1e52a:17794
+commitMutationEffects @ chunk-WERSD76P.js?v=c8e1e52a:17663
+commitRootImpl @ chunk-WERSD76P.js?v=c8e1e52a:19347
+commitRoot @ chunk-WERSD76P.js?v=c8e1e52a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=c8e1e52a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=c8e1e52a:9119
+flushSync @ chunk-WERSD76P.js?v=c8e1e52a:18959
+finishEventHandler @ chunk-WERSD76P.js?v=c8e1e52a:3569
+batchedUpdates @ chunk-WERSD76P.js?v=c8e1e52a:3582
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=c8e1e52a:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=c8e1e52a:5478
+dispatchEvent @ chunk-WERSD76P.js?v=c8e1e52a:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=c8e1e52a:5449Understand this error
+Network.js:219 Uncaught (in promise) TypeError: Failed to execute 'fetch' on 'Window': '/api/groups/undefined' is not a valid HTTP method.
+    at window.fetch (Network.js:219:37)
+    at apiRequest (queryClient.ts:15:21)
+    at Object.mutationFn (GroupEditModal.tsx:39:13)
+    at Object.fn (@tanstack_react-query.js?v=c8e1e52a:1189:29)
+    at run (@tanstack_react-query.js?v=c8e1e52a:494:49)
+    at Object.start (@tanstack_react-query.js?v=c8e1e52a:536:9)
+    at _a6.execute (@tanstack_react-query.js?v=c8e1e52a:1225:56)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:15
+mutationFn @ GroupEditModal.tsx:39
+fn @ @tanstack_react-query.js?v=c8e1e52a:1189
+run @ @tanstack_react-query.js?v=c8e1e52a:494
+start @ @tanstack_react-query.js?v=c8e1e52a:536
+execute @ @tanstack_react-query.js?v=c8e1e52a:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=c8e1e52a:2630
+(anonymous) @ @tanstack_react-query.js?v=c8e1e52a:3295
+handleSubmit @ GroupEditModal.tsx:81
+callCallback2 @ chunk-WERSD76P.js?v=c8e1e52a:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=c8e1e52a:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=c8e1e52a:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=c8e1e52a:3736
+executeDispatch @ chunk-WERSD76P.js?v=c8e1e52a:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=c8e1e52a:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=c8e1e52a:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=c8e1e52a:7051
+(anonymous) @ chunk-WERSD76P.js?v=c8e1e52a:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=c8e1e52a:18913
+batchedUpdates @ chunk-WERSD76P.js?v=c8e1e52a:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=c8e1e52a:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=c8e1e52a:5478
+dispatchEvent @ chunk-WERSD76P.js?v=c8e1e52a:5472
+dispatchDiscreteEvent @ chunk-WERSD76P.js?v=c8e1e52a:5449Understand this error

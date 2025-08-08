@@ -1,0 +1,23 @@
+✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔥 FRONTEND: Starting profile picture upload mutation (quest pattern)
+Console.js:61 🔥 FRONTEND: FormData prepared, making request to /api/users/profile-picture
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔥 FRONTEND: Response received: 200 OK
+Console.js:61 🔥 FRONTEND: GCS upload successful: {message: 'Profile picture updated successfully', url: 'https://storage.googleapis.com/jemzy-images-storag…32b91f583355932e3ac574ba61e89a97e2c964e9ee3ca62d5', gcsPath: 'gs://jemzy-images-storage/profiles/google-oauth2|1…85616207/8c00b302-7457-4ac3-a25b-4d55419f5480.jpg', userId: 'google-oauth2|117032826996185616207', moderation: {…}}
+Console.js:61 🔄 FRONTEND: Now updating database with URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2%7C117032826996185616207/8c00b302-7457-4ac3-a25b-4d55419f5480.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=content-moderation-worker%40steam-house-461401-t7.iam.gserviceaccount.com%2F20250629%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250629T021602Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&response-content-type=application%2Foctet-stream&X-Goog-Signature=1a4c4a51ee42d43c74e2a0f6b1a9c8f194b41b30631b1d6e299fceb86c19a56b0a2e260a487170e76bf4d01969e6a4355dc1838534de8d38ba528b048ee757b5830605778386621cf18faa0221742a386cc73f3cefd7d79154be1ef3f428ac6d7a44d7cf308a8c6ada58bd8d2dbe587d38a69de528f2480499e49630618761c1594785632ac00e4f6513f09b183e2cc0372ae2b0315118c0229474a54df19ab2a0a3555efba30280dc1c0d9787cdbbf00e0d39b735acf78a094a7905a607a23dfea33b0fd20fe49c88b31fa1f21f8a64523d074e3611071da6bfb7753446a68e6bda1f8f166fbee32b91f583355932e3ac574ba61e89a97e2c964e9ee3ca62d5
+Console.js:61 🔄 FRONTEND: Making database update request with credentials
+Console.js:61 🔄 FRONTEND: Database response status: 200
+Console.js:61 🔄 FRONTEND: Database response headers: {content-length: '53', content-type: 'application/json; charset=utf-8', date: 'Sun, 29 Jun 2025 02:16:02 GMT', etag: 'W/"35-ZvyEuDJTR5iKL6jgn5NF8ieMM1k"', replit-cluster: 'worf', …}
+Console.js:61 ✅ FRONTEND: Database update successful: {message: 'Profile picture URL updated in database'}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…32b91f583355932e3ac574ba61e89a97e2c964e9ee3ca62d5', …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}

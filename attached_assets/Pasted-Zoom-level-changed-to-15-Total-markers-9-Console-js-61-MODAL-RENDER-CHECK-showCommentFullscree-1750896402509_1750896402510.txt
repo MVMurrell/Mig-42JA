@@ -1,0 +1,376 @@
+Zoom level changed to: 15 Total markers: 9
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+14Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/8e8c7281-ddc0-40cb-a32b-baa069dbece3 can play - format is supported
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 VIDEO CLICK OVERLAY: Click detected! {isPlaying: true, target: div.absolute.z-10.cursor-pointer}
+Console.js:61 Toggle play/pause - current state: {isPlaying: true, paused: false}
+Console.js:61 Pausing video
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🔄 COMMENTS REFETCH: Loaded 3 comments for video c1647877-54ed-410e-be34-c8aa666d226e
+Console.js:61 🎬 VIDEO CLICK OVERLAY: Click detected! {isPlaying: false, target: div.absolute.z-10.cursor-pointer}
+Console.js:61 Toggle play/pause - current state: {isPlaying: false, paused: true}
+Console.js:61 Playing video - unmuting and starting playback
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play event fired - setting isPlaying to true
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video play successful
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🔄 COMMENTS REFETCH: Loaded 3 comments for video c1647877-54ed-410e-be34-c8aa666d226e
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 VIDEO CLICK OVERLAY: Click detected! {isPlaying: true, target: div.absolute.z-10.cursor-pointer}
+Console.js:61 Toggle play/pause - current state: {isPlaying: true, paused: false}
+Console.js:61 Pausing video
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 Video pause event fired - setting isPlaying to false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+Console.js:61 🎬 MODAL RENDER CHECK: showCommentFullscreenModal = false
+Console.js:61 🎬 MODAL RENDER CHECK: selectedFullscreenComment = null
+Console.js:61 🎬 MODAL RENDER CHECK: Should render modal? false
+10Console.js:61 🔄 COMMENTS REFETCH: Loaded 3 comments for video c1647877-54ed-410e-be34-c8aa666d226e

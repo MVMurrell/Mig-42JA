@@ -1,0 +1,92 @@
+[Stripe.js] It looks like you are using Payment Element in an iframe.
+      Avoid placing the Payment Element within another iframe because some payment methods require redirecting to another page for payment confirmation.
+warn @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+warn @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+value @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1Understand this warning
+shared-ba5b8fc4a0533893844b1f056723dfa2.js:1 
+            
+            
+           GET https://api.stripe.com/v1/elements/sessions?client_secret=pi_3RZaVIPtOf9J62YC1rwN48Qs_secret_e6NK9n7HVnRC3jcH0lLaIkNqd&key=pk_test_51RYd2cLLG2kHnUC3Esj2Ze7QL9j3Iwm2HNCceRXhIRcOQeC7Z6rVyOSZzu3AaFDqJboNcci4gQyLODEnAZROf6KK00FHbvUZTr&_stripe_version=2025-03-31.basil&elements_init_source=stripe.elements&referrer_host=b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev&stripe_js_id=f8473f75-cd37-49b2-a0ee-ce1e099fa2b7&top_level_referrer_host=replit.com&expand[0]=payment_method_preference.payment_intent.payment_method&locale=en-US&type=payment_intent 400 (Bad Request)
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+e @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+l @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+s @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+e @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+n @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+a @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+_ @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+I @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+t.clientSecret @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+jy @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+By.singleFlightCreateAndParse @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+n @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+a @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+n @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+a @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+i @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ shared-ba5b8fc4a0533893844b1f056723dfa2.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+value @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1
+(anonymous) @ controller-with-preconnect-49691ee6af4f76412e312f4770565e40.js:1Understand this error
+Console.js:61 Unhandled payment Element loaderror {error: {…}}
+Mt.forEach.n.<computed> @ Console.js:61
+i._emitEvent @ stripe.js:1
+(anonymous) @ stripe.js:1
+(anonymous) @ stripe.js:1
+s._emit @ stripe.js:1
+_handleMessage @ stripe.js:1
+(anonymous) @ stripe.js:1
+(anonymous) @ stripe.js:1Understand this error
+Console.js:61 Unhandled payment Element loaderror {error: {…}}
+Mt.forEach.n.<computed> @ Console.js:61
+i._emitEvent @ stripe.js:1
+(anonymous) @ stripe.js:1
+(anonymous) @ stripe.js:1
+s._emit @ stripe.js:1
+_handleMessage @ stripe.js:1
+(anonymous) @ stripe.js:1
+(anonymous) @ stripe.js:1Understand this error
+Warning: Don’t paste code into the DevTools Console that you don’t understand or haven’t reviewed yourself. This could allow attackers to steal your identity or take control of your computer. Please type ‘allow pasting’ below and press Enter to allow pasting.
+2Console.js:61 PaymentElement took too long to load, showing form anyway
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ PaymentForm.tsx:31
+setTimeout
+(anonymous) @ PaymentForm.tsx:29
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19432
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=0e1c40fa:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18718
+workLoop @ chunk-RPCDYKBN.js?v=0e1c40fa:197
+flushWork @ chunk-RPCDYKBN.js?v=0e1c40fa:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=0e1c40fa:384Understand this warning
+2Console.js:61 PaymentForm hasSavedMethods: false

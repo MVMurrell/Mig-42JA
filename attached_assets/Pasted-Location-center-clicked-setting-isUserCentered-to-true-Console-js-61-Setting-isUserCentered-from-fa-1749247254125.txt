@@ -1,0 +1,142 @@
+Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 User location updated to: {lat: 36.057308200433816, lng: -94.16042295499169}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Marker clicked for video: e98c7182-d3c1-4587-acee-70fc6f680134 Test success
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: e98c7182-d3c1-4587-acee-70fc6f680134
+Console.js:61 handleVideoClick called with video: e98c7182-d3c1-4587-acee-70fc6f680134
+Console.js:61 Current targetVideoId: null
+Console.js:61 Video format detection: {videoUrl: '/api/videos/e98c7182-d3c1-4587-acee-70fc6f680134/stream', videoDbUrl: '/api/videos/bunny-proxy/451d4c3f-f170-4ee8-830b-a9444a8d64a7', bunnyVideoId: undefined, isHLS: true, hlsSupported: true}
+Console.js:61 Initializing HLS player for Bunny.net stream
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/fea2654e-3094-47cb-9175-22e92bec5372:1 
+            
+            
+           GET blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/fea2654e-3094-47cb-9175-22e92bec5372 net::ERR_FILE_NOT_FOUNDUnderstand this error
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/fea2654e-3094-47cb-9175-22e92bec5372 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/fea2654e-3094-47cb-9175-22e92bec5372 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Error starting video: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:264
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:244
+commitHookEffectListMount @ chunk-WERSD76P.js?v=ecf90f59:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=ecf90f59:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=ecf90f59:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=ecf90f59:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=ecf90f59:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=ecf90f59:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=ecf90f59:19447
+commitRootImpl @ chunk-WERSD76P.js?v=ecf90f59:19416
+commitRoot @ chunk-WERSD76P.js?v=ecf90f59:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=ecf90f59:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=ecf90f59:9119
+(anonymous) @ chunk-WERSD76P.js?v=ecf90f59:18627Understand this error
+Console.js:61 Marked video e98c7182-d3c1-4587-acee-70fc6f680134 as watched
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Error playing HLS video: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:171
+Promise.catch
+(anonymous) @ VideoPlayerModal.tsx:171
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+filterAndSortMediaOptions @ hls__js.js?v=ecf90f59:28894
+onManifestLoaded @ hls__js.js?v=ecf90f59:28756
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+handleMasterPlaylist @ hls__js.js?v=ecf90f59:30922
+onSuccess @ hls__js.js?v=ecf90f59:30853
+readystatechange @ hls__js.js?v=ecf90f59:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=ecf90f59:27032
+loadInternal @ hls__js.js?v=ecf90f59:27006
+load @ hls__js.js?v=ecf90f59:26970
+load @ hls__js.js?v=ecf90f59:30863
+onManifestLoading @ hls__js.js?v=ecf90f59:30705
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+loadSource @ hls__js.js?v=ecf90f59:31427
+(anonymous) @ VideoPlayerModal.tsx:165
+commitHookEffectListMount @ chunk-WERSD76P.js?v=ecf90f59:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=ecf90f59:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=ecf90f59:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=ecf90f59:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=ecf90f59:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=ecf90f59:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=ecf90f59:19447
+commitRootImpl @ chunk-WERSD76P.js?v=ecf90f59:19416
+commitRoot @ chunk-WERSD76P.js?v=ecf90f59:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=ecf90f59:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=ecf90f59:9119
+(anonymous) @ chunk-WERSD76P.js?v=ecf90f59:18627Understand this error
+Console.js:61 HLS error: {type: 'networkError', details: 'manifestParsingError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…replit.dev/api/videos/bunny-proxy/360p/video.m3u8', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:176
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+handleManifestParsingError @ hls__js.js?v=ecf90f59:30975
+onSuccess @ hls__js.js?v=ecf90f59:30846
+readystatechange @ hls__js.js?v=ecf90f59:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=ecf90f59:27032
+loadInternal @ hls__js.js?v=ecf90f59:27006
+load @ hls__js.js?v=ecf90f59:26970
+load @ hls__js.js?v=ecf90f59:30863
+onLevelLoading @ hls__js.js?v=ecf90f59:30724
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+loadingPlaylist @ hls__js.js?v=ecf90f59:29095
+scheduleLoading @ hls__js.js?v=ecf90f59:15906
+loadPlaylist @ hls__js.js?v=ecf90f59:29084
+set level @ hls__js.js?v=ecf90f59:28970
+set nextLoadLevel @ hls__js.js?v=ecf90f59:29113
+set nextLoadLevel @ hls__js.js?v=ecf90f59:31646
+startLoad @ hls__js.js?v=ecf90f59:29303
+startLoad @ hls__js.js?v=ecf90f59:31461
+checkAutostartLoad @ hls__js.js?v=ecf90f59:30878
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+handleMasterPlaylist @ hls__js.js?v=ecf90f59:30922
+onSuccess @ hls__js.js?v=ecf90f59:30853
+readystatechange @ hls__js.js?v=ecf90f59:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=ecf90f59:27032
+loadInternal @ hls__js.js?v=ecf90f59:27006
+load @ hls__js.js?v=ecf90f59:26970
+load @ hls__js.js?v=ecf90f59:30863
+onManifestLoading @ hls__js.js?v=ecf90f59:30705
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+loadSource @ hls__js.js?v=ecf90f59:31427
+(anonymous) @ VideoPlayerModal.tsx:165
+commitHookEffectListMount @ chunk-WERSD76P.js?v=ecf90f59:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=ecf90f59:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=ecf90f59:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=ecf90f59:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=ecf90f59:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=ecf90f59:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=ecf90f59:19447
+commitRootImpl @ chunk-WERSD76P.js?v=ecf90f59:19416
+commitRoot @ chunk-WERSD76P.js?v=ecf90f59:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=ecf90f59:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=ecf90f59:9119
+(anonymous) @ chunk-WERSD76P.js?v=ecf90f59:18627Understand this error
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}

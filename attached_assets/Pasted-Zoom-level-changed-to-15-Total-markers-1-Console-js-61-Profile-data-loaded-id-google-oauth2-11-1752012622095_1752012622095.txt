@@ -1,0 +1,85 @@
+Zoom level changed to: 15 Total markers: 1
+Console.js:61 Profile data loaded: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg', …}
+Console.js:61 Profile image URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2|117032826996185616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg
+Console.js:61 Ready Player Me URL: null
+Console.js:61 Zoom level changed to: 15 Total markers: 1
+queryClient.ts:45 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/coins/location-update 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+handleLocationUpdate @ useCoinEarning.ts:169
+(anonymous) @ useCoinEarning.ts:111Understand this error
+Console.js:61 Location update error: Error: 500: {"message":"Failed to process location update","error":"column \"heading\" does not exist"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+    at async handleLocationUpdate (useCoinEarning.ts:169:22)
+Mt.forEach.n.<computed> @ Console.js:61
+handleLocationUpdate @ useCoinEarning.ts:192
+await in handleLocationUpdate
+(anonymous) @ useCoinEarning.ts:111Understand this error
+queryClient.ts:45 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/coins/location-update 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+handleLocationUpdate @ useCoinEarning.ts:169
+(anonymous) @ useCoinEarning.ts:111Understand this error
+Console.js:61 Location update error: Error: 500: {"message":"Failed to process location update","error":"column \"heading\" does not exist"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+    at async handleLocationUpdate (useCoinEarning.ts:169:22)
+Mt.forEach.n.<computed> @ Console.js:61
+handleLocationUpdate @ useCoinEarning.ts:192
+await in handleLocationUpdate
+(anonymous) @ useCoinEarning.ts:111Understand this error
+queryClient.ts:45 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/coins/location-update 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+handleLocationUpdate @ useCoinEarning.ts:169
+(anonymous) @ useCoinEarning.ts:111Understand this error
+Console.js:61 Location update error: Error: 500: {"message":"Failed to process location update","error":"column \"heading\" does not exist"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+    at async handleLocationUpdate (useCoinEarning.ts:169:22)
+Mt.forEach.n.<computed> @ Console.js:61
+handleLocationUpdate @ useCoinEarning.ts:192
+await in handleLocationUpdate
+(anonymous) @ useCoinEarning.ts:111Understand this error
+queryClient.ts:45 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/coins/location-update 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+handleLocationUpdate @ useCoinEarning.ts:169
+(anonymous) @ useCoinEarning.ts:111Understand this error
+Console.js:61 Location update error: Error: 500: {"message":"Failed to process location update","error":"column \"heading\" does not exist"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+    at async handleLocationUpdate (useCoinEarning.ts:169:22)
+Mt.forEach.n.<computed> @ Console.js:61
+handleLocationUpdate @ useCoinEarning.ts:192
+await in handleLocationUpdate
+(anonymous) @ useCoinEarning.ts:111Understand this error
+queryClient.ts:45 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/coins/location-update 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+handleLocationUpdate @ useCoinEarning.ts:169
+(anonymous) @ useCoinEarning.ts:111Understand this error
+Console.js:61 Location update error: Error: 500: {"message":"Failed to process location update","error":"column \"heading\" does not exist"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+    at async handleLocationUpdate (useCoinEarning.ts:169:22)
+Mt.forEach.n.<computed> @ Console.js:61
+handleLocationUpdate @ useCoinEarning.ts:192
+await in handleLocationUpdate
+(anonymous) @ useCoinEarning.ts:111Understand this error

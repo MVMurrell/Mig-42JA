@@ -1,0 +1,339 @@
+Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 15 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 15 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 9 googleMap: true
+VM6 eruda.js:2 Adding markers to Google Maps: 9 videos
+VM6 eruda.js:2 Processing video for marker: 5587d8d9-67e3-457d-8243-6e1fb0ca4bcc test events
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05712824, lng: -94.16046022}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 Event countdown for test (new marker): Live startDate: 2025-06-23 startTime: 13:33
+VM6 eruda.js:2 New AdvancedMarkerElement created for: test
+VM6 eruda.js:2 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Rocking Chair
+VM6 eruda.js:2 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: My weekend
+VM6 eruda.js:2 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Is the form forming?
+VM6 eruda.js:2 Processing video for marker: 97556b02-0832-488a-a508-16af97a5c103 Quest 2 challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05723564, lng: -94.16074099}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Quest 2
+VM6 eruda.js:2 Processing video for marker: 9934c6ac-523f-4ed4-8d26-ef8882f6398b Quest mane challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05712884, lng: -94.16042896}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Quest mane
+VM6 eruda.js:2 Processing video for marker: a4cde367-7fd3-40e3-9360-64a262792c8a Testing bro nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05720446, lng: -94.16069737}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Testing bro
+VM6 eruda.js:2 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: One Night Only
+VM6 eruda.js:2 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Higher breh
+VM6 eruda.js:2 Zoom level changed to: 15 Total markers: 9
+VM6 eruda.js:2 Advanced marker clicked for video: c1647877-54ed-410e-be34-c8aa666d226e One Night Only
+VM6 eruda.js:2 Target video ID (prop): null
+VM6 eruda.js:2 Persistent target video ID: null
+VM6 eruda.js:2 Using clicked marker video: c1647877-54ed-410e-be34-c8aa666d226e
+VM6 eruda.js:2 handleVideoClick called with video: c1647877-54ed-410e-be34-c8aa666d226e
+VM6 eruda.js:2 Current targetVideoId: null
+VM6 eruda.js:2 Within activation radius (9m), activating video...
+VM6 eruda.js:2 Video activated successfully
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoCommentRecorder: Cleanup called
+VM6 eruda.js:2 🎬 VideoFeedModal: Initializing video: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', videoTitle: 'One Night Only', currentVideoIndex: 0, hasVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Using HLS.js for stream
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: HLS manifest loaded successfully
+VM6 eruda.js:2 🎬 VideoFeedModal: ⚠️ NATIVE PLAY EVENT in useEffect
+VM6 eruda.js:2 🎬 VideoFeedModal: Setting isPlaying to true (user has not manually paused)
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Video loaded successfully
+VM6 eruda.js:2 VideoFeedModal: Video can play event - hasTriggeredAutoplay: false userHasPausedVideo: false
+VM6 eruda.js:2 🎬 VideoFeedModal: Video started playing
+VM6 eruda.js:2 VideoFeedModal: Started autoplay on canPlay event
+VM6 eruda.js:2 VideoFeedModal: Marking video as watched: c1647877-54ed-410e-be34-c8aa666d226e
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 Marker placement effect running - videos: 9 googleMap: true
+VM6 eruda.js:2 Adding markers to Google Maps: 9 videos
+VM6 eruda.js:2 Processing video for marker: 5587d8d9-67e3-457d-8243-6e1fb0ca4bcc test events
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05712824, lng: -94.16046022}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for event: test
+VM6 eruda.js:2 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: Rocking Chair
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05720092, -94.1603711)
+VM6 eruda.js:2 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: My weekend
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05721208, -94.16063493)
+VM6 eruda.js:2 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: Is the form forming?
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05723861, -94.16059521)
+VM6 eruda.js:2 Processing video for marker: 97556b02-0832-488a-a508-16af97a5c103 Quest 2 challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05723564, lng: -94.16074099}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: Quest 2
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05723564, -94.16074099)
+VM6 eruda.js:2 Processing video for marker: 9934c6ac-523f-4ed4-8d26-ef8882f6398b Quest mane challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05712884, lng: -94.16042896}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: Quest mane
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05712884, -94.16042896)
+VM6 eruda.js:2 Processing video for marker: a4cde367-7fd3-40e3-9360-64a262792c8a Testing bro nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05720446, lng: -94.16069737}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: Testing bro
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05720446, -94.16069737)
+VM6 eruda.js:2 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: One Night Only
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05711838, -94.16072529)
+VM6 eruda.js:2 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+VM6 eruda.js:2 Existing marker found: true
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement for: Higher breh
+VM6 eruda.js:2 Updated existing AdvancedMarkerElement - position: (36.05719557, -94.16058985)
+VM6 eruda.js:2 Zoom level changed to: 15 Total markers: 9
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 VideoFeedModal: Video can play event - hasTriggeredAutoplay: true userHasPausedVideo: false
+VM6 eruda.js:2 VideoFeedModal: Skipping autoplay - already triggered or user has paused
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Play button clicked
+VM6 eruda.js:2 🎬 VideoFeedModal: togglePlayPause called, current isPlaying: true
+VM6 eruda.js:2 🎬 VideoFeedModal: User pausing video
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Native pause event in useEffect - setting isPlaying to false
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Component initialized with: {videosLength: 1, initialVideoIndex: 0, firstVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', hasVideos: true}
+VM6 eruda.js:2 🎬 VideoFeedModal: Current video state: {currentVideoIndex: 0, currentVideoId: 'c1647877-54ed-410e-be34-c8aa666d226e', currentVideoTitle: 'One Night Only', hasCurrentVideo: true}
+Console.js:61 Marker placement effect running - videos: 0 googleMap: false
+Console.js:61 Google Maps not ready yet, skipping marker placement
+Console.js:61 Marker placement effect running - videos: 0 googleMap: false
+Console.js:61 Google Maps not ready yet, skipping marker placement
+Console.js:61 Google Maps JavaScript API: A Map's styles property cannot be set when a mapId is present. When a mapId is present, map styles are controlled via the cloud console. Please see documentation at https://developers.google.com/maps/documentation/javascript/styling#cloud_tooling
+Mt.forEach.n.<computed> @ Console.js:61
+styles_changed @ main.js:404
+om @ main.js:160
+_.mm.bindTo @ main.js:317
+Cba @ main.js:193
+_.Uq @ main.js:239
+initializeMap @ MapInterface.tsx:418
+await in initializeMap
+(anonymous) @ MapInterface.tsx:489
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19416
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=8a2efd69:555
+flush @ @tanstack_react-query.js?v=8a2efd69:569
+batch @ @tanstack_react-query.js?v=8a2efd69:587
+dispatch_fn @ @tanstack_react-query.js?v=8a2efd69:996
+setData @ @tanstack_react-query.js?v=8a2efd69:696
+onSuccess @ @tanstack_react-query.js?v=8a2efd69:897
+resolve @ @tanstack_react-query.js?v=8a2efd69:456
+Promise.then
+run @ @tanstack_react-query.js?v=8a2efd69:498
+start @ @tanstack_react-query.js?v=8a2efd69:536
+fetch @ @tanstack_react-query.js?v=8a2efd69:926
+executeFetch_fn @ @tanstack_react-query.js?v=8a2efd69:2211
+onSubscribe @ @tanstack_react-query.js?v=8a2efd69:1898
+subscribe @ @tanstack_react-query.js?v=8a2efd69:24
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=8a2efd69:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19416
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=8a2efd69:555
+flush @ @tanstack_react-query.js?v=8a2efd69:569
+batch @ @tanstack_react-query.js?v=8a2efd69:587
+dispatch_fn @ @tanstack_react-query.js?v=8a2efd69:996
+setData @ @tanstack_react-query.js?v=8a2efd69:696
+onSuccess @ @tanstack_react-query.js?v=8a2efd69:897
+resolve @ @tanstack_react-query.js?v=8a2efd69:456
+Promise.then
+run @ @tanstack_react-query.js?v=8a2efd69:498
+start @ @tanstack_react-query.js?v=8a2efd69:536
+fetch @ @tanstack_react-query.js?v=8a2efd69:926
+executeFetch_fn @ @tanstack_react-query.js?v=8a2efd69:2211
+onSubscribe @ @tanstack_react-query.js?v=8a2efd69:1898
+subscribe @ @tanstack_react-query.js?v=8a2efd69:24
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=8a2efd69:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this warning
+Console.js:61 User location updated to: {lat: 36.057161128915745, lng: -94.16063669140041}
+Console.js:61 As of February 21st, 2024, google.maps.Marker is deprecated. Please use google.maps.marker.AdvancedMarkerElement instead. At this time, google.maps.Marker is not scheduled to be discontinued, but google.maps.marker.AdvancedMarkerElement is recommended over google.maps.Marker. While google.maps.Marker will continue to receive bug fixes for any major regressions, existing bugs in google.maps.Marker will not be addressed. At least 12 months notice will be given before support is discontinued. Please see https://developers.google.com/maps/deprecations for additional details and https://developers.google.com/maps/documentation/javascript/advanced-markers/migration for the migration guide.
+Mt.forEach.n.<computed> @ Console.js:61
+_.xn @ main.js:173
+createUserMarker @ MapInterface.tsx:619
+(anonymous) @ MapInterface.tsx:508
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:19328
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this warning
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Zoom level changed to: 19 Total markers: 0
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 19 Total markers: 0
+Console.js:61 Marker placement effect running - videos: 9 googleMap: true
+Console.js:61 Adding markers to Google Maps: 9 videos
+Console.js:61 Processing video for marker: 5587d8d9-67e3-457d-8243-6e1fb0ca4bcc test events
+Console.js:61 Creating marker at position: {lat: 36.05712824, lng: -94.16046022}
+Console.js:61 Existing marker found: false
+Console.js:61 Event countdown for test (new marker): Live startDate: 2025-06-23 startTime: 13:33
+Console.js:61 New AdvancedMarkerElement created for: test
+Console.js:61 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+Console.js:61 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Rocking Chair
+Console.js:61 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+Console.js:61 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: My weekend
+Console.js:61 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+Console.js:61 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Is the form forming?
+Console.js:61 Processing video for marker: 97556b02-0832-488a-a508-16af97a5c103 Quest 2 challenge
+Console.js:61 Creating marker at position: {lat: 36.05723564, lng: -94.16074099}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Quest 2
+Console.js:61 Processing video for marker: 9934c6ac-523f-4ed4-8d26-ef8882f6398b Quest mane challenge
+Console.js:61 Creating marker at position: {lat: 36.05712884, lng: -94.16042896}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Quest mane
+Console.js:61 Processing video for marker: a4cde367-7fd3-40e3-9360-64a262792c8a Testing bro nature
+Console.js:61 Creating marker at position: {lat: 36.05720446, lng: -94.16069737}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Testing bro
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: One Night Only
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Higher breh
+Console.js:61 Zoom level changed to: 19 Total markers: 9

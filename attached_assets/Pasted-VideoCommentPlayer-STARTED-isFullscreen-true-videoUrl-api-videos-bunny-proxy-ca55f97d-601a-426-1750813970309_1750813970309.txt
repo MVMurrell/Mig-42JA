@@ -1,0 +1,92 @@
+VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+stallwart.build.js:1 stallwart: failed ping 1
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+stallwart.build.js:1 stallwart: failed ping 2
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoCommentPlayer: Container clicked! {target: video.w-full.h-full.object-contain.bg-black, currentTarget: div.relative.bg-black.overflow-hidden.cursor-pointer.group.w-full.h-full}
+Console.js:61 🎬 VideoCommentPlayer handlePlay called: {hasOnFullscreen: true, isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', onFullscreenType: 'function'}
+Console.js:61 🎬 VideoCommentPlayer: In fullscreen mode, controlling playback
+Console.js:61 🎬 VideoCommentPlayer: Pausing video in fullscreen
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+2stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2

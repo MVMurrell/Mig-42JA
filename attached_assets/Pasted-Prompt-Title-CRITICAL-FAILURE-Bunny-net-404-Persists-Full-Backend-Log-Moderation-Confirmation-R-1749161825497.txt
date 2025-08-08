@@ -1,0 +1,28 @@
+Prompt Title: CRITICAL FAILURE: Bunny.net 404 Persists. Full Backend Log & Moderation Confirmation Required.
+
+Current Problem:
+The video still fails to play with a 404 Not Found error from Bunny.net. This unequivocally means Bunny.net is NOT successfully processing or making the video available for playback, despite your attempts to send the raw WebM directly. The frontend is also still attempting premature playback.
+
+Furthermore, your previous summary failed to confirm the implementation of the Google Cloud Video AI moderation step. This is non-negotiable for the application's core functionality.
+
+Required Actions & Information (Ordered by Priority):
+
+DIAGNOSE BUNNY.NET STREAM FAILURE (404/0 Bytes):
+
+PROVIDE DETAILED BACKEND LOGS IMMEDIATELY: I need to see the exact API responses from Bunny.net from the backend perspective.
+Show me the full status_code and response.text (or response.json()) for both the POST request (to create the video object) and the PUT request (to upload the raw WebM file) within the create_bunny_stream_video function or wherever the Bunny.net API calls are made. This is critical to understand Bunny.net's specific rejection reason or success message.
+Implement Polling for Bunny.net Video Status: After the PUT upload completes, the backend MUST poll Bunny.net's Stream API (GET /library/{libraryId}/videos/{videoId}) to check the video's actual processing status. Bunny.net videos go through states like 0=pending, 1=encoding, 2=ready. Log the status and GUID of the video as reported by Bunny.net during this polling process.
+The backend should only consider the Bunny.net part 'complete' once Bunny.net reports status: 2 (ready) for that video. If it never reaches status 2 or shows an error status, that's the root cause of the 404.
+CONFIRM & LOG GOOGLE CLOUD VIDEO AI INTEGRATION:
+
+Show me the backend logs from the process_video_in_background function that confirm:
+The upload of the raw WebM file to Google Cloud Storage (GCS).
+The initiation of the Google Cloud Video Intelligence API call (annotate_video).
+The actual result obtained from the annotate_video operation (i.e., whether explicit content was detected or not).
+Confirm that the overall video status (e.g., 'approved', 'flagged') in your database is updated based on both the Bunny.net readiness AND the Video AI moderation outcome.
+FIX FRONTEND UX AND PREMATURE PLAYBACK:
+
+REVERT ANY LOCAL PLAYBACK ATTEMPTS: The lines like 🔍 Testing local video playback before upload... and immediate attempts to Start video 0 must be removed if they are part of a workaround. The only playback should be from Bunny.net after confirmation.
+Proper "Processing" State: The frontend needs to correctly implement the "Processing..." state. Upon receiving the 202 Accepted from the backend, the video on the user's profile/feed should display a clear "Processing..." message or a pending icon, and be non-playable.
+Delayed Playback Attempt: The frontend should only attempt to load and play the video once the backend has explicitly updated the video's status to "Approved" (meaning Bunny.net is ready AND Video AI is complete). This implies a mechanism for the frontend to query the video's status from the backend (e.g., polling an API endpoint GET /api/video_status/<video_id>).
+In summary: We need to see the backend logs to diagnose Bunny.net's failure, confirm the full moderation pipeline is active, and ensure the frontend truly waits for processing completion.

@@ -1,0 +1,98 @@
+User Uploaded Photo in a Circle with Scroll Icon in Top-Right (Not Cut Off)
+This requires more careful layering with CSS. The "cut off" issue in Replit's attempt suggests they might have been using overflow: hidden on the outer circle, or not correctly positioning the scroll icon outside the flow of the circle image, but within the overall marker container.
+
+Key Idea: Use position: relative on the container for the circle image, and position: absolute for the scroll icon to precisely place it relative to that container. Use z-index to ensure the scroll icon is always on top.
+
+HTML Structure:
+
+HTML
+
+<div class="quest-marker-content">
+    <div class="circle-container">
+        <img src="path/to/user-uploaded-photo.jpg" class="user-quest-image">
+    </div>
+    <img src="path/to/your/scroll-icon.png" class="quest-scroll-overlay-icon">
+</div>
+CSS (Crucial for proper layering and positioning):
+
+CSS
+
+.quest-marker-content {
+    /* This makes the bottom-center of the entire combined marker (circle + scroll icon)
+       align with the geographical position. Adjust based on your icon sizes. */
+    transform: translate(-50%, -100%);
+    position: relative; /* Important: Allows absolute positioning of children relative to this div */
+    width: fit-content; /* Or a fixed width if your circle is always a certain size */
+    height: fit-content; /* Or a fixed height */
+    display: flex; /* Helps ensure the circle is the primary content */
+    justify-content: center;
+    align-items: flex-end; /* Align to the bottom for consistent anchoring */
+}
+
+.circle-container {
+    width: 80px; /* Adjust size of your circle */
+    height: 80px; /* Must be equal for a perfect circle */
+    border-radius: 50%; /* Makes it a circle */
+    overflow: hidden; /* Crucial: Clips the user image to the circle shape */
+    border: 3px solid #FFD700; /* Yellow border (as in your example) */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* Optional: subtle shadow */
+    display: flex; /* For centering the image if it's smaller than the container */
+    justify-content: center;
+    align-items: center;
+}
+
+.user-quest-image {
+    width: 100%;  /* Ensures the image fills the circular container */
+    height: 100%; /* Ensures the image fills the circular container */
+    object-fit: cover; /* Crops the image to cover the circle, preventing distortion */
+    display: block;
+}
+
+.quest-scroll-overlay-icon {
+    position: absolute; /* Positions this icon relative to .quest-marker-content */
+    width: 30px; /* Size of the scroll icon overlay */
+    height: 30px;
+    top: -5px;   /* Adjust these values to position the icon in the top-right corner */
+    right: -5px; /* Adjust for desired overlap */
+    z-index: 10; /* Ensures the scroll icon is always on top of the circle */
+    border-radius: 50%; /* If your scroll icon PNG has transparent corners,
+                            this will make the border-radius effective if you add a border */
+    /* Optional: Add a small white border to make it pop like in your example */
+    border: 2px solid white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Optional shadow for depth */
+}
+JavaScript (when creating the marker):
+
+JavaScript
+
+const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+function createQuestMarker(position, userImageUrl, scrollIconUrl) {
+    const markerContent = document.createElement('div');
+    markerContent.className = 'quest-marker-content';
+    markerContent.innerHTML = `
+        <div class="circle-container">
+            <img src="${userImageUrl}" class="user-quest-image">
+        </div>
+        <img src="${scrollIconUrl}" class="quest-scroll-overlay-icon">
+    `;
+    return new AdvancedMarkerElement({
+        map: map,
+        position: position,
+        content: markerContent,
+    });
+}
+
+// Usage:
+createQuestMarker(
+    { lat: 34.06, lng: -118.26 },
+    'https://via.placeholder.com/150/FF0000/FFFFFF?text=User+Photo', // Replace with dynamic user photo URL
+    'path/to/your/scroll-icon.png' // Replace with your scroll icon URL
+);
+Explanation of the Fix for the "Cut Off" Issue:
+position: relative on .quest-marker-content: This makes quest-marker-content the positioning context for its absolutely positioned children.
+position: absolute on .quest-scroll-overlay-icon: This pulls the scroll icon out of the normal document flow, allowing it to be placed precisely using top and right properties, relative to its parent (.quest-marker-content).
+z-index: 10 on .quest-scroll-overlay-icon: This ensures the scroll icon is rendered on top of the .circle-container and user-quest-image, preventing it from being cut off or appearing behind them.
+overflow: hidden on .circle-container: This is crucial for making the user image appear circular while keeping the overall marker's bounding box rectangular (which helps with the position: absolute calculations for the scroll icon). The image itself isn't cut off by the circle-container's overflow: hidden, but rather the scroll icon isn't inside the circle container's overflow context.
+transform: translate(-50%, -100%) on .quest-marker-content: This ensures that the bottom-center of your entire custom marker (including the main circle and any part of the scroll icon that might extend below it) aligns with the exact position you set for the marker on the map. You might need to fine-tune the top and right values on .quest-scroll-overlay-icon to get the exact "overlap" look you desire.
+By structuring your HTML content for the AdvancedMarkerElement with these CSS positioning techniques, you gain complete control over the layout and layering of all elements within your custom marker, enabling complex designs like the ones you've described.

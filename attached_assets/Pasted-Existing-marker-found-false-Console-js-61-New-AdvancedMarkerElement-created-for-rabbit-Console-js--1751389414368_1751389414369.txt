@@ -1,0 +1,180 @@
+Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: rabbit
+Console.js:61 Zoom level changed to: 15 Total markers: 10
+Console.js:61 Warning: Encountered two children with the same key, `0a82e3c5-3698-4b59-a925-a6d86898e177`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at GroupsPage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/groups.tsx:36:27)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0aec14a9:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0aec14a9:64:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0aec14a9:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=0aec14a9:521
+error @ chunk-RPCDYKBN.js?v=0aec14a9:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=0aec14a9:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=0aec14a9:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=0aec14a9:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=0aec14a9:14292
+updateHostComponent @ chunk-RPCDYKBN.js?v=0aec14a9:14807
+beginWork @ chunk-RPCDYKBN.js?v=0aec14a9:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=0aec14a9:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0aec14a9:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0aec14a9:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0aec14a9:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0aec14a9:555
+flush @ @tanstack_react-query.js?v=0aec14a9:569
+batch @ @tanstack_react-query.js?v=0aec14a9:587
+dispatch_fn @ @tanstack_react-query.js?v=0aec14a9:996
+setData @ @tanstack_react-query.js?v=0aec14a9:696
+onSuccess @ @tanstack_react-query.js?v=0aec14a9:897
+resolve @ @tanstack_react-query.js?v=0aec14a9:456
+Promise.then
+run @ @tanstack_react-query.js?v=0aec14a9:498
+start @ @tanstack_react-query.js?v=0aec14a9:536
+fetch @ @tanstack_react-query.js?v=0aec14a9:926
+executeFetch_fn @ @tanstack_react-query.js?v=0aec14a9:2211
+setOptions @ @tanstack_react-query.js?v=0aec14a9:1955
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Console.js:61 Warning: Encountered two children with the same key, `550e8400-e29b-41d4-a716-446655440001`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at GroupsPage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/groups.tsx:36:27)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0aec14a9:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0aec14a9:64:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0aec14a9:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=0aec14a9:521
+error @ chunk-RPCDYKBN.js?v=0aec14a9:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=0aec14a9:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=0aec14a9:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=0aec14a9:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=0aec14a9:14292
+updateHostComponent @ chunk-RPCDYKBN.js?v=0aec14a9:14807
+beginWork @ chunk-RPCDYKBN.js?v=0aec14a9:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=0aec14a9:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0aec14a9:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0aec14a9:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0aec14a9:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0aec14a9:555
+flush @ @tanstack_react-query.js?v=0aec14a9:569
+batch @ @tanstack_react-query.js?v=0aec14a9:587
+dispatch_fn @ @tanstack_react-query.js?v=0aec14a9:996
+setData @ @tanstack_react-query.js?v=0aec14a9:696
+onSuccess @ @tanstack_react-query.js?v=0aec14a9:897
+resolve @ @tanstack_react-query.js?v=0aec14a9:456
+Promise.then
+run @ @tanstack_react-query.js?v=0aec14a9:498
+start @ @tanstack_react-query.js?v=0aec14a9:536
+fetch @ @tanstack_react-query.js?v=0aec14a9:926
+executeFetch_fn @ @tanstack_react-query.js?v=0aec14a9:2211
+setOptions @ @tanstack_react-query.js?v=0aec14a9:1955
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+Console.js:61 Warning: Encountered two children with the same key, `550e8400-e29b-41d4-a716-446655440002`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at div
+    at div
+    at div
+    at div
+    at GroupsPage (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/groups.tsx:36:27)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0aec14a9:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0aec14a9:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0aec14a9:64:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0aec14a9:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=0aec14a9:521
+error @ chunk-RPCDYKBN.js?v=0aec14a9:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=0aec14a9:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=0aec14a9:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=0aec14a9:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=0aec14a9:14292
+updateHostComponent @ chunk-RPCDYKBN.js?v=0aec14a9:14807
+beginWork @ chunk-RPCDYKBN.js?v=0aec14a9:15935
+beginWork$1 @ chunk-RPCDYKBN.js?v=0aec14a9:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0aec14a9:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0aec14a9:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0aec14a9:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=0aec14a9:555
+flush @ @tanstack_react-query.js?v=0aec14a9:569
+batch @ @tanstack_react-query.js?v=0aec14a9:587
+dispatch_fn @ @tanstack_react-query.js?v=0aec14a9:996
+setData @ @tanstack_react-query.js?v=0aec14a9:696
+onSuccess @ @tanstack_react-query.js?v=0aec14a9:897
+resolve @ @tanstack_react-query.js?v=0aec14a9:456
+Promise.then
+run @ @tanstack_react-query.js?v=0aec14a9:498
+start @ @tanstack_react-query.js?v=0aec14a9:536
+fetch @ @tanstack_react-query.js?v=0aec14a9:926
+executeFetch_fn @ @tanstack_react-query.js?v=0aec14a9:2211
+setOptions @ @tanstack_react-query.js?v=0aec14a9:1955
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error

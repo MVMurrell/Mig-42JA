@@ -1,0 +1,37 @@
+Marked video e98c7182-d3c1-4587-acee-70fc6f680134 as watched
+Console.js:61 HLS error: {type: 'networkError', details: 'manifestParsingError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…/bunny-proxy/451d4c3f-f170-4ee8-830b-a9444a8d64a7', err: Error: no EXTM3U delimiter
+    at Object.onSuccess (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00…, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:176
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+handleManifestParsingError @ hls__js.js?v=ecf90f59:30975
+onSuccess @ hls__js.js?v=ecf90f59:30846
+readystatechange @ hls__js.js?v=ecf90f59:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=ecf90f59:27032
+loadInternal @ hls__js.js?v=ecf90f59:27006
+load @ hls__js.js?v=ecf90f59:26970
+load @ hls__js.js?v=ecf90f59:30863
+onManifestLoading @ hls__js.js?v=ecf90f59:30705
+emit @ hls__js.js?v=ecf90f59:8863
+emit @ hls__js.js?v=ecf90f59:31317
+trigger @ hls__js.js?v=ecf90f59:31324
+loadSource @ hls__js.js?v=ecf90f59:31427
+(anonymous) @ VideoPlayerModal.tsx:165
+commitHookEffectListMount @ chunk-WERSD76P.js?v=ecf90f59:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=ecf90f59:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=ecf90f59:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=ecf90f59:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=ecf90f59:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=ecf90f59:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=ecf90f59:19447
+commitRootImpl @ chunk-WERSD76P.js?v=ecf90f59:19416
+commitRoot @ chunk-WERSD76P.js?v=ecf90f59:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=ecf90f59:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=ecf90f59:9119
+(anonymous) @ chunk-WERSD76P.js?v=ecf90f59:18627Understand this error
+Console.js:61 Network error, trying to recover...
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}

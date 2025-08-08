@@ -1,0 +1,76 @@
+🎬 VideoCommentRecorder: Cleanup called
+Console.js:61 🎬 VideoFeedModal: Initializing video: /api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3
+Console.js:61 🎬 VideoFeedModal: Using HLS.js for stream
+queryClient.ts:57 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/location 404 (Not Found)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:57
+fetchFn @ @tanstack_react-query.js?v=8a2efd69:840
+run @ @tanstack_react-query.js?v=8a2efd69:494
+start @ @tanstack_react-query.js?v=8a2efd69:536
+fetch @ @tanstack_react-query.js?v=8a2efd69:926
+executeFetch_fn @ @tanstack_react-query.js?v=8a2efd69:2211
+onSubscribe @ @tanstack_react-query.js?v=8a2efd69:1898
+subscribe @ @tanstack_react-query.js?v=8a2efd69:24
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=8a2efd69:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19432
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=8a2efd69:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18718
+workLoop @ chunk-RPCDYKBN.js?v=8a2efd69:197
+flushWork @ chunk-RPCDYKBN.js?v=8a2efd69:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=8a2efd69:384Understand this error
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: HLS manifest loaded
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: Video loaded successfully
+Console.js:61 VideoFeedModal: Video can play event - hasTriggeredAutoplay: false userHasPausedVideo: false
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 🎬 VideoFeedModal: ⚠️ NATIVE PLAY EVENT in useEffect
+Console.js:61 🎬 VideoFeedModal: Setting isPlaying to true (user has not manually paused)
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoFeedModal: Started autoplay on canPlay event
+Console.js:61 VideoFeedModal: Marking video as watched: c1647877-54ed-410e-be34-c8aa666d226e
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+stallwart.build.js:1 stallwart: failed ping 1
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/ca55f97d-601a-426e-b519-b5a1dc0604f4/720p/video.m3u8'}

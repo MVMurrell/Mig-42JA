@@ -1,0 +1,38 @@
+Prompt Title: IMMEDIATE STOP: Diagnose & Fix Audio Processing Failure (NO Fallbacks or Skipping)
+
+Replit, your current proposal to "implement a more robust audio processing fallback system" is NOT an acceptable solution. A fallback system for a broken audio processing step means skipping crucial content moderation and keyword indexing, which is absolutely non-negotiable for this application.
+
+We MUST fix the audio processing step directly. No workarounds that bypass essential features will be accepted.
+
+Your grep command was a good first step, but it seems to have either found no specific errors logged, or you didn't provide them. We need to see the detailed error output from the point where audio processing is failing.
+
+Here are the critical instructions to diagnose and fix the audio processing pipeline, without implementing any fallbacks:
+
+Stop All Fallback Implementation:
+
+Action: Revert any code changes that attempt to "gracefully fall back" or skip audio processing if it fails. The system must fail explicitly if audio processing cannot complete successfully.
+Provide Full, Detailed Error Logs from Audio Processing:
+
+Goal: Get the exact error messages that explain why the audio processing is failing. This is paramount.
+Action:
+Go directly to the server-side logs during a failed video upload attempt.
+Locate the log entries related to the audio extraction and initial processing. This is typically where ffmpeg is called to extract audio (e.g., converting MP4 to FLAC/WAV).
+Provide the COMPLETE output of the ffmpeg command for audio extraction. ffmpeg itself will print detailed error messages to stderr if it encounters issues (e.g., codec problems, invalid input, corrupted data).
+If ffmpeg itself isn't logging an error, then provide the logs from the subsequent steps in your audio processing pipeline (e.g., the Google Cloud Speech-to-Text API call logs).
+Example of what I'm looking for (conceptual ffmpeg error):
+[libopus @ 0x...] Error: Invalid audio data
+Error while decoding stream #0:0: Invalid data found when processing input
+[flac @ 0x...] Could not write header
+av_interleaved_write_frame(): Invalid argument
+Error writing trailer of /path/to/temp_audio.flac: Invalid argument
+OR
+Google Cloud Speech-to-Text API Error: (Details of the API error, e.g., "invalid audio format", "transcription failed")
+If you are only seeing "Audio processing failed" in your logs, you need to add more verbose logging around the FFmpeg command and the Speech-to-Text API call to capture their standard error outputs and specific API error messages.
+Confirm Input File Format for Audio Extraction:
+
+Goal: Ensure FFmpeg is receiving a valid video file from the previous preprocessing stage.
+Action: Before the FFmpeg audio extraction command is run, log the file path and its size (e.g., using fs.statSync() or os.path.getsize() if Python) of the MP4 file that is supposed to be used as input for audio extraction.
+Optional: If possible, also run ffprobe -v error -show_format -show_streams /path/to/input_mp4_video.mp4 on that MP4 file and log its output. This verifies the MP4 itself is sound before audio extraction.
+Once you provide the precise error messages from the backend (especially ffmpeg's output or Speech-to-Text API errors), we can pinpoint the exact cause and implement a targeted fix.
+
+Do NOT proceed with any fallback systems for audio processing until the primary processing pipeline is stable and working as required.

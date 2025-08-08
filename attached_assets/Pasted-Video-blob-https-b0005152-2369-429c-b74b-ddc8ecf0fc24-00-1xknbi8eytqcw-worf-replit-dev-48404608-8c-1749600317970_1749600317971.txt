@@ -1,0 +1,103 @@
+Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 MP4 video loaded successfully
+8Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/48404608-8cb2-49e7-b1d1-66beba3dc284 can play - format is supported
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 Video format detection: {videoUrl: '/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686', videoDbUrl: '/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686', bunnyVideoId: '86a0c748-fef5-4ee9-9902-bcdebbdc9686', isHLS: true, hlsSupported: true}
+Console.js:61 Trying MP4 version first for Bunny.net video
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+Console.js:61 Marked video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f as watched
+video.mp4:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686/720p/video.mp4 404 (Not Found)Understand this error
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686/720p/video.mp4 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 MP4 failed, falling back to HLS
+Console.js:61 Initializing HLS player for Bunny.net stream
+Console.js:61 Error starting video: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:428
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:404
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e075261e:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e075261e:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e075261e:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e075261e:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e075261e:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e075261e:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e075261e:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e075261e:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e075261e:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e075261e:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e075261e:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e075261e:18627Understand this error
+Console.js:61 Trying fallback video source: /api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/86a0c748-fef5-4ee9-9902-bcdebbdc9686 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Fallback video source also failed: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:440
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:404
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e075261e:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e075261e:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e075261e:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e075261e:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e075261e:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e075261e:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e075261e:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e075261e:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e075261e:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e075261e:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e075261e:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e075261e:18627Understand this error
+Console.js:61 Error playing HLS video: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:275
+Promise.catch
+(anonymous) @ VideoPlayerModal.tsx:275
+emit @ hls__js.js?v=e075261e:8863
+emit @ hls__js.js?v=e075261e:31317
+trigger @ hls__js.js?v=e075261e:31324
+filterAndSortMediaOptions @ hls__js.js?v=e075261e:28894
+onManifestLoaded @ hls__js.js?v=e075261e:28756
+emit @ hls__js.js?v=e075261e:8863
+emit @ hls__js.js?v=e075261e:31317
+trigger @ hls__js.js?v=e075261e:31324
+handleMasterPlaylist @ hls__js.js?v=e075261e:30922
+onSuccess @ hls__js.js?v=e075261e:30853
+readystatechange @ hls__js.js?v=e075261e:27080
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=e075261e:27032
+loadInternal @ hls__js.js?v=e075261e:27006
+load @ hls__js.js?v=e075261e:26970
+load @ hls__js.js?v=e075261e:30863
+onManifestLoading @ hls__js.js?v=e075261e:30705
+emit @ hls__js.js?v=e075261e:8863
+emit @ hls__js.js?v=e075261e:31317
+trigger @ hls__js.js?v=e075261e:31324
+loadSource @ hls__js.js?v=e075261e:31427
+handleLoadError @ VideoPlayerModal.tsx:269Understand this error
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video

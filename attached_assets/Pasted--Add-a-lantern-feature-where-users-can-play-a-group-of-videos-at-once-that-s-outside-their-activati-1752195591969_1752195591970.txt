@@ -1,0 +1,23 @@
+- Add a lantern feature where users can play a group of videos at once that’s outside their activation radius
+- 3 coins to use a lantern
+- The lantern button should sit below the tracking button in the same container.
+- The lanter button should be 40px by 40px to match the others and use the png I uploaded for the icon
+- We should show a count of how many lanterns they have like the coin count
+- When they tap the button a modal should pop up and have two buttons, one that says “Activate Lantern” to activate its ability, and one that allows a user to buy more lanterns
+- If they click the buy lantern button a modal should show with different purchase options:
+- They can watch a 30 second ad to get 1 lantern
+- Watch a 60 second add to get 4 lanterns
+- $.99 for 2 lanterns
+- $4.49 for 10 lanterns
+- $7.99 for 20 lanterns
+- $13.99 for 40 lanterns
+- $59.99 for 200 lanterns
+- The purchase ability should be provided by our stripe api
+- If they click the button to use a lantern, a 100 ft radius activation circle should show up on the map with the lantern image icon at the center of the circle using the map marks like the jem marker. It should be centered on the screen, and the user should be able to move the map around to line the lantern up with the area of videos they want to activate at once. This can be anywhere on the map. 
+- All other markers on the map should be disabled while the lantern is in use so they don't accidentally activate a random maker while trying to use the lantern.
+- They should be able to use the search bar to move the map and the lantern should stay at the center of the map while the map moves around
+- There should be a button to activate the lantern to play the videos
+- There should be a second button to cancel if they decide not to use it
+- Once they launch the group of videos they should show in the scrollable feed and one lantern should be taken from their count.
+- When a person first signs up for an account they should start with 5 lanterns
+- In the modal there should be instructions tell the user how lanterns work and how to use them.

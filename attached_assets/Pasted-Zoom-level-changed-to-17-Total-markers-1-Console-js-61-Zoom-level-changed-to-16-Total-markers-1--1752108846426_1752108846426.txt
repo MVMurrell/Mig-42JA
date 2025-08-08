@@ -1,0 +1,30 @@
+Zoom level changed to: 17 Total markers: 1
+Console.js:61 Zoom level changed to: 16 Total markers: 1
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/dragons/spawn:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error
+Console.js:61 Failed to spawn dragon: Unable to spawn dragon at this time
+Mt.forEach.n.<computed> @ Console.js:61Understand this error
+Console.js:61 Zoom level changed to: 15 Total markers: 1
+Console.js:61 Zoom level changed to: 14 Total markers: 1
+Console.js:61 Zoom level changed to: 13 Total markers: 1
+Console.js:61 Zoom level changed to: 12 Total markers: 1
+Console.js:61 Zoom level changed to: 11 Total markers: 1
+Console.js:61 Zoom level changed to: 10 Total markers: 1
+Console.js:61 Zoom level changed to: 9 Total markers: 1
+Console.js:61 Map drag detected, setting isUserCentered to false
+Console.js:61 Zoom level changed to: 8 Total markers: 1
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/dragons/spawn:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error
+Console.js:61 Failed to spawn dragon: Unable to spawn dragon at this time
+Mt.forEach.n.<computed> @ Console.js:61Understand this error
+Console.js:61 Map drag detected, setting isUserCentered to false
+Console.js:61 Zoom level changed to: 7 Total markers: 1
+Console.js:61 Zoom level changed to: 6 Total markers: 1
+Console.js:61 Zoom level changed to: 5 Total markers: 1
+Console.js:61 Zoom level changed to: 4 Total markers: 1
+Console.js:61 Zoom level changed to: 5 Total markers: 1
+Console.js:61 Zoom level changed to: 6 Total markers: 1
+Console.js:61 Zoom level changed to: 7 Total markers: 1
+Console.js:61 Zoom level changed to: 8 Total markers: 1
+Console.js:61 Zoom level changed to: 9 Total markers: 1
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/dragons/spawn:1  Failed to load resource: the server responded with a status of 400 (Bad Request)Understand this error
+Console.js:61 Failed to spawn dragon: Unable to spawn dragon at this time
+Mt.forEach.n.<computed> @ Console.js:61Understand this error

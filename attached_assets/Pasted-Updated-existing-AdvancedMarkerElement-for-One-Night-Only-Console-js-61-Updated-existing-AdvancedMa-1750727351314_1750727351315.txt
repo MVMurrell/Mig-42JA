@@ -1,0 +1,48 @@
+Updated existing AdvancedMarkerElement for: One Night Only
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05711838, -94.16072529)
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Higher breh
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05719557, -94.16058985)
+Console.js:61 Zoom level changed to: 15 Total markers: 9
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🎬 VideoFeedModal: Click overlay clicked! {isPlaying: true, target: div.absolute.inset-0.z-10.cursor-pointer}
+Console.js:61 🎬 VideoFeedModal: togglePlayPause called {isPlaying: true, hasVideoRef: true}
+Console.js:61 🎬 VideoFeedModal: Actual video paused state: true
+Console.js:61 🎬 VideoFeedModal: User playing video
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🎬 VideoFeedModal: User play successful
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 VideoFeedModal Edit check: {currentUser: 'google-oauth2|117032826996185616207', videoUserId: 'google-oauth2|117032826996185616207', isMatch: true}

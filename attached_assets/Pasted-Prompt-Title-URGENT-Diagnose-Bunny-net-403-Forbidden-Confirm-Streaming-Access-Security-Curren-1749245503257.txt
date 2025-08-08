@@ -1,0 +1,40 @@
+Prompt Title: URGENT: Diagnose Bunny.net 403 Forbidden - Confirm Streaming Access & Security
+
+Current Situation:
+Replit, this is fantastic news that the sequential pipeline is confirmed working, and moderation is enforced before Bunny.net upload! This validates our architectural changes.
+
+The new problem, "Bunny.net streaming URLs are still returning 403 Forbidden," is a direct authentication/access issue with Bunny.net Stream. A 403 means Bunny.net recognizes the request but denies access due to insufficient permissions or incorrect credentials.
+
+To diagnose and resolve this, we need to systematically check how the videos are being accessed and what security settings are in place on Bunny.net.
+
+Please provide the following information and perform these checks thoroughly:
+
+Provide the Exact Playback URL Being Used:
+
+This is the MOST CRUCIAL piece of information. Provide the complete, literal streaming URL (including any parameters like ?token=...) that the client is attempting to access from Bunny.net for a video that is failing with 403. Example: https://stream.bunnycdn.com/play/YOUR_COLLECTION_ID/YOUR_VIDEO_ID.mp4?token=YOUR_TOKEN
+Bunny.net Stream Access Method (How are you generating these URLs?):
+
+Confirm what method you are using to allow playback:
+Direct Public Access: Is the video (or its collection) set to be publicly accessible without any tokens or signing? (Less common for default Stream setups).
+Signed URLs: Are you generating Signed URLs from your backend? If so:
+What is the signing secret being used? (Do NOT share the actual secret, just confirm you are using the correct one from your Stream account).
+What is the expiry time being set for the signed URL?
+What exact path is being signed?
+Share the code snippet that generates the signed URL on your backend.
+Stream Access Token: Are you embedding a Stream Access Token in the URL (e.g., ?token=YOUR_STREAM_ACCESS_TOKEN)? If so:
+Confirm the exact token being used.
+Verify that this token is active and has the necessary "Pull" permissions within your Bunny.net Stream dashboard (Stream -> Tokens -> View Details).
+Confirm where this token is being generated/retrieved on your backend (e.g., from environment variables, database, etc.).
+Check Bunny.net Video Stream Security Settings (in the Bunny.net Dashboard):
+
+Log into your Bunny.net dashboard for your Stream account.
+Navigate to the specific Video Collection where your videos are stored.
+Examine the "Player" or "Security" settings for that Collection or the individual video.
+Specifically check for any enabled restrictions:
+Allowed Referrers: Is your frontend domain (e.g., https://your-replit-url.replit.dev, localhost, or the actual domain where your app runs) explicitly listed? Or is it set to allow all (*)? If it's restrictive and your domain isn't listed, requests will be 403'd.
+Allowed IPs: Are there any IP restrictions enabled?
+Geo-Blocking: Is geo-blocking enabled for this video or collection?
+Test Direct Access from Your Browser:
+
+After providing the full URL (from point 1), try to open that exact URL directly in a new private browser tab. Does it also return 403, or does it play? (This helps distinguish between issues in URL generation on the backend vs. issues related to client-side request headers like Referer).
+Your immediate focus should be to gather this precise information. Once we understand the exact access pattern being used and Bunny.net's security configurations, we can pinpoint why the 403 is occurring and implement the correct authentication method."

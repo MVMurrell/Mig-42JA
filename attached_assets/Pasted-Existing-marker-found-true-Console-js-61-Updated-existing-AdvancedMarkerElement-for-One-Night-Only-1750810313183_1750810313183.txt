@@ -1,0 +1,88 @@
+Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: One Night Only
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05711838, -94.16072529)
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Higher breh
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05719557, -94.16058985)
+Console.js:61 Zoom level changed to: 15 Total markers: 9
+Console.js:61 🎬 VideoFeedModal: VideoCommentRecorder onMainVideoControl called with action: resume
+Console.js:61 🎬 VideoFeedModal: 🚨 VideoCommentRecorder requesting resume - this might be auto-triggering!
+VideoFeedModal.tsx:1329 🎬 VideoFeedModal: Stack trace for VideoCommentRecorder resume
+onMainVideoControl @ VideoFeedModal.tsx:1329
+(anonymous) @ VideoCommentRecorder.tsx:53
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19416
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=8a2efd69:555
+flush @ @tanstack_react-query.js?v=8a2efd69:569
+batch @ @tanstack_react-query.js?v=8a2efd69:587
+dispatch_fn @ @tanstack_react-query.js?v=8a2efd69:996
+setData @ @tanstack_react-query.js?v=8a2efd69:696
+onSuccess @ @tanstack_react-query.js?v=8a2efd69:897
+resolve @ @tanstack_react-query.js?v=8a2efd69:456
+Promise.then
+run @ @tanstack_react-query.js?v=8a2efd69:498
+start @ @tanstack_react-query.js?v=8a2efd69:536
+fetch @ @tanstack_react-query.js?v=8a2efd69:926
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:1726
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:1725
+batch @ @tanstack_react-query.js?v=8a2efd69:583
+refetchQueries @ @tanstack_react-query.js?v=8a2efd69:1724
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:1716
+batch @ @tanstack_react-query.js?v=8a2efd69:583
+invalidateQueries @ @tanstack_react-query.js?v=8a2efd69:1705
+onSuccess @ VideoFeedModal.tsx:102
+execute @ @tanstack_react-query.js?v=8a2efd69:1233
+await in execute
+mutate @ @tanstack_react-query.js?v=8a2efd69:2630
+(anonymous) @ @tanstack_react-query.js?v=8a2efd69:3295
+(anonymous) @ VideoFeedModal.tsx:249
+Promise.then
+handleVideoCanPlay @ VideoFeedModal.tsx:244
+callCallback2 @ chunk-RPCDYKBN.js?v=8a2efd69:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=8a2efd69:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=8a2efd69:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=8a2efd69:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=8a2efd69:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=8a2efd69:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=8a2efd69:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=8a2efd69:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=8a2efd69:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=8a2efd69:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=8a2efd69:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=8a2efd69:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=8a2efd69:5472
+Console.js:61 🎬 VideoFeedModal: Ignoring resume request because user has manually paused
+Console.js:61 🎬 VideoFeedModal: Component render - isPlaying state: false
+Console.js:61 🎬 VideoFeedModal: VideoCommentRecorder onMainVideoControl called with action: resume
+Console.js:61 🎬 VideoFeedModal: 🚨 VideoCommentRecorder requesting resume - this might be auto-triggering!
+VideoFeedModal.tsx:1329 🎬 VideoFeedModal: Stack trace for VideoCommentRecorder resume
+onMainVideoControl @ VideoFeedModal.tsx:1329
+(anonymous) @ VideoCommentRecorder.tsx:53
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=8a2efd69:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=8a2efd69:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=8a2efd69:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=8a2efd69:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=8a2efd69:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=8a2efd69:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=8a2efd69:19416
+commitRoot @ chunk-RPCDYKBN.js?v=8a2efd69:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=8a2efd69:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=8a2efd69:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:18627
+Console.js:61 🎬 VideoFeedModal: Ignoring resume request because user has manually paused
+Console.js:61 🎬 VideoCommentRecorder: Cleanup called

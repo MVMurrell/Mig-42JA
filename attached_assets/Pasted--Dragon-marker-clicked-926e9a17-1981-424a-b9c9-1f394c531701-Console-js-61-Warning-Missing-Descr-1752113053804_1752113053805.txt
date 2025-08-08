@@ -1,0 +1,94 @@
+🐉 Dragon marker clicked: 926e9a17-1981-424a-b9c9-1f394c531701
+Console.js:61 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ chunk-V4SDQJCY.js?v=e65489cd:339
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=e65489cd:555
+flush @ @tanstack_react-query.js?v=e65489cd:569
+batch @ @tanstack_react-query.js?v=e65489cd:587
+dispatch_fn @ @tanstack_react-query.js?v=e65489cd:996
+setData @ @tanstack_react-query.js?v=e65489cd:696
+onSuccess @ @tanstack_react-query.js?v=e65489cd:897
+resolve @ @tanstack_react-query.js?v=e65489cd:456
+Promise.then
+run @ @tanstack_react-query.js?v=e65489cd:498
+start @ @tanstack_react-query.js?v=e65489cd:536
+fetch @ @tanstack_react-query.js?v=e65489cd:926
+executeFetch_fn @ @tanstack_react-query.js?v=e65489cd:2211
+setOptions @ @tanstack_react-query.js?v=e65489cd:1955
+(anonymous) @ @tanstack_react-query.js?v=e65489cd:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627Understand this warning
+queryClient.ts:68  GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/replit%7Cgoogle-oauth2%7C117032826996185616207/profile 404 (Not Found)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:68
+fetchFn @ @tanstack_react-query.js?v=e65489cd:840
+run @ @tanstack_react-query.js?v=e65489cd:494
+start @ @tanstack_react-query.js?v=e65489cd:536
+fetch @ @tanstack_react-query.js?v=e65489cd:926
+executeFetch_fn @ @tanstack_react-query.js?v=e65489cd:2211
+onSubscribe @ @tanstack_react-query.js?v=e65489cd:1898
+subscribe @ @tanstack_react-query.js?v=e65489cd:24
+(anonymous) @ @tanstack_react-query.js?v=e65489cd:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=e65489cd:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=e65489cd:555
+flush @ @tanstack_react-query.js?v=e65489cd:569
+batch @ @tanstack_react-query.js?v=e65489cd:587
+dispatch_fn @ @tanstack_react-query.js?v=e65489cd:996
+setData @ @tanstack_react-query.js?v=e65489cd:696
+onSuccess @ @tanstack_react-query.js?v=e65489cd:897
+resolve @ @tanstack_react-query.js?v=e65489cd:456
+Promise.then
+run @ @tanstack_react-query.js?v=e65489cd:498
+start @ @tanstack_react-query.js?v=e65489cd:536
+fetch @ @tanstack_react-query.js?v=e65489cd:926
+executeFetch_fn @ @tanstack_react-query.js?v=e65489cd:2211
+setOptions @ @tanstack_react-query.js?v=e65489cd:1955
+(anonymous) @ @tanstack_react-query.js?v=e65489cd:3032
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=e65489cd:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=e65489cd:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=e65489cd:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=e65489cd:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=e65489cd:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=e65489cd:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=e65489cd:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=e65489cd:19416
+commitRoot @ chunk-RPCDYKBN.js?v=e65489cd:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=e65489cd:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=e65489cd:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:18627Understand this error

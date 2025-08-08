@@ -1,0 +1,71 @@
+Fetched videos data: (2) [{…}, {…}]
+Console.js:61 Number of videos: 2
+Console.js:61 Marker placement effect running - videos: 2 googleMap: true
+Console.js:61 Adding markers to Google Maps: 2 videos
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05719557, -94.16058985)
+Console.js:61 Processing video for marker: e98c7182-d3c1-4587-acee-70fc6f680134 Test success games
+Console.js:61 Creating marker at position: {lat: 36.05720337, lng: -94.16068143}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05720337, -94.16068143)
+VideoPlayerModal.tsx:89 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/test-video-id/720p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:89
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:155
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19416
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+(anonymous) @ chunk-WERSD76P.js?v=f48af010:18627Understand this error
+VideoPlayerModal.tsx:89 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/test-video-id/1080p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:89
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:155
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19416
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+(anonymous) @ chunk-WERSD76P.js?v=f48af010:18627Understand this error
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 Error starting video: AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:353
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:329
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19416
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+(anonymous) @ chunk-WERSD76P.js?v=f48af010:18627Understand this error

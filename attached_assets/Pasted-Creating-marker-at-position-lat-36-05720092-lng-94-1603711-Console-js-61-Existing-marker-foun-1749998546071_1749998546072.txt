@@ -1,0 +1,108 @@
+Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05720092, -94.1603711)
+Console.js:61 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+Console.js:61 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05721208, -94.16063493)
+Console.js:61 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+Console.js:61 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05723861, -94.16059521)
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05711838, -94.16072529)
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05719557, -94.16058985)
+Console.js:61 Processing video for marker: d9e67c77-83e2-42c4-a519-c7755240fd17 Will it catch d's review
+Console.js:61 Creating marker at position: {lat: 36.05723709, lng: -94.16069116}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05723709, -94.16069116)
+Console.js:61 Zoom level changed to: 15 Total markers: 7
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+10Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/d04e56eb-5026-4890-b6de-b221003bf278 can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+23Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/d04e56eb-5026-4890-b6de-b221003bf278 can play - format is supported
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '/api/videos/bunny-proxy/901cd38d-38e5-4d73-8e2b-30fb397dded3', isVideoPlayable: true, videoStatus: 'approved', videoTitle: 'One Night Only', videoId: 'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 Marker clicked for video: 09821f74-03ac-40af-9cb2-3b21810b1a4a Dog Love to chew toy
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: 09821f74-03ac-40af-9cb2-3b21810b1a4a
+Console.js:61 handleVideoClick called with video: 09821f74-03ac-40af-9cb2-3b21810b1a4a
+Console.js:61 Current targetVideoId: null
+Console.js:61 Setting selectedVideo: {id: '09821f74-03ac-40af-9cb2-3b21810b1a4a', title: 'Dog Love to chew toy', videoUrl: '', hasVideoUrl: false}
+Console.js:61 Within activation radius (17m), activating video...
+Console.js:61 Video activated successfully
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 Marked video 09821f74-03ac-40af-9cb2-3b21810b1a4a as watched
+Console.js:61 Fetched videos data: (7) [{…}, {…}, {…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 7
+Console.js:61 VideoPlayerModal playability check: {videoUrl: '', isVideoPlayable: '', videoStatus: 'approved', videoTitle: 'Dog Love to chew toy', videoId: '09821f74-03ac-40af-9cb2-3b21810b1a4a'}
+Console.js:61 VideoPlayerModal: Showing unavailable message because isVideoPlayable = 
+Console.js:61 Marker placement effect running - videos: 7 googleMap: true
+Console.js:61 Adding markers to Google Maps: 7 videos
+Console.js:61 Processing video for marker: 09821f74-03ac-40af-9cb2-3b21810b1a4a Dog Love to chew toy fyi
+Console.js:61 Creating marker at position: {lat: 36.05720811, lng: -94.16076529}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05720811, -94.16076529)
+Console.js:61 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+Console.js:61 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05720092, -94.1603711)
+Console.js:61 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+Console.js:61 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05721208, -94.16063493)
+Console.js:61 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+Console.js:61 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05723861, -94.16059521)
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05711838, -94.16072529)
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05719557, -94.16058985)
+Console.js:61 Processing video for marker: d9e67c77-83e2-42c4-a519-c7755240fd17 Will it catch d's review
+Console.js:61 Creating marker at position: {lat: 36.05723709, lng: -94.16069116}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05723709, -94.16069116)
+Console.js:61 Zoom level changed to: 15 Total markers: 7

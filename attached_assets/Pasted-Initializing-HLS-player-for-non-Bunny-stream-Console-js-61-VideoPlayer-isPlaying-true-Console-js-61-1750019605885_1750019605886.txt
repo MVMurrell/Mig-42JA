@@ -1,0 +1,45 @@
+Initializing HLS player for non-Bunny stream
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 Starting video, readyState: 0
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 Marked video c1647877-54ed-410e-be34-c8aa666d226e as watched
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Available HLS levels: (5) ['240p', '360p', '480p', '720p', '1080p']
+Console.js:61 Setting HLS quality to 720p (level 3)
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+13Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/805c8e3e-fdfb-4b80-bf08-74f82adaa858 can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+27Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/805c8e3e-fdfb-4b80-bf08-74f82adaa858 can play - format is supported
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 FULLSCREEN MODAL CONDITIONS: {showCommentFullscreenModal: false, selectedFullscreenComment: false}

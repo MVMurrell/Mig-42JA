@@ -1,0 +1,73 @@
+Fetched videos data: (2) [{…}, {…}]
+VM7 eruda.js:2 Number of videos: 2
+VM7 eruda.js:2 Marker placement effect running - videos: 2 googleMap: true
+VM7 eruda.js:2 Adding markers to Google Maps: 2 videos
+VM7 eruda.js:2 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+VM7 eruda.js:2 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+VM7 eruda.js:2 Existing marker found: false
+VM7 eruda.js:2 New marker created: _.io {__gm: {…}, gm_accessors_: {…}, position: _.om, gm_bindings_: {…}, map: _.Rr, …} visible: true
+VM7 eruda.js:2 Processing video for marker: e98c7182-d3c1-4587-acee-70fc6f680134 Test success games
+VM7 eruda.js:2 Creating marker at position: {lat: 36.05720337, lng: -94.16068143}
+VM7 eruda.js:2 Existing marker found: false
+VM7 eruda.js:2 New marker created: _.io {__gm: {…}, gm_accessors_: {…}, position: _.om, gm_bindings_: {…}, map: _.Rr, …} visible: true
+VM7 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/43317410/videos 403 (Forbidden)
+window.fetch @ VM7 eruda.js:2
+apiRequest @ VM44 queryClient.ts:9
+queryFn @ VM87 ProfileModal.tsx:49
+fetchFn @ VM41 @tanstack_react-query.js:840
+run @ VM41 @tanstack_react-query.js:494
+start @ VM41 @tanstack_react-query.js:536
+fetch @ VM41 @tanstack_react-query.js:926
+executeFetch_fn @ VM41 @tanstack_react-query.js:2211
+onSubscribe @ VM41 @tanstack_react-query.js:1898
+subscribe @ VM41 @tanstack_react-query.js:24
+(anonymous) @ VM41 @tanstack_react-query.js:3022
+subscribeToStore @ VM35 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM35 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM35 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM35 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM35 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM35 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM35 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM35 chunk-WERSD76P.js:19447
+commitRootImpl @ VM35 chunk-WERSD76P.js:19416
+commitRoot @ VM35 chunk-WERSD76P.js:19277
+performSyncWorkOnRoot @ VM35 chunk-WERSD76P.js:18895
+flushSyncCallbacks @ VM35 chunk-WERSD76P.js:9119
+(anonymous) @ VM35 chunk-WERSD76P.js:18627Understand this error
+VM147 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM147 eruda.js:2
+(anonymous) @ VM184 queryClient.ts:19
+fetchFn @ VM181 @tanstack_react-query.js:840
+run @ VM181 @tanstack_react-query.js:494
+start @ VM181 @tanstack_react-query.js:536
+fetch @ VM181 @tanstack_react-query.js:926
+executeFetch_fn @ VM181 @tanstack_react-query.js:2211
+onSubscribe @ VM181 @tanstack_react-query.js:1898
+subscribe @ VM181 @tanstack_react-query.js:24
+(anonymous) @ VM181 @tanstack_react-query.js:3022
+subscribeToStore @ VM176 chunk-WERSD76P.js:11984
+commitHookEffectListMount @ VM176 chunk-WERSD76P.js:16915
+commitPassiveMountOnFiber @ VM176 chunk-WERSD76P.js:18156
+commitPassiveMountEffects_complete @ VM176 chunk-WERSD76P.js:18129
+commitPassiveMountEffects_begin @ VM176 chunk-WERSD76P.js:18119
+commitPassiveMountEffects @ VM176 chunk-WERSD76P.js:18109
+flushPassiveEffectsImpl @ VM176 chunk-WERSD76P.js:19490
+flushPassiveEffects @ VM176 chunk-WERSD76P.js:19447
+performSyncWorkOnRoot @ VM176 chunk-WERSD76P.js:18868
+flushSyncCallbacks @ VM176 chunk-WERSD76P.js:9119
+commitRootImpl @ VM176 chunk-WERSD76P.js:19432
+commitRoot @ VM176 chunk-WERSD76P.js:19277
+finishConcurrentRender @ VM176 chunk-WERSD76P.js:18805
+performConcurrentWorkOnRoot @ VM176 chunk-WERSD76P.js:18718
+workLoop @ VM176 chunk-WERSD76P.js:197
+flushWork @ VM176 chunk-WERSD76P.js:176
+performWorkUntilDeadline @ VM176 chunk-WERSD76P.js:384Understand this error
+Refused to frame 'https://jemzy.us.auth0.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'none'".
+Understand this error

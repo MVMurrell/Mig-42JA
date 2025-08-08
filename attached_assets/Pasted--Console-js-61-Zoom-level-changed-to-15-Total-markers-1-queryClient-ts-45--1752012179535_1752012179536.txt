@@ -1,0 +1,50 @@
+
+Console.js:61 Zoom level changed to: 15 Total markers: 1
+queryClient.ts:45 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/coins/start-session 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+startTracking @ useCoinEarning.ts:102
+await in startTracking
+handleTrackingToggle @ CoinEarningWidget.tsx:43
+callCallback2 @ chunk-RPCDYKBN.js?v=e65489cd:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=e65489cd:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=e65489cd:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=e65489cd:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=e65489cd:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=e65489cd:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=e65489cd:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=e65489cd:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=e65489cd:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=e65489cd:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=e65489cd:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=e65489cd:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=e65489cd:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=e65489cd:5449Understand this error
+Console.js:61 Failed to start tracking: Error: 500: {"message":"Failed to start activity session","error":"column \"last_location_update\" does not exist"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+    at async startTracking (useCoinEarning.ts:102:22)
+    at async handleTrackingToggle (CoinEarningWidget.tsx:43:23)
+Mt.forEach.n.<computed> @ Console.js:61
+startTracking @ useCoinEarning.ts:143
+await in startTracking
+handleTrackingToggle @ CoinEarningWidget.tsx:43
+callCallback2 @ chunk-RPCDYKBN.js?v=e65489cd:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=e65489cd:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=e65489cd:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=e65489cd:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=e65489cd:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=e65489cd:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=e65489cd:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=e65489cd:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=e65489cd:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=e65489cd:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=e65489cd:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=e65489cd:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=e65489cd:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=e65489cd:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=e65489cd:5449Understand this error

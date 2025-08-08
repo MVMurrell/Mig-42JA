@@ -1,0 +1,96 @@
+New AdvancedMarkerElement created for: rabbit
+Console.js:61 Zoom level changed to: 15 Total markers: 10
+Console.js:61 Adding quest markers to Google Maps: 1 quests
+Console.js:61 Updated existing quest marker for: Dragon Quest
+Console.js:61 Adding quest markers to Google Maps: 1 quests
+Console.js:61 Updated existing quest marker for: Dragon Quest
+Console.js:61 Video 0: intersecting=true, ratio=0.93
+Console.js:61 Video 1: intersecting=false, ratio=0.00
+Console.js:61 Video 2: intersecting=false, ratio=0.00
+Console.js:61 Video 3: intersecting=false, ratio=0.00
+Console.js:61 Video 4: intersecting=false, ratio=0.00
+Console.js:61 Video 5: intersecting=false, ratio=0.00
+Console.js:61 Video 6: intersecting=false, ratio=0.00
+Console.js:61 Video 7: intersecting=false, ratio=0.00
+Console.js:61 Switching to most visible video 0 (ratio: 0.93) from null
+Console.js:61 Stopping video 0
+Console.js:61 Stopping video 1
+Console.js:61 Stopping video 2
+Console.js:61 Stopping video 3
+Console.js:61 Stopping video 4
+Console.js:61 Stopping video 5
+Console.js:61 Stopping video 6
+Console.js:61 Stopping video 7
+5Console.js:61 HLS manifest loaded successfully
+Console.js:61 Loaded liked videos: Set(0) {size: 0}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Error loading collected videos: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Mt.forEach.n.<computed> @ Console.js:61
+loadCollectedVideos @ ScrollableVideoFeed.tsx:261
+await in loadCollectedVideos
+(anonymous) @ ScrollableVideoFeed.tsx:265
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:18627Understand this error
+2Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video 0 loaded, duration: 3.9s
+Console.js:61 Started playing video 0
+Console.js:61 🎬 SCROLL FEED: Marking video as watched and incrementing views: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 Started playing initial video 0
+Console.js:61 🎬 SCROLL FEED: Marking initial video as watched and incrementing views: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 🎬 WATCH TRACKING: Successfully marked video as watched: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 📊 VIEW TRACKING: Successfully incremented view count for video: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 🎬 WATCH TRACKING: Successfully marked video as watched: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 📊 VIEW TRACKING: Successfully incremented view count for video: 1ca16902-95f7-400f-b9a2-dfca0f3818f8
+Console.js:61 Video 0: intersecting=true, ratio=0.90
+Console.js:61 Video 0: intersecting=false, ratio=0.68
+Console.js:61 Video 1: intersecting=true, ratio=0.89
+Console.js:61 Switching to most visible video 1 (ratio: 0.89) from 0
+Console.js:61 Stopping video 0
+Console.js:61 Stopping video 1
+Console.js:61 Stopping video 2
+Console.js:61 Stopping video 3
+Console.js:61 Stopping video 4
+Console.js:61 Stopping video 5
+Console.js:61 Stopping video 6
+Console.js:61 Stopping video 7
+Console.js:61 Video 1: intersecting=true, ratio=0.93
+Console.js:61 Started playing video 1
+Console.js:61 🎬 SCROLL FEED: Marking video as watched and incrementing views: f55db9d7-7f96-4a61-b456-64c9d8b3b4e9
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: f55db9d7-7f96-4a61-b456-64c9d8b3b4e9
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: f55db9d7-7f96-4a61-b456-64c9d8b3b4e9
+Console.js:61 📊 VIEW TRACKING: Successfully incremented view count for video: f55db9d7-7f96-4a61-b456-64c9d8b3b4e9
+Console.js:61 🎬 WATCH TRACKING: Successfully marked video as watched: f55db9d7-7f96-4a61-b456-64c9d8b3b4e9
+Console.js:61 Video 1 ended, restarting from beginning
+Console.js:61 Video 1: intersecting=true, ratio=0.89
+Console.js:61 Video 1: intersecting=false, ratio=0.65
+Console.js:61 Video 2: intersecting=true, ratio=0.89
+Console.js:61 Switching to most visible video 2 (ratio: 0.89) from 1
+Console.js:61 Stopping video 0
+Console.js:61 Stopping video 1
+Console.js:61 Stopping video 2
+Console.js:61 Stopping video 3
+Console.js:61 Stopping video 4
+Console.js:61 Stopping video 5
+Console.js:61 Stopping video 6
+Console.js:61 Stopping video 7
+Console.js:61 Video 2: intersecting=true, ratio=0.93
+Console.js:61 Started playing video 2
+Console.js:61 🎬 SCROLL FEED: Marking video as watched and incrementing views: 80c14492-e1aa-4d6c-989b-81f82009c3f4
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: 80c14492-e1aa-4d6c-989b-81f82009c3f4
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: 80c14492-e1aa-4d6c-989b-81f82009c3f4
+Console.js:61 🎬 WATCH TRACKING: Successfully marked video as watched: 80c14492-e1aa-4d6c-989b-81f82009c3f4
+Console.js:61 📊 VIEW TRACKING: Successfully incremented view count for video: 80c14492-e1aa-4d6c-989b-81f82009c3f4

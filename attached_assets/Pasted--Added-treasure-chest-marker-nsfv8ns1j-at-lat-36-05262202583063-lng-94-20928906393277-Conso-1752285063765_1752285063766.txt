@@ -1,0 +1,45 @@
+🎁 Added treasure chest marker: nsfv8ns1j at {lat: 36.05262202583063, lng: -94.20928906393277}
+Console.js:61 Zoom level changed to: 19 Total markers: 6
+Console.js:61 Map drag detected, setting isUserCentered to false
+Console.js:61 Lantern activated at position: {lat: 40.70611430835131, lng: -73.99676748479843}
+Console.js:61 Total videos available: 12
+Console.js:61 Video "Statue of Liberty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Empire State View" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "NYC Street Food" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Brooklyn Bridge Walk" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Central Park Beauty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Times Square Vibes" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Statue of Liberty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Empire State View" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "NYC Street Food" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Brooklyn Bridge Walk" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Central Park Beauty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Times Square Vibes" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Videos in lantern radius: 0
+Console.js:61 No videos found in lantern radius
+Console.js:61 Advanced marker clicked for video: 430e9d3a-6d5b-4d6a-bee1-e7687b6a422b Brooklyn Bridge Walk
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: 430e9d3a-6d5b-4d6a-bee1-e7687b6a422b
+Console.js:61 handleVideoClick called with video: 430e9d3a-6d5b-4d6a-bee1-e7687b6a422b
+Console.js:61 Current targetVideoId: null
+Console.js:61 Lantern activated at position: {lat: 40.70611430835131, lng: -73.99676748479843}
+Console.js:61 Total videos available: 12
+Console.js:61 Video "Statue of Liberty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Empire State View" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "NYC Street Food" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Brooklyn Bridge Walk" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Central Park Beauty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Times Square Vibes" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Statue of Liberty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Empire State View" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "NYC Street Food" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Brooklyn Bridge Walk" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Central Park Beauty" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Video "Times Square Vibes" at (undefined, undefined) - Distance: NaNm (NaNft)
+Console.js:61 Videos in lantern radius: 0
+Console.js:61 No videos found in lantern radius
+Console.js:61 Track ended, advancing to next track. Current index: 0
+Console.js:61 Moving to track index: 1 Track: City Sounds At Night
+Console.js:61 Loading new track: City Sounds At Night Was playing: false Auto-advancing: true
+Console.js:61 Auto-playing next track: City Sounds At Night

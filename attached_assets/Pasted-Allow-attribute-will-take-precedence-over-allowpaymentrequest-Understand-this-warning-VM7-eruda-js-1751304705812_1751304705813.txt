@@ -1,0 +1,180 @@
+Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+VM7 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM7 eruda.js:2
+(anonymous) @ VM35 queryClient.ts:38
+fetchFn @ VM45 @tanstack_react-query.js:840
+run @ VM45 @tanstack_react-query.js:494
+start @ VM45 @tanstack_react-query.js:536
+fetch @ VM45 @tanstack_react-query.js:926
+executeFetch_fn @ VM45 @tanstack_react-query.js:2211
+onSubscribe @ VM45 @tanstack_react-query.js:1898
+subscribe @ VM45 @tanstack_react-query.js:24
+(anonymous) @ VM45 @tanstack_react-query.js:3022
+subscribeToStore @ VM79 chunk-RPCDYKBN.js:11984
+commitHookEffectListMount @ VM79 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM79 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM79 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM79 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM79 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM79 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM79 chunk-RPCDYKBN.js:19447
+performSyncWorkOnRoot @ VM79 chunk-RPCDYKBN.js:18868
+flushSyncCallbacks @ VM79 chunk-RPCDYKBN.js:9119
+commitRootImpl @ VM79 chunk-RPCDYKBN.js:19432
+commitRoot @ VM79 chunk-RPCDYKBN.js:19277
+finishConcurrentRender @ VM79 chunk-RPCDYKBN.js:18805
+performConcurrentWorkOnRoot @ VM79 chunk-RPCDYKBN.js:18718
+workLoop @ VM79 chunk-RPCDYKBN.js:197
+flushWork @ VM79 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM79 chunk-RPCDYKBN.js:384Understand this error
+ 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ b0005152-2369-429c-b…da/3.2.3/eruda.js:2
+(anonymous) @ b0005152-2369-429c-b…b/queryClient.ts:38
+fetchFn @ b0005152-2369-429c-b…y.js?v=ac27a134:840
+run @ b0005152-2369-429c-b…y.js?v=ac27a134:494
+start @ b0005152-2369-429c-b…y.js?v=ac27a134:536
+fetch @ b0005152-2369-429c-b…y.js?v=ac27a134:926
+executeFetch_fn @ b0005152-2369-429c-b….js?v=ac27a134:2211
+onSubscribe @ b0005152-2369-429c-b….js?v=ac27a134:1898
+subscribe @ b0005152-2369-429c-b…ry.js?v=ac27a134:24
+(anonymous) @ b0005152-2369-429c-b….js?v=ac27a134:3022
+subscribeToStore @ b0005152-2369-429c-b…js?v=91df218a:11984
+commitHookEffectListMount @ b0005152-2369-429c-b…js?v=91df218a:16915
+commitPassiveMountOnFiber @ b0005152-2369-429c-b…js?v=91df218a:18156
+commitPassiveMountEffects_complete @ b0005152-2369-429c-b…js?v=91df218a:18129
+commitPassiveMountEffects_begin @ b0005152-2369-429c-b…js?v=91df218a:18119
+commitPassiveMountEffects @ b0005152-2369-429c-b…js?v=91df218a:18109
+flushPassiveEffectsImpl @ b0005152-2369-429c-b…js?v=91df218a:19490
+flushPassiveEffects @ b0005152-2369-429c-b…js?v=91df218a:19447
+performSyncWorkOnRoot @ b0005152-2369-429c-b…js?v=91df218a:18868
+flushSyncCallbacks @ b0005152-2369-429c-b….js?v=91df218a:9119
+commitRootImpl @ b0005152-2369-429c-b…js?v=91df218a:19432
+commitRoot @ b0005152-2369-429c-b…js?v=91df218a:19277
+finishConcurrentRender @ b0005152-2369-429c-b…js?v=91df218a:18805
+performConcurrentWorkOnRoot @ b0005152-2369-429c-b…js?v=91df218a:18718
+workLoop @ b0005152-2369-429c-b…N.js?v=91df218a:197
+flushWork @ b0005152-2369-429c-b…N.js?v=91df218a:176
+performWorkUntilDeadline @ b0005152-2369-429c-b…N.js?v=91df218a:384Understand this error
+Refused to frame 'https://jemzy.us.auth0.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'none'".
+Understand this error
+Refused to frame 'https://jemzy.us.auth0.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'none'".
+Understand this error
+workspace_iframe.html:32 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+VM212 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM212 eruda.js:2
+(anonymous) @ VM250 queryClient.ts:38
+fetchFn @ VM247 @tanstack_react-query.js:840
+run @ VM247 @tanstack_react-query.js:494
+start @ VM247 @tanstack_react-query.js:536
+fetch @ VM247 @tanstack_react-query.js:926
+executeFetch_fn @ VM247 @tanstack_react-query.js:2211
+onSubscribe @ VM247 @tanstack_react-query.js:1898
+subscribe @ VM247 @tanstack_react-query.js:24
+(anonymous) @ VM247 @tanstack_react-query.js:3022
+subscribeToStore @ VM241 chunk-RPCDYKBN.js:11984
+commitHookEffectListMount @ VM241 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM241 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM241 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM241 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM241 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM241 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM241 chunk-RPCDYKBN.js:19447
+performSyncWorkOnRoot @ VM241 chunk-RPCDYKBN.js:18868
+flushSyncCallbacks @ VM241 chunk-RPCDYKBN.js:9119
+commitRootImpl @ VM241 chunk-RPCDYKBN.js:19432
+commitRoot @ VM241 chunk-RPCDYKBN.js:19277
+finishConcurrentRender @ VM241 chunk-RPCDYKBN.js:18805
+performConcurrentWorkOnRoot @ VM241 chunk-RPCDYKBN.js:18718
+workLoop @ VM241 chunk-RPCDYKBN.js:197
+flushWork @ VM241 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM241 chunk-RPCDYKBN.js:384Understand this error
+_app-cf539935de2086f4.js:38 
+            
+            
+           POST https://sp.replit.com/v1/t 400 (Bad Request)
+(anonymous) @ _app-cf539935de2086f4.js:38
+o @ sdk.min.js:1
+dispatch @ fetch-dispatcher.ts:11
+(anonymous) @ index.ts:122
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+g @ index.ts:93
+(anonymous) @ delivery.js:28
+(anonymous) @ delivery.js:11
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ delivery.js:4
+o @ delivery.js:27
+(anonymous) @ event-queue.js:325
+(anonymous) @ event-queue.js:323
+n @ _app-cf539935de2086f4.js:38
+setTimeout
+(anonymous) @ _app-cf539935de2086f4.js:38
+(anonymous) @ event-queue.js:321
+(anonymous) @ event-queue.js:320
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+s @ tslib.es6.js:73
+Promise.then
+a @ tslib.es6.js:76
+s @ tslib.es6.js:73
+Promise.then
+a @ tslib.es6.js:76
+(anonymous) @ tslib.es6.js:76
+u @ tslib.es6.js:72
+(anonymous) @ event-queue.js:273
+(anonymous) @ event-queue.js:181
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+s @ tslib.es6.js:73
+Promise.then
+a @ tslib.es6.js:76
+(anonymous) @ tslib.es6.js:76
+u @ tslib.es6.js:72
+(anonymous) @ event-queue.js:169
+(anonymous) @ event-queue.js:135
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ event-queue.js:128
+(anonymous) @ dispatch.js:25
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+p @ dispatch.js:18
+(anonymous) @ index.ts:460
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ index.ts:454
+(anonymous) @ index.ts:253
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ index.ts:241
+A @ _app-cf539935de2086f4.js:6
+u @ 4944-29aa4e5582947951.js:1
+f @ 4944-29aa4e5582947951.js:1
+(anonymous) @ 4944-29aa4e5582947951.js:1
+(anonymous) @ main-9ee43db92af364db.js:1
+n @ main-9ee43db92af364db.js:1
+u @ main-9ee43db92af364db.js:1Understand this error
+Refused to frame 'https://jemzy.us.auth0.com/' because an ancestor violates the following Content Security Policy directive: "frame-ancestors 'none'".
+Understand this error

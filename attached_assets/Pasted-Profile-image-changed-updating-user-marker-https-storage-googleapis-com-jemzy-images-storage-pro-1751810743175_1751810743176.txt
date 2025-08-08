@@ -1,0 +1,217 @@
+Profile image changed, updating user marker: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2|117032826996185616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Profile data loaded: Object
+Console.js:61 Profile image URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2|117032826996185616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg
+Console.js:61 Ready Player Me URL: null
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 🔔 OneSignal: Starting initialization...
+Console.js:61 🔔 OneSignal: SDK script loaded successfully
+Console.js:61 🔔 OneSignal: Initializing with config...
+Console.js:61 Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+2Console.js:61 Zoom level changed to: 15 Total markers: 0
+WorkerMessenger.ts:234 Event handler of 'message' event must be added on the initial evaluation of worker script.
+listen @ WorkerMessenger.ts:234Understand this warning
+Console.js:61 🔔 OneSignal: Initialized successfully
+Console.js:61 OneSignal tags added: Object
+Console.js:61 OneSignal external user ID set: google-oauth2|117032826996185616207
+Console.js:61 🔐 iOS: Checking existing permissions before request...
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 0, isMobileDevice: false, shouldShowSwitch: false, cameraReady: false, isRecording: false, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: false, isRecording: false, shouldShowRecord: false, availableCamerasCount: 0, videoRefHasStream: false, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: false, isRecording: false, hasVideoStream: false, shouldShow: false, …}
+Console.js:61 🔐 iOS PERMISSION CHECK: {camera: 'granted', microphone: 'granted'}
+Console.js:61 ✅ iOS: Permissions already granted, no prompt needed
+Console.js:61 📷 Attempting user camera with constraints: {width: {…}, height: {…}, frameRate: {…}, facingMode: {…}}
+Console.js:61 ✅ iOS: Permissions granted and stored in localStorage
+Console.js:61 ✅ user camera initialized: 1920x1080
+Console.js:61 📷 Camera facing mode: unknown
+Console.js:61 Video track settings: {aspectRatio: 1.7777777777777777, deviceId: 'b7c8332573fb493df969b606bc21b908cf863cf726f6dea1ae59d87ce7445826', frameRate: 30, groupId: '37997ab92b131b6988870f837a222d8a1a1895855f9c3a55b6450af39d241288', height: 1080, …}
+Console.js:61 Audio tracks found: 1
+Console.js:61 Video tracks found: 1
+Console.js:61 🎯 IPAD DEBUG: Setting srcObject on video element
+Console.js:61 🎯 IPAD DETECTION: {userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) Ap…KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36', platform: 'MacIntel', maxTouchPoints: 0, isIpad: false}
+Console.js:61 📷 Available cameras: 1 [{…}]
+Console.js:61 🎯 DEBUG: Setting cameraReady to true, availableCameras count: 0
+Console.js:61 🎯 CAMERA INIT: About to set cameraReady to true after user camera initialization
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: false, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: false, shouldShowRecord: true, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: false, hasVideoStream: true, shouldShow: true, …}
+Console.js:61 🎯 IPAD DEBUG: Video metadata loaded, cameraReady before: false
+Console.js:61 🎯 IPAD DEBUG: Video metadata loaded, cameraReady after setCameraReady(true)
+Console.js:61 🎯 IPAD DEBUG: Video can play, forcing cameraReady to true
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: false, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: false, shouldShowRecord: true, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: false, hasVideoStream: true, shouldShow: true, …}
+Console.js:61 🎯 IPAD DEBUG: Video play event, forcing cameraReady to true
+Console.js:61 🎯 IPAD DEBUG: Video is playing, forcing cameraReady to true
+Console.js:61 🎯 IPAD FIX: Universal backup timer (500ms) ensuring cameraReady stays true
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: false, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: false, shouldShowRecord: true, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: false, hasVideoStream: true, shouldShow: true, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: false, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: false, shouldShowRecord: true, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: false, hasVideoStream: true, shouldShow: true, …}
+Console.js:61 🎯 IPAD FIX: Universal backup timer (1000ms) ensuring cameraReady stays true
+Console.js:61 🎯 IPAD FIX: Universal backup timer (2000ms) ensuring cameraReady stays true
+Console.js:61 🔍 DIAGNOSTIC: MediaRecorder format support analysis
+Console.js:61 Browser: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36
+Console.js:61 Format "video/webm; codecs="vp8,opus"": SUPPORTED
+Console.js:61 Format "video/webm; codecs="vp9,opus"": SUPPORTED
+Console.js:61 Format "video/webm; codecs="vp8"": SUPPORTED
+Console.js:61 Format "video/webm": SUPPORTED
+Console.js:61 Format "video/mp4; codecs="avc1.42001E, mp4a.40.2"": SUPPORTED
+Console.js:61 Format "video/mp4; codecs="avc1.4D401E, mp4a.40.2"": SUPPORTED
+Console.js:61 Format "video/mp4": SUPPORTED
+Console.js:61 Format "video/x-matroska;codecs=avc1": SUPPORTED
+Console.js:61 🎥 Recording at 1920x1080 with target bitrate: 8Mbps
+Console.js:61 ✅ Selected format: video/webm; codecs="vp9,opus" with 8Mbps video bitrate
+Console.js:61 Recording with audio tracks: 1
+Console.js:61 MediaRecorder MIME type: video/webm; codecs="vp9,opus"
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 Data chunk received, size: 401892
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 Data chunk received, size: 715922
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: true, isRecording: true, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: true, isRecording: true, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: true, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: true, isRecording: true, hasVideoStream: true, shouldShow: false, …}
+Console.js:61 Final recording duration captured: 2.87 seconds
+Console.js:61 🎯 SWITCH BUTTON DEBUG: {availableCamerasCount: 1, isMobileDevice: false, shouldShowSwitch: false, cameraReady: false, isRecording: false, …}
+Console.js:61 🎯 RECORD BUTTON DEBUG: {cameraReady: false, isRecording: false, shouldShowRecord: false, availableCamerasCount: 1, videoRefHasStream: false, …}
+Console.js:61 🎯 IPAD RECORD BUTTON RENDER: {isIpad: false, cameraReady: false, isRecording: false, hasVideoStream: false, shouldShow: false, …}
+Console.js:61 Data chunk received, size: 658659
+Console.js:61 Final blob created, size: 1776473 type: video/webm;codecs=vp9,opus
+Console.js:61 🔍 DIAGNOSTIC: Binary data inspection
+Console.js:61 🔍 Testing local video playback before upload...
+Console.js:61 📥 Local Playback: Starting to load video...
+Console.js:61 First 16 bytes (hex): 1a45dfa39f4286810142f7810142f281
+Console.js:61 First 16 bytes (decimal): (16) [26, 69, 223, 163, 159, 66, 134, 129, 1, 66, 247, 129, 1, 66, 242, 129]
+Console.js:61 WebM EBML signature valid: true
+Console.js:61 Number of chunks received: 3
+Console.js:61 Chunk 0: 401892 bytes, type: video/webm;codecs=vp9,opus
+Console.js:61 Chunk 1: 715922 bytes, type: video/webm;codecs=vp9,opus
+Console.js:61 Chunk 2: 658659 bytes, type: video/webm;codecs=vp9,opus
+Console.js:61 ✅ Local Playback: Video loaded metadata successfully!
+Console.js:61 ✅ Local Playback: Duration: Infinity seconds
+Console.js:61 ✅ Local Playback: Video dimensions: 1920x1080
+Console.js:61 ✅ Local Playback: Ready state: 4
+Console.js:61 Using actual recorded duration: 0 seconds
+Console.js:61 ✅ Local Playback: Video can start playing
+Console.js:61 Preview video duration change: Infinity
+Console.js:61 Preview video duration: Infinity readyState: 1
+Console.js:61 Preview video duration change: 2.86
+Console.js:61 🚀 FIXED UPLOAD: Using direct binary transfer to prevent corruption
+Console.js:61 Using recorded video duration: 2.86 seconds
+Console.js:61 Converted Blob to File: {originalType: 'video/webm;codecs=vp9,opus', newType: 'video/webm', cleanMimeType: 'video/webm', filename: 'recorded-video.webm', size: 1776473}
+Console.js:61 🔍 FRONTEND: Final video file details being sent: {type: 'video/webm', size: 1776473, isFile: true, isBlob: true, name: 'recorded-video.webm', …}
+Console.js:61 🔍 FRONTEND: FormData prepared, sending to /api/videos/upload-binary
+Console.js:61 🔍 FRONTEND: Using chunked upload to bypass proxy size limits
+Console.js:61 🔍 FRONTEND: File size: 1776473 bytes
+Console.js:61 🔍 FRONTEND: Will upload in 2 chunks of 1048576 bytes each
+Console.js:61 🔍 FRONTEND: Upload initialized with ID: 4350fcfb-5506-4369-bfff-2b6e75be7b35
+Console.js:61 🔍 FRONTEND: Uploading chunk 1/2 (1048576 bytes)
+Console.js:61 🔍 FRONTEND: Sending chunk FormData: {chunkSize: 1048576, uploadId: '4350fcfb-5506-4369-bfff-2b6e75be7b35', chunkIndex: 0, formDataKeys: Array(3)}
+Console.js:61 🔍 FRONTEND: Chunk upload response: 200 OK
+Console.js:61 ✅ FRONTEND: Chunk upload result: {message: 'Chunk uploaded successfully'}
+Console.js:61 ✅ FRONTEND: Chunk 1 uploaded successfully
+Console.js:61 🔍 FRONTEND: Uploading chunk 2/2 (727897 bytes)
+Console.js:61 🔍 FRONTEND: Sending chunk FormData: {chunkSize: 727897, uploadId: '4350fcfb-5506-4369-bfff-2b6e75be7b35', chunkIndex: 1, formDataKeys: Array(3)}
+Console.js:61 🔍 FRONTEND: Chunk upload response: 200 OK
+Console.js:61 ✅ FRONTEND: Chunk upload result: {message: 'Chunk uploaded successfully'}
+Console.js:61 ✅ FRONTEND: Chunk 2 uploaded successfully
+Console.js:61 🔍 FRONTEND: Completing chunked upload...
+Console.js:61 🔍 FRONTEND: Response received: {status: 200, statusText: 'OK', headers: {…}}
+Console.js:61 🔍 DELETE DEBUG: currentItem structure: {id: '30296010-4527-4516-ba2d-8d39523d422c', isVideoComment: undefined, isThreadMessage: undefined, allKeys: Array(33)}
+Console.js:61 🗑️ DELETE REQUEST: Regular video/Jem - endpoint /api/videos/30296010-4527-4516-ba2d-8d39523d422c
+Console.js:61 🔄 Cache invalidation triggered - isThreadMessage: undefined threadId: undefined videoId: undefined
+Console.js:61 🔍 DELETE DEBUG: currentItem structure: {id: 'a1c6f62e-395d-46f7-b206-0d30bf477e75', isVideoComment: undefined, isThreadMessage: undefined, allKeys: Array(33)}
+Console.js:61 🗑️ DELETE REQUEST: Regular video/Jem - endpoint /api/videos/a1c6f62e-395d-46f7-b206-0d30bf477e75
+Console.js:61 🔄 Cache invalidation triggered - isThreadMessage: undefined threadId: undefined videoId: undefined

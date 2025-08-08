@@ -1,0 +1,55 @@
+Jemzy Content Moderation Guidelines: Fostering a Safe and Positive Community
+At Jemzy LLC, we are committed to creating a welcoming and respectful environment for everyone. Our Community Guidelines outline what kind of content and behavior is not allowed on our platform. To ensure these guidelines are upheld, we employ a multi-layered content moderation system that combines advanced AI technology with human review.
+This document explains how content is analyzed when flagged or rejected, and the consequences for users who repeatedly violate our policies.
+
+How Content is Analyzed and Reviewed
+Our content moderation process is designed to be fair, efficient, and thorough:
+Proactive AI Detection:
+
+
+Before any video is published on Jemzy LLC, our AI systems automatically scan both the video and audio for potential violations of our Community Guidelines (e.g., hate speech, graphic violence, nudity, illegal activities).
+If our AI identifies content that it determines to be a clear violation, the video will be rejected and prevented from being published. You will receive a notification explaining why your content was rejected.
+User Flagging for Published Content:
+
+
+We empower our community to help us maintain a safe environment. If you encounter a video or comment that you believe violates our Community Guidelines, you can flag it for review.
+When content is flagged, it is immediately hidden from public view to prevent further exposure to potentially harmful material.
+The flagged content is then sent to our trained human moderation team for review.
+Human Review:
+
+
+All content (whether initially rejected by AI or flagged by users) that requires further action is reviewed by our dedicated team of human moderators.
+Our moderators are trained to understand the nuances of context, intent, and cultural sensitivity. They carefully assess the content against our Community Guidelines to determine if a violation has occurred.
+For AI-Rejected Content: You have the ability to appeal the rejection. At this point if our human review confirms that the AI correctly identified a violation, the rejection stands. If it was a false positive, the content may be approved.
+For User-Flagged Content: If our human review confirms a violation, the content will remain hidden and further action will be taken against the account (see "Consequences for Violations" below). If no violation is found, the content will be reinstated, and the flagger will be notified.
+
+Consequences for Violations: Our Strike System
+When content is confirmed by our human review team to violate our Community Guidelines, we implement a "strike system" to address repeat offenses. The severity of the consequence escalates with the number and gravity of violations.
+Please Note: The type of content (video or comment) does not change the core policy or the consequences once a violation is confirmed. Both are treated equally under our Community Guidelines. However, particularly egregious content (e.g., illegal content, direct threats, child sexual abuse material) will result in immediate and severe action, bypassing the strike system entirely.
+First Violation (Warning):
+
+
+The violating content (video or comment) will be removed.
+You will receive a warning notification explaining which Community Guideline was violated. This is an educational opportunity to help you understand our policies better.
+No immediate impact on account functionality.
+Second Violation (Temporary Account Suspension):
+
+
+The violating content will be removed.
+Your account will be temporarily suspended for a period (e.g., 24 hours to 7 days, depending on severity). During this time, you will not be able to post new content, comment, or interact with the app.
+You may be required to review our Community Guidelines before your account access is fully restored.
+Third Violation (Extended Account Suspension):
+
+
+The violating content will be removed.
+Your account will face an extended temporary suspension (e.g., 30 days or more).
+Repeated or Egregious Violations (Permanent Account Ban):
+
+
+We reserve the right to permanently ban any user's account at any time if they repeatedly violate our Community Guidelines or engage in severe, harmful behavior.
+When an account is permanently banned, you will lose access to your account and all content associated with it. Attempts to circumvent a ban by creating new accounts will also result in immediate banning of the new accounts.
+Appeals Process:
+If you believe your content was removed or your account was penalized in error, you have the right to appeal our decision. Instructions for submitting an appeal will be provided in your notification. Our human review team will re-examine your case.
+
+By adhering to these guidelines, you help us build a positive and safe community for everyone on Jemzy LLC. We appreciate your cooperation in making our platform a great place to connect.
+

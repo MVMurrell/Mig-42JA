@@ -1,0 +1,46 @@
+How to Debug the 500 Internal Server Error on Replit Backend:
+Since the frontend is indicating success until the POST request, you need to look at your Replit console logs for the backend server itself. The frontend console log you provided only shows the result of the backend call (the 500 error), not why the backend crashed.
+
+Steps to Diagnose the Backend 500 Error:
+
+Open your Replit Workspace.
+Locate and open the "Console" tab (or "Shell" tab, depending on your setup) where your backend server's output is displayed.
+If you're using a web framework like Flask, FastAPI, Express, etc., this is where its logs (including print statements, console.log, and error stack traces) will appear.
+Trigger another video upload attempt from your frontend.
+Immediately check the Replit backend console. You should see:
+Your print() statements from the backend code (e.g., "Received file size...", "FFmpeg stdout:", "FFmpeg stderr:", "Successfully transcoded...").
+Crucially, a Python traceback or Node.js error stack. This will tell you the exact line of code where the error occurred and what the error type was (e.g., FileNotFoundError, subprocess.CalledProcessError, requests.exceptions.RequestException, TypeError, etc.).
+Common Causes for Backend 500 Errors in this Scenario:
+
+Based on previous discussions, here are the most likely candidates:
+
+FFmpeg Failure (Still):
+The most probable cause. Even with the new flags, if the WebM input is still fundamentally difficult for FFmpeg, or if an FFmpeg-generated error is not fully caught, your Python subprocess.run(..., check=True) will raise subprocess.CalledProcessError, which if not handled correctly, leads to a 500.
+How to check: Look for the FFmpeg stderr output in your Replit backend console. It will contain the specific error message from FFmpeg.
+File I/O Issues:
+Permissions: /tmp usually has write permissions, but double-check if you're trying to write temporary files elsewhere.
+Disk Space: Replit environments have limited disk space. Are you running out of space in /tmp for the large video files?
+File Not Found after FFmpeg: If FFmpeg fails or the output path is wrong, open(output_mp4_path, "rb") will fail.
+Bunny.net API Issues (Less likely, as it would usually be a 4xx error from Bunny, not 500 from your server):
+Incorrect API URL.
+Problem with the requests.post or requests.put calls (e.g., json serialization issues, data format).
+Network issues from Replit to Bunny.net (though your previous test showed this working).
+duration parsing error:
+If the duration received from the frontend is not a valid number (e.g., null, undefined, a non-numeric string), and you try to convert it to float or use it in FFmpeg without a check, it could cause an error.
+Check: Add print(f"Received duration: {duration_str}") on your backend.
+Once you get the specific error message and stack trace from your Replit backend console, you'll have the exact information needed to fix the 500 error. This is the crucial next step.
+
+
+
+
+
+
+
+
+
+
+
+Deep Research
+
+Canvas
+

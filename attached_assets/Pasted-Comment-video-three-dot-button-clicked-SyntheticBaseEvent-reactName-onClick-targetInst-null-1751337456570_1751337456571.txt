@@ -1,0 +1,20 @@
+Comment video three-dot button clicked! SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: div#radix-:rb:.w-12.h-12.rounded-full.bg-black/60.text-white.hover:bg-black/80.flex.items-center.ju…, …}
+Console.js:61 Delete comment video: 54
+Console.js:61 🔍 DELETE DEBUG: currentItem structure: {id: 54, isVideoComment: true, isThreadMessage: undefined, allKeys: Array(3)}
+Console.js:61 🗑️ DELETE REQUEST: Video comment - endpoint /api/video-comments/54
+Console.js:61 🔄 Cache invalidation triggered - isThreadMessage: undefined threadId: undefined videoId: 1cd3bca6-e0c0-43c2-bda1-cdfdf7b0d82b
+Console.js:61 🔄 Forcing video comments refetch for videoId: 1cd3bca6-e0c0-43c2-bda1-cdfdf7b0d82b
+Console.js:61 🎬 VIDEO FEED COMMENT MODAL CLOSE: Main video unmuted and resumed
+Console.js:61 🎬 VideoFeedModal: ⚠️ NATIVE PLAY EVENT in useEffect
+Console.js:61 🎬 VideoFeedModal: Setting isPlaying to true (user has not manually paused)
+Console.js:61 VideoFeedModal: Video can play event - hasTriggeredAutoplay: true userHasPausedVideo: true
+Console.js:61 VideoFeedModal: Skipping autoplay - already triggered or user has paused
+Console.js:61 🎬 VIDEO FEED COMMENT CLICK: Opening comment in fullscreen: 54
+Console.js:61 🎬 VIDEO FEED COMMENT CLICK: Video ref found, current state: {paused: false, muted: false, currentTime: 0.128963}
+Console.js:61 🎬 VIDEO FEED COMMENT CLICK: Main video paused and muted directly
+Console.js:61 🎬 VideoFeedModal: Native pause event in useEffect - setting isPlaying to false
+Console.js:61 🎬 VIDEO FEED COMMENT CLICK: After pause attempt: {paused: true, muted: true}
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/d5d4bb9b-543a-40e2-9f73-3362f37f533f/720p/video.m3u8
+Console.js:61 Comment video three-dot button clicked! SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: div#radix-:rk:.w-12.h-12.rounded-full.bg-black/60.text-white.hover:bg-black/80.flex.items-center.ju…, …}
+Console.js:61 Delete comment video: 54

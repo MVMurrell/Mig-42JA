@@ -1,0 +1,100 @@
+📊 VIEW TRACKING: Incrementing view count for video: 9888b537-5326-4225-9d63-2855664847c0
+Console.js:61 🎬 WATCH TRACKING: Marking video as watched: 9888b537-5326-4225-9d63-2855664847c0
+Console.js:61 📊 VIEW TRACKING: Incrementing view count for video: 9888b537-5326-4225-9d63-2855664847c0
+queryClient.ts:45  POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9888b537-5326-4225-9d63-2855664847c0/view 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+mutationFn @ ScrollableVideoFeed.tsx:95
+fn @ @tanstack_react-query.js?v=6442c1a8:1189
+run @ @tanstack_react-query.js?v=6442c1a8:494
+start @ @tanstack_react-query.js?v=6442c1a8:536
+execute @ @tanstack_react-query.js?v=6442c1a8:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=6442c1a8:2630
+(anonymous) @ @tanstack_react-query.js?v=6442c1a8:3295
+(anonymous) @ ScrollableVideoFeed.tsx:450
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:442
+basicStateReducer @ chunk-RPCDYKBN.js?v=6442c1a8:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=6442c1a8:12385
+handleIntersection @ ScrollableVideoFeed.tsx:417Understand this error
+Console.js:61 📊 VIEW TRACKING: Failed to increment view count for video: 9888b537-5326-4225-9d63-2855664847c0 Error: 500: {"message":"Failed to increment video views"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ ScrollableVideoFeed.tsx:103
+execute @ @tanstack_react-query.js?v=6442c1a8:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=6442c1a8:2630
+(anonymous) @ @tanstack_react-query.js?v=6442c1a8:3295
+(anonymous) @ ScrollableVideoFeed.tsx:450
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:442
+basicStateReducer @ chunk-RPCDYKBN.js?v=6442c1a8:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=6442c1a8:12385
+handleIntersection @ ScrollableVideoFeed.tsx:417Understand this error
+Console.js:61 🎬 WATCH TRACKING: Successfully marked video as watched: 9888b537-5326-4225-9d63-2855664847c0
+queryClient.ts:45  POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9888b537-5326-4225-9d63-2855664847c0/view 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:45
+mutationFn @ ScrollableVideoFeed.tsx:95
+fn @ @tanstack_react-query.js?v=6442c1a8:1189
+run @ @tanstack_react-query.js?v=6442c1a8:494
+start @ @tanstack_react-query.js?v=6442c1a8:536
+execute @ @tanstack_react-query.js?v=6442c1a8:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=6442c1a8:2630
+(anonymous) @ @tanstack_react-query.js?v=6442c1a8:3295
+(anonymous) @ ScrollableVideoFeed.tsx:511
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:503
+setTimeout
+(anonymous) @ ScrollableVideoFeed.tsx:489
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=6442c1a8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=6442c1a8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=6442c1a8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=6442c1a8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=6442c1a8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=6442c1a8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=6442c1a8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=6442c1a8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=6442c1a8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=6442c1a8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=6442c1a8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=6442c1a8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=6442c1a8:18718
+workLoop @ chunk-RPCDYKBN.js?v=6442c1a8:197
+flushWork @ chunk-RPCDYKBN.js?v=6442c1a8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=6442c1a8:384Understand this error
+Console.js:61 📊 VIEW TRACKING: Failed to increment view count for video: 9888b537-5326-4225-9d63-2855664847c0 Error: 500: {"message":"Failed to increment video views"}
+    at throwIfResNotOk (queryClient.ts:33:11)
+    at async apiRequest (queryClient.ts:54:5)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ ScrollableVideoFeed.tsx:103
+execute @ @tanstack_react-query.js?v=6442c1a8:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=6442c1a8:2630
+(anonymous) @ @tanstack_react-query.js?v=6442c1a8:3295
+(anonymous) @ ScrollableVideoFeed.tsx:511
+Promise.then
+(anonymous) @ ScrollableVideoFeed.tsx:503
+setTimeout
+(anonymous) @ ScrollableVideoFeed.tsx:489
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=6442c1a8:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=6442c1a8:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=6442c1a8:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=6442c1a8:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=6442c1a8:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=6442c1a8:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=6442c1a8:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=6442c1a8:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=6442c1a8:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=6442c1a8:19432
+commitRoot @ chunk-RPCDYKBN.js?v=6442c1a8:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=6442c1a8:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=6442c1a8:18718
+workLoop @ chunk-RPCDYKBN.js?v=6442c1a8:197
+flushWork @ chunk-RPCDYKBN.js?v=6442c1a8:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=6442c1a8:384Understand this error
+Console.js:61 🎬 WATCH TRACKING: Successfully marked video as watched: 9888b537-5326-4225-9d63-2855664847c0
+Console.js:61 Video 0 ended, restarting from beginning

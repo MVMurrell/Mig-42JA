@@ -1,0 +1,120 @@
+Track ended, advancing to next track. Current index: 3
+MusicContext.tsx:155 Moving to track index: 4 Track: Night Vibes In Tokyo
+MusicContext.tsx:175 Loading new track: Night Vibes In Tokyo Was playing: false Auto-advancing: true
+sw.js:159 Uncaught (in promise) TypeError: Failed to execute 'put' on 'Cache': Partial response (status code 206) is unsupported
+    at sw.js:159:13
+(anonymous) @ sw.js:159
+Promise.then
+staleWhileRevalidateStrategy @ sw.js:157
+await in staleWhileRevalidateStrategy
+(anonymous) @ sw.js:92Understand this error
+MusicContext.tsx:184 Auto-playing next track: Night Vibes In Tokyo
+30VideoUploadModal.tsx:1057 Error polling video status: TypeError: response.json is not a function
+    at VideoUploadModal.tsx:990:43
+(anonymous) @ VideoUploadModal.tsx:1057
+setInterval
+pollVideoStatus @ VideoUploadModal.tsx:987
+actuallySubmitUpload @ VideoUploadModal.tsx:1433
+await in actuallySubmitUpload
+handleSubmit @ VideoUploadModal.tsx:1145
+onClick @ VideoUploadModal.tsx:2245
+callCallback2 @ chunk-RPCDYKBN.js?v=73548e86:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=73548e86:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=73548e86:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=73548e86:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=73548e86:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=73548e86:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=73548e86:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=73548e86:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=73548e86:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=73548e86:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=73548e86:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=73548e86:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=73548e86:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=73548e86:5449Understand this error
+WorkerMessenger.ts:201 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToUpsertSession @ SessionManager.ts:46
+handleOnFocus @ SessionManager.ts:228Understand this error
+VideoUploadModal.tsx:1057 Error polling video status: TypeError: response.json is not a function
+    at VideoUploadModal.tsx:990:43
+(anonymous) @ VideoUploadModal.tsx:1057
+setInterval
+pollVideoStatus @ VideoUploadModal.tsx:987
+actuallySubmitUpload @ VideoUploadModal.tsx:1433
+await in actuallySubmitUpload
+handleSubmit @ VideoUploadModal.tsx:1145
+onClick @ VideoUploadModal.tsx:2245
+callCallback2 @ chunk-RPCDYKBN.js?v=73548e86:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=73548e86:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=73548e86:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=73548e86:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=73548e86:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=73548e86:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=73548e86:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=73548e86:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=73548e86:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=73548e86:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=73548e86:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=73548e86:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=73548e86:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=73548e86:5449Understand this error
+profile.tsx:758 Delete failed: TypeError: Failed to execute 'json' on 'Response': body stream already read
+    at Object.mutationFn (profile.tsx:748:23)
+onError @ profile.tsx:758
+execute @ @tanstack_react-query.js?v=73548e86:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=73548e86:2630
+(anonymous) @ @tanstack_react-query.js?v=73548e86:3295
+handleDeleteFailedVideo @ profile.tsx:775
+onDelete @ profile.tsx:1890
+onClick @ VideoErrorModal.tsx:178
+callCallback2 @ chunk-RPCDYKBN.js?v=73548e86:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=73548e86:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=73548e86:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=73548e86:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=73548e86:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=73548e86:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=73548e86:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=73548e86:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=73548e86:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=73548e86:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=73548e86:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=73548e86:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=73548e86:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=73548e86:5449Understand this error
+WorkerMessenger.ts:201 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleOnBlur @ SessionManager.ts:258Understand this error
+3VideoUploadModal.tsx:1057 Error polling video status: TypeError: response.json is not a function
+    at VideoUploadModal.tsx:990:43
+(anonymous) @ VideoUploadModal.tsx:1057
+setInterval
+pollVideoStatus @ VideoUploadModal.tsx:987
+actuallySubmitUpload @ VideoUploadModal.tsx:1433
+await in actuallySubmitUpload
+handleSubmit @ VideoUploadModal.tsx:1145
+onClick @ VideoUploadModal.tsx:2245
+callCallback2 @ chunk-RPCDYKBN.js?v=73548e86:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=73548e86:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=73548e86:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=73548e86:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=73548e86:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=73548e86:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=73548e86:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=73548e86:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=73548e86:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=73548e86:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=73548e86:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=73548e86:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=73548e86:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=73548e86:5449Understand this error

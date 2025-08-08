@@ -1,0 +1,14 @@
+Adding quest markers to Google Maps: 1 quests
+Console.js:61 Updated existing quest marker for: testing
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 🔥 FRONTEND: Starting profile picture upload mutation (quest pattern)
+Console.js:61 🔥 FRONTEND: FormData prepared, making request to /api/users/profile-picture
+Console.js:61 🔥 FRONTEND: Response received: 200 OK
+Console.js:61 🔥 FRONTEND: GCS upload successful: {message: 'Profile picture updated successfully', url: 'https://storage.googleapis.com/jemzy-images-storag…46d2f0d1c59ee7a2d810aa851b2ff4becc01343fc16ca1119', gcsPath: 'gs://jemzy-images-storage/profiles/google-oauth2|1…85616207/bd049679-a59a-4705-8b4f-47a2d4e9553e.jpg', userId: 'google-oauth2|117032826996185616207', moderation: {…}}
+Console.js:61 🔄 FRONTEND: Now updating database with URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2%7C117032826996185616207/bd049679-a59a-4705-8b4f-47a2d4e9553e.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=content-moderation-worker%40steam-house-461401-t7.iam.gserviceaccount.com%2F20250627%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250627T173459Z&X-Goog-Expires=3600&X-Goog-SignedHeaders=host&X-Goog-Signature=8fcbf2df39632ce8ec6bd49398b4b32fe044f259abcdd8b0ae212e084dba980b342b8c7012bf1d116f94917eb6f65fee811abd6c976070900b79cd6cf1b4a733a007423ab516984442bb9eef112bcc30a1c5e58ab46ff36832fd43aff0457d7be3b7acd3f87462a26a655b2c72124962713b5706e4d761fe05b54661845f5cc0b9330183bef0dd5b76347837b605ccd997a2472b5d4e01f91dc1773fc5880721ab4398bdfbf929c09b47e57156214264e553e2deb563c78fc94c0eecaee4c20548cb487226279aacea805637b1004e768f00a5c6ed0c3452a9f0bcb6d5a05da53171c256ee3110746d2f0d1c59ee7a2d810aa851b2ff4becc01343fc16ca1119
+Console.js:61 ✅ FRONTEND: Database update successful: {message: 'Profile picture URL updated in database'}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…46d2f0d1c59ee7a2d810aa851b2ff4becc01343fc16ca1119', …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}

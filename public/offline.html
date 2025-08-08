@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jemzy - You're Offline</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 2rem;
+            background: white;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+        
+        .logo img {
+            width: 80px;
+            height: 80px;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        
+        .features {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .features h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-list {
+            list-style: none;
+            text-align: left;
+        }
+        
+        .feature-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+        }
+        
+        .feature-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-list li::before {
+            content: "✓";
+            margin-right: 1rem;
+            color: #10B981;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .retry-btn {
+            background: white;
+            color: #3B82F6;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        }
+        
+        .retry-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .status {
+            margin-top: 2rem;
+            padding: 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+        
+        .status.offline {
+            background: rgba(239, 68, 68, 0.2);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+        
+        .status.online {
+            background: rgba(16, 185, 129, 0.2);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            .features {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="/icons/JemzyLogoIcon.png" alt="Jemzy Logo">
+        </div>
+        
+        <h1>You're Offline</h1>
+        <p class="subtitle">No internet connection detected. Some features may be limited while offline.</p>
+        
+        <div class="features">
+            <h2>Available Offline Features:</h2>
+            <ul class="feature-list">
+                <li>Browse cached videos</li>
+                <li>View your profile</li>
+                <li>Access settings</li>
+                <li>Previous map locations</li>
+            </ul>
+        </div>
+        
+        <button class="retry-btn" onclick="checkConnection()">
+            <span id="retry-text">Check Connection</span>
+        </button>
+        
+        <div id="status" class="status offline">
+            <span class="pulse">●</span> Offline - Your actions will sync when connection returns
+        </div>
+    </div>
+
+    <script>
+        function checkConnection() {
+            const button = document.querySelector('.retry-btn');
+            const retryText = document.getElementById('retry-text');
+            const status = document.getElementById('status');
+            
+            retryText.textContent = 'Checking...';
+            button.disabled = true;
+            
+            // Attempt to fetch a small resource to test connectivity
+            fetch('/manifest.json', { 
+                method: 'HEAD',
+                cache: 'no-cache'
+            })
+            .then(response => {
+                if (response.ok) {
+                    status.className = 'status online';
+                    status.innerHTML = '<span>●</span> Connected! Redirecting to app...';
+                    
+                    setTimeout(() => {
+                        window.location.href = '/';
+                    }, 1500);
+                } else {
+                    throw new Error('No connection');
+                }
+            })
+            .catch(() => {
+                retryText.textContent = 'Check Connection';
+                button.disabled = false;
+                status.className = 'status offline';
+                status.innerHTML = '<span class="pulse">●</span> Still offline - Try again in a moment';
+            });
+        }
+        
+        // Auto-check connection periodically
+        setInterval(() => {
+            if (navigator.onLine) {
+                fetch('/manifest.json', { method: 'HEAD', cache: 'no-cache' })
+                .then(response => {
+                    if (response.ok) {
+                        window.location.href = '/';
+                    }
+                })
+                .catch(() => {
+                    // Still offline
+                });
+            }
+        }, 10000); // Check every 10 seconds
+        
+        // Listen for online events
+        window.addEventListener('online', () => {
+            checkConnection();
+        });
+        
+        // Show online/offline status
+        window.addEventListener('online', () => {
+            document.getElementById('status').className = 'status online';
+            document.getElementById('status').innerHTML = '<span>●</span> Connected! Redirecting...';
+            setTimeout(() => window.location.href = '/', 1000);
+        });
+        
+        window.addEventListener('offline', () => {
+            document.getElementById('status').className = 'status offline';
+            document.getElementById('status').innerHTML = '<span class="pulse">●</span> Connection lost';
+        });
+    </script>
+</body>
+</html>

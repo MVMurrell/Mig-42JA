@@ -1,0 +1,118 @@
+GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…it.dev/group/ed4dc71a-d908-4b5b-99c0-4fb720810ec1', currentModalState: false}
+Console.js:61 🔄 State change detected - showThreadMessageRejectionModal: false
+Console.js:61 🔄 State change detected - selectedThreadMessage: null
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 No saved modal state found, using defaults
+Console.js:61 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ chunk-V3FJP6FY.js?v=0ebd7e91:337
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:18627Understand this warning
+Console.js:61 Adding users: (2) ['user003', 'user002']
+Console.js:61 Sending request for userId: user003
+Console.js:61 Sending request for userId: user002
+Console.js:61 Making API request with targetUserId: user003
+Console.js:61 Group ID: ed4dc71a-d908-4b5b-99c0-4fb720810ec1
+Console.js:61 Request body: {targetUserId: 'user003'}
+Console.js:61 Making API request with targetUserId: user002
+Console.js:61 Group ID: ed4dc71a-d908-4b5b-99c0-4fb720810ec1
+Console.js:61 Request body: {targetUserId: 'user002'}
+AddMembersModal.tsx:141 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/groups/ed4dc71a-d908-4b5b-99c0-4fb720810ec1/members 400 (Bad Request)
+window.fetch @ Network.js:219
+mutationFn @ AddMembersModal.tsx:141
+fn @ @tanstack_react-query.js?v=0ebd7e91:1189
+run @ @tanstack_react-query.js?v=0ebd7e91:494
+start @ @tanstack_react-query.js?v=0ebd7e91:536
+execute @ @tanstack_react-query.js?v=0ebd7e91:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0ebd7e91:2630
+(anonymous) @ @tanstack_react-query.js?v=0ebd7e91:3295
+(anonymous) @ AddMembersModal.tsx:272
+addSelectedUsers @ AddMembersModal.tsx:270
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+AddMembersModal.tsx:141 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/groups/ed4dc71a-d908-4b5b-99c0-4fb720810ec1/members 400 (Bad Request)
+window.fetch @ Network.js:219
+mutationFn @ AddMembersModal.tsx:141
+fn @ @tanstack_react-query.js?v=0ebd7e91:1189
+run @ @tanstack_react-query.js?v=0ebd7e91:494
+start @ @tanstack_react-query.js?v=0ebd7e91:536
+execute @ @tanstack_react-query.js?v=0ebd7e91:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0ebd7e91:2630
+(anonymous) @ @tanstack_react-query.js?v=0ebd7e91:3295
+(anonymous) @ AddMembersModal.tsx:272
+addSelectedUsers @ AddMembersModal.tsx:270
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+2Console.js:61 API Error: 400 {"message":"User is already a member of this group"}
+Mt.forEach.n.<computed> @ Console.js:61
+mutationFn @ AddMembersModal.tsx:149
+await in mutationFn
+fn @ @tanstack_react-query.js?v=0ebd7e91:1189
+run @ @tanstack_react-query.js?v=0ebd7e91:494
+start @ @tanstack_react-query.js?v=0ebd7e91:536
+execute @ @tanstack_react-query.js?v=0ebd7e91:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0ebd7e91:2630
+(anonymous) @ @tanstack_react-query.js?v=0ebd7e91:3295
+(anonymous) @ AddMembersModal.tsx:272
+addSelectedUsers @ AddMembersModal.tsx:270
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error

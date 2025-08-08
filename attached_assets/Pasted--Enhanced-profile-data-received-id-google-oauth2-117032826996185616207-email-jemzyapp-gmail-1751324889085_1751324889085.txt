@@ -1,0 +1,38 @@
+✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: null, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔥 FRONTEND: Starting profile picture upload mutation (quest pattern)
+Console.js:61 🔥 FRONTEND: FormData prepared, making request to /api/users/profile-picture
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔥 FRONTEND: Response received: 200 OK
+Console.js:61 🔥 FRONTEND: GCS upload successful: {message: 'Profile picture updated successfully', url: 'https://storage.googleapis.com/jemzy-images-storag…f5349b86166d9517767e528d08737bca0801cb9da23c8d966'}
+Console.js:61 🔄 FRONTEND: Now updating database with URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2%7C117032826996185616207/eafa3356-5919-4f55-a6ac-ce3e2992bd57.jpg?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=content-moderation-worker%40steam-house-461401-t7.iam.gserviceaccount.com%2F20250630%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20250630T230729Z&X-Goog-Expires=86400&X-Goog-SignedHeaders=host&response-content-type=application%2Foctet-stream&X-Goog-Signature=d720f9e37f6858449ec39c47ea22b8b46d1291067dc5c202f3f0f88524da747529c2f32c6dec2c6a8a62b3a8e28c75a4d83689b89668cfb2c89504af6aeb89364ba2f5c8ba6114f2e2cd328f43fdd40fb88ae4017929070ca54ca7aae1b3b99c525f53b0499c67836a52e3a69e5c0865ccbf8b66297eadb319735a6ede021c1100985de846343b54a27b7a5ce35e3585b77a5513486f6acdd08ffb9efb91448d5142311e87569b28e7a570c3476462484a5427d0e7bf6d3a60a6650e2b06cccc1c9139dd23da04fd6a73e0ab169870c62e19b7fcbb5d6e744f44c41e123d062e6bbc6e74848c38ef5349b86166d9517767e528d08737bca0801cb9da23c8d966
+Console.js:61 🔄 FRONTEND: Making database update request with credentials
+Console.js:61 🔄 FRONTEND: Database response status: 200
+Console.js:61 🔄 FRONTEND: Database response headers: {content-type: 'text/html; charset=utf-8', date: 'Mon, 30 Jun 2025 23:07:30 GMT', replit-cluster: 'worf', transfer-encoding: 'chunked', vary: 'Origin', …}
+Console.js:61 Profile picture upload error: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ profile.tsx:406
+execute @ @tanstack_react-query.js?v=0aec14a9:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+handleFileUpload @ profile.tsx:642
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}

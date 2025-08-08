@@ -1,0 +1,57 @@
+🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABOYA…4Qjp8xnYxAXr69On6e/4L3htCejj/TwcAAAAASUVORK5CYII=', …}
+queryClient.ts:40 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/profile-picture 400 (Bad Request)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:40
+mutationFn @ profile.tsx:310
+fn @ @tanstack_react-query.js?v=052f03cc:1189
+run @ @tanstack_react-query.js?v=052f03cc:494
+start @ @tanstack_react-query.js?v=052f03cc:536
+execute @ @tanstack_react-query.js?v=052f03cc:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=052f03cc:2630
+(anonymous) @ @tanstack_react-query.js?v=052f03cc:3295
+handleSaveProfilePicture @ profile.tsx:593
+callCallback2 @ chunk-RPCDYKBN.js?v=052f03cc:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=052f03cc:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=052f03cc:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=052f03cc:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=052f03cc:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=052f03cc:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=052f03cc:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=052f03cc:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=052f03cc:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=052f03cc:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=052f03cc:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=052f03cc:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=052f03cc:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=052f03cc:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=052f03cc:5449Understand this error
+Console.js:61 Profile picture upload error: Error: 400: {"message":"Profile picture was rejected by our content moderation system","reason":"The uploaded image contains inappropriate content that violates our community guidelines"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:47:3)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ profile.tsx:336
+execute @ @tanstack_react-query.js?v=052f03cc:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=052f03cc:2630
+(anonymous) @ @tanstack_react-query.js?v=052f03cc:3295
+handleSaveProfilePicture @ profile.tsx:593
+callCallback2 @ chunk-RPCDYKBN.js?v=052f03cc:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=052f03cc:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=052f03cc:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=052f03cc:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=052f03cc:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=052f03cc:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=052f03cc:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=052f03cc:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=052f03cc:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=052f03cc:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=052f03cc:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=052f03cc:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=052f03cc:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=052f03cc:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=052f03cc:5449Understand this error

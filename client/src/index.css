@@ -1,0 +1,419 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 0 72% 51%; /* #E53E3E - Jemzy Red */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 45 100% 50%; /* #FFD700 - Jemzy Gold */
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Jemzy brand colors */
+  --jemzy-red: 0 72% 51%; /* #E53E3E */
+  --jemzy-orange: 24 100% 48%; /* #F56500 */
+  --jemzy-blue: 207 90% 54%; /* #4299E1 */
+  --jemzy-green: 142 71% 45%; /* #38A169 */
+  --jemzy-purple: 259 53% 70%; /* #9F7AEA */
+  --jemzy-dark: 210 44% 13%; /* #1A202C */
+  --jemzy-gray: 215 16% 47%; /* #718096 */
+  --jemzy-gold: 45 100% 50%; /* #FFD700 */
+  
+  /* Mobile safe area support with fallbacks */
+  --safe-area-inset-top: env(safe-area-inset-top, 0px);
+  --safe-area-inset-right: env(safe-area-inset-right, 0px);
+  --safe-area-inset-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-inset-left: env(safe-area-inset-left, 0px);
+}
+
+.dark {
+  --background: 224 71.4% 4.1%;
+  --foreground: 210 20% 98%;
+  --muted: 215 27.9% 16.9%;
+  --muted-foreground: 217.9 10.6% 64.9%;
+  --popover: 224 71.4% 4.1%;
+  --popover-foreground: 210 20% 98%;
+  --card: 224 71.4% 4.1%;
+  --card-foreground: 210 20% 98%;
+  --border: 215 27.9% 16.9%;
+  --input: 215 27.9% 16.9%;
+  --primary: 0 72% 51%;
+  --primary-foreground: 210 20% 98%;
+  --secondary: 215 27.9% 16.9%;
+  --secondary-foreground: 210 20% 98%;
+  --accent: 215 27.9% 16.9%;
+  --accent-foreground: 210 20% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 210 20% 98%;
+  --ring: 216 12.2% 83.9%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .jemzy-red {
+    background-color: hsl(var(--jemzy-red));
+  }
+  
+  .jemzy-orange {
+    background-color: hsl(var(--jemzy-orange));
+  }
+  
+  .jemzy-blue {
+    background-color: hsl(var(--jemzy-blue));
+  }
+  
+  .jemzy-green {
+    background-color: hsl(var(--jemzy-green));
+  }
+  
+  .jemzy-purple {
+    background-color: hsl(var(--jemzy-purple));
+  }
+  
+  .jemzy-gold {
+    background-color: hsl(var(--jemzy-gold));
+  }
+  
+  .text-jemzy-red {
+    color: hsl(var(--jemzy-red));
+  }
+  
+  .text-jemzy-orange {
+    color: hsl(var(--jemzy-orange));
+  }
+  
+  .text-jemzy-blue {
+    color: hsl(var(--jemzy-blue));
+  }
+  
+  .text-jemzy-green {
+    color: hsl(var(--jemzy-green));
+  }
+  
+  .text-jemzy-purple {
+    color: hsl(var(--jemzy-purple));
+  }
+  
+  .text-jemzy-gold {
+    color: hsl(var(--jemzy-gold));
+  }
+  
+  .text-jemzy-dark {
+    color: hsl(var(--jemzy-dark));
+  }
+  
+  .text-jemzy-gray {
+    color: hsl(var(--jemzy-gray));
+  }
+  
+  .border-jemzy-red {
+    border-color: hsl(var(--jemzy-red));
+  }
+  
+  .bg-jemzy-red {
+    background-color: hsl(var(--jemzy-red));
+  }
+  
+  .bg-jemzy-orange {
+    background-color: hsl(var(--jemzy-orange));
+  }
+  
+  .bg-jemzy-blue {
+    background-color: hsl(var(--jemzy-blue));
+  }
+  
+  .bg-jemzy-green {
+    background-color: hsl(var(--jemzy-green));
+  }
+  
+  .bg-jemzy-purple {
+    background-color: hsl(var(--jemzy-purple));
+  }
+  
+  .bg-jemzy-gold {
+    background-color: hsl(var(--jemzy-gold));
+  }
+  
+  .bg-jemzy-dark {
+    background-color: hsl(var(--jemzy-dark));
+  }
+  
+  .bg-jemzy-gray {
+    background-color: hsl(var(--jemzy-gray));
+  }
+}
+
+/* Custom animations for Jemzy app */
+@keyframes pulse-gem {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% { 
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-proximity {
+  from { 
+    transform: rotate(0deg);
+  }
+  to { 
+    transform: rotate(360deg);
+  }
+}
+
+.gem-pulse {
+  animation: pulse-gem 2s infinite;
+}
+
+.proximity-rotate {
+  animation: rotate-proximity 10s linear infinite;
+}
+
+.video-thumbnail {
+  aspect-ratio: 9/16;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.map-container {
+  background: linear-gradient(45deg, #f0f4f8 25%, transparent 25%), 
+              linear-gradient(-45deg, #f0f4f8 25%, transparent 25%), 
+              linear-gradient(45deg, transparent 75%, #f0f4f8 75%), 
+              linear-gradient(-45deg, transparent 75%, #f0f4f8 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+}
+
+.video-player-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.3) 40%,
+    rgba(0, 0, 0, 0.1) 60%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+/* Mobile optimizations with comprehensive safe area support */
+@media (max-width: 768px) {
+  .mobile-safe-area {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .mobile-safe-area-top {
+    padding-top: max(1rem, env(safe-area-inset-top, 0px));
+  }
+  
+  .mobile-safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .mobile-safe-area-left {
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+  
+  .mobile-safe-area-right {
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+  
+  .mobile-safe-area-all {
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+  
+  /* Full-screen modal support */
+  .mobile-modal-fullscreen {
+    height: 100vh;
+    height: 100dvh; /* Dynamic viewport height for better mobile support */
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  /* Bottom sheet modal support */
+  .mobile-modal-bottom-sheet {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  /* Header with notch support */
+  .mobile-header {
+    padding-top: max(1rem, env(safe-area-inset-top, 0px));
+  }
+  
+  /* Footer with home indicator support */
+  .mobile-footer {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom, 0px));
+  }
+}
+
+/* Landscape mode optimizations */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-landscape-safe {
+    padding-left: env(safe-area-inset-left, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+  
+  .mobile-landscape-content {
+    margin-left: env(safe-area-inset-left, 0px);
+    margin-right: env(safe-area-inset-right, 0px);
+  }
+}
+
+/* Touch-friendly interactions */
+.touch-target {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Tailwind utilities for safe area insets */
+@layer utilities {
+  .pt-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  
+  .pr-safe {
+    padding-right: env(safe-area-inset-right, 0px);
+  }
+  
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .pl-safe {
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+  
+  .p-safe {
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-right: env(safe-area-inset-right, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    padding-left: env(safe-area-inset-left, 0px);
+  }
+  
+  .mt-safe {
+    margin-top: env(safe-area-inset-top, 0px);
+  }
+  
+  .mr-safe {
+    margin-right: env(safe-area-inset-right, 0px);
+  }
+  
+  .mb-safe {
+    margin-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .ml-safe {
+    margin-left: env(safe-area-inset-left, 0px);
+  }
+  
+  .m-safe {
+    margin-top: env(safe-area-inset-top, 0px);
+    margin-right: env(safe-area-inset-right, 0px);
+    margin-bottom: env(safe-area-inset-bottom, 0px);
+    margin-left: env(safe-area-inset-left, 0px);
+  }
+  
+  .top-safe {
+    top: env(safe-area-inset-top, 0px);
+  }
+  
+  .right-safe {
+    right: env(safe-area-inset-right, 0px);
+  }
+  
+  .bottom-safe {
+    bottom: env(safe-area-inset-bottom, 0px);
+  }
+  
+  .left-safe {
+    left: env(safe-area-inset-left, 0px);
+  }
+  
+  .h-screen-safe {
+    height: calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  }
+  
+  .min-h-screen-safe {
+    min-height: calc(100vh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+  }
+  
+  .w-screen-safe {
+    width: calc(100vw - env(safe-area-inset-left, 0px) - env(safe-area-inset-right, 0px));
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .gem-pulse,
+  .proximity-rotate {
+    animation: none;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .gem-marker {
+    border: 2px solid;
+  }
+  
+  .user-avatar {
+    border: 3px solid;
+  }
+}
+
+/* Random hover color system */
+.random-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.random-hover:hover {
+  animation: randomHover 0.2s ease-in-out forwards;
+  transform: scale(1.05);
+}
+
+@keyframes randomHover {
+  to {
+    background-color: var(--hover-color, hsl(45, 100%, 50%));
+  }
+}

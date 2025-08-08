@@ -1,0 +1,54 @@
+Uncaught ReferenceError: setLocation is not defined
+    at onClick (VideoFeedModal.tsx:1415:21)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=8a2efd69:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=8a2efd69:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=8a2efd69:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=8a2efd69:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=8a2efd69:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=8a2efd69:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=8a2efd69:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=8a2efd69:7051:11)
+    at chunk-RPCDYKBN.js?v=8a2efd69:7174:20
+onClick @ VideoFeedModal.tsx:1415
+callCallback2 @ chunk-RPCDYKBN.js?v=8a2efd69:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=8a2efd69:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=8a2efd69:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=8a2efd69:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=8a2efd69:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=8a2efd69:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=8a2efd69:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=8a2efd69:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=8a2efd69:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=8a2efd69:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=8a2efd69:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=8a2efd69:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=8a2efd69:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=8a2efd69:5449Understand this error
+chunk-RPCDYKBN.js?v=8a2efd69:3750 Uncaught ReferenceError: setLocation is not defined
+    at onClick (VideoFeedModal.tsx:1415:21)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js?v=8a2efd69:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js?v=8a2efd69:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js?v=8a2efd69:3733:39)
+    at invokeGuardedCallbackAndCatchFirstError (chunk-RPCDYKBN.js?v=8a2efd69:3736:33)
+    at executeDispatch (chunk-RPCDYKBN.js?v=8a2efd69:7014:11)
+    at processDispatchQueueItemsInOrder (chunk-RPCDYKBN.js?v=8a2efd69:7034:15)
+    at processDispatchQueue (chunk-RPCDYKBN.js?v=8a2efd69:7043:13)
+    at dispatchEventsForPlugins (chunk-RPCDYKBN.js?v=8a2efd69:7051:11)
+    at chunk-RPCDYKBN.js?v=8a2efd69:7174:20
+onClick @ VideoFeedModal.tsx:1415
+callCallback2 @ chunk-RPCDYKBN.js?v=8a2efd69:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=8a2efd69:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=8a2efd69:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=8a2efd69:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=8a2efd69:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=8a2efd69:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=8a2efd69:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=8a2efd69:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=8a2efd69:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=8a2efd69:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=8a2efd69:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=8a2efd69:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=8a2efd69:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=8a2efd69:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=8a2efd69:5449Understand this error

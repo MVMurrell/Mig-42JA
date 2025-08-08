@@ -1,0 +1,47 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Map drag detected, setting isUserCentered to false
+Console.js:61 handlePayAndPlay called, selectedVideo: {id: '719f226a-bfec-4933-acb0-3014801cdbc8', title: 'Morning Workout in Griffith Park', description: 'Early morning fitness routine with the Hollywood sign in the background', category: 'fitness', latitude: '34.13650000', …}
+Console.js:61 Opening video player after payment
+Console.js:61 VideoPlayer: isPlaying=true
+2Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+5Console.js:61 Marked video 719f226a-bfec-4933-acb0-3014801cdbc8 as watched
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Navigate to map for video: {id: '6001555c-f8de-4e69-911a-c4e1cc244936', title: 'Healthy Smoothie Recipe', description: 'Quick and nutritious post-workout smoothie recipe', category: 'lifestyle', latitude: '34.07360000', …}
+Console.js:61 Navigating to map for video: {id: '6001555c-f8de-4e69-911a-c4e1cc244936', title: 'Healthy Smoothie Recipe', description: 'Quick and nutritious post-workout smoothie recipe', category: 'lifestyle', latitude: '34.07360000', …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 handlePayAndPlay called, selectedVideo: {id: '6001555c-f8de-4e69-911a-c4e1cc244936', title: 'Healthy Smoothie Recipe', description: 'Quick and nutritious post-workout smoothie recipe', category: 'lifestyle', latitude: '34.07360000', …}
+Console.js:61 Opening video player after payment
+Console.js:61 VideoPlayer: isPlaying=true
+2Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+5Console.js:61 Marked video 6001555c-f8de-4e69-911a-c4e1cc244936 as watched
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+8Console.js:61 Map drag detected, setting isUserCentered to false
+Console.js:61 VideoPlayer: isPlaying=true
+2Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+5Console.js:61 Marked video f27126f2-da10-47c8-8d19-00e07f19d7e2 as watched
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 Navigate to map for video: {id: 'c523e750-c235-4624-8772-0024fff8df9b', title: 'Amazing Sunset at Venice Beach', description: 'Caught this incredible sunset while walking along Venice Beach boardwalk', category: 'travel', latitude: '34.01950000', …}
+Console.js:61 Navigating to map for video: {id: 'c523e750-c235-4624-8772-0024fff8df9b', title: 'Amazing Sunset at Venice Beach', description: 'Caught this incredible sunset while walking along Venice Beach boardwalk', category: 'travel', latitude: '34.01950000', …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoPlayer: isPlaying=true
+2Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+5Console.js:61 Marked video 3323664d-57cd-45f4-a493-31dfae918380 as watched
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video

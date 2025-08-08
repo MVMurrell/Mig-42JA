@@ -1,0 +1,168 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 User location updated to: {lat: 36.05713419536752, lng: -94.16049456129787}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 Video f95c4893-a3fb-4d36-b205-f63f22f11455 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:193
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/f95c4893-a3fb-4d36-b205-f63f22f11455/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:194
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:111
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:74
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 Video f95c4893-a3fb-4d36-b205-f63f22f11455 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:193
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/f95c4893-a3fb-4d36-b205-f63f22f11455/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:194
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:111
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:74
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 Video f95c4893-a3fb-4d36-b205-f63f22f11455 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:193
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/f95c4893-a3fb-4d36-b205-f63f22f11455/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:194
+callCallback2 @ chunk-WERSD76P.js?v=63ba92c3:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=63ba92c3:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=63ba92c3:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=63ba92c3:3736
+executeDispatch @ chunk-WERSD76P.js?v=63ba92c3:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=63ba92c3:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=63ba92c3:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=63ba92c3:7051
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=63ba92c3:18913
+batchedUpdates @ chunk-WERSD76P.js?v=63ba92c3:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=63ba92c3:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=63ba92c3:5478
+dispatchEvent @ chunk-WERSD76P.js?v=63ba92c3:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:111
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:74
+commitHookEffectListMount @ chunk-WERSD76P.js?v=63ba92c3:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=63ba92c3:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=63ba92c3:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=63ba92c3:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=63ba92c3:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=63ba92c3:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=63ba92c3:19447
+commitRootImpl @ chunk-WERSD76P.js?v=63ba92c3:19416
+commitRoot @ chunk-WERSD76P.js?v=63ba92c3:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=63ba92c3:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=63ba92c3:9119
+(anonymous) @ chunk-WERSD76P.js?v=63ba92c3:18627Understand this error

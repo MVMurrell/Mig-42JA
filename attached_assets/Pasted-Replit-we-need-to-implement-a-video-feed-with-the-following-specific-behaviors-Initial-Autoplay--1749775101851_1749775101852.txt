@@ -1,0 +1,200 @@
+Replit, we need to implement a video feed with the following specific behaviors:
+
+Initial Autoplay: When the feed is first opened, the very first video should automatically start playing.
+Sequential Playback on Scroll: Other videos should remain paused (or unloaded) and only begin playing when the user scrolls to them and they become the primary visible video.
+One-Video-at-a-Time Scrolling: The scrolling mechanism should advance the feed precisely by one video unit, creating a "snap" or "paging" effect, preventing users from scrolling through multiple videos too quickly.
+Resource Efficiency: Only the currently visible video should actively play, and others should be paused/unloaded to conserve bandwidth and CPU.
+Bunny.net Streaming: All videos are streamed from Bunny.net storage.
+This requires a combination of precise CSS for the scrolling behavior and JavaScript for smart playback control.
+
+I. Frontend: Structuring the Video Feed with CSS Scroll Snap
+
+This is the most efficient and native-feeling way to achieve the "one video at a time" scrolling.
+
+Create a Scrollable Container:
+
+Action: Create a parent div (e.g., video-feed-container) that will serve as the scrollable viewport for your videos.
+CSS: Apply the following CSS properties to this container:
+CSS
+
+.video-feed-container {
+    height: 100vh; /* Make it full viewport height to fit one video */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    scroll-snap-type: y mandatory; /* Crucial: Enables vertical snapping, must snap */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+    overscroll-behavior-y: contain; /* Prevents background scrolling when snapped */
+    scroll-behavior: smooth; /* Optional: for smoother programmatic scrolls */
+    /* Add any background or padding if needed */
+}
+Define Individual Video Items:
+
+Action: Each video (and its associated info like title, description) should be wrapped in its own distinct child element (e.g., video-feed-item).
+CSS: Apply the following CSS properties to each video item:
+CSS
+
+.video-feed-item {
+    scroll-snap-align: start; /* Crucial: Each item snaps to the start of the container */
+    width: 100%;
+    height: 100%; /* Make each item fill the container height */
+    flex-shrink: 0; /* Prevents items from shrinking in flex/grid contexts */
+    display: flex; /* Use flexbox for easy content alignment within the item */
+    flex-direction: column; /* Stack video and info vertically */
+    justify-content: center;
+    align-items: center;
+    position: relative; /* For overlays/error messages */
+    /* Add padding or margin as needed for spacing between snapped items */
+}
+
+/* The actual video element inside the item */
+.video-feed-item video {
+    width: 100%;
+    height: 100%; /* Make video fill its parent item */
+    object-fit: cover; /* Ensures video covers the area, cropping if necessary */
+    background-color: black; /* Good fallback for aspect ratio differences */
+}
+HTML Structure (Conceptual - e.g., using React/JSX):
+HTML
+
+<div class="video-feed-container">
+    {videos.map((videoData, index) => (
+        <div key={videoData.id} id={`video-item-${videoData.id}`} className="video-feed-item">
+            <video
+                id={`video-player-${videoData.id}`}
+                src={videoData.bunny_stream_url}
+                preload="none"       /* Important for lazy loading */
+                muted               /* CRITICAL for autoplay policies */
+                playsInline         /* CRITICAL for mobile (iOS) */
+                loop                /* Optional: loop videos automatically */
+                // Add onError handler here as per previous instructions
+            ></video>
+            {/* Display video title, description, user info, etc. */}
+            <div class="video-info">
+                <h3>{videoData.title}</h3>
+                <p>{videoData.description}</p>
+            </div>
+        </div>
+    ))}
+</div>
+II. Frontend: Dynamic Video Playback Control with Intersection Observer
+
+This is the JavaScript logic that manages play(), pause(), and initial autoplay.
+
+Initialize Intersection Observer:
+
+Goal: Efficiently detect when video elements enter or leave the primary viewport area.
+Action: Create a single IntersectionObserver instance.
+Threshold: Set a threshold of 0.8 or 1.0. This means the callback will fire when 80% or 100% of the video item is visible, ensuring it's truly the "active" video.
+Implement the Observer Callback Logic:
+
+Goal: Manage play() and pause() actions based on visibility.
+Action: Write the IntersectionObserver callback function that will be executed when elements intersect the viewport.
+JavaScript
+
+let currentlyPlayingVideoElement = null; // Keeps track of the video currently playing
+
+const handleIntersection = (entries) => {
+    entries.forEach(entry => {
+        const videoContainer = entry.target; // This is the .video-feed-item div
+        const videoPlayer = videoContainer.querySelector('video'); // Get the actual video element inside
+
+        if (videoPlayer) {
+            if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {
+                // This video is now mostly in view (the active one)
+                if (currentlyPlayingVideoElement && currentlyPlayingVideoElement !== videoPlayer) {
+                    currentlyPlayingVideoElement.pause(); // Pause the previously playing video
+                    // Optional: Reset time if you want it to restart when scrolled back
+                    // currentlyPlayingVideoElement.currentTime = 0;
+                }
+
+                // Play the current video
+                if (videoPlayer.paused) { // Only play if it's not already playing
+                    videoPlayer.play().catch(error => {
+                        console.error(`Video autoplay prevented or failed for ID: ${videoPlayer.id}`, error);
+                        // This usually happens if 'muted' is false and there's no user gesture.
+                        // You might want to show a visible "Play" button or "Unmute" prompt here.
+                    });
+                    currentlyPlayingVideoElement = videoPlayer; // Set current playing video
+                }
+            } else {
+                // This video is no longer primarily in view (scrolled out)
+                if (videoPlayer === currentlyPlayingVideoElement || !videoPlayer.paused) {
+                    videoPlayer.pause(); // Pause it
+                    // Optional: If you want to aggressively manage resources, you could also:
+                    // videoPlayer.removeAttribute('src'); // Unload source
+                    // videoPlayer.load(); // Reset player state (requires setting src again later)
+                }
+                if (videoPlayer === currentlyPlayingVideoElement) {
+                    currentlyPlayingVideoElement = null; // Clear if it was the one playing
+                }
+            }
+        }
+    });
+};
+
+const observer = new IntersectionObserver(handleIntersection, {
+    threshold: [0, 0.5, 0.8, 1.0] // Observe at different visibility percentages
+});
+
+// After your video feed component has rendered all its video items:
+// Query all video item wrappers and start observing them
+document.querySelectorAll('.video-feed-item').forEach(item => {
+    observer.observe(item);
+});
+Initial Autoplay for the First Video:
+
+Goal: Ensure the very first video plays when the feed loads.
+Action: After your component has rendered and the IntersectionObserver is set up, explicitly target the first video player and call play() on it. This might be done in a useEffect hook (for React) or equivalent lifecycle method, ensuring it runs after the DOM is ready.
+Example (e.g., in a React useEffect after component mount):
+JavaScript
+
+// Assuming your video feed component mounts
+useEffect(() => {
+    const firstVideoItem = document.querySelector('.video-feed-item');
+    if (firstVideoItem) {
+        const firstVideoPlayer = firstVideoItem.querySelector('video');
+        if (firstVideoPlayer) {
+            firstVideoPlayer.muted = true; // Ensure it's muted for reliable autoplay
+            firstVideoPlayer.play().catch(error => {
+                console.error('Initial autoplay of first video failed:', error);
+                // Fallback: Show a prominent play button or unmute button if autoplay fails
+            });
+            currentlyPlayingVideoElement = firstVideoPlayer; // Set initial playing video
+        }
+    }
+
+    // ... (setup Intersection Observer here as well)
+
+    // Cleanup function if using React useEffect
+    return () => {
+        document.querySelectorAll('.video-feed-item').forEach(item => {
+            observer.unobserve(item);
+        });
+        if (currentlyPlayingVideoElement) {
+            currentlyPlayingVideoElement.pause();
+        }
+    };
+}, []); // Empty dependency array means this runs once after mount
+III. Video Element Attributes for Performance and Control:
+
+preload="none":
+Action: Add this attribute to all <video> tags.
+Purpose: This tells the browser not to pre-download any video data until playback is initiated. Crucial for saving bandwidth when you have many videos in the feed.
+muted:
+Action: Add this attribute to all <video> tags.
+Purpose: Most browsers (especially mobile) enforce autoplay policies. Videos can typically only autoplay if they are muted. Provide an unmute button in your UI.
+playsInline:
+Action: Add this attribute to all <video> tags.
+Purpose: On iOS Safari, this prevents videos from automatically going full-screen when they start playing, allowing them to play directly within your feed.
+loop (Optional):
+Action: Add this if you want videos to loop continuously when playing.
+Summary of Instructions & Deliverables for Replit:
+
+Implement CSS Scroll Snap: Apply the provided CSS to your video-feed-container and video-feed-item elements to achieve the one-video-at-a-time scrolling effect.
+Set Essential Video Attributes: Ensure all your <video> tags have preload="none", muted, and playsInline. You can also add loop if desired.
+Implement JavaScript Playback Control with Intersection Observer:
+Set up the IntersectionObserver as described, observing each video-feed-item.
+Write the callback logic to play() the visible video and pause() others.
+Add explicit logic to ensure the very first video autoplays on initial load (remembering the muted requirement).
+Provide Frontend Code Snippets: Show the updated CSS, HTML/JSX structure for your video feed, and the JavaScript logic for the IntersectionObserver and initial autoplay.
+Demonstration: Provide a short video or GIF demonstrating the smooth scroll-snap effect and how videos correctly auto-play/pause as you scroll one by one.
+This comprehensive approach will give your users a polished, engaging, and resource-efficient video feed experience.

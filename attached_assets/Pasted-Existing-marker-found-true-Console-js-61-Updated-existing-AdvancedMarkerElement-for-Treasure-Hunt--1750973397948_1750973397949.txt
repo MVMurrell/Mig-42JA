@@ -1,0 +1,29 @@
+Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Treasure Hunt Adventure
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05715, -94.16055)
+Console.js:61 Processing video for marker: 97556b02-0832-488a-a508-16af97a5c103 Quest 2 challenge
+Console.js:61 Creating marker at position: {lat: 36.05723564, lng: -94.16074099}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Quest 2
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05723564, -94.16074099)
+Console.js:61 Processing video for marker: 9934c6ac-523f-4ed4-8d26-ef8882f6398b Quest mane challenge
+Console.js:61 Creating marker at position: {lat: 36.05712884, lng: -94.16042896}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Quest mane
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05712884, -94.16042896)
+Console.js:61 Processing video for marker: a4cde367-7fd3-40e3-9360-64a262792c8a Testing bro nature
+Console.js:61 Creating marker at position: {lat: 36.05720446, lng: -94.16069737}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Testing bro
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05720446, -94.16069737)
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: One Night Only
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05711838, -94.16072529)
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing AdvancedMarkerElement for: Higher breh
+Console.js:61 Updated existing AdvancedMarkerElement - position: (36.05719557, -94.16058985)
+Console.js:61 Zoom level changed to: 15 Total markers: 11

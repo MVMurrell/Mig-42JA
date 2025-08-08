@@ -1,0 +1,153 @@
+Zoom level changed to: 15 Total markers: 5
+OneSignalSDK.page.es6.js:12 Uncaught (in promise) ge: OneSignal: The OneSignal web SDK can only be initialized once. Extra initializations are ignored. Please remove calls initializing the SDK more than once.
+    at new S (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:1:1360)
+    at new ge (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:5:25451)
+    at $.errorIfInitAlreadyCalled (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:47070)
+    at D.init (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:85501)
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/lib/oneSignal.ts?t=1750469492379:21:25
+    at Es.processItem (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:80909)
+    at D.push (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:87250)
+    at Array.value (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:13:762)
+errorIfInitAlreadyCalled @ InitHelper.ts:397
+init @ OneSignal.ts:129
+(anonymous) @ oneSignal.ts?t=1750469492379:21
+processItem @ ProcessOneSignalPushCalls.ts:9
+push @ OneSignal.ts:266
+value @ pageSdkInit.ts:45
+await in value
+(anonymous) @ oneSignal.ts?t=1750469492379:20
+initializeOneSignal @ oneSignal.ts?t=1750469492379:14
+init @ oneSignal.ts?t=1750469492379:10
+checkPushStatus @ NotificationSettings.tsx:222
+(anonymous) @ NotificationSettings.tsx:237
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+flushSync @ chunk-RPCDYKBN.js?v=0ebd7e91:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0ebd7e91:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ NotificationSettings.tsx:150
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 🔔 OneSignal: Starting initialization...
+eruda.js:2 🔔 OneSignal: Initializing with config...
+eruda.js:2 🔔 OneSignal: Initialization failed: ge: OneSignal: The OneSignal web SDK can only be initialized once. Extra initializations are ignored. Please remove calls initializing the SDK more than once.
+    at new S (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:1:1360)
+    at new ge (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:5:25451)
+    at $.errorIfInitAlreadyCalled (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:47070)
+    at D.init (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:85501)
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/lib/oneSignal.ts?t=1750469504416:31:27
+    at Es.processItem (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:80909)
+    at D.push (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:87250)
+    at Array.value (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:13:762)
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ oneSignal.ts:56
+await in (anonymous)
+processItem @ ProcessOneSignalPushCalls.ts:9
+push @ OneSignal.ts:266
+value @ pageSdkInit.ts:45
+await in value
+(anonymous) @ oneSignal.ts:44
+initializeOneSignal @ oneSignal.ts:23
+init @ oneSignal.ts:18
+checkPushStatus @ NotificationSettings.tsx:222
+(anonymous) @ NotificationSettings.tsx:237
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+flushSync @ chunk-RPCDYKBN.js?v=0ebd7e91:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0ebd7e91:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ NotificationSettings.tsx:150
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 Error checking push status: ge: OneSignal: The OneSignal web SDK can only be initialized once. Extra initializations are ignored. Please remove calls initializing the SDK more than once.
+    at new S (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:1:1360)
+    at new ge (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:5:25451)
+    at $.errorIfInitAlreadyCalled (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:47070)
+    at D.init (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:85501)
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/lib/oneSignal.ts?t=1750469504416:31:27
+    at Es.processItem (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:80909)
+    at D.push (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:87250)
+    at Array.value (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:13:762)
+Mt.forEach.n.<computed> @ Console.js:61
+checkPushStatus @ NotificationSettings.tsx:232
+await in checkPushStatus
+(anonymous) @ NotificationSettings.tsx:237
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0ebd7e91:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0ebd7e91:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0ebd7e91:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0ebd7e91:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0ebd7e91:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0ebd7e91:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0ebd7e91:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0ebd7e91:9119
+flushSync @ chunk-RPCDYKBN.js?v=0ebd7e91:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0ebd7e91:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ NotificationSettings.tsx:150
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 🔔 OneSignal: SDK script loaded successfully
+eruda.js:2 [vite] server connection lost. Polling for restart...
+Console.js:61 🔔 OneSignal: Starting initialization...
+Console.js:61 🔔 OneSignal: SDK script loaded successfully
+Console.js:61 🔔 OneSignal: Initializing with config...
+Console.js:61 🔔 OneSignal: Initialized successfully
+Console.js:61 🔔 OneSignal: Starting permission request...
+Console.js:61 🔔 OneSignal: Current browser permission: granted
+Console.js:61 🔔 OneSignal: Requesting OneSignal permission...
+Console.js:61 🔔 OneSignal: Browser permission already granted, initializing OneSignal subscription...
+Console.js:61 🔔 OneSignal: OneSignal permission result: undefined

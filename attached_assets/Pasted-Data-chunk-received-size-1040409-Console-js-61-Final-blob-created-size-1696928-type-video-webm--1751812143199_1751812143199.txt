@@ -1,0 +1,41 @@
+Data chunk received, size: 1040409
+Console.js:61 Final blob created, size: 1696928 type: video/webm;codecs=vp9,opus
+Console.js:61 🔍 DIAGNOSTIC: Binary data inspection
+Console.js:61 🔍 Testing local video playback before upload...
+Console.js:61 First 16 bytes (hex): 1a45dfa39f4286810142f7810142f281
+Console.js:61 First 16 bytes (decimal): (16) [26, 69, 223, 163, 159, 66, 134, 129, 1, 66, 247, 129, 1, 66, 242, 129]
+Console.js:61 WebM EBML signature valid: true
+Console.js:61 Number of chunks received: 2
+Console.js:61 Chunk 0: 656519 bytes, type: video/webm;codecs=vp9,opus
+Console.js:61 Chunk 1: 1040409 bytes, type: video/webm;codecs=vp9,opus
+Console.js:61 📥 Local Playback: Starting to load video...
+Console.js:61 ✅ Local Playback: Video loaded metadata successfully!
+Console.js:61 ✅ Local Playback: Duration: Infinity seconds
+Console.js:61 ✅ Local Playback: Video dimensions: 1920x1080
+Console.js:61 ✅ Local Playback: Ready state: 4
+Console.js:61 Using actual recorded duration: 0 seconds
+Console.js:61 ✅ Local Playback: Video can start playing
+Console.js:61 Preview video duration change: Infinity
+Console.js:61 Preview video duration: Infinity readyState: 1
+Console.js:61 Preview video duration change: 1.88
+Console.js:61 🚀 FIXED UPLOAD: Using direct binary transfer to prevent corruption
+Console.js:61 Using recorded video duration: 1.88 seconds
+Console.js:61 Converted Blob to File: {originalType: 'video/webm;codecs=vp9,opus', newType: 'video/webm', cleanMimeType: 'video/webm', filename: 'recorded-video.webm', size: 1696928}
+Console.js:61 🔍 FRONTEND: Final video file details being sent: {type: 'video/webm', size: 1696928, isFile: true, isBlob: true, name: 'recorded-video.webm', …}
+Console.js:61 🔍 FRONTEND: FormData prepared, sending to /api/videos/upload-binary
+Console.js:61 🔍 FRONTEND: Using chunked upload to bypass proxy size limits
+Console.js:61 🔍 FRONTEND: File size: 1696928 bytes
+Console.js:61 🔍 FRONTEND: Will upload in 2 chunks of 1048576 bytes each
+Console.js:61 🔍 FRONTEND: Upload initialized with ID: 9da2a4e7-589a-4349-9f4c-9e917e1a72de
+Console.js:61 🔍 FRONTEND: Uploading chunk 1/2 (1048576 bytes)
+Console.js:61 🔍 FRONTEND: Sending chunk FormData: {chunkSize: 1048576, uploadId: '9da2a4e7-589a-4349-9f4c-9e917e1a72de', chunkIndex: 0, formDataKeys: Array(3)}
+Console.js:61 🔍 FRONTEND: Chunk upload response: 200 OK
+Console.js:61 ✅ FRONTEND: Chunk upload result: {message: 'Chunk uploaded successfully'}
+Console.js:61 ✅ FRONTEND: Chunk 1 uploaded successfully
+Console.js:61 🔍 FRONTEND: Uploading chunk 2/2 (648352 bytes)
+Console.js:61 🔍 FRONTEND: Sending chunk FormData: {chunkSize: 648352, uploadId: '9da2a4e7-589a-4349-9f4c-9e917e1a72de', chunkIndex: 1, formDataKeys: Array(3)}
+Console.js:61 🔍 FRONTEND: Chunk upload response: 200 OK
+Console.js:61 ✅ FRONTEND: Chunk upload result: {message: 'Chunk uploaded successfully'}
+Console.js:61 ✅ FRONTEND: Chunk 2 uploaded successfully
+Console.js:61 🔍 FRONTEND: Completing chunked upload...
+Console.js:61 🔍 FRONTEND: Response received: {status: 200, statusText: 'OK', headers: {…}}

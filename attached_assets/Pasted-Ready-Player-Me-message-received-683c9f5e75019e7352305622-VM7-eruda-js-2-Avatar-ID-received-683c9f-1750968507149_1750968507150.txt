@@ -1,0 +1,132 @@
+Ready Player Me message received: 683c9f5e75019e7352305622
+VM7 eruda.js:2 Avatar ID received: 683c9f5e75019e7352305622
+VM7 eruda.js:2 Updating avatar with constructed URL: https://models.readyplayer.me/683c9f5e75019e7352305622.png?scene=portrait&transparent=true&width=256&height=256
+VM7 eruda.js:2 Mutation function status: ready
+VM7 eruda.js:2 Avatar mutation triggered successfully
+VM7 eruda.js:2 🔄 MUTATION: Starting Ready Player Me avatar update with URL: https://models.readyplayer.me/683c9f5e75019e7352305622.png?scene=portrait&transparent=true&width=256&height=256
+jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13 TypeError: Failed to fetch
+    at jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13:1843
+    at sme.track (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:176931)
+    at jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:178641
+    at jemzy.readyplayer.me/avatar/assets/web-view.service-D--yP3li.js:16:75285
+    at jemzy.readyplayer.me/avatar/assets/password-login-form.component-BN3HJjFZ.js:5:5842
+    at onSubmit (jemzy.readyplayer.me/avatar/assets/password-login-form.component-BN3HJjFZ.js:5:6135)
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13
+console.error @ jemzy.readyplayer.me/avatar/assets/avatar.page-MQ61_Mti.js:3875
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+Promise.catch
+track @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/web-view.service-D--yP3li.js:16
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/password-login-form.component-BN3HJjFZ.js:5
+onSubmit @ jemzy.readyplayer.me/avatar/assets/password-login-form.component-BN3HJjFZ.js:5
+await in onSubmit
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+Promise.then
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/object-DbEIt7mm.js:10
+sfe @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+ufe @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+lfe @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+f6 @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+d6 @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+nT @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+vL @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+rP @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+FC @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+Cfe @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:6
+r @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:28Understand this error
+jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13 TypeError: Failed to fetch
+    at jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13:1843
+    at sme.track (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:176931)
+    at sme.trackPageView (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:176868)
+    at window.history.pushState (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:178519)
+    at History.pushState (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:36:17852)
+    at Object.d [as push] (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540:14754)
+    at ne (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540:27335)
+    at je (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540:31753)
+    at Se (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540:30428)
+    at Object.ue [as navigate] (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540:28984)
+    at jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:541:19772
+    at jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:541:20072
+    at e_ (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:24296)
+    at up (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:42451)
+    at Bde (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:41273)
+    at Wl (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:40312)
+    at L8 (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:36913)
+    at su (jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:7:3288)
+    at jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9:34286
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13
+console.error @ jemzy.readyplayer.me/avatar/assets/avatar.page-MQ61_Mti.js:3875
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+Promise.catch
+track @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+trackPageView @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+window.history.pushState @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:36
+d @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540
+ne @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540
+je @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540
+Se @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540
+ue @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:540
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:541
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:541
+e_ @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+up @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+Bde @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+Wl @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+L8 @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+su @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:7
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9Understand this error
+jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13 Error id: 60fc65c246b64bd2aa785dfefaeafcf8, message: [FETCH_ERROR] 
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:13
+console.error @ jemzy.readyplayer.me/avatar/assets/avatar.page-MQ61_Mti.js:3875
+logError @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+captureAsEvent @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+catch @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+capture @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+withScope @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:15
+Age @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:15
+Fo @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:15
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+dispatch @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+c @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+a @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+Promise.then
+s @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+V0 @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+dispatch @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:506
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:481
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+nT @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:510
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:704
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:700
+e_ @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+up @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+Bde @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+Wl @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+L8 @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9
+su @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:7
+(anonymous) @ jemzy.readyplayer.me/avatar/assets/index-e_N3IeuJ.js:9Understand this error
+VM7 eruda.js:2 ✅ MUTATION: Avatar update successful: Response {type: 'basic', url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x….worf.replit.dev/api/users/ready-player-me-avatar', redirected: false, status: 200, ok: true, …}
+VM7 eruda.js:2 🔄 Fetching enhanced profile data from /api/users/me/profile
+VM7 eruda.js:2 🔄 Fetching enhanced profile data from /api/users/me/profile
+VM7 eruda.js:2 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Jemzy', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', profile_image_url: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+VM7 eruda.js:2 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Jemzy', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', profile_image_url: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Jemzy', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', profile_image_url: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}

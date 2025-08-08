@@ -1,0 +1,41 @@
+e: Notification permissions are blocked.
+    at new S (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:1:1360)
+    at new We (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:11:787)
+    at Ue.subscribe (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:11:2893)
+    at async ot.internalRegisterForPush (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:5:71740)
+    at async ot.registerForPush (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:5:71580)
+    at async $.registerForPushNotifications (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:41799)
+    at async ys.internalShowNativePrompt (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:66295)
+    at async Ji.requestPermission (https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.es6.js?v=160307:12:82001)
+    at async OneSignalService.requestPermission (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/lib/oneSignal.ts:39:26)
+    at async Object.handlePushToggle [as current] (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/NotificationSettings.tsx:224:28)
+Mt.forEach.n.<computed> @ Console.js:61
+internalRegisterForPush @ SubscriptionHelper.ts:40
+await in internalRegisterForPush
+registerForPush @ SubscriptionHelper.ts:19
+registerForPushNotifications @ InitHelper.ts:100
+internalShowNativePrompt @ PromptsManager.ts:188
+requestPermission @ NotificationsNamespace.ts:142
+await in requestPermission
+requestPermission @ oneSignal.ts:54
+await in requestPermission
+handlePushToggle @ NotificationSettings.tsx:245
+(anonymous) @ chunk-5AJU3CG7.js?v=0ebd7e91:99
+(anonymous) @ chunk-VRF373B3.js?v=0ebd7e91:38
+(anonymous) @ @radix-ui_react-switch.js?v=0ebd7e91:76
+handleEvent @ chunk-VRF373B3.js?v=0ebd7e91:16
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error

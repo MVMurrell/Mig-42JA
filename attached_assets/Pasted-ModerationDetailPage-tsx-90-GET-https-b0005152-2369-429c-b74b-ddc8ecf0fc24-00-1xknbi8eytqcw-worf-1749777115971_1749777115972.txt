@@ -1,0 +1,50 @@
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/240p/video.m3u8 500 (Internal Server Error)
+
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/240p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/240p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/240p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/240p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/240p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/480p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/480p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/480p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/480p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/480p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/480p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/360p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/360p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/360p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/360p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:90 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/360p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: true, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/360p/video.m3u8', loader: XhrLoader, …}
+Console.js:61 Network error, trying to recover...
+ModerationDetailPage.tsx:103 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/360p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/360p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:103 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/360p/video.m3u8 500 (Internal Server Error)
+Console.js:61 HLS error: 
+{type: 'networkError', details: 'levelLoadError', fatal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…t.dev/api/moderation/video-stream/360p/video.m3u8', loader: XhrLoader, …}
+ModerationDetailPage.tsx:103 
+ GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/moderation/video-stream/360p/video.m3u8 500 (Internal Server Error)
+﻿
+

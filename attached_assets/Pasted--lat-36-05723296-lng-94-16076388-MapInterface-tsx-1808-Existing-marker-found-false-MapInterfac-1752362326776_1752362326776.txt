@@ -1,0 +1,58 @@
+{lat: 36.05723296, lng: -94.16076388}
+MapInterface.tsx:1808 Existing marker found: false
+MapInterface.tsx:1960 New AdvancedMarkerElement created for: videos videos
+MapInterface.tsx:2010 Zoom level changed to: 19 Total markers: 1
+2VideoUploadModal.tsx:1057 Error polling video status: TypeError: response.json is not a function
+    at VideoUploadModal.tsx:990:43
+(anonymous) @ VideoUploadModal.tsx:1057
+setInterval
+pollVideoStatus @ VideoUploadModal.tsx:987
+actuallySubmitUpload @ VideoUploadModal.tsx:1433
+await in actuallySubmitUpload
+handleSubmit @ VideoUploadModal.tsx:1145
+onClick @ VideoUploadModal.tsx:2245
+callCallback2 @ chunk-RPCDYKBN.js?v=73548e86:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=73548e86:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=73548e86:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=73548e86:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=73548e86:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=73548e86:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=73548e86:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=73548e86:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=73548e86:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=73548e86:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=73548e86:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=73548e86:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=73548e86:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=73548e86:5449Understand this error
+WorkerMessenger.ts:201 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleOnBlur @ SessionManager.ts:258Understand this error
+2VideoUploadModal.tsx:1057 Error polling video status: TypeError: response.json is not a function
+    at VideoUploadModal.tsx:990:43
+(anonymous) @ VideoUploadModal.tsx:1057
+setInterval
+pollVideoStatus @ VideoUploadModal.tsx:987
+actuallySubmitUpload @ VideoUploadModal.tsx:1433
+await in actuallySubmitUpload
+handleSubmit @ VideoUploadModal.tsx:1145
+onClick @ VideoUploadModal.tsx:2245
+callCallback2 @ chunk-RPCDYKBN.js?v=73548e86:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=73548e86:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=73548e86:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=73548e86:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=73548e86:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=73548e86:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=73548e86:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=73548e86:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=73548e86:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=73548e86:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=73548e86:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=73548e86:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=73548e86:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=73548e86:5449Understand this error

@@ -1,0 +1,42 @@
+Prompt Title: IMMEDIATE STOP: DO NOT Implement Base64 Video Storage. Diagnose Bunny.net 403 Properly.
+
+Replit, I need you to STOP immediately. Your proposed solution to "store the processed MP4 data as base64 alongside the Bunny.net URL for immediate playback" is fundamentally unacceptable for video.
+
+Storing video as base64 is an extremely inefficient, resource-intensive, and unscalable solution. It will lead to massive file sizes, slow playback, high bandwidth costs, and will quickly break your application. We absolutely cannot proceed with this approach.
+
+A 403 Forbidden error from Bunny.net is a clear signal that there is an access or authentication configuration issue with your Bunny.net Stream setup. It means Bunny.net is actively denying access because of specific security settings or invalid credentials, not that the service is broken.
+
+We MUST fix the Bunny.net 403 Forbidden error directly. It is a solvable problem.
+
+Please DO NOT implement the base64 workaround. Instead, go back and provide the following crucial diagnostic information so we can properly resolve the Bunny.net 403 issue:
+
+Exact Failing Playback URL:
+
+Provide the complete, literal streaming URL (including ALL parameters like ?token=..., ?signature=..., etc.) that the client is attempting to access from Bunny.net and which is consistently returning a 403 Forbidden. This is the most vital piece of information.
+Bunny.net Security Settings Review (CRITICAL - Re-check this carefully in the Bunny.net Dashboard):
+
+Log into your Bunny.net dashboard for your Stream account.
+Navigate to the specific Video Collection where your videos are stored.
+Go to the "Player" or "Security" settings for that Collection.
+Explicitly confirm the settings for:
+Allowed Referrers: Is your frontend domain (e.g., https://your-replit-url.replit.dev, localhost, or the actual deployed domain of your application) correctly and explicitly listed? Or is it set to allow all (*)? This is the SINGLE most common cause of 403s for Stream.
+Allowed IPs: Are any IP restrictions enabled? If so, ensure your server's IP or the client's IP range is correctly whitelisted.
+Geo-Blocking: Is geo-blocking enabled for this video or collection?
+Confirm Credential Usage in Your Code:
+
+If you are using a Stream Access Token: Provide the exact code snippet from your backend where you are appending the token to the Bunny.net URL (e.g., ?token=YOUR_TOKEN).
+If you are using Signed URLs: Provide the exact code snippet from your backend where you are generating the signed URL. Confirm you are using the correct BUNNY_SIGNING_SECRET from your Stream account settings.
+Examine Browser Network Tab for the Failing Request:
+
+When you attempt to play the video and get the 403, open your web browser's Developer Tools (usually by pressing F12 or Cmd+Option+I).
+Go to the "Network" tab.
+Find the specific request to Bunny.net for the video (it will likely have a 403 status code).
+Click on that request and then go to the "Headers" tab.
+Provide the complete Request Headers section, especially looking for the Referer and Origin header values that your browser is sending. This is extremely important if "Allowed Referrers" is enabled on Bunny.net.
+Test Direct Access from Your Browser:
+
+Take the exact failing URL from step 1.
+Open it directly in a new private/incognito browser tab (to avoid cached credentials or existing Referer headers from your app). Does it also return a 403, or does it play? This helps isolate if the issue is specific to your application's request or a more general URL/token problem.
+The 403 Forbidden indicates a specific, fixable configuration issue. We need to find and fix that rather than implementing a highly inefficient and unscalable workaround like base64 storage.
+
+Your immediate focus must be to provide this diagnostic information.

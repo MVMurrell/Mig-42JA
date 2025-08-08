@@ -1,0 +1,29 @@
+🚀 FIXED UPLOAD: Using direct binary transfer to prevent corruption
+Console.js:61 Using recorded video duration: 4.704 seconds
+Console.js:61 Converted Blob to File: {originalType: 'video/webm;codecs=vp9,opus', newType: 'video/webm', cleanMimeType: 'video/webm', filename: 'recorded-video.webm', size: 3732235}
+Console.js:61 🔍 FRONTEND: Final video file details being sent: {type: 'video/webm', size: 3732235, isFile: true, isBlob: true, name: 'recorded-video.webm', …}
+Console.js:61 🔍 FRONTEND: FormData prepared, sending to /api/videos/upload-binary
+Console.js:61 🔍 FRONTEND: Making fetch request to /api/videos/upload-binary
+VideoUploadModal.tsx:967 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/upload-binary 500 (Internal Server Error)
+window.fetch @ Network.js:219
+handleSubmit @ VideoUploadModal.tsx:967
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+Console.js:61 🔍 FRONTEND: Response received: {status: 500, statusText: 'Internal Server Error', headers: {…}}
+Console.js:61 🔍 FRONTEND: Error response body: {"message":"Failed to upload video"}

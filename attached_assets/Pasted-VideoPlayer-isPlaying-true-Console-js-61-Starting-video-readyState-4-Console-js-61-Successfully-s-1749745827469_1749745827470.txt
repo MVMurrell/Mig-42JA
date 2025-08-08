@@ -1,0 +1,176 @@
+VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Triggering load for video 0
+Console.js:61 HLS loaded successfully for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 Waiting for video 0 to load more data
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f loaded data successfully
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f can play
+VideoFeedModal.tsx:151 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+load @ hls__js.js?v=0e1c40fa:26970
+load @ hls__js.js?v=0e1c40fa:30863
+onManifestLoading @ hls__js.js?v=0e1c40fa:30705
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+loadSource @ hls__js.js?v=0e1c40fa:31427
+loadVideo @ VideoFeedModal.tsx:151
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:244
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:151 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+load @ hls__js.js?v=0e1c40fa:26970
+load @ hls__js.js?v=0e1c40fa:30863
+onManifestLoading @ hls__js.js?v=0e1c40fa:30705
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+loadSource @ hls__js.js?v=0e1c40fa:31427
+loadVideo @ VideoFeedModal.tsx:151
+await in loadVideo
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:252
+(anonymous) @ VideoFeedModal.tsx:265
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:151 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+setTimeout
+retry @ hls__js.js?v=0e1c40fa:27131
+readystatechange @ hls__js.js?v=0e1c40fa:27092
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+load @ hls__js.js?v=0e1c40fa:26970
+load @ hls__js.js?v=0e1c40fa:30863
+onManifestLoading @ hls__js.js?v=0e1c40fa:30705
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+loadSource @ hls__js.js?v=0e1c40fa:31427
+loadVideo @ VideoFeedModal.tsx:151
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:244
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 HLS failed for 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, trying next source
+VideoFeedModal.tsx:151 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+setTimeout
+retry @ hls__js.js?v=0e1c40fa:27131
+readystatechange @ hls__js.js?v=0e1c40fa:27092
+XMLHttpRequest.send
+t.enable.e.send @ Network.js:159
+openAndSendXhr @ hls__js.js?v=0e1c40fa:27032
+loadInternal @ hls__js.js?v=0e1c40fa:27006
+load @ hls__js.js?v=0e1c40fa:26970
+load @ hls__js.js?v=0e1c40fa:30863
+onManifestLoading @ hls__js.js?v=0e1c40fa:30705
+emit @ hls__js.js?v=0e1c40fa:8863
+emit @ hls__js.js?v=0e1c40fa:31317
+trigger @ hls__js.js?v=0e1c40fa:31324
+loadSource @ hls__js.js?v=0e1c40fa:31427
+loadVideo @ VideoFeedModal.tsx:151
+await in loadVideo
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:252
+(anonymous) @ VideoFeedModal.tsx:265
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 HLS failed for 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, trying next source
+Console.js:61 HLS failed for 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, trying next source
+Console.js:61 HLS loaded successfully for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 HLS loaded successfully for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 Waiting for video 0 to load more data
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f loaded data successfully
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f can play
+Console.js:61 Successfully started video 0 after waiting
+Console.js:61 HLS loaded successfully for video 5c833a26-74ab-4e9a-90d4-4f69d8e7d572
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 1
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f is buffering
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f can play
+Console.js:61 Successfully started video 0
+Console.js:61 Video 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 loaded data successfully
+Console.js:61 Video 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 can play
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=false
+Console.js:61 Pausing video 0
+Console.js:61 Video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f can play
+Console.js:61 VideoFeed scroll debounced: changing from 0 to 1
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false
+Console.js:61 Pausing video 1
+Console.js:61 HLS loaded successfully for video 7f453a4e-a675-4b32-adfb-74d4700afced
+Console.js:61 VideoFeed: currentVideoIndex=1, isPlaying=false
+Console.js:61 Pausing video 1
+Console.js:61 Video 7f453a4e-a675-4b32-adfb-74d4700afced loaded data successfully
+Console.js:61 Video 7f453a4e-a675-4b32-adfb-74d4700afced can play

@@ -1,0 +1,182 @@
+15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New AdvancedMarkerElement created for: Higher breh
+Console.js:61 Zoom level changed to: 15 Total markers: 11
+index-e_N3IeuJ.js:13 appName and environment are static. They can't be updated with updateContext.
+(anonymous) @ index-e_N3IeuJ.js:13
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+Wa @ index-e_N3IeuJ.js:702
+t.updateContext @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:704
+(anonymous) @ index-e_N3IeuJ.js:700
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this warning
+index-e_N3IeuJ.js:13 appName and environment are static. They can't be updated with updateContext.
+(anonymous) @ index-e_N3IeuJ.js:13
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+Wa @ index-e_N3IeuJ.js:702
+t.updateContext @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:704
+(anonymous) @ index-e_N3IeuJ.js:700
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this warning
+index-e_N3IeuJ.js:13 THREE.WebGLRenderer: Context Lost.
+index-e_N3IeuJ.js:13 appName and environment are static. They can't be updated with updateContext.
+(anonymous) @ index-e_N3IeuJ.js:13
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+Wa @ index-e_N3IeuJ.js:702
+t.updateContext @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:704
+(anonymous) @ index-e_N3IeuJ.js:700
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this warning
+jemzy.readyplayer.me/avatar/choose:1 Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <span._wrapper_1nl7h_1>
+Ancestor with aria-hidden: <span._wrapper_1nl7h_1> <span role=​"button" class=​"_wrapper_1nl7h_1" tabindex=​"0" aria-hidden=​"true">​Select​</span>​Understand this warning
+jemzy.readyplayer.me/avatar/choose:1 Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <span._wrapper_1nl7h_1>
+Ancestor with aria-hidden: <span._wrapper_1nl7h_1>Understand this warning
+index-e_N3IeuJ.js:13 
+            
+            
+           GET https://api.readyplayer.me/v2/avatars/685d958cf3e9ba0f88df95e5.json?preview=true 404 (Not Found)
+(anonymous) @ index-e_N3IeuJ.js:13
+fQ @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+c @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+i @ index-e_N3IeuJ.js:504
+Promise.then
+s @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+Lh @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:510
+s @ index-e_N3IeuJ.js:510
+Promise.then
+u @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:510
+Pa @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:506
+c @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+(anonymous) @ index-e_N3IeuJ.js:504
+Lh @ index-e_N3IeuJ.js:504
+f @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+c @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+V0 @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:510
+nT @ index-e_N3IeuJ.js:9
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ avatar.page-MQ61_Mti.js:4443
+(anonymous) @ avatar.page-MQ61_Mti.js:4443
+await in (anonymous)
+(anonymous) @ avatar.page-MQ61_Mti.js:4443
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this error
+api.readyplayer.me/v2/avatars/685d958cf3e9ba0f88df95e5.json?preview=true:1 
+            
+            
+           Failed to load resource: the server responded with a status of 404 ()Understand this error
+index-e_N3IeuJ.js:13 Error id: b239297f67c742808075fad894775d89, message: [404] [NotFoundError] Avatar not found
+(anonymous) @ index-e_N3IeuJ.js:13
+console.error @ avatar.page-MQ61_Mti.js:3875
+logError @ index-e_N3IeuJ.js:510
+captureAsEvent @ index-e_N3IeuJ.js:510
+catch @ index-e_N3IeuJ.js:510
+capture @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:510
+withScope @ index-e_N3IeuJ.js:15
+Age @ index-e_N3IeuJ.js:15
+Fo @ index-e_N3IeuJ.js:15
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+c @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+a @ index-e_N3IeuJ.js:481
+Promise.then
+s @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+V0 @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:481
+dispatch @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:506
+(anonymous) @ index-e_N3IeuJ.js:481
+(anonymous) @ index-e_N3IeuJ.js:510
+nT @ index-e_N3IeuJ.js:9
+(anonymous) @ index-e_N3IeuJ.js:510
+(anonymous) @ avatar.page-MQ61_Mti.js:4443
+(anonymous) @ avatar.page-MQ61_Mti.js:4443
+await in (anonymous)
+(anonymous) @ avatar.page-MQ61_Mti.js:4443
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this error
+index-e_N3IeuJ.js:13 appName and environment are static. They can't be updated with updateContext.
+(anonymous) @ index-e_N3IeuJ.js:13
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:702
+Wa @ index-e_N3IeuJ.js:702
+t.updateContext @ index-e_N3IeuJ.js:702
+(anonymous) @ index-e_N3IeuJ.js:704
+(anonymous) @ index-e_N3IeuJ.js:700
+e_ @ index-e_N3IeuJ.js:9
+up @ index-e_N3IeuJ.js:9
+Bde @ index-e_N3IeuJ.js:9
+Wl @ index-e_N3IeuJ.js:9
+L8 @ index-e_N3IeuJ.js:9
+su @ index-e_N3IeuJ.js:7
+(anonymous) @ index-e_N3IeuJ.js:9Understand this warning
+jemzy.readyplayer.me/avatar/choose:1 Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <span._wrapper_1nl7h_1>
+Ancestor with aria-hidden: <span._wrapper_1nl7h_1> <span role=​"button" class=​"_wrapper_1nl7h_1" tabindex=​"0" aria-hidden=​"true">​Select​</span>​Understand this warning

@@ -1,0 +1,33 @@
+PaymentForm hasSavedMethods: true
+Console.js:61 Payment error: IntegrationError: You specified "never" for fields.billing_details.address when creating the payment Element, but did not pass confirmParams.payment_method_data.billing_details.address.country when calling stripe.confirmPayment(). If you opt out of collecting data via the payment Element using the fields option, the data must be passed in when calling stripe.confirmPayment().
+    at Jm (stripe.js:1:505723)
+    at e._handleMessage (stripe.js:1:515017)
+    at e._handleMessage (stripe.js:1:70136)
+    at stripe.js:1:512945
+Mt.forEach.n.<computed> @ Console.js:61
+handleSubmit @ PaymentForm.tsx:74
+await in handleSubmit
+callCallback2 @ chunk-RPCDYKBN.js?v=e3c2953e:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=e3c2953e:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=e3c2953e:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=e3c2953e:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=e3c2953e:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=e3c2953e:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=e3c2953e:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=e3c2953e:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=e3c2953e:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=e3c2953e:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=e3c2953e:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=e3c2953e:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=e3c2953e:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=e3c2953e:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=e3c2953e:5449Understand this error
+stripe.js:1 Uncaught (in promise) IntegrationError: You specified "never" for fields.billing_details.address when creating the payment Element, but did not pass confirmParams.payment_method_data.billing_details.address.country when calling stripe.confirmPayment(). If you opt out of collecting data via the payment Element using the fields option, the data must be passed in when calling stripe.confirmPayment().
+    at Jm (stripe.js:1:505723)
+    at e._handleMessage (stripe.js:1:515017)
+    at e._handleMessage (stripe.js:1:70136)
+    at stripe.js:1:512945
+Jm @ stripe.js:1
+_handleMessage @ stripe.js:1
+(anonymous) @ stripe.js:1
+(anonymous) @ stripe.js:1Understand this error

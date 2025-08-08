@@ -1,0 +1,55 @@
+✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/844df016-2c95-4ba2-9029-c4238dafdbf0.jpg', …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/844df016-2c95-4ba2-9029-c4238dafdbf0.jpg', …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: true, hasError: false, …}
+Console.js:61 🔄 Fetching enhanced profile data from /api/users/me/profile
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: true, hasError: false, …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/844df016-2c95-4ba2-9029-c4238dafdbf0.jpg', …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/844df016-2c95-4ba2-9029-c4238dafdbf0.jpg', …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}
+Console.js:61 🔍 Profile Query Debug: {userExists: true, userId: 'google-oauth2|117032826996185616207', queryEnabled: true, isLoading: false, hasError: false, …}

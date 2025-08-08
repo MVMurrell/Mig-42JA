@@ -1,0 +1,145 @@
+🔍 API REQUEST: Starting quest POST request {url: '/api/quests', method: 'POST', hasData: true, dataPreview: '{"title":"Dragon Quest","description":"hey there a…ts":10,"rewardPerParticipant":1,"startDate":"2...', fullUrl: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/quests', …}
+queryClient.ts:53 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/quests 500 (Internal Server Error)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:53
+mutationFn @ CreateQuestModal.tsx:360
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+onSubmit @ CreateQuestModal.tsx:418
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 🔍 API REQUEST: Quest POST response received {status: 500, statusText: 'Internal Server Error', contentType: 'application/json; charset=utf-8', ok: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/quests'}
+Console.js:61 🔍 API REQUEST: Quest POST response text preview: {"message":"Failed to create quest","error":"[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"startDate\"\n    ],\n    \"me
+Console.js:61 🔍 API REQUEST: Quest POST failed in fetch Error: 500: {"message":"Failed to create quest","error":"[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"startDate\"\n    ],\n    \"message\": \"Expected date, received string\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"endDate\"\n    ],\n    \"message\": \"Expected date, received string\"\n  }\n]"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:75:5)
+    at async Object.mutationFn (CreateQuestModal.tsx:360:26)
+Mt.forEach.n.<computed> @ Console.js:61
+apiRequest @ queryClient.ts:79
+await in apiRequest
+mutationFn @ CreateQuestModal.tsx:360
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+onSubmit @ CreateQuestModal.tsx:418
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 🎯 QUEST CREATE: API request failed: Error: 500: {"message":"Failed to create quest","error":"[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"startDate\"\n    ],\n    \"message\": \"Expected date, received string\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"endDate\"\n    ],\n    \"message\": \"Expected date, received string\"\n  }\n]"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:75:5)
+    at async Object.mutationFn (CreateQuestModal.tsx:360:26)
+Mt.forEach.n.<computed> @ Console.js:61
+mutationFn @ CreateQuestModal.tsx:364
+await in mutationFn
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+onSubmit @ CreateQuestModal.tsx:418
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 Error creating quest: Error: 500: {"message":"Failed to create quest","error":"[\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"startDate\"\n    ],\n    \"message\": \"Expected date, received string\"\n  },\n  {\n    \"code\": \"invalid_type\",\n    \"expected\": \"date\",\n    \"received\": \"string\",\n    \"path\": [\n      \"endDate\"\n    ],\n    \"message\": \"Expected date, received string\"\n  }\n]"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:75:5)
+    at async Object.mutationFn (CreateQuestModal.tsx:360:26)
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:433
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 Full error details: {message: '500: {"message":"Failed to create quest","error":"…e\\": \\"Expected date, received string\\"\\n  }\\n]"}', stack: 'Error: 500: {"message":"Failed to create quest","e…t.dev/src/components/CreateQuestModal.tsx:307:26)', type: 'object', stringified: '{}'}
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:434
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0aec14a9:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error

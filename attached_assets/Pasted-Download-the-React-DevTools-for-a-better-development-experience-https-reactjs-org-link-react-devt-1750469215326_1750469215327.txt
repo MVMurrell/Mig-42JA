@@ -1,0 +1,10 @@
+Download the React DevTools for a better development experience: https://reactjs.org/link/react-devtools
+oneSignal.ts:39 OneSignal initialized successfully
+ServiceWorkerManager.ts:431 [Service Worker Installation] Installing service worker failed SecurityError: Failed to register a ServiceWorker for scope ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/') with script ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/OneSignalSDKWorker.js?appId=89816e8e-3d7d-4b33-a45c-58090f1257c9&sdkVersion=160307'): The script has an unsupported MIME type ('text/html').
+installWorker @ ServiceWorkerManager.ts:431Understand this error
+SubscriptionHelper.ts:40 SecurityError: Failed to register a ServiceWorker for scope ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/') with script ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/OneSignalSDK.sw.js?appId=89816e8e-3d7d-4b33-a45c-58090f1257c9&sdkVersion=160307'): The script has an unsupported MIME type ('text/html').
+internalRegisterForPush @ SubscriptionHelper.ts:40Understand this error
+ServiceWorkerManager.ts:431 [Service Worker Installation] Installing service worker failed SecurityError: Failed to register a ServiceWorker for scope ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/') with script ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/OneSignalSDKWorker.js?appId=89816e8e-3d7d-4b33-a45c-58090f1257c9&sdkVersion=160307'): The script has an unsupported MIME type ('text/html').
+installWorker @ ServiceWorkerManager.ts:431Understand this error
+SubscriptionHelper.ts:40 SecurityError: Failed to register a ServiceWorker for scope ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/') with script ('https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/OneSignalSDK.sw.js?appId=89816e8e-3d7d-4b33-a45c-58090f1257c9&sdkVersion=160307'): The script has an unsupported MIME type ('text/html').
+internalRegisterForPush @ SubscriptionHelper.ts:40Understand this error

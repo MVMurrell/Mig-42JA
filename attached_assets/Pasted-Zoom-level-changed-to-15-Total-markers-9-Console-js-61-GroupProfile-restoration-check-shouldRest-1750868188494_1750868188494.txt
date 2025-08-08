@@ -1,0 +1,23 @@
+Zoom level changed to: 15 Total markers: 9
+Console.js:61 GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…it.dev/group/0a82e3c5-3698-4b59-a925-a6d86898e177', currentModalState: false}
+Console.js:61 🔄 State change detected - showThreadMessageRejectionModal: false
+Console.js:61 🔄 State change detected - selectedThreadMessage: null
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+2Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/086f68a9-661c-4691-a8c7-7c705a5b1b29
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800
+Console.js:61 🎬 VideoCommentPlayer: Container clicked! {target: svg.lucide.lucide-play.w-6.h-6.text-black.fill-current, currentTarget: div.relative.bg-black.overflow-hidden.cursor-pointer.group.w-48.h-32.rounded-lg}
+Console.js:61 🎬 VideoCommentPlayer handlePlay called: {hasOnFullscreen: true, isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800', onFullscreenType: 'function'}
+Console.js:61 🎬 VideoCommentPlayer: Triggering onFullscreen callback NOW!
+Console.js:61 🎬 VideoCommentPlayer: About to call onFullscreen function
+Console.js:61 Opening group thread video in fullscreen: 61
+Console.js:61 🎬 VideoCommentPlayer: onFullscreen function called successfully
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800/720p/video.m3u8
+Console.js:61 🎬 VideoCommentPlayer: Container clicked! {target: video.w-full.h-full.object-contain.bg-black, currentTarget: div.relative.bg-black.overflow-hidden.cursor-pointer.group.w-full.h-full}
+Console.js:61 🎬 VideoCommentPlayer handlePlay called: {hasOnFullscreen: false, isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800/720p/video.m3u8', onFullscreenType: 'undefined'}
+Console.js:61 🎬 VideoCommentPlayer: In fullscreen mode, controlling playback
+Console.js:61 🎬 VideoCommentPlayer: Pausing video in fullscreen
+Console.js:61 Restoring group video comment context: {groupId: '0a82e3c5-3698-4b59-a925-a6d86898e177', videoId: 61, showVideoModal: true, returnPath: '/groups/0a82e3c5-3698-4b59-a925-a6d86898e177'}

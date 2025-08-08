@@ -1,0 +1,120 @@
+Video has free access: activated
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferStalledError', fatal: false, error: Error: Playback stalling at @0 due to low buffer ({"len":0,"start":0,"end":0,"nextStart":0.021333,"…, buffer: 0, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_reportStall @ hls__js.js?v=0ebd7e91:27885
+poll @ hls__js.js?v=0ebd7e91:27771
+tick @ hls__js.js?v=0ebd7e91:27654
+GapController.onMediaWaiting @ hls__js.js?v=0ebd7e91:27580
+waiting
+play @ HLSVideoPlayer.tsx:57
+handleVideoLoadedMetadata @ VideoFeedModal.tsx:103
+handleLoadedMetadata @ HLSVideoPlayer.tsx:217Understand this error
+Console.js:61 VideoFeedModal: Started playing video after metadata loaded
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferStalledError', fatal: false, error: Error: Playback stalling at @0 due to low buffer ({"len":0,"start":0,"end":0,"nextStart":0.021333,"…, buffer: 0, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_reportStall @ hls__js.js?v=0ebd7e91:27885
+poll @ hls__js.js?v=0ebd7e91:27771
+tick @ hls__js.js?v=0ebd7e91:27654
+GapController.onMediaWaiting @ hls__js.js?v=0ebd7e91:27580
+waiting
+play @ HLSVideoPlayer.tsx:57
+handleVideoLoadedMetadata @ VideoFeedModal.tsx:103
+handleLoadedMetadata @ HLSVideoPlayer.tsx:217Understand this error
+Console.js:61 VideoFeedModal: Started playing video after metadata loaded
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferStalledError', fatal: false, error: Error: Playback stalling at @0 due to low buffer ({"len":0,"start":0,"end":0,"nextStart":0.021333,"…, buffer: 0, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_reportStall @ hls__js.js?v=0ebd7e91:27885
+poll @ hls__js.js?v=0ebd7e91:27771
+tick @ hls__js.js?v=0ebd7e91:27654
+GapController.onMediaWaiting @ hls__js.js?v=0ebd7e91:27580
+waiting
+play @ HLSVideoPlayer.tsx:57
+handleVideoLoadedMetadata @ VideoFeedModal.tsx:103
+handleLoadedMetadata @ HLSVideoPlayer.tsx:217Understand this error
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferSeekOverHole', fatal: false, error: Error: fragment loaded with buffer holes, seeking from 0 to 0.1
+    at GapController._trySkipBuffer…, reason: 'fragment loaded with buffer holes, seeking from 0 to 0.1', …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_trySkipBufferHole @ hls__js.js?v=0ebd7e91:27963
+poll @ hls__js.js?v=0ebd7e91:27741
+tick @ hls__js.js?v=0ebd7e91:27654
+setInterval
+setInterval @ hls__js.js?v=0ebd7e91:5227
+onMediaAttached @ hls__js.js?v=0ebd7e91:27622
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+BufferController._onMediaSourceOpen @ hls__js.js?v=0ebd7e91:16473Understand this error
+Console.js:61 VideoFeedModal: Started playing video after metadata loaded
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferStalledError', fatal: false, error: Error: Playback stalling at @0 due to low buffer ({"len":0,"start":0,"end":0,"nextStart":0.021333,"…, buffer: 0, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_reportStall @ hls__js.js?v=0ebd7e91:27885
+poll @ hls__js.js?v=0ebd7e91:27771
+tick @ hls__js.js?v=0ebd7e91:27654
+GapController.onMediaWaiting @ hls__js.js?v=0ebd7e91:27580
+waiting
+play @ HLSVideoPlayer.tsx:57
+handleVideoLoadedMetadata @ VideoFeedModal.tsx:103
+handleLoadedMetadata @ HLSVideoPlayer.tsx:217Understand this error
+Console.js:61 VideoFeedModal: Started playing video after metadata loaded
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferStalledError', fatal: false, error: Error: Playback stalling at @0 due to low buffer ({"len":0,"start":0,"end":0,"nextStart":0.021333,"…, buffer: 0, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_reportStall @ hls__js.js?v=0ebd7e91:27885
+poll @ hls__js.js?v=0ebd7e91:27771
+tick @ hls__js.js?v=0ebd7e91:27654
+GapController.onMediaWaiting @ hls__js.js?v=0ebd7e91:27580
+waiting
+play @ HLSVideoPlayer.tsx:57
+handleVideoLoadedMetadata @ VideoFeedModal.tsx:103
+handleLoadedMetadata @ HLSVideoPlayer.tsx:217Understand this error
+Console.js:61 VideoFeedModal: Started playing video after metadata loaded
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 HLS error: {type: 'mediaError', details: 'bufferStalledError', fatal: false, error: Error: Playback stalling at @0 due to low buffer ({"len":0,"start":0,"end":0,"nextStart":0.021333,"…, buffer: 0, …}
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ HLSVideoPlayer.tsx:149
+emit @ hls__js.js?v=0ebd7e91:8863
+emit @ hls__js.js?v=0ebd7e91:31317
+trigger @ hls__js.js?v=0ebd7e91:31324
+_reportStall @ hls__js.js?v=0ebd7e91:27885
+poll @ hls__js.js?v=0ebd7e91:27771
+tick @ hls__js.js?v=0ebd7e91:27654
+GapController.onMediaWaiting @ hls__js.js?v=0ebd7e91:27580
+waiting
+play @ HLSVideoPlayer.tsx:57
+handleVideoLoadedMetadata @ VideoFeedModal.tsx:103
+handleLoadedMetadata @ HLSVideoPlayer.tsx:217Understand this error
+Console.js:61 VideoFeedModal: Started playing video after metadata loaded

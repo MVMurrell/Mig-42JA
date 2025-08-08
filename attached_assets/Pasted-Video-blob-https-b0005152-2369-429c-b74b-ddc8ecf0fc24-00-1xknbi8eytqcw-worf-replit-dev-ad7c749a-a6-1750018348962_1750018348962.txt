@@ -1,0 +1,32 @@
+Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/ad7c749a-a664-4b8a-834b-1f86d8a0ad09 can play - format is supported
+Console.js:61 Video format detection: {videoUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', videoDbUrl: '/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', bunnyVideoId: 'e4919fdf-3222-44ea-8ca6-c3b0e5748cd5', isHLS: true, hlsSupported: true, …}
+Console.js:61 Initializing HLS player for non-Bunny stream
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Starting video, readyState: 0
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Available HLS levels: (4) ['240p', '360p', '480p', '720p']
+Console.js:61 Setting HLS quality to 720p (level 3)
+VideoPlayerModal.tsx:546 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/e4919fdf-3222-44ea-8ca6-c3b0e5748cd5/1080p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:546
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:610
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+6Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/ebc1d335-e2d5-40cc-84fd-309586f489a8 can play - format is supported
+Console.js:61 Successfully started video
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video

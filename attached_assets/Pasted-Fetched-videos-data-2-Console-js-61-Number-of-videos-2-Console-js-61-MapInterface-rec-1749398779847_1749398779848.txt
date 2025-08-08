@@ -1,0 +1,68 @@
+Fetched videos data: (2) [{…}, {…}]
+Console.js:61 Number of videos: 2
+Console.js:61 MapInterface received videos: (2) [{…}, {…}]
+Console.js:61 MapInterface videos length: 2
+Console.js:61 Marker placement effect running - videos: 2 googleMap: true
+Console.js:61 Adding markers to Google Maps: 2 videos
+Console.js:61 MapInterface received videos: (2) [{…}, {…}]
+Console.js:61 MapInterface videos length: 2
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/68cc0a5b-e835-4ad3-ae40-446c10ee0fc6:1 
+            
+            
+           GET blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/68cc0a5b-e835-4ad3-ae40-446c10ee0fc6 net::ERR_FILE_NOT_FOUNDUnderstand this error
+Console.js:61 Video ccaa34cf-5b12-4e26-b120-15854c266684 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:236
+callCallback2 @ chunk-WERSD76P.js?v=8656e124:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=8656e124:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=8656e124:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=8656e124:3736
+executeDispatch @ chunk-WERSD76P.js?v=8656e124:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=8656e124:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=8656e124:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=8656e124:7051
+(anonymous) @ chunk-WERSD76P.js?v=8656e124:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=8656e124:18913
+batchedUpdates @ chunk-WERSD76P.js?v=8656e124:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=8656e124:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=8656e124:5478
+dispatchEvent @ chunk-WERSD76P.js?v=8656e124:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'MEDIA_ELEMENT_ERROR: Format error', videoSrc: 'blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-…f.replit.dev/68cc0a5b-e835-4ad3-ae40-446c10ee0fc6', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:237
+callCallback2 @ chunk-WERSD76P.js?v=8656e124:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=8656e124:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=8656e124:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=8656e124:3736
+executeDispatch @ chunk-WERSD76P.js?v=8656e124:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=8656e124:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=8656e124:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=8656e124:7051
+(anonymous) @ chunk-WERSD76P.js?v=8656e124:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=8656e124:18913
+batchedUpdates @ chunk-WERSD76P.js?v=8656e124:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=8656e124:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=8656e124:5478
+dispatchEvent @ chunk-WERSD76P.js?v=8656e124:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:123
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:86
+commitHookEffectListMount @ chunk-WERSD76P.js?v=8656e124:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=8656e124:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=8656e124:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=8656e124:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=8656e124:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=8656e124:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=8656e124:19447
+commitRootImpl @ chunk-WERSD76P.js?v=8656e124:19416
+commitRoot @ chunk-WERSD76P.js?v=8656e124:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=8656e124:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=8656e124:9119
+(anonymous) @ chunk-WERSD76P.js?v=8656e124:18627Understand this error
+Console.js:61 MapInterface received videos: (2) [{…}, {…}]
+Console.js:61 MapInterface videos length: 2

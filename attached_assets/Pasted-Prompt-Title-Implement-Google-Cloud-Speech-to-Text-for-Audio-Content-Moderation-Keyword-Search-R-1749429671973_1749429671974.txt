@@ -1,0 +1,104 @@
+Prompt Title: Implement Google Cloud Speech-to-Text for Audio Content Moderation & Keyword Search
+
+Replit, we're going to significantly upgrade our video processing pipeline by integrating Google Cloud Speech-to-Text API. This will allow us to analyze the verbal content of videos for both content moderation and topic-based search.
+
+Key Requirements for this Feature:
+
+Verbal Content Moderation: Automatically detect and flag videos containing "bad words, hate speech, bullying, violent speech, religious proselytizing, and other inappropriate verbal content."
+Keyword/Topic Grouping: Extract specific keywords (e.g., 'coffee', 'fishing', 'beach') from the transcript to enable users to search for videos by spoken topics on the map.
+Concurrent Processing: Audio transcription, verbal content moderation, and keyword grouping must happen concurrently with the existing video content moderation check.
+Dual-Pass Moderation: Both the video content and the audio content must pass their respective moderation checks for a video to be successfully published to Bunny.net and ultimately appear in the app.
+I. Backend: Audio Extraction & Google Cloud Speech-to-Text Integration
+
+This phase focuses on getting the audio from the video and transcribing it using Google Cloud.
+
+Audio Extraction using FFmpeg:
+
+Goal: Obtain a clean, optimized audio file from the uploaded video.
+Action: Implement a function (likely using a child process to run ffmpeg) that takes the path to the original uploaded video file (the MP4 generated after initial preprocessing) and extracts its audio track.
+Output Format: Convert the audio to a format highly recommended by Google Cloud Speech-to-Text, such as FLAC or WAV, with appropriate settings (e.g., 16000 Hz sample rate, mono channel).
+FFmpeg Command Example (Conceptual):
+Bash
+
+ffmpeg -i /path/to/uploaded_video.mp4 -vn -acodec pcm_s16le -ar 16000 -ac 1 /path/to/temp_audio.flac
+Dependency: Ensure ffmpeg is available in your Replit environment (it likely is, given previous video processing).
+Google Cloud Speech-to-Text API Integration:
+
+Authentication: Verify that your Google Cloud Service Account (likely the same one used for Video AI) has the necessary permissions for the Speech-to-Text API.
+Audio Upload to GCS: For efficient and reliable processing of potentially long audio files, upload the extracted temporary audio file to a Google Cloud Storage (GCS) bucket. This is required for audios longer than 60 seconds when using Speech-to-Text's asynchronous methods.
+API Call (Long-Running Operation):
+Action: Call the Google Cloud Speech-to-Text API using its longRunningRecognize method. This is essential for videos longer than ~1 minute, as it processes the audio asynchronously.
+Configuration: Include languageCode (e.g., 'en-US') and consider setting enableWordTimeOffsets: true in the recognition config. This will give you timestamps for each word, which can be useful for more precise moderation or future features.
+Handling Results: Implement logic to poll the Operation object returned by longRunningRecognize until the transcription is complete. Parse the final transcription results to extract the full transcribed text.
+II. Backend: Audio Content Moderation Logic
+
+This phase uses the transcript to identify inappropriate verbal content.
+
+Define "Bad Verbal Content" Criteria:
+
+Action: Create a configurable list or set of keywords, phrases, or regular expressions that represent "bad words," "hate speech," "bullying," "violent speech," and "religious proselytizing."
+Implementation Suggestion:
+Start with a simple blacklist of explicit words. This can be an array of strings in your code or loaded from a JSON file.
+Acknowledge: Detecting complex concepts like "hate speech" or "bullying" accurately is highly nuanced and goes beyond simple keyword matching. It often requires advanced Natural Language Processing (NLP) or specialized content moderation APIs (like Google's Perspective API, which would be a separate integration). For now, focus on clear keyword matches.
+Implement Audio Moderation Algorithm:
+
+Action: After receiving the full transcription from Speech-to-Text, implement a function that:
+Normalizes the transcribed text (e.g., convert to lowercase, remove punctuation) for consistent matching.
+Iterates through the normalized text, searching for the presence of any terms from your "bad verbal content" criteria list.
+Based on the findings, determine an audio_moderation_status (e.g., 'passed', 'failed') and, if failed, an audio_flag_reason (e.g., "Detected profanity," "Detected hate speech keyword").
+III. Backend: Keyword / Topic Grouping Logic
+
+This phase extracts relevant terms for search functionality.
+
+Define Keyword Categories:
+
+Action: Create a configurable list of specific keywords or phrases that represent the topics you want users to be able to search for (e.g., ['coffee', 'fishing', 'beach', 'hiking', 'nature', 'cityscape', 'travel']).
+Implement Topic Grouping Algorithm:
+
+Action: After obtaining the full transcription, implement a function that:
+Analyzes the transcribed text to find occurrences of your predefined topic keywords.
+Extracts all unique keywords that are found in the video's audio.
+Consider implementing basic stemming or lemmatization if needed (e.g., to match "fishes" or "fished" to "fishing").
+IV. Backend: Pipeline Integration (Concurrency & Conditional Publishing - CRITICAL)
+
+This is the most crucial step, ensuring the new audio processing runs in parallel and impacts the final publishing decision.
+
+Modify the Main Video Processing Pipeline:
+
+Action: In your primary video processing handler (e.g., simpleVideoProcessor.ts or wherever you orchestrate the steps after upload), identify the point where the video preprocessing and Google Cloud Video AI moderation are initiated.
+Run Concurrently: Initiate the Audio Extraction, Google Cloud Speech-to-Text API call, Audio Moderation, and Keyword Grouping tasks in parallel with your existing Video Preprocessing and Google Cloud Video AI Moderation tasks.
+Use Promise.all or similar asynchronous constructs to wait for all three parallel processes (Video Preprocessing, Video AI Moderation, Audio Processing) to complete before proceeding to the final publishing step.
+Implement Joint Conditional Publishing Logic:
+
+Action: The video should ONLY be uploaded to Bunny.net Stream and marked as "published" in your app if ALL of the following conditions are met:
+Video Preprocessing (MP4 conversion) is successful.
+Video Content Moderation (Google Cloud Video AI) results in an 'approved' status (no flags).
+Audio Transcription is successful.
+Audio Content Moderation results in a 'passed' status (no verbal content flags).
+Failure Condition: If ANY of these conditions fail, the video MUST NOT be published to Bunny.net. Instead, update the video's status in the database to reflect the specific reason for rejection (e.g., audio_moderation_failed, video_moderation_failed, processing_error).
+V. Database Schema Updates
+
+Action: Modify your videos table schema to store the new audio-related data.
+transcription_text: TEXT (to store the full transcribed text).
+audio_moderation_status: VARCHAR(50) or ENUM('passed', 'failed', 'pending', 'error') (default to 'pending').
+audio_flag_reason: TEXT (stores the specific reason if audio moderation fails, e.g., "Hate speech detected at 0:15").
+extracted_keywords: JSON (to store an array of extracted keywords, e.g., ["coffee", "beach"]).
+VI. Error Handling & Cleanup
+
+Robust Error Handling: Implement comprehensive try-catch blocks and error logging for every step:
+FFmpeg audio extraction failures.
+Google Cloud Speech-to-Text API errors (authentication, rate limits, transcription failures).
+Errors in your custom audio moderation or keyword grouping logic.
+Ensure that if any part of the audio processing fails, the video is correctly marked as processing_error or audio_failed and not published.
+Temporary File Cleanup: Ensure all temporary audio files (extracted audio, GCS audio files if applicable) are securely deleted after processing is complete or fails, similar to your video temporary file cleanup.
+VII. Deliverables & Verification:
+
+Upon completion, please provide the following:
+
+Updated Backend Code: Show the modifications to your main video processing orchestrator (e.g., simpleVideoProcessor.ts) and any new modules/functions created for audio extraction, Speech-to-Text integration, audio moderation, and keyword grouping.
+Updated Database Schema: Show the ALTER TABLE or schema definition for your videos table reflecting the new audio-related fields.
+Comprehensive Backend Logs: Provide detailed logs for at least two scenarios:
+A video that successfully passes both video and audio moderation, showing all steps from upload to Bunny.net publishing.
+A video that fails audio moderation (e.g., due to a "bad word"), demonstrating that it was not published to Bunny.net and its status was correctly updated in the DB.
+Logs of any errors encountered during the process (e.g., if FFmpeg fails).
+This robust audio analysis will significantly enhance your platform's content quality and user experience! Let's start with setting up the audio extraction and basic Speech-to-Text integration.

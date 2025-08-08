@@ -1,0 +1,65 @@
+Profile data loaded: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg', …}
+Console.js:61 Profile image URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2|117032826996185616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg
+Console.js:61 Ready Player Me URL: null
+Console.js:61 Zoom level changed to: 15 Total markers: 2
+Console.js:61 🎁 Adding treasure chest markers: 1
+Console.js:61 🎁 Added treasure chest marker: v9f01vrfb at {lat: 36.067415950420056, lng: -94.17262712568122}
+Console.js:61 🎁 Adding mystery box markers: 1
+Console.js:61 🎁 Adding click listener to mystery box marker: kos7q2opo
+Console.js:61 🎁 Added mystery box marker: kos7q2opo at {lat: 36.31905683254536, lng: -94.18717654188704}
+sw.js:53 PWA: Service Worker activating...
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToUpsertSession @ SessionManager.ts:46
+handleOnFocus @ SessionManager.ts:228Understand this error
+2Console.js:61 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ chunk-MR4XOMCL.js?v=73548e86:339
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=73548e86:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=73548e86:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=73548e86:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=73548e86:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=73548e86:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=73548e86:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=73548e86:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=73548e86:19416
+commitRoot @ chunk-RPCDYKBN.js?v=73548e86:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=73548e86:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=73548e86:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:18627Understand this warning
+LanternAdRewardModal.tsx:138 Uncaught ReferenceError: adRewardMutation is not defined
+    at claimReward (LanternAdRewardModal.tsx:138:5)
+    at LanternAdRewardModal.tsx:96:15
+claimReward @ LanternAdRewardModal.tsx:138
+(anonymous) @ LanternAdRewardModal.tsx:96
+setTimeout
+(anonymous) @ LanternAdRewardModal.tsx:95
+basicStateReducer @ chunk-RPCDYKBN.js?v=73548e86:11703
+dispatchSetState @ chunk-RPCDYKBN.js?v=73548e86:12385
+(anonymous) @ LanternAdRewardModal.tsx:89
+setInterval
+(anonymous) @ LanternAdRewardModal.tsx:88
+setTimeout
+(anonymous) @ LanternAdRewardModal.tsx:83
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=73548e86:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=73548e86:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=73548e86:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=73548e86:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=73548e86:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=73548e86:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=73548e86:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=73548e86:19416
+commitRoot @ chunk-RPCDYKBN.js?v=73548e86:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=73548e86:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=73548e86:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:18627Understand this error
+Console.js:61 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+Mt.forEach.n.<computed> @ Console.js:61
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleOnBlur @ SessionManager.ts:258Understand this error

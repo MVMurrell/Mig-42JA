@@ -1,0 +1,40 @@
+Console.js:61 🔄 Checking for group video restoration context: false 0 loading: true
+Console.js:61 🔄 Checking for group video restoration context: false 1 loading: false
+group-profile.tsx:309 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/groups/122f9533-10b6-41b9-b449-a2d1ee2afa8f?lat=36.057196262495154&lng=-94.1607145735638 404 (Not Found)
+window.fetch @ Network.js:219
+queryFn @ group-profile.tsx:309
+fetchFn @ @tanstack_react-query.js?v=0aec14a9:840
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+fetch @ @tanstack_react-query.js?v=0aec14a9:926
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:1726
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:1725
+batch @ @tanstack_react-query.js?v=0aec14a9:583
+refetchQueries @ @tanstack_react-query.js?v=0aec14a9:1724
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:1716
+batch @ @tanstack_react-query.js?v=0aec14a9:583
+invalidateQueries @ @tanstack_react-query.js?v=0aec14a9:1705
+onSuccess @ GroupEditModal.tsx:51
+execute @ @tanstack_react-query.js?v=0aec14a9:1233
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+handleSubmit @ GroupEditModal.tsx:88
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error

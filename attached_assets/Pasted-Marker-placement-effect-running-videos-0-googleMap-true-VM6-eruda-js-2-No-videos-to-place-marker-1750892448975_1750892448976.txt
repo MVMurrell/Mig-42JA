@@ -1,0 +1,82 @@
+Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 15 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 15 Total markers: 0
+VM6 eruda.js:2 Zoom level changed to: 19 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 19 Total markers: 0
+VM6 eruda.js:2 Zoom level changed to: 19 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 19 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 0 googleMap: true
+VM6 eruda.js:2 No videos to place markers for
+VM6 eruda.js:2 Zoom level changed to: 19 Total markers: 0
+VM6 eruda.js:2 Marker placement effect running - videos: 9 googleMap: true
+VM6 eruda.js:2 Adding markers to Google Maps: 9 videos
+VM6 eruda.js:2 Processing video for marker: 5587d8d9-67e3-457d-8243-6e1fb0ca4bcc test events
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05712824, lng: -94.16046022}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 Event countdown for test (new marker): Live startDate: 2025-06-23 startTime: 13:33
+VM6 eruda.js:2 New AdvancedMarkerElement created for: test
+VM6 eruda.js:2 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Rocking Chair
+VM6 eruda.js:2 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: My weekend
+VM6 eruda.js:2 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Is the form forming?
+VM6 eruda.js:2 Processing video for marker: 97556b02-0832-488a-a508-16af97a5c103 Quest 2 challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05723564, lng: -94.16074099}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Quest 2
+VM6 eruda.js:2 Processing video for marker: 9934c6ac-523f-4ed4-8d26-ef8882f6398b Quest mane challenge
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05712884, lng: -94.16042896}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Quest mane
+VM6 eruda.js:2 Processing video for marker: a4cde367-7fd3-40e3-9360-64a262792c8a Testing bro nature
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05720446, lng: -94.16069737}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Testing bro
+VM6 eruda.js:2 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: One Night Only
+VM6 eruda.js:2 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+VM6 eruda.js:2 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+VM6 eruda.js:2 Existing marker found: false
+VM6 eruda.js:2 New AdvancedMarkerElement created for: Higher breh
+VM6 eruda.js:2 Zoom level changed to: 19 Total markers: 9
+VM6 eruda.js:2 GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…it.dev/group/0a82e3c5-3698-4b59-a925-a6d86898e177', currentModalState: false}
+VM6 eruda.js:2 🔄 State change detected - showThreadMessageRejectionModal: false
+VM6 eruda.js:2 🔄 State change detected - selectedThreadMessage: null
+VM6 eruda.js:2 🔄 Checking for group video restoration context: false 0 loading: true
+VM6 eruda.js:2 🔄 Checking for group video restoration context: false 0 loading: true
+VM6 eruda.js:2 🔄 Checking for group video restoration context: false 0 loading: true
+VM6 eruda.js:2 🔄 Checking for group video restoration context: false 2 loading: false
+VM6 eruda.js:2 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+VM6 eruda.js:2 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+2VM6 eruda.js:2 HLS manifest loaded successfully
+VM6 eruda.js:2 Video comment loaded successfully: /api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800
+VM6 eruda.js:2 Video comment loaded successfully: /api/videos/bunny-proxy/086f68a9-661c-4691-a8c7-7c705a5b1b29
+VM6 eruda.js:2 Thread message: Navigating to user profile: google-oauth2|117032826996185616207
+Console.js:61 Profile: Using stored referrer context: {path: '/group/0a82e3c5-3698-4b59-a925-a6d86898e177', source: 'group_thread_username'}
+Console.js:61 GroupProfile restoration check: {shouldRestoreModal: false, url: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…it.dev/group/0a82e3c5-3698-4b59-a925-a6d86898e177', currentModalState: false}
+Console.js:61 🔄 State change detected - showThreadMessageRejectionModal: false
+Console.js:61 🔄 State change detected - selectedThreadMessage: null
+Console.js:61 🔄 Checking for group video restoration context: false 0 loading: true
+Console.js:61 🔄 Checking for group video restoration context: false 0 loading: true
+Console.js:61 🔄 Checking for group video restoration context: false 2 loading: false
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+Console.js:61 GroupProfilePage Render: Modal visibility state: false Selected message: null Render counter: 0
+2Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/266c3e12-d21f-4dac-afdd-88f19cf14800
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/086f68a9-661c-4691-a8c7-7c705a5b1b29

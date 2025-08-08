@@ -1,0 +1,89 @@
+Zoom level changed to: 15 Total markers: 6
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+12Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/95978109-29ee-4b21-acb1-76f134c08357 can play - format is supported
+8Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Video pause event fired
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+20Console.js:61 Video pause event fired
+3Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/0bc2a9ee-c2d0-49c5-a32b-9a83814f859e
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/9aede1dc-e0a3-4fe3-9d9b-7b6f636fa1db
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/2c8565eb-ab9c-4535-8a35-a4d980824ec7
+Console.js:61 Video 0: intersecting=true, ratio=1.00
+Console.js:61 Video 1: intersecting=true, ratio=0.00
+Console.js:61 Video 2: intersecting=false, ratio=0.00
+Console.js:61 Switching to most visible video 0 (ratio: 1.00) from null
+Console.js:61 Raw collections data: [{…}]
+Console.js:61 Loaded collected videos: Set(1) {'c1647877-54ed-410e-be34-c8aa666d226e'}
+Console.js:61 Loaded liked videos: Set(1) {'c1647877-54ed-410e-be34-c8aa666d226e'}
+3Console.js:61 HLS manifest loaded successfully
+Console.js:61 Video 0 loaded, duration: 3.855056s
+Console.js:61 Started playing video 0
+Console.js:61 Started playing initial video 0
+Console.js:61 Video 0: intersecting=true, ratio=0.83
+Console.js:61 Video 0: intersecting=true, ratio=0.76
+Console.js:61 Video 0: intersecting=true, ratio=0.49
+Console.js:61 Video 1: intersecting=true, ratio=0.51
+Console.js:61 Video 1: intersecting=true, ratio=0.81
+Console.js:61 Switching to most visible video 1 (ratio: 0.81) from 0
+Console.js:61 Video 1: intersecting=true, ratio=0.90
+Console.js:61 Started playing video 1
+Console.js:61 Video 2: intersecting=true, ratio=0.00
+Console.js:61 Video 2: intersecting=false, ratio=0.00
+Console.js:61 Video 1: intersecting=true, ratio=0.89
+Console.js:61 Video 1: intersecting=true, ratio=0.77
+Console.js:61 Video 0: intersecting=true, ratio=0.51
+Console.js:61 Video 1: intersecting=true, ratio=0.49
+Console.js:61 Video 0: intersecting=true, ratio=0.81
+Console.js:61 Switching to most visible video 0 (ratio: 0.81) from 1
+Console.js:61 Video 0: intersecting=true, ratio=0.90
+Console.js:61 Started playing video 0
+Console.js:61 Video 0: intersecting=true, ratio=0.90
+Console.js:61 Video 0: intersecting=true, ratio=0.72
+Console.js:61 Video 0: intersecting=true, ratio=0.48
+Console.js:61 Video 1: intersecting=true, ratio=0.52
+Console.js:61 Video 1: intersecting=true, ratio=0.80
+Console.js:61 Switching to most visible video 1 (ratio: 0.80) from 0
+Console.js:61 Video 1: intersecting=true, ratio=0.90
+Console.js:61 Started playing video 1
+Console.js:61 Video 2: intersecting=true, ratio=0.00
+Console.js:61 Video 2: intersecting=false, ratio=0.00
+Console.js:61 Video 1: intersecting=true, ratio=0.89
+Console.js:61 Video 1: intersecting=true, ratio=0.78
+Console.js:61 Video 0: intersecting=true, ratio=0.52
+Console.js:61 Video 1: intersecting=true, ratio=0.48
+Console.js:61 Video 0: intersecting=true, ratio=0.80
+Console.js:61 Switching to most visible video 0 (ratio: 0.80) from 1
+Console.js:61 Video 0: intersecting=true, ratio=0.90
+Console.js:61 Started playing video 0
+Console.js:61 Video 0: intersecting=true, ratio=0.89
+Console.js:61 Video 0: intersecting=true, ratio=0.76
+Console.js:61 Video 0: intersecting=true, ratio=0.49
+Console.js:61 Video 1: intersecting=true, ratio=0.51
+Console.js:61 Video 1: intersecting=true, ratio=0.81
+Console.js:61 Switching to most visible video 1 (ratio: 0.81) from 0
+Console.js:61 Video 1: intersecting=true, ratio=0.90
+Console.js:61 Started playing video 1
+Console.js:61 Video 2: intersecting=true, ratio=0.00
+Console.js:61 Video 2: intersecting=false, ratio=0.00
+Console.js:61 Video 1: intersecting=true, ratio=0.83
+Console.js:61 Video 1: intersecting=true, ratio=0.80
+Console.js:61 Video 0: intersecting=true, ratio=0.51
+Console.js:61 Video 1: intersecting=true, ratio=0.49
+Console.js:61 Video 0: intersecting=true, ratio=0.81
+Console.js:61 Switching to most visible video 0 (ratio: 0.81) from 1
+Console.js:61 Video 0: intersecting=true, ratio=0.90
+Console.js:61 Started playing video 0

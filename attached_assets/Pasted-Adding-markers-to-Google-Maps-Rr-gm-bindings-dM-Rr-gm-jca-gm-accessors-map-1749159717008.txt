@@ -1,0 +1,109 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Location center clicked, setting isUserCentered to true
+Console.js:61 Setting isUserCentered from false to true
+Console.js:61 User location updated to: {lat: 36.05736168437548, lng: -94.16057413365279}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 Video f95c4893-a3fb-4d36-b205-f63f22f11455 failed to load: SyntheticBaseEvent {_reactName: 'onError', _targetInst: null, type: 'error', nativeEvent: Event, target: video.w-full.h-full.object-cover.cursor-pointer, …}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:193
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 VideoFeed MediaError details: {code: 4, message: 'DEMUXER_ERROR_COULD_NOT_OPEN: FFmpegDemuxer: open context failed', videoSrc: 'https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1x…ideos/f95c4893-a3fb-4d36-b205-f63f22f11455/stream', readyState: 0, networkState: 3}
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoFeedModal.tsx:194
+callCallback2 @ chunk-WERSD76P.js?v=07fa1edf:3674
+invokeGuardedCallbackDev @ chunk-WERSD76P.js?v=07fa1edf:3699
+invokeGuardedCallback @ chunk-WERSD76P.js?v=07fa1edf:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-WERSD76P.js?v=07fa1edf:3736
+executeDispatch @ chunk-WERSD76P.js?v=07fa1edf:7014
+processDispatchQueueItemsInOrder @ chunk-WERSD76P.js?v=07fa1edf:7034
+processDispatchQueue @ chunk-WERSD76P.js?v=07fa1edf:7043
+dispatchEventsForPlugins @ chunk-WERSD76P.js?v=07fa1edf:7051
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:7174
+batchedUpdates$1 @ chunk-WERSD76P.js?v=07fa1edf:18913
+batchedUpdates @ chunk-WERSD76P.js?v=07fa1edf:3579
+dispatchEventForPluginEventSystem @ chunk-WERSD76P.js?v=07fa1edf:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-WERSD76P.js?v=07fa1edf:5478
+dispatchEvent @ chunk-WERSD76P.js?v=07fa1edf:5472Understand this error
+Console.js:61 Video format not supported by browser decoder
+Console.js:61 Failed to play video 0: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:111
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:74
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19416
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+Console.js:61 Audio tracks found: 1
+Console.js:61 Video tracks found: 1
+Console.js:61 Using robust WebM VP8/Opus recording: video/webm; codecs="vp8,opus"
+Console.js:61 Recording with audio tracks: 1
+Console.js:61 MediaRecorder MIME type: video/webm; codecs="vp8,opus"
+Console.js:61 Data chunk received, size: 313595
+Console.js:61 Data chunk received, size: 306879
+Console.js:61 Data chunk received, size: 359167
+Console.js:61 Final recording duration captured: 3.916 seconds
+Console.js:61 Data chunk received, size: 361733
+Console.js:61 Final blob created, size: 1341374 type: video/webm;codecs=vp8,opus
+Console.js:61 🔍 Testing local video playback before upload...
+Console.js:61 📥 Local Playback: Starting to load video...
+Console.js:61 ✅ Local Playback: Video loaded metadata successfully!
+Console.js:61 ✅ Local Playback: Duration: Infinity seconds
+Console.js:61 ✅ Local Playback: Video dimensions: 640x480
+Console.js:61 ✅ Local Playback: Ready state: 4
+Console.js:61 Using actual recorded duration: 0 seconds
+Console.js:61 ✅ Local Playback: Video can start playing
+Console.js:61 Preview video duration change: Infinity
+Console.js:61 Preview video duration: Infinity readyState: 1
+Console.js:61 Preview video duration change: 3.929
+Console.js:61 Using recorded video duration: 3.929 seconds
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=true
+Console.js:61 Starting video 0, readyState: 0
+Console.js:61 VideoFeed: currentVideoIndex=0, isPlaying=false
+Console.js:61 Pausing video 0
+Console.js:61 Failed to play video 0: AbortError: The play() request was interrupted by a call to pause(). https://goo.gl/LdLk22
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoFeedModal.tsx:111
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:74
+commitHookEffectListMount @ chunk-WERSD76P.js?v=07fa1edf:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=07fa1edf:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=07fa1edf:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=07fa1edf:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=07fa1edf:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=07fa1edf:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=07fa1edf:19447
+commitRootImpl @ chunk-WERSD76P.js?v=07fa1edf:19416
+commitRoot @ chunk-WERSD76P.js?v=07fa1edf:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=07fa1edf:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=07fa1edf:9119
+(anonymous) @ chunk-WERSD76P.js?v=07fa1edf:18627Understand this error
+stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/cfd1e4cd-cd7b-4281-be6b-db6f69cf4117/stream net::ERR_TOO_MANY_REDIRECTSUnderstand this error

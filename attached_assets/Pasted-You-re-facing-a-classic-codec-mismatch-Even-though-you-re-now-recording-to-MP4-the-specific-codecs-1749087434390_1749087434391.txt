@@ -1,0 +1,176 @@
+You're facing a classic codec mismatch! Even though you're now recording to MP4, the specific codecs within that MP4 container (AVC1 for video, which is H.264, and Opus for audio) are still causing issues with Bunny.net's transcoder. Bunny.net explicitly stating it "expects AAC audio for proper transcoding" is a direct hint.
+
+The good news is that your diagnostic from Replit already points to the solution: transcode the audio to AAC using FFmpeg.
+
+You were using ffmpeg to convert from WebM to MP4 (H.264/AAC) before. The core issue now is that your browser is recording directly to MP4 with Opus audio, not AAC. So, even when you pass that MP4 to Bunny.net, their system still chokes on the Opus audio within the MP4 container.
+
+The "more robust FFmpeg solution" your Replit diagnostic mentioned is exactly what we need to implement. We need to ensure that regardless of the incoming video's original audio codec (WebM/Opus, MP4/Opus, etc.), FFmpeg always outputs H.264 video and AAC audio in an MP4 container.
+
+The Solution: Explicitly Force AAC Audio Transcoding with FFmpeg
+Your existing FFmpeg command was likely already trying to output AAC (-c:a aac). The problem is that if the input was already MP4/Opus, it might have been implicitly "copying" the Opus audio stream rather than re-encoding it, or there's a subtle interaction.
+
+We need to ensure FFmpeg always re-encodes the audio to AAC, even if it's already in an MP4 container.
+
+Here's the refined FFmpeg command and how to integrate it into your existing solution:
+
+Python
+
+import os
+import subprocess
+import requests
+import uuid
+
+# --- Assume these are loaded from Replit Secrets ---
+BUNNY_STREAM_API_KEY = os.getenv('BUNNY_STREAM_API_KEY')
+BUNNY_STREAM_LIBRARY_ID = os.getenv('BUNNY_STREAM_LIBRARY_ID')
+
+# --- Function to transcode any supported input to MP4 (H.264/AAC) ---
+def transcode_to_mp4_h264_aac(input_file_path, output_mp4_path):
+    # This command converts any FFmpeg-supported input to MP4 with H.264 video and AAC audio.
+    # -i: Input file (can be .webm, .mp4, etc.)
+    # -c:v libx264: Force H.264 video codec
+    # -preset veryfast: Encoding speed vs. compression trade-off
+    # -crf 23: Constant Rate Factor. Controls quality.
+    # -c:a aac: Explicitly force AAC audio codec (Crucial for this problem!)
+    # -b:a 128k: Audio bitrate
+    # -movflags faststart: Optimizes MP4 for web streaming
+    # -y: Overwrite output file if it exists
+    # -threads 0: Use all available CPU cores (good for Replit's shared environment)
+    ffmpeg_command = [
+        "ffmpeg",
+        "-i", input_file_path,
+        "-c:v", "libx264",
+        "-preset", "veryfast", # Adjust as needed for quality/speed
+        "-crf", "23",         # Adjust as needed for quality/size
+        "-c:a", "aac",        # Explicitly force AAC audio
+        "-b:a", "128k",
+        "-movflags", "faststart",
+        "-threads", "0",      # Use all available threads for faster transcoding
+        "-y",
+        output_mp4_path
+    ]
+
+    try:
+        result = subprocess.run(ffmpeg_command, capture_output=True, text=True, check=True)
+        print(f"FFmpeg stdout:\n{result.stdout}")
+        print(f"FFmpeg stderr:\n{result.stderr}") # FFmpeg often prints progress/errors here
+        print(f"Successfully transcoded {input_file_path} to {output_mp4_path}")
+        return True
+    except subprocess.CalledProcessError as e:
+        print(f"FFmpeg transcoding failed for {input_file_path}:")
+        print(f"Command: {' '.join(e.cmd)}")
+        print(f"Return Code: {e.returncode}")
+        print(f"Stdout:\n{e.stdout}")
+        print(f"Stderr:\n{e.stderr}") # This is where you'll see FFmpeg's specific error messages
+        return False
+    except FileNotFoundError:
+        print("Error: FFmpeg not found. Make sure it's installed in your Replit environment (`pkgs = [\"ffmpeg\"]`).")
+        return False
+    except Exception as e:
+        print(f"An unexpected error occurred during transcoding: {e}")
+        return False
+
+# --- Your video upload endpoint logic (remains largely the same) ---
+def handle_video_upload(request_file_data, original_filename="video"): # request_file_data is the incoming video bytes
+    # Determine the original file extension to save it correctly
+    # You might need to get this from Content-Type header or client-provided filename
+    # For now, let's assume it's mp4 given your latest update
+    # If it could be webm, you'd save as .webm initially.
+    original_ext = ".mp4" # Assuming browser now records directly to MP4
+    temp_input_path = f"/tmp/{uuid.uuid4()}{original_ext}"
+    output_mp4_path = f"/tmp/{uuid.uuid4()}.mp4"
+    video_id = None # Initialize video_id for cleanup
+
+    try:
+        # 1. Save the incoming video file temporarily (it's already MP4/Opus from browser)
+        with open(temp_input_path, "wb") as f:
+            f.write(request_file_data)
+        print(f"Saved incoming file to {temp_input_path}")
+
+        # 2. Transcode the video to ensure H.264/AAC MP4
+        if not transcode_to_mp4_h264_aac(temp_input_path, output_mp4_path):
+            return {"error": "Server-side video transcoding failed"}, 500
+
+        # 3. Read the transcoded MP4 for upload
+        with open(output_mp4_path, "rb") as f:
+            mp4_data = f.read()
+
+        # 4. Upload the MP4 data to Bunny.net Stream
+        video_title = f"User Video - {original_filename}" # Use a more descriptive title
+        # ... (Bunny.net API POST and PUT requests as before)
+        # Ensure your POST request creates the video object, then use the returned GUID for the PUT request.
+
+        # Step A: Create video object in Bunny Stream
+        create_video_url = f"https://video.bunnycdn.com/library/{BUNNY_STREAM_LIBRARY_ID}/videos"
+        create_headers = {
+            "AccessKey": BUNNY_STREAM_API_KEY,
+            "Content-Type": "application/json"
+        }
+        create_payload = {"title": video_title}
+        create_response = requests.post(create_video_url, headers=create_headers, json=create_payload)
+        create_response.raise_for_status()
+        video_id = create_response.json().get("guid")
+
+        if not video_id:
+            raise Exception("Failed to get video GUID from Bunny.net")
+
+        print(f"Created Bunny Stream video object with ID: {video_id}")
+
+        # Step B: Upload the transcoded MP4 file content
+        upload_video_url = f"https://video.bunnycdn.com/library/{BUNNY_STREAM_LIBRARY_ID}/videos/{video_id}"
+        upload_headers = {
+            "AccessKey": BUNNY_STREAM_API_KEY,
+            "Content-Type": "video/mp4" # Ensure this is correct for the final MP4
+        }
+        upload_response = requests.put(upload_video_url, headers=upload_headers, data=mp4_data)
+        upload_response.raise_for_status()
+
+        print(f"Successfully uploaded video to Bunny Stream. Video ID: {video_id}")
+        return {"message": "Video uploaded successfully", "videoId": video_id}, 200
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error communicating with Bunny.net: {e}")
+        if video_id: # Clean up partial video object if it was created
+            delete_url = f"https://video.bunnycdn.com/library/{BUNNY_STREAM_LIBRARY_ID}/videos/{video_id}"
+            requests.delete(delete_url, headers={"AccessKey": BUNNY_STREAM_API_KEY})
+            print(f"Cleaned up partial video object {video_id} on Bunny.net.")
+        return {"error": f"Failed to upload video to Bunny.net: {e}"}, 500
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+        return {"error": f"An unexpected error occurred: {e}"}, 500
+    finally:
+        # Clean up temporary files
+        if os.path.exists(temp_input_path):
+            os.remove(temp_input_path)
+        if os.path.exists(output_mp4_path):
+            os.remove(output_mp4_path)
+
+# Example usage (integrate this with your web framework's request handling)
+# For instance, if using Flask:
+# from flask import Flask, request
+# app = Flask(__name__)
+# @app.route('/upload_video', methods=['POST'])
+# def upload_video_endpoint():
+#     if 'video' not in request.files:
+#         return {"error": "No video file provided"}, 400
+#     file = request.files['video']
+#     # Read the file data (it's already a FileStorage object from Flask)
+#     file_bytes = file.read()
+#     status_response, status_code = handle_video_upload(file_bytes, original_filename=file.filename)
+#     return status_response, status_code
+Key Changes and Why They Work:
+transcode_to_mp4_h264_aac(input_file_path, output_mp4_path) function:
+
+This function is made more generic to accept any FFmpeg-readable input (be it WebM/Opus, or MP4/Opus).
+-c:a aac: This is the critical flag. It explicitly tells FFmpeg: "Regardless of what audio codec is in the input, re-encode it to AAC." This ensures Bunny.net receives the expected audio format.
+-threads 0: This tells FFmpeg to use all available CPU cores, which can significantly speed up transcoding on Replit's shared environment.
+handle_video_upload adaptation:
+
+It now consistently uses the transcode_to_mp4_h264_aac function. So, even if the browser directly records to MP4 with Opus, FFmpeg will correctly convert the audio to AAC before sending it to Bunny.net.
+The temporary file naming now considers the original extension, though the output is always MP4.
+Important Considerations:
+FFmpeg Logging: Pay very close attention to FFmpeg stderr output in your Replit console. If a transcoding error occurs again, FFmpeg's error messages are usually very specific about why it failed (e.g., "codec not found," "invalid data," "stream missing").
+Input File Content-Type: Ensure your frontend sends the correct Content-Type header (e.g., video/mp4 or video/webm) when uploading the original file to your Replit backend. Your backend needs to correctly parse this to get the raw video bytes. If you're using Flask or FastAPI, their request.files handling usually takes care of this.
+Error Handling and Cleanup: The try...except...finally blocks are crucial for robustness. They ensure that temporary files are cleaned up and that partial video objects on Bunny.net are deleted if an error occurs during the upload process.
+Replit Resources: Transcoding is CPU-intensive. For very high volumes of uploads, you might eventually hit Replit's CPU limits, leading to slower transcoding or occasional errors. This is a sign to consider dedicated cloud VMs or serverless functions specifically for media processing (e.g., AWS Lambda with FFmpeg layer, Google Cloud Functions). But for initial thousands to hundreds of thousands of users, Replit with FFmpeg should be manageable.
+By explicitly forcing the audio codec to AAC, you should resolve the Opus audio incompatibility issue with Bunny.net Stream's transcoder.

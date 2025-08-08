@@ -1,0 +1,50 @@
+Prompt Title: URGENT: Enforce Strict Sequential Pipeline - Moderation BEFORE Bunny.net Upload
+
+Current Situation:
+Replit, thank you for the update. It's excellent news that the video upload is now correctly reaching Bunny.net, and you've accurately identified and addressed the temporary file deletion issue by "copying the temporary file to a persistent location before processing." This is a good step towards file availability.
+
+However, your statement, "The moderation step is being skipped because the preprocessing fails," indicates a critical flaw in the current workflow logic. This is unacceptable and directly contradicts our requirements. We must ensure that all steps complete in the correct order, and no steps are skipped.
+
+The video should ONLY be sent to Bunny.net Stream after both the server-side preprocessing (aggressive recovery/conversion) AND the Google Cloud Video AI moderation are successfully completed and approved.
+
+Here is the precise, unskippable, and conditional workflow that MUST be implemented in server/simpleVideoProcessor.ts:
+
+Client Uploads Raw Video to Server:
+
+The server receives the raw video (likely WebM, as MP4 was corrupted).
+It saves this raw video to a controlled, persistent temporary location (as you are now implementing).
+Initiate Parallel Processing & Moderation (with AWAIT for results):
+
+These two tasks should run concurrently if possible, but their results MUST be awaited before proceeding to Bunny.net.
+Task A: Server-Side Preprocessing:
+Perform your "aggressive recovery" (WebM repair, mkvmerge if needed as discussed, FFmpeg conversion from the persistent temp file to a final, valid MP4 file for Bunny.net).
+Log the success or failure of this preprocessing step. This task must complete successfully.
+Task B: Google Cloud Video AI Moderation:
+Immediately upload the raw video from the persistent temporary location to Google Cloud Storage (GCS). (This GCS upload for raw video for Video AI was previously confirmed working).
+Trigger the Google Cloud Video AI analysis on this GCS-uploaded file.
+Crucially, AWAIT the results of this AI analysis.
+Log the moderation result (e.g., 'approved', 'flagged', 'rejected').
+CONDITIONAL Upload to Bunny.net Stream (Requires BOTH Task A & Task B to succeed):
+
+Once BOTH the server-side preprocessing (Task A) AND the Google Cloud Video AI moderation (Task B) have successfully completed and returned their results:
+ONLY IF:
+The server-side preprocessing (Task A) completed successfully (i.e., you have a valid, converted MP4 file ready).
+AND the Google Cloud Video AI moderation (Task B) returned an 'approved' status (or your defined publishing criteria).
+THEN: Upload the preprocessed, final MP4 file (from Task A) to Bunny.net Stream.
+OTHERWISE (if preprocessing fails OR moderation flags the video):
+DO NOT upload the video to Bunny.net.
+Log the specific reason for the video not being published (e.g., 'Preprocessing failed', 'Moderation rejected').
+Final Database Update & Cleanup:
+
+Update the database with the video's final status (e.g., 'approved_and_published', 'rejected_by_moderation', 'processing_failed', 'pending_manual_review').
+Delete all temporary files (the raw upload, the preprocessed versions) from your server.
+Your immediate task is to restructure the server-side processing flow in server/simpleVideoProcessor.ts to strictly adhere to this parallel-then-conditional pipeline, ensuring all results are awaited before the final publishing decision.
+
+After implementing this, perform a new video upload, and provide the complete backend logs that clearly show:
+
+Confirmation that the raw video is saved to and accessed from a persistent temporary file.
+The initiation and completion (success/failure) of the server-side preprocessing step (Task A).
+The initiation and completion (success/failure) of the Google Cloud Video AI moderation step (Task B).
+Crucially, whether the Bunny.net upload was initiated, and if so, ONLY after successful preprocessing AND successful moderation.
+The final database status update, clearly reflecting the outcome (published or not).
+This will finally ensure the integrity and moderation of all videos before they are made public."

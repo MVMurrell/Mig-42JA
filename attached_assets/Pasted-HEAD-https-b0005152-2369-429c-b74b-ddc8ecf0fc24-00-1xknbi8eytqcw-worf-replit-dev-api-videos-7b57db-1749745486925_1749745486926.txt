@@ -1,0 +1,375 @@
+HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+(anonymous) @ VideoFeedModal.tsx:239
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:247
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 Triggering load for video 0
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/stream 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+(anonymous) @ VideoFeedModal.tsx:289
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:267
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/720p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:239
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/720p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:247
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/720p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:289
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:267
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/480p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:239
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/480p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:247
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f/480p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:289
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:267
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 Source /api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, trying next
+Console.js:61 All sources failed for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, marking as failed
+Mt.forEach.n.<computed> @ Console.js:61
+loadVideo @ VideoFeedModal.tsx:193
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:239
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 Source /api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, trying next
+Console.js:61 All sources failed for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, marking as failed
+Mt.forEach.n.<computed> @ Console.js:61
+loadVideo @ VideoFeedModal.tsx:193
+await in loadVideo
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:247
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:199 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/log-video-playback-error 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:199
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:239
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 Source /api/videos/bunny-proxy/7b57db3a-f7e4-4ba4-baf9-434d27dcd17f failed for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, trying next
+Console.js:61 All sources failed for video 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f, marking as failed
+Mt.forEach.n.<computed> @ Console.js:61
+loadVideo @ VideoFeedModal.tsx:193
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:289
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:267
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:199 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/log-video-playback-error 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:199
+await in loadVideo
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:247
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:199 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/log-video-playback-error 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:199
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:289
+setTimeout
+(anonymous) @ VideoFeedModal.tsx:267
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/7f453a4e-a675-4b32-adfb-74d4700afced/stream 500 (Internal Server Error)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+(anonymous) @ VideoFeedModal.tsx:251
+setTimeout
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:251
+await in loadCurrentAndAdjacent
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7f453a4e-a675-4b32-adfb-74d4700afced/720p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:251
+setTimeout
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:251
+await in loadCurrentAndAdjacent
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+VideoFeedModal.tsx:104 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/7f453a4e-a675-4b32-adfb-74d4700afced/480p/video.mp4 404 (Not Found)
+window.fetch @ Network.js:219
+loadVideo @ VideoFeedModal.tsx:104
+await in loadVideo
+(anonymous) @ VideoFeedModal.tsx:251
+setTimeout
+loadCurrentAndAdjacent @ VideoFeedModal.tsx:251
+await in loadCurrentAndAdjacent
+(anonymous) @ VideoFeedModal.tsx:260
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error

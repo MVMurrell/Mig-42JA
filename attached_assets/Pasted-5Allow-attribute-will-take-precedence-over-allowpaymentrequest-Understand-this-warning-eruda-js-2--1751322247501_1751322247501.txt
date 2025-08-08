@@ -1,0 +1,275 @@
+5Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM7 eruda.js:2
+(anonymous) @ VM58 queryClient.ts:38
+fetchFn @ VM40 @tanstack_react-query.js:840
+run @ VM40 @tanstack_react-query.js:494
+start @ VM40 @tanstack_react-query.js:536
+fetch @ VM40 @tanstack_react-query.js:926
+executeFetch_fn @ VM40 @tanstack_react-query.js:2211
+onSubscribe @ VM40 @tanstack_react-query.js:1898
+subscribe @ VM40 @tanstack_react-query.js:24
+(anonymous) @ VM40 @tanstack_react-query.js:3022
+subscribeToStore @ VM35 chunk-RPCDYKBN.js:11984
+commitHookEffectListMount @ VM35 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM35 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM35 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM35 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM35 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM35 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM35 chunk-RPCDYKBN.js:19447
+performSyncWorkOnRoot @ VM35 chunk-RPCDYKBN.js:18868
+flushSyncCallbacks @ VM35 chunk-RPCDYKBN.js:9119
+commitRootImpl @ VM35 chunk-RPCDYKBN.js:19432
+commitRoot @ VM35 chunk-RPCDYKBN.js:19277
+finishConcurrentRender @ VM35 chunk-RPCDYKBN.js:18805
+performConcurrentWorkOnRoot @ VM35 chunk-RPCDYKBN.js:18718
+workLoop @ VM35 chunk-RPCDYKBN.js:197
+flushWork @ VM35 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM35 chunk-RPCDYKBN.js:384Understand this error
+12[Violation] Potential permissions policy violation: payment is not allowed in this document.Understand this error
+_app-d3597d3e8770db95.js:38 [LaunchDarkly] LaunchDarkly client initialized
+eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM211 eruda.js:2
+(anonymous) @ VM247 queryClient.ts:38
+fetchFn @ VM246 @tanstack_react-query.js:840
+run @ VM246 @tanstack_react-query.js:494
+start @ VM246 @tanstack_react-query.js:536
+fetch @ VM246 @tanstack_react-query.js:926
+executeFetch_fn @ VM246 @tanstack_react-query.js:2211
+onSubscribe @ VM246 @tanstack_react-query.js:1898
+subscribe @ VM246 @tanstack_react-query.js:24
+(anonymous) @ VM246 @tanstack_react-query.js:3022
+subscribeToStore @ VM244 chunk-RPCDYKBN.js:11984
+commitHookEffectListMount @ VM244 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM244 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM244 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM244 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM244 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM244 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM244 chunk-RPCDYKBN.js:19447
+performSyncWorkOnRoot @ VM244 chunk-RPCDYKBN.js:18868
+flushSyncCallbacks @ VM244 chunk-RPCDYKBN.js:9119
+commitRootImpl @ VM244 chunk-RPCDYKBN.js:19432
+commitRoot @ VM244 chunk-RPCDYKBN.js:19277
+finishConcurrentRender @ VM244 chunk-RPCDYKBN.js:18805
+performConcurrentWorkOnRoot @ VM244 chunk-RPCDYKBN.js:18718
+workLoop @ VM244 chunk-RPCDYKBN.js:197
+flushWork @ VM244 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM244 chunk-RPCDYKBN.js:384Understand this error
+_app-d3597d3e8770db95.js:38 [LaunchDarkly] LaunchDarkly client initialized
+_app-d3597d3e8770db95.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-d3597d3e8770db95.js:38
+(anonymous) @ _app-d3597d3e8770db95.js:26
+oO @ framework-85488053381e2251.js:1
+uB @ framework-85488053381e2251.js:1
+u_ @ framework-85488053381e2251.js:1
+r6 @ framework-85488053381e2251.js:1
+(anonymous) @ framework-85488053381e2251.js:1
+uO @ framework-85488053381e2251.js:1
+uS @ framework-85488053381e2251.js:1
+C @ framework-85488053381e2251.js:1
+z @ framework-85488053381e2251.js:1Understand this warning
+_app-d3597d3e8770db95.js:38 
+            
+            
+           POST https://sp.replit.com/v1/t 400 (Bad Request)
+(anonymous) @ _app-d3597d3e8770db95.js:38
+o @ sdk.min.js:1
+dispatch @ fetch-dispatcher.ts:11
+(anonymous) @ index.ts:122
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+g @ index.ts:93
+(anonymous) @ delivery.js:28
+(anonymous) @ delivery.js:11
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ delivery.js:4
+o @ delivery.js:27
+(anonymous) @ event-queue.js:325
+(anonymous) @ event-queue.js:323
+n @ _app-d3597d3e8770db95.js:38
+setTimeout
+(anonymous) @ _app-d3597d3e8770db95.js:38
+(anonymous) @ event-queue.js:321
+(anonymous) @ event-queue.js:320
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+s @ tslib.es6.js:73
+Promise.then
+a @ tslib.es6.js:76
+s @ tslib.es6.js:73
+Promise.then
+a @ tslib.es6.js:76
+(anonymous) @ tslib.es6.js:76
+u @ tslib.es6.js:72
+(anonymous) @ event-queue.js:273
+(anonymous) @ event-queue.js:181
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+s @ tslib.es6.js:73
+Promise.then
+a @ tslib.es6.js:76
+(anonymous) @ tslib.es6.js:76
+u @ tslib.es6.js:72
+(anonymous) @ event-queue.js:169
+(anonymous) @ event-queue.js:135
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ event-queue.js:128
+(anonymous) @ dispatch.js:25
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+p @ dispatch.js:18
+(anonymous) @ index.ts:460
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ index.ts:454
+(anonymous) @ index.ts:253
+(anonymous) @ tslib.es6.js:103
+(anonymous) @ tslib.es6.js:108
+(anonymous) @ tslib.es6.js:80
+u @ tslib.es6.js:72
+(anonymous) @ index.ts:241
+A @ _app-d3597d3e8770db95.js:6
+u @ 4944-ae6a5e872d9b56d4.js:1
+f @ 4944-ae6a5e872d9b56d4.js:1
+(anonymous) @ 4944-ae6a5e872d9b56d4.js:1
+(anonymous) @ main-eb1e13c760025be6.js:1
+n @ main-eb1e13c760025be6.js:1
+u @ main-eb1e13c760025be6.js:1Understand this error
+t:1 
+            
+            
+           Failed to load resource: the server responded with a status of 400 ()Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/callback?code=emJHKfI5eNmsipcMhP22F6ROqKiWRPm3tzZM1xJZe1K&iss=https%3A%2F%2Freplit.com%2Foidc:1 
+            
+            
+           Failed to load resource: the server responded with a status of 502 (Bad Gateway)Understand this error
+framework-85488053381e2251.js:1 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-85488053381e2251.js:1
+(anonymous) @ framework-85488053381e2251.js:1
+uD @ framework-85488053381e2251.js:1
+uI @ framework-85488053381e2251.js:1
+uM @ framework-85488053381e2251.js:1
+uS @ framework-85488053381e2251.js:1
+C @ framework-85488053381e2251.js:1
+z @ framework-85488053381e2251.js:1
+(anonymous) @ setImmediate.js:40
+y @ setImmediate.js:69
+c @ setImmediate.js:109
+postMessage
+n @ setImmediate.js:120
+push.YBdB.f.setImmediate @ setImmediate.js:27
+r @ framework-85488053381e2251.js:1
+z @ framework-85488053381e2251.js:1
+(anonymous) @ setImmediate.js:40
+y @ setImmediate.js:69
+c @ setImmediate.js:109
+postMessage
+n @ setImmediate.js:120
+push.YBdB.f.setImmediate @ setImmediate.js:27
+r @ framework-85488053381e2251.js:1
+z @ framework-85488053381e2251.js:1
+(anonymous) @ setImmediate.js:40
+y @ setImmediate.js:69
+c @ setImmediate.js:109
+postMessage
+n @ setImmediate.js:120
+push.YBdB.f.setImmediate @ setImmediate.js:27
+r @ framework-85488053381e2251.js:1
+I @ framework-85488053381e2251.js:1
+push.62735.t.unstable_scheduleCallback @ framework-85488053381e2251.js:1
+uw @ framework-85488053381e2251.js:1
+uk @ framework-85488053381e2251.js:1
+lH @ framework-85488053381e2251.js:1
+(anonymous) @ 9303-25d2e32cbd14742a.js:1
+n @ _app-d3597d3e8770db95.js:11
+update @ _app-d3597d3e8770db95.js:11
+m @ 4944-ae6a5e872d9b56d4.js:1
+(anonymous) @ 4944-ae6a5e872d9b56d4.js:1
+l.emit @ 2656-53ac5a775181ae59.js:1
+(anonymous) @ 8830-d2eddb53e41c154a.js:1
+(anonymous) @ 2656-53ac5a775181ae59.js:1
+handleCommand @ 2656-53ac5a775181ae59.js:1
+onSocketMessage @ 2656-53ac5a775181ae59.js:1Understand this error
+VM6 eruda.js:2 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ VM6 eruda.js:2
+(anonymous) @ VM41 queryClient.ts:38
+fetchFn @ VM38 @tanstack_react-query.js:840
+run @ VM38 @tanstack_react-query.js:494
+start @ VM38 @tanstack_react-query.js:536
+fetch @ VM38 @tanstack_react-query.js:926
+executeFetch_fn @ VM38 @tanstack_react-query.js:2211
+onSubscribe @ VM38 @tanstack_react-query.js:1898
+subscribe @ VM38 @tanstack_react-query.js:24
+(anonymous) @ VM38 @tanstack_react-query.js:3022
+subscribeToStore @ VM33 chunk-RPCDYKBN.js:11984
+commitHookEffectListMount @ VM33 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM33 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM33 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM33 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM33 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM33 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM33 chunk-RPCDYKBN.js:19447
+performSyncWorkOnRoot @ VM33 chunk-RPCDYKBN.js:18868
+flushSyncCallbacks @ VM33 chunk-RPCDYKBN.js:9119
+commitRootImpl @ VM33 chunk-RPCDYKBN.js:19432
+commitRoot @ VM33 chunk-RPCDYKBN.js:19277
+finishConcurrentRender @ VM33 chunk-RPCDYKBN.js:18805
+performConcurrentWorkOnRoot @ VM33 chunk-RPCDYKBN.js:18718
+workLoop @ VM33 chunk-RPCDYKBN.js:197
+flushWork @ VM33 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM33 chunk-RPCDYKBN.js:384Understand this error
+_app-d3597d3e8770db95.js:38 [LaunchDarkly] LaunchDarkly client initialized
+queryClient.ts:57 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 404 (Not Found)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:57
+fetchFn @ @tanstack_react-query.js?v=0aec14a9:840
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+fetch @ @tanstack_react-query.js?v=0aec14a9:926
+executeFetch_fn @ @tanstack_react-query.js?v=0aec14a9:2211
+onSubscribe @ @tanstack_react-query.js?v=0aec14a9:1898
+subscribe @ @tanstack_react-query.js?v=0aec14a9:24
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3022
+subscribeToStore @ chunk-RPCDYKBN.js?v=0aec14a9:11984
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0aec14a9:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0aec14a9:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0aec14a9:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0aec14a9:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0aec14a9:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0aec14a9:19447
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18868
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0aec14a9:9119
+commitRootImpl @ chunk-RPCDYKBN.js?v=0aec14a9:19432
+commitRoot @ chunk-RPCDYKBN.js?v=0aec14a9:19277
+finishConcurrentRender @ chunk-RPCDYKBN.js?v=0aec14a9:18805
+performConcurrentWorkOnRoot @ chunk-RPCDYKBN.js?v=0aec14a9:18718
+workLoop @ chunk-RPCDYKBN.js?v=0aec14a9:197
+flushWork @ chunk-RPCDYKBN.js?v=0aec14a9:176
+performWorkUntilDeadline @ chunk-RPCDYKBN.js?v=0aec14a9:384Understand this error

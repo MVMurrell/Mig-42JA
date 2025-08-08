@@ -1,0 +1,33 @@
+Creating marker at position: {lat: 36.057152, lng: -94.16061829}
+MapInterface.tsx:1808 Existing marker found: false
+MapInterface.tsx:1960 New AdvancedMarkerElement created for: corgi love
+MapInterface.tsx:2010 Zoom level changed to: 19 Total markers: 2
+WorkerMessenger.ts:201 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToUpsertSession @ SessionManager.ts:46
+handleOnFocus @ SessionManager.ts:228Understand this error
+4chunk-MR4XOMCL.js?v=73548e86:339 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+(anonymous) @ chunk-MR4XOMCL.js?v=73548e86:339
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=73548e86:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=73548e86:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=73548e86:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=73548e86:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=73548e86:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=73548e86:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=73548e86:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=73548e86:19416
+commitRoot @ chunk-RPCDYKBN.js?v=73548e86:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=73548e86:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=73548e86:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=73548e86:18627Understand this warning
+home.tsx:253 Profile data loaded: {id: 'google-oauth2|117032826996185616207', email: 'jemzyapp@gmail.com', firstName: 'Andrew', lastName: 'Stargaze', profileImageUrl: 'https://storage.googleapis.com/jemzy-images-storag…85616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg', …}
+home.tsx:254 Profile image URL: https://storage.googleapis.com/jemzy-images-storage/profiles/google-oauth2|117032826996185616207/0cdda868-9fae-4f99-b2fc-36aff967acdc.jpg
+home.tsx:255 Ready Player Me URL: null
+WorkerMessenger.ts:201 `[Worker Messenger] [Page -> SW] Could not get ServiceWorkerRegistration to postMessage!
+directPostMessageToSW @ WorkerMessenger.ts:201
+await in directPostMessageToSW
+unicast @ WorkerMessenger.ts:186
+notifySWToDeactivateSession @ SessionManager.ts:74
+handleOnBlur @ SessionManager.ts:258Understand this error

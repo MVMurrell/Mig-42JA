@@ -1,0 +1,145 @@
+Adding markers to Google Maps: _.Ho {gm_bindings_: {…}, eM: _.Ho, __gm: yfa, gm_accessors_: {…}, mapCapabilities: {…}, …}
+via.placeholder.com/400x225/45b7d1/white?text=Miami+Video:1 
+            
+            
+           GET https://via.placeholder.com/400x225/45b7d1/white?text=Miami+Video net::ERR_NAME_NOT_RESOLVED
+Image
+commitMount @ chunk-WERSD76P.js?v=f0b7f74a:8412
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:17102
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=f0b7f74a:17920
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19353
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=f0b7f74a:555
+flush @ @tanstack_react-query.js?v=f0b7f74a:569
+batch @ @tanstack_react-query.js?v=f0b7f74a:587
+dispatch_fn @ @tanstack_react-query.js?v=f0b7f74a:996
+setData @ @tanstack_react-query.js?v=f0b7f74a:696
+onSuccess @ @tanstack_react-query.js?v=f0b7f74a:897
+resolve @ @tanstack_react-query.js?v=f0b7f74a:456
+Promise.then
+run @ @tanstack_react-query.js?v=f0b7f74a:498
+start @ @tanstack_react-query.js?v=f0b7f74a:536
+fetch @ @tanstack_react-query.js?v=f0b7f74a:926
+executeFetch_fn @ @tanstack_react-query.js?v=f0b7f74a:2211
+onSubscribe @ @tanstack_react-query.js?v=f0b7f74a:1898
+subscribe @ @tanstack_react-query.js?v=f0b7f74a:24
+(anonymous) @ @tanstack_react-query.js?v=f0b7f74a:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f0b7f74a:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f0b7f74a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f0b7f74a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f0b7f74a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f0b7f74a:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19416
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627Understand this error
+via.placeholder.com/400x225/4ecdc4/white?text=LA+Video:1 
+            
+            
+           GET https://via.placeholder.com/400x225/4ecdc4/white?text=LA+Video net::ERR_NAME_NOT_RESOLVED
+Image
+commitMount @ chunk-WERSD76P.js?v=f0b7f74a:8412
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:17102
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=f0b7f74a:17920
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19353
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=f0b7f74a:555
+flush @ @tanstack_react-query.js?v=f0b7f74a:569
+batch @ @tanstack_react-query.js?v=f0b7f74a:587
+dispatch_fn @ @tanstack_react-query.js?v=f0b7f74a:996
+setData @ @tanstack_react-query.js?v=f0b7f74a:696
+onSuccess @ @tanstack_react-query.js?v=f0b7f74a:897
+resolve @ @tanstack_react-query.js?v=f0b7f74a:456
+Promise.then
+run @ @tanstack_react-query.js?v=f0b7f74a:498
+start @ @tanstack_react-query.js?v=f0b7f74a:536
+fetch @ @tanstack_react-query.js?v=f0b7f74a:926
+executeFetch_fn @ @tanstack_react-query.js?v=f0b7f74a:2211
+onSubscribe @ @tanstack_react-query.js?v=f0b7f74a:1898
+subscribe @ @tanstack_react-query.js?v=f0b7f74a:24
+(anonymous) @ @tanstack_react-query.js?v=f0b7f74a:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f0b7f74a:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f0b7f74a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f0b7f74a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f0b7f74a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f0b7f74a:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19416
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627Understand this error
+via.placeholder.com/400x225/ff6b6b/white?text=NYC+Video:1 
+            
+            
+           GET https://via.placeholder.com/400x225/ff6b6b/white?text=NYC+Video net::ERR_NAME_NOT_RESOLVED
+Image
+commitMount @ chunk-WERSD76P.js?v=f0b7f74a:8412
+commitLayoutEffectOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:17102
+commitLayoutMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:17980
+commitLayoutEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:17969
+commitLayoutEffects @ chunk-WERSD76P.js?v=f0b7f74a:17920
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19353
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627
+setTimeout
+scheduleFn @ @tanstack_react-query.js?v=f0b7f74a:555
+flush @ @tanstack_react-query.js?v=f0b7f74a:569
+batch @ @tanstack_react-query.js?v=f0b7f74a:587
+dispatch_fn @ @tanstack_react-query.js?v=f0b7f74a:996
+setData @ @tanstack_react-query.js?v=f0b7f74a:696
+onSuccess @ @tanstack_react-query.js?v=f0b7f74a:897
+resolve @ @tanstack_react-query.js?v=f0b7f74a:456
+Promise.then
+run @ @tanstack_react-query.js?v=f0b7f74a:498
+start @ @tanstack_react-query.js?v=f0b7f74a:536
+fetch @ @tanstack_react-query.js?v=f0b7f74a:926
+executeFetch_fn @ @tanstack_react-query.js?v=f0b7f74a:2211
+onSubscribe @ @tanstack_react-query.js?v=f0b7f74a:1898
+subscribe @ @tanstack_react-query.js?v=f0b7f74a:24
+(anonymous) @ @tanstack_react-query.js?v=f0b7f74a:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f0b7f74a:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f0b7f74a:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f0b7f74a:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f0b7f74a:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f0b7f74a:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f0b7f74a:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f0b7f74a:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f0b7f74a:19447
+commitRootImpl @ chunk-WERSD76P.js?v=f0b7f74a:19416
+commitRoot @ chunk-WERSD76P.js?v=f0b7f74a:19277
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f0b7f74a:18895
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f0b7f74a:9119
+(anonymous) @ chunk-WERSD76P.js?v=f0b7f74a:18627Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/b5bec030-2dbb-46e2-8f3c-dd2bf06df154/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/b5bec030-2dbb-46e2-8f3c-dd2bf06df154/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream net::ERR_ABORTED 400 (Bad Request)Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/9191b4ff-fcdb-4fdd-a9af-3820abb29806/stream net::ERR_ABORTED 400 (Bad Request)Understand this error

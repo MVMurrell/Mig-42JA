@@ -1,0 +1,80 @@
+[vite] server connection lost. Polling for restart...
+framework-d338b655acaeb3a5.js:1 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-d338b655acaeb3a5.js:1
+(anonymous) @ framework-d338b655acaeb3a5.js:1
+uD @ framework-d338b655acaeb3a5.js:1
+uI @ framework-d338b655acaeb3a5.js:1
+uM @ framework-d338b655acaeb3a5.js:1
+uS @ framework-d338b655acaeb3a5.js:1
+C @ framework-d338b655acaeb3a5.js:1
+z @ framework-d338b655acaeb3a5.js:1Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'battery'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'layout-animations'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'navigation-override'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'oversized-images'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Unrecognized feature: 'unsized-media'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Armg%3A:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+framework-d338b655acaeb3a5.js:1 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+_ @ framework-d338b655acaeb3a5.js:1
+(anonymous) @ framework-d338b655acaeb3a5.js:1
+uD @ framework-d338b655acaeb3a5.js:1
+uI @ framework-d338b655acaeb3a5.js:1
+uM @ framework-d338b655acaeb3a5.js:1
+uS @ framework-d338b655acaeb3a5.js:1
+C @ framework-d338b655acaeb3a5.js:1
+z @ framework-d338b655acaeb3a5.js:1Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'battery'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'layout-animations'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'navigation-override'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'oversized-images'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/__replco/workspace_iframe.html?initialPath=%2F&id=%3Arn5%3A:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unsized-media'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+queryClient.ts:32 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/auth/user 401 (Unauthorized)
+window.fetch @ Network.js:219
+(anonymous) @ queryClient.ts:32
+fetchFn @ @tanstack_react-query.js?v=f48af010:840
+run @ @tanstack_react-query.js?v=f48af010:494
+start @ @tanstack_react-query.js?v=f48af010:536
+fetch @ @tanstack_react-query.js?v=f48af010:926
+executeFetch_fn @ @tanstack_react-query.js?v=f48af010:2211
+onSubscribe @ @tanstack_react-query.js?v=f48af010:1898
+subscribe @ @tanstack_react-query.js?v=f48af010:24
+(anonymous) @ @tanstack_react-query.js?v=f48af010:3022
+subscribeToStore @ chunk-WERSD76P.js?v=f48af010:11984
+commitHookEffectListMount @ chunk-WERSD76P.js?v=f48af010:16915
+commitPassiveMountOnFiber @ chunk-WERSD76P.js?v=f48af010:18156
+commitPassiveMountEffects_complete @ chunk-WERSD76P.js?v=f48af010:18129
+commitPassiveMountEffects_begin @ chunk-WERSD76P.js?v=f48af010:18119
+commitPassiveMountEffects @ chunk-WERSD76P.js?v=f48af010:18109
+flushPassiveEffectsImpl @ chunk-WERSD76P.js?v=f48af010:19490
+flushPassiveEffects @ chunk-WERSD76P.js?v=f48af010:19447
+performSyncWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18868
+flushSyncCallbacks @ chunk-WERSD76P.js?v=f48af010:9119
+commitRootImpl @ chunk-WERSD76P.js?v=f48af010:19432
+commitRoot @ chunk-WERSD76P.js?v=f48af010:19277
+finishConcurrentRender @ chunk-WERSD76P.js?v=f48af010:18805
+performConcurrentWorkOnRoot @ chunk-WERSD76P.js?v=f48af010:18718
+workLoop @ chunk-WERSD76P.js?v=f48af010:197
+flushWork @ chunk-WERSD76P.js?v=f48af010:176
+performWorkUntilDeadline @ chunk-WERSD76P.js?v=f48af010:384Understand this error

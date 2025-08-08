@@ -1,0 +1,48 @@
+✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 ✅ Enhanced profile data received: {id: 'google-oauth2|117032826996185616207', firstName: 'Andrew', lastName: 'Stargaze', email: 'jemzyapp@gmail.com', profileImageUrl: 'https://lh3.googleusercontent.com/a/ACg8ocLsc-cP-k7V9CIHnh1Y6LJqTnoBndg-TVaUvKHLTlvyzV0E0Gk=s96-c', …}
+Console.js:61 🔍 Checking avatar availability (attempt 1/20)...
+profile.tsx:416 
+            
+            
+           HEAD https://models.readyplayer.me/683c9f5e75019e7352305622.png?scene=portrait&transparent=true&width=256&height=256 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvatarAvailability @ profile.tsx:416
+checkAvatar @ profile.tsx:439
+(anonymous) @ profile.tsx:456
+setTimeout
+mutationFn @ profile.tsx:456
+await in mutationFn
+fn @ @tanstack_react-query.js?v=052f03cc:1189
+run @ @tanstack_react-query.js?v=052f03cc:494
+start @ @tanstack_react-query.js?v=052f03cc:536
+execute @ @tanstack_react-query.js?v=052f03cc:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=052f03cc:2630
+(anonymous) @ @tanstack_react-query.js?v=052f03cc:3295
+handleMessage @ profile.tsx:1910Understand this error
+Console.js:61 ⏳ Avatar not yet available, will retry in 30 seconds...
+Console.js:61 🔍 Checking avatar availability (attempt 2/20)...
+profile.tsx:416 
+            
+            
+           HEAD https://models.readyplayer.me/683c9f5e75019e7352305622.png?scene=portrait&transparent=true&width=256&height=256 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvatarAvailability @ profile.tsx:416
+checkAvatar @ profile.tsx:439
+(anonymous) @ profile.tsx:451
+setTimeout
+checkAvatar @ profile.tsx:451
+await in checkAvatar
+(anonymous) @ profile.tsx:456
+setTimeout
+mutationFn @ profile.tsx:456
+await in mutationFn
+fn @ @tanstack_react-query.js?v=052f03cc:1189
+run @ @tanstack_react-query.js?v=052f03cc:494
+start @ @tanstack_react-query.js?v=052f03cc:536
+execute @ @tanstack_react-query.js?v=052f03cc:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=052f03cc:2630
+(anonymous) @ @tanstack_react-query.js?v=052f03cc:3295
+handleMessage @ profile.tsx:1910Understand this error
+Console.js:61 ⏳ Avatar not yet available, will retry in 30 seconds...

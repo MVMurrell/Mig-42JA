@@ -1,0 +1,232 @@
+Ready Player Me URL: null
+3VM7386 eruda.js:2 Zoom level changed to: 15 Total markers: 1
+VM7386 eruda.js:2 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ VM7386 eruda.js:2
+(anonymous) @ VM7549 chunk-V4SDQJCY.js:339
+commitHookEffectListMount @ VM7412 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM7412 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM7412 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM7412 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM7412 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM7412 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM7412 chunk-RPCDYKBN.js:19447
+commitRootImpl @ VM7412 chunk-RPCDYKBN.js:19416
+commitRoot @ VM7412 chunk-RPCDYKBN.js:19277
+performSyncWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18895
+flushSyncCallbacks @ VM7412 chunk-RPCDYKBN.js:9119
+(anonymous) @ VM7412 chunk-RPCDYKBN.js:18627Understand this warning
+VM7386 eruda.js:2 `DialogContent` requires a `DialogTitle` for the component to be accessible for screen reader users.
+
+If you want to hide the `DialogTitle`, you can wrap it with our VisuallyHidden component.
+
+For more information, see https://radix-ui.com/primitives/docs/components/dialog
+Mt.forEach.n.<computed> @ VM7386 eruda.js:2
+(anonymous) @ VM7549 chunk-V4SDQJCY.js:325
+commitHookEffectListMount @ VM7412 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM7412 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM7412 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM7412 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM7412 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM7412 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM7412 chunk-RPCDYKBN.js:19447
+commitRootImpl @ VM7412 chunk-RPCDYKBN.js:19416
+commitRoot @ VM7412 chunk-RPCDYKBN.js:19277
+performSyncWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18895
+flushSyncCallbacks @ VM7412 chunk-RPCDYKBN.js:9119
+(anonymous) @ VM7412 chunk-RPCDYKBN.js:18627Understand this error
+VM7386 eruda.js:2 Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.
+Mt.forEach.n.<computed> @ VM7386 eruda.js:2
+(anonymous) @ VM7549 chunk-V4SDQJCY.js:339
+commitHookEffectListMount @ VM7412 chunk-RPCDYKBN.js:16915
+commitPassiveMountOnFiber @ VM7412 chunk-RPCDYKBN.js:18156
+commitPassiveMountEffects_complete @ VM7412 chunk-RPCDYKBN.js:18129
+commitPassiveMountEffects_begin @ VM7412 chunk-RPCDYKBN.js:18119
+commitPassiveMountEffects @ VM7412 chunk-RPCDYKBN.js:18109
+flushPassiveEffectsImpl @ VM7412 chunk-RPCDYKBN.js:19490
+flushPassiveEffects @ VM7412 chunk-RPCDYKBN.js:19447
+commitRootImpl @ VM7412 chunk-RPCDYKBN.js:19416
+commitRoot @ VM7412 chunk-RPCDYKBN.js:19277
+performSyncWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18895
+flushSyncCallbacks @ VM7412 chunk-RPCDYKBN.js:9119
+(anonymous) @ VM7412 chunk-RPCDYKBN.js:18627Understand this warning
+VM7386 eruda.js:2 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/claim-ad-reward 401 (Unauthorized)
+window.fetch @ VM7386 eruda.js:2
+apiRequest @ VM7420 queryClient.ts:30
+mutationFn @ VM7499 GemCoinsModal.tsx:108
+fn @ VM7417 @tanstack_react-query.js:1189
+run @ VM7417 @tanstack_react-query.js:494
+start @ VM7417 @tanstack_react-query.js:536
+execute @ VM7417 @tanstack_react-query.js:1225
+await in execute
+mutate @ VM7417 @tanstack_react-query.js:2630
+(anonymous) @ VM7417 @tanstack_react-query.js:3295
+handleAdReward @ VM7499 GemCoinsModal.tsx:168
+(anonymous) @ VM7576 AdRewardModal.tsx:66
+setTimeout
+(anonymous) @ VM7576 AdRewardModal.tsx:63
+basicStateReducer @ VM7412 chunk-RPCDYKBN.js:11703
+updateReducer @ VM7412 chunk-RPCDYKBN.js:11794
+updateState @ VM7412 chunk-RPCDYKBN.js:12021
+useState @ VM7412 chunk-RPCDYKBN.js:12753
+useState @ VM7414 chunk-QCHXOAYK.js:1066
+AdRewardModal @ VM7576 AdRewardModal.tsx:28
+renderWithHooks @ VM7412 chunk-RPCDYKBN.js:11548
+updateFunctionComponent @ VM7412 chunk-RPCDYKBN.js:14582
+beginWork @ VM7412 chunk-RPCDYKBN.js:15924
+beginWork$1 @ VM7412 chunk-RPCDYKBN.js:19753
+performUnitOfWork @ VM7412 chunk-RPCDYKBN.js:19198
+workLoopSync @ VM7412 chunk-RPCDYKBN.js:19137
+renderRootSync @ VM7412 chunk-RPCDYKBN.js:19116
+performConcurrentWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18678
+workLoop @ VM7412 chunk-RPCDYKBN.js:197
+flushWork @ VM7412 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM7412 chunk-RPCDYKBN.js:384Understand this error
+VM7386 eruda.js:2 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/claim-ad-reward 401 (Unauthorized)
+window.fetch @ VM7386 eruda.js:2
+apiRequest @ VM7420 queryClient.ts:30
+mutationFn @ VM7499 GemCoinsModal.tsx:108
+fn @ VM7417 @tanstack_react-query.js:1189
+run @ VM7417 @tanstack_react-query.js:494
+start @ VM7417 @tanstack_react-query.js:536
+execute @ VM7417 @tanstack_react-query.js:1225
+await in execute
+mutate @ VM7417 @tanstack_react-query.js:2630
+(anonymous) @ VM7417 @tanstack_react-query.js:3295
+handleAdReward @ VM7499 GemCoinsModal.tsx:168
+(anonymous) @ VM7576 AdRewardModal.tsx:66
+setTimeout
+(anonymous) @ VM7576 AdRewardModal.tsx:63
+basicStateReducer @ VM7412 chunk-RPCDYKBN.js:11703
+updateReducer @ VM7412 chunk-RPCDYKBN.js:11794
+updateState @ VM7412 chunk-RPCDYKBN.js:12021
+useState @ VM7412 chunk-RPCDYKBN.js:12753
+useState @ VM7414 chunk-QCHXOAYK.js:1066
+AdRewardModal @ VM7576 AdRewardModal.tsx:28
+renderWithHooks @ VM7412 chunk-RPCDYKBN.js:11548
+updateFunctionComponent @ VM7412 chunk-RPCDYKBN.js:14582
+beginWork @ VM7412 chunk-RPCDYKBN.js:15924
+beginWork$1 @ VM7412 chunk-RPCDYKBN.js:19753
+performUnitOfWork @ VM7412 chunk-RPCDYKBN.js:19198
+workLoopSync @ VM7412 chunk-RPCDYKBN.js:19137
+renderRootSync @ VM7412 chunk-RPCDYKBN.js:19116
+performConcurrentWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18678
+workLoop @ VM7412 chunk-RPCDYKBN.js:197
+flushWork @ VM7412 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM7412 chunk-RPCDYKBN.js:384Understand this error
+VM7386 eruda.js:2 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/claim-ad-reward 401 (Unauthorized)
+window.fetch @ VM7386 eruda.js:2
+apiRequest @ VM7420 queryClient.ts:30
+mutationFn @ VM7499 GemCoinsModal.tsx:108
+fn @ VM7417 @tanstack_react-query.js:1189
+run @ VM7417 @tanstack_react-query.js:494
+start @ VM7417 @tanstack_react-query.js:536
+execute @ VM7417 @tanstack_react-query.js:1225
+await in execute
+mutate @ VM7417 @tanstack_react-query.js:2630
+(anonymous) @ VM7417 @tanstack_react-query.js:3295
+handleAdReward @ VM7499 GemCoinsModal.tsx:168
+(anonymous) @ VM7576 AdRewardModal.tsx:66
+setTimeout
+(anonymous) @ VM7576 AdRewardModal.tsx:63
+basicStateReducer @ VM7412 chunk-RPCDYKBN.js:11703
+updateReducer @ VM7412 chunk-RPCDYKBN.js:11794
+updateState @ VM7412 chunk-RPCDYKBN.js:12021
+useState @ VM7412 chunk-RPCDYKBN.js:12753
+useState @ VM7414 chunk-QCHXOAYK.js:1066
+AdRewardModal @ VM7576 AdRewardModal.tsx:28
+renderWithHooks @ VM7412 chunk-RPCDYKBN.js:11548
+updateFunctionComponent @ VM7412 chunk-RPCDYKBN.js:14582
+beginWork @ VM7412 chunk-RPCDYKBN.js:15924
+beginWork$1 @ VM7412 chunk-RPCDYKBN.js:19753
+performUnitOfWork @ VM7412 chunk-RPCDYKBN.js:19198
+workLoopSync @ VM7412 chunk-RPCDYKBN.js:19137
+renderRootSync @ VM7412 chunk-RPCDYKBN.js:19116
+performConcurrentWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18678
+workLoop @ VM7412 chunk-RPCDYKBN.js:197
+flushWork @ VM7412 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM7412 chunk-RPCDYKBN.js:384Understand this error
+VM7386 eruda.js:2 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/claim-ad-reward 401 (Unauthorized)
+window.fetch @ VM7386 eruda.js:2
+apiRequest @ VM7420 queryClient.ts:30
+mutationFn @ VM7499 GemCoinsModal.tsx:108
+fn @ VM7417 @tanstack_react-query.js:1189
+run @ VM7417 @tanstack_react-query.js:494
+start @ VM7417 @tanstack_react-query.js:536
+execute @ VM7417 @tanstack_react-query.js:1225
+await in execute
+mutate @ VM7417 @tanstack_react-query.js:2630
+(anonymous) @ VM7417 @tanstack_react-query.js:3295
+handleAdReward @ VM7499 GemCoinsModal.tsx:168
+(anonymous) @ VM7576 AdRewardModal.tsx:66
+setTimeout
+(anonymous) @ VM7576 AdRewardModal.tsx:63
+basicStateReducer @ VM7412 chunk-RPCDYKBN.js:11703
+updateReducer @ VM7412 chunk-RPCDYKBN.js:11794
+updateState @ VM7412 chunk-RPCDYKBN.js:12021
+useState @ VM7412 chunk-RPCDYKBN.js:12753
+useState @ VM7414 chunk-QCHXOAYK.js:1066
+AdRewardModal @ VM7576 AdRewardModal.tsx:28
+renderWithHooks @ VM7412 chunk-RPCDYKBN.js:11548
+updateFunctionComponent @ VM7412 chunk-RPCDYKBN.js:14582
+beginWork @ VM7412 chunk-RPCDYKBN.js:15924
+beginWork$1 @ VM7412 chunk-RPCDYKBN.js:19753
+performUnitOfWork @ VM7412 chunk-RPCDYKBN.js:19198
+workLoopSync @ VM7412 chunk-RPCDYKBN.js:19137
+renderRootSync @ VM7412 chunk-RPCDYKBN.js:19116
+performConcurrentWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18678
+workLoop @ VM7412 chunk-RPCDYKBN.js:197
+flushWork @ VM7412 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM7412 chunk-RPCDYKBN.js:384Understand this error
+VM7386 eruda.js:2 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/users/claim-ad-reward 401 (Unauthorized)
+window.fetch @ VM7386 eruda.js:2
+apiRequest @ VM7420 queryClient.ts:30
+mutationFn @ VM7499 GemCoinsModal.tsx:108
+fn @ VM7417 @tanstack_react-query.js:1189
+run @ VM7417 @tanstack_react-query.js:494
+start @ VM7417 @tanstack_react-query.js:536
+execute @ VM7417 @tanstack_react-query.js:1225
+await in execute
+mutate @ VM7417 @tanstack_react-query.js:2630
+(anonymous) @ VM7417 @tanstack_react-query.js:3295
+handleAdReward @ VM7499 GemCoinsModal.tsx:168
+(anonymous) @ VM7576 AdRewardModal.tsx:66
+setTimeout
+(anonymous) @ VM7576 AdRewardModal.tsx:63
+basicStateReducer @ VM7412 chunk-RPCDYKBN.js:11703
+updateReducer @ VM7412 chunk-RPCDYKBN.js:11794
+updateState @ VM7412 chunk-RPCDYKBN.js:12021
+useState @ VM7412 chunk-RPCDYKBN.js:12753
+useState @ VM7414 chunk-QCHXOAYK.js:1066
+AdRewardModal @ VM7576 AdRewardModal.tsx:28
+renderWithHooks @ VM7412 chunk-RPCDYKBN.js:11548
+updateFunctionComponent @ VM7412 chunk-RPCDYKBN.js:14582
+beginWork @ VM7412 chunk-RPCDYKBN.js:15924
+beginWork$1 @ VM7412 chunk-RPCDYKBN.js:19753
+performUnitOfWork @ VM7412 chunk-RPCDYKBN.js:19198
+workLoopSync @ VM7412 chunk-RPCDYKBN.js:19137
+renderRootSync @ VM7412 chunk-RPCDYKBN.js:19116
+performConcurrentWorkOnRoot @ VM7412 chunk-RPCDYKBN.js:18678
+workLoop @ VM7412 chunk-RPCDYKBN.js:197
+flushWork @ VM7412 chunk-RPCDYKBN.js:176
+performWorkUntilDeadline @ VM7412 chunk-RPCDYKBN.js:384Understand this error
+Console.js:61 🔔 OneSignal: Starting initialization...
+Console.js:61 🔔 OneSignal: SDK script loaded successfully
+Console.js:61 🔔 OneSignal: Initializing with config...
+Console.js:61 🔔 OneSignal: Initialized successfully
+Console.js:61 OneSignal tags added: {userId: 'google-oauth2|117032826996185616207', username: 'andrew.stargaze'}
+Console.js:61 OneSignal external user ID set: google-oauth2|117032826996185616207

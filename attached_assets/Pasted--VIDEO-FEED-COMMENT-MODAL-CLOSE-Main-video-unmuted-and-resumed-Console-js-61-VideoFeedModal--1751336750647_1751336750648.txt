@@ -1,0 +1,64 @@
+🎬 VIDEO FEED COMMENT MODAL CLOSE: Main video unmuted and resumed
+Console.js:61 🎬 VideoFeedModal: ⚠️ NATIVE PLAY EVENT in useEffect
+Console.js:61 🎬 VideoFeedModal: Setting isPlaying to true (user has not manually paused)
+Console.js:61 🎬 VideoFeedModal: Play button clicked
+Console.js:61 🎬 VideoFeedModal: togglePlayPause called, current isPlaying: true
+Console.js:61 🎬 VideoFeedModal: User pausing video
+Console.js:61 🎬 VideoFeedModal: Native pause event in useEffect - setting isPlaying to false
+Console.js:61 🔍 DELETE DEBUG: currentItem structure: {id: 49, isVideoComment: true, isThreadMessage: undefined, allKeys: Array(11)}
+Console.js:61 🗑️ DELETE REQUEST: Video comment - endpoint /api/video-comments/49
+queryClient.ts:40 
+            
+            
+           DELETE https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/video-comments/49 404 (Not Found)
+window.fetch @ Network.js:219
+apiRequest @ queryClient.ts:40
+mutationFn @ VideoRejectionModal.tsx:102
+fn @ @tanstack_react-query.js?v=0aec14a9:1189
+run @ @tanstack_react-query.js?v=0aec14a9:494
+start @ @tanstack_react-query.js?v=0aec14a9:536
+execute @ @tanstack_react-query.js?v=0aec14a9:1225
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+handleDeleteVideo @ VideoRejectionModal.tsx:191
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error
+Console.js:61 video comment deletion error: Error: 404: {"message":"Video comment not found"}
+    at throwIfResNotOk (queryClient.ts:31:11)
+    at async apiRequest (queryClient.ts:47:3)
+Mt.forEach.n.<computed> @ Console.js:61
+onError @ VideoRejectionModal.tsx:171
+execute @ @tanstack_react-query.js?v=0aec14a9:1254
+await in execute
+mutate @ @tanstack_react-query.js?v=0aec14a9:2630
+(anonymous) @ @tanstack_react-query.js?v=0aec14a9:3295
+handleDeleteVideo @ VideoRejectionModal.tsx:191
+callCallback2 @ chunk-RPCDYKBN.js?v=0aec14a9:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0aec14a9:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0aec14a9:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0aec14a9:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0aec14a9:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0aec14a9:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0aec14a9:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0aec14a9:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0aec14a9:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0aec14a9:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0aec14a9:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0aec14a9:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0aec14a9:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0aec14a9:5449Understand this error

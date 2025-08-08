@@ -1,0 +1,40 @@
+Error starting video: NotSupportedError: Failed to load because no supported source was found.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:377
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:353
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error
+Console.js:61 Trying fallback video source: https://vz-7c674c55-8ff.b-cdn.net/b9334f9e-98f1-42c9-b6a0-69671af326db/playlist.m3u8
+Console.js:61 Video https://vz-7c674c55-8ff.b-cdn.net/b9334f9e-98f1-42c9-b6a0-69671af326db/playlist.m3u8 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://vz-7c674c55-8ff.b-cdn.net/b9334f9e-98f1-42c9-b6a0-69671af326db/playlist.m3u8 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://vz-7c674c55-8ff.b-cdn.net/b9334f9e-98f1-42c9-b6a0-69671af326db/playlist.m3u8 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://vz-7c674c55-8ff.b-cdn.net/b9334f9e-98f1-42c9-b6a0-69671af326db/playlist.m3u8 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Video https://vz-7c674c55-8ff.b-cdn.net/b9334f9e-98f1-42c9-b6a0-69671af326db/playlist.m3u8 failed to load Event {isTrusted: true, type: 'error', target: video.w-full.h-full.object-cover, currentTarget: video.w-full.h-full.object-cover, eventPhase: 2, …}
+Console.js:61 Fallback video source also failed: NotSupportedError: The element has no supported sources.
+Mt.forEach.n.<computed> @ Console.js:61
+(anonymous) @ VideoPlayerModal.tsx:389
+setTimeout
+(anonymous) @ VideoPlayerModal.tsx:353
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=0e1c40fa:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19416
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=0e1c40fa:18627Understand this error

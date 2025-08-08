@@ -1,0 +1,25 @@
+VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/b9c0527e-5243-4818-afd9-87b50be3d602'}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 29, commentVideoUrl: '/api/videos/bunny-proxy/b9c0527e-5243-4818-afd9-87b50be3d602', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 RENDERING VideoCommentPlayer in comments section: {commentId: 29, commentVideoUrl: '/api/videos/bunny-proxy/b9c0527e-5243-4818-afd9-87b50be3d602', processingStatus: 'approved', hasVideoUrl: true}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/b9c0527e-5243-4818-afd9-87b50be3d602', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/b9c0527e-5243-4818-afd9-87b50be3d602'}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 1, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Submitting video comment with duration: 0
+Console.js:61 Video comment submitted, refreshing comments...
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 2, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 2, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 2, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.

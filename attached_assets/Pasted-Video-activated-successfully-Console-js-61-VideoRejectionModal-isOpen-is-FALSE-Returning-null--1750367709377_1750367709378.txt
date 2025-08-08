@@ -1,0 +1,73 @@
+Video activated successfully
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: undefined, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: false}
+Console.js:61 Video format detection: {videoUrl: '/api/videos/bunny-proxy/2c8565eb-ab9c-4535-8a35-a4d980824ec7', videoDbUrl: '/api/videos/bunny-proxy/2c8565eb-ab9c-4535-8a35-a4d980824ec7', bunnyVideoId: '2c8565eb-ab9c-4535-8a35-a4d980824ec7', isHLS: true, hlsSupported: true, …}
+Console.js:61 Initializing HLS player for non-Bunny stream
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Marked video ccaa34cf-5b12-4e26-b120-15854c266684 as watched
+Console.js:61 HLS manifest loaded successfully
+Console.js:61 Available HLS levels: (5) ['240p', '360p', '480p', '720p', '1080p']
+Console.js:61 Setting HLS quality to 720p (level 3)
+Console.js:61 Video play event fired
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+2Console.js:61 Video play event fired
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 2, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: false}
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Fetched videos data: (5) [{…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 5
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Marker placement effect running - videos: 5 googleMap: true
+Console.js:61 Adding markers to Google Maps: 5 videos
+Console.js:61 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+Console.js:61 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05720092, -94.1603711)
+Console.js:61 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+Console.js:61 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05721208, -94.16063493)
+Console.js:61 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+Console.js:61 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05723861, -94.16059521)
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05711838, -94.16072529)
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: true
+Console.js:61 Updated existing marker - visible: true map: true position: (36.05719557, -94.16058985)
+Console.js:61 Zoom level changed to: 15 Total markers: 5
+9Console.js:61 Video blob:https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/1ba8d45a-da7b-4c20-8eb5-a9dc1df0fb6e can play - format is supported
+8Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Video pause event fired
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+17Console.js:61 Video pause event fired
+3Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 2, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🔍 DELETE DEBUG: currentItem structure: {id: 30, isVideoComment: true, isThreadMessage: undefined, allKeys: Array(11)}
+Console.js:61 🗑️ DELETE REQUEST: Video comment - endpoint /api/video-comments/30
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🔄 Cache invalidation triggered - isThreadMessage: undefined threadId: undefined videoId: ccaa34cf-5b12-4e26-b120-15854c266684
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 1, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Submitting video comment with duration: 4.146
+Console.js:61 Video comment submitted, refreshing comments...
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 Auto-scroll effect triggered: {highlightCommentId: undefined, commentsDataLength: 2, videoId: 'ccaa34cf-5b12-4e26-b120-15854c266684', showComments: true}
+2Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.
+Console.js:61 🟢 VideoRejectionModal: isOpen is TRUE. Attempting to render HTML now!
+Console.js:61 🔴 VideoRejectionModal: isOpen is FALSE. Returning null.

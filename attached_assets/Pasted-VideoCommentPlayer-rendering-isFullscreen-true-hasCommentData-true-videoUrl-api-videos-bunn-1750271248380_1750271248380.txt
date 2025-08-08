@@ -1,0 +1,517 @@
+VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}
+Console.js:61 HLS manifest loaded successfully
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/240p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/360p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/480p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/720p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/1080p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:18627Understand this error
+Console.js:61 Thread video three-dot button clicked! SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: div#radix-:ra:.w-12.h-12.rounded-full.bg-black/60.text-white.hover:bg-black/80.flex.items-center.ju…, …}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/video.m3u8'}
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/video.m3u8
+Console.js:61 HLS manifest loaded successfully
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/240p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/video.m3u8
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/video.m3u8'}
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/360p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/480p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 Thread video three-dot button clicked! SyntheticBaseEvent {_reactName: 'onClick', _targetInst: null, type: 'click', nativeEvent: PointerEvent, target: div#radix-:ra:.w-12.h-12.rounded-full.bg-black/60.text-white.hover:bg-black/80.flex.items-center.ju…, …}
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/720p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/480p/1080p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: false, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: false, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}
+Console.js:61 Initializing HLS.js for: /api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8
+Console.js:61 HLS manifest loaded successfully
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/240p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/360p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/480p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 Video comment loaded successfully: /api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/720p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+VideoPlayerModal.tsx:192 
+            
+            
+           HEAD https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/1080p/video.m3u8 404 (Not Found)
+window.fetch @ Network.js:219
+checkAvailableQualities @ VideoPlayerModal.tsx:192
+await in checkAvailableQualities
+(anonymous) @ VideoPlayerModal.tsx:181
+commitHookEffectListMount @ chunk-RPCDYKBN.js?v=39a88b9d:16915
+commitPassiveMountOnFiber @ chunk-RPCDYKBN.js?v=39a88b9d:18156
+commitPassiveMountEffects_complete @ chunk-RPCDYKBN.js?v=39a88b9d:18129
+commitPassiveMountEffects_begin @ chunk-RPCDYKBN.js?v=39a88b9d:18119
+commitPassiveMountEffects @ chunk-RPCDYKBN.js?v=39a88b9d:18109
+flushPassiveEffectsImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19490
+flushPassiveEffects @ chunk-RPCDYKBN.js?v=39a88b9d:19447
+commitRootImpl @ chunk-RPCDYKBN.js?v=39a88b9d:19416
+commitRoot @ chunk-RPCDYKBN.js?v=39a88b9d:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=39a88b9d:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=39a88b9d:9119
+flushSync @ chunk-RPCDYKBN.js?v=39a88b9d:18959
+flushSync$1 @ chunk-RPCDYKBN.js?v=39a88b9d:21538
+dispatchDiscreteCustomEvent @ chunk-AXMZZQ2X.js?v=39a88b9d:53
+handleSelect @ @radix-ui_react-dropdown-menu.js?v=39a88b9d:426
+handleEvent @ chunk-7SUNRGEF.js?v=39a88b9d:95
+callCallback2 @ chunk-RPCDYKBN.js?v=39a88b9d:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=39a88b9d:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=39a88b9d:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=39a88b9d:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=39a88b9d:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=39a88b9d:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=39a88b9d:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=39a88b9d:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=39a88b9d:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=39a88b9d:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=39a88b9d:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=39a88b9d:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=39a88b9d:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=39a88b9d:5449Understand this error
+Console.js:61 VideoCommentPlayer handlePlay called: {hasOnFullscreen: false, isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}
+Console.js:61 VideoCommentPlayer STARTED {isFullscreen: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8', commentData: {…}}
+Console.js:61 VideoCommentPlayer rendering: {isFullscreen: true, hasCommentData: true, videoUrl: '/api/videos/bunny-proxy/04299762-b0de-4566-a114-25f1ae275d1c/720p/video.m3u8'}

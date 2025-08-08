@@ -1,0 +1,49 @@
+Places Autocomplete service initialized
+CreateQuestModal.tsx:321 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/upload/image?type=quest 400 (Bad Request)
+window.fetch @ Network.js:219
+uploadImage @ CreateQuestModal.tsx:321
+onSubmit @ CreateQuestModal.tsx:359
+(anonymous) @ chunk-4BFJKWC4.js?v=052f03cc:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=052f03cc:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=052f03cc:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=052f03cc:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=052f03cc:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=052f03cc:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=052f03cc:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=052f03cc:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=052f03cc:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=052f03cc:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=052f03cc:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=052f03cc:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=052f03cc:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=052f03cc:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=052f03cc:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=052f03cc:5449Understand this error
+Console.js:61 Error creating quest: Error: Image rejected: Image contains inappropriate content - Adult: Very Likely, Violence: Possible, Racy: Very Likely
+    at uploadImage (CreateQuestModal.tsx:331:15)
+    at async onSubmit (CreateQuestModal.tsx:359:20)
+    at async chunk-4BFJKWC4.js?v=052f03cc:1465:9
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:371
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=052f03cc:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=052f03cc:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=052f03cc:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=052f03cc:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=052f03cc:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=052f03cc:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=052f03cc:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=052f03cc:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=052f03cc:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=052f03cc:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=052f03cc:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=052f03cc:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=052f03cc:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=052f03cc:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=052f03cc:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=052f03cc:5449Understand this error

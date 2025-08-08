@@ -1,0 +1,121 @@
+07-12 18:52:40
+timeout: undefined,
+07-12 18:52:40
+bytesWritten: 235,
+07-12 18:52:40
+bytesRead: 0
+07-12 18:52:40
+}
+07-12 18:52:40
+}
+07-12 18:52:40
+}
+07-12 18:52:40
+node:internal/process/promises:391
+07-12 18:52:40
+triggerUncaughtException(err, true /* fromPromise */);
+07-12 18:52:40
+^
+07-12 18:52:40
+07-12 18:52:40
+TypeError: fetch failed
+07-12 18:52:40
+at node:internal/deps/undici/undici:13392:13
+07-12 18:52:40
+at async performDiscovery (file:///home/runner/workspace/node_modules/openid-client/build/index.js:266:16)
+07-12 18:52:40
+at async Module.discovery (file:///home/runner/workspace/node_modules/openid-client/build/index.js:243:16)
+07-12 18:52:40
+at async memoize.maxAge (file:///home/runner/workspace/dist/index.js:7129:22)
+07-12 18:52:40
+at async setupAuth (file:///home/runner/workspace/dist/index.js:7201:18)
+07-12 18:52:40
+at async registerRoutes (file:///home/runner/workspace/dist/index.js:7885:3)
+07-12 18:52:40
+at async file:///home/runner/workspace/dist/index.js:11204:18 {
+07-12 18:52:40
+[cause]: SocketError: other side closed
+07-12 18:52:40
+at TLSSocket. (node:internal/deps/undici/undici:6238:28)
+07-12 18:52:40
+at TLSSocket.emit (node:events:530:35)
+07-12 18:52:40
+at endReadableNT (node:internal/streams/readable:1698:12)
+07-12 18:52:40
+at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+07-12 18:52:40
+code: 'UND_ERR_SOCKET',
+07-12 18:52:40
+socket: {
+07-12 18:52:40
+localAddress: '169.254.8.1',
+07-12 18:52:40
+localPort: 51920,
+07-12 18:52:40
+remoteAddress: '104.18.35.46',
+07-12 18:52:40
+remotePort: 443,
+07-12 18:52:40
+remoteFamily: 'IPv4',
+07-12 18:52:40
+timeout: undefined,
+07-12 18:52:40
+bytesWritten: 235,
+07-12 18:52:40
+bytesRead: 0
+07-12 18:52:40
+}
+07-12 18:52:40
+}
+07-12 18:52:40
+}
+07-12 18:52:40
+07-12 18:52:40
+Node.js v20.18.1
+07-12 18:52:40
+command finished with error [npm run start]: exit status 1
+07-12 18:52:45
+> rest-express@1.0.0 start
+07-12 18:52:45
+> NODE_ENV=production node dist/index.js
+
+Wrap
+
+Colors
+Search for a service...
+
+
+All
+
+Connected
+
+Replit
+
+External
+Connected Services
+Connect your Repl to a variety of Replit's services and third-party services using .
+Never share or expose tokens in code. .
+Stripe
+Database
+Auth
+Replit Key-Value Store
+Replit Services
+Connect to Replit's storage and auth services.
+Database
+Auth
+Object Storage
+Replit Key-Value Store
+External Services
+Connect your App to a variety of third-party services using .
+Never share or expose tokens in code. .
+OpenAI
+Google AI (Gemini)
+Anthropic (Claude)
+Perplexity
+Mistral AI
+Google Sheets
+Google Docs
+Slack
+Discord
+Stripe
+HubSpot

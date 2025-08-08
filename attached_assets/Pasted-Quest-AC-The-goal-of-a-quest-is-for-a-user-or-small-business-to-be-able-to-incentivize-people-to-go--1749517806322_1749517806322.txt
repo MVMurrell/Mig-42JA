@@ -1,0 +1,29 @@
+Quest AC
+The goal of a quest is for a user or small business to be able to incentivize people to go to a particular area for a specific time. And if enough people post there as defined by the rules then the users get paid a jem coin bounty.
+On the active quests page you should see cards that show each active quest, and the general information about the quest. The user can go to the details to read all the details of the quest.
+When you see a quest you want to join you should be able to see the details for the quest in one tab and a see list of the other participants in another tab
+There is one type of quest that can be created:
+Location Quest:
+This quest asks users to go to a specific area to post a jem to the quest. The quest should show in the drop down of who the jem visible to.
+The way the quest works is the quest creator puts up an amount of coins that will be paid out to the participants if the goal is achieved.
+The quest creator can choose the location and distance radius that users are allowed to post in to qualify
+The creator gets to choose how many users have to post in that area for the quest to count as completed.
+For example the creator could say I’m starting a quest, you have to come to this location and post a jem to this quest within 200 feet of this location point. If 50 users post a jem here over the next three days then everyone who participates will receive 5 coins. The creator will have to pay for the 250 coins upfront. The money is held until the quest is complete. If the quest is successful then the money gets taken and everyone gets paid in coins or if the quest fails then the creator keeps their money and there is no payout to the users.
+In the quest details if you've joined you should see a chat thread so participants can talk to each other while the quest is active.
+When a quest is active and the user should see on the map a quest icon and the radius around the quest icon while the quest is active. This way the user can tap on it to get a modal telling them there’s a quest active they could join and a button to go to the details of the quest. And for users that have already joined the message modal can tell them they have joined, how much time is left, a progress bar of how close they are to winning and what the bounty is.
+I would like to add a ‘Quest’ nav item to the footer navigation of the app. This will replace the ‘Liked’ footer nav item. From the quest page users can see what active quests there are in one tab and what quests they're actively participating in another tab
+There should be a button to create a new quest
+In the form there should be
+An image upload button
+A title input 
+A rules/description input
+Users should be able to choose the location of there the location is centered
+This will include a pin at the center and the user can move a map around until the pin is where they want it and then hit a set location button to get the lat long
+The user then needs to choose what distance users can be from the location to qualify. The distances can be as little as 10 feet up to 1,000 feet
+The start date can be immediately or set with a calendar date and time picker
+There has to be an end time and date picker so the quest can't be infinite
+A quest can’t be longer than three days
+If a user creates a quest they can't delete before it’s complete as to not waste people's time who participated, this should be communicated to the creator
+A reward input to be paid in Jem coins
+Users have to put their own coins up for the prize or purchase coins for the prize
+

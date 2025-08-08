@@ -1,0 +1,72 @@
+I. Ensure Gem Images are Statically Served (Fixing the URL Issue):
+
+Google Maps needs to load these images directly from a URL that your browser (and thus Google Maps' rendering engine) can access without relying on Vite's internal development server specifics.
+
+Move Gem Images to the public Directory:
+
+Locate all your unique PNG gem image files (e.g., gem_category_A.png, gem_category_B.png, etc.).
+Move these image files into the public directory at the root of your Vite project.
+Best Practice: Create a dedicated subfolder within public for better organization, e.g., public/map_icons/gems/.
+Example: If gem_category_A.png is moved to public/map_icons/gems/, its publicly accessible URL will become /map_icons/gems/gem_category_A.png when your application runs (both in development and production).
+Update Frontend Code to Use Correct Public Paths:
+
+In your frontend JavaScript code (likely where you define google.maps.Marker options or a google.maps.Icon object), update the url property for your marker icons to point to these new public paths.
+Crucially, do NOT use new URL(...) or /@fs/ paths for these.
+Example:
+JavaScript
+
+// BEFORE (Incorrect for Google Maps):
+// const iconUrl = new URL('../assets/gem_category_A.png', import.meta.url).href;
+
+// AFTER (Correct, assuming image is in public/map_icons/gems/):
+const gemIconUrl = '/map_icons/gems/gem_category_A.png'; // Direct public path
+
+// ... then use gemIconUrl in your marker definition
+Verify Public Accessibility (Manual Test):
+
+After moving the files and restarting your development server, try to open the full URL to one of your gem images directly in your browser.
+Example: If your Replit app URL is https://your-replit-app.replit.dev and your icon is at /map_icons/gems/gem_category_A.png, try visiting https://your-replit-app.replit.dev/map_icons/gems/gem_category_A.png. It should load the image directly. If it doesn't, the static serving is still not correctly configured.
+II. Ensure Correct Icon Sizing (Fixing the "Squished" Issue):
+
+Even if the image loads, Google Maps needs to know its intended display size to prevent stretching or squishing.
+
+Define size and scaledSize for the Marker Icon:
+Determine the exact original pixel dimensions (width and height) of your PNG gem images.
+
+When creating the icon object for your google.maps.Marker, explicitly set the size (the actual size of the image file) and, more importantly, the scaledSize (the desired display size on the map).
+
+Action:
+
+Adjust the width and height values in the example below to match the actual pixel dimensions of your gem PNGs.
+The anchor property is also very useful for precise positioning of the icon relative to the marker's latitude/longitude.
+Example (adjust width and height to your actual gem icon sizes):
+
+JavaScript
+
+// Define the icon properties for google.maps.Marker
+const gemIconProperties = {
+    url: '/map_icons/gems/gem_category_A.png', // The correct public URL
+    // The original size of the image file (e.g., if it's 32x32 pixels)
+    size: new google.maps.Size(32, 32),
+    // The desired display size of the icon on the map.
+    // This is crucial to prevent "squishing" or stretching.
+    scaledSize: new google.maps.Size(32, 32), // Display at 32x32 pixels
+    // The anchor point (where the icon "sticks" to the marker's lat/lng).
+    // For a bottom-center anchor of a 32x32 icon, it would be 16x32.
+    anchor: new google.maps.Point(16, 32)
+};
+
+// When creating your Google Maps Marker:
+const marker = new google.maps.Marker({
+    position: { lat: /* video_lat */, lng: /* video_lng */ },
+    map: map,
+    icon: gemIconProperties, // Pass your defined icon properties here
+    title: 'Video Title' // Optional: A tooltip for the marker
+});
+Implementation Steps:
+
+Prioritize moving the images to the public directory first.
+Update the icon url paths in your frontend code.
+Then, ensure size and scaledSize (and optionally anchor) are correctly set in your marker icon definitions using the actual dimensions of your PNG files.
+Test thoroughly by viewing the map with different categories of videos.
+Provide logs if any URLs are still problematic, and screenshots of the map to confirm the gems are now showing up correctly and at their proper dimensions.

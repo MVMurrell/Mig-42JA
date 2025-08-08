@@ -1,0 +1,32 @@
+Marker placement effect running - videos: 0 googleMap: true
+Console.js:61 No videos to place markers for
+Console.js:61 Zoom level changed to: 15 Total markers: 0
+Console.js:61 Fetched videos data: (5) [{…}, {…}, {…}, {…}, {…}]
+Console.js:61 Number of videos: 5
+Console.js:61 Marker placement effect running - videos: 5 googleMap: true
+Console.js:61 Adding markers to Google Maps: 5 videos
+Console.js:61 Processing video for marker: 5c833a26-74ab-4e9a-90d4-4f69d8e7d572 Rocking Chair challenge
+Console.js:61 Creating marker at position: {lat: 36.05720092, lng: -94.1603711}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.jo {__gm: {…}, gm_accessors_: {…}, position: _.pm, gm_bindings_: {…}, map: _.Tr, …} visible: true
+Console.js:61 Processing video for marker: 7b57db3a-f7e4-4ba4-baf9-434d27dcd17f My weekend nature
+Console.js:61 Creating marker at position: {lat: 36.05721208, lng: -94.16063493}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.jo {__gm: {…}, gm_accessors_: {…}, position: _.pm, gm_bindings_: {…}, map: _.Tr, …} visible: true
+Console.js:61 Processing video for marker: 7f453a4e-a675-4b32-adfb-74d4700afced Is the form forming? nature
+Console.js:61 Creating marker at position: {lat: 36.05723861, lng: -94.16059521}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.jo {__gm: {…}, gm_accessors_: {…}, position: _.pm, gm_bindings_: {…}, map: _.Tr, …} visible: true
+Console.js:61 Processing video for marker: c1647877-54ed-410e-be34-c8aa666d226e One Night Only products
+Console.js:61 Creating marker at position: {lat: 36.05711838, lng: -94.16072529}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.jo {__gm: {…}, gm_accessors_: {…}, position: _.pm, gm_bindings_: {…}, map: _.Tr, …} visible: true
+Console.js:61 Processing video for marker: ccaa34cf-5b12-4e26-b120-15854c266684 Higher breh art
+Console.js:61 Creating marker at position: {lat: 36.05719557, lng: -94.16058985}
+Console.js:61 Existing marker found: false
+Console.js:61 New marker created: _.jo {__gm: {…}, gm_accessors_: {…}, position: _.pm, gm_bindings_: {…}, map: _.Tr, …} visible: true
+Console.js:61 Zoom level changed to: 15 Total markers: 5
+53c24430-78a9-4d5b-be24-4bc2d3b2c237:1 
+            
+            
+           GET https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/videos/bunny-proxy/53c24430-78a9-4d5b-be24-4bc2d3b2c237 404 (Not Found)Understand this error

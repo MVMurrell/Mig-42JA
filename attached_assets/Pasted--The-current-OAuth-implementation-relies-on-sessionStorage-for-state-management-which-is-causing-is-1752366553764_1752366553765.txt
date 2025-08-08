@@ -1,0 +1,43 @@
+"The current OAuth implementation relies on sessionStorage for state management, which is causing issues in mobile PWA environments due to strict browser security policies (storage partitioning). To resolve the 'Unable to process request due to missing initial state' error on mobile and PWA, we need to adapt the authentication flow to use more robust and secure storage mechanisms that are not affected by sessionStorage limitations in these contexts.
+
+Here are the specific instructions and approaches to implement:
+
+Primary Solution: Switch to signInWithPopup() or a Server-Side Flow with Secure Cookies
+
+The most direct and recommended fix for PWA environments when signInWithRedirect fails due to sessionStorage issues is to switch the authentication method from signInWithRedirect to signInWithPopup().
+
+signInWithPopup(): This method initiates the OAuth flow in a new pop-up window, which is generally treated as a first-party context and avoids the storage partitioning issues that affect redirects.
+
+Instructions:
+
+Identify OAuth Initialization: Locate the code responsible for initiating the OAuth login (e.g., Google, Facebook, etc.). This is likely where signInWithRedirect() is currently called.
+
+Replace signInWithRedirect: Change the call from provider.signInWithRedirect() to provider.signInWithPopup().
+
+Handle Pop-up Closures: Implement logic to detect if the pop-up window is closed by the user without completing authentication.
+
+UX Considerations: Inform users that they might need to allow pop-ups for the login process.
+
+If signInWithPopup() is not feasible or desired (e.g., blocked pop-ups):
+
+Implement a Server-Side Authentication Flow:
+
+This involves the client (PWA) initiating a request to your backend, which then redirects to the OAuth provider, handles the callback, and sets a secure, HTTP-only, SameSite=Lax or SameSite=None; Secure (if cross-domain) cookie on your application's domain.
+
+Benefits: This completely bypasses client-side storage for the OAuth state. The server manages the session token.
+
+Instructions:
+
+Backend Endpoint: Create a new backend endpoint (e.g., /auth/login/<provider>) that initiates the OAuth flow.
+
+Redirect to OAuth Provider: Your backend redirects the user's browser to the OAuth provider's authorization URL.
+
+Callback Endpoint: Configure the OAuth provider's redirect URI to point to another backend endpoint (e.g., /auth/callback/<provider>).
+
+Process Token: In the callback endpoint, receive the authorization code, exchange it for tokens (access, ID, refresh), and then create a session for the user on your backend.
+
+Set Secure Cookie: Set a secure, HTTP-only cookie containing the session ID or a JWT from your backend. Ensure SameSite=Lax for same-site scenarios, or SameSite=None; Secure if your backend and frontend are on different subdomains or origins.
+
+Redirect to Frontend: Finally, redirect the user's browser back to your PWA's main page. The PWA will now send the session cookie with subsequent requests.
+
+Client-Side Check: On the PWA side, check for the presence of this secure cookie to determine the user's logged-in status.

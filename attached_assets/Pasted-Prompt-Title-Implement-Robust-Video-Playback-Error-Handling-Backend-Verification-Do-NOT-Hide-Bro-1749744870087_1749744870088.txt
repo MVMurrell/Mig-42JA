@@ -1,0 +1,129 @@
+Prompt Title: Implement Robust Video Playback Error Handling & Backend Verification (Do NOT Hide Broken Videos)
+
+Replit, your current proposal to 'hide broken videos and show only working ones' is NOT an acceptable solution. This will confuse users who expect to see all listed videos and creates an inconsistent experience. We need a proper solution that addresses the root cause ("some videos don't exist in Bunny storage") and provides clear, user-friendly feedback without altering the perceived content count.
+
+Here's a multi-pronged approach to fix this issue:
+
+I. Frontend: Graceful Handling & User Feedback (MANDATORY)
+
+Instead of simply hiding, we must display a clear, informative placeholder when a video cannot be loaded. This maintains the feed's structure and informs the user.
+
+Implement onError Handling for Video Playback:
+Goal: Catch playback errors directly in the browser.
+Action: In your video player component (the one rendering each video in the scrollable feed), add an onError event handler to the <video> HTML element.
+When an error occurs (e.g., video file not found on Bunny.net, 404):
+DO NOT remove the video's container from the feed. It must still occupy its space.
+
+Display a clear "Video Unavailable" or "Error Loading Video" message as an overlay or placeholder within that specific video's display area.
+
+Maintain Aspect Ratio: Ensure this placeholder (e.g., a div with an error message and icon) maintains the same aspect ratio and dimensions as a playing video, so the feed layout doesn't jump or break.
+
+Include Debugging Info (for Admins): Optionally, include the video ID or a simple "Report Issue" button (which sends the video ID to your backend for logging) within this placeholder, visible to users or hidden for debugging.
+
+Example (Conceptual React/JSX for a VideoCard component):
+
+JavaScript
+
+import React, { useState } from 'react';
+
+function VideoCard({ videoData }) {
+    const [hasPlaybackError, setHasPlaybackError] = useState(false);
+
+    const handleVideoError = (event) => {
+        console.error(`Playback error for video ID: ${videoData.id}`, event);
+        setHasPlaybackError(true);
+        // IMPORTANT: Log this error to your backend for investigation!
+        // Example (you'll need to create this API endpoint):
+        fetch('/api/log-video-playback-error', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                videoId: videoData.id,
+                bunnyUrl: videoData.bunny_stream_url,
+                errorMessage: event.message || 'Unknown playback error',
+                timestamp: new Date().toISOString(),
+                // Include user ID if logged in, browser info, etc. for better debugging
+            }),
+        }).catch(err => console.error("Failed to log playback error:", err));
+    };
+
+    return (
+        <div className="video-feed-item" style={{ width: '100%', aspectRatio: '16/9', overflow: 'hidden' }}> {/* Maintain aspect ratio */}
+            {hasPlaybackError ? (
+                <div className="video-error-placeholder" style={{
+                    width: '100%', height: '100%',
+                    display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',
+                    backgroundColor: '#222', color: '#ccc', textAlign: 'center', fontSize: '0.9em'
+                }}>
+                    <span style={{ fontSize: '2em', marginBottom: '10px' }}>⚠️</span>
+                    <p>Video Unavailable</p>
+                    <p>This content could not be loaded.</p>
+                    {/* Optional: <button onClick={() => alert('Thanks for reporting!')}>Report Issue</button> */}
+                </div>
+            ) : (
+                <video
+                    key={videoData.id} // Essential for React to re-render video element when URL changes
+                    src={videoData.bunny_stream_url}
+                    controls // Or use your custom controls
+                    autoPlay
+                    loop
+                    muted // Often good for autoplaying feeds
+                    onError={handleVideoError} // <--- Key error handler
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                >
+                    Your browser does not support the video tag.
+                </video>
+            )}
+            {/* Always display video title/description below, regardless of playback status */}
+            <div className="video-info">
+                <h3>{videoData.title}</h3>
+                <p>{videoData.description}</p>
+            </div>
+        </div>
+    );
+}
+II. Backend Improvement: Proactive Verification & Database Status Management (RECOMMENDED)
+
+This step aims to prevent the frontend from even attempting to load truly broken videos and helps you manage your content pipeline.
+
+Introduce a status field in your videos database table:
+
+Action: Add a column like status (e.g., VARCHAR(50) or ENUM) to your videos table.
+Possible Statuses:
+processing: Video is currently being moderated/processed.
+published: Video is live and accessible.
+moderation_failed: Video failed content moderation.
+bunny_upload_failed: Video failed to upload to Bunny.net.
+bunny_link_broken: Video's URL in Bunny.net is no longer valid (detected post-upload).
+error: General processing error.
+unavailable: A generic status for videos not currently displayable.
+Enhance Video Upload/Processing Pipeline:
+
+Goal: Ensure a video record is only marked as published and its bunny_stream_url is saved after it has been successfully uploaded AND verified on Bunny.net.
+Action:
+Explicit Bunny.net Upload Verification: After completing the upload to Bunny.net, ensure your backend receives and checks the success status from Bunny.net's API response (e.g., HTTP 200 OK).
+Post-Upload URL Validation (CRITICAL): Before marking the video as published in your database, make a HEAD request to the bunny_stream_url that Bunny.net provided.
+If this HEAD request returns HTTP 200 OK or HTTP 206 Partial Content, then proceed to mark the video published.
+If it returns HTTP 404 Not Found or any other error, log this as a critical bunny_upload_failed error and set the video's status to bunny_upload_failed in your database. Do NOT publish the video.
+Atomic DB Update: The database update marking a video published (and setting its bunny_stream_url) should be the last step in a successful processing pipeline, only after all checks (video moderation, audio moderation, Bunny.net confirmation) pass.
+Implement a Scheduled "Link Checker" (Optional but Robust):
+
+Goal: Periodically check bunny_stream_urls of already published videos to catch cases where files might be deleted or moved later.
+Action: Create a daily or weekly background job (e.g., a cron job on your backend) that:
+Queries your database for published videos.
+For each video, performs a HEAD request to its bunny_stream_url.
+If a 404 Not Found or other permanent error is received, update that specific video's status in the database to bunny_link_broken and trigger an alert (e.g., send an email to an admin, log to a dedicated error channel).
+Frontend Impact: When the frontend fetches video data, it should filter out or specifically handle videos with a bunny_link_broken status (e.g., always render them with the "Video Unavailable" placeholder).
+III. Logging and Admin Visibility:
+
+Goal: Ensure you are actively aware of which videos are failing and why.
+Action:
+Improve backend logging for all stages of video processing, especially any failures during upload or validation with Bunny.net.
+Set up alerts (e.g., email, Slack notification) for critical errors like bunny_upload_failed or bunny_link_broken detections.
+Consolidate playback error logs from the frontend (from step I) so you have a clear picture of issues users are encountering.
+Immediate Implementation Steps for Replit:
+
+Start with the Frontend Graceful Handling (Section I). This will immediately improve the user experience by showing placeholders instead of skipping.
+Then, focus on enhancing your Backend Video Upload/Processing Pipeline (Section II, point 2) to include the robust post-upload verification step (the HEAD request to Bunny.net).
+Ensure you have a status field in your videos table to track these states.
+By implementing these steps, your users will have a much clearer experience, and you'll gain the necessary data and mechanisms to fix the underlying issue of missing video files.

@@ -1,0 +1,169 @@
+Uncaught ReferenceError: RefreshCw is not defined
+    at ModerationDecisions (ModerationDecisions.tsx:149:36)
+    at renderWithHooks (chunk-RPCDYKBN.js:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js:14582:28)
+    at beginWork (chunk-RPCDYKBN.js:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js:19137:13)
+ModerationDecisions @ ModerationDecisions.tsx?t=1749921484774:149
+renderWithHooks @ chunk-RPCDYKBN.js?v=0e1c40fa:11548
+updateFunctionComponent @ chunk-RPCDYKBN.js?v=0e1c40fa:14582
+beginWork @ chunk-RPCDYKBN.js?v=0e1c40fa:15924
+callCallback2 @ chunk-RPCDYKBN.js?v=0e1c40fa:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0e1c40fa:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0e1c40fa:3733
+beginWork$1 @ chunk-RPCDYKBN.js?v=0e1c40fa:19765
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0e1c40fa:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0e1c40fa:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0e1c40fa:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+flushSync @ chunk-RPCDYKBN.js?v=0e1c40fa:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0e1c40fa:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ ModerationDecisions.tsx:499
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+ModerationDecisions.tsx:149 Uncaught ReferenceError: RefreshCw is not defined
+    at ModerationDecisions (ModerationDecisions.tsx:149:36)
+    at renderWithHooks (chunk-RPCDYKBN.js:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js:14582:28)
+    at beginWork (chunk-RPCDYKBN.js:15924:22)
+    at HTMLUnknownElement.callCallback2 (chunk-RPCDYKBN.js:3674:22)
+    at Object.invokeGuardedCallbackDev (chunk-RPCDYKBN.js:3699:24)
+    at invokeGuardedCallback (chunk-RPCDYKBN.js:3733:39)
+    at beginWork$1 (chunk-RPCDYKBN.js:19765:15)
+    at performUnitOfWork (chunk-RPCDYKBN.js:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js:19137:13)
+ModerationDecisions @ ModerationDecisions.tsx?t=1749921484774:149
+renderWithHooks @ chunk-RPCDYKBN.js?v=0e1c40fa:11548
+updateFunctionComponent @ chunk-RPCDYKBN.js?v=0e1c40fa:14582
+beginWork @ chunk-RPCDYKBN.js?v=0e1c40fa:15924
+callCallback2 @ chunk-RPCDYKBN.js?v=0e1c40fa:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0e1c40fa:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0e1c40fa:3733
+beginWork$1 @ chunk-RPCDYKBN.js?v=0e1c40fa:19765
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0e1c40fa:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0e1c40fa:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0e1c40fa:19116
+recoverFromConcurrentError @ chunk-RPCDYKBN.js?v=0e1c40fa:18736
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18879
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+flushSync @ chunk-RPCDYKBN.js?v=0e1c40fa:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0e1c40fa:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ ModerationDecisions.tsx:499
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 The above error occurred in the <ModerationDecisions> component:
+
+    at ModerationDecisions (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/ModerationDecisions.tsx?t=1749921484774:31:39)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0e1c40fa:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=0e1c40fa:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=0e1c40fa:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=0e1c40fa:63:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=0e1c40fa:2805:3)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+Mt.forEach.n.<computed> @ Console.js:61
+logCapturedError @ chunk-RPCDYKBN.js?v=0e1c40fa:14032
+update.callback @ chunk-RPCDYKBN.js?v=0e1c40fa:14052
+callCallback @ chunk-RPCDYKBN.js?v=0e1c40fa:11248
+commitUpdateQueue @ chunk-RPCDYKBN.js?v=0e1c40fa:11265
+commitLayoutEffectOnFiber @ chunk-RPCDYKBN.js?v=0e1c40fa:17093
+commitLayoutMountEffects_complete @ chunk-RPCDYKBN.js?v=0e1c40fa:17980
+commitLayoutEffects_begin @ chunk-RPCDYKBN.js?v=0e1c40fa:17969
+commitLayoutEffects @ chunk-RPCDYKBN.js?v=0e1c40fa:17920
+commitRootImpl @ chunk-RPCDYKBN.js?v=0e1c40fa:19353
+commitRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:19277
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18895
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+flushSync @ chunk-RPCDYKBN.js?v=0e1c40fa:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0e1c40fa:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ ModerationDecisions.tsx:499
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+ModerationDecisions.tsx:149 Uncaught (in promise) ReferenceError: RefreshCw is not defined
+    at ModerationDecisions (ModerationDecisions.tsx:149:36)
+    at renderWithHooks (chunk-RPCDYKBN.js:11548:26)
+    at updateFunctionComponent (chunk-RPCDYKBN.js:14582:28)
+    at beginWork (chunk-RPCDYKBN.js:15924:22)
+    at beginWork$1 (chunk-RPCDYKBN.js:19753:22)
+    at performUnitOfWork (chunk-RPCDYKBN.js:19198:20)
+    at workLoopSync (chunk-RPCDYKBN.js:19137:13)
+    at renderRootSync (chunk-RPCDYKBN.js:19116:15)
+    at recoverFromConcurrentError (chunk-RPCDYKBN.js:18736:28)
+    at performSyncWorkOnRoot (chunk-RPCDYKBN.js:18879:28)
+ModerationDecisions @ ModerationDecisions.tsx?t=1749921484774:149
+renderWithHooks @ chunk-RPCDYKBN.js?v=0e1c40fa:11548
+updateFunctionComponent @ chunk-RPCDYKBN.js?v=0e1c40fa:14582
+beginWork @ chunk-RPCDYKBN.js?v=0e1c40fa:15924
+beginWork$1 @ chunk-RPCDYKBN.js?v=0e1c40fa:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=0e1c40fa:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=0e1c40fa:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=0e1c40fa:19116
+recoverFromConcurrentError @ chunk-RPCDYKBN.js?v=0e1c40fa:18736
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=0e1c40fa:18879
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=0e1c40fa:9119
+flushSync @ chunk-RPCDYKBN.js?v=0e1c40fa:18959
+scheduleRefresh @ chunk-RPCDYKBN.js?v=0e1c40fa:20004
+(anonymous) @ @react-refresh:267
+performReactRefresh @ @react-refresh:256
+(anonymous) @ @react-refresh:677
+setTimeout
+(anonymous) @ @react-refresh:666
+validateRefreshBoundaryAndEnqueueUpdate @ @react-refresh:728
+(anonymous) @ ModerationDecisions.tsx:499
+(anonymous) @ client:34
+(anonymous) @ client:218
+(anonymous) @ client:193
+queueUpdate @ client:193
+await in queueUpdate
+(anonymous) @ client:642
+handleMessage @ client:640
+(anonymous) @ client:550Understand this error
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 [vite] server connection lost. Polling for restart...
+eruda.js:2 [vite] server connection lost. Polling for restart...

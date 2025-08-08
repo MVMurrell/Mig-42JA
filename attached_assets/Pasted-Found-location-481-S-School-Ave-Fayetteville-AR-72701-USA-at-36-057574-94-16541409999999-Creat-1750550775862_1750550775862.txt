@@ -1,0 +1,146 @@
+Found location: 481 S School Ave, Fayetteville, AR 72701, USA at 36.057574, -94.16541409999999
+CreateQuestModal.tsx:321 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/upload/image 500 (Internal Server Error)
+window.fetch @ Network.js:219
+uploadImage @ CreateQuestModal.tsx:321
+onSubmit @ CreateQuestModal.tsx:352
+(anonymous) @ chunk-4BFJKWC4.js?v=0ebd7e91:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+Console.js:61 Error creating quest: Error: Failed to upload image
+    at uploadImage (CreateQuestModal.tsx:327:13)
+    at async onSubmit (CreateQuestModal.tsx:352:20)
+    at async chunk-4BFJKWC4.js?v=0ebd7e91:1465:9
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:364
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0ebd7e91:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+CreateQuestModal.tsx:321 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/upload/image net::ERR_CONNECTION_RESET 500 (Internal Server Error)
+window.fetch @ Network.js:219
+uploadImage @ CreateQuestModal.tsx:321
+onSubmit @ CreateQuestModal.tsx:352
+(anonymous) @ chunk-4BFJKWC4.js?v=0ebd7e91:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+CreateQuestModal.tsx:321 
+            
+            
+           POST https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/api/upload/image net::ERR_CONNECTION_RESET 500 (Internal Server Error)
+window.fetch @ Network.js:219
+uploadImage @ CreateQuestModal.tsx:321
+onSubmit @ CreateQuestModal.tsx:352
+(anonymous) @ chunk-4BFJKWC4.js?v=0ebd7e91:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+Console.js:61 Error creating quest: Error: Failed to upload image
+    at uploadImage (CreateQuestModal.tsx:327:13)
+    at async onSubmit (CreateQuestModal.tsx:352:20)
+    at async chunk-4BFJKWC4.js?v=0ebd7e91:1465:9
+Mt.forEach.n.<computed> @ Console.js:61
+onSubmit @ CreateQuestModal.tsx:364
+await in onSubmit
+(anonymous) @ chunk-4BFJKWC4.js?v=0ebd7e91:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error
+request.js:148 Uncaught (in promise) TypeError: Failed to fetch
+    at request.js:148:17
+(anonymous) @ request.js:148
+Promise.then
+t.send @ request.js:145
+window.fetch @ Network.js:220
+uploadImage @ CreateQuestModal.tsx:321
+onSubmit @ CreateQuestModal.tsx:352
+(anonymous) @ chunk-4BFJKWC4.js?v=0ebd7e91:1465
+await in (anonymous)
+callCallback2 @ chunk-RPCDYKBN.js?v=0ebd7e91:3674
+invokeGuardedCallbackDev @ chunk-RPCDYKBN.js?v=0ebd7e91:3699
+invokeGuardedCallback @ chunk-RPCDYKBN.js?v=0ebd7e91:3733
+invokeGuardedCallbackAndCatchFirstError @ chunk-RPCDYKBN.js?v=0ebd7e91:3736
+executeDispatch @ chunk-RPCDYKBN.js?v=0ebd7e91:7014
+processDispatchQueueItemsInOrder @ chunk-RPCDYKBN.js?v=0ebd7e91:7034
+processDispatchQueue @ chunk-RPCDYKBN.js?v=0ebd7e91:7043
+dispatchEventsForPlugins @ chunk-RPCDYKBN.js?v=0ebd7e91:7051
+(anonymous) @ chunk-RPCDYKBN.js?v=0ebd7e91:7174
+batchedUpdates$1 @ chunk-RPCDYKBN.js?v=0ebd7e91:18913
+batchedUpdates @ chunk-RPCDYKBN.js?v=0ebd7e91:3579
+dispatchEventForPluginEventSystem @ chunk-RPCDYKBN.js?v=0ebd7e91:7173
+dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay @ chunk-RPCDYKBN.js?v=0ebd7e91:5478
+dispatchEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5472
+dispatchDiscreteEvent @ chunk-RPCDYKBN.js?v=0ebd7e91:5449Understand this error

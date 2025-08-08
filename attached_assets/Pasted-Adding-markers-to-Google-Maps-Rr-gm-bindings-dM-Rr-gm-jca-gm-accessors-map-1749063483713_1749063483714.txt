@@ -1,0 +1,40 @@
+Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Marker clicked for video: 550e8400-e29b-41d4-a716-446655440001 Test Unwatched Video 1
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: null
+Console.js:61 Using clicked marker video: 550e8400-e29b-41d4-a716-446655440001
+Console.js:61 handleVideoClick called with video: 550e8400-e29b-41d4-a716-446655440001
+Console.js:61 Current targetVideoId: null
+Console.js:61 VideoPlayer: isPlaying=true
+Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+4Console.js:61 Marked video 550e8400-e29b-41d4-a716-446655440001 as watched
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Pausing video
+Console.js:61 Navigate to map for video: {id: 'c523e750-c235-4624-8772-0024fff8df9b', title: 'Amazing Sunset at Venice Beach', description: 'Caught this incredible sunset while walking along Venice Beach boardwalk', category: 'travel', latitude: '34.01950000', …}
+Console.js:61 Navigating to map for video: {id: 'c523e750-c235-4624-8772-0024fff8df9b', title: 'Amazing Sunset at Venice Beach', description: 'Caught this incredible sunset while walking along Venice Beach boardwalk', category: 'travel', latitude: '34.01950000', …}
+Console.js:61 Setting targetVideoId to: c523e750-c235-4624-8772-0024fff8df9b
+Console.js:61 Updated persistent target video ID: c523e750-c235-4624-8772-0024fff8df9b
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Cleared highlightedVideoId, but keeping targetVideoId: c523e750-c235-4624-8772-0024fff8df9b
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 Marker clicked for video: 3323664d-57cd-45f4-a493-31dfae918380 Beach Volleyball Tournament
+Console.js:61 Target video ID (prop): null
+Console.js:61 Persistent target video ID: c523e750-c235-4624-8772-0024fff8df9b
+Console.js:61 Found target video: c523e750-c235-4624-8772-0024fff8df9b Amazing Sunset at Venice Beach
+Console.js:61 Location match check: {targetLat: '34.01950000', targetLng: '-118.49120000', clickedLat: '34.01950000', clickedLng: '-118.49120000', match: true}
+Console.js:61 Using target video: c523e750-c235-4624-8772-0024fff8df9b
+Console.js:61 handleVideoClick called with video: c523e750-c235-4624-8772-0024fff8df9b
+Console.js:61 Current targetVideoId: null
+Console.js:61 handlePayAndPlay called, selectedVideo: {id: 'c523e750-c235-4624-8772-0024fff8df9b', title: 'Amazing Sunset at Venice Beach', description: 'Caught this incredible sunset while walking along Venice Beach boardwalk', category: 'travel', latitude: '34.01950000', …}
+Console.js:61 Opening video player after payment
+Console.js:61 VideoPlayer: isPlaying=true
+2Console.js:61 Video https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 can play - format is supported
+Console.js:61 Starting video, readyState: 4
+Console.js:61 Successfully started video
+5Console.js:61 Marked video c523e750-c235-4624-8772-0024fff8df9b as watched
+Console.js:61 Adding markers to Google Maps: _.Rr {gm_bindings_: {…}, dM: _.Rr, __gm: jca, gm_accessors_: {…}, mapCapabilities: {…}, …}
+Console.js:61 VideoPlayer: isPlaying=false
+Console.js:61 Pausing video

@@ -1,0 +1,48 @@
+Warning: Encountered two children with the same key, `group_550e8400-e29b-41d4-a716-446655440002`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+    at select
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=33a24d51:79:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-2K77HOHX.js?v=33a24d51:56:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-D7OHDVF4.js?v=33a24d51:42:13
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-7BCV3LNX.js?v=33a24d51:37:20
+    at https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-select.js?v=33a24d51:1131:13
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=33a24d51:38:15)
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=33a24d51:38:15)
+    at Popper (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-RCZDM3V7.js?v=33a24d51:1921:11)
+    at Select (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-select.js?v=33a24d51:88:5)
+    at div
+    at form
+    at div
+    at div
+    at div
+    at div
+    at VideoUploadModal (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/VideoUploadModal.tsx:42:44)
+    at div
+    at Home (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/pages/home.tsx:92:44)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=33a24d51:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=33a24d51:321:17)
+    at AuthCheck (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/src/components/AuthCheck.tsx:21:37)
+    at Route (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=33a24d51:265:16)
+    at Switch (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/wouter.js?v=33a24d51:321:17)
+    at Router
+    at Provider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/chunk-OXZDJRWN.js?v=33a24d51:38:15)
+    at TooltipProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@radix-ui_react-tooltip.js?v=33a24d51:64:5)
+    at QueryClientProvider (https://b0005152-2369-429c-b74b-ddc8ecf0fc24-00-1xknbi8eytqcw.worf.replit.dev/@fs/home/runner/workspace/node_modules/.vite/deps/@tanstack_react-query.js?v=33a24d51:2805:3)
+    at App
+Mt.forEach.n.<computed> @ Console.js:61
+printWarning @ chunk-RPCDYKBN.js?v=33a24d51:521
+error @ chunk-RPCDYKBN.js?v=33a24d51:505
+warnOnInvalidKey @ chunk-RPCDYKBN.js?v=33a24d51:10219
+reconcileChildrenArray @ chunk-RPCDYKBN.js?v=33a24d51:10235
+reconcileChildFibers2 @ chunk-RPCDYKBN.js?v=33a24d51:10559
+reconcileChildren @ chunk-RPCDYKBN.js?v=33a24d51:14292
+updateFragment @ chunk-RPCDYKBN.js?v=33a24d51:14522
+beginWork @ chunk-RPCDYKBN.js?v=33a24d51:15949
+beginWork$1 @ chunk-RPCDYKBN.js?v=33a24d51:19753
+performUnitOfWork @ chunk-RPCDYKBN.js?v=33a24d51:19198
+workLoopSync @ chunk-RPCDYKBN.js?v=33a24d51:19137
+renderRootSync @ chunk-RPCDYKBN.js?v=33a24d51:19116
+performSyncWorkOnRoot @ chunk-RPCDYKBN.js?v=33a24d51:18874
+flushSyncCallbacks @ chunk-RPCDYKBN.js?v=33a24d51:9119
+(anonymous) @ chunk-RPCDYKBN.js?v=33a24d51:18627Understand this error
+Console.js:61 Adding quest markers to Google Maps: 1 quests
+Console.js:61 Updated existing quest marker for: lipstick
