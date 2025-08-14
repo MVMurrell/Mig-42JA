@@ -2,6 +2,8 @@
  * Lantern Map Interface Component
  * Full-page map interface for lantern activation workflow
  */
+/// <reference types="@types/google.maps" />
+
 
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import { Button } from '@/components/ui/button.tsx';
@@ -15,6 +17,7 @@ import { apiRequest } from '@/lib/queryClient.ts';
 import { Loader } from "@googlemaps/js-api-loader";
 import lanternIcon from '@assets/Lantern2_1752195390568.png';
 import coinIcon from '@assets/state=coins-empty.png';
+type ApiKeyResp = { apiKey: string };
 
 const defaultCenter = {
   lat: 36.0571829,
@@ -30,11 +33,13 @@ interface LanternMapInterfaceProps {
 export function LanternMapInterface({ isOpen, onClose, userProfile }: LanternMapInterfaceProps) {
   const [map, setMap] = useState<google.maps.Map | null>(null);
   const [lanternPosition, setLanternPosition] = useState<{lat: number, lng: number} | null>(null);
-  const [lanternMarker, setLanternMarker] = useState<google.maps.marker.AdvancedMarkerElement | null>(null);
-  const [radiusCircle, setRadiusCircle] = useState<google.maps.Circle | null>(null);
+  let   [lanternMarker, setLanternMarker] = useState<google.maps.marker.AdvancedMarkerElement | null>(null);
+  let   [radiusCircle, setRadiusCircle] = useState<google.maps.Circle | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
   const [isActivating, setIsActivating] = useState(false);
   const [videosInRange, setVideosInRange] = useState<any[]>([]);
+  const [searchCircle, setSearchCircle] = useState<google.maps.Circle | null>(null);
+
   
   const mapRef = useRef<HTMLDivElement>(null);
   const geocoderRef = useRef<google.maps.Geocoder | null>(null);
@@ -43,67 +48,95 @@ export function LanternMapInterface({ isOpen, onClose, userProfile }: LanternMap
   const queryClient = useQueryClient();
 
   // Get API key
-  const { data: apiKeyData } = useQuery({
-    queryKey: ['/api/config/maps-key'],
+const { data: apiKeyData } = useQuery<ApiKeyResp>({
+  queryKey: ['/api/config/maps-key'],
     staleTime: 30 * 60 * 1000, // 30 minutes
   });
 
   const [isMapLoaded, setIsMapLoaded] = useState(false);
 
+  
   // Initialize Google Maps
-  useEffect(() => {
-    if (!apiKeyData?.apiKey || !mapRef.current) return;
 
-    const initializeMap = async () => {
-      try {
-        const loader = new Loader({
-          apiKey: apiKeyData.apiKey,
-          version: "weekly",
-          libraries: ["places", "geometry", "marker"]
-        });
 
-        await loader.load();
-        
-        const map = new google.maps.Map(mapRef.current!, {
-          center: defaultCenter,
-          zoom: 15,
-          mapId: 'jemzy-map-id',
-          disableDefaultUI: true,
-          zoomControl: true,
-          clickableIcons: false,
-          styles: [
-            {
-              featureType: "poi",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }]
-            }
-          ]
-        });
+useEffect(() => {
+  let cancelled = false;
 
-        setMap(map);
-        setIsMapLoaded(true);
+  (async () => {
+    if (!apiKeyData?.apiKey || mapRef.current) return;
 
-        // Initialize geocoder
-        geocoderRef.current = new google.maps.Geocoder();
+    try {
+      const loader = new Loader({
+        apiKey: apiKeyData.apiKey,
+        version: 'weekly',
+        libraries: ['places', 'geometry', 'marker'],
+      });
 
-        // Add click listener for positioning lantern
-        map.addListener('click', (event: google.maps.MapMouseEvent) => {
-          if (event.latLng) {
-            const position = {
-              lat: event.latLng.lat(),
-              lng: event.latLng.lng()
-            };
-            setLanternPosition(position);
-            updateLanternMarker(position, map);
-          }
-        });
-      } catch (error) {
-        console.error('Error loading Google Maps:', error);
-      }
-    };
+      // 🔑 Wait here so TS knows google exists afterwards
+      await loader.load();
 
-    initializeMap();
-  }, [apiKeyData?.apiKey]);
+      if (cancelled) return;
+
+      const map = new google.maps.Map(mapRef.current!, {
+        center: defaultCenter,
+        zoom: 15,
+        clickableIcons: false,
+        styles: [
+          { featureType: 'poi', elementType: 'labels', stylers: [{ visibility: 'off' }] },
+        ],
+      });
+
+      setMap(map);
+      setIsMapLoaded(true);
+
+      geocoderRef.current = new google.maps.Geocoder();
+
+      map.addListener('click', (e: google.maps.MapMouseEvent) => {
+        if (!e.latLng) return;
+        const pos = { lat: e.latLng.lat(), lng: e.latLng.lng() };
+        setLanternPosition(pos);
+        updateLanternMarker(pos, map);  // see helper below
+      });
+    } catch (err) {
+      console.error('Error loading Google Maps:', err);
+    }
+  })();
+
+  return () => { cancelled = true; };
+}, [apiKeyData?.apiKey]);
+
+
+function updateLanternMarker(
+  position: { lat: number; lng: number },
+  map: google.maps.Map
+) {
+  // marker
+  if (!lanternMarker) {
+    lanternMarker = new google.maps.marker.AdvancedMarkerElement({
+      map,
+      position,
+    });
+  } else {
+    lanternMarker.position = position;
+  }
+
+  // 100ft circle (≈ 30.48m)
+  if (!radiusCircle) {
+    radiusCircle = new google.maps.Circle({
+      map,
+      center: position,
+      radius: 30.48,
+      strokeColor: '#8B5CF6',
+      strokeOpacity: 0.6,
+      strokeWeight: 2,
+      fillColor: '#8B5CF6',
+      fillOpacity: 0.15,
+    });
+  } else {
+    radiusCircle.setCenter(position);
+  }
+}
+
 
   // Set initial lantern position to user's current location
   useEffect(() => {
@@ -244,8 +277,8 @@ export function LanternMapInterface({ isOpen, onClose, userProfile }: LanternMap
       return apiRequest('/api/lanterns/activate', {
         method: 'POST',
         data: {
-          latitude: lanternPosition.lat,
-          longitude: lanternPosition.lng,
+          latitude: lanternPosition!.lat,
+          longitude: lanternPosition!.lng,
           radiusMeters: 30.48 // 100 feet
         }
       });

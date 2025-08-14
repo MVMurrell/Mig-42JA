@@ -11,6 +11,9 @@ import { uploadFirstProcessor } from './uploadFirstProcessor.js';
 import { db } from './db.js';
 import { videos, threadMessages } from '../shared/schema.js';
 import { eq, lt } from 'drizzle-orm';
+type VideoUpdate = Partial<typeof videos.$inferInsert>;
+type ThreadMsgUpdate = Partial<typeof threadMessages.$inferInsert>;
+
 
 interface PendingVideoJob {
   videoId: string;
@@ -265,7 +268,7 @@ class PendingAIProcessor {
           processingStatus: 'failed',
           isActive: false,
           flaggedReason: reason
-        })
+        }as VideoUpdate)
         .where(eq(videos.id, videoId));
         
       console.log(`❌ PENDING-AI-PROCESSOR: Marked video ${videoId} as failed: ${reason}`);
@@ -280,7 +283,7 @@ class PendingAIProcessor {
         .set({
           processingStatus: 'failed',
           flaggedReason: reason
-        })
+        } as ThreadMsgUpdate)
         .where(eq(threadMessages.id, parseInt(messageId)));
         
       console.log(`❌ PENDING-AI-PROCESSOR: Marked thread message ${messageId} as failed: ${reason}`);

@@ -1,6 +1,15 @@
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
+
+export type AppUser = {
+  id: string;
+  username: string | null;
+  profileImageUrl: string | null;
+  email?: string | null;
+  role?: "user" | "admin";
+};
+
 interface User {
   id: string;
   email: string;
@@ -9,6 +18,14 @@ interface User {
   profileImageUrl?: string;
   gemCoins?: number;
 }
+
+type RawUser = {
+  id: string;
+  username?: string | null;
+  profileImageUrl?: string | null;
+  email?: string | null;
+  role?: string | null;
+} | null;
 
 export function useAuth() {
   const [isMobile, setIsMobile] = useState(false);
@@ -25,11 +42,20 @@ export function useAuth() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  const { data: user, isLoading, error } = useQuery<User>({
+ const { data: rawUser } = useQuery<RawUser>({
     queryKey: ["/api/auth/user"],
-    retry: false,
-    refetchOnWindowFocus: true, // Enable refetch on window focus to catch auth state changes
+    refetchOnWindowFocus: true,
   });
+
+    const user: AppUser | null = rawUser
+    ? {
+        id: rawUser.id,
+        username: rawUser.username ?? null,
+        profileImageUrl: rawUser.profileImageUrl ?? null,
+        email: rawUser.email ?? null,
+        role: (rawUser.role as AppUser["role"]) ?? "user",
+      }
+    : null;
 
   // Additional query for authentication status on mobile devices
   const { data: authStatus } = useQuery({
@@ -72,6 +98,7 @@ export function useAuth() {
     });
   }
 
+  
   return {
     user,
     isLoading,
@@ -83,3 +110,5 @@ export function useAuth() {
     logout,
   };
 }
+
+

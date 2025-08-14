@@ -1,5 +1,5 @@
 // TEMP DEBUG TEST
-console.log("users table init check:", users);
+
 
 import { z } from "zod";
 import {
@@ -33,7 +33,8 @@ export const sessions = pgTable(
 // User storage table (required for Replit Auth)
 export const users = pgTable("users", {
   id: varchar("id").primaryKey().notNull(),
-  email: varchar("email").unique(),
+  // email: varchar("email").unique(),
+  email: varchar("email").notNull().unique(),
   firstName: varchar("first_name"),
   lastName: varchar("last_name"),
   profileImageUrl: varchar("profile_image_url"),
@@ -44,14 +45,18 @@ export const users = pgTable("users", {
   lanterns: integer("lanterns").default(5), // New users start with 5 lanterns
   currentXP: integer("current_xp").default(0), // Current XP points
   currentLevel: integer("current_level").default(0), // Current level (starts at 0 - "Noob!")
-  // stripeCustomerId: varchar("stripe_customer_id").unique(),
+  // add near other columns
+  passwordHash: varchar("password_hash"),        // nullable for existing rows; we'll require it for new signups
+  // shared/schema.ts (users)
+  stripeCustomerId: varchar("stripe_customer_id").unique(), // nullable by default; safe for users without Stripe
+
   role: varchar("role").default("user"), // user, moderator, admin
   strikes: integer("strikes").default(0), // Content moderation strikes
   communityGuidelinesAcceptedAt: timestamp("community_guidelines_accepted_at"),
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
-
+console.log("users table init check:", users);
 // Videos table
 export const videos = pgTable("videos", {
   id: uuid("id").primaryKey().defaultRandom(),
@@ -1368,6 +1373,17 @@ export type DBDragonRewardRow = typeof dragonRewards.$inferSelect;
 
 export type DBViolationInsert = typeof violations.$inferInsert;
 export type DBViolationRow = typeof violations.$inferSelect;
+
+export type User = typeof users.$inferSelect;
+export type UserInsert = typeof users.$inferInsert;
+
+export type Notification = typeof notifications.$inferSelect;
+export type NotificationInsert = typeof notifications.$inferInsert;
+
+export type Quest = typeof quests.$inferSelect;
+export type QuestInsert = typeof quests.$inferInsert;
+
+
 
 // import type {
 // 	DBGroupInsert,

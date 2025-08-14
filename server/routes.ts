@@ -3,7 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage.ts";
 import { setupAuth, isAuthenticated } from "./replitAuth.ts";
 import { bunnyService } from "./bunnyService.ts";
-import { videoProcessor } from "./simpleVideoProcessor.ts";
+import * as  videoProcessor  from "./simpleVideoProcessor.ts";
 import { randomUUID } from 'crypto';
 import { writeFile, copyFile } from 'fs/promises';
 import { join } from "node:path";
@@ -21,6 +21,10 @@ import {
 import { z } from "zod";
 import { db } from "./db.ts";
 import { eq, and } from "drizzle-orm";
+import type { DBVideoInsert, DBVideoRow } from "@shared/schema.ts";
+
+
+
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // Add comprehensive request logging middleware to track ALL requests
@@ -294,6 +298,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
           userId: userId,
           processingStatus: 'uploading' // Start with uploading status
         });
+
+      
         
         console.log(`✅ DATABASE: Video ${videoId} created with status: uploading`);
         

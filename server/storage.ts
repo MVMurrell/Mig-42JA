@@ -636,6 +636,7 @@ export class DatabaseStorage implements IStorage {
       .offset(offset);
   }
 
+
   async getVideosByLocation(lat: number, lng: number, radius: number, limit = 20): Promise<DBVideoRow[]> {
     // Simple distance calculation - in production would use PostGIS
     return await db
@@ -886,6 +887,12 @@ export class DatabaseStorage implements IStorage {
       .set({ views: sql`${videos.views} + 1` }as Partial<typeof videos.$inferInsert>)
       .where(eq(videos.id, videoId));
   }
+
+  async  updateVideoProcessingStatus(id: DBVideoRow["id"], status: 'uploading'|'processing'|'failed'|'complete') {
+  await db.update(videos)
+    .set({ processingStatus: status } as Partial<typeof videos.$inferInsert>)
+    .where(eq(videos.id, id));
+}
 
   async markVideoAsWatched(userId: string, videoId: string): Promise<void> {
     console.log('🎬 STORAGE: Checking if video already watched - userId:', userId, 'videoId:', videoId);
@@ -3196,3 +3203,4 @@ const rawDecisions = await query.orderBy(desc(moderationDecisions.createdAt));
 }
 
 export const storage = new DatabaseStorage();
+

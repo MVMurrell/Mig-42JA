@@ -41,23 +41,21 @@ import Collectors from "@/pages/Collectors.tsx";
 import Collecting from "@/pages/Collecting.tsx";
 import VideoSharePage from "@/pages/video-share.tsx";
 import PaymentSuccess from "@/pages/payment-success.tsx";
+import type { AppUser } from "@/types/user";
+import { useAuth } from "@/hooks/useAuth";
 
 
 // OneSignal initialization component
 function OneSignalInit() {
-  const { data: user } = useQuery({ queryKey: ['/api/user'] });
+  const { user } = useAuth(); // user: AppUser | null
 
   useEffect(() => {
     if (user?.id) {
-      // Initialize OneSignal when user is authenticated
       oneSignalService.init().then(() => {
-        // Set external user ID to link OneSignal with your user system
         oneSignalService.setExternalUserId(user.id);
-        
-        // Add user tags for targeted notifications
         oneSignalService.addTags({
           userId: user.id,
-          username: user.username || 'unknown'
+          username: user.username || "unknown",
         });
       });
     }

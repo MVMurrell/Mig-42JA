@@ -10,6 +10,7 @@ import { useToast } from '@/hooks/use-toast.ts';
 import { useLocation } from 'wouter';
 import coinsImage from '@assets/Coins_1752104970427.png';
 import dragonImage from '@assets/Dragon_1752105853943.png';
+type CurrentUser = {id: string; username?: string | null};
 
 interface DragonAttack {
   id: string;
@@ -85,7 +86,7 @@ function AttackerProfile({ attacker, onClose }: { attacker: DragonAttacker; onCl
   const [, setLocation] = useLocation();
 
   // Get current user data to check if this is the current user's profile
-  const { data: currentUser } = useQuery<User>({
+  const { data: currentUser } = useQuery<CurrentUser>({
     queryKey: ["/api/auth/user"],
   });
 

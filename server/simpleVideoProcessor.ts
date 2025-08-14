@@ -15,20 +15,30 @@ interface VideoProcessingJob {
   originalFilename: string;
   frontendDuration?: number;
   userId: string;
-  metadata: {
-    title: string;
-    description?: string;
-    category: string;
-    latitude?: string;
-    longitude?: string;
-    visibility: string;
-    groupId?: string;
-  };
+  metadata?: VideoMetadata;
 }
+
+export type VideoMetadata = {
+  title?: string;
+  description?: string;
+  category?: string;
+  latitude?: string;
+  longitude?: string;
+  visibility?: string;
+  groupId?: string;
+  duration?: number | null;
+  [k: string]: any;
+};
+
 
 class SimpleVideoProcessor {
   private processingQueue: VideoProcessingJob[] = [];
   private isProcessing = false;
+
+ enqueue(job: VideoProcessingJob) {
+    this.processingQueue.push(job);
+    if (!this.isProcessing) void this.processQueue();
+  }
 
   constructor() {
     console.log('Simple Video Processor initialized');
@@ -95,6 +105,7 @@ class SimpleVideoProcessor {
     this.isProcessing = false;
   }
 
+  
   private async processVideo(job: VideoProcessingJob): Promise<void> {
     const { videoId, tempFilePath, metadata } = job;
     
@@ -2138,6 +2149,22 @@ class SimpleVideoProcessor {
       return storage.updateThreadMessageVideo(messageId, videoData);
     }
   };
+
+
 }
 
 export const videoProcessor = new SimpleVideoProcessor();
+
+const singleton = new SimpleVideoProcessor();
+
+export async function processVideo(
+  tempFilePath: string,
+  videoId: string | number,
+  duration?: number | null
+): Promise<void> {
+  singleton.enqueue({
+    videoId: String(videoId),
+    tempFilePath,
+    metadata: { duration },   // now valid
+  });
+}

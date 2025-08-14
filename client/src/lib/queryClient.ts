@@ -34,37 +34,19 @@ async function throwIfResNotOk(res: Response) {
   }
 }
 
-export async function apiRequest(
+export async function apiRequest<T = any>(
   url: string,
-  method: string,
-  data?: unknown | undefined,
-): Promise<any> {
-  // Minimal logging for critical operations only
-
-  try {
-    const res = await fetch(url, {
-      method,
-      headers: data ? { "Content-Type": "application/json" } : {},
-      body: data ? JSON.stringify(data) : undefined,
-      credentials: "include",
-    });
-
-    // Response logging removed for performance
-
-    await throwIfResNotOk(res);
-    
-    // Parse JSON response for all requests
-    try {
-      const jsonData = await res.json();
-      return jsonData;
-    } catch (e) {
-      // If JSON parsing fails, return the response object
-      return res;
-    }
-  } catch (error) {
-    // Error logging simplified for performance
-    throw error;
-  }
+  opts?: { method?: 'GET'|'POST'|'PATCH'|'DELETE'; data?: any }
+): Promise<T> {
+  const { method = 'GET', data } = opts ?? {};
+  const res = await fetch(url, {
+    method,
+    credentials: 'include',
+    headers: data ? { 'Content-Type': 'application/json' } : undefined,
+    body: data ? JSON.stringify(data) : undefined
+  });
+  if (!res.ok) throw new Error(`${res.status}: ${res.statusText}`);
+  return res.json().catch(() => (undefined as any));
 }
 
 type UnauthorizedBehavior = "returnNull" | "throw";
