@@ -28,7 +28,10 @@ import { Pool } from "pg";
 import { eq, and, or, like, ilike, inArray, desc, sql, count, exists, isNotNull, ne, getTableColumns } from "drizzle-orm";
 import { calculateLevelFromXP, calculateXPRequiredForLevel, checkLevelUp } from "@shared/xpSystem.ts";
 
+const pool = new Pool({ connectionString: process.env.DATABASE_URL! });
+export const db = drizzle(pool, { schema });
 // destructure whichever tables you actually use
+
 const {
   users,
   videos,
@@ -54,8 +57,8 @@ const {
   payments,
 } = schema;
 
-const pool = new Pool({ connectionString: process.env.DATABASE_URL! });
-export const db = drizzle(pool, { schema });
+// const pool = new Pool({ connectionString: process.env.DATABASE_URL! });
+// export const db = drizzle(pool, { schema });
 
 
 export interface IStorage {

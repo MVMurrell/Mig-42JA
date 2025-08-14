@@ -10,18 +10,19 @@ import { join } from "node:path";
 import multer from 'multer';
 import { 
   insertVideoSchema, 
-  insertGroupSchema, 
-  insertVideoCommentSchema,
-  insertVideoLikeSchema,
-  insertGroupMembershipSchema,
-  insertUserFollowSchema,
-  insertVideoCollectionSchema,
-  groupMemberships
+  DBVideoRow, DBVideoInsert ,
+  // insertGroupSchema, 
+  // insertVideoCommentSchema,
+  // insertVideoLikeSchema,
+  // insertGroupMembershipSchema,
+  // insertUserFollowSchema,
+  // insertVideoCollectionSchema,
+  // groupMemberships
 } from "@shared/schema.ts";
-import { z } from "zod";
-import { db } from "./db.ts";
-import { eq, and } from "drizzle-orm";
-import type { DBVideoInsert, DBVideoRow } from "@shared/schema.ts";
+// import { z } from "zod";
+// import { db } from "./db.ts";
+// import { eq, and } from "drizzle-orm";
+// import type { } from "@shared/schema.ts";
 
 
 
@@ -283,32 +284,29 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.log(`Created persistent copy: ${persistentFilePath}`);
         
         // Create the video record in the database first
-        const newVideo = await storage.createVideo({
-          id: videoId,
-          title: videoData.title || 'Untitled Video',
-          description: videoData.description || '',
-          videoUrl: videoData.videoUrl, // Store original data initially
-          category: videoData.category || 'general',
-          visibility: videoData.visibility || 'everyone',
-          groupId: videoData.groupId || null,
-          groupName: videoData.groupName || null,
-          latitude: videoData.latitude || null,
-          longitude: videoData.longitude || null,
-          duration: videoData.duration || null,
-          userId: userId,
-          processingStatus: 'uploading' // Start with uploading status
-        });
+       const insertObj: DBVideoInsert = {
+        title: videoData.title ?? "Untitled Video",
+        description: videoData.description ?? "",
+        videoUrl: videoData.videoUrl,        // ok to store data-url for now if that’s your model
+        category: videoData.category ?? "general",
+        visibility: videoData.visibility ?? "everyone",
+        groupId: videoData.groupId ?? null,
+        groupName: videoData.groupName ?? null,
+        latitude: videoData.latitude ?? null,
+        longitude: videoData.longitude ?? null,
+        duration: videoData.duration ?? null,
+        userId,
+        processingStatus: "uploading",
+        };
 
+        const created = await storage.createVideo(insertObj);
+        const dbId = created.id;
       
         
         console.log(`✅ DATABASE: Video ${videoId} created with status: uploading`);
         
         // Return immediately to frontend with video ID
-        res.status(201).json({
-          id: videoId,
-          message: "Video upload started",
-          status: 'uploading'
-        });
+        res.status(202).json({ id: dbId, message: "Video upload started", status: "uploading" });
         
         // Process video asynchronously in the background
         videoProcessor.processVideo(persistentFilePath, videoId, videoData.duration)

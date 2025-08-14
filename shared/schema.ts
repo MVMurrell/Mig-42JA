@@ -14,11 +14,25 @@ import {
   boolean,
   decimal,
   uuid,
+  pgEnum,
 } from "drizzle-orm/pg-core";
 import { relations, eq, and } from "drizzle-orm";
 import { createInsertSchema } from "drizzle-zod";
 
-
+export const processingStatusEnum = pgEnum("processing_status", [
+  "uploading",
+  "processing",
+  "pending_moderation",
+  "approved",
+  "rejected",
+  "failed", 
+  'under_appeal',
+  'flagged_by_user',
+  'completed',
+  'rejected_by_ai',
+  'uploaded',
+  'pending',
+]);
 // Session storage table (required for Replit Auth)
 export const sessions = pgTable(
   "sessions",
@@ -62,7 +76,6 @@ export const videos = pgTable("videos", {
   id: uuid("id").primaryKey().defaultRandom(),
   userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
   title: varchar("title", { length: 255 }).notNull(),
-  description: text("description"),
   videoUrl: text("video_url").notNull(),
   thumbnailUrl: text("thumbnail_url"),
   category: varchar("category", { length: 50 }).notNull(),
@@ -71,12 +84,13 @@ export const videos = pgTable("videos", {
   groupId: uuid("group_id").references(() => groups.id, { onDelete: "cascade" }),
   questId: uuid("quest_id").references(() => quests.id, { onDelete: "cascade" }),
   latitude: decimal("latitude", { precision: 10, scale: 8 }),
+  description: text("description"),
   longitude: decimal("longitude", { precision: 11, scale: 8 }),
   duration: decimal("duration", { precision: 8, scale: 3 }), // in seconds with millisecond precision
   views: integer("views").default(0),
   likes: integer("likes").default(0),
   bunnyVideoId: varchar("bunny_video_id"), // Bunny.net CDN video ID for streaming
-  processingStatus: varchar("processing_status", { length: 30 }).default("processing"), // processing, approved, flagged, appeal_pending, rejected_by_moderation
+  // processingStatus: varchar("processing_status", { length: 30 }).default("processing"), // processing, approved, flagged, appeal_pending, rejected_by_moderation
   playbackStatus: varchar("playback_status", { length: 30 }).default("published"), // published, bunny_upload_failed, bunny_link_broken, unavailable
   moderationResults: text("moderation_results"), // JSON with Google Video AI results
   flaggedReason: text("flagged_reason"), // Reason if flagged
@@ -84,6 +98,8 @@ export const videos = pgTable("videos", {
   bunnyStoragePath: text("bunny_storage_path"), // Bunny.net storage path if flagged
   bunnyReviewVideoId: varchar("bunny_review_video_id"), // Temporary Bunny.net video ID for moderation review
   transcriptionText: text("transcription_text"), // Full transcribed text from audio
+  originalFilename: text("original_filename"),
+  processingStatus: processingStatusEnum("processing_status").notNull().default("uploading"),
   audioModerationStatus: varchar("audio_moderation_status", { length: 20 }).default("pending"), // pending, passed, failed, error
   audioFlagReason: text("audio_flag_reason"), // Specific reason if audio moderation fails
   extractedKeywords: jsonb("extracted_keywords"), // Array of extracted keywords for search
@@ -97,6 +113,9 @@ export const videos = pgTable("videos", {
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
+
+export type DBVideoRow    = typeof videos.$inferSelect;
+export type DBVideoInsert = typeof videos.$inferInsert;
 
 // Video likes table
 export const videoLikes = pgTable("video_likes", {
@@ -1279,8 +1298,8 @@ export const insertModeratorAccessSchema = z.object({
 export type DBUserInsert = typeof users.$inferInsert;
 export type DBUserRow =  typeof users.$inferSelect;
 
-export type DBVideoInsert = typeof videos.$inferInsert;
-export type DBVideoRow = typeof videos.$inferSelect;
+// export type DBVideoInsert = typeof videos.$inferInsert;
+// export type DBVideoRow = typeof videos.$inferSelect;
 export type DBGroupInsert = typeof groups.$inferInsert;
 export type DBGroupRow = typeof groups.$inferSelect;
 
