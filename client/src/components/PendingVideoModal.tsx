@@ -42,7 +42,7 @@ export default function PendingVideoModal({
 
   const updateMutation = useMutation({
     mutationFn: async (updateData: any) => {
-      const response = await apiRequest(`/api/videos/${pendingVideo.id}`, "PATCH", updateData);
+      const response = await apiRequest(`/api/videos/${pendingVideo.id}`, {method:"PATCH", data: updateData});
       return response.json();
     },
     onSuccess: () => {
@@ -66,7 +66,7 @@ export default function PendingVideoModal({
   const cancelMutation = useMutation({
     mutationFn: async () => {
       console.log(`🔥 CLIENT: Starting deletion of video ${pendingVideo.id}`);
-      const response = await apiRequest(`/api/videos/${pendingVideo.id}`, "DELETE");
+      const response = await apiRequest(`/api/videos/${pendingVideo.id}`, {method: "DELETE"});
       console.log(`🔥 CLIENT: DELETE response status: ${response.status}`);
       
       if (!response.ok) {

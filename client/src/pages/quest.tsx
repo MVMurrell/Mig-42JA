@@ -9,9 +9,9 @@ import { MapPin, Users, Clock, Coins, Plus, Target } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import { CreateQuestModal } from '@/components/CreateQuestModal.tsx';
 import { QuestDetailModal } from '@/components/QuestDetailModal.tsx';
-import type { Quest } from '@shared/schema.ts';
+import type { DBQuestRow } from '@shared/schema.ts';
 
-interface QuestWithProgress extends Quest {
+interface QuestWithProgress extends DBQuestRow {
   participantCount: number;
   progressPercentage: number;
   isParticipating: boolean;

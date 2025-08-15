@@ -47,8 +47,8 @@ import FlagButton from "./FlagButton.tsx";
 import HLSVideoPlayer from "./HLSVideoPlayer.tsx";
 import Hls from 'hls.js';
 import { formatDistance } from "@/lib/distanceUtils.ts";
-import type { User } from '@shared/schema.ts';
-const { data: currentUser } = useQuery<User>({ queryKey: ['/api/auth/user'] });
+import type { DBUserRow } from '@shared/schema.ts';
+const { data: currentUser } = useQuery<DBUserRow>({ queryKey: ['/api/auth/user'] });
 import type { AppUser } from "@/hooks/useAuth";
 
 // Video Scrubber Component for fullscreen video comments

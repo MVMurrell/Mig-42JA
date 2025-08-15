@@ -41,11 +41,11 @@ export function LanternAdRewardModal({ isOpen, onClose, adType, onLanternsEarned
   // Ad reward mutation
   const claimLanternRewardMutation = useMutation({
     mutationFn: async ({ adType, adDuration }: { adType: string; adDuration: number }) => {
-      return await apiRequest('/api/ad-rewards/watch', 'POST', { 
+      return await apiRequest('/api/ad-rewards/watch',{ method: 'POST', data: { 
         adType: `${adDuration}s`,
         rewardType: 'lanterns',
         amount: currentConfig?.lanterns || 1
-      });
+      }});
     },
     onSuccess: (response) => {
       queryClient.invalidateQueries({ queryKey: ["/api/users/me/profile"] });

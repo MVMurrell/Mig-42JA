@@ -4,12 +4,12 @@ import { Bell } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button.tsx";
 import { Badge } from "@/components/ui/badge.tsx";
-import type { Notification } from "@shared/schema.ts";
+import type { DBNotificationRow } from "@shared/schema.ts";
 
 export function NotificationBell() {
   const { user } = useAuth();
 
-  const { data: notifications = [] } = useQuery<Notification[]>({
+  const { data: notifications = [] } = useQuery<DBNotificationRow[]>({
     queryKey: ['/api/notifications'],
     enabled: !!user,
     refetchInterval: 30000, // Refresh every 30 seconds

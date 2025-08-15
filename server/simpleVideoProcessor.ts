@@ -8,6 +8,8 @@ import { bunnyService } from './bunnyService.js';
 import { Storage } from '@google-cloud/storage';
 import { VideoIntelligenceServiceClient } from '@google-cloud/video-intelligence';
 import { audioProcessingService } from './audioProcessingService.js';
+ type DBVideoRow    = typeof videos.$inferSelect;
+type DBVideoInsert = typeof videos.$inferInsert;
 
 interface VideoProcessingJob {
   videoId: string;
@@ -671,7 +673,7 @@ class SimpleVideoProcessor {
       // Upload recovered file to Bunny.net
       const recoveredBuffer = await readFile(outputPath);
       const bunnyVideoId = await bunnyService.uploadVideo(recoveredBuffer, `${videoId}.mp4`);
-      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
       console.log(`✅ Recovered file uploaded to Bunny.net: ${bunnyVideoId}`);
       
       // Clean up recovered file
@@ -692,9 +694,9 @@ class SimpleVideoProcessor {
         visibility: metadata.visibility,
         groupId: metadata.groupId,
         isActive: false
-      }).where(eq(videos.id, videoId));
+      }as Partial<DBVideoInsert>).where(eq(videos.id, videoId));
       
-      this.pollBunnyNetAndModerate(videoId, bunnyVideoId, gcsUri, cdnUrl).catch((error) => {
+      this.pollBunnyNetAndModerate(videoId, bunnyVideoId.thumbnailUrl, gcsUri, cdnUrl).catch((error) => {
         this.markVideoAsFailed(videoId, `Processing failed: ${error.message}`);
       });
       
@@ -724,7 +726,7 @@ class SimpleVideoProcessor {
           console.log(`✅ MP4 repair successful, using repaired file for ${videoId}`);
           const repairedBuffer = await readFile(repairedPath);
           const bunnyVideoId = await bunnyService.uploadVideo(repairedBuffer, `${videoId}.mp4`);
-          const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+          const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
           console.log(`✅ Repaired MP4 uploaded to Bunny.net: ${bunnyVideoId}`);
           
           // Clean up repaired file
@@ -745,9 +747,9 @@ class SimpleVideoProcessor {
             visibility: metadata.visibility,
             groupId: metadata.groupId,
             isActive: false
-          }).where(eq(videos.id, videoId));
+          } as Partial<DBVideoInsert>).where(eq(videos.id, videoId));
           
-          this.pollBunnyNetAndModerate(videoId, bunnyVideoId, gcsUri, cdnUrl).catch((error) => {
+          this.pollBunnyNetAndModerate(videoId, bunnyVideoId.videoId, gcsUri, cdnUrl).catch((error) => {
             this.markVideoAsFailed(videoId, `Processing failed: ${error.message}`);
           });
           
@@ -760,7 +762,7 @@ class SimpleVideoProcessor {
       // STEP 2: Upload validated MP4 directly to Bunny.net
       console.log(`Uploading validated MP4 directly to Bunny.net for ${videoId}`);
       const bunnyVideoId = await bunnyService.uploadVideo(videoBuffer, `${videoId}.mp4`);
-      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
       console.log(`✅ MP4 uploaded to Bunny.net: ${bunnyVideoId}`);
       
       // STEP 2: Upload to Google Cloud Storage for moderation
@@ -783,12 +785,12 @@ class SimpleVideoProcessor {
           visibility: metadata.visibility,
           groupId: metadata.groupId,
           isActive: false
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
 
       // STEP 4: Start processing pipeline
       console.log(`Starting processing pipeline for MP4 ${videoId}`);
-      this.pollBunnyNetAndModerate(videoId, bunnyVideoId, gcsUri, cdnUrl).catch((error) => {
+      this.pollBunnyNetAndModerate(videoId, bunnyVideoId.videoId, gcsUri, cdnUrl).catch((error) => {
         console.error(`Processing pipeline failed for ${videoId}:`, error);
         this.markVideoAsFailed(videoId, `Processing failed: ${error.message}`);
       });
@@ -840,12 +842,12 @@ class SimpleVideoProcessor {
           visibility: metadata.visibility,
           groupId: metadata.groupId,
           isActive: false // Will be activated only after both moderations pass
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
       
       // Step 6: Start enhanced processing pipeline with concurrent audio and video moderation
       console.log(`🔄 Starting enhanced moderation pipeline for ${videoId}`);
-      this.pollBunnyNetAndModerate(videoId, bunnyVideoId, gcsUri, cdnUrl).catch((error) => {
+      this.pollBunnyNetAndModerate(videoId, bunnyVideoId.videoId, gcsUri, cdnUrl).catch((error) => {
         console.error(`Enhanced processing pipeline failed for ${videoId}:`, error);
         this.markVideoAsFailed(videoId, `Enhanced pipeline failed: ${error.message}`);
       });
@@ -866,7 +868,7 @@ class SimpleVideoProcessor {
       // Step 1: Upload to Bunny.net for CDN streaming
       const videoBuffer = await readFile(videoPath);
       const bunnyVideoId = await bunnyService.uploadVideo(videoBuffer, `${videoId}.mp4`);
-      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
       console.log(`✅ Bunny.net upload completed: ${bunnyVideoId}`);
       
       // Step 2: Generate thumbnail automatically
@@ -893,12 +895,12 @@ class SimpleVideoProcessor {
           visibility: metadata.visibility,
           groupId: metadata.groupId,
           isActive: false // Will be activated only after both moderations pass
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
       
       // Step 5: Start enhanced processing pipeline with concurrent audio and video moderation
       console.log(`🔄 Starting enhanced moderation pipeline for ${videoId}`);
-      this.pollBunnyNetAndModerate(videoId, bunnyVideoId, gcsUri, cdnUrl).catch((error) => {
+      this.pollBunnyNetAndModerate(videoId, bunnyVideoId.videoId, gcsUri, cdnUrl).catch((error) => {
         console.error(`Enhanced processing pipeline failed for ${videoId}:`, error);
         this.markVideoAsFailed(videoId, `Enhanced pipeline failed: ${error.message}`);
       });
@@ -939,7 +941,7 @@ class SimpleVideoProcessor {
         
         const videoBuffer = await readFile(processedVideoPath);
         const bunnyVideoId = await bunnyService.uploadVideo(videoBuffer, `${videoId}.mp4`);
-        const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+        const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
         console.log(`✅ BUNNY.NET UPLOAD: Successful upload: ${bunnyVideoId}`);
         console.log(`🔗 BUNNY.NET CDN URL: ${cdnUrl}`);
         
@@ -962,7 +964,7 @@ class SimpleVideoProcessor {
               approved: true, 
               pipeline: 'complete'
             })
-          })
+          }as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
           
         console.log(`✅ DATABASE: Video ${videoId} marked as APPROVED and PUBLISHED`);
@@ -987,7 +989,7 @@ class SimpleVideoProcessor {
               approved: false, 
               pipeline: 'complete'
             })
-          })
+          } as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
           
         console.log(`✅ DATABASE: Video ${videoId} marked as REJECTED_BY_MODERATION`);
@@ -1151,7 +1153,7 @@ class SimpleVideoProcessor {
             audioFlagReason: audioResult.flagReason,
             extractedKeywords: JSON.stringify(audioResult.extractedKeywords),
             isActive: false
-          })
+          } as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
           
         console.log(`✗ Video ${videoId} FLAGGED - ${flagReason}`);
@@ -1606,7 +1608,7 @@ class SimpleVideoProcessor {
           processingStatus: 'failed',
           flaggedReason: errorMessage,
           isActive: false
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
       
       console.log(`Video ${videoId} marked as failed in database`);

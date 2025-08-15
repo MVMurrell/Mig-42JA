@@ -2,13 +2,20 @@ import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
 
-export type AppUser = {
+  export type AppUser = {
   id: string;
   username: string | null;
+  firstName?: string | null;
+  lastName?: string | null;
   profileImageUrl: string | null;
   email?: string | null;
   role?: "user" | "admin";
 };
+
+export function useAuth() {
+  const [isMobile, setIsMobile] = useState(false);
+
+
 
 interface User {
   id: string;
@@ -26,9 +33,6 @@ type RawUser = {
   email?: string | null;
   role?: string | null;
 } | null;
-
-export function useAuth() {
-  const [isMobile, setIsMobile] = useState(false);
   
   // Detect mobile device
   useEffect(() => {
@@ -42,20 +46,20 @@ export function useAuth() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
- const { data: rawUser } = useQuery<RawUser>({
-    queryKey: ["/api/auth/user"],
-    refetchOnWindowFocus: true,
-  });
+const { data: rawUser, isLoading: userLoading, error } = useQuery<RawUser>({
+  queryKey: ["/api/auth/user"],
+  refetchOnWindowFocus: true,
+});
 
-    const user: AppUser | null = rawUser
-    ? {
-        id: rawUser.id,
-        username: rawUser.username ?? null,
-        profileImageUrl: rawUser.profileImageUrl ?? null,
-        email: rawUser.email ?? null,
-        role: (rawUser.role as AppUser["role"]) ?? "user",
-      }
-    : null;
+  const { isLoading: authStatusLoading } = useQuery({ queryKey: ["/api/auth/status"], enabled: isMobile, retry: false, refetchInterval: 30000 });
+
+    const user: AppUser | null = rawUser ? {
+  id: rawUser.id,
+  username: rawUser.username ?? null,
+  profileImageUrl: rawUser.profileImageUrl ?? null,
+  email: rawUser.email ?? null,
+  role: (rawUser.role as AppUser["role"]) ?? "user",
+} : null;
 
   // Additional query for authentication status on mobile devices
   const { data: authStatus } = useQuery({
@@ -97,6 +101,8 @@ export function useAuth() {
       finalAuth: isAuthenticated
     });
   }
+
+  const isLoading = userLoading || (isMobile && authStatusLoading);
 
   
   return {

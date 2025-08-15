@@ -27,7 +27,7 @@ export default function CoinPaymentModal({ video, onClose, onPayAndPlay, onOpenC
 
   const spendCoinMutation = useMutation({
     mutationFn: async () => {
-      return await apiRequest(`/api/videos/${video.id}/purchase`, "POST");
+      return await apiRequest(`/api/videos/${video.id}/purchase`, {method: "POST"});
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/auth/user"] });

@@ -34,20 +34,50 @@ async function throwIfResNotOk(res: Response) {
   }
 }
 
+// queryClient.ts (or wherever apiRequest lives)
+
+// ----- Overloads (keep while you migrate) -----
+/** @deprecated Use apiRequest(url, { method, data }) */
 export async function apiRequest<T = any>(
   url: string,
-  opts?: { method?: 'GET'|'POST'|'PATCH'|'DELETE'; data?: any }
+  method: "GET" | "POST" | "PUT" | "PATCH" | "DELETE"
+): Promise<T>;
+/** @deprecated Use apiRequest(url, { method, data }) */
+export async function apiRequest<T = any>(
+  url: string,
+  method: "POST" | "PUT" | "PATCH" | "DELETE",
+  data: any
+): Promise<T>;
+export async function apiRequest<T = any>(
+  url: string,
+  opts?: { method?: "GET" | "POST" | "PUT" | "PATCH" | "DELETE"; data?: any }
+): Promise<T>;
+
+// ----- Single implementation -----
+export async function apiRequest<T = any>(
+  url: string,
+  mOrOpts?: any,
+  maybeData?: any
 ): Promise<T> {
-  const { method = 'GET', data } = opts ?? {};
+  const opts =
+    typeof mOrOpts === "string"
+      ? { method: mOrOpts as "GET" | "POST" | "PUT" | "PATCH" | "DELETE", data: maybeData }
+      : (mOrOpts ?? {});
+
+  const method = (opts.method ?? "GET") as "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+  const data = opts.data;
+
   const res = await fetch(url, {
     method,
-    credentials: 'include',
-    headers: data ? { 'Content-Type': 'application/json' } : undefined,
-    body: data ? JSON.stringify(data) : undefined
+    credentials: "include",
+    headers: data && method !== "GET" ? { "Content-Type": "application/json" } : undefined,
+    body: data && method !== "GET" ? JSON.stringify(data) : undefined,
   });
+
   if (!res.ok) throw new Error(`${res.status}: ${res.statusText}`);
   return res.json().catch(() => (undefined as any));
 }
+
 
 type UnauthorizedBehavior = "returnNull" | "throw";
 export const getQueryFn: <T>(options: {

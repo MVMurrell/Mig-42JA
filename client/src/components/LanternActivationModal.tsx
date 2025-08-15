@@ -62,7 +62,7 @@ export function LanternActivationModal({ isOpen, onClose, userProfile }: Lantern
       
       const response = await apiRequest(
         `/api/videos/nearby?lat=${lanternPosition.lat}&lng=${lanternPosition.lng}&radius=100&limit=50`,
-        'GET'
+        {method: 'GET'}
       );
       return response;
     },
@@ -75,11 +75,11 @@ export function LanternActivationModal({ isOpen, onClose, userProfile }: Lantern
     mutationFn: async () => {
       if (!lanternPosition) throw new Error('No lantern position set');
       
-      const response = await apiRequest('/api/lanterns/activate', 'POST', {
+      const response = await apiRequest('/api/lanterns/activate', { method: 'POST', data: {
         latitude: lanternPosition.lat,
         longitude: lanternPosition.lng,
         costCoins: 3
-      });
+      }});
       return response;
     },
     onSuccess: (data) => {

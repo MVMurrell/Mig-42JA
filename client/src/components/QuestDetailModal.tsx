@@ -22,9 +22,9 @@ import {
   AlertDialogHeader,
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog.tsx";
-import type { Quest } from '@shared/schema.ts';
+import type { DBQuestRow } from '@shared/schema.ts';
 
-interface QuestWithProgress extends Quest {
+interface QuestWithProgress extends DBQuestRow {
   participantCount: number;
   progressPercentage: number;
   isParticipating: boolean;
@@ -133,7 +133,7 @@ export function QuestDetailModal({ isOpen, onClose, quest }: QuestDetailModalPro
   const leaveQuestMutation = useMutation({
     mutationFn: async () => {
       console.log('Making API request to leave quest:', quest.id);
-      const response = await apiRequest(`/api/quests/${quest.id}/leave`, 'DELETE');
+      const response = await apiRequest(`/api/quests/${quest.id}/leave`, {method:'DELETE'});
       console.log('Leave quest API response:', response);
       return response;
     },
@@ -168,7 +168,7 @@ export function QuestDetailModal({ isOpen, onClose, quest }: QuestDetailModalPro
 
   const sendMessageMutation = useMutation({
     mutationFn: async (message: string) => {
-      return apiRequest(`/api/quests/${quest.id}/messages`, 'POST', { message });
+      return apiRequest(`/api/quests/${quest.id}/messages`, {method: 'POST',  data: message });
     },
     onSuccess: () => {
       setNewMessage('');

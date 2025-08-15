@@ -15,10 +15,11 @@ import {
   userLocationHistory, 
   distanceRewards, 
   activitySessions,
-  type InsertDailyLogin,
-  type InsertUserLocationHistory,
-  type InsertDistanceReward,
-  type InsertActivitySession
+  type DBDailyLoginInsert,
+  type DBUserLocationHistoryInsert,
+  type DBDistanceRewardInsert,
+  type DBActivitySessionInsert,
+  DBUserInsert
 } from '@shared/schema.ts';
 import { eq, and, gte, lt, desc, sql } from 'drizzle-orm';
 
@@ -70,11 +71,11 @@ export class CoinEarningService {
         userId,
         loginDate: today,
         coinsAwarded: 1
-      });
+      } as DBDailyLoginInsert);
       
       // Update user's coin balance
       await db.update(users)
-        .set({ gemCoins: sql`${users.gemCoins} + 1` })
+        .set({ gemCoins: sql`${users.gemCoins} + 1` } as Partial<DBUserInsert>)
         .where(eq(users.id, userId));
       
       console.log(`💰 DAILY LOGIN: Awarded 1 coin to user ${userId}`);
@@ -107,7 +108,7 @@ export class CoinEarningService {
       if (activeSession.length > 0) {
         // Continue existing session
         await db.update(activitySessions)
-          .set({ lastLocationUpdate: new Date() })
+          .set({ lastLocationUpdate: new Date() } as Partial<DBActivitySessionInsert>)
           .where(eq(activitySessions.id, activeSession[0].id));
         
         return activeSession[0].id;
@@ -121,7 +122,7 @@ export class CoinEarningService {
         coinsEarned: 0,
         isActive: true,
         lastLocationUpdate: new Date()
-      }).returning();
+      } as DBActivitySessionInsert).returning();
       
       console.log(`🚀 ACTIVITY SESSION: Started new session for user ${userId}`);
       return newSession[0].id;
@@ -187,7 +188,7 @@ export class CoinEarningService {
         movementType: distanceCalculation.movementType,
         isValidForRewards: distanceCalculation.isValidForRewards,
         timestamp: locationData.timestamp
-      });
+      } as DBUserLocationHistoryInsert);
       
       // Update session with distance
       const updatedSession = await db.update(activitySessions)
@@ -195,7 +196,7 @@ export class CoinEarningService {
           totalDistance: sql`${activitySessions.totalDistance} + ${distanceCalculation.distance}`,
           movementType: distanceCalculation.movementType,
           lastLocationUpdate: new Date()
-        })
+        } as Partial<DBActivitySessionInsert>)
         .where(eq(activitySessions.id, sessionId))
         .returning();
       
@@ -386,12 +387,12 @@ export class CoinEarningService {
     
     // Update user's coin balance
     await db.update(users)
-      .set({ gemCoins: sql`${users.gemCoins} + ${coinsAwarded}` })
+      .set({ gemCoins: sql`${users.gemCoins} + ${coinsAwarded}` } as Partial<DBUserInsert> )
       .where(eq(users.id, userId));
     
     // Update session coins earned
     await db.update(activitySessions)
-      .set({ coinsEarned: sql`${activitySessions.coinsEarned} + ${coinsAwarded}` })
+      .set({ coinsEarned: sql`${activitySessions.coinsEarned} + ${coinsAwarded}` } as Partial<DBActivitySessionInsert>)
       .where(eq(activitySessions.id, sessionId));
   }
   
@@ -404,7 +405,7 @@ export class CoinEarningService {
         .set({ 
           isActive: false,
           sessionEnd: new Date()
-        })
+        } as Partial<DBActivitySessionInsert>)
         .where(and(
           eq(activitySessions.userId, userId),
           eq(activitySessions.isActive, true)

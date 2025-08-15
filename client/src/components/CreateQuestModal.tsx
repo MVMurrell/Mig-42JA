@@ -357,7 +357,7 @@ export function CreateQuestModal({ isOpen, onClose, userLocation }: CreateQuestM
       console.log('🎯 QUEST CREATE: Request method: POST');
       
       try {
-        const response = await apiRequest("/api/quests", "POST", data);
+        const response = await apiRequest("/api/quests", {method: "POST", data});
         console.log('🎯 QUEST CREATE: API request successful');
         return response;
       } catch (error) {

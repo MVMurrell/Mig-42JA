@@ -169,7 +169,7 @@ export default function DragonModal({ dragonId, isOpen, onClose, onDragonDefeate
 
   const attackMutation = useMutation({
     mutationFn: async ({ videoId }: { videoId: string }) => {
-      return apiRequest(`/api/dragons/${dragonId}/attack`, 'POST', { videoId });
+      return apiRequest(`/api/dragons/${dragonId}/attack`, {method:'POST', data: { videoId }}); ///check could be wrong
     },
     onSuccess: (result) => {
       if (result.dragonDefeated) {

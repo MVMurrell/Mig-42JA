@@ -33,9 +33,11 @@ export function ContentModerationModal({ video, isOpen, onClose }: ContentModera
 
   const submitAppealMutation = useMutation({
     mutationFn: async ({ videoId, reason }: { videoId: string; reason: string }) => {
-      return apiRequest(`/api/videos/${videoId}/appeal`, "POST", { 
+      return apiRequest(`/api/videos/${videoId}/appeal`,
+        { method:"POST", 
+        data: { 
         message: reason 
-      });
+      }});
     },
     onSuccess: () => {
       toast({
@@ -59,7 +61,7 @@ export function ContentModerationModal({ video, isOpen, onClose }: ContentModera
   const cancelVideoMutation = useMutation({
     mutationFn: async (videoId: string) => {
       return apiRequest(`/api/videos/${videoId}/cancel`, 
-        'DELETE',
+        {method: 'DELETE'},
       );
     },
     onSuccess: () => {

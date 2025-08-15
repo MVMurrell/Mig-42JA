@@ -75,9 +75,9 @@ export default function OtherUserProfileModal({
   const followMutation = useMutation({
     mutationFn: async () => {
       if (userProfile?.isFollowed) {
-        await apiRequest(`/api/users/${userId}/unfollow`, "POST");
+        await apiRequest(`/api/users/${userId}/unfollow`, {method: "POST"});
       } else {
-        await apiRequest(`/api/users/${userId}/follow`, "POST");
+        await apiRequest(`/api/users/${userId}/follow`, {method:"POST"});
       }
     },
     onSuccess: () => {
@@ -102,7 +102,7 @@ export default function OtherUserProfileModal({
   // Notification toggle mutation
   const notificationMutation = useMutation({
     mutationFn: async (enabled: boolean) => {
-      await apiRequest(`/api/users/${userId}/notifications`, "PUT", { enabled });
+      await apiRequest(`/api/users/${userId}/notifications`,{ method: "PUT", data : { enabled }});
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/users", userId, "profile"] });
@@ -131,7 +131,7 @@ export default function OtherUserProfileModal({
   // Join group mutation
   const joinGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      await apiRequest(`/api/groups/${groupId}/join`, "POST");
+      await apiRequest(`/api/groups/${groupId}/join`, {method: "POST"});
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/users", userId, "groups"] });
@@ -152,7 +152,7 @@ export default function OtherUserProfileModal({
   // Leave group mutation
   const leaveGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      await apiRequest(`/api/groups/${groupId}/leave`, "DELETE");
+      await apiRequest(`/api/groups/${groupId}/leave`,{ method: "DELETE"});
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["/api/users", userId, "groups"] });

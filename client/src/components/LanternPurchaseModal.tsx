@@ -36,11 +36,11 @@ export function LanternPurchaseModal({ isOpen, onClose, userProfile }: LanternPu
   // Ad reward mutation
   const watchAdMutation = useMutation({
     mutationFn: async (adType: '30s' | '60s') => {
-      const response = await apiRequest(`/api/ad-rewards/watch`, 'POST', {
+      const response = await apiRequest(`/api/ad-rewards/watch`, { method:'POST',data: {
         adType,
         rewardType: 'lanterns',
         amount: adType === '30s' ? 1 : 4
-      });
+      }});
       return response;
     },
     onSuccess: (data) => {
@@ -62,10 +62,10 @@ export function LanternPurchaseModal({ isOpen, onClose, userProfile }: LanternPu
   // Coin-based purchase mutation
   const purchaseLanternsMutation = useMutation({
     mutationFn: async (packageData: { lanterns: number; coins: number }) => {
-      const response = await apiRequest('/api/lanterns/purchase', 'POST', {
+      const response = await apiRequest('/api/lanterns/purchase', {method: 'POST', data: {
         lanterns: packageData.lanterns,
         coins: packageData.coins
-      });
+      }});
       return response;
     },
     onSuccess: (data) => {

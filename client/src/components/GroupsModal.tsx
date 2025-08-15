@@ -58,11 +58,11 @@ export default function GroupsModal({ onClose, userLocation }: GroupsModalProps)
   // Create group mutation
   const createGroupMutation = useMutation({
     mutationFn: async (groupData: any) => {
-      return await apiRequest('/api/groups', 'POST', {
+      return await apiRequest('/api/groups', {method: 'POST', data : {
         ...groupData,
         latitude: userLocation?.lat?.toString(),
         longitude: userLocation?.lng?.toString(),
-      });
+      }});
     },
     onSuccess: () => {
       toast({
@@ -86,7 +86,7 @@ export default function GroupsModal({ onClose, userLocation }: GroupsModalProps)
   // Join group mutation
   const joinGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      return await apiRequest(`/api/groups/${groupId}/join`, 'POST');
+      return await apiRequest(`/api/groups/${groupId}/join`, { method: 'POST'});
     },
     onSuccess: () => {
       toast({
@@ -107,7 +107,7 @@ export default function GroupsModal({ onClose, userLocation }: GroupsModalProps)
   // Leave group mutation
   const leaveGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      return await apiRequest(`/api/groups/${groupId}/leave`, 'DELETE');
+      return await apiRequest(`/api/groups/${groupId}/leave`, {method: 'DELETE'});
     },
     onSuccess: () => {
       toast({

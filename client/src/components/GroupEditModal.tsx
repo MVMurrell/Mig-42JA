@@ -41,7 +41,7 @@ export default function GroupEditModal({ group, onClose, onUpdate }: GroupEditMo
       if (!group?.id) {
         throw new Error("Group ID is required");
       }
-      await apiRequest(`/api/groups/${group.id}`, "PUT", data);
+      await apiRequest(`/api/groups/${group.id}`, { method: "PUT", data});
     },
     onSuccess: () => {
       toast({

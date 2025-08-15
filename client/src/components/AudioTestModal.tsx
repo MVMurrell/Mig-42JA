@@ -15,7 +15,7 @@ export default function AudioTestModal({ videoId, videoTitle, onClose }: AudioTe
 
   const reprocessAudioMutation = useMutation({
     mutationFn: () => apiRequest(`/api/videos/${videoId}/reprocess-audio`, 
-     'POST'
+     {method:'POST'}
     ),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['/api/videos'] });

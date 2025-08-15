@@ -3,9 +3,15 @@
  * Manages treasure chest spawning, collection, and lifecycle
  */
 
-import { storage } from './storage.js';
+import { storage, db } from './storage.js';
 import { videos, treasureChests, treasureChestLocations, treasureChestCollections, users } from '../shared/schema.js';
 import { eq, and, sql, desc, asc, lt, gt, not } from 'drizzle-orm';
+type DBTreasureChestLocationInsert = typeof treasureChestLocations.$inferInsert;
+type DBTreasureChestLocationRow = typeof treasureChestLocations.$inferSelect;
+type DBTreasureChestInsert = typeof treasureChests.$inferInsert;
+type DBTreasureChestRow = typeof treasureChests.$inferSelect;   
+type DBTreasureChestCollectionInsert = typeof treasureChestCollections.$inferInsert;
+type DBTreasureChestCollectionRow = typeof treasureChestCollections.$inferSelect;
 
 export interface TreasureSpawnLocation {
   latitude: number;
@@ -208,7 +214,7 @@ export class TreasureChestService {
           dailySpawnCount: 0,
           lastSpawnDate: today,
           updatedAt: new Date()
-        })
+        } as Partial <DBTreasureChestLocationInsert>)
         .where(eq(treasureChestLocations.id, locationData.id));
       
       return true;
@@ -261,7 +267,7 @@ export class TreasureChestService {
           expiresAt,
           nearestVideoId: spawnLocation.nearestVideoId,
           nearestVideoDistance: spawnLocation.distanceToVideo
-        })
+        } as DBTreasureChestInsert)
         .returning();
 
       // Update or create location tracking
@@ -283,7 +289,7 @@ export class TreasureChestService {
             dailySpawnCount: sql`${treasureChestLocations.dailySpawnCount} + 1`,
             lastSpawnDate: today,
             updatedAt: new Date()
-          })
+          } as Partial<DBTreasureChestLocationInsert>)
           .where(eq(treasureChestLocations.id, existingLocation[0].id));
       } else {
         await db.insert(treasureChestLocations)
@@ -295,7 +301,7 @@ export class TreasureChestService {
             dailySpawnCount: 1,
             lastSpawnDate: today,
             nearestVideoId: spawnLocation.nearestVideoId
-          });
+          } as DBTreasureChestLocationInsert);
       }
 
       console.log(`🎁 TREASURE: Spawned ${chestConfig.difficulty} chest with ${chestConfig.coinReward} coins at (${spawnLocation.latitude}, ${spawnLocation.longitude})`);
@@ -409,6 +415,14 @@ export class TreasureChestService {
       // Multiple users can collect the same chest, but each user can only collect it once
       // The chest remains active until it expires naturally
 
+      const collection: DBTreasureChestCollectionInsert = {
+  userId: attempt.userId,
+  chestId: chestData.id,
+  coinReward: chestData.coinReward,
+  collectionLatitude: attempt.userLatitude.toString(),
+  collectionLongitude: attempt.userLongitude.toString(),
+  distanceFromChest.toString()
+}; 
       // Record the collection
       await db.insert(treasureChestCollections)
         .values({
@@ -418,14 +432,14 @@ export class TreasureChestService {
           collectionLatitude: attempt.userLatitude.toString(),
           collectionLongitude: attempt.userLongitude.toString(),
           distanceFromChest
-        });
+        } as any as DBTreasureChestCollectionInsert);
 
       // Award coins to user
       await db.update(users)
         .set({
           gemCoins: sql`${users.gemCoins} + ${chestData.coinReward}`,
           updatedAt: new Date()
-        })
+        } as Partial<typeof users.$inferInsert>)
         .where(eq(users.id, attempt.userId));
 
       console.log(`🎁 TREASURE: Successfully collected! Awarded ${chestData.coinReward} coins to user ${attempt.userId}`);
@@ -452,7 +466,7 @@ export class TreasureChestService {
   async cleanupExpiredChests(): Promise<number> {
     try {
       const result = await db.update(treasureChests)
-        .set({ isActive: false })
+        .set({ isActive: false } as Partial<DBTreasureChestInsert>)
         .where(and(
           eq(treasureChests.isActive, true),
           lt(treasureChests.expiresAt, new Date())

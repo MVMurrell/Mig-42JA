@@ -10,7 +10,7 @@ import { join } from "node:path";
 import multer from 'multer';
 import { 
   insertVideoSchema, 
-  DBVideoRow, DBVideoInsert ,
+  DBVideoRow ,
   // insertGroupSchema, 
   // insertVideoCommentSchema,
   // insertVideoLikeSchema,
@@ -22,7 +22,7 @@ import {
 // import { z } from "zod";
 // import { db } from "./db.ts";
 // import { eq, and } from "drizzle-orm";
-// import type { } from "@shared/schema.ts";
+import type { DBVideoInsert} from "../shared/schema.ts";
 
 
 
@@ -284,7 +284,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         console.log(`Created persistent copy: ${persistentFilePath}`);
         
         // Create the video record in the database first
-       const insertObj: DBVideoInsert = {
+       const insertObj= {
         title: videoData.title ?? "Untitled Video",
         description: videoData.description ?? "",
         videoUrl: videoData.videoUrl,        // ok to store data-url for now if that’s your model
@@ -297,7 +297,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         duration: videoData.duration ?? null,
         userId,
         processingStatus: "uploading",
-        };
+        } as DBVideoInsert;
 
         const created = await storage.createVideo(insertObj);
         const dbId = created.id;
@@ -309,7 +309,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         res.status(202).json({ id: dbId, message: "Video upload started", status: "uploading" });
         
         // Process video asynchronously in the background
-        videoProcessor.processVideo(persistentFilePath, videoId, videoData.duration)
+        videoProcessor.processVideo(persistentFilePath, dbId, videoData.duration)
           .then(async (result) => {
             console.log(`Successfully processed video ${videoId}`);
             console.log(`Cleaned up temp file: ${tempFilePath}`);
@@ -343,7 +343,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         ...result.data,
         id: videoId,
         userId: userId
-      });
+      } as DBVideoInsert);
       
       res.status(201).json(newVideo);
     } catch (error) {

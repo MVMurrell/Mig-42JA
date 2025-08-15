@@ -71,6 +71,8 @@ export const users = pgTable("users", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 console.log("users table init check:", users);
+
+
 // Videos table
 export const videos = pgTable("videos", {
   id: uuid("id").primaryKey().defaultRandom(),
@@ -90,7 +92,6 @@ export const videos = pgTable("videos", {
   views: integer("views").default(0),
   likes: integer("likes").default(0),
   bunnyVideoId: varchar("bunny_video_id"), // Bunny.net CDN video ID for streaming
-  // processingStatus: varchar("processing_status", { length: 30 }).default("processing"), // processing, approved, flagged, appeal_pending, rejected_by_moderation
   playbackStatus: varchar("playback_status", { length: 30 }).default("published"), // published, bunny_upload_failed, bunny_link_broken, unavailable
   moderationResults: text("moderation_results"), // JSON with Google Video AI results
   flaggedReason: text("flagged_reason"), // Reason if flagged
@@ -114,8 +115,7 @@ export const videos = pgTable("videos", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
-export type DBVideoRow    = typeof videos.$inferSelect;
-export type DBVideoInsert = typeof videos.$inferInsert;
+
 
 // Video likes table
 export const videoLikes = pgTable("video_likes", {
@@ -1298,8 +1298,9 @@ export const insertModeratorAccessSchema = z.object({
 export type DBUserInsert = typeof users.$inferInsert;
 export type DBUserRow =  typeof users.$inferSelect;
 
-// export type DBVideoInsert = typeof videos.$inferInsert;
-// export type DBVideoRow = typeof videos.$inferSelect;
+export type DBVideoInsert = typeof videos.$inferInsert;
+export type DBVideoRow = typeof videos.$inferSelect;
+
 export type DBGroupInsert = typeof groups.$inferInsert;
 export type DBGroupRow = typeof groups.$inferSelect;
 
@@ -1393,14 +1394,14 @@ export type DBDragonRewardRow = typeof dragonRewards.$inferSelect;
 export type DBViolationInsert = typeof violations.$inferInsert;
 export type DBViolationRow = typeof violations.$inferSelect;
 
-export type User = typeof users.$inferSelect;
-export type UserInsert = typeof users.$inferInsert;
+// export type User = typeof users.$inferSelect;
+// export type UserInsert = typeof users.$inferInsert;
 
-export type Notification = typeof notifications.$inferSelect;
-export type NotificationInsert = typeof notifications.$inferInsert;
+// export type Notification = typeof notifications.$inferSelect;
+// export type NotificationInsert = typeof notifications.$inferInsert;
 
-export type Quest = typeof quests.$inferSelect;
-export type QuestInsert = typeof quests.$inferInsert;
+// export type Quest = typeof quests.$inferSelect;
+// export type QuestInsert = typeof quests.$inferInsert;
 
 
 

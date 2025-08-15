@@ -36,6 +36,8 @@ import { MysteryBoxModal } from './MysteryBoxModal.js';
 import DragonModal from './DragonModal.js';
 import { LanternModal } from './LanternModal.js';
 
+
+
 interface Video {
   id: string;
   title: string;

@@ -108,7 +108,7 @@ export default function GroupProfileModal({ groupId, onClose, onNavigateToMap, u
   // Join group mutation
   const joinGroupMutation = useMutation({
     mutationFn: async () => {
-      await apiRequest(`/api/groups/${groupId}/join`, "POST");
+      await apiRequest(`/api/groups/${groupId}/join`, {method: "POST"});
     },
     onSuccess: () => {
       toast({
@@ -142,7 +142,7 @@ export default function GroupProfileModal({ groupId, onClose, onNavigateToMap, u
   // Leave group mutation
   const leaveGroupMutation = useMutation({
     mutationFn: async () => {
-      await apiRequest(`/api/groups/${groupId}/leave`, "DELETE");
+      await apiRequest(`/api/groups/${groupId}/leave`,{method: "DELETE"});
     },
     onSuccess: () => {
       toast({
