@@ -8,7 +8,7 @@
  * - Movement type detection (walking/cycling vs driving)
  */
 
-import { db } from './db.js';
+import { db } from './db.ts';
 import { 
   users, 
   dailyLogins, 

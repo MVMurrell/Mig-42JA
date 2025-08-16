@@ -1,5 +1,5 @@
-import { db } from './db.js';
-import { quests, questParticipants, videos, users, notifications } from '@shared/schema.ts';
+import { db } from './db.ts';
+import { quests, questParticipants, videos, users, notifications } from '../shared/schema.ts';
 import { eq, and, sql, lte } from 'drizzle-orm';
 
 class QuestCompletionChecker {

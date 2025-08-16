@@ -1,5 +1,5 @@
 // Quick script to fix the "Best app bois" thumbnail
-import { thumbnailFixer } from './thumbnailFixer.js';
+import { thumbnailFixer } from './thumbnailFixer.ts';
 
 async function fixNow() {
   try {

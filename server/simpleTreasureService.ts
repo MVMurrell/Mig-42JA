@@ -3,7 +3,7 @@
  * Manages treasure chest spawning, collection, and lifecycle using storage interface
  */
 
-import { storage } from './storage.js';
+import { storage } from './storage.ts';
 
 export interface TreasureChest {
   id: string;
@@ -213,7 +213,7 @@ export class SimpleTreasureChestService {
 
       // Award coins to user
       try {
-        await storage.updateUserCoins(attempt.userId, chest.coinReward);
+        await storage.updateUserGemCoins(attempt.userId, chest.coinReward);
         
         // Mark chest as collected
         chest.isCollected = true;

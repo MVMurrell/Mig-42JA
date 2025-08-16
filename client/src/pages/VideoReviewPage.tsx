@@ -67,8 +67,8 @@ export default function VideoReviewPage() {
   // Approve appeal mutation
   const approveMutation = useMutation({
     mutationFn: async () => {
-      return apiRequest("POST", `/api/moderation/video-appeals/${appealId}/approve`, {
-        moderationNotes
+      return apiRequest(`/api/moderation/video-appeals/${appealId}/approve`, {method: "POST", data: {
+        moderationNotes}
       });
     },
     onSuccess: () => {
@@ -92,8 +92,8 @@ export default function VideoReviewPage() {
   // Reject appeal mutation
   const rejectMutation = useMutation({
     mutationFn: async () => {
-      return apiRequest("POST", `/api/moderation/video-appeals/${appealId}/reject`, {
-        moderationNotes
+      return apiRequest(`/api/moderation/video-appeals/${appealId}/reject`, { method:"POST", 
+        data: {moderationNotes}
       });
     },
     onSuccess: () => {

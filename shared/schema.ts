@@ -848,6 +848,15 @@ export const insertGroupSchema = z.object({
   updatedAt: z.date().optional(), // defaultNow
 });
 
+export const insertModerationDecisionSchema = z.object({
+  id: z.string().uuid().optional(), // defaultRandom
+  videoId: z.string().uuid(), // required
+  moderatorId: z.string().uuid().optional(), // nullable foreign key (AI decisions allowed)
+  decision: z.string(), // approve, reject
+  reason: z.string().optional(),
+  decisionType: z.string().optional(), // ai_moderation, human_review, appeal
+  createdAt: z.date().optional(), // defaultNow
+});
 
 
 export const insertVideoLikeSchema = z.object({
@@ -1393,6 +1402,9 @@ export type DBDragonRewardRow = typeof dragonRewards.$inferSelect;
 
 export type DBViolationInsert = typeof violations.$inferInsert;
 export type DBViolationRow = typeof violations.$inferSelect;
+
+export type DBModerationDecisionsInsert = typeof moderationDecisions.$inferInsert;
+export type DBModerationDecisionsRow = typeof moderationDecisions.$inferSelect; 
 
 // export type User = typeof users.$inferSelect;
 // export type UserInsert = typeof users.$inferInsert;

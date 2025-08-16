@@ -289,7 +289,7 @@ export class BunnyService {
           'AccessKey': this.apiKey,
           'Content-Type': finalMimeType,
         },
-        body: finalVideoBuffer,
+        body: new Uint8Array(finalVideoBuffer),
       });
 
       console.log(`Upload response status: ${uploadResponse.status} ${uploadResponse.statusText}`);

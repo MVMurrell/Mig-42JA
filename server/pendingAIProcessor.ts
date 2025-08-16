@@ -7,10 +7,11 @@
  * Fixes the sustainability issue where manual intervention was required.
  */
 
-import { uploadFirstProcessor } from './uploadFirstProcessor.js';
-import { db } from './db.js';
-import { videos, threadMessages } from '../shared/schema.js';
+import { uploadFirstProcessor } from './uploadFirstProcessor.ts';
+import { db } from './db.ts';
+import { videos, threadMessages } from '../shared/schema.ts';
 import { eq, lt } from 'drizzle-orm';
+import { sql } from "drizzle-orm";
 type VideoUpdate = Partial<typeof videos.$inferInsert>;
 type ThreadMsgUpdate = Partial<typeof threadMessages.$inferInsert>;
 

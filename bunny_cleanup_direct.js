@@ -5,7 +5,7 @@
  */
 
 import { db } from './server/db.ts.js';
-import { videos, threadMessages, videoComments } from './shared/schema.ts.js';
+import { videos, threadMessages, videoComments } from './shared/schema.ts';
 import { isNotNull } from 'drizzle-orm';
 
 async function getAllLegitimateVideoIds() {

@@ -1,6 +1,6 @@
-import { audioProcessingService } from './audioProcessingService.js';
-import { db } from './db.js';
-import { videos } from '@shared/schema.ts';
+import { audioProcessingService } from './audioProcessingService.ts';
+import { db } from './db.ts';
+import { videos } from '../shared/schema.ts';
 import { eq } from 'drizzle-orm';
 
 async function testModerationOnExistingVideo() {

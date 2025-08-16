@@ -86,7 +86,7 @@ export default function GroupsPage() {
   // Other mutations and handlers would go here...
   const createGroupMutation = useMutation({
     mutationFn: async (groupData: any) => {
-      return apiRequest("POST", "/api/groups", groupData);
+        return apiRequest("/api/groups", {method: "POST", data: groupData});
     },
     onSuccess: () => {
       toast({ title: "Group created successfully!" });
@@ -98,7 +98,7 @@ export default function GroupsPage() {
 
   const joinGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      return apiRequest("POST", `/api/groups/${groupId}/join`);
+      return apiRequest( `/api/groups/${groupId}/join`, { method: "POST" });
     },
     onSuccess: () => {
       toast({ title: "Joined group successfully!" });
@@ -109,7 +109,7 @@ export default function GroupsPage() {
 
   const leaveGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      return apiRequest("DELETE", `/api/groups/${groupId}/leave`);
+      return apiRequest(`/api/groups/${groupId}/leave`, { method: "DELETE" });
     },
     onSuccess: () => {
       toast({ title: "Left group successfully!" });
@@ -120,7 +120,7 @@ export default function GroupsPage() {
 
   const deleteGroupMutation = useMutation({
     mutationFn: async (groupId: string) => {
-      return apiRequest("DELETE", `/api/groups/${groupId}`);
+      return apiRequest(`/api/groups/${groupId}`, { method: "DELETE" });
     },
     onSuccess: () => {
       toast({ title: "Group deleted successfully!" });
@@ -131,7 +131,7 @@ export default function GroupsPage() {
 
   const updateCoverImageMutation = useMutation({
     mutationFn: async ({ groupId, imageUrl }: { groupId: string; imageUrl: string }) => {
-      return apiRequest("PUT", `/api/groups/${groupId}/cover-image`, { imageUrl });
+      return apiRequest( `/api/groups/${groupId}/cover-image`, {method: "PUT", data: imageUrl });
     },
     onSuccess: () => {
       toast({ title: "Cover image updated!" });

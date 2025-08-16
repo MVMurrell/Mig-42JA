@@ -2,12 +2,12 @@ import { spawn } from 'child_process';
 import { join } from "node:path";
 import { readFile, unlink, stat } from 'fs/promises';
 import { videos } from '@shared/schema.ts';
-import { db } from './db.js';
+import { db } from './db.ts';
 import { eq } from 'drizzle-orm';
-import { bunnyService } from './bunnyService.js';
+import { bunnyService } from './bunnyService.ts';
 import { Storage } from '@google-cloud/storage';
 import { VideoIntelligenceServiceClient } from '@google-cloud/video-intelligence';
-import { audioProcessingService } from './audioProcessingService.js';
+import { audioProcessingService } from './audioProcessingService.ts';
  type DBVideoRow    = typeof videos.$inferSelect;
 type DBVideoInsert = typeof videos.$inferInsert;
 

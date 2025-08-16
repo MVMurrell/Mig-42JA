@@ -3,12 +3,17 @@ import * as path from "node:path";
 import { spawn } from 'child_process';
 import { randomUUID } from 'crypto';
 import { Storage } from '@google-cloud/storage';
-import { db } from './db.js';
-import { videos, moderationDecisions, videoComments, threadMessages } from '@shared/schema.ts';
+import { db } from './db.ts';
+import { videos, moderationDecisions, videoComments, threadMessages } from  "../shared/schema.ts";
 import { eq } from 'drizzle-orm';
-import { bunnyService } from './bunnyService.js';
-import { storage as dbStorage } from './storage.js';
-import { xpService } from './xpService.js';
+import { bunnyService } from './bunnyService.ts';
+import { storage as dbStorage } from './storage.ts';
+import { xpService } from './xpService.ts';
+import { join } from "path";
+type DBVideoCommentInsert = typeof videoComments.$inferInsert;
+type DBVideoInsert = typeof videos.$inferInsert;
+type DBVideoModerationInsert = typeof moderationDecisions.$inferInsert;
+
 
 interface ProcessingMetadata {
   title?: string;
@@ -355,9 +360,9 @@ export class UploadFirstProcessor {
         .set({
           processingStatus: 'approved',
           bunnyVideoId: bunnyVideoId,
-          commentVideoUrl: cdnUrl,
+          commentVideoUrl: cdnUrl, 
           thumbnailUrl: thumbnailUrl,
-        })
+        } as Partial<DBVideoCommentInsert>)
         .where(eq(videoComments.id, metadata.commentId));
         
       console.log(`✅ DB: Video comment updated successfully`);
@@ -386,7 +391,7 @@ export class UploadFirstProcessor {
         reason: 'AI moderation passed',
         decisionType: 'ai_moderation',
         createdAt: new Date()
-      });
+      } as DBVideoModerationInsert );
 
       // Update videos table
       await db.update(videos)
@@ -397,7 +402,7 @@ export class UploadFirstProcessor {
           bunnyVideoId: bunnyVideoId,
           transcriptionText: moderationResult.transcription,
           extractedKeywords: moderationResult.extractedKeywords
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
 
       console.log(`✅ DB: Regular video updated successfully`);
@@ -416,7 +421,7 @@ export class UploadFirstProcessor {
         .set({
           processingStatus: 'failed',
           flaggedReason: reason
-        })
+        } as Partial<DBVideoCommentInsert>)
         .where(eq(videoComments.id, metadata.commentId));
         
       console.log(`✅ DB: Video comment marked as failed`);
@@ -442,14 +447,14 @@ export class UploadFirstProcessor {
         reason: reason,
         decisionType: 'ai_moderation',
         createdAt: new Date()
-      });
+      } as DBVideoModerationInsert);
 
       // Update videos table
       await db.update(videos)
         .set({
           processingStatus: 'rejected',
           flaggedReason: reason
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
 
       console.log(`✅ DB: Regular video marked as failed`);
@@ -497,7 +502,7 @@ export class UploadFirstProcessor {
             originalFileSize: originalStats.size,
             duration: String(metadata.duration || metadata.frontendDuration || 0),
             processingStatus: 'pending_ai_analysis'
-          })
+          } as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
         
         console.log(`✅ PREPROCESSING: Data stored successfully for video ${videoId}`);
@@ -523,7 +528,7 @@ export class UploadFirstProcessor {
           .set({
             gcsProcessingUrl: gcsUri,
             processingStatus: 'pending_ai_analysis'
-          })
+          } as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
         
         console.log(`✅ GCS: URL stored in database for video ${videoId}`);

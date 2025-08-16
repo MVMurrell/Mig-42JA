@@ -1,5 +1,5 @@
 import { db } from './db.js';
-import { videos } from '../shared/schema.js';
+import { videos } from '../shared/schema.ts';
 import { eq, and, like } from 'drizzle-orm';
 
 class ThumbnailFixer {
@@ -32,7 +32,7 @@ class ThumbnailFixer {
         if (realThumbnail) {
           await db
             .update(videos)
-            .set({ thumbnailUrl: realThumbnail })
+            .set({ thumbnailUrl: realThumbnail } as Partial<typeof videos.$inferInsert>)
             .where(eq(videos.id, video.id));
           
           console.log(`✅ Updated thumbnail for ${video.title}`);
@@ -91,7 +91,7 @@ class ThumbnailFixer {
       if (realThumbnail) {
         await db
           .update(videos)
-          .set({ thumbnailUrl: realThumbnail })
+          .set({ thumbnailUrl: realThumbnail }as Partial<typeof videos.$inferInsert>)
           .where(eq(videos.id, videoId));
         
         console.log(`✅ Updated thumbnail for video ${videoId}`);

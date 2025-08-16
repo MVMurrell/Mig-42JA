@@ -293,7 +293,7 @@ export class MysteryBoxService {
 
       try {
         // Award multiple rewards
-        await storage.updateUserCoins(attempt.userId, box.coinReward);
+        await storage.updateUserGemCoins(attempt.userId, box.coinReward);
         await storage.updateUserLanterns(attempt.userId, box.lanternReward);
         
         // Award XP separately (this handles level up logic)
@@ -353,7 +353,7 @@ export class MysteryBoxService {
     const expiresAt = new Date(spawnedAt.getTime() + availabilityMinutes * 60 * 1000);
     
     const box: MysteryBox = {
-      id: this.generateBoxId(),
+      id: Math.random().toString(36).substr(2, 9),
       latitude: boxLat.toString(),
       longitude: boxLng.toString(),
       coinReward,

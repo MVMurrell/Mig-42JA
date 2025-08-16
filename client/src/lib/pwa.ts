@@ -151,7 +151,9 @@ class PWAManager {
   public async requestBackgroundSync(tag: string) {
     if ('serviceWorker' in navigator && 'sync' in window.ServiceWorkerRegistration.prototype) {
       try {
-        await this.registration?.sync.register(tag);
+        // await this.registration?.sync.register(tag);
+        // client/src/lib/pwa.ts
+        (await navigator.serviceWorker.ready as any).sync?.register("jemzy-sync");
         console.log('PWA: Background sync registered:', tag);
         return true;
       } catch (error) {

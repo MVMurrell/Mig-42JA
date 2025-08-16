@@ -3,8 +3,8 @@
  * Manages treasure chest spawning, collection, and lifecycle
  */
 
-import { storage, db } from './storage.js';
-import { videos, treasureChests, treasureChestLocations, treasureChestCollections, users } from '../shared/schema.js';
+import { storage, db } from './storage.ts';
+import { videos, treasureChests, treasureChestLocations, treasureChestCollections, users } from '../shared/schema.ts';
 import { eq, and, sql, desc, asc, lt, gt, not } from 'drizzle-orm';
 type DBTreasureChestLocationInsert = typeof treasureChestLocations.$inferInsert;
 type DBTreasureChestLocationRow = typeof treasureChestLocations.$inferSelect;
@@ -377,21 +377,21 @@ export class TreasureChestService {
       const chestLng = parseFloat(chestData.longitude.toString());
       
       // Calculate distance from user to chest
-      const distanceFromChest = this.calculateDistanceFeet(
+      const distanceToChest = this.calculateDistanceFeet(
         attempt.userLatitude,
         attempt.userLongitude,
         chestLat,
         chestLng
       );
 
-      console.log(`🎁 TREASURE: User is ${distanceFromChest.toFixed(1)} feet from chest (limit: ${this.COLLECTION_RADIUS_FEET} feet)`);
+      console.log(`🎁 TREASURE: User is ${distanceToChest.toFixed(1)} feet from chest (limit: ${this.COLLECTION_RADIUS_FEET} feet)`);
 
       // Check if user is within collection radius
-      if (distanceFromChest > this.COLLECTION_RADIUS_FEET) {
+      if (distanceToChest > this.COLLECTION_RADIUS_FEET) {
         return {
           success: false,
-          distanceFromChest,
-          message: `You need to be within ${this.COLLECTION_RADIUS_FEET} feet of the treasure chest. You are ${distanceFromChest.toFixed(1)} feet away.`
+          distanceFromChest: distanceToChest,
+          message: `You need to be within ${this.COLLECTION_RADIUS_FEET} feet of the treasure chest. You are ${distanceToChest.toFixed(1)} feet away.`
         };
       }
 
@@ -414,25 +414,26 @@ export class TreasureChestService {
       // NOTE: We don't mark the chest as collected globally
       // Multiple users can collect the same chest, but each user can only collect it once
       // The chest remains active until it expires naturally
-
-      const collection: DBTreasureChestCollectionInsert = {
-  userId: attempt.userId,
-  chestId: chestData.id,
-  coinReward: chestData.coinReward,
-  collectionLatitude: attempt.userLatitude.toString(),
-  collectionLongitude: attempt.userLongitude.toString(),
-  distanceFromChest.toString()
-}; 
-      // Record the collection
-      await db.insert(treasureChestCollections)
-        .values({
+  const collection: DBTreasureChestCollectionInsert = {
           userId: attempt.userId,
           chestId: attempt.chestId,
           coinReward: chestData.coinReward,
-          collectionLatitude: attempt.userLatitude.toString(),
-          collectionLongitude: attempt.userLongitude.toString(),
-          distanceFromChest
-        } as any as DBTreasureChestCollectionInsert);
+          collectionLatitude: String(attempt.userLatitude),
+          collectionLongitude: String(attempt.userLongitude),
+          distanceFromChest: String(distanceToChest),
+        } ;
+
+        await db.insert(treasureChestCollections).values(collection)
+      // Record the collection
+      // await db.insert(treasureChestCollections)
+      //   .values({
+      //     userId: attempt.userId,
+      //     chestId: attempt.chestId,
+      //     coinReward: chestData.coinReward,
+      //     collectionLatitude: attempt.userLatitude.toString(),
+      //     collectionLongitude: attempt.userLongitude.toString(),
+      //     distanceFromChest: distanceFromChest,
+      //   } satisfies DBTreasureChestCollectionInsert);
 
       // Award coins to user
       await db.update(users)
@@ -447,7 +448,7 @@ export class TreasureChestService {
       return {
         success: true,
         coinReward: chestData.coinReward,
-        distanceFromChest,
+        distanceFromChest: distanceToChest,
         message: `Congratulations! You found ${chestData.coinReward} coins!`
       };
 

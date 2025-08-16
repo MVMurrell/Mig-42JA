@@ -4,8 +4,8 @@ import { spawn } from 'child_process';
 import { Storage } from '@google-cloud/storage';
 import { VideoIntelligenceServiceClient } from '@google-cloud/video-intelligence';
 
-import { bunnyService } from './bunnyService.js';
-import { storage } from './storage.js';
+import { bunnyService } from './bunnyService.ts';
+import { storage } from './storage.ts';
 
 export class ThreadVideoModerator {
   private gcsStorage: Storage;

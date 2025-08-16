@@ -3,7 +3,7 @@
  */
 
 import { db } from './server/db.js.js';
-import { videos, moderationDecisions } from './shared/schema.js.js';
+import { videos, moderationDecisions } from './shared/schema.ts';
 import { eq } from 'drizzle-orm';
 
 async function completeFirstVideo() {

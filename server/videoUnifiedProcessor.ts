@@ -1,12 +1,17 @@
 import { readFile, unlink, writeFile } from 'fs/promises';
 import { join } from "node:path";
+import * as path from "node:path";
 import { spawn } from 'child_process';
 import { randomUUID } from 'crypto';
 import { Storage } from '@google-cloud/storage';
 import { db } from './db.js';
-import { videos, moderationDecisions, videoComments, threadMessages } from '@shared/schema.ts';
+import { videos, moderationDecisions, videoComments, threadMessages } from '../shared/schema.ts';
 import { eq } from 'drizzle-orm';
 import { bunnyService } from './bunnyService.js';
+import type { DBVideoInsert } from '../shared/schema.ts';
+import type { DBVideoCommentInsert, DBThreadMessageInsert} from '../shared/schema.ts';
+type DBVideoModerationInsert = typeof moderationDecisions.$inferInsert;
+
 
 interface ProcessingMetadata {
   title?: string;
@@ -105,10 +110,10 @@ export class VideoUnifiedProcessor {
       
       if (moderationResult.approved) {
         console.log(`✅ STEP 4: Video passed AI moderation - uploading to Bunny CDN`);
-        
+        const fileBuffer = await readFile(processedVideoPath);
         // Upload to Bunny CDN for approved videos
-        const bunnyResult = await bunnyService.uploadVideo(processedVideoPath, `${videoId}.mp4`);
-        
+        const bunnyResult = await bunnyService.uploadVideo(fileBuffer, `${videoId}.mp4`);
+
         // Update appropriate database table based on video type
         await this.updateDatabaseByType(videoId, metadata, moderationResult, bunnyResult.videoUrl, bunnyResult.thumbnailUrl, bunnyResult.videoId);
         
@@ -228,20 +233,17 @@ export class VideoUnifiedProcessor {
   ): Promise<void> {
     console.log(`💾 DB: Updating ${metadata.videoType} database with approved content`);
 
+
+     
     // Create moderation decision record
     await db.insert(moderationDecisions).values({
-      id: randomUUID(),
-      userId: metadata.userId,
-      contentType: metadata.videoType,
-      contentId: videoId,
-      decision: 'approved',
-      flagReason: null,
-      videoModeration: moderationResult.videoModeration,
-      audioModeration: moderationResult.audioModeration,
-      extractedKeywords: moderationResult.extractedKeywords,
-      transcriptionText: moderationResult.transcription,
-      createdAt: new Date()
-    });
+    videoId,                      // required
+    decision: "approved",         // "approved" | "rejected"
+    reason: null,                 // optional
+    decisionType: "ai_moderation",// e.g., "ai_moderation" | "human_review" | "appeal"
+    // moderatorId: null,         // omit or set null if your column allows null
+    createdAt: new Date(),
+    } as DBVideoModerationInsert);
 
     switch (metadata.videoType) {
       case 'main':
@@ -254,7 +256,7 @@ export class VideoUnifiedProcessor {
             bunnyVideoId: bunnyVideoId,
             transcriptionText: moderationResult.transcription,
             extractedKeywords: moderationResult.extractedKeywords
-          })
+          } as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
         break;
 
@@ -266,7 +268,7 @@ export class VideoUnifiedProcessor {
               videoUrl: cdnUrl,
               processingStatus: 'approved',
               thumbnailUrl: thumbnailUrl
-            })
+            } as Partial<DBVideoCommentInsert>)
             .where(eq(videoComments.id, metadata.commentId));
         }
         break;
@@ -279,7 +281,7 @@ export class VideoUnifiedProcessor {
               videoUrl: cdnUrl,
               processingStatus: 'approved',
               thumbnailUrl: thumbnailUrl
-            })
+            } as Partial<DBThreadMessageInsert> )
             .where(eq(threadMessages.id, metadata.messageId));
         }
         break;
@@ -295,19 +297,17 @@ export class VideoUnifiedProcessor {
     console.log(`❌ DB: Marking ${metadata.videoType} as failed: ${reason}`);
 
     // Create moderation decision record for rejection
-    await db.insert(moderationDecisions).values({
-      id: randomUUID(),
-      userId: metadata.userId,
-      contentType: metadata.videoType,
-      contentId: videoId,
-      decision: 'rejected',
-      flagReason: reason,
-      videoModeration: false,
-      audioModeration: 'failed',
-      extractedKeywords: null,
-      transcriptionText: null,
-      createdAt: new Date()
-    });
+   await db.insert(moderationDecisions).values({
+  videoId,
+  decision: "rejected",
+  reason,                        // pass your AI reason/message
+  decisionType: "ai_moderation",
+  createdAt: new Date(),
+} as DBVideoModerationInsert);
+
+await db.update(videos)
+  .set({ processingStatus: "rejected" } as Partial<DBVideoInsert>)
+  .where(eq(videos.id, videoId));
 
     switch (metadata.videoType) {
       case 'main':
@@ -315,7 +315,7 @@ export class VideoUnifiedProcessor {
           .set({
             processingStatus: 'rejected',
             processingError: reason
-          })
+          } as Partial<DBVideoInsert>)
           .where(eq(videos.id, videoId));
         break;
 
@@ -325,7 +325,7 @@ export class VideoUnifiedProcessor {
             .set({
               processingStatus: 'rejected',
               processingError: reason
-            })
+            } as Partial<DBVideoCommentInsert>)
             .where(eq(videoComments.id, metadata.commentId));
         }
         break;
@@ -336,7 +336,7 @@ export class VideoUnifiedProcessor {
             .set({
               processingStatus: 'rejected',
               processingError: reason
-            })
+            } as Partial<DBThreadMessageInsert>)
             .where(eq(threadMessages.id, metadata.messageId));
         }
         break;

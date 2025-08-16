@@ -9,8 +9,8 @@
  * - Proportional coin rewards based on user contribution
  */
 
-import { db } from './db.js';
-import { videos, dragons, dragonAttacks, dragonRewards, users } from '@shared/schema.ts';
+import { db } from './db.ts';
+import { videos, dragons, dragonAttacks, dragonRewards, users } from '../shared/schema.ts';
 import { eq, and, sql, gt, lt, ne, isNotNull } from 'drizzle-orm';
 
 interface LocationData {
@@ -405,7 +405,7 @@ class DragonService {
         isDefeated: true,
         defeatedAt: new Date(),
         currentHealth: 0
-      })
+      } as Partial<typeof dragons.$inferInsert>)
       .where(eq(dragons.id, dragonId));
 
     // Get all attackers

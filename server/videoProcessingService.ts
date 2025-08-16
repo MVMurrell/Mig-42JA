@@ -1,10 +1,10 @@
 import { spawn } from 'child_process';
 import { writeFile, readFile, unlink } from 'fs/promises';
 import { join } from "node:path";
-import { db } from './db.js';
-import { videos } from '@shared/schema.ts';
+import { db } from './db.ts';
+import { videos } from '../shared/schema.ts';
 import { eq } from 'drizzle-orm';
-import { bunnyService } from './bunnyService.js';
+import { bunnyService } from './bunnyService.ts';
 
 interface VideoProcessingJob {
   videoId: string;
@@ -204,7 +204,7 @@ class VideoProcessingService {
     // Upload to Bunny.net Stream for long-term hosting
     const videoBuffer = await readFile(videoPath);
     const bunnyFileName = await bunnyService.uploadVideo(videoBuffer, `${videoId}.mp4`);
-    const cdnUrl = bunnyService.getStreamUrl(bunnyFileName);
+    const cdnUrl = bunnyService.getStreamUrl(bunnyFileName.videoId);
 
     // Update database
     await db.update(videos)
@@ -214,7 +214,7 @@ class VideoProcessingService {
         bunnyVideoId: bunnyFileName,
         moderationResults: JSON.stringify(moderationResults),
         gcsProcessingUrl: null
-      })
+      }as Partial<typeof videos.$inferInsert>)
       .where(eq(videos.id, videoId));
 
     console.log(`Video ${videoId} approved and uploaded to Bunny.net`);
@@ -232,7 +232,7 @@ class VideoProcessingService {
         moderationResults: JSON.stringify(moderationResults),
         gcsProcessingUrl: null,
         isActive: false
-      })
+      } as Partial<typeof videos.$inferInsert>)
       .where(eq(videos.id, videoId));
 
     console.log(`Video ${videoId} flagged and marked inactive`);
@@ -255,7 +255,7 @@ class VideoProcessingService {
         flaggedReason: `Processing failed: ${error}`,
         gcsProcessingUrl: null,
         isActive: false
-      })
+      }as Partial<typeof videos.$inferInsert>)
       .where(eq(videos.id, videoId));
   }
 

@@ -1,12 +1,14 @@
 import { spawn } from 'child_process';
-import { readFile, unlink, stat, writeFile } from 'fs/promises';
+import { readFile, unlink } from 'fs/promises';
 import { join } from "node:path";
-import { db } from './db.js';
-import { videos, users, userFollows, userFollowNotifications, notifications } from '@shared/schema.ts';
+import { db } from './db.ts';
+import { videos, users, userFollows, userFollowNotifications, notifications } from "../shared/schema";;
 import { eq, and, or, isNull } from 'drizzle-orm';
-import { audioProcessingService } from './audioProcessingService.js';
-import { contentModerationService } from './contentModerationService.js';
-import { bunnyService } from './bunnyService.js';
+import { audioProcessingService } from './audioProcessingService.ts';
+
+import { bunnyService } from './bunnyService.ts';
+type DBVideoInsert = typeof videos.$inferInsert;
+
 
 interface ModerationResult {
   approved: boolean;
@@ -75,7 +77,7 @@ export class SecurityFirstProcessor {
           visibility: metadata.visibility,
           groupId: metadata.groupId,
           isActive: false
-        })
+        }as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
 
       console.log(`✅ STEP 3: Database updated with pending moderation status`);
@@ -159,14 +161,14 @@ export class SecurityFirstProcessor {
       // Upload to Bunny.net for CDN streaming
       const videoBuffer = await readFile(videoPath);
       const bunnyVideoId = await bunnyService.uploadVideo(videoBuffer, `${videoId}.mp4`);
-      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
       console.log(`✅ PUBLISHING: Bunny.net upload completed: ${bunnyVideoId}`);
 
       // Generate thumbnail
       let thumbnailUrl = null;
       try {
         await new Promise(resolve => setTimeout(resolve, 10000)); // Wait for Bunny.net processing
-        thumbnailUrl = await this.generateVideoThumbnail(bunnyVideoId);
+        thumbnailUrl = await this.generateVideoThumbnail(bunnyVideoId.videoId);
       } catch (error) {
         console.error(`⚠️ PUBLISHING: Thumbnail generation failed:`, error);
         thumbnailUrl = this.generateFallbackThumbnail(metadata);
@@ -190,7 +192,7 @@ export class SecurityFirstProcessor {
             audioModeration: moderationResult.audioModeration,
             pipeline: 'security_first'
           })
-        })
+        } as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
 
       console.log(`✅ PUBLISHING: Video ${videoId} successfully published and active`);
@@ -242,7 +244,7 @@ export class SecurityFirstProcessor {
             bunnyReviewStatus: bunnyReviewVideoId ? 'uploaded' : 'failed',
             pipeline: 'security_first'
           })
-        })
+        }as Partial<DBVideoInsert>)
         .where(eq(videos.id, videoId));
 
       console.log(`✅ REJECTION: Video ${videoId} marked for user review/appeal`);
@@ -336,7 +338,7 @@ export class SecurityFirstProcessor {
         processingStatus: 'failed',
         flaggedReason: reason,
         isActive: false
-      })
+      }as Partial<DBVideoInsert>)
       .where(eq(videos.id, videoId));
   }
 
@@ -392,8 +394,9 @@ export class SecurityFirstProcessor {
 
       // Create notifications for each collector
       for (const follower of followersWithNotifications) {
-        await db.insert(notifications).values({
-          userId: follower.followerId,
+
+        const notification = {
+             userId: follower.followerId,
           type: 'new_gem',
           title: 'New Gem Posted',
           message: `${creator.firstName || 'A user'} ${creator.lastName || 'you collect'} posted a new gem: "${video.title}"`,
@@ -402,9 +405,11 @@ export class SecurityFirstProcessor {
           relatedContentId: videoId,
           thumbnailUrl: video.thumbnailUrl,
           isRead: false
-        });
+        }
+        await db.insert(notifications).values(notification);
       }
 
+      // Log successful notification creation
       console.log(`✅ NOTIFICATIONS: Successfully created ${followersWithNotifications.length} notifications for new gem ${videoId}`);
 
     } catch (error) {
