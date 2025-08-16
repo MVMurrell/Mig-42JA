@@ -34,6 +34,7 @@ import VideoAnalysisModal from "@/components/VideoAnalysisModal.tsx";
 import { VideoCommentPlayer } from "@/components/VideoPlayerModal.tsx";
 import { AddMembersModal } from "@/components/AddMembersModal.tsx";
 
+
 // Category gem icons for unwatched videos
 import redIcon from "@assets/Property 1=Red.png";
 import blueIcon from "@assets/Property 1=Blue.png";
@@ -48,6 +49,7 @@ import cobaltIcon from "@assets/Cobalt_1749397661786.png";
 import lilacIcon from "@assets/Lilac_1749397661786.png";
 import neonGreenIcon from "@assets/Neon Green_1749397661787.png";
 import mintIcon from "@assets/Mint_1749397661787.png";
+import { useParams } from "react-router-dom";
 
 // Category icons mapping for gems
 const categoryIcons: { [key: string]: string } = {
@@ -121,14 +123,20 @@ interface MembershipStatus {
   isMember: boolean;
   isOwner: boolean;
 }
+function useRequiredParam<K extends string>(key: K): string {
+  const params = useParams();
+  const v = params[key];
+  if (!v) throw new Error(`Missing route param: ${key}`);
+  return v;
+}
 
 export default function GroupProfilePage() {
-  const [, params] = useRoute("/group/:id");
+  const [match, params] = useRoute("/group/:id");
   const [, setLocation] = useLocation();
-  const groupId = params?.id;
+ const groupId = useRequiredParam("groupId");
   const { user } = useAuth();
   const { toast } = useToast();
-
+ 
   const [activeTab, setActiveTab] = useState<"videos" | "threads">("videos");
   const [showEditModal, setShowEditModal] = useState(false);
   const [showCreateThread, setShowCreateThread] = useState(false);

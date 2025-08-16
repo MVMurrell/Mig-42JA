@@ -6,10 +6,14 @@ import { db } from './db.ts';
 import { eq } from 'drizzle-orm';
 import { bunnyService } from './bunnyService.ts';
 import { Storage } from '@google-cloud/storage';
-import { VideoIntelligenceServiceClient } from '@google-cloud/video-intelligence';
+import { VideoIntelligenceServiceClient, protos  } from '@google-cloud/video-intelligence';
 import { audioProcessingService } from './audioProcessingService.ts';
- type DBVideoRow    = typeof videos.$inferSelect;
+
+
+type DBVideoRow    = typeof videos.$inferSelect;
 type DBVideoInsert = typeof videos.$inferInsert;
+const Feature = protos.google.cloud.videointelligence.v1.Feature; 
+
 
 interface VideoProcessingJob {
   videoId: string;
@@ -815,7 +819,7 @@ class SimpleVideoProcessor {
       // Step 2: Upload to Bunny.net for CDN streaming
       const videoBuffer = await readFile(processedVideoPath);
       const bunnyVideoId = await bunnyService.uploadVideo(videoBuffer, `${videoId}.mp4`);
-      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId);
+      const cdnUrl = bunnyService.getStreamUrl(bunnyVideoId.videoId);
       console.log(`✅ Bunny.net upload completed: ${bunnyVideoId}`);
       
       // Step 3: Generate thumbnail automatically
@@ -1223,10 +1227,10 @@ class SimpleVideoProcessor {
       
       // Extract the video file path from GCS URI for local audio processing
       // We need to download the video file temporarily for FFmpeg audio extraction
-      const tempVideoPath = await this.downloadVideoFromGCS(gcsUri, videoId);
+      const tempVideoPath = await this.downloadVideoFromGCS(gcsUri);
       
       // Run audio processing service
-      const audioResult = await audioProcessingService.processAudio(videoId, tempVideoPath);
+      const audioResult = await audioProcessingService.processAudio(videoId, gcsUri);
       
       // Clean up temporary video file
       try {
@@ -1738,7 +1742,7 @@ class SimpleVideoProcessor {
 
       const [operation] = await client.annotateVideo({
         inputUri: gcsUri,
-        features: ['EXPLICIT_CONTENT_DETECTION'],
+        features: [Feature.EXPLICIT_CONTENT_DETECTION],
       });
 
       const [operationResult] = await operation.promise();
@@ -1957,7 +1961,7 @@ class SimpleVideoProcessor {
 
       const [operation] = await client.annotateVideo({
         inputUri: gcsUri,
-        features: ['EXPLICIT_CONTENT_DETECTION'],
+        features: [Feature.EXPLICIT_CONTENT_DETECTION],
       });
 
       const [operationResult] = await operation.promise();

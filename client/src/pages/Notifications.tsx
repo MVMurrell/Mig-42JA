@@ -9,7 +9,8 @@ import { queryClient, apiRequest } from "@/lib/queryClient.ts";
 import { useToast } from "@/hooks/use-toast.ts";
 import { formatDistanceToNow } from "date-fns";
 import { useEffect } from "react";
-import type { Notification } from "@shared/schema.ts";
+import type { DBNotificationRow } from "@shared/schema.ts";
+// import type { Notification } from "@shared/schema.ts";
 
 // Notification type configurations with icons and navigation
 const notificationConfig = {

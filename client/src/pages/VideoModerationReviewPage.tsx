@@ -12,7 +12,7 @@ import { apiRequest, queryClient } from "@/lib/queryClient.ts";
 import Hls from 'hls.js';
 
 export default function VideoModerationReviewPage() {
-  const { videoId } = useParams();
+  const { videoId } = useParams<{ videoId: string }>();
   const [, setLocation] = useLocation();
   const { toast } = useToast();
   const [moderationDecision, setModerationDecision] = useState("");

@@ -4,18 +4,20 @@ import { Camera, X, Square, Send, Loader2 } from "lucide-react";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast.ts";
 
-interface VideoMessageRecorderProps {
+export interface VideoMessageRecorderProps {
   isOpen: boolean;
   onClose: () => void;
   threadId: string;
-  onMessageSubmitted: () => void;
+  onMessageSubmitted?: () => void;
+  onUploadComplete?: () => void; // optional callback for upload completion
 }
 
 export default function VideoMessageRecorder({ 
   isOpen, 
   onClose, 
   threadId, 
-  onMessageSubmitted 
+  onMessageSubmitted = () => {},
+  onUploadComplete = () => {},
 }: VideoMessageRecorderProps) {
   const [isRecording, setIsRecording] = useState(false);
   const [recordedVideo, setRecordedVideo] = useState<Blob | null>(null);
@@ -74,6 +76,8 @@ export default function VideoMessageRecorder({
       return result;
     },
     onSuccess: (data) => {
+       onMessageSubmitted();   // always safe (defaults to noop)
+        onUploadComplete();     // notify parent to refresh/close
       toast({
         title: "Video message uploaded successfully",
         description: "Your message is being processed and will appear shortly.",

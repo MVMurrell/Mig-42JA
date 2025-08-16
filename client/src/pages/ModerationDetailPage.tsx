@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge.tsx";
 import { useToast } from "@/hooks/use-toast.ts";
 import { ArrowLeft, CheckCircle, XCircle, Play } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient.ts";
+import { useParams } from "react-router-dom";
 import Hls from 'hls.js';
 
 export default function ModerationDetailPage() {
@@ -20,7 +21,8 @@ export default function ModerationDetailPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const hlsRef = useRef<Hls | null>(null);
   
-  const { contentType, flagId } = params || {};
+const { contentType, flagId } = useParams<{ contentType: string; flagId: string }>();
+
 
   // Fetch the specific content details based on content type
   const { data: contentData, isLoading } = useQuery({

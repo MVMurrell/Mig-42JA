@@ -380,75 +380,57 @@ export class BunnyService {
   }
 
   async uploadVideoToModerationZone(base64Data: string, duration?: number): Promise<string> {
-    const [, mimeType, base64Content] = base64Data.match(/^data:([^;]+);base64,(.+)$/) || [];
-    if (!mimeType || !base64Content) {
-      throw new Error('Invalid base64 data format');
-    }
+const match = base64Data.match(/data:([^;]+);base64,(.+)/);
+if (!match) throw new Error("Invalid base64 data format");
+const [, mimeType, base64Content] = match;
 
-    const videoBuffer = Buffer.from(base64Content, 'base64');
-    let finalVideoBuffer = videoBuffer;
-    let finalMimeType = mimeType;
 
-    // Handle WebM transcoding if needed
-    if (mimeType.includes('webm')) {
-      const tempInputPath = join('/tmp', `input_${randomUUID()}.webm`);
-      const tempOutputPath = join('/tmp', `output_${randomUUID()}.mp4`);
+const videoBytes = new Uint8Array(Buffer.from(base64Content, "base64"));
+let finalBytes: Uint8Array = videoBytes;   // <-- plain DOM Uint8Array
+let finalMime = mimeType;
 
-      try {
-        await writeFile(tempInputPath, videoBuffer);
-        await this.transcodeWebmToMp4(tempInputPath, tempOutputPath, duration);
-        finalVideoBuffer = await readFile(tempOutputPath);
-        finalMimeType = 'video/mp4';
-        
-        await unlink(tempInputPath).catch(() => {});
-        await unlink(tempOutputPath).catch(() => {});
-      } catch (transcodeError) {
-        finalVideoBuffer = videoBuffer;
-        finalMimeType = mimeType;
-        await unlink(tempInputPath).catch(() => {});
-        await unlink(tempOutputPath).catch(() => {});
-      }
-    }
 
-    // Create video in moderation library
-    const createUrl = `https://video.bunnycdn.com/library/${this.moderationLibraryId}/videos`;
-    const createResponse = await fetch(createUrl, {
-      method: 'POST',
-      headers: {
-        'AccessKey': this.apiKey,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        title: `Moderation Review ${Date.now()}`
-      }),
-    });
+if (mimeType.includes("webm")) {
+  const tmpIn = join("/tmp", `input_${randomUUID()}.webm`);
+  const tmpOut = join("/tmp", `output_${randomUUID()}.mp4`);
 
-    if (!createResponse.ok) {
-      const errorText = await createResponse.text();
-      throw new Error(`Failed to create video in moderation zone: ${createResponse.status} - ${errorText}`);
-    }
+  await writeFile(tmpIn, Buffer.from(videoBytes));   // write
+  await this.transcodeWebmToMp4(tmpIn, tmpOut, duration);
 
-    const createResult = await createResponse.json();
-    const videoId = createResult.guid;
-    
-    // Upload video file to moderation library
-    const uploadUrl = `https://video.bunnycdn.com/library/${this.moderationLibraryId}/videos/${videoId}`;
-    const uploadResponse = await fetch(uploadUrl, {
-      method: 'PUT',
-      headers: {
-        'AccessKey': this.apiKey,
-        'Content-Type': finalMimeType,
-      },
-      body: finalVideoBuffer,
-    });
+  const outBuf = await readFile(tmpOut);             // Buffer
+  finalBytes = new Uint8Array(outBuf);               // <-- DOM Uint8Array again
+  finalMime = "video/mp4";
 
-    if (!uploadResponse.ok) {
-      const errorText = await uploadResponse.text();
-      throw new Error(`Failed to upload video to moderation zone: ${uploadResponse.status} - ${errorText}`);
-    }
+  await unlink(tmpIn).catch(() => {});
+  await unlink(tmpOut).catch(() => {});
+}
 
-    return videoId;
-  }
+const createUrl = `https://video.bunnycdn.com/library/${this.moderationLibraryId}/videos`;
+const createRes = await fetch(createUrl, {
+  method: "POST",
+  headers: { AccessKey: this.apiKey, "Content-Type": "application/json" },
+  body: JSON.stringify({ title: `Moderation Review ${Date.now()}` }),
+});
+if (!createRes.ok) {
+  const t = await createRes.text();
+  throw new Error(`Failed to create moderation video: ${createRes.status} - ${t}`);
+}
+const { guid: videoId } = await createRes.json();
+
+const uploadUrl = `https://video.bunnycdn.com/library/${this.moderationLibraryId}/videos/${videoId}`;
+const uploadRes = await fetch(uploadUrl, {
+  method: "PUT",
+  headers: { AccessKey: this.apiKey, "Content-Type": finalMime ?? "application/octet-stream" },
+  body: finalBytes as BodyInit,  // typed DOM Uint8Array
+});
+
+if (!uploadRes.ok) {
+  const t = await uploadRes.text();
+  throw new Error(`Failed to upload moderation video bytes: ${uploadRes.status} - ${t}`);
+}
+
+return videoId;
+}
 
   getStreamUrl(fileName: string): string {
     // Return a proxy URL through our server since Bunny.net requires authentication

@@ -5,6 +5,7 @@ import { ArrowLeft, Plus, Bell, BellOff } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 import { useToast } from "@/hooks/use-toast.ts";
 import { apiRequest } from "@/lib/queryClient.ts";
+import type { AppUser } from "@/hooks/useAuth";
 
 interface Collector {
   id: string;
@@ -22,9 +23,10 @@ export default function Collectors() {
   const queryClient = useQueryClient();
 
   // Get current user ID first
-  const { data: user } = useQuery({
-    queryKey: ['/api/auth/user']
-  });
+ const { data: user } = useQuery<AppUser>({
+  queryKey: ["/api/auth/user"],
+});
+
 
   // Fetch collectors/followers
   const { data: collectors = [], isLoading } = useQuery({

@@ -24,13 +24,25 @@ interface VideoProcessingJob {
 }
 
 class VideoProcessingService {
+  private storage: Storage;
+  private gcsBucket: string;
   private processingQueue: VideoProcessingJob[] = [];
   private isProcessing = false;
 
-  constructor() {
-    console.log('Video Processing Service initialized');
-  }
+   constructor(opts?: { storage?: Storage; gcsBucket?: string }) {
+    this.storage = opts?.storage ?? new Storage();
+    this.gcsBucket =
+      opts?.gcsBucket ??
+      process.env.GCS_BUCKET ??
+      process.env.GOOGLE_CLOUD_BUCKET ??
+      '';
 
+    if (!this.gcsBucket) {
+      throw new Error(
+        'Missing GCS bucket name. Set GCS_BUCKET or GOOGLE_CLOUD_BUCKET in env.'
+      );
+    }
+  }
   async queueVideoForProcessing(job: VideoProcessingJob): Promise<void> {
     console.log(`Queuing video ${job.videoId} for processing`);
     this.processingQueue.push(job);
@@ -262,6 +274,13 @@ class VideoProcessingService {
   async getVideoStatus(videoId: string): Promise<any> {
     const [video] = await db.select().from(videos).where(eq(videos.id, videoId));
     return video;
+  }
+
+   private async deleteFromGcs(fileName: string) {
+    await this.storage
+      .bucket(this.gcsBucket)
+      .file(fileName)
+      .delete({ ignoreNotFound: true });
   }
 }
 

@@ -676,10 +676,11 @@ export default function GroupsPage() {
           {/* Video Message Recorder Modal */}
           {showVideoRecorder && (
             <VideoMessageRecorder
+              isOpen={showVideoRecorder}
               threadId={selectedThread.id}
               onClose={() => setShowVideoRecorder(false)}
               onUploadComplete={() => {
-                setShowVideoRecorder(false);
+                setShowVideoRecorder(false)
                 queryClient.invalidateQueries({ queryKey: ["/api/threads", selectedThread.id, "messages"] });
               }}
             />

@@ -12,6 +12,7 @@ export interface VideoModerationResult {
 export class VideoModerationService {
   private client: VideoIntelligenceServiceClient;
   private projectId: string;
+  
 
   constructor() {
     try {

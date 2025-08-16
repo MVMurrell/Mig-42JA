@@ -1,120 +1,89 @@
+// client/src/hooks/useAuth.ts
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 
-
-  export type AppUser = {
+export type AppUser = {
   id: string;
   username: string | null;
   firstName?: string | null;
   lastName?: string | null;
   profileImageUrl: string | null;
   email?: string | null;
-  role?: "user" | "admin";
+  role?: "user" | "admin" | string | null;
+  gemCoins?: number; // add this since home.tsx reads it
+  readyPlayerMeAvatarUrl?: string | null;
+  lanterns?: number;
 };
 
 export function useAuth() {
+  // Basic mobile detection (same intent as what you had)
   const [isMobile, setIsMobile] = useState(false);
-
-
-
-interface User {
-  id: string;
-  email: string;
-  firstName: string;
-  lastName: string;
-  profileImageUrl?: string;
-  gemCoins?: number;
-}
-
-type RawUser = {
-  id: string;
-  username?: string | null;
-  profileImageUrl?: string | null;
-  email?: string | null;
-  role?: string | null;
-} | null;
-  
-  // Detect mobile device
   useEffect(() => {
-    const checkMobile = () => {
-      const isMobileDevice = /Mobile|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
-      setIsMobile(isMobileDevice);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
+    const ua = navigator.userAgent || "";
+    const mobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(ua);
+    setIsMobile(mobile);
   }, []);
 
-const { data: rawUser, isLoading: userLoading, error } = useQuery<RawUser>({
-  queryKey: ["/api/auth/user"],
-  refetchOnWindowFocus: true,
-});
-
-  const { isLoading: authStatusLoading } = useQuery({ queryKey: ["/api/auth/status"], enabled: isMobile, retry: false, refetchInterval: 30000 });
-
-    const user: AppUser | null = rawUser ? {
-  id: rawUser.id,
-  username: rawUser.username ?? null,
-  profileImageUrl: rawUser.profileImageUrl ?? null,
-  email: rawUser.email ?? null,
-  role: (rawUser.role as AppUser["role"]) ?? "user",
-} : null;
-
-  // Additional query for authentication status on mobile devices
-  const { data: authStatus } = useQuery({
-    queryKey: ["/api/auth/status"],
-    enabled: isMobile, // Only run on mobile devices
-    retry: false,
-    refetchInterval: 30000, // Check every 30 seconds for mobile authentication updates
+  // User fetch
+  const {
+    data: user,
+    isLoading: isLoadingUser,
+    error: userError,
+  } = useQuery<AppUser | null>({
+    queryKey: ["/api/auth/user"],
+    queryFn: async () => {
+      const res = await fetch("/api/auth/user", { credentials: "include" });
+      if (res.status === 401) return null; // not authenticated
+      if (!res.ok) throw new Error(`auth/user ${res.status}`);
+      return (await res.json()) as AppUser;
+    },
+    refetchOnWindowFocus: true,
   });
 
+  // Optional server-side auth status for mobile flow
+  const {
+    data: authStatus,
+    isLoading: isLoadingStatus,
+  } = useQuery<{ authenticated: boolean; isSuspended?: boolean; secure_cookie?: boolean }>({
+    queryKey: ["/api/auth/status"],
+    queryFn: async () => {
+      const res = await fetch("/api/auth/status", { credentials: "include" });
+      if (!res.ok) throw new Error(`auth/status ${res.status}`);
+      return res.json();
+    },
+    enabled: isMobile,          // only ping on mobile
+    refetchInterval: 30000,     // keep it fresh
+  });
+
+  // Derived booleans
+  const isAuthenticated =
+    isMobile ? !!authStatus?.authenticated : !!user;
+
+  const isSuspended =
+    isMobile ? !!authStatus?.isSuspended : false;
+
+  const isLoading = isLoadingUser || (isMobile && isLoadingStatus);
+
+  // Actions
   const login = () => {
-    if (isMobile) {
-      console.log('📱 Mobile login detected, using server-side authentication flow');
-      // For mobile devices, use the server-side authentication flow
-      window.location.href = '/api/auth/login?mobile=true';
-    } else {
-      console.log('🖥️ Desktop login detected, using standard authentication flow');
-      window.location.href = '/api/auth/login';
-    }
+    // If your server expects a mobile hint, keep the query param
+    window.location.href = isMobile ? "/api/auth/login?mobile=true" : "/api/auth/login";
   };
 
   const logout = () => {
-    window.location.href = '/api/auth/logout';
+    window.location.href = "/api/auth/logout";
   };
 
-  // Check if we got a 401 error, which means not authenticated
-  const is401Error = error && (error as any).message === "Unauthorized";
-  const isSuspended = error && (error as any).message === "Account suspended";
-  
-  // Enhanced authentication check that considers server-side authentication for mobile
-  let isAuthenticated = !!user && !is401Error && !isSuspended;
-  
-  // For mobile devices, also check the authentication status endpoint
-  if (isMobile && authStatus) {
-    isAuthenticated = isAuthenticated || (authStatus as any).authenticated;
-    console.log('📱 Mobile auth status check:', {
-      userAuth: !!user,
-      serverAuth: (authStatus as any)?.authenticated,
-      secureCookie: (authStatus as any)?.secure_cookie,
-      finalAuth: isAuthenticated
-    });
-  }
-
-  const isLoading = userLoading || (isMobile && authStatusLoading);
-
-  
   return {
-    user,
-    isLoading,
+    user,                // AppUser | null
+    isLoading,           // <- fixes shorthand prop error
     isAuthenticated,
     isSuspended,
     isMobile,
     authStatus: isMobile ? authStatus : null,
     login,
     logout,
+    // optionally expose userError if you want
   };
 }
-
-
+export default useAuth;

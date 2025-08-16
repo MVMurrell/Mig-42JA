@@ -10,7 +10,7 @@ import { useToast } from "@/hooks/use-toast.ts";
 
 export default function SharedProfile() {
   const params = useParams();
-  const userId = params.userId;
+const { userId } = useParams<{ userId: string }>();
   const { user, isLoading: authLoading } = useAuth();
   const { toast } = useToast();
   const [activeTab, setActiveTab] = useState("videos");

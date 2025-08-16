@@ -1,4 +1,11 @@
 import { Express } from "express";
+declare module "express-serve-static-core" {
+  interface Request {
+    sessionID?: string;
+    session?: Record<string, unknown> & { oauth_state?: string };
+    user?: unknown; // or your user type
+  }
+}
 
 /**
  * MOBILE AUTHENTICATION ENDPOINTS
@@ -10,6 +17,7 @@ import { Express } from "express";
 export function setupMobileAuth(app: Express) {
   console.log('📱 Setting up mobile authentication endpoints...');
 
+  
   // Mobile-specific login endpoint with enhanced error handling
   app.get("/api/auth/mobile-login", (req, res) => {
     const userAgent = req.headers['user-agent'] || '';

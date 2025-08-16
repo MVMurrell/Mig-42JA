@@ -7,11 +7,8 @@ import { storage, db } from './storage.ts';
 import { videos, treasureChests, treasureChestLocations, treasureChestCollections, users } from '../shared/schema.ts';
 import { eq, and, sql, desc, asc, lt, gt, not } from 'drizzle-orm';
 type DBTreasureChestLocationInsert = typeof treasureChestLocations.$inferInsert;
-type DBTreasureChestLocationRow = typeof treasureChestLocations.$inferSelect;
 type DBTreasureChestInsert = typeof treasureChests.$inferInsert;
-type DBTreasureChestRow = typeof treasureChests.$inferSelect;   
 type DBTreasureChestCollectionInsert = typeof treasureChestCollections.$inferInsert;
-type DBTreasureChestCollectionRow = typeof treasureChestCollections.$inferSelect;
 
 export interface TreasureSpawnLocation {
   latitude: number;
@@ -424,16 +421,6 @@ export class TreasureChestService {
         } ;
 
         await db.insert(treasureChestCollections).values(collection)
-      // Record the collection
-      // await db.insert(treasureChestCollections)
-      //   .values({
-      //     userId: attempt.userId,
-      //     chestId: attempt.chestId,
-      //     coinReward: chestData.coinReward,
-      //     collectionLatitude: attempt.userLatitude.toString(),
-      //     collectionLongitude: attempt.userLongitude.toString(),
-      //     distanceFromChest: distanceFromChest,
-      //   } satisfies DBTreasureChestCollectionInsert);
 
       // Award coins to user
       await db.update(users)

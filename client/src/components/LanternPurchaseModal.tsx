@@ -22,6 +22,7 @@ interface LanternPurchaseModalProps {
   isOpen: boolean;
   onClose: () => void;
   userProfile?: any;
+  onPurchaseSuccess?: () => void; // optional callback for purchase success
 }
 
 export function LanternPurchaseModal({ isOpen, onClose, userProfile }: LanternPurchaseModalProps) {

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import type { DBUserRow } from "@shared/schema.ts";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { useAuth } from "@/hooks/useAuth.ts";
 import { Input } from "@/components/ui/input.tsx";
@@ -50,6 +51,7 @@ import lilacIcon from "@assets/Lilac_1749397661786.png";
 import neonGreenIcon from "@assets/Neon Green_1749397661787.png";
 import mintIcon from "@assets/Mint_1749397661787.png";
 import lanternIcon from "@assets/Lantern2_1752195390568.png";
+type AppUser = Partial<DBUserRow> & { id: string; email?: string; name?: string };
 
 const categories = [
   { name: "Art", icon: redIcon, color: "bg-red-500" },
@@ -127,6 +129,7 @@ export default function Home() {
   const [showWelcomeModal, setShowWelcomeModal] = useState(false);
   const [showCoinEarningWidget, setShowCoinEarningWidget] = useState(false);
   const [isLanternWorkflowActive, setIsLanternWorkflowActive] = useState(false);
+  
   
   // Lantern state management
   const [isLanternActive, setIsLanternActive] = useState(false);
@@ -241,11 +244,11 @@ export default function Home() {
     enabled: !!userLocation,
   });
 
-  // Fetch complete profile data for proper profile image hierarchy
-  const { data: profileData } = useQuery({
-    queryKey: ["/api/users/me/profile"],
-    enabled: !!user, // Only fetch if user is authenticated
-  });
+
+  const { data: profileData } = useQuery<AppUser>({
+  queryKey: ["/api/auth/user"],
+  queryFn: async () => (await fetch("/api/auth/user", { credentials: "include" })).json(),
+});
 
   // Debug profile data
   useEffect(() => {

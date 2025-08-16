@@ -1065,7 +1065,7 @@ function VideoAppealsSection() {
                     <div className="space-y-3 pt-4 border-t">
                       <div className="flex gap-2">
                         <Button
-                          onClick={() => setLocation(`/moderation/review/${appeal.id}`)}
+                          onClick={() => useLocation()}
                           variant="outline"
                           size="sm"
                         >

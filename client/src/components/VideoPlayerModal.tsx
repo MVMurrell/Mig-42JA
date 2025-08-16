@@ -48,8 +48,8 @@ import HLSVideoPlayer from "./HLSVideoPlayer.tsx";
 import Hls from 'hls.js';
 import { formatDistance } from "@/lib/distanceUtils.ts";
 import type { DBUserRow } from '@shared/schema.ts';
-const { data: currentUser } = useQuery<DBUserRow>({ queryKey: ['/api/auth/user'] });
 import type { AppUser } from "@/hooks/useAuth";
+const { user: currentUser } = useAuth();;
 
 // Video Scrubber Component for fullscreen video comments
 function VideoScrubber({ comment, onTimeUpdate }: { comment: any; onTimeUpdate: (currentTime: number, duration: number) => void }) {
@@ -163,6 +163,7 @@ function VideoCommentPlayer({ videoUrl, duration, thumbnailUrl, onFullscreen, is
   onFullscreen?: () => void;
   isFullscreen?: boolean;
   commentData?: any;
+  showCustomControls?: boolean;
   onDelete?: (commentId: number) => void;
   onTimeUpdate?: (currentTime: number, duration: number, isPlaying: boolean) => void;
 }) {

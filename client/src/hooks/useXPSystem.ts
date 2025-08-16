@@ -3,6 +3,7 @@ import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { apiRequest } from '@/lib/queryClient.ts';
 import { XPRewardType } from '@shared/xpSystem.ts';
 
+
 interface XPResult {
   leveledUp: boolean;
   oldLevel: number;
@@ -26,6 +27,8 @@ interface LevelUpModalState {
   nextLevelXP: number;
 }
 
+
+
 export const useXPSystem = () => {
   const [xpNotification, setXPNotification] = useState<XPNotificationState>({
     isVisible: false,
@@ -33,6 +36,8 @@ export const useXPSystem = () => {
     activity: '',
     coinsGained: undefined
   });
+
+  
   
   const [levelUpModal, setLevelUpModal] = useState<LevelUpModalState>({
     isOpen: false,
@@ -54,7 +59,7 @@ export const useXPSystem = () => {
   // Award XP mutation
   const awardXPMutation = useMutation({
     mutationFn: async (params: { activity: XPRewardType; customAmount?: number }) => {
-      return await apiRequest('/api/xp/award', 'POST', params);
+      return await apiRequest('/api/xp/award', {method: 'POST', data: params});
     },
     onSuccess: (data: any, variables) => {
       console.log('🔍 XP MUTATION SUCCESS: Raw server response:', data);
@@ -73,7 +78,20 @@ export const useXPSystem = () => {
         'FIND_TREASURE': 'Finding Treasure',
         'CREATE_GROUP': 'Creating Group',
         'FLAG_VIDEO': 'Content Moderation',
-        'TRACK_LOCATION_PER_MILE': 'Movement Tracking'
+        'TRACK_LOCATION_PER_MILE': 'Movement Tracking', 
+        'WATCH_VIDEO': 'Watching Video',
+        'WATCH_VIDEO_FREE': 'Watching Free Video',
+        'WATCH_VIDEO_PAID': 'Watching Paid Video',
+        'UPLOAD_AUDIO': 'Uploading Audio',
+        'UPLOAD_IMAGE': 'Uploading Image',
+        'UPLOAD_VIDEO': 'Uploading Video',
+        'UPLOAD_DOCUMENT': 'Uploading Document',
+        'UPLOAD_PROFILE_PICTURE': 'Uploading Profile Picture',
+        'UPLOAD_COVER_PHOTO': 'Uploading Cover Photo',
+        'QUEST_COMPLETION': 'Completing Quest',
+        'QUEST_PARTICIPATION': 'Participating in Quest',
+        'DRAGON_HELP': 'Helping Dragon', 
+        'DRAGON_DEFEAT': 'Defeating Dragon', 
       };
       
       showXPNotification(data, activityNames[variables.activity] || 'Activity');
