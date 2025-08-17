@@ -248,6 +248,7 @@ export default function Home() {
   const { data: profileData } = useQuery<AppUser>({
   queryKey: ["/api/auth/user"],
   queryFn: async () => (await fetch("/api/auth/user", { credentials: "include" })).json(),
+  enabled: !!user,
 });
 
   // Debug profile data

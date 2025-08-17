@@ -12,6 +12,7 @@
 import { db } from './db.ts';
 import { videos, dragons, dragonAttacks, dragonRewards, users } from '../shared/schema.ts';
 import { eq, and, sql, gt, lt, ne, isNotNull } from 'drizzle-orm';
+type DBDragonAttackInsert =  typeof dragonAttacks.$inferInsert;  
 
 interface LocationData {
   latitude: number;
@@ -360,11 +361,11 @@ class DragonService {
       await db
         .insert(dragonAttacks)
         .values({
-          dragonId,
+          dragonId: dragonId,
           userId: mappedUserId,
-          videoId,
+          videoId: videoId,
           damageDealt: 1
-        });
+        } as DBDragonAttackInsert);
 
       // Update dragon health
       const newHealth = dragon.currentHealth - 1;
@@ -440,7 +441,7 @@ class DragonService {
         .update(users)
         .set({
           gemCoins: sql`${users.gemCoins} + ${coinsEarned}`
-        })
+        } as Partial<typeof users.$inferInsert>)
         .where(eq(users.id, attacker.userId));
 
       // Record reward
@@ -571,7 +572,7 @@ class DragonService {
   public async cleanupExpiredDragons() {
     const expired = await db
       .update(dragons)
-      .set({ isActive: false })
+      .set({ isActive: false } as Partial<typeof dragons.$inferInsert>)
       .where(
         and(
           eq(dragons.isActive, true),

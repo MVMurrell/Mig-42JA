@@ -5,6 +5,8 @@ import VideoUnlockModal from '@/components/VideoUnlockModal.tsx';
 import VideoFeedModal from '@/components/VideoFeedModal.tsx';
 import { calculateDistance } from '@/lib/utils.ts';
 import { Loader2, MapPin, AlertCircle } from 'lucide-react';
+import type { DBVideoRow } from "@shared/schema.ts";
+type ShareVideo = Pick<DBVideoRow, "id" | "videoUrl" | "userId" | "likes" | "views" | "latitude" | "longitude" | "title" | "category" | "bunnyVideoId">;
 
 interface Video {
   id: string;
@@ -28,7 +30,7 @@ export default function VideoSharePage() {
   const videoId = location.split('/video/')[1];
 
   // Fetch video data
-  const { data: video, isLoading: videoLoading, error: videoError } = useQuery<Video>({
+  const { data: video, isLoading: videoLoading, error: videoError } = useQuery<ShareVideo>({
     queryKey: ['/api/videos', videoId],
     enabled: !!videoId
   });
@@ -72,7 +74,7 @@ export default function VideoSharePage() {
 
   // Calculate distance when both locations are available
   const distance = userLocation && video 
-    ? calculateDistance(userLocation.lat, userLocation.lng, video.lat, video.lng) 
+    ? calculateDistance(userLocation.lat, userLocation.lng, Number(video.latitude), Number(video.longitude))
     : null;
 
   const isWithinRange = distance !== null && distance <= 30.48; // 100ft in meters
@@ -100,7 +102,7 @@ export default function VideoSharePage() {
   const handleCloseUnlockModal = () => {
     setShowUnlockModal(false);
     // Redirect to map showing video location
-    window.location.href = `/?lat=${video?.lat}&lng=${video?.lng}&video=${video?.id}`;
+    window.location.href = `/?lat=${video?.latitude}&lng=${video?.longitude}&video=${video?.id}`;
   };
 
   if (videoLoading) {

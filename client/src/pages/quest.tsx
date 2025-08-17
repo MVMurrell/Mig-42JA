@@ -10,6 +10,16 @@ import { formatDistanceToNow } from 'date-fns';
 import { CreateQuestModal } from '@/components/CreateQuestModal.tsx';
 import { QuestDetailModal } from '@/components/QuestDetailModal.tsx';
 import type { DBQuestRow } from '@shared/schema.ts';
+type QuestItem = {
+  id: string;
+  title: string;
+  description: string;
+  rewardPerParticipant: number;
+  distanceFromUser?: number;
+  participantCount?: number;
+  requiredParticipants?: number;
+  timeRemaining?: string; 
+}
 
 interface QuestWithProgress extends DBQuestRow {
   participantCount: number;
@@ -24,13 +34,14 @@ export default function QuestPage() {
   const [selectedQuest, setSelectedQuest] = useState<QuestWithProgress | null>(null);
   const [showDetailModal, setShowDetailModal] = useState(false);
 
-  const { data: activeQuests = [], isLoading: loadingActive } = useQuery({
-    queryKey: ['/api/quests/active'],
-  });
+    const { data: activeQuests = [] , isLoading: loadingActive} = useQuery<QuestItem[]>({
+      queryKey: ["/api/quests/active"],
+    });
 
-  const { data: myQuests = [], isLoading: loadingMy } = useQuery({
-    queryKey: ['/api/quests/my-participations'],
-  });
+    // Fetch user's participating quests
+      const { data: myQuests = [], isLoading: loadingMy } = useQuery<QuestItem[]>({
+        queryKey: ["/api/quests/my-participations"],
+      });
 
   const handleQuestClick = (quest: QuestWithProgress) => {
     setSelectedQuest(quest);

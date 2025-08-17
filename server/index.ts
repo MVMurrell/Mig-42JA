@@ -115,7 +115,7 @@ app.use((req, res, next) => {
 
  const port = process.env.PORT || 3000;
 
-server.listen(port, "0.0.0.0", () => {
+app.listen(Number(process.env.PORT) || 3000, () => { 
   log(`🚀 Serving on port ${port}`);
 
   // Start quest completion checker

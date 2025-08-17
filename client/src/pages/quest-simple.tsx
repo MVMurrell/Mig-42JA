@@ -9,6 +9,27 @@ import { MapPin, Clock, Users, Plus, ScrollText, Trophy, Coins, ArrowLeft, Info 
 import { CreateQuestModal } from "@/components/CreateQuestModal.tsx";
 import { QuestInfoModal } from "@/components/QuestInfoModal.tsx";
 import { QuestDetailModal } from "@/components/QuestDetailModal.tsx";
+import type { DBQuestRow } from "@shared/schema.ts";
+// type QuestItem = {
+//   id: string;
+//   title: string;
+//   description: string;
+//   rewardPerParticipant: number;
+//   distanceFromUser?: number;
+//   participantCount?: number;
+//   requiredParticipants?: number;
+//   timeRemaining?: string; 
+// }
+
+type QuestItem = Pick<
+  DBQuestRow,
+  "id" | "title" | "description" | "rewardPerParticipant"
+> & {
+  distanceFromUser?: number;
+  participantCount?: number;
+  requiredParticipants?: number;
+  timeRemaining?: string;
+};
 
 export default function QuestPage() {
   const [activeTab, setActiveTab] = useState("discover");
@@ -20,12 +41,16 @@ export default function QuestPage() {
   const [showDetailModal, setShowDetailModal] = useState(false);
 
   // Fetch active quests
-  const { data: activeQuests = [], isLoading: loadingActive } = useQuery({
+  // const { data: activeQuests = [], isLoading: loadingActive } = useQuery({
+  //   queryKey: ["/api/quests/active", searchRadius],
+  // });
+
+  const { data: activeQuests = [] , isLoading: loadingActive} = useQuery<QuestItem[]>({
     queryKey: ["/api/quests/active", searchRadius],
   });
 
   // Fetch user's participating quests
-  const { data: myQuests = [], isLoading: loadingMy } = useQuery({
+  const { data: myQuests = [], isLoading: loadingMy } = useQuery<QuestItem[]>({
     queryKey: ["/api/quests/my-participations"],
   });
 

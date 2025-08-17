@@ -1,17 +1,29 @@
-import { useAuth } from "@/lib/auth.ts";
+// import { useAuth } from "@/lib/auth.ts";
 import { Link } from "wouter";
 import { Bell, User, Shield, HelpCircle, ChevronRight } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card.tsx";
+import type { DBUserRow } from "@shared/schema";
+import { useAuth, type AppUser } from "@/hooks/useAuth";
+import { apiRequest } from "@/lib/queryClient"; // or your fetch helper
+import { useQuery } from "@tanstack/react-query";
 
 export default function Settings() {
-  const { user } = useAuth();
+  const { user, login } = useAuth();
+
+
+// If you need createdAt (not in AppUser), fetch the full profile row:
+  const { data: profile } = useQuery<DBUserRow>({
+    queryKey: ["/api/users/me/profile"],
+    enabled: !!user,
+    queryFn: () => apiRequest<DBUserRow>("/api/users/me/profile"),
+  });
+
 
   if (!user) {
     return (
-      <div className="container mx-auto px-4 py-8">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Please log in to access settings</h1>
-        </div>
+      <div className="container mx-auto px-4 py-8 text-center">
+        <h1 className="text-2xl font-bold mb-4">Please log in to access settings</h1>
+        <button className="btn" onClick={login}>Sign in</button>
       </div>
     );
   }
@@ -112,7 +124,12 @@ export default function Settings() {
         <div className="space-y-2 text-sm text-muted-foreground">
           <p><span className="font-medium">Name:</span> {user.firstName} {user.lastName}</p>
           <p><span className="font-medium">Email:</span> {user.email}</p>
-          <p><span className="font-medium">Member since:</span> {new Date(user.createdAt).toLocaleDateString()}</p>
+          <p className="space-y-2 text-sm text-muted-foreground">
+          <span className="font-medium">Member since:</span>{" "}
+          {profile?.createdAt
+            ? new Date(profile.createdAt as any).toLocaleDateString()
+            : "—"}
+        </p>
         </div>
       </div>
     </div>
