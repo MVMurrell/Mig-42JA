@@ -8,7 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { MapPin, Clock, Users, Plus, ScrollText, Trophy, Coins, ArrowLeft, Info } from "lucide-react";
 import { CreateQuestModal } from "@/components/CreateQuestModal.tsx";
 import { QuestInfoModal } from "@/components/QuestInfoModal.tsx";
-import { QuestDetailModal } from "@/components/QuestDetailModal.tsx";
+import  QuestDetailModal from "@/components/QuestDetailModal.tsx";
 import type { DBQuestRow } from "@shared/schema.ts";
 // type QuestItem = {
 //   id: string;

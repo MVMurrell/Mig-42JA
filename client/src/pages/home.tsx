@@ -19,7 +19,7 @@ import ScrollableVideoFeed from "@/components/ScrollableVideoFeed.tsx";
 import VideoUploadModal from "@/components/VideoUploadModal.tsx";
 import ProcessingNotificationModal from "@/components/ProcessingNotificationModal.tsx";
 import AdSenseBanner from "@/components/AdSenseBanner.tsx";
-import { QuestDetailModal } from "@/components/QuestDetailModal.tsx";
+import QuestDetailModal  from "@/components/QuestDetailModal.tsx";
 import { WelcomeModal } from "@/components/WelcomeModal.tsx";
 import { CoinEarningWidget } from "@/components/CoinEarningWidget.tsx";
 import { MusicControlButton } from "@/components/MusicControlButton.tsx";

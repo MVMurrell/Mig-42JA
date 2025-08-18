@@ -626,5 +626,3 @@ export default function QuestDetailModal({
     </Dialog>
   );
 }
-
-export { QuestDetailModal };
