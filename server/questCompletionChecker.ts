@@ -1,6 +1,8 @@
 import { db } from './db.ts';
 import { quests, questParticipants, videos, users, notifications } from '../shared/schema.ts';
 import { eq, and, sql, lte } from 'drizzle-orm';
+type DBQuestInsert = typeof quests.$inferInsert;
+type DBNotificationInsert = typeof notifications.$inferInsert;
 
 class QuestCompletionChecker {
   private checkInterval: NodeJS.Timeout | null = null;
@@ -81,7 +83,7 @@ class QuestCompletionChecker {
         .set({ 
           status: questSuccessful ? 'completed' : 'failed',
           isActive: false
-        })
+        } as Partial<DBQuestInsert>)
         .where(eq(quests.id, quest.id));
 
       // Send notifications and award coins
@@ -128,7 +130,7 @@ class QuestCompletionChecker {
         type: successful ? 'quest_success' : 'quest_failed',
         relatedContentId: quest.id,
         isRead: false
-      });
+      }as DBNotificationInsert);
 
       console.log(`📢 QUEST CHECKER: Sent ${successful ? 'success' : 'failure'} notification to user ${userId}`);
     } catch (error) {
@@ -142,7 +144,7 @@ class QuestCompletionChecker {
         .update(users)
         .set({
           gemCoins: sql`COALESCE(gem_coins, 0) + ${coinAmount}`
-        })
+        } as Partial<typeof users.$inferInsert>)
         .where(eq(users.id, userId));
 
       console.log(`💰 QUEST CHECKER: Awarded ${coinAmount} coins to user ${userId}`);

@@ -8,8 +8,10 @@ import { Progress } from '@/components/ui/progress.tsx';
 import { MapPin, Users, Clock, Coins, Plus, Target } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import { CreateQuestModal } from '@/components/CreateQuestModal.tsx';
-import { QuestDetailModal } from '@/components/QuestDetailModal.tsx';
+import  QuestDetailModal  from '@/components/QuestDetailModal.tsx';
 import type { DBQuestRow } from '@shared/schema.ts';
+
+
 type QuestItem = {
   id: string;
   title: string;
@@ -27,7 +29,29 @@ interface QuestWithProgress extends DBQuestRow {
   isParticipating: boolean;
   timeRemaining: string;
   distanceFromUser?: number;
+  creator: string; // simple for the list
 }
+
+type UIQuest = {
+  id: string;
+  title: string;
+  description: string;
+  rewardPerParticipant: number;
+
+  // page-only fields
+  participantCount: number;
+  progressPercentage: number;
+  isParticipating: boolean;
+  timeRemaining: string;
+  distanceFromUser?: number;
+
+  // OPTIONAL fields you *might* show if present
+  creator?: string;
+};
+
+const [selectedQuest, setSelectedQuest] =
+  useState<QuestWithProgress | null>(null);
+
 
 export default function QuestPage() {
   const [showCreateModal, setShowCreateModal] = useState(false);
@@ -256,16 +280,13 @@ export default function QuestPage() {
         onClose={() => setShowCreateModal(false)}
       />
       
-      {selectedQuest && (
-        <QuestDetailModal
-          isOpen={showDetailModal}
-          onClose={() => {
-            setShowDetailModal(false);
-            setSelectedQuest(null);
-          }}
-          quest={selectedQuest}
-        />
-      )}
+              {showDetailModal && selectedQuest && (
+            <QuestDetailModal
+        isOpen={showDetailModal}
+      onClose={() => setShowDetailModal(false)}
+      questId={selectedQuest.id}     // <-- only the id
+      />
+    )}
     </div>
   );
 }

@@ -996,7 +996,7 @@ export default function Home() {
         <QuestDetailModal
           isOpen={true}
           onClose={closeModal}
-          quest={selectedQuest}
+          questId={typeof selectedQuest === 'string' ? selectedQuest : selectedQuest.id}
         />
       )}
 

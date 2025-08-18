@@ -8,6 +8,8 @@ import { bunnyService } from './bunnyService.ts';
 import { Storage } from '@google-cloud/storage';
 import { VideoIntelligenceServiceClient, protos  } from '@google-cloud/video-intelligence';
 import { audioProcessingService } from './audioProcessingService.ts';
+import { ThreadVideoModerator } from './threadVideoModerator.ts';
+import vi from 'zod/v4/locales/vi';
 
 
 type DBVideoRow    = typeof videos.$inferSelect;
@@ -18,9 +20,9 @@ const Feature = protos.google.cloud.videointelligence.v1.Feature;
 interface VideoProcessingJob {
   videoId: string;
   tempFilePath: string;
-  originalFilename: string;
+  originalFilename?: string;
   frontendDuration?: number;
-  userId: string;
+  userId?: string;
   metadata?: VideoMetadata;
 }
 
@@ -33,8 +35,10 @@ export type VideoMetadata = {
   visibility?: string;
   groupId?: string;
   duration?: number | null;
+  frontendDuration?: number;
   [k: string]: any;
 };
+
 
 
 class SimpleVideoProcessor {
@@ -1846,7 +1850,7 @@ class SimpleVideoProcessor {
       // Step 2: Run comprehensive content moderation
       const [moderationResult, audioResult] = await Promise.all([
         this.moderateThreadVideo(options.messageId, gcsUri),
-        this.processThreadVideoAudio(options.messageId, tempFilePath)
+        this.processThreadVideoAudio(String(options.messageId), tempFilePath)
       ]);
 
       // Step 3: Determine final approval status
@@ -1923,7 +1927,7 @@ class SimpleVideoProcessor {
         timestamp: new Date().toISOString()
       };
 
-      await this.storage.updateThreadMessageModerationResults(options.messageId, JSON.stringify(moderationData));
+      await this.storage.updateThreadMessageStatus(options.messageId, JSON.stringify(moderationData));
 
       console.log(`✅ Thread message ${options.messageId} processing completed: ${finalStatus}`);
 
@@ -1994,7 +1998,7 @@ class SimpleVideoProcessor {
     }
   }
 
-  private async processThreadVideoAudio(messageId: number, videoPath: string): Promise<{ 
+  private async processThreadVideoAudio(messageId: string, videoPath: string): Promise<{ 
     passed: boolean; 
     reason?: string; 
     transcription?: string;
@@ -2004,70 +2008,70 @@ class SimpleVideoProcessor {
       console.log(`🎵 Processing audio for thread message ${messageId}: ${videoPath}`);
       
       // Extract audio from video
-      const audioPath = join('/tmp', `thread-message-${messageId}-audio.wav`);
+      // const audioPath = join('/tmp', `thread-message-${messageId}-audio.wav`);
       
-      const ffmpegArgs = [
-        '-err_detect', 'ignore_err',
-        '-i', videoPath,
-        '-vn',           // No video
-        '-acodec', 'pcm_s16le',  // PCM audio codec
-        '-ar', '16000',  // Sample rate for speech recognition
-        '-ac', '1',      // Mono channel
-        '-y',            // Overwrite output
-        audioPath
-      ];
+      // const ffmpegArgs = [
+      //   '-err_detect', 'ignore_err',
+      //   '-i', videoPath,
+      //   '-vn',           // No video
+      //   '-acodec', 'pcm_s16le',  // PCM audio codec
+      //   '-ar', '16000',  // Sample rate for speech recognition
+      //   '-ac', '1',      // Mono channel
+      //   '-y',            // Overwrite output
+      //   audioPath
+      // ];
       
-      console.log(`Extracting audio from video using FFmpeg: ${ffmpegArgs.join(' ')}`);
+      // console.log(`Extracting audio from video using FFmpeg: ${ffmpegArgs.join(' ')}`);
       
-      const success = await new Promise<boolean>((resolve) => {
-        const ffmpeg = spawn('ffmpeg', ffmpegArgs);
-        let stderr = '';
+      // const success = await new Promise<boolean>((resolve) => {
+      //   const ffmpeg = spawn('ffmpeg', ffmpegArgs);
+      //   let stderr = '';
         
-        ffmpeg.stderr.on('data', (data) => {
-          stderr += data.toString();
-        });
+      //   ffmpeg.stderr.on('data', (data) => {
+      //     stderr += data.toString();
+      //   });
         
-        ffmpeg.on('close', (code) => {
-          if (code === 0) {
-            console.log(`Audio extraction successful for thread message ${messageId}`);
-            resolve(true);
-          } else {
-            console.error(`Audio extraction failed with code ${code}: ${stderr}`);
-            resolve(false);
-          }
-        });
+      //   ffmpeg.on('close', (code) => {
+      //     if (code === 0) {
+      //       console.log(`Audio extraction successful for thread message ${messageId}`);
+      //       resolve(true);
+      //     } else {
+      //       console.error(`Audio extraction failed with code ${code}: ${stderr}`);
+      //       resolve(false);
+      //     }
+      //   });
         
-        ffmpeg.on('error', (error) => {
-          console.error(`FFmpeg error: ${error}`);
-          resolve(false);
-        });
+      //   ffmpeg.on('error', (error) => {
+      //     console.error(`FFmpeg error: ${error}`);
+      //     resolve(false);
+      //   });
         
-        // Timeout after 30 seconds
-        setTimeout(() => {
-          ffmpeg.kill('SIGTERM');
-          resolve(false);
-        }, 30000);
-      });
+      //   // Timeout after 30 seconds
+      //   setTimeout(() => {
+      //     ffmpeg.kill('SIGTERM');
+      //     resolve(false);
+      //   }, 30000);
+      // });
       
-      if (!success) {
-        return { passed: true, reason: 'Audio extraction failed - approving without audio check' };
-      }
+      // if (!success) {
+      //   return { passed: true, reason: 'Audio extraction failed - approving without audio check' };
+      // }
       
       // Process with Speech-to-Text
       try {
-        const audioBuffer = await readFile(audioPath);
-        console.log(`Audio file size: ${audioBuffer.length} bytes`);
+        // const audioBuffer = await readFile(audioPath);
+        // console.log(`Audio file size: ${audioBuffer.length} bytes`);
         
         // Clean up audio file
-        await unlink(audioPath).catch(() => {});
+        // await unlink(audioPath).catch(() => {});
         
-        if (audioBuffer.length < 1000) {
-          return { passed: true, reason: 'Audio too short for analysis' };
-        }
+        // if (audioBuffer.length < 1000) {
+        //   return { passed: true, reason: 'Audio too short for analysis' };
+        // }
         
         // Use audio processing service for moderation
         const { audioProcessingService } = await import('./audioProcessingService.ts');
-        const result = await audioProcessingService.processAudio(audioBuffer);
+        const result = await audioProcessingService.processAudio(messageId, videoPath);
         
         if (!result.success) {
           console.warn(`Audio processing failed for thread message ${messageId}: ${result.error}`);
@@ -2076,7 +2080,7 @@ class SimpleVideoProcessor {
         
         // Check for inappropriate content
         if (result.transcription) {
-          const flaggedWords = this.checkProfanity(result.transcription);
+          const flaggedWords = ThreadVideoModerator.detectProfanityImpl(result.transcription);
           if (flaggedWords.length > 0) {
             return { 
               passed: false, 
@@ -2089,7 +2093,7 @@ class SimpleVideoProcessor {
         return { 
           passed: true,
           transcription: result.transcription,
-          keywords: result.keywords
+          keywords: result.extractedKeywords
         };
         
       } catch (audioError) {
@@ -2161,16 +2165,32 @@ class SimpleVideoProcessor {
 
 export const videoProcessor = new SimpleVideoProcessor();
 
-const singleton = new SimpleVideoProcessor();
+// public, lightweight helper to queue a job
+export type QueueVideoOptions = {
+    duration?: number | null;
+  metadata?: Partial<VideoMetadata>;
+  originalFilename?: string;
+  userId?: string;
+};
 
-export async function processVideo(
+export function queueVideoProcessing(
   tempFilePath: string,
   videoId: string | number,
-  duration?: number | null
-): Promise<void> {
-  singleton.enqueue({
+  opts: QueueVideoOptions = { duration: null }
+): void {
+  const durationNum = opts.duration ?? 0;
+
+  const job: VideoProcessingJob = {
     videoId: String(videoId),
     tempFilePath,
-    metadata: { duration },   // now valid
-  });
+    originalFilename: opts.originalFilename,  // ok if undefined
+    userId: opts.userId,                      // ok if undefined
+    frontendDuration: durationNum,
+    metadata: {
+      frontendDuration: durationNum,
+      ...(opts.metadata ?? {}),
+    },
+  };
+
+  videoProcessor.enqueue(job);
 }

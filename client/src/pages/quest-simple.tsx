@@ -247,7 +247,7 @@ export default function QuestPage() {
       {/* Quest Detail Modal */}
       {selectedQuest && (
         <QuestDetailModal
-          quest={selectedQuest}
+            questId={typeof selectedQuest === 'string' ? selectedQuest : selectedQuest.id}
           isOpen={showDetailModal}
           onClose={() => setShowDetailModal(false)}
         />

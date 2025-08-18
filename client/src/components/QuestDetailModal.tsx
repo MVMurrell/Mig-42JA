@@ -24,24 +24,26 @@ import {
 } from "@/components/ui/alert-dialog.tsx";
 import type { DBQuestRow } from '@shared/schema.ts';
 
-interface QuestWithProgress extends DBQuestRow {
+type QuestCreator = {
+  id: string;
+  firstName: string;
+  lastName: string;
+  username?: string;            // adjust if you use tasName
+  profileImageUrl?: string;
+};
+
+export interface QuestWithProgressDetails extends DBQuestRow {
   participantCount: number;
   progressPercentage: number;
   isParticipating: boolean;
   timeRemaining: string;
   distanceFromUser?: number;
-  creator: {
-    id: string;
-    firstName: string;
-    lastName: string;
-    profileImageUrl?: string;
-  };
+  creator?: QuestCreator;       // optional to be resilient
 }
-
 interface QuestDetailModalProps {
   isOpen: boolean;
   onClose: () => void;
-  quest: QuestWithProgress;
+  questId: string;              // <-- changed
 }
 
 interface QuestParticipant {
@@ -83,7 +85,16 @@ function calculateDistance(lat1: number, lon1: number, lat2: number, lon2: numbe
   return distance * 5280; // Convert to feet
 }
 
-export function QuestDetailModal({ isOpen, onClose, quest }: QuestDetailModalProps) {
+export default function QuestDetailModal({
+  isOpen,
+  onClose,
+  questId,
+}: QuestDetailModalProps) {
+  const { data: quest, isLoading } = useQuery<QuestWithProgressDetails>({
+    queryKey: ['/api/quests', questId],
+    queryFn: async () => (await fetch(`/api/quests/${questId}`)).json(),
+    enabled: isOpen && !!questId,
+  });
   const [newMessage, setNewMessage] = useState('');
   const [showLeaveConfirmation, setShowLeaveConfirmation] = useState(false);
   const [userLocation, setUserLocation] = useState<{lat: number, lng: number} | null>(null);
@@ -615,3 +626,5 @@ export function QuestDetailModal({ isOpen, onClose, quest }: QuestDetailModalPro
     </Dialog>
   );
 }
+
+export { QuestDetailModal };
