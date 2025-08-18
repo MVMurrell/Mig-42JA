@@ -20,7 +20,10 @@ export function useAuth() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const ua = navigator.userAgent || "";
-    const mobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(ua);
+    const mobile =
+      /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(
+        ua
+      );
     setIsMobile(mobile);
   }, []);
 
@@ -41,33 +44,34 @@ export function useAuth() {
   });
 
   // Optional server-side auth status for mobile flow
-  const {
-    data: authStatus,
-    isLoading: isLoadingStatus,
-  } = useQuery<{ authenticated: boolean; isSuspended?: boolean; secure_cookie?: boolean }>({
+  const { data: authStatus, isLoading: isLoadingStatus } = useQuery<{
+    authenticated: boolean;
+    isSuspended?: boolean;
+    secure_cookie?: boolean;
+  }>({
     queryKey: ["/api/auth/status"],
     queryFn: async () => {
       const res = await fetch("/api/auth/status", { credentials: "include" });
       if (!res.ok) throw new Error(`auth/status ${res.status}`);
       return res.json();
     },
-    enabled: isMobile,          // only ping on mobile
-    refetchInterval: 30000,     // keep it fresh
+    enabled: isMobile, // only ping on mobile
+    refetchInterval: 30000, // keep it fresh
   });
 
   // Derived booleans
-  const isAuthenticated =
-    isMobile ? !!authStatus?.authenticated : !!user;
+  const isAuthenticated = isMobile ? !!authStatus?.authenticated : !!user;
 
-  const isSuspended =
-    isMobile ? !!authStatus?.isSuspended : false;
+  const isSuspended = isMobile ? !!authStatus?.isSuspended : false;
 
   const isLoading = isLoadingUser || (isMobile && isLoadingStatus);
 
   // Actions
   const login = () => {
     // If your server expects a mobile hint, keep the query param
-    window.location.href = isMobile ? "/api/auth/login?mobile=true" : "/api/auth/login";
+    window.location.href = isMobile
+      ? "/api/auth/login?mobile=true"
+      : "/api/auth/login";
   };
 
   const logout = () => {
@@ -75,8 +79,8 @@ export function useAuth() {
   };
 
   return {
-    user,                // AppUser | null
-    isLoading,           // <- fixes shorthand prop error
+    user, // AppUser | null
+    isLoading, // <- fixes shorthand prop error
     isAuthenticated,
     isSuspended,
     isMobile,

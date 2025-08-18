@@ -1,6 +1,5 @@
 // TEMP DEBUG TEST
 
-
 import { z } from "zod";
 import {
   pgTable,
@@ -25,13 +24,13 @@ export const processingStatusEnum = pgEnum("processing_status", [
   "pending_moderation",
   "approved",
   "rejected",
-  "failed", 
-  'under_appeal',
-  'flagged_by_user',
-  'completed',
-  'rejected_by_ai',
-  'uploaded',
-  'pending',
+  "failed",
+  "under_appeal",
+  "flagged_by_user",
+  "completed",
+  "rejected_by_ai",
+  "uploaded",
+  "pending",
 ]);
 // Session storage table (required for Replit Auth)
 export const sessions = pgTable(
@@ -41,7 +40,7 @@ export const sessions = pgTable(
     sess: jsonb("sess").notNull(),
     expire: timestamp("expire").notNull(),
   },
-  (table) => [index("IDX_session_expire").on(table.expire)],
+  (table) => [index("IDX_session_expire").on(table.expire)]
 );
 
 // User storage table (required for Replit Auth)
@@ -60,7 +59,7 @@ export const users = pgTable("users", {
   currentXP: integer("current_xp").default(0), // Current XP points
   currentLevel: integer("current_level").default(0), // Current level (starts at 0 - "Noob!")
   // add near other columns
-  passwordHash: varchar("password_hash"),        // nullable for existing rows; we'll require it for new signups
+  passwordHash: varchar("password_hash"), // nullable for existing rows; we'll require it for new signups
   // shared/schema.ts (users)
   stripeCustomerId: varchar("stripe_customer_id").unique(), // nullable by default; safe for users without Stripe
 
@@ -70,21 +69,26 @@ export const users = pgTable("users", {
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
-console.log("users table init check:", users);
-
+// console.log("users table init check:", users);
 
 // Videos table
 export const videos = pgTable("videos", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   title: varchar("title", { length: 255 }).notNull(),
   videoUrl: text("video_url").notNull(),
   thumbnailUrl: text("thumbnail_url"),
   category: varchar("category", { length: 50 }).notNull(),
   groupName: varchar("group_name", { length: 100 }),
   visibility: varchar("visibility", { length: 50 }).default("everyone"), // everyone, group_id
-  groupId: uuid("group_id").references(() => groups.id, { onDelete: "cascade" }),
-  questId: uuid("quest_id").references(() => quests.id, { onDelete: "cascade" }),
+  groupId: uuid("group_id").references(() => groups.id, {
+    onDelete: "cascade",
+  }),
+  questId: uuid("quest_id").references(() => quests.id, {
+    onDelete: "cascade",
+  }),
   latitude: decimal("latitude", { precision: 10, scale: 8 }),
   description: text("description"),
   longitude: decimal("longitude", { precision: 11, scale: 8 }),
@@ -92,7 +96,9 @@ export const videos = pgTable("videos", {
   views: integer("views").default(0),
   likes: integer("likes").default(0),
   bunnyVideoId: varchar("bunny_video_id"), // Bunny.net CDN video ID for streaming
-  playbackStatus: varchar("playback_status", { length: 30 }).default("published"), // published, bunny_upload_failed, bunny_link_broken, unavailable
+  playbackStatus: varchar("playback_status", { length: 30 }).default(
+    "published"
+  ), // published, bunny_upload_failed, bunny_link_broken, unavailable
   moderationResults: text("moderation_results"), // JSON with Google Video AI results
   flaggedReason: text("flagged_reason"), // Reason if flagged
   gcsProcessingUrl: text("gcs_processing_url"), // GCS URL during processing
@@ -100,8 +106,12 @@ export const videos = pgTable("videos", {
   bunnyReviewVideoId: varchar("bunny_review_video_id"), // Temporary Bunny.net video ID for moderation review
   transcriptionText: text("transcription_text"), // Full transcribed text from audio
   originalFilename: text("original_filename"),
-  processingStatus: processingStatusEnum("processing_status").notNull().default("uploading"),
-  audioModerationStatus: varchar("audio_moderation_status", { length: 20 }).default("pending"), // pending, passed, failed, error
+  processingStatus: processingStatusEnum("processing_status")
+    .notNull()
+    .default("uploading"),
+  audioModerationStatus: varchar("audio_moderation_status", {
+    length: 20,
+  }).default("pending"), // pending, passed, failed, error
   audioFlagReason: text("audio_flag_reason"), // Specific reason if audio moderation fails
   extractedKeywords: jsonb("extracted_keywords"), // Array of extracted keywords for search
   postTiming: varchar("post_timing", { length: 20 }).default("now"), // now, custom
@@ -115,28 +125,36 @@ export const videos = pgTable("videos", {
   updatedAt: timestamp("updated_at").defaultNow(),
 });
 
-
-
 // Video likes table
 export const videoLikes = pgTable("video_likes", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
 // Video comments table
 export const videoComments = pgTable("video_comments", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   comment: text("comment"), // Text comment (optional if video comment, null for video-only comments)
   commentVideoId: uuid("comment_video_id"), // Reference to video used as comment
   commentVideoUrl: text("comment_video_url"), // Direct URL to video comment
   thumbnailUrl: text("thumbnail_url"), // Thumbnail URL for video comments
   bunnyVideoId: varchar("bunny_video_id"), // Bunny.net video ID for video comments
   commentType: varchar("comment_type", { length: 10 }).default("text"), // text, video
-  processingStatus: varchar("processing_status", { length: 30 }).default("approved"), // processing, approved, flagged, rejected_by_moderation
+  processingStatus: varchar("processing_status", { length: 30 }).default(
+    "approved"
+  ), // processing, approved, flagged, rejected_by_moderation
   flaggedReason: text("flagged_reason"), // Reason if flagged
   moderationResults: text("moderation_results"), // JSON with moderation results
   audioFlagReason: text("audio_flag_reason"), // Audio-specific moderation flags
@@ -151,7 +169,9 @@ export const groups = pgTable("groups", {
   name: varchar("name", { length: 100 }).notNull(),
   description: text("description"),
   coverImageUrl: text("cover_image_url"),
-  createdBy: varchar("created_by").notNull().references(() => users.id, { onDelete: "cascade" }),
+  createdBy: varchar("created_by")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   isPublic: boolean("is_public").default(true),
   latitude: varchar("latitude"),
   longitude: varchar("longitude"),
@@ -162,8 +182,12 @@ export const groups = pgTable("groups", {
 // Group memberships table
 export const groupMemberships = pgTable("group_memberships", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  groupId: uuid("group_id").notNull().references(() => groups.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  groupId: uuid("group_id")
+    .notNull()
+    .references(() => groups.id, { onDelete: "cascade" }),
   role: varchar("role", { length: 20 }).default("member"), // owner, admin, member
   joinedAt: timestamp("joined_at").defaultNow(),
 });
@@ -171,52 +195,82 @@ export const groupMemberships = pgTable("group_memberships", {
 // User followers table
 export const userFollows = pgTable("user_follows", {
   id: serial("id").primaryKey(),
-  followerId: varchar("follower_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  followingId: varchar("following_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  followerId: varchar("follower_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  followingId: varchar("following_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
 // User video collections (bookmarks)
 export const videoCollections = pgTable("video_collections", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   createdAt: timestamp("created_at").defaultNow(),
 });
 
 // Video watch history
 export const videoWatches = pgTable("video_watches", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   watchedAt: timestamp("watched_at").defaultNow(),
 });
 
 // Video purchases (for remote access with coins)
 export const videoPurchases = pgTable("video_purchases", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   purchasedAt: timestamp("purchased_at").defaultNow(),
 });
 
 // Video activations (videos discovered within 100ft radius - remain free forever)
 export const videoActivations = pgTable("video_activations", {
   id: serial("id").primaryKey(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   activatedAt: timestamp("activated_at").defaultNow(),
-  activationLatitude: decimal("activation_latitude", { precision: 10, scale: 8 }),
-  activationLongitude: decimal("activation_longitude", { precision: 11, scale: 8 }),
+  activationLatitude: decimal("activation_latitude", {
+    precision: 10,
+    scale: 8,
+  }),
+  activationLongitude: decimal("activation_longitude", {
+    precision: 11,
+    scale: 8,
+  }),
 });
 
 // Group threads table
 export const groupThreads = pgTable("group_threads", {
   id: uuid("id").primaryKey().defaultRandom(),
-  groupId: uuid("group_id").notNull().references(() => groups.id, { onDelete: "cascade" }),
+  groupId: uuid("group_id")
+    .notNull()
+    .references(() => groups.id, { onDelete: "cascade" }),
   title: varchar("title", { length: 255 }).notNull(),
   description: text("description"),
-  createdBy: varchar("created_by").notNull().references(() => users.id, { onDelete: "cascade" }),
+  createdBy: varchar("created_by")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
@@ -224,13 +278,19 @@ export const groupThreads = pgTable("group_threads", {
 // Thread messages table
 export const threadMessages = pgTable("thread_messages", {
   id: serial("id").primaryKey(),
-  threadId: uuid("thread_id").notNull().references(() => groupThreads.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  threadId: uuid("thread_id")
+    .notNull()
+    .references(() => groupThreads.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   message: text("message"), // Text message (optional if video message, null for video-only messages)
   messageType: varchar("message_type", { length: 10 }).default("text"), // text, video
   videoUrl: text("video_url"), // Direct URL to video message
   bunnyVideoId: varchar("bunny_video_id"), // Bunny.net video ID for video messages
-  processingStatus: varchar("processing_status", { length: 30 }).default("approved"), // processing, approved, flagged, rejected_by_moderation
+  processingStatus: varchar("processing_status", { length: 30 }).default(
+    "approved"
+  ), // processing, approved, flagged, rejected_by_moderation
   flaggedReason: text("flagged_reason"), // Reason if flagged
   moderationResults: text("moderation_results"), // JSON with moderation results
   audioFlagReason: text("audio_flag_reason"), // Audio-specific moderation flags
@@ -242,8 +302,12 @@ export const threadMessages = pgTable("thread_messages", {
 // Group messages table (keeping for backward compatibility)
 export const groupMessages = pgTable("group_messages", {
   id: serial("id").primaryKey(),
-  groupId: uuid("group_id").notNull().references(() => groups.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  groupId: uuid("group_id")
+    .notNull()
+    .references(() => groups.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   message: text("message").notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });
@@ -251,8 +315,12 @@ export const groupMessages = pgTable("group_messages", {
 // User follow notifications preferences
 export const userFollowNotifications = pgTable("user_follow_notifications", {
   id: serial("id").primaryKey(),
-  followerId: varchar("follower_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  followingId: varchar("following_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  followerId: varchar("follower_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  followingId: varchar("following_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   notificationsEnabled: boolean("notifications_enabled").default(true),
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
@@ -261,7 +329,9 @@ export const userFollowNotifications = pgTable("user_follow_notifications", {
 // Quest tables
 export const quests = pgTable("quests", {
   id: uuid("id").primaryKey().defaultRandom(),
-  creatorId: varchar("creator_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  creatorId: varchar("creator_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   title: varchar("title", { length: 255 }).notNull(),
   description: text("description").notNull(),
   imageUrl: text("image_url"),
@@ -281,19 +351,29 @@ export const quests = pgTable("quests", {
 
 export const questParticipants = pgTable("quest_participants", {
   id: uuid("id").primaryKey().defaultRandom(),
-  questId: uuid("quest_id").notNull().references(() => quests.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  questId: uuid("quest_id")
+    .notNull()
+    .references(() => quests.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   joinedAt: timestamp("joined_at").defaultNow(),
   hasPosted: boolean("has_posted").default(false),
-  videoId: uuid("video_id").references(() => videos.id, { onDelete: "set null" }),
+  videoId: uuid("video_id").references(() => videos.id, {
+    onDelete: "set null",
+  }),
   completedAt: timestamp("completed_at"),
   rewardPaid: boolean("reward_paid").default(false),
 });
 
 export const questMessages = pgTable("quest_messages", {
   id: uuid("id").primaryKey().defaultRandom(),
-  questId: uuid("quest_id").notNull().references(() => quests.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  questId: uuid("quest_id")
+    .notNull()
+    .references(() => quests.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   message: text("message").notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });
@@ -301,8 +381,12 @@ export const questMessages = pgTable("quest_messages", {
 // Video playback error logging
 export const videoPlaybackErrors = pgTable("video_playback_errors", {
   id: uuid("id").primaryKey().defaultRandom(),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").references(() => users.id, { onDelete: "set null" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
+  userId: varchar("user_id").references(() => users.id, {
+    onDelete: "set null",
+  }),
   videoUrl: text("video_url").notNull(),
   errorCode: varchar("error_code", { length: 50 }),
   errorMessage: text("error_message"),
@@ -314,7 +398,9 @@ export const videoPlaybackErrors = pgTable("video_playback_errors", {
 // Payments table for coin purchases
 export const payments = pgTable("payments", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   stripePaymentIntentId: varchar("stripe_payment_intent_id").notNull().unique(),
   amount: integer("amount").notNull(), // Amount in cents (USD)
   coinAmount: integer("coin_amount").notNull(), // Number of Jem coins purchased
@@ -327,7 +413,9 @@ export const payments = pgTable("payments", {
 // Daily login tracking for coin rewards
 export const dailyLogins = pgTable("daily_logins", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   loginDate: timestamp("login_date").notNull(), // Date of login (normalized to start of day)
   coinsAwarded: integer("coins_awarded").notNull().default(1),
   createdAt: timestamp("created_at").defaultNow(),
@@ -336,7 +424,9 @@ export const dailyLogins = pgTable("daily_logins", {
 // Location tracking for distance-based coin rewards
 export const userLocationHistory = pgTable("user_location_history", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   latitude: decimal("latitude", { precision: 10, scale: 8 }).notNull(),
   longitude: decimal("longitude", { precision: 11, scale: 8 }).notNull(),
   accuracy: decimal("accuracy", { precision: 8, scale: 2 }), // GPS accuracy in meters
@@ -351,8 +441,13 @@ export const userLocationHistory = pgTable("user_location_history", {
 // Distance milestones and coin rewards
 export const distanceRewards = pgTable("distance_rewards", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  totalDistance: decimal("total_distance", { precision: 10, scale: 2 }).notNull(), // Total distance in miles
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  totalDistance: decimal("total_distance", {
+    precision: 10,
+    scale: 2,
+  }).notNull(), // Total distance in miles
   rewardType: varchar("reward_type", { length: 20 }).notNull(), // daily_distance, milestone_5, milestone_10, milestone_20
   coinsAwarded: integer("coins_awarded").notNull(),
   dateEarned: timestamp("date_earned").defaultNow(),
@@ -363,10 +458,14 @@ export const distanceRewards = pgTable("distance_rewards", {
 // User activity sessions for coin earning
 export const activitySessions = pgTable("activity_sessions", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   sessionStart: timestamp("session_start").notNull(),
   sessionEnd: timestamp("session_end"),
-  totalDistance: decimal("total_distance", { precision: 10, scale: 2 }).default("0"), // Distance in miles
+  totalDistance: decimal("total_distance", { precision: 10, scale: 2 }).default(
+    "0"
+  ), // Distance in miles
   avgSpeed: decimal("avg_speed", { precision: 8, scale: 2 }), // Average speed in mph
   movementType: varchar("movement_type", { length: 20 }), // predominant movement type
   coinsEarned: integer("coins_earned").default(0),
@@ -379,13 +478,17 @@ export const moderationFlags = pgTable("moderation_flags", {
   id: uuid("id").primaryKey().defaultRandom(),
   contentType: varchar("content_type").notNull(), // video, comment, video_comment, quest_message, jem
   contentId: text("content_id").notNull(), // ID of the flagged content (can be UUID or integer)
-  flaggedByUserId: varchar("flagged_by_user_id").references(() => users.id, { onDelete: "set null" }), // null for AI flags
+  flaggedByUserId: varchar("flagged_by_user_id").references(() => users.id, {
+    onDelete: "set null",
+  }), // null for AI flags
   flaggedByAI: boolean("flagged_by_ai").default(false),
   reason: text("reason"), // AI reason or user report reason
   flagReason: varchar("flag_reason"), // Structured reason: hate_speech, harassment, violence, etc.
   customReason: text("custom_reason"), // For "other" category
   status: varchar("status").default("pending"), // pending, approved, rejected
-  moderatorId: varchar("moderator_id").references(() => users.id, { onDelete: "set null" }),
+  moderatorId: varchar("moderator_id").references(() => users.id, {
+    onDelete: "set null",
+  }),
   moderatorDecision: text("moderator_decision"), // Reason for approval/rejection
   isAppeal: boolean("is_appeal").default(false), // If user appealed AI rejection
   contentSnapshot: jsonb("content_snapshot"), // Store content data for reference
@@ -398,8 +501,12 @@ export const moderationFlags = pgTable("moderation_flags", {
 // Moderation decisions table
 export const moderationDecisions = pgTable("moderation_decisions", {
   id: uuid("id").primaryKey().defaultRandom(),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
-  moderatorId: varchar("moderator_id").references(() => users.id, { onDelete: "cascade" }), // Allow null for AI decisions
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
+  moderatorId: varchar("moderator_id").references(() => users.id, {
+    onDelete: "cascade",
+  }), // Allow null for AI decisions
   decision: varchar("decision").notNull(), // approve, reject
   reason: text("reason"),
   decisionType: varchar("decision_type"), // ai_moderation, human_review, appeal
@@ -409,15 +516,25 @@ export const moderationDecisions = pgTable("moderation_decisions", {
 // User notifications table
 export const notifications = pgTable("notifications", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   type: varchar("type").notNull(), // video_like, video_comment, video_comment_video, comment, new_collector, group_invitation, gem_nearby, content_flagged_user, content_flagged_ai, content_deleted_comment, content_deleted_video_comment, content_deleted_thread_message, content_deleted_thread_video, thread_message_flagged
   title: varchar("title").notNull(),
   message: text("message").notNull(),
   actionUrl: text("action_url"), // Link to content or action
-  relatedUserId: varchar("related_user_id").references(() => users.id, { onDelete: "set null" }), // User who triggered notification
-  relatedVideoId: uuid("related_video_id").references(() => videos.id, { onDelete: "set null" }), // Related video
-  relatedGroupId: uuid("related_group_id").references(() => groups.id, { onDelete: "set null" }), // Related group
-  relatedThreadId: uuid("related_thread_id").references(() => groupThreads.id, { onDelete: "set null" }), // Related thread
+  relatedUserId: varchar("related_user_id").references(() => users.id, {
+    onDelete: "set null",
+  }), // User who triggered notification
+  relatedVideoId: uuid("related_video_id").references(() => videos.id, {
+    onDelete: "set null",
+  }), // Related video
+  relatedGroupId: uuid("related_group_id").references(() => groups.id, {
+    onDelete: "set null",
+  }), // Related group
+  relatedThreadId: uuid("related_thread_id").references(() => groupThreads.id, {
+    onDelete: "set null",
+  }), // Related thread
   relatedContentId: text("related_content_id"), // ID of related content (comment, etc.)
   relatedContentType: varchar("related_content_type"), // video_comment, thread_message, group_message
   thumbnailUrl: text("thumbnail_url"), // Image for notification
@@ -428,42 +545,58 @@ export const notifications = pgTable("notifications", {
 });
 
 // User notification preferences table
-export const userNotificationPreferences = pgTable("user_notification_preferences", {
-  id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }).unique(),
-  allNotifications: boolean("all_notifications").default(true),
-  videoLikes: boolean("video_likes").default(true),
-  videoComments: boolean("video_comments").default(true),
-  videoCommentVideos: boolean("video_comment_videos").default(true),
-  comments: boolean("comments").default(true),
-  newCollectors: boolean("new_collectors").default(true),
-  groupInvitations: boolean("group_invitations").default(true),
-  gemNearby: boolean("gem_nearby").default(true),
-  // Content moderation notifications cannot be disabled
-  contentFlaggedUser: boolean("content_flagged_user").default(true),
-  contentFlaggedAi: boolean("content_flagged_ai").default(true),
-  contentDeletedComment: boolean("content_deleted_comment").default(true),
-  contentDeletedVideoComment: boolean("content_deleted_video_comment").default(true),
-  contentDeletedThreadMessage: boolean("content_deleted_thread_message").default(true),
-  contentDeletedThreadVideo: boolean("content_deleted_thread_video").default(true),
-  threadMessageFlagged: boolean("thread_message_flagged").default(true),
-  pushNotifications: boolean("push_notifications").default(false),
-  // Individual push notification preferences for each type
-  pushVideoLikes: boolean("push_video_likes").default(true),
-  pushVideoComments: boolean("push_video_comments").default(true),
-  pushVideoCommentVideos: boolean("push_video_comment_videos").default(true),
-  pushComments: boolean("push_comments").default(true),
-  pushNewCollectors: boolean("push_new_collectors").default(true),
-  pushGroupInvitations: boolean("push_group_invitations").default(true),
-  createdAt: timestamp("created_at").defaultNow(),
-  updatedAt: timestamp("updated_at").defaultNow(),
-});
+export const userNotificationPreferences = pgTable(
+  "user_notification_preferences",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    userId: varchar("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" })
+      .unique(),
+    allNotifications: boolean("all_notifications").default(true),
+    videoLikes: boolean("video_likes").default(true),
+    videoComments: boolean("video_comments").default(true),
+    videoCommentVideos: boolean("video_comment_videos").default(true),
+    comments: boolean("comments").default(true),
+    newCollectors: boolean("new_collectors").default(true),
+    groupInvitations: boolean("group_invitations").default(true),
+    gemNearby: boolean("gem_nearby").default(true),
+    // Content moderation notifications cannot be disabled
+    contentFlaggedUser: boolean("content_flagged_user").default(true),
+    contentFlaggedAi: boolean("content_flagged_ai").default(true),
+    contentDeletedComment: boolean("content_deleted_comment").default(true),
+    contentDeletedVideoComment: boolean(
+      "content_deleted_video_comment"
+    ).default(true),
+    contentDeletedThreadMessage: boolean(
+      "content_deleted_thread_message"
+    ).default(true),
+    contentDeletedThreadVideo: boolean("content_deleted_thread_video").default(
+      true
+    ),
+    threadMessageFlagged: boolean("thread_message_flagged").default(true),
+    pushNotifications: boolean("push_notifications").default(false),
+    // Individual push notification preferences for each type
+    pushVideoLikes: boolean("push_video_likes").default(true),
+    pushVideoComments: boolean("push_video_comments").default(true),
+    pushVideoCommentVideos: boolean("push_video_comment_videos").default(true),
+    pushComments: boolean("push_comments").default(true),
+    pushNewCollectors: boolean("push_new_collectors").default(true),
+    pushGroupInvitations: boolean("push_group_invitations").default(true),
+    createdAt: timestamp("created_at").defaultNow(),
+    updatedAt: timestamp("updated_at").defaultNow(),
+  }
+);
 
 export const moderatorAccess = pgTable("moderator_access", {
   id: uuid("id").primaryKey().defaultRandom(),
   email: varchar("email").notNull().unique(),
-  userId: varchar("user_id").references(() => users.id, { onDelete: "cascade" }), // null if they don't have account yet
-  invitedBy: varchar("invited_by").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id").references(() => users.id, {
+    onDelete: "cascade",
+  }), // null if they don't have account yet
+  invitedBy: varchar("invited_by")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   status: varchar("status").default("pending"), // pending, active, revoked
   createdAt: timestamp("created_at").defaultNow(),
   activatedAt: timestamp("activated_at"),
@@ -472,7 +605,9 @@ export const moderatorAccess = pgTable("moderator_access", {
 // Strike system tables
 export const userStrikes = pgTable("user_strikes", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   currentStrikes: integer("current_strikes").default(0), // 0, 1, 2, 3+
   totalViolations: integer("total_violations").default(0), // Total lifetime violations
   accountStatus: varchar("account_status").default("active"), // active, warning, suspended, banned
@@ -485,7 +620,9 @@ export const userStrikes = pgTable("user_strikes", {
 
 export const violations = pgTable("violations", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   contentType: varchar("content_type").notNull(), // video, comment, video_comment
   contentId: text("content_id").notNull(), // ID of the violated content
   violationType: varchar("violation_type").notNull(), // hate_speech, harassment, violence, spam, etc.
@@ -493,7 +630,9 @@ export const violations = pgTable("violations", {
   strikeNumber: integer("strike_number").notNull(), // 1st, 2nd, 3rd strike
   consequence: varchar("consequence").notNull(), // warning, suspension, ban
   suspensionDays: integer("suspension_days"), // How many days suspended (if applicable)
-  moderatorId: varchar("moderator_id").notNull().references(() => users.id, { onDelete: "set null" }),
+  moderatorId: varchar("moderator_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "set null" }),
   moderatorNotes: text("moderator_notes"), // Internal notes from moderator
   appealStatus: varchar("appeal_status").default("none"), // none, pending, approved, rejected
   appealSubmittedAt: timestamp("appeal_submitted_at"),
@@ -513,21 +652,41 @@ export const treasureChests = pgTable("treasure_chests", {
   expiresAt: timestamp("expires_at").notNull(), // When chest disappears
   isActive: boolean("is_active").default(true),
   isCollected: boolean("is_collected").default(false),
-  collectedBy: varchar("collected_by").references(() => users.id, { onDelete: "set null" }),
+  collectedBy: varchar("collected_by").references(() => users.id, {
+    onDelete: "set null",
+  }),
   collectedAt: timestamp("collected_at"),
-  nearestVideoId: uuid("nearest_video_id").references(() => videos.id, { onDelete: "cascade" }), // Video it spawned near
-  nearestVideoDistance: decimal("nearest_video_distance", { precision: 8, scale: 2 }), // Distance to nearest video in miles
+  nearestVideoId: uuid("nearest_video_id").references(() => videos.id, {
+    onDelete: "cascade",
+  }), // Video it spawned near
+  nearestVideoDistance: decimal("nearest_video_distance", {
+    precision: 8,
+    scale: 2,
+  }), // Distance to nearest video in miles
   createdAt: timestamp("created_at").defaultNow(),
 });
 
 export const treasureChestCollections = pgTable("treasure_chest_collections", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  chestId: uuid("chest_id").notNull().references(() => treasureChests.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  chestId: uuid("chest_id")
+    .notNull()
+    .references(() => treasureChests.id, { onDelete: "cascade" }),
   coinReward: integer("coin_reward").notNull(),
-  collectionLatitude: decimal("collection_latitude", { precision: 10, scale: 8 }).notNull(),
-  collectionLongitude: decimal("collection_longitude", { precision: 11, scale: 8 }).notNull(),
-  distanceFromChest: decimal("distance_from_chest", { precision: 8, scale: 2 }).notNull(), // In feet
+  collectionLatitude: decimal("collection_latitude", {
+    precision: 10,
+    scale: 8,
+  }).notNull(),
+  collectionLongitude: decimal("collection_longitude", {
+    precision: 11,
+    scale: 8,
+  }).notNull(),
+  distanceFromChest: decimal("distance_from_chest", {
+    precision: 8,
+    scale: 2,
+  }).notNull(), // In feet
   collectedAt: timestamp("collected_at").defaultNow(),
 });
 
@@ -539,7 +698,9 @@ export const treasureChestLocations = pgTable("treasure_chest_locations", {
   spawnCount: integer("spawn_count").default(0), // How many times spawned here
   dailySpawnCount: integer("daily_spawn_count").default(0), // Spawns today
   lastSpawnDate: varchar("last_spawn_date"), // YYYY-MM-DD format
-  nearestVideoId: uuid("nearest_video_id").references(() => videos.id, { onDelete: "cascade" }),
+  nearestVideoId: uuid("nearest_video_id").references(() => videos.id, {
+    onDelete: "cascade",
+  }),
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });
@@ -557,24 +718,44 @@ export const mysteryBoxes = pgTable("mystery_boxes", {
   expiresAt: timestamp("expires_at").notNull(), // Shorter availability than treasure chests
   isActive: boolean("is_active").default(true),
   isCollected: boolean("is_collected").default(false),
-  collectedBy: varchar("collected_by").references(() => users.id, { onDelete: "set null" }),
+  collectedBy: varchar("collected_by").references(() => users.id, {
+    onDelete: "set null",
+  }),
   collectedAt: timestamp("collected_at"),
-  nearestVideoId: uuid("nearest_video_id").references(() => videos.id, { onDelete: "cascade" }),
-  nearestVideoDistance: decimal("nearest_video_distance", { precision: 8, scale: 2 }), // Distance to nearest video in miles
+  nearestVideoId: uuid("nearest_video_id").references(() => videos.id, {
+    onDelete: "cascade",
+  }),
+  nearestVideoDistance: decimal("nearest_video_distance", {
+    precision: 8,
+    scale: 2,
+  }), // Distance to nearest video in miles
   createdAt: timestamp("created_at").defaultNow(),
 });
 
 export const mysteryBoxCollections = pgTable("mystery_box_collections", {
   id: uuid("id").primaryKey().defaultRandom(),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  boxId: uuid("box_id").notNull().references(() => mysteryBoxes.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  boxId: uuid("box_id")
+    .notNull()
+    .references(() => mysteryBoxes.id, { onDelete: "cascade" }),
   coinReward: integer("coin_reward").notNull(),
   xpReward: integer("xp_reward").notNull(),
   lanternReward: integer("lantern_reward").notNull(),
   rarity: varchar("rarity").notNull(),
-  collectionLatitude: decimal("collection_latitude", { precision: 10, scale: 8 }).notNull(),
-  collectionLongitude: decimal("collection_longitude", { precision: 11, scale: 8 }).notNull(),
-  distanceFromBox: decimal("distance_from_box", { precision: 8, scale: 2 }).notNull(), // In feet
+  collectionLatitude: decimal("collection_latitude", {
+    precision: 10,
+    scale: 8,
+  }).notNull(),
+  collectionLongitude: decimal("collection_longitude", {
+    precision: 11,
+    scale: 8,
+  }).notNull(),
+  distanceFromBox: decimal("distance_from_box", {
+    precision: 8,
+    scale: 2,
+  }).notNull(), // In feet
   collectedAt: timestamp("collected_at").defaultNow(),
 });
 
@@ -606,8 +787,12 @@ export const dragons = pgTable("dragons", {
   coinReward: integer("coin_reward").notNull(), // 100 or 200 coins
   totalHealth: integer("total_health").notNull(), // Same as coin reward (100 or 200)
   currentHealth: integer("current_health").notNull(), // Decreases with each video watch
-  requiredVideosInRadius: integer("required_videos_in_radius").notNull().default(50), // Minimum 50 videos
-  radiusMeters: decimal("radius_meters", { precision: 8, scale: 2 }).notNull().default("60.96"), // 200ft in meters
+  requiredVideosInRadius: integer("required_videos_in_radius")
+    .notNull()
+    .default(50), // Minimum 50 videos
+  radiusMeters: decimal("radius_meters", { precision: 8, scale: 2 })
+    .notNull()
+    .default("60.96"), // 200ft in meters
   spawnedAt: timestamp("spawned_at").defaultNow(),
   expiresAt: timestamp("expires_at").notNull(), // 24 hours from spawn
   isDefeated: boolean("is_defeated").default(false),
@@ -621,9 +806,15 @@ export const dragons = pgTable("dragons", {
 // Dragon attacks table - tracks user contributions to dragon defeat
 export const dragonAttacks = pgTable("dragon_attacks", {
   id: serial("id").primaryKey(),
-  dragonId: varchar("dragon_id").notNull().references(() => dragons.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
-  videoId: uuid("video_id").notNull().references(() => videos.id, { onDelete: "cascade" }),
+  dragonId: varchar("dragon_id")
+    .notNull()
+    .references(() => dragons.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  videoId: uuid("video_id")
+    .notNull()
+    .references(() => videos.id, { onDelete: "cascade" }),
   damageDealt: integer("damage_dealt").notNull().default(1), // Each video watch = 1 damage
   attackedAt: timestamp("attacked_at").defaultNow(),
 });
@@ -631,8 +822,12 @@ export const dragonAttacks = pgTable("dragon_attacks", {
 // Dragon rewards table - tracks coin distribution when dragon is defeated
 export const dragonRewards = pgTable("dragon_rewards", {
   id: serial("id").primaryKey(),
-  dragonId: varchar("dragon_id").notNull().references(() => dragons.id, { onDelete: "cascade" }),
-  userId: varchar("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  dragonId: varchar("dragon_id")
+    .notNull()
+    .references(() => dragons.id, { onDelete: "cascade" }),
+  userId: varchar("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
   coinsEarned: integer("coins_earned").notNull(),
   damageContribution: integer("damage_contribution").notNull(), // How much damage this user dealt
   totalDamageDealt: integer("total_damage_dealt").notNull(), // Total damage across all users
@@ -657,7 +852,10 @@ export const videoLikesRelations = relations(videoLikes, ({ one }) => ({
 
 export const videoCommentsRelations = relations(videoComments, ({ one }) => ({
   user: one(users, { fields: [videoComments.userId], references: [users.id] }),
-  video: one(videos, { fields: [videoComments.videoId], references: [videos.id] }),
+  video: one(videos, {
+    fields: [videoComments.videoId],
+    references: [videos.id],
+  }),
 }));
 
 export const groupsRelations = relations(groups, ({ one, many }) => ({
@@ -666,51 +864,109 @@ export const groupsRelations = relations(groups, ({ one, many }) => ({
   messages: many(groupMessages),
 }));
 
-export const groupMembershipsRelations = relations(groupMemberships, ({ one }) => ({
-  user: one(users, { fields: [groupMemberships.userId], references: [users.id] }),
-  group: one(groups, { fields: [groupMemberships.groupId], references: [groups.id] }),
-}));
+export const groupMembershipsRelations = relations(
+  groupMemberships,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [groupMemberships.userId],
+      references: [users.id],
+    }),
+    group: one(groups, {
+      fields: [groupMemberships.groupId],
+      references: [groups.id],
+    }),
+  })
+);
 
 export const userFollowsRelations = relations(userFollows, ({ one }) => ({
-  follower: one(users, { fields: [userFollows.followerId], references: [users.id], relationName: "follower" }),
-  following: one(users, { fields: [userFollows.followingId], references: [users.id], relationName: "following" }),
+  follower: one(users, {
+    fields: [userFollows.followerId],
+    references: [users.id],
+    relationName: "follower",
+  }),
+  following: one(users, {
+    fields: [userFollows.followingId],
+    references: [users.id],
+    relationName: "following",
+  }),
 }));
 
-export const videoCollectionsRelations = relations(videoCollections, ({ one }) => ({
-  user: one(users, { fields: [videoCollections.userId], references: [users.id] }),
-  video: one(videos, { fields: [videoCollections.videoId], references: [videos.id] }),
-}));
+export const videoCollectionsRelations = relations(
+  videoCollections,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [videoCollections.userId],
+      references: [users.id],
+    }),
+    video: one(videos, {
+      fields: [videoCollections.videoId],
+      references: [videos.id],
+    }),
+  })
+);
 
 export const videoWatchesRelations = relations(videoWatches, ({ one }) => ({
   user: one(users, { fields: [videoWatches.userId], references: [users.id] }),
-  video: one(videos, { fields: [videoWatches.videoId], references: [videos.id] }),
+  video: one(videos, {
+    fields: [videoWatches.videoId],
+    references: [videos.id],
+  }),
 }));
 
 export const videoPurchasesRelations = relations(videoPurchases, ({ one }) => ({
   user: one(users, { fields: [videoPurchases.userId], references: [users.id] }),
-  video: one(videos, { fields: [videoPurchases.videoId], references: [videos.id] }),
+  video: one(videos, {
+    fields: [videoPurchases.videoId],
+    references: [videos.id],
+  }),
 }));
 
-export const groupThreadsRelations = relations(groupThreads, ({ one, many }) => ({
-  group: one(groups, { fields: [groupThreads.groupId], references: [groups.id] }),
-  creator: one(users, { fields: [groupThreads.createdBy], references: [users.id] }),
-  messages: many(threadMessages),
-}));
+export const groupThreadsRelations = relations(
+  groupThreads,
+  ({ one, many }) => ({
+    group: one(groups, {
+      fields: [groupThreads.groupId],
+      references: [groups.id],
+    }),
+    creator: one(users, {
+      fields: [groupThreads.createdBy],
+      references: [users.id],
+    }),
+    messages: many(threadMessages),
+  })
+);
 
 export const threadMessagesRelations = relations(threadMessages, ({ one }) => ({
-  thread: one(groupThreads, { fields: [threadMessages.threadId], references: [groupThreads.id] }),
+  thread: one(groupThreads, {
+    fields: [threadMessages.threadId],
+    references: [groupThreads.id],
+  }),
   user: one(users, { fields: [threadMessages.userId], references: [users.id] }),
 }));
 
 export const groupMessagesRelations = relations(groupMessages, ({ one }) => ({
   user: one(users, { fields: [groupMessages.userId], references: [users.id] }),
-  group: one(groups, { fields: [groupMessages.groupId], references: [groups.id] }),
+  group: one(groups, {
+    fields: [groupMessages.groupId],
+    references: [groups.id],
+  }),
 }));
 
-export const userFollowNotificationsRelations = relations(userFollowNotifications, ({ one }) => ({
-  follower: one(users, { fields: [userFollowNotifications.followerId], references: [users.id], relationName: "follower" }),
-  following: one(users, { fields: [userFollowNotifications.followingId], references: [users.id], relationName: "following" }),
-}));
+export const userFollowNotificationsRelations = relations(
+  userFollowNotifications,
+  ({ one }) => ({
+    follower: one(users, {
+      fields: [userFollowNotifications.followerId],
+      references: [users.id],
+      relationName: "follower",
+    }),
+    following: one(users, {
+      fields: [userFollowNotifications.followingId],
+      references: [users.id],
+      relationName: "following",
+    }),
+  })
+);
 
 export const questsRelations = relations(quests, ({ one, many }) => ({
   creator: one(users, { fields: [quests.creatorId], references: [users.id] }),
@@ -718,21 +974,45 @@ export const questsRelations = relations(quests, ({ one, many }) => ({
   messages: many(questMessages),
 }));
 
-export const questParticipantsRelations = relations(questParticipants, ({ one }) => ({
-  quest: one(quests, { fields: [questParticipants.questId], references: [quests.id] }),
-  user: one(users, { fields: [questParticipants.userId], references: [users.id] }),
-  video: one(videos, { fields: [questParticipants.videoId], references: [videos.id] }),
-}));
+export const questParticipantsRelations = relations(
+  questParticipants,
+  ({ one }) => ({
+    quest: one(quests, {
+      fields: [questParticipants.questId],
+      references: [quests.id],
+    }),
+    user: one(users, {
+      fields: [questParticipants.userId],
+      references: [users.id],
+    }),
+    video: one(videos, {
+      fields: [questParticipants.videoId],
+      references: [videos.id],
+    }),
+  })
+);
 
 export const questMessagesRelations = relations(questMessages, ({ one }) => ({
-  quest: one(quests, { fields: [questMessages.questId], references: [quests.id] }),
+  quest: one(quests, {
+    fields: [questMessages.questId],
+    references: [quests.id],
+  }),
   user: one(users, { fields: [questMessages.userId], references: [users.id] }),
 }));
 
-export const videoPlaybackErrorsRelations = relations(videoPlaybackErrors, ({ one }) => ({
-  video: one(videos, { fields: [videoPlaybackErrors.videoId], references: [videos.id] }),
-  user: one(users, { fields: [videoPlaybackErrors.userId], references: [users.id] }),
-}));
+export const videoPlaybackErrorsRelations = relations(
+  videoPlaybackErrors,
+  ({ one }) => ({
+    video: one(videos, {
+      fields: [videoPlaybackErrors.videoId],
+      references: [videos.id],
+    }),
+    user: one(users, {
+      fields: [videoPlaybackErrors.userId],
+      references: [users.id],
+    }),
+  })
+);
 
 export const userStrikesRelations = relations(userStrikes, ({ one, many }) => ({
   user: one(users, { fields: [userStrikes.userId], references: [users.id] }),
@@ -741,27 +1021,57 @@ export const userStrikesRelations = relations(userStrikes, ({ one, many }) => ({
 
 export const violationsRelations = relations(violations, ({ one }) => ({
   user: one(users, { fields: [violations.userId], references: [users.id] }),
-  moderator: one(users, { fields: [violations.moderatorId], references: [users.id] }),
-  userStrike: one(userStrikes, { fields: [violations.userId], references: [userStrikes.userId] }),
+  moderator: one(users, {
+    fields: [violations.moderatorId],
+    references: [users.id],
+  }),
+  userStrike: one(userStrikes, {
+    fields: [violations.userId],
+    references: [userStrikes.userId],
+  }),
 }));
 
 export const treasureChestsRelations = relations(treasureChests, ({ one }) => ({
-  collector: one(users, { fields: [treasureChests.collectedBy], references: [users.id] }),
-  nearestVideo: one(videos, { fields: [treasureChests.nearestVideoId], references: [videos.id] }),
+  collector: one(users, {
+    fields: [treasureChests.collectedBy],
+    references: [users.id],
+  }),
+  nearestVideo: one(videos, {
+    fields: [treasureChests.nearestVideoId],
+    references: [videos.id],
+  }),
 }));
 
-export const treasureChestCollectionsRelations = relations(treasureChestCollections, ({ one }) => ({
-  user: one(users, { fields: [treasureChestCollections.userId], references: [users.id] }),
-  chest: one(treasureChests, { fields: [treasureChestCollections.chestId], references: [treasureChests.id] }),
-}));
+export const treasureChestCollectionsRelations = relations(
+  treasureChestCollections,
+  ({ one }) => ({
+    user: one(users, {
+      fields: [treasureChestCollections.userId],
+      references: [users.id],
+    }),
+    chest: one(treasureChests, {
+      fields: [treasureChestCollections.chestId],
+      references: [treasureChests.id],
+    }),
+  })
+);
 
-export const treasureChestLocationsRelations = relations(treasureChestLocations, ({ one }) => ({
-  nearestVideo: one(videos, { fields: [treasureChestLocations.nearestVideoId], references: [videos.id] }),
-}));
+export const treasureChestLocationsRelations = relations(
+  treasureChestLocations,
+  ({ one }) => ({
+    nearestVideo: one(videos, {
+      fields: [treasureChestLocations.nearestVideoId],
+      references: [videos.id],
+    }),
+  })
+);
 
 export const notificationsRelations = relations(notifications, ({ one }) => ({
   user: one(users, { fields: [notifications.userId], references: [users.id] }),
-  relatedUser: one(users, { fields: [notifications.relatedUserId], references: [users.id] }),
+  relatedUser: one(users, {
+    fields: [notifications.relatedUserId],
+    references: [users.id],
+  }),
 }));
 
 // Insert schemas
@@ -790,8 +1100,6 @@ export const insertUserSchema = z.object({
   createdAt: z.date().optional(),
   updatedAt: z.date().optional(),
 });
-
-
 
 export const insertVideoSchema = z.object({
   id: z.string().uuid().optional(), // defaultRandom
@@ -833,8 +1141,6 @@ export const insertVideoSchema = z.object({
   updatedAt: z.date().optional(), // defaultNow
 });
 
-
-
 export const insertGroupSchema = z.object({
   id: z.string().uuid().optional(), // defaultRandom
   name: z.string().max(100),
@@ -858,15 +1164,12 @@ export const insertModerationDecisionSchema = z.object({
   createdAt: z.date().optional(), // defaultNow
 });
 
-
 export const insertVideoLikeSchema = z.object({
   id: z.number().optional(), // serial, auto-generated
   userId: z.string(), // required
   videoId: z.string().uuid(), // required
   createdAt: z.date().optional(), // defaultNow
 });
-
-
 
 export const insertVideoCommentSchema = z.object({
   id: z.number().optional(), // serial, optional if handled by DB
@@ -886,7 +1189,6 @@ export const insertVideoCommentSchema = z.object({
   createdAt: z.date().optional(), // defaultNow
   updatedAt: z.date().optional(), // defaultNow
 });
-
 
 export const insertGroupMembershipSchema = z.object({
   id: z.number().optional(), // serial, auto-incremented
@@ -920,7 +1222,6 @@ export const insertGroupThreadSchema = z.object({
   updatedAt: z.date().optional(),
 });
 
-
 export const insertThreadMessageSchema = z.object({
   id: z.number().optional(),
   threadId: z.string().uuid(),
@@ -938,7 +1239,6 @@ export const insertThreadMessageSchema = z.object({
   updatedAt: z.date().optional(),
 });
 
-
 export const insertGroupMessageSchema = z.object({
   id: z.number().optional(),
   groupId: z.string().uuid(),
@@ -947,14 +1247,12 @@ export const insertGroupMessageSchema = z.object({
   createdAt: z.date().optional(),
 });
 
-
 export const insertVideoPurchaseSchema = z.object({
   id: z.number().optional(),
   userId: z.string(),
   videoId: z.string().uuid(),
   purchasedAt: z.date().optional(),
 });
-
 
 export const insertVideoActivationSchema = z.object({
   id: z.number().optional(),
@@ -964,8 +1262,6 @@ export const insertVideoActivationSchema = z.object({
   activationLatitude: z.number().optional(),
   activationLongitude: z.number().optional(),
 });
-
-
 
 export const insertQuestSchema = z.object({
   id: z.string().uuid().optional(), // defaultRandom
@@ -987,7 +1283,6 @@ export const insertQuestSchema = z.object({
   updatedAt: z.date().optional(), // defaultNow
 });
 
-
 export const insertQuestParticipantSchema = z.object({
   id: z.string().uuid().optional(),
   questId: z.string().uuid(),
@@ -999,7 +1294,6 @@ export const insertQuestParticipantSchema = z.object({
   rewardPaid: z.boolean().default(false),
 });
 
-
 export const insertQuestMessageSchema = z.object({
   id: z.string().uuid().optional(),
   questId: z.string().uuid(),
@@ -1007,7 +1301,6 @@ export const insertQuestMessageSchema = z.object({
   message: z.string(),
   createdAt: z.date().optional(),
 });
-
 
 export const insertPaymentSchema = z.object({
   id: z.string().uuid().optional(),
@@ -1058,8 +1351,6 @@ export const insertViolationSchema = z.object({
   createdAt: z.date().optional(),
 });
 
-
-
 export const insertVideoPlaybackErrorSchema = z.object({
   id: z.string().uuid().optional(),
   videoId: z.string().uuid(),
@@ -1071,7 +1362,6 @@ export const insertVideoPlaybackErrorSchema = z.object({
   timestamp: z.date().optional(),
   resolved: z.boolean().default(false),
 });
-
 
 export const insertNotificationSchema = z.object({
   userId: z.string(), // required
@@ -1094,7 +1384,6 @@ export const insertNotificationSchema = z.object({
   isRead: z.boolean().default(false),
   createdAt: z.date().optional(),
 });
-
 
 export const insertUserNotificationPreferencesSchema = z.object({
   id: z.string().uuid().optional(),
@@ -1144,7 +1433,6 @@ export const insertDailyLoginSchema = z.object({
   createdAt: z.date().optional(),
 });
 
-
 export const insertUserLocationHistorySchema = z.object({
   id: z.string().uuid().optional(),
   userId: z.string(),
@@ -1170,7 +1458,6 @@ export const insertDistanceRewardSchema = z.object({
   sessionEndTime: z.date(),
 });
 
-
 export const insertActivitySessionSchema = z.object({
   userId: z.string().min(1),
   sessionStart: z.date(),
@@ -1182,8 +1469,6 @@ export const insertActivitySessionSchema = z.object({
   isActive: z.boolean(),
   lastLocationUpdate: z.date(),
 });
-
-
 
 // Treasure chest schemas
 export const insertTreasureChestSchema = z.object({
@@ -1203,7 +1488,6 @@ export const insertTreasureChestSchema = z.object({
   createdAt: z.date().optional(),
 });
 
-
 export const insertTreasureChestCollectionSchema = z.object({
   id: z.string().uuid().optional(),
   userId: z.string(),
@@ -1214,7 +1498,6 @@ export const insertTreasureChestCollectionSchema = z.object({
   distanceFromChest: z.number(),
   collectedAt: z.date().optional(),
 });
-
 
 export const insertTreasureChestLocationSchema = z.object({
   id: z.string().uuid().optional(),
@@ -1228,7 +1511,6 @@ export const insertTreasureChestLocationSchema = z.object({
   createdAt: z.date().optional(),
   updatedAt: z.date().optional(),
 });
-
 
 // Dragon schemas
 export const insertDragonSchema = z.object({
@@ -1249,7 +1531,6 @@ export const insertDragonSchema = z.object({
   createdAt: z.date().optional(),
 });
 
-
 export const insertDragonAttackSchema = z.object({
   dragonId: z.string(),
   userId: z.string(),
@@ -1257,7 +1538,6 @@ export const insertDragonAttackSchema = z.object({
   damageDealt: z.number().int(),
   attackedAt: z.date().optional(),
 });
-
 
 export const insertDragonRewardSchema = z.object({
   dragonId: z.string(),
@@ -1289,7 +1569,6 @@ export const insertModerationFlagSchema = z.object({
   decidedAt: z.date().optional(),
 });
 
-
 export const insertModeratorAccessSchema = z.object({
   id: z.string().uuid().optional(),
   email: z.string(),
@@ -1300,12 +1579,9 @@ export const insertModeratorAccessSchema = z.object({
   activatedAt: z.date().optional(),
 });
 
-
-
-
 // Types
 export type DBUserInsert = typeof users.$inferInsert;
-export type DBUserRow =  typeof users.$inferSelect;
+export type DBUserRow = typeof users.$inferSelect;
 
 export type DBVideoInsert = typeof videos.$inferInsert;
 export type DBVideoRow = typeof videos.$inferSelect;
@@ -1356,11 +1632,15 @@ export type DBQuestMessageRow = typeof questMessages.$inferSelect;
 export type DBTreasureChestInsert = typeof treasureChests.$inferInsert;
 export type DBTreasureChestRow = typeof treasureChests.$inferSelect;
 
-export type DBTreasureChestCollectionInsert = typeof treasureChestCollections.$inferInsert;
-export type DBTreasureChestCollectionRow = typeof treasureChestCollections.$inferSelect;
+export type DBTreasureChestCollectionInsert =
+  typeof treasureChestCollections.$inferInsert;
+export type DBTreasureChestCollectionRow =
+  typeof treasureChestCollections.$inferSelect;
 
-export type DBTreasureChestLocationInsert = typeof treasureChestLocations.$inferInsert;
-export type DBTreasureChestLocationRow = typeof treasureChestLocations.$inferSelect;
+export type DBTreasureChestLocationInsert =
+  typeof treasureChestLocations.$inferInsert;
+export type DBTreasureChestLocationRow =
+  typeof treasureChestLocations.$inferSelect;
 
 export type DBModerationFlagInsert = typeof moderationFlags.$inferInsert;
 export type DBModerationFlagRow = typeof moderationFlags.$inferSelect;
@@ -1374,14 +1654,17 @@ export type DBUserStrikeRow = typeof userStrikes.$inferSelect;
 export type DBNotificationInsert = typeof notifications.$inferInsert;
 export type DBNotificationRow = typeof notifications.$inferSelect;
 
-export type DBUserNotificationPreferencesInsert = typeof userNotificationPreferences.$inferInsert;
-export type DBUserNotificationPreferencesRow = typeof userNotificationPreferences.$inferSelect;
+export type DBUserNotificationPreferencesInsert =
+  typeof userNotificationPreferences.$inferInsert;
+export type DBUserNotificationPreferencesRow =
+  typeof userNotificationPreferences.$inferSelect;
 
 // Coin earning types
 export type DBDailyLoginInsert = typeof dailyLogins.$inferInsert;
 export type DBDailyLoginRow = typeof dailyLogins.$inferSelect;
 
-export type DBUserLocationHistoryInsert = typeof userLocationHistory.$inferInsert;
+export type DBUserLocationHistoryInsert =
+  typeof userLocationHistory.$inferInsert;
 export type DBUserLocationHistoryRow = typeof userLocationHistory.$inferSelect;
 
 export type DBDistanceRewardInsert = typeof distanceRewards.$inferInsert;
@@ -1403,8 +1686,9 @@ export type DBDragonRewardRow = typeof dragonRewards.$inferSelect;
 export type DBViolationInsert = typeof violations.$inferInsert;
 export type DBViolationRow = typeof violations.$inferSelect;
 
-export type DBModerationDecisionsInsert = typeof moderationDecisions.$inferInsert;
-export type DBModerationDecisionsRow = typeof moderationDecisions.$inferSelect; 
+export type DBModerationDecisionsInsert =
+  typeof moderationDecisions.$inferInsert;
+export type DBModerationDecisionsRow = typeof moderationDecisions.$inferSelect;
 
 // export type User = typeof users.$inferSelect;
 // export type UserInsert = typeof users.$inferInsert;
@@ -1414,8 +1698,6 @@ export type DBModerationDecisionsRow = typeof moderationDecisions.$inferSelect;
 
 // export type Quest = typeof quests.$inferSelect;
 // export type QuestInsert = typeof quests.$inferInsert;
-
-
 
 // import type {
 // 	DBGroupInsert,

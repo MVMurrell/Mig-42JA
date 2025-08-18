@@ -1,3 +1,10 @@
+import { config } from "dotenv";
+config({ path: ".env.local" }); // also reads .env if present
+console.log(
+  process.env.BUNNY_API_KEY?.length,
+  process.env.BUNNY_LIBRARY_ID,
+  process.env.BUNNY_CDN_HOSTNAME
+);
 import dotenv from "dotenv";
 import path from "node:path";
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
@@ -149,38 +156,46 @@ app.use((req, res, next) => {
         }
       }, 10000);
 
-      // Start mystery box system
-      console.log("🎁 MYSTERY BOX: Starting mystery box spawning system...");
-      setInterval(async () => {
-        try {
-          const { mysteryBoxService } = await import("./mysteryBoxService.ts");
-          await mysteryBoxService.spawnMysteryBox(false);
-        } catch (error) {
-          console.error("🎁 MYSTERY BOX: Error in scheduled spawn:", error);
-        }
-      }, 2 * 60 * 60 * 1000);
+      if (process.env.ENABLE_MYSTERY_BOX !== "false") {
+        // Start mystery box system
+        console.log("🎁 MYSTERY BOX: Starting mystery box spawning system...");
+        setInterval(async () => {
+          try {
+            const { mysteryBoxService } = await import(
+              "./mysteryBoxService.ts"
+            );
+            await mysteryBoxService.spawnMysteryBox(false);
+          } catch (error) {
+            console.error("🎁 MYSTERY BOX: Error in scheduled spawn:", error);
+          }
+        }, 2 * 60 * 60 * 1000);
 
-      setTimeout(async () => {
-        try {
-          const { mysteryBoxService } = await import("./mysteryBoxService.ts");
-          await mysteryBoxService.spawnMysteryBox(true);
-          console.log("🎁 MYSTERY BOX: Initial spawn attempt completed");
-        } catch (error) {
-          console.error("🎁 MYSTERY BOX: Error in initial spawn:", error);
-        }
-      }, 12000);
+        setTimeout(async () => {
+          try {
+            const { mysteryBoxService } = await import(
+              "./mysteryBoxService.ts"
+            );
+            await mysteryBoxService.spawnMysteryBox(true);
+            console.log("🎁 MYSTERY BOX: Initial spawn attempt completed");
+          } catch (error) {
+            console.error("🎁 MYSTERY BOX: Error in initial spawn:", error);
+          }
+        }, 12000);
+      }
 
-      // Start dragon system
-      console.log("🐉 Starting dragon system...");
-      setTimeout(async () => {
-        try {
-          const { dragonService } = await import("./dragonService.ts");
-          dragonService.startDragonSystem();
-          console.log("🐉 DRAGON: System started successfully");
-        } catch (error) {
-          console.error("🐉 DRAGON: Error starting system:", error);
-        }
-      }, 15000);
+      if (process.env.ENABLE_DRAGON !== "false") {
+        // Start dragon system
+        console.log("🐉 Starting dragon system...");
+        setTimeout(async () => {
+          try {
+            const { dragonService } = await import("./dragonService.ts");
+            dragonService.startDragonSystem();
+            console.log("🐉 DRAGON: System started successfully");
+          } catch (error) {
+            console.error("🐉 DRAGON: Error starting system:", error);
+          }
+        }, 15000);
+      }
     });
   } catch (error) {
     console.error("🚨 CRITICAL STARTUP ERROR:", error);
