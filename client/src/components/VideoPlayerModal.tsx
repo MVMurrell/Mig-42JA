@@ -35,7 +35,7 @@ import {
   AlertDialogTitle,
 } from "@/components/ui/alert-dialog.tsx";
 import { Slider } from "@/components/ui/slider.tsx";
-import { useAuth } from "@/hooks/useAuth.ts";
+
 import { useQueryClient, useQuery } from "@tanstack/react-query";
 import { useToast } from "@/hooks/use-toast.ts";
 
@@ -48,8 +48,9 @@ import HLSVideoPlayer from "./HLSVideoPlayer.tsx";
 import Hls from 'hls.js';
 import { formatDistance } from "@/lib/distanceUtils.ts";
 import type { DBUserRow } from '@shared/schema.ts';
-import type { AppUser } from "@/hooks/useAuth";
-const { user: currentUser } = useAuth();;
+import  { useAuth } from "@/hooks/useAuth";
+
+
 
 // Video Scrubber Component for fullscreen video comments
 function VideoScrubber({ comment, onTimeUpdate }: { comment: any; onTimeUpdate: (currentTime: number, duration: number) => void }) {
@@ -168,7 +169,7 @@ function VideoCommentPlayer({ videoUrl, duration, thumbnailUrl, onFullscreen, is
   onTimeUpdate?: (currentTime: number, duration: number, isPlaying: boolean) => void;
 }) {
   // Removed excessive debug logging
-  const { user: currentUser } = useAuth();
+  
   const { toast } = useToast();
   const videoPlayerRef = useRef<any>(null);
   const [isLoading, setIsLoading] = useState(true);
