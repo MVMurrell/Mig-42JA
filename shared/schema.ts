@@ -806,7 +806,7 @@ export const dragons = pgTable("dragons", {
 // Dragon attacks table - tracks user contributions to dragon defeat
 export const dragonAttacks = pgTable("dragon_attacks", {
   id: serial("id").primaryKey(),
-  dragonId: varchar("dragon_id")
+  dragonId: uuid("dragon_id")
     .notNull()
     .references(() => dragons.id, { onDelete: "cascade" }),
   userId: varchar("user_id")
@@ -822,7 +822,7 @@ export const dragonAttacks = pgTable("dragon_attacks", {
 // Dragon rewards table - tracks coin distribution when dragon is defeated
 export const dragonRewards = pgTable("dragon_rewards", {
   id: serial("id").primaryKey(),
-  dragonId: varchar("dragon_id")
+  dragonId: uuid("dragon_id")
     .notNull()
     .references(() => dragons.id, { onDelete: "cascade" }),
   userId: varchar("user_id")
@@ -1532,15 +1532,15 @@ export const insertDragonSchema = z.object({
 });
 
 export const insertDragonAttackSchema = z.object({
-  dragonId: z.string(),
+  dragonId: z.string().uuid(),
   userId: z.string(),
-  videoId: z.string(),
+  videoId: z.string().uuid(),
   damageDealt: z.number().int(),
   attackedAt: z.date().optional(),
 });
 
 export const insertDragonRewardSchema = z.object({
-  dragonId: z.string(),
+  dragonId: z.string().uuid(),
   userId: z.string(),
   coinsEarned: z.number().int(),
   damageContribution: z.number().int(),
