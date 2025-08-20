@@ -16,3 +16,4 @@ pnpm-lock.yaml
 .env.*
 *.local
 .gitattributes
+.vercel
