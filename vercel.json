@@ -1,11 +1,8 @@
 {
+  "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "client/dist",
-  "framework": "vite",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api/index" }
-  ],
-   "functions": {
-    "api/index.ts": { "runtime": "nodejs22.x", "memory": 1024, "maxDuration": 10 }
-  }
+  ]
 }

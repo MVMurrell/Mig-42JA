@@ -1,66 +1,75 @@
+import "express-session";
 import { Express } from "express";
-declare module "express-serve-static-core" {
-  interface Request {
+import cookieParser from "cookie-parser";
+declare module "express-session" {
+  interface SessionData {
+    userId?: string;
     sessionID?: string;
-    session?: Record<string, unknown> & { oauth_state?: string };
-    user?: unknown; // or your user type
+    oauth_state?: string;
   }
 }
 
 /**
  * MOBILE AUTHENTICATION ENDPOINTS
- * 
+ *
  * This module provides specialized authentication endpoints for mobile devices
  * that bypass sessionStorage limitations in PWA environments.
  */
 
 export function setupMobileAuth(app: Express) {
-  console.log('📱 Setting up mobile authentication endpoints...');
+  console.log("📱 Setting up mobile authentication endpoints...");
 
-  
   // Mobile-specific login endpoint with enhanced error handling
   app.get("/api/auth/mobile-login", (req, res) => {
-    const userAgent = req.headers['user-agent'] || '';
-    const isMobile = /Mobile|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
-    
-    console.log('📱 MOBILE LOGIN: Request from device:', {
+    const userAgent = req.headers["user-agent"] || "";
+    const isMobile =
+      /Mobile|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(
+        userAgent
+      );
+
+    console.log("📱 MOBILE LOGIN: Request from device:", {
       isMobile,
-      userAgent: userAgent.substring(0, 100) + '...',
-      sessionID: req.sessionID,
-      hasSession: !!req.session
+      userAgent: userAgent.substring(0, 100) + "...",
+      sessionID: (req as any).sessionID as string | undefined,
+      hasSession: !!(req as any).session,
     });
 
     if (!isMobile) {
-      return res.redirect('/api/auth/login');
+      return res.redirect("/api/auth/login");
     }
 
     // For mobile devices, redirect to regular login with mobile flag
-    res.redirect('/api/auth/login?mobile=true&source=mobile_help');
+    res.redirect("/api/auth/login?mobile=true&source=mobile_help");
   });
+  app.use(cookieParser());
 
   // Mobile authentication status and debugging endpoint
   app.get("/api/auth/mobile-status", (req, res) => {
-    const userAgent = req.headers['user-agent'] || '';
-    const isMobile = /Mobile|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(userAgent);
-    const isPWA = req.headers['x-requested-with'] === 'PWA' || 
-                  userAgent.includes('wv') || // WebView indicator
-                  userAgent.includes('Version/') && userAgent.includes('Mobile/');
+    const userAgent = req.headers["user-agent"] || "";
+    const isMobile =
+      /Mobile|Android|iPhone|iPad|iPod|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(
+        userAgent
+      );
+    const isPWA =
+      req.headers["x-requested-with"] === "PWA" ||
+      userAgent.includes("wv") || // WebView indicator
+      (userAgent.includes("Version/") && userAgent.includes("Mobile/"));
 
     const authInfo = {
       mobile_detected: isMobile,
       pwa_detected: isPWA,
       user_agent: userAgent,
       is_authenticated: !!req.user,
-      session_id: req.sessionID,
-      session_exists: !!req.session,
-      session_keys: req.session ? Object.keys(req.session) : [],
+      session_id: (req as any).sessionID as string | undefined,
+      session_exists: !!(req as any).session,
+      session_keys: Object.keys((req as any).session ?? {}),
       cookies_present: Object.keys(req.cookies || {}),
       secure_cookie: !!req.cookies?.jemzy_auth,
-      oauth_state_present: !!req.session?.oauth_state,
-      timestamp: new Date().toISOString()
+      oauth_state_present: !!(req.session as any)?.oauth_state,
+      timestamp: new Date().toISOString(),
     };
 
-    console.log('📱 MOBILE STATUS: Authentication debugging info:', authInfo);
+    console.log("📱 MOBILE STATUS: Authentication debugging info:", authInfo);
 
     // Return HTML page for mobile debugging
     res.send(`
@@ -87,17 +96,31 @@ export function setupMobileAuth(app: Express) {
         <div class="container">
           <h1>🔍 Mobile Authentication Status</h1>
           
-          <div class="status-card ${authInfo.is_authenticated ? 'status-good' : 'status-error'}">
+          <div class="status-card ${
+            authInfo.is_authenticated ? "status-good" : "status-error"
+          }">
             <h2>Authentication Status</h2>
-            <p><strong>Authenticated:</strong> ${authInfo.is_authenticated ? '✅ Yes' : '❌ No'}</p>
-            <p><strong>Session Valid:</strong> ${authInfo.session_exists ? '✅ Yes' : '❌ No'}</p>
-            <p><strong>Secure Cookie:</strong> ${authInfo.secure_cookie ? '✅ Yes' : '❌ No'}</p>
+            <p><strong>Authenticated:</strong> ${
+              authInfo.is_authenticated ? "✅ Yes" : "❌ No"
+            }</p>
+            <p><strong>Session Valid:</strong> ${
+              authInfo.session_exists ? "✅ Yes" : "❌ No"
+            }</p>
+            <p><strong>Secure Cookie:</strong> ${
+              authInfo.secure_cookie ? "✅ Yes" : "❌ No"
+            }</p>
           </div>
 
-          <div class="status-card ${authInfo.mobile_detected ? 'status-good' : 'status-warning'}">
+          <div class="status-card ${
+            authInfo.mobile_detected ? "status-good" : "status-warning"
+          }">
             <h2>Device Detection</h2>
-            <p><strong>Mobile Device:</strong> ${authInfo.mobile_detected ? '📱 Yes' : '🖥️ No'}</p>
-            <p><strong>PWA Mode:</strong> ${authInfo.pwa_detected ? '📲 Yes' : '🌐 No'}</p>
+            <p><strong>Mobile Device:</strong> ${
+              authInfo.mobile_detected ? "📱 Yes" : "🖥️ No"
+            }</p>
+            <p><strong>PWA Mode:</strong> ${
+              authInfo.pwa_detected ? "📲 Yes" : "🌐 No"
+            }</p>
           </div>
 
           <div class="status-card">
@@ -111,8 +134,12 @@ export function setupMobileAuth(app: Express) {
             <h2>Technical Details</h2>
             <div class="detail">
               <p><strong>Session ID:</strong> ${authInfo.session_id}</p>
-              <p><strong>Cookies:</strong> ${authInfo.cookies_present.join(', ') || 'None'}</p>
-              <p><strong>OAuth State:</strong> ${authInfo.oauth_state_present ? 'Present' : 'Not present'}</p>
+              <p><strong>Cookies:</strong> ${
+                authInfo.cookies_present.join(", ") || "None"
+              }</p>
+              <p><strong>OAuth State:</strong> ${
+                authInfo.oauth_state_present ? "Present" : "Not present"
+              }</p>
               <p><strong>Timestamp:</strong> ${authInfo.timestamp}</p>
             </div>
           </div>
@@ -121,11 +148,15 @@ export function setupMobileAuth(app: Express) {
             <h2>Browser Information</h2>
             <div class="detail">
               <p><strong>User Agent:</strong></p>
-              <p style="word-break: break-all; margin-top: 5px;">${authInfo.user_agent}</p>
+              <p style="word-break: break-all; margin-top: 5px;">${
+                authInfo.user_agent
+              }</p>
             </div>
           </div>
 
-          ${!authInfo.is_authenticated ? `
+          ${
+            !authInfo.is_authenticated
+              ? `
           <div class="status-card status-warning">
             <h2>🚨 Authentication Issue Detected</h2>
             <p>Your mobile browser appears to be blocking authentication due to storage partitioning security policies.</p>
@@ -137,7 +168,9 @@ export function setupMobileAuth(app: Express) {
               <li>Switch to a different mobile browser</li>
             </ul>
           </div>
-          ` : ''}
+          `
+              : ""
+          }
 
         </div>
       </body>
@@ -147,13 +180,13 @@ export function setupMobileAuth(app: Express) {
 
   // Mobile authentication error handler
   app.get("/api/auth/mobile-error", (req, res) => {
-    const errorType = req.query.error || 'unknown';
-    const errorDescription = req.query.error_description || '';
-    
-    console.log('📱 MOBILE ERROR: Authentication error occurred:', {
+    const errorType = req.query.error || "unknown";
+    const errorDescription = req.query.error_description || "";
+
+    console.log("📱 MOBILE ERROR: Authentication error occurred:", {
       errorType,
       errorDescription,
-      userAgent: req.headers['user-agent']?.substring(0, 100)
+      userAgent: req.headers["user-agent"]?.substring(0, 100),
     });
 
     res.send(`
@@ -180,7 +213,11 @@ export function setupMobileAuth(app: Express) {
             <p>Your mobile browser is blocking authentication due to security policies that prevent sessionStorage access in PWA environments.</p>
             
             <p><strong>Error:</strong> ${errorType}</p>
-            ${errorDescription ? `<p><strong>Details:</strong> ${errorDescription}</p>` : ''}
+            ${
+              errorDescription
+                ? `<p><strong>Details:</strong> ${errorDescription}</p>`
+                : ""
+            }
             
             <div style="margin-top: 30px;">
               <a href="/api/auth/mobile-status" class="btn">View Detailed Status</a>
@@ -193,5 +230,5 @@ export function setupMobileAuth(app: Express) {
     `);
   });
 
-  console.log('📱 Mobile authentication endpoints registered successfully');
+  console.log("📱 Mobile authentication endpoints registered successfully");
 }

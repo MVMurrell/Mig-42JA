@@ -1,6 +1,6 @@
 {
-  "include": ["client/src/**/*", "shared/**/*", "server/**/*", "types/**/*", "api/app.ts"],
-  "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
+  "include": ["client/src/**/*", "shared/**/*", "server/**/*", "types/**/*"],
+  "exclude": ["node_modules", "build", "dist", "**/*.test.ts",  "api/app.ts", "server/index.ts"],
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/typescript/tsbuildinfo",
@@ -20,7 +20,7 @@
     "outDir": "dist/server",
     "moduleSuffixes": [".js", ""],
     "baseUrl": ".",
-    "types": ["node", "vite/client", "google.maps", "@types/google.maps"],
+    "types": ["node", "vite/client", "google.maps", "@types/google.maps", "express", "express-session"],
     "paths": {
       "@/*": ["./client/src/*"],
       "@shared/*": ["./shared/*"],
