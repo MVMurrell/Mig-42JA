@@ -1,46 +1,49 @@
 // PATH: server/app.ts
-import path from "node:path";
 import express, {
   type Request,
   type Response,
   type NextFunction,
 } from "express";
 import cookieParser from "cookie-parser";
+import path from "node:path";
 import dotenv from "dotenv";
 
-// --- load env (server only)
 dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 
-// imports you already had (safe on Vercel)
-import { registerRoutes } from "./routes";
-import { setupMobileAuth } from "./mobileAuth";
-import { devAuthMiddleware, ensureDevUser, DEV_USER } from "./devAuth";
-// NOTE: do NOT start Vite here; Vercel serves the SPA. Keep your import if needed elsewhere, but don't call it.
-// import { setupVite, serveStatic, log } from "./vite"; // not used in serverless
+export const DEV_USER = {
+  id: "dev-user-1",
+  username: "devuser",
+  email: "dev@local.test",
+  name: "Dev User",
+  createdAt: new Date().toISOString(),
+};
 
-export const app = express();
+const app = express();
 
-// core middleware
+// Core middleware
 app.use(cookieParser());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: false, limit: "50mb" }));
 
-// static files your APIs might need (not the SPA)
+// Static assets needed by APIs (NOT the SPA; Vercel serves the SPA)
 app.use("/assets", express.static("attached_assets"));
 app.use("/map_icons", express.static("public/map_icons"));
 app.use("/icons", express.static("public/icons"));
 app.use("/uploads", express.static("uploads"));
 
-// dev auth (safe to keep for now)
-app.use(async (_req, _res, next) => {
-  try {
-    await ensureDevUser();
-  } catch {}
+// ===== Preview-safe auth stub (no DB, no external deps) =====
+app.use((_req, _res, next) => {
+  // attach a dev user; real auth can replace this later
+  (_req as any).user = DEV_USER;
   next();
 });
-app.use(devAuthMiddleware);
 
-// auth endpoints used by client
+// Health check
+app.get("/api/health", (_req, res) => {
+  res.json({ ok: true, env: process.env.NODE_ENV || "unknown" });
+});
+
+// Auth endpoints
 app.get("/api/auth/login", (req, res) => {
   res.cookie("jid", "dev", { httpOnly: true, sameSite: "lax" });
   return res.json({ ok: true, user: (req as any).user ?? DEV_USER });
@@ -58,14 +61,12 @@ app.post("/api/auth/logout", (_req, res) => {
   return res.json({ ok: true });
 });
 
-// register your other routes
-await registerRoutes(app);
-setupMobileAuth(app);
-
-// error handler
+// Error handler
 app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-  const status = err.status || err.statusCode || 500;
-  res.status(status).json({ message: err.message || "Internal Server Error" });
+  console.error("API ERROR:", err);
+  res
+    .status(err.status || 500)
+    .json({ message: err.message || "Internal Server Error" });
 });
 
 export default app;
