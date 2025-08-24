@@ -67,11 +67,16 @@ export function useAuth() {
   const isLoading = isLoadingUser || (isMobile && isLoadingStatus);
 
   // Actions
-  const login = () => {
-    // If your server expects a mobile hint, keep the query param
-    window.location.href = isMobile
-      ? "/api/auth/login?mobile=true"
-      : "/api/auth/login";
+  // PATH: client/src/hooks/useAuth.ts  (function body only)
+  const login = async () => {
+    // call the server, don't navigate
+    await fetch("/api/auth/login", { credentials: "include" });
+
+    // then refetch current user
+    const me = await fetch("/api/auth/user", { credentials: "include" });
+    if (!me.ok) throw new Error(`/api/auth/user ${me.status}`);
+    const data = await me.json();
+    // TODO: update your auth state/context with data.user if you keep it here
   };
 
   const logout = () => {

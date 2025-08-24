@@ -35,6 +35,7 @@ import { TreasureChestModal } from './TreasureChestModal.js';
 import { MysteryBoxModal } from './MysteryBoxModal.js';
 import DragonModal from './DragonModal.js';
 import { LanternModal } from './LanternModal.js';
+import { loadGoogleMaps } from '@/lib/mapsLoader.ts';
 
 
 
@@ -114,6 +115,7 @@ interface Dragon {
   expiresAt: string;
 }
 
+
 interface MapInterfaceProps {
   videos: Video[];
   userLocation: { lat: number; lng: number } | null;
@@ -131,6 +133,7 @@ interface MapInterfaceProps {
     groups: string[];
     hideWatchedVideos: boolean;
   };
+  
   userGemCoins?: number;
   userLanterns?: number;
   userProfileImage?: string;
@@ -203,6 +206,8 @@ const getEventCountdown = (eventStartDate?: string, eventStartTime?: string): st
   
   return "Live";
 };
+
+
 
 // Helper function to calculate quest countdown
 const getQuestCountdown = (endDate?: string): string | null => {
@@ -823,6 +828,10 @@ const createLanternMarker = (lanternCount: number): HTMLElement => {
 };
 
 export default function MapInterface({ videos, userLocation, mapCenter, onVideoClick, onLocationCenter, onPlayVideosInRadius, targetVideoId, isLoading, hideWatchedVideos, selectedCategories = [], appliedFilters, userGemCoins, userLanterns, onCoinClick, highlightedVideoId, userProfileImage, onViewportChange, onQuestClick, lanternState, onLanternActivate, onLanternPurchase }: MapInterfaceProps): JSX.Element {
+  
+   useEffect(() => {
+    loadGoogleMaps();
+  }, []);
   
   // Map state  
   const [lanternMarker, setLanternMarker] = useState<google.maps.marker.AdvancedMarkerElement | null>(null);
