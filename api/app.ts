@@ -1,14 +1,10 @@
-// PATH: server/app.ts
+// PATH: api/app.ts
 import express, {
   type Request,
   type Response,
   type NextFunction,
 } from "express";
-import cookieParser from "cookie-parser";
 import path from "node:path";
-import dotenv from "dotenv";
-
-dotenv.config({ path: path.resolve(process.cwd(), ".env.local") });
 
 export const DEV_USER = {
   id: "dev-user-1",
@@ -21,7 +17,6 @@ export const DEV_USER = {
 const app = express();
 
 // Core middleware
-app.use(cookieParser());
 app.use(express.json({ limit: "50mb" }));
 app.use(express.urlencoded({ extended: false, limit: "50mb" }));
 
