@@ -5,10 +5,14 @@ import session from "express-session";
 import connectPgSimple from "connect-pg-simple";
 import { Pool } from "pg";
 import passport from "passport";
+import type { Strategy as PassportStrategy } from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
-import * as argon2 from "argon2";
 import serverless from "serverless-http";
 import { customAlphabet } from "nanoid";
+import { hash as argonHash, verify as argonVerify } from "@node-rs/argon2";
+type ExpressUser = Express.User;
+
+// import type { Pool as PgPool } from "pg";
 
 const PGSession = connectPgSimple(session);
 const nano = customAlphabet(
@@ -16,9 +20,44 @@ const nano = customAlphabet(
   48
 );
 
+const local = new LocalStrategy(
+  { usernameField: "email", passwordField: "password" },
+  async (email, password, done) => {
+    try {
+      const user = await findUserByEmail(email);
+      if (!user) return done(null, false, { message: "Invalid credentials" });
+
+      const ok = await argonVerify(user.password_hash, password);
+      if (!ok) return done(null, false, { message: "Invalid credentials" });
+
+      const safeUser: ExpressUser = {
+        id: user.id,
+        email: user.email,
+        role: user.role,
+        claims: {},
+      };
+      return done(null, safeUser);
+    } catch (e) {
+      return done(e as any);
+    }
+  }
+);
+passport.use(local as unknown as PassportStrategy);
+
+const store = new PGSession({
+  conObject: {
+    connectionString: process.env.DATABASE_URL!,
+    ssl: { rejectUnauthorized: false },
+  },
+  schemaName: "public",
+  tableName: "user_sessions",
+  createTableIfMissing: false,
+  disableTouch: true,
+});
+
 // --- DB ---
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: process.env.DATABASE_URL!,
   ssl: { rejectUnauthorized: false },
 });
 
@@ -47,9 +86,11 @@ async function findUserById(id: string): Promise<UserRow | null> {
 }
 
 async function createUser(email: string, password: string): Promise<UserRow> {
-  const hash = await argon2.hash(password);
+  const hash = await argonHash(password);
   const { rows } = await pool.query(
-    "insert into users (email, password_hash) values (lower($1), $2) returning id, email, password_hash, role, email_verified",
+    `insert into users (email, password_hash)
+     values (lower($1), $2)
+     returning id, email, password_hash, role, email_verified`,
     [email, hash]
   );
   return rows[0];
@@ -93,54 +134,20 @@ async function sendEmail(
   console.log(`[MAIL:${devLabel}] to=${to} subject="${subject}"\n${html}`);
 }
 
-// --- Passport (local) ---
-passport.use(
-  new LocalStrategy(
-    { usernameField: "email", passwordField: "password" },
-    async (email, password, done) => {
-      try {
-        const user = await findUserByEmail(email);
-        if (!user) return done(null, false, { message: "Invalid credentials" });
-        const ok = await argon2.verify(user.password_hash, password);
-        if (!ok) return done(null, false, { message: "Invalid credentials" });
-        return done(null, {
-          id: user.id,
-          email: user.email,
-          role: user.role,
-        } as any); // cast to quiet TS
-      } catch (e) {
-        return done(e as any);
-      }
-    }
-  )
-);
-
-const local = new LocalStrategy(
-  { usernameField: "email", passwordField: "password" },
-  async (email, password, done) => {
-    try {
-      const user = await findUserByEmail(email);
-      if (!user) return done(null, false, { message: "Invalid credentials" });
-      const ok = await argon2.verify(user.password_hash, password);
-      if (!ok) return done(null, false, { message: "Invalid credentials" });
-      return done(null, {
-        id: user.id,
-        email: user.email,
-        role: user.role,
-      } as any);
-    } catch (e) {
-      return done(e as any);
-    }
-  }
-);
-
 passport.serializeUser((user: any, done) => done(null, user.id));
 passport.deserializeUser(async (id: string, done) => {
   try {
     const u = await findUserById(id);
     done(
       null,
-      u ? ({ id: u.id, email: u.email, role: u.role } as any) : (false as any)
+      u
+        ? ({
+            id: u.id,
+            email: u.email,
+            role: u.role,
+            claims: {},
+          } as ExpressUser)
+        : (false as any)
     );
   } catch (e) {
     done(e as any);
@@ -152,10 +159,10 @@ const app = express();
 app.set("trust proxy", 1);
 
 app.use(helmet());
+const allowed = (process.env.ALLOWED_ORIGIN ?? "").split(",").filter(Boolean);
 app.use(
   cors({
-    origin:
-      (process.env.ALLOWED_ORIGIN ?? "").split(",").filter(Boolean) || true,
+    origin: allowed.length ? allowed : true,
     credentials: true,
   })
 );
@@ -164,11 +171,8 @@ app.use(express.json());
 // FIX: use conString instead of Pool here to avoid the TS mismatch
 app.use(
   session({
-    store: new PGSession({
-      conString: process.env.DATABASE_URL as string,
-      tableName: "user_sessions",
-    }),
-    secret: process.env.SESSION_SECRET as string,
+    store,
+    secret: process.env.SESSION_SECRET!,
     resave: false,
     saveUninitialized: false,
     cookie: {
@@ -180,6 +184,9 @@ app.use(
   })
 );
 
+app.get("/api/health", (_req, res) =>
+  res.json({ ok: true, ts: new Date().toISOString() })
+);
 app.use(passport.initialize());
 app.use(passport.session());
 
@@ -209,26 +216,27 @@ app.post("/api/auth/register", async (req, res) => {
       String(email).toLowerCase(),
       String(password)
     );
-    req.login({ id: user.id, email: user.email } as any, async (err) => {
-      if (err) return res.status(500).json({ error: "login failed" });
-      (req.session as any).userId = (user as any).id;
-      (req.session as any).auth_state = "local";
-
-      // send verify email
-      const { token } = await createToken(user.id, "email_verify", 60 * 24);
-      const verifyUrl = `${
-        process.env.BASE_URL
-      }/api/auth/verify-email?token=${encodeURIComponent(token)}`;
-      await sendEmail(
-        "verify",
-        user.email,
-        "Confirm your email",
-        `<p>Confirm: <a href="${verifyUrl}">${verifyUrl}</a></p>`
-      );
-      res.json({ id: user.id, email: user.email, emailed_verification: true });
-    });
+    const safe: ExpressUser = {
+      id: user.id,
+      email: user.email,
+      role: user.role,
+      claims: {},
+    };
+    req.login(
+      // { id: user.id, email: user.email, role: user.role } as any,
+      safe,
+      (err) => {
+        if (err) return res.status(500).json({ error: "login failed" });
+        (req.session as any).userId = user.id;
+        (req.session as any).auth_state = "local";
+        res.json({ id: user.id, email: user.email });
+      }
+    );
   } catch (e: any) {
-    res.status(500).json({ error: e?.message });
+    if (e?.code === "23505")
+      return res.status(409).json({ error: "email in use" });
+    console.error("REGISTER ERROR", e);
+    res.status(500).json({ error: "server_error" });
   }
 });
 
@@ -331,7 +339,7 @@ app.post("/api/auth/reset", async (req, res) => {
     const userId = await consumeToken(String(token), "password_reset");
     if (!userId)
       return res.status(400).json({ error: "invalid or expired token" });
-    const hash = await (await import("argon2")).hash(String(newPassword));
+    const hash = await argonHash(String(newPassword));
     await pool.query("update users set password_hash=$1 where id=$2", [
       hash,
       userId,
@@ -340,6 +348,13 @@ app.post("/api/auth/reset", async (req, res) => {
   } catch (e: any) {
     res.status(500).json({ error: e?.message });
   }
+});
+
+app.get("/api/auth/user", (req, res) => {
+  const u = (req as any).user ?? null;
+  if (!u)
+    return res.status(401).json({ ok: false, error: "Not authenticated" });
+  return res.json({ ok: true, user: u });
 });
 
 app.use((err: any, _req: any, res: any, _next: any) => {
