@@ -1,95 +1,95 @@
 // client/src/hooks/useAuth.ts
-import { useQuery } from "@tanstack/react-query";
-import { useEffect, useState } from "react";
-
-export type AppUser = {
-  id: string;
-  username: string | null;
-  firstName?: string | null;
-  lastName?: string | null;
-  profileImageUrl: string | null;
-  email?: string | null;
-  role?: "user" | "admin" | string | null;
-  gemCoins?: number; // add this since home.tsx reads it
-  readyPlayerMeAvatarUrl?: string | null;
-  lanterns?: number;
-};
+import { useCallback, useMemo } from "react";
+import { useQuery, useQueryClient } from "@tanstack/react-query";
+import { api } from "@/lib/api";
+import type { AppUser } from "@/types/user";
 
 export function useAuth() {
-  // Basic mobile detection (same intent as what you had)
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const ua = navigator.userAgent || "";
-    const mobile =
-      /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile/i.test(
-        ua
-      );
-    setIsMobile(mobile);
+  const qc = useQueryClient();
+
+  // whoami on app load
+  const me = useQuery({
+    queryKey: ["me"],
+    queryFn: async () => {
+      const r = await api.get<{ user: AppUser | null }>("/api/auth/me");
+      return r.user;
+    },
+    retry: false,
+  });
+
+  // simple functions instead of UseMutationResult<T>
+  const login = useCallback(
+    async (email: string, password: string) => {
+      const u = await api.post<AppUser>("/api/auth/login", { email, password });
+      qc.setQueryData(["me"], u);
+    },
+    [qc]
+  );
+
+  const register = useCallback(
+    async (email: string, password: string) => {
+      const u = await api.post<AppUser>("/api/auth/register", {
+        email,
+        password,
+      });
+      qc.setQueryData(["me"], u);
+    },
+    [qc]
+  );
+
+  const logout = useCallback(async () => {
+    await api.post("/api/auth/logout", null);
+    qc.setQueryData(["me"], null);
+  }, [qc]);
+
+  const resendVerify = useCallback(async () => {
+    await api.post("/api/auth/request-verify-email", null);
   }, []);
 
-  // User fetch
-  const {
-    data: user,
-    isLoading: isLoadingUser,
-    error: userError,
-  } = useQuery<AppUser | null>({
-    queryKey: ["/api/auth/user"],
-    queryFn: async () => {
-      const res = await fetch("/api/auth/user", { credentials: "include" });
-      if (res.status === 401) return null; // not authenticated
-      if (!res.ok) throw new Error(`auth/user ${res.status}`);
-      return (await res.json()) as AppUser;
+  const requestReset = useCallback(async (email: string) => {
+    await api.post("/api/auth/request-reset", { email });
+  }, []);
+
+  const resetPassword = useCallback(
+    async (token: string, newPassword: string) => {
+      await api.post("/api/auth/reset", { token, newPassword });
     },
-    refetchOnWindowFocus: true,
-  });
+    []
+  );
 
-  // Optional server-side auth status for mobile flow
-  const { data: authStatus, isLoading: isLoadingStatus } = useQuery<{
-    authenticated: boolean;
-    isSuspended?: boolean;
-    secure_cookie?: boolean;
-  }>({
-    queryKey: ["/api/auth/status"],
-    queryFn: async () => {
-      const res = await fetch("/api/auth/status", { credentials: "include" });
-      if (!res.ok) throw new Error(`auth/status ${res.status}`);
-      return res.json();
-    },
-    enabled: isMobile, // only ping on mobile
-    refetchInterval: 30000, // keep it fresh
-  });
+  // compatibility fields expected by components
+  const user = me.data ?? null;
+  const isLoading = me.isLoading;
+  const isAuthenticated = !!user;
+  const isMobile = useMemo(() => {
+    if (typeof navigator === "undefined") return false;
+    return /Mobi|Android/i.test(navigator.userAgent);
+  }, []);
+  const authStatus: "loading" | "authenticated" | "unauthenticated" = isLoading
+    ? "loading"
+    : isAuthenticated
+    ? "authenticated"
+    : "unauthenticated";
 
-  // Derived booleans
-  const isAuthenticated = isMobile ? !!authStatus?.authenticated : !!user;
-
-  const isSuspended = isMobile ? !!authStatus?.isSuspended : false;
-
-  const isLoading = isLoadingUser || (isMobile && isLoadingStatus);
-
-  // Actions
-  // PATH: client/src/hooks/useAuth.ts  (function body only)
-  const login = async () => {
-    await fetch("/api/auth/login", { credentials: "include" });
-    const me = await fetch("/api/auth/user", { credentials: "include" });
-    if (!me.ok) throw new Error(`/api/auth/user ${me.status}`);
-    const data = await me.json();
-    // TODO: store data.user in your auth state/context
-  };
-
-  const logout = () => {
-    window.location.href = "/api/auth/logout";
-  };
+  // keep original 'loading' name too
+  const loading = isLoading;
 
   return {
-    user, // AppUser | null
-    isLoading, // <- fixes shorthand prop error
+    user,
+    loading,
+    // compat flags
+    isLoading,
     isAuthenticated,
-    isSuspended,
     isMobile,
-    authStatus: isMobile ? authStatus : null,
+    authStatus,
+    // actions as simple functions (so onClick={logout} works)
     login,
+    register,
     logout,
-    // optionally expose userError if you want
+    resendVerify,
+    requestReset,
+    resetPassword,
   };
 }
-export default useAuth;
+
+export type { AppUser } from "@/types/user";

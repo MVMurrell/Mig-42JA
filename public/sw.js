@@ -77,7 +77,7 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
-  
+  if (url.pathname.startsWith("/api/")) return;
   // Skip non-GET requests and chrome-extension requests
   if (request.method !== 'GET' || url.protocol === 'chrome-extension:') {
     return;

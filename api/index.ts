@@ -5,11 +5,12 @@ import session from "express-session";
 import connectPgSimple from "connect-pg-simple";
 import { Pool } from "pg";
 import passport from "passport";
-import type { Strategy as PassportStrategy } from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
-import serverless from "serverless-http";
 import { customAlphabet } from "nanoid";
 import { hash as argonHash, verify as argonVerify } from "@node-rs/argon2";
+import { Router } from "express";
+import type { RequestHandler } from "express";
+
 type ExpressUser = Express.User;
 
 // import type { Pool as PgPool } from "pg";
@@ -34,7 +35,7 @@ const local = new LocalStrategy(
         id: user.id,
         email: user.email,
         role: user.role,
-        claims: {},
+        claims: { sub: user.id, email: user.email, role: user.role },
       };
       return done(null, safeUser);
     } catch (e) {
@@ -42,24 +43,57 @@ const local = new LocalStrategy(
     }
   }
 );
+
+// Keep the passport-local vs passport types happy on Vercel
+import type { Strategy as PassportStrategy } from "passport";
 passport.use(local as unknown as PassportStrategy);
 
 const store = new PGSession({
   conObject: {
     connectionString: process.env.DATABASE_URL!,
     ssl: { rejectUnauthorized: false },
+    connectionTimeoutMillis: 5000,
   },
-  schemaName: "public",
   tableName: "user_sessions",
-  createTableIfMissing: false,
+  schemaName: "public",
+  createTableIfMissing: true,
   disableTouch: true,
 });
 
-// --- DB ---
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL!,
   ssl: { rejectUnauthorized: false },
+  // keep these small to avoid 300s hangs
+  connectionTimeoutMillis: 5_000,
+  idleTimeoutMillis: 10_000,
+  max: 2,
 });
+
+const sessionOptions: session.SessionOptions = {
+  store: new PGSession({
+    // use conObject so connect-pg-simple uses these timeouts too
+    conObject: {
+      connectionString: process.env.DATABASE_URL!,
+      ssl: { rejectUnauthorized: false },
+      connectionTimeoutMillis: 5_000,
+      idleTimeoutMillis: 10_000,
+      max: 1,
+    },
+    tableName: "user_sessions",
+    createTableIfMissing: true,
+    disableTouch: true,
+    schemaName: "public",
+  }),
+  secret: process.env.SESSION_SECRET!,
+  resave: false,
+  saveUninitialized: false,
+  cookie: {
+    httpOnly: true,
+    sameSite: "lax",
+    secure: process.env.NODE_ENV === "production",
+    maxAge: 1000 * 60 * 60 * 24 * 7,
+  },
+};
 
 type UserRow = {
   id: string;
@@ -145,8 +179,8 @@ passport.deserializeUser(async (id: string, done) => {
             id: u.id,
             email: u.email,
             role: u.role,
-            claims: {},
-          } as ExpressUser)
+            claims: { sub: u.id, email: u.email, role: u.role },
+          } as Express.User) // ✅
         : (false as any)
     );
   } catch (e) {
@@ -157,21 +191,37 @@ passport.deserializeUser(async (id: string, done) => {
 // --- App ---
 const app = express();
 app.set("trust proxy", 1);
-
 app.use(helmet());
-const allowed = (process.env.ALLOWED_ORIGIN ?? "").split(",").filter(Boolean);
 app.use(
   cors({
-    origin: allowed.length ? allowed : true,
+    origin:
+      (process.env.ALLOWED_ORIGIN ?? "").split(",").filter(Boolean) || true,
     credentials: true,
   })
 );
 app.use(express.json());
 
-// FIX: use conString instead of Pool here to avoid the TS mismatch
+// ultra-light routes first (no session / no DB)
+app.get("/api/ping", (_req, res) =>
+  res.json({ ok: true, ts: new Date().toISOString() })
+);
+
+// optional: a simple health that never blocks
+app.get("/api/health", (_req, res) => res.json({ ok: true }));
+
 app.use(
   session({
-    store,
+    store: new PGSession({
+      conObject: {
+        connectionString: process.env.DATABASE_URL!,
+        ssl: { rejectUnauthorized: false },
+        connectionTimeoutMillis: 5000, // fail fast
+      },
+      schemaName: "public",
+      tableName: "user_sessions",
+      createTableIfMissing: true,
+      disableTouch: true,
+    }),
     secret: process.env.SESSION_SECRET!,
     resave: false,
     saveUninitialized: false,
@@ -184,16 +234,11 @@ app.use(
   })
 );
 
-app.get("/api/health", (_req, res) =>
-  res.json({ ok: true, ts: new Date().toISOString() })
-);
+app.get("/api/health-session", (_req, res) => res.json({ ok: true }));
+
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Health & DB check (served by the same function)
-app.get("/api/health", (_req, res) =>
-  res.json({ ok: true, ts: new Date().toISOString() })
-);
 app.get("/api/dbcheck", async (_req, res) => {
   try {
     await pool.query("select 1");
@@ -205,7 +250,15 @@ app.get("/api/dbcheck", async (_req, res) => {
 
 // Auth
 // ----- REGISTER (ensure session fields are set) -----
-app.post("/api/auth/register", async (req, res) => {
+
+const authRouter = Router();
+
+// only these routes pay the cost of session + deserialize
+authRouter.use(session(sessionOptions) as RequestHandler);
+authRouter.use(passport.initialize() as RequestHandler);
+authRouter.use(passport.session() as RequestHandler);
+
+authRouter.post("/register", async (req, res) => {
   const { email, password } = req.body ?? {};
   if (!email || !password)
     return res.status(400).json({ error: "email & password required" });
@@ -220,7 +273,7 @@ app.post("/api/auth/register", async (req, res) => {
       id: user.id,
       email: user.email,
       role: user.role,
-      claims: {},
+      claims: { sub: user.id, email: user.email, role: user.role },
     };
     req.login(
       // { id: user.id, email: user.email, role: user.role } as any,
@@ -241,7 +294,7 @@ app.post("/api/auth/register", async (req, res) => {
 });
 
 // ----- LOGIN (persist session fields) -----
-app.post("/api/auth/login", (req, res, next) => {
+authRouter.post("/login", (req, res, next) => {
   passport.authenticate("local", (err, user, info) => {
     if (err) return next(err);
     if (!user)
@@ -256,18 +309,22 @@ app.post("/api/auth/login", (req, res, next) => {
   })(req, res, next);
 });
 
-app.post("/api/auth/logout", (req, res) => {
+// ----- LOGOUT (destroy session) -----
+authRouter.post("/logout", (req, res) => {
   req.logout(() => {
     (req.session as any)?.destroy?.(() => res.json({ ok: true }));
   });
 });
+
+// ----- GET CURRENT USER -----
 
 app.get("/api/auth/me", (req, res) => {
   if (!req.isAuthenticated?.()) return res.status(401).json({ user: null });
   res.json({ user: req.user });
 });
 
-app.post("/api/auth/request-verify-email", async (req, res) => {
+// ----- EMAIL VERIFY (request + verify) -----
+authRouter.post("/request-verify-email", async (req, res) => {
   try {
     const userId = (req.session as any)?.userId;
     if (!userId) return res.status(401).json({ error: "not authenticated" });
@@ -291,7 +348,8 @@ app.post("/api/auth/request-verify-email", async (req, res) => {
   }
 });
 
-app.get("/api/auth/verify-email", async (req, res) => {
+// ----- EMAIL VERIFY (via link) -----
+authRouter.get("/verify-email", async (req, res) => {
   const token = String(req.query.token ?? "");
   if (!token) return res.status(400).send("missing token");
   try {
@@ -307,7 +365,7 @@ app.get("/api/auth/verify-email", async (req, res) => {
 });
 
 // ----- PASSWORD RESET (request + reset) -----
-app.post("/api/auth/request-reset", async (req, res) => {
+authRouter.post("/request-reset", async (req, res) => {
   const email = String(req.body?.email ?? "").toLowerCase();
   if (!email) return res.status(400).json({ error: "email required" });
   try {
@@ -331,7 +389,7 @@ app.post("/api/auth/request-reset", async (req, res) => {
   }
 });
 
-app.post("/api/auth/reset", async (req, res) => {
+authRouter.post("/reset", async (req, res) => {
   const { token, newPassword } = req.body ?? {};
   if (!token || !newPassword)
     return res.status(400).json({ error: "token & newPassword required" });
@@ -350,16 +408,18 @@ app.post("/api/auth/reset", async (req, res) => {
   }
 });
 
-app.get("/api/auth/user", (req, res) => {
+authRouter.get("/user", (req, res) => {
   const u = (req as any).user ?? null;
   if (!u)
     return res.status(401).json({ ok: false, error: "Not authenticated" });
   return res.json({ ok: true, user: u });
 });
 
+app.use("/api/auth", authRouter);
+
 app.use((err: any, _req: any, res: any, _next: any) => {
   console.error("API ERROR", { message: err?.message, stack: err?.stack });
-  res.status(500).json({ error: "server_error" });
+  res.status(err?.status ?? 500).json({ error: "server_error" });
 });
 
-export default serverless(app);
+export default app as any;

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Gem, MapPin, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 import { AppInstructionsModal } from './AppInstructionsModal.js';
-import { Loader } from "@googlemaps/js-api-loader";
+// import { Loader } from "@googlemaps/js-api-loader";
 import { useQuery } from "@tanstack/react-query";
 import { useButtonSound } from "@/hooks/useButtonSound.ts";
 import { useCoinCollectionSound } from "@/hooks/useCoinCollectionSound.ts";
@@ -35,7 +35,7 @@ import { TreasureChestModal } from './TreasureChestModal.js';
 import { MysteryBoxModal } from './MysteryBoxModal.js';
 import DragonModal from './DragonModal.js';
 import { LanternModal } from './LanternModal.js';
-import { loadGoogleMaps } from '@/lib/mapsLoader.ts';
+// import { loadGoogleMaps } from '@/lib/mapsLoader.ts';
 
 
 

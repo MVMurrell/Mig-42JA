@@ -1,17 +1,31 @@
-// PATH: client/src/lib/mapsLoader.ts
-export function loadGoogleMaps() {
-  const key = import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
-  if (!key) {
-    console.warn("VITE_GOOGLE_MAPS_API_KEY missing; map will not load");
-    return;
-  }
-  if (document.getElementById("gmaps-js")) return;
+// client/src/lib/mapsLoader.ts
+import { Loader } from "@googlemaps/js-api-loader";
 
-  const s = document.createElement("script");
-  s.id = "gmaps-js";
-  s.async = true;
-  s.src = `https://maps.googleapis.com/maps/api/js?key=${encodeURIComponent(
-    key
-  )}&libraries=places`;
-  document.head.appendChild(s);
+let cachedKey: string | undefined;
+let googlePromise: Promise<typeof google> | null = null;
+
+export function setMapsKey(key: string) {
+  cachedKey = key;
+}
+
+/** Loads Google Maps exactly once, with the libs you use (places + marker). */
+export async function getGoogle(): Promise<typeof google> {
+  // already on window?
+  if (window.google?.maps) return window.google as any;
+
+  if (!googlePromise) {
+    const apiKey = cachedKey || import.meta.env.VITE_GOOGLE_MAPS_API_KEY;
+    if (!apiKey) throw new Error("Google Maps API key is missing");
+
+    const loader = new Loader({
+      apiKey,
+      version: "weekly",
+      libraries: ["places", "marker"],
+      // Optional: preload a Map ID if you have one configured in Google Cloud
+      // mapIds: import.meta.env.VITE_GOOGLE_MAP_ID ? [import.meta.env.VITE_GOOGLE_MAP_ID] : undefined,
+    } as any);
+
+    googlePromise = loader.load().then(() => window.google as any);
+  }
+  return googlePromise;
 }

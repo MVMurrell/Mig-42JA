@@ -4,7 +4,6 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { ArrowLeft, Plus, Bell, BellOff } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 import { useToast } from "@/hooks/use-toast.ts";
-import { apiRequest } from "@/lib/queryClient.ts";
 import type { AppUser } from "@/hooks/useAuth";
 
 interface Collector {
@@ -252,3 +251,4 @@ export default function Collectors() {
     </div>
   );
 }
+

@@ -1,0 +1,4 @@
+35:client/src/components/AuthCheck.tsx(127,15): error TS2322: Type '(email: string, password: string) => Promise<void>' is not assignable to type 'MouseEventHandler<HTMLButtonElement>'.
+37:client/src/pages/Collectors.tsx(8,15): error TS2459: Module '"@/hooks/useAuth"' declares 'AppUser' locally, but it is not exported.
+38:client/src/pages/Settings.tsx(6,24): error TS2459: Module '"@/hooks/useAuth"' declares 'AppUser' locally, but it is not exported.
+39:client/src/pages/Settings.tsx(26,33): error TS2322: Type '(email: string, password: string) => Promise<void>' is not assignable to type 'MouseEventHandler<HTMLButtonElement>'.
