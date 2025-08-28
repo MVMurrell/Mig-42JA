@@ -15,7 +15,7 @@ import {
   uuid,
   pgEnum,
 } from "drizzle-orm/pg-core";
-import { relations, eq, and } from "drizzle-orm";
+import { relations, sql, eq, and } from "drizzle-orm";
 import { createInsertSchema } from "drizzle-zod";
 
 export const processingStatusEnum = pgEnum("processing_status", [
@@ -43,10 +43,32 @@ export const sessions = pgTable(
   (table) => [index("IDX_session_expire").on(table.expire)]
 );
 
+// server/src/db/schema.ts (or wherever your Drizzle schema lives)
+
+export const userSessions = pgTable("user_sessions", {
+  sid: varchar("sid").primaryKey(),
+  sess: jsonb("sess").notNull(),
+  expire: timestamp("expire").notNull(),
+});
+
+export const authTokens = pgTable("auth_tokens", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  userId: varchar("user_id", { length: 36 }).notNull(), // <- match DB
+  token: text("token").notNull().unique(),
+  purpose: varchar("purpose", { length: 32 }).notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  usedAt: timestamp("used_at", { withTimezone: true }),
+  metadata: jsonb("metadata").default({}).notNull(),
+});
+
 // User storage table (required for Replit Auth)
 export const users = pgTable("users", {
-  id: varchar("id").primaryKey().notNull(),
-  // email: varchar("email").unique(),
+  id: text("id")
+    .primaryKey()
+    .$defaultFn(() => sql`gen_random_uuid()::text`),
   email: varchar("email").notNull().unique(),
   firstName: varchar("first_name"),
   lastName: varchar("last_name"),
@@ -62,7 +84,7 @@ export const users = pgTable("users", {
   passwordHash: varchar("password_hash"), // nullable for existing rows; we'll require it for new signups
   // shared/schema.ts (users)
   stripeCustomerId: varchar("stripe_customer_id").unique(), // nullable by default; safe for users without Stripe
-
+  emailVerified: boolean("email_verified").notNull().default(false),
   role: varchar("role").default("user"), // user, moderator, admin
   strikes: integer("strikes").default(0), // Content moderation strikes
   communityGuidelinesAcceptedAt: timestamp("community_guidelines_accepted_at"),
