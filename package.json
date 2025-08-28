@@ -11,10 +11,11 @@
     "start": "NODE_ENV=production node dist/server/index.js",
     "vercel-build": "npm run build",
     "check": "tsc",
-    "db:push": "dotenv -e .env.local -- drizzle-kit push",
-    "db:studio": "dotenv -e .env.local -- drizzle-kit studio",
     "db:status": "dotenv -e .env.local -- drizzle-kit status",
-    "db:gen": "dotenv -e .env.local -- drizzle-kit generate"
+     "db:gen": "drizzle-kit generate --config drizzle.config.ts",
+    "db:migrate": "drizzle-kit migrate --config drizzle.config.ts",
+    "db:studio": "drizzle-kit studio --config drizzle.config.ts",
+    "db:push": "drizzle-kit push --config drizzle.config.ts"
   },
   "dependencies": {
     "@google-cloud/language": "^7.1.0",

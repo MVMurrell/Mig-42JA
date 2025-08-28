@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Gem, MapPin, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 import { AppInstructionsModal } from './AppInstructionsModal.js';
+import { Loader } from '@googlemaps/js-api-loader';
 // import { Loader } from "@googlemaps/js-api-loader";
 import { useQuery } from "@tanstack/react-query";
 import { useButtonSound } from "@/hooks/useButtonSound.ts";
@@ -35,6 +36,8 @@ import { TreasureChestModal } from './TreasureChestModal.js';
 import { MysteryBoxModal } from './MysteryBoxModal.js';
 import DragonModal from './DragonModal.js';
 import { LanternModal } from './LanternModal.js';
+import { apiRequest } from "@/lib/queryClient";
+
 // import { loadGoogleMaps } from '@/lib/mapsLoader.ts';
 
 
@@ -829,9 +832,6 @@ const createLanternMarker = (lanternCount: number): HTMLElement => {
 
 export default function MapInterface({ videos, userLocation, mapCenter, onVideoClick, onLocationCenter, onPlayVideosInRadius, targetVideoId, isLoading, hideWatchedVideos, selectedCategories = [], appliedFilters, userGemCoins, userLanterns, onCoinClick, highlightedVideoId, userProfileImage, onViewportChange, onQuestClick, lanternState, onLanternActivate, onLanternPurchase }: MapInterfaceProps): JSX.Element {
   
-   useEffect(() => {
-    loadGoogleMaps();
-  }, []);
   
   // Map state  
   const [lanternMarker, setLanternMarker] = useState<google.maps.marker.AdvancedMarkerElement | null>(null);
@@ -878,11 +878,13 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
   const highlightCircleRef = useRef<any>(null);
   const lanternListenerRef = useRef<any>(null);
   const persistentTargetVideoId = useRef<string | null>(null);
+  
 
   // Fetch active quests for map markers
   const { data: activeQuests = [] } = useQuery<Quest[]>({
     queryKey: ["/api/quests/active"],
     enabled: !!googleMapRef.current,
+     queryFn: () => apiRequest("/api/quests/active"),
   });
 
   // Fetch active treasure chests for map markers
@@ -890,6 +892,8 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
     queryKey: ['/api/treasure-chests'],
     enabled: !!googleMapRef.current,
     refetchInterval: 30000, // Refresh every 30 seconds for countdown updates
+    queryFn: () => apiRequest("/api/treasure-chests"),
+
   });
 
   // Fetch active mystery boxes for map markers
@@ -897,6 +901,8 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
     queryKey: ['/api/mystery-boxes'],
     enabled: !!googleMapRef.current,
     refetchInterval: 30000, // Refresh every 30 seconds for mystery box updates
+    queryFn: () => apiRequest("/api/mystery-boxes"),
+
   });
 
   // Fetch active dragons for map markers
@@ -904,12 +910,15 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
     queryKey: ['/api/dragons'],
     enabled: !!googleMapRef.current,
     refetchInterval: 30000, // Refresh every 30 seconds for dragon status updates
+    queryFn: () => apiRequest("/api/dragons"),
+
   });
 
   // Fetch user profile for lantern count
   const { data: userProfile } = useQuery({
     queryKey: ['/api/users/me/profile'],
     staleTime: 30000, // 30 seconds
+    queryFn: () => apiRequest("/api/users/me/profile"),
   });
 
   // Random colors for hover effects
@@ -938,11 +947,15 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
     }
   }, [targetVideoId]);
 
+
+  type MapsConfig = { apiKey: string; mapId?: string };
+
   // Fetch Google Maps API key
-  const { data: configData } = useQuery<{ apiKey: string }>({
-    queryKey: ["/api/config/maps-key"],
-    retry: false,
-  });
+  const { data: configData } = useQuery<MapsConfig>({
+  queryKey: ["/api/config/maps-key"],
+  retry: false,
+  queryFn: () => apiRequest<MapsConfig>("/api/config/maps-key"),
+});
 
   // Initialize Google Maps
   useEffect(() => {
@@ -954,9 +967,10 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
         version: "weekly",
         libraries: ["places", "marker"]
       });
-
+      loader.load().then((google) => {
       try {
-        const google = await loader.load();
+        // const google = await loader.load();
+        
         
         // Center on user location if available, otherwise default to center
         const centerLocation = userLocation || { lat: 36.0573, lng: -94.1607 };
@@ -965,7 +979,16 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
           center: centerLocation,
           zoom: userLocation ? 19 : 12, // Zoom in very close when user location is available
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-          mapId: "JEMZY_MAP_ID", // Required for AdvancedMarkerElement
+          ...(configData?.mapId
+          ? { mapId: configData.mapId }     // when using Cloud Styled Map
+                : {
+                // only use styles if NO mapId:
+              styles: [
+                { featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }] },
+                { featureType: "poi.business", stylers: [{ visibility: "off" }] },
+                { featureType: "transit", elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+              ],
+            }),
           disableDefaultUI: true, // Disable all default UI controls
           zoomControl: false,
           streetViewControl: false,
@@ -975,22 +998,6 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
           scaleControl: false,
           panControl: false,
           gestureHandling: 'greedy', // Allow all gestures
-          styles: [
-            {
-              featureType: "poi",
-              elementType: "labels",
-              stylers: [{ visibility: "off" }]
-            },
-            {
-              featureType: "poi.business",
-              stylers: [{ visibility: "off" }]
-            },
-            {
-              featureType: "transit",
-              elementType: "labels.icon",
-              stylers: [{ visibility: "off" }]
-            }
-          ]
         });
 
         googleMapRef.current = map;
@@ -1030,10 +1037,15 @@ export default function MapInterface({ videos, userLocation, mapCenter, onVideoC
       } catch (error) {
         console.error('Failed to load Google Maps:', error);
       }
+    })
+    .catch((error) => {
+      console.error('Error loading Google Maps:', error);
+    });
     };
+    
 
     initializeMap();
-  }, [configData]);
+  }, [configData, userLocation]);
 
   // Update user marker when userLocation changes and auto-center on first load
   useEffect(() => {

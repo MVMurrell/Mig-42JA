@@ -13,8 +13,15 @@ import type { RequestHandler } from "express";
 
 type ExpressUser = Express.User;
 
-// import type { Pool as PgPool } from "pg";
+// --- add near your other imports/types ---
+type Req = import("express").Request & { session?: any; user?: any };
+type Res = import("express").Response;
+const authOnly = (req: Req, res: Res, next: any) =>
+  req.session?.user
+    ? next()
+    : res.status(401).json({ error: "UNAUTHENTICATED" });
 
+// --- Setup ---
 const PGSession = connectPgSimple(session);
 const nano = customAlphabet(
   "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz",
@@ -416,6 +423,49 @@ authRouter.get("/user", (req, res) => {
 });
 
 app.use("/api/auth", authRouter);
+
+// server/index.ts
+app.get("/api/config/maps-key", (req: Req, res: Res) => {
+  const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+  if (!apiKey)
+    return res.status(404).json({ error: "MAPS_KEY_NOT_CONFIGURED" });
+
+  res.setHeader(
+    "Cache-Control",
+    "public, max-age=300, s-maxage=300, stale-while-revalidate=600"
+  );
+
+  const payload: { apiKey: string; mapId?: string } = { apiKey };
+  if (process.env.GOOGLE_MAPS_MAP_ID)
+    payload.mapId = process.env.GOOGLE_MAPS_MAP_ID;
+
+  res.json(payload);
+});
+
+// --- PROFILE (minimal) ---
+app.get("/api/users/me/profile", authOnly, async (req: Req, res: Res) => {
+  const u = req.session.user; // however you store the session user
+  res.json({
+    id: u.id,
+    email: u.email,
+    firstName: u.firstName ?? "",
+    lastName: u.lastName ?? "",
+    createdAt: u.createdAt ?? new Date().toISOString(),
+  });
+});
+
+// --- CONTENT STUBS (public while wiring real data) ---
+app.get("/api/videos/nearby", (req: Req, res: Res) => res.json([]));
+app.get("/api/quests/active", (req: Req, res: Res) => res.json([]));
+app.get("/api/mystery-boxes", (req: Req, res: Res) => res.json([]));
+app.get("/api/treasure-chests", (req: Req, res: Res) => res.json([]));
+app.get("/api/dragons", (req: Req, res: Res) => res.json([]));
+app.get("/api/xp/user", (req: Req, res: Res) => {
+  // if you want, read a session value when present; otherwise just return zeros
+  const xp = (req as any).session?.user?.xp ?? 0;
+  res.json({ xp, level: 1 });
+});
+app.get("/api/search/keywords", (req: Req, res: Res) => res.json([]));
 
 app.use((err: any, _req: any, res: any, _next: any) => {
   console.error("API ERROR", { message: err?.message, stack: err?.stack });

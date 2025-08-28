@@ -9,16 +9,22 @@ async function throwIfResNotOk(res: Response) {
     } catch (e) {
       responseText = res.statusText;
     }
-    
+
     // Handle 403 suspension responses specially
     if (res.status === 403) {
       try {
         const suspensionData = JSON.parse(responseText);
-        if (suspensionData.message && suspensionData.message.includes("suspended")) {
+        if (
+          suspensionData.message &&
+          suspensionData.message.includes("suspended")
+        ) {
           // Store suspension info and redirect
-          localStorage.setItem('suspensionInfo', JSON.stringify(suspensionData));
-          if (window.location.pathname !== '/account-suspended') {
-            window.location.href = '/account-suspended';
+          localStorage.setItem(
+            "suspensionInfo",
+            JSON.stringify(suspensionData)
+          );
+          if (window.location.pathname !== "/account-suspended") {
+            window.location.href = "/account-suspended";
           }
           // Create a special error that won't trigger auth flows
           const error = new Error("Account suspended");
@@ -29,7 +35,7 @@ async function throwIfResNotOk(res: Response) {
         // If JSON parsing fails, fall through to normal error handling
       }
     }
-    
+
     throw new Error(`${res.status}: ${responseText}`);
   }
 }
@@ -61,23 +67,33 @@ export async function apiRequest<T = any>(
 ): Promise<T> {
   const opts =
     typeof mOrOpts === "string"
-      ? { method: mOrOpts as "GET" | "POST" | "PUT" | "PATCH" | "DELETE", data: maybeData }
-      : (mOrOpts ?? {});
+      ? {
+          method: mOrOpts as "GET" | "POST" | "PUT" | "PATCH" | "DELETE",
+          data: maybeData,
+        }
+      : mOrOpts ?? {};
 
-  const method = (opts.method ?? "GET") as "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
+  const method = (opts.method ?? "GET") as
+    | "GET"
+    | "POST"
+    | "PUT"
+    | "PATCH"
+    | "DELETE";
   const data = opts.data;
 
   const res = await fetch(url, {
     method,
     credentials: "include",
-    headers: data && method !== "GET" ? { "Content-Type": "application/json" } : undefined,
+    headers:
+      data && method !== "GET"
+        ? { "Content-Type": "application/json" }
+        : undefined,
     body: data && method !== "GET" ? JSON.stringify(data) : undefined,
   });
 
   if (!res.ok) throw new Error(`${res.status}: ${res.statusText}`);
-  return res.json().catch(() => (undefined as any));
+  return res.json().catch(() => undefined as any);
 }
-
 
 type UnauthorizedBehavior = "returnNull" | "throw";
 export const getQueryFn: <T>(options: {
