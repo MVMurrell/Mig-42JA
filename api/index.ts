@@ -442,24 +442,221 @@ app.get("/api/config/maps-key", (req: Req, res: Res) => {
   res.json(payload);
 });
 
-// --- PROFILE (minimal) ---
+// ---- PROFILE (camelCase JSON, matches users columns) ----
 app.get("/api/users/me/profile", authOnly, async (req: Req, res: Res) => {
-  const u = req.session.user; // however you store the session user
+  const uid = req.session.user?.id;
+  if (!uid) return res.status(401).json({ error: "unauthenticated" });
+
+  const { rows } = await pool.query(
+    `select
+       id,
+       email,
+       username,
+       bio,
+       profile_image_url,
+       ready_player_me_avatar_url,
+       gem_coins,
+       lanterns,
+       current_xp,
+       current_level,
+       email_verified,
+       created_at,
+       updated_at
+     from users
+     where id = $1
+     limit 1`,
+    [uid]
+  );
+  if (!rows[0]) return res.status(404).json({ error: "profile_not_found" });
+  const r = rows[0];
+
+  // send camelCase the UI expects (and avoid toLocaleString() on undefined)
   res.json({
-    id: u.id,
-    email: u.email,
-    firstName: u.firstName ?? "",
-    lastName: u.lastName ?? "",
-    createdAt: u.createdAt ?? new Date().toISOString(),
+    id: r.id,
+    email: r.email,
+    username: r.username ?? "",
+    bio: r.bio ?? "",
+    profileImageUrl: r.profile_image_url ?? null,
+    readyPlayerMeAvatarUrl: r.ready_player_me_avatar_url ?? null,
+    gemCoins: Number(r.gem_coins ?? 0),
+    lanterns: Number(r.lanterns ?? 0),
+    currentXp: Number(r.current_xp ?? 0),
+    currentLevel: Number(r.current_level ?? 0),
+    emailVerified: !!r.email_verified,
+    createdAt: r.created_at ? new Date(r.created_at).toISOString() : null,
+    updatedAt: r.updated_at ? new Date(r.updated_at).toISOString() : null,
   });
 });
 
-// --- CONTENT STUBS (public while wiring real data) ---
-app.get("/api/videos/nearby", (req: Req, res: Res) => res.json([]));
-app.get("/api/quests/active", (req: Req, res: Res) => res.json([]));
-app.get("/api/mystery-boxes", (req: Req, res: Res) => res.json([]));
-app.get("/api/treasure-chests", (req: Req, res: Res) => res.json([]));
-app.get("/api/dragons", (req: Req, res: Res) => res.json([]));
+function bbox(lat: number, lng: number, r: number) {
+  const dLat = r / 111_320,
+    dLng = r / (111_320 * Math.cos((lat * Math.PI) / 180));
+  return {
+    minLat: lat - dLat,
+    maxLat: lat + dLat,
+    minLng: lng - dLng,
+    maxLng: lng + dLng,
+  };
+}
+function distM(aLat: number, aLng: number, bLat: number, bLng: number) {
+  const R = 6371_000,
+    toRad = (d: number) => (d * Math.PI) / 180;
+  const dLat = toRad(bLat - aLat),
+    dLng = toRad(bLng - aLng);
+  const A =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(toRad(aLat)) * Math.cos(toRad(bLat)) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(A));
+}
+
+app.get("/api/videos/nearby", async (req, res) => {
+  const lat = Number(req.query.lat),
+    lng = Number(req.query.lng);
+  const radius = Number(req.query.radius ?? 1000);
+  if (!isFinite(lat) || !isFinite(lng))
+    return res.status(400).json({ error: "lat_lng_required" });
+
+  const { minLat, maxLat, minLng, maxLng } = bbox(lat, lng, radius);
+
+  const { rows } = await pool.query(
+    `select id, title, category, latitude, longitude, user_id, created_at
+       from videos
+      where latitude between $1 and $2
+        and longitude between $3 and $4
+      order by created_at desc
+      limit 500`,
+    [minLat, maxLat, minLng, maxLng]
+  );
+
+  res.json(
+    rows
+      .map((v: any) => {
+        const vlat = Number(v.latitude),
+          vlng = Number(v.longitude);
+        return {
+          id: v.id,
+          title: v.title,
+          category: v.category,
+          latitude: v.latitude, // your code reads strings fine
+          longitude: v.longitude,
+          userId: v.user_id ?? null,
+          createdAt: v.created_at ? new Date(v.created_at).toISOString() : null,
+          distance: distM(lat, lng, vlat, vlng),
+        };
+      })
+      .filter((v) => v.distance <= radius)
+      .sort((a, b) => a.distance - b.distance)
+  );
+});
+app.get("/api/quests/active", async (_req, res) => {
+  const { rows } = await pool.query(
+    `select id, title, description, image_url,
+            latitude, longitude, radius_in_feet,
+            start_date, end_date, created_at
+       from quests
+      where (start_date is null or start_date <= now())
+        and (end_date   is null or end_date   >= now())
+      order by created_at desc
+      limit 100`
+  );
+
+  res.json(
+    rows.map((q: any) => ({
+      id: q.id,
+      title: q.title,
+      description: q.description ?? "",
+      latitude: Number(q.latitude),
+      longitude: Number(q.longitude),
+      radiusInMeters: Math.round(Number(q.radius_in_feet ?? 100) * 0.3048), // feet → meters
+      startDate: q.start_date ? new Date(q.start_date).toISOString() : null,
+      endDate: q.end_date ? new Date(q.end_date).toISOString() : null,
+      createdAt: q.created_at ? new Date(q.created_at).toISOString() : null,
+      imageUrl: q.image_url ?? null,
+      status: "active",
+    }))
+  );
+});
+
+app.get("/api/treasure-chests", async (_req, res) => {
+  const { rows } = await pool.query(
+    `select id, latitude, longitude, coin_reward, difficulty,
+            spawned_at, expires_at, is_collected
+       from treasure_chests
+      where (is_collected is false or is_collected is null)
+        and (expires_at is null or expires_at > now())
+      order by spawned_at desc
+      limit 200`
+  );
+
+  res.json(
+    rows.map((c: any) => ({
+      id: c.id,
+      latitude: String(c.latitude),
+      longitude: String(c.longitude),
+      coinReward: Number(c.coin_reward ?? 0),
+      difficulty: c.difficulty ?? "easy",
+      spawnedAt: c.spawned_at ? new Date(c.spawned_at).toISOString() : null,
+      expiresAt: c.expires_at ? new Date(c.expires_at).toISOString() : null,
+      isCollected: !!c.is_collected,
+    }))
+  );
+});
+
+app.get("/api/mystery-boxes", async (_req, res) => {
+  const { rows } = await pool.query(
+    `select id, latitude, longitude, coin_reward, xp_reward, lantern_reward,
+            rarity, spawned_at, expires_at, is_collected
+       from mystery_boxes
+      where (is_collected is false or is_collected is null)
+        and (expires_at is null or expires_at > now())
+      order by spawned_at desc
+      limit 200`
+  );
+
+  res.json(
+    rows.map((b: any) => ({
+      id: b.id,
+      latitude: String(b.latitude),
+      longitude: String(b.longitude),
+      coinReward: Number(b.coin_reward ?? 0),
+      xpReward: Number(b.xp_reward ?? 0),
+      lanternReward: Number(b.lantern_reward ?? 0),
+      rarity: b.rarity ?? "common",
+      spawnedAt: b.spawned_at ? new Date(b.spawned_at).toISOString() : null,
+      expiresAt: b.expires_at ? new Date(b.expires_at).toISOString() : null,
+      isCollected: !!b.is_collected,
+    }))
+  );
+});
+
+app.get("/api/dragons", async (_req, res) => {
+  const { rows } = await pool.query(
+    `select id, latitude, longitude, coin_reward, total_health, current_health,
+            required_videos_in_radius, radius_meters, spawned_at, expires_at,
+            is_defeated, defeated_at, video_count
+       from dragons
+      where (expires_at is null or expires_at > now())
+        and (is_defeated is false or is_defeated is null)
+      order by expires_at nulls last, coin_reward desc
+      limit 100`
+  );
+
+  res.json(
+    rows.map((d: any) => ({
+      id: d.id,
+      latitude: d.latitude, // varchar per your schema
+      longitude: d.longitude,
+      coinReward: Number(d.coin_reward ?? 0),
+      totalHealth: Number(d.total_health ?? 100),
+      currentHealth: Number(d.current_health ?? 100),
+      videoCount: Number(d.video_count ?? 0),
+      radiusMeters: Number(d.radius_meters ?? 60.96),
+      spawnedAt: d.spawned_at ? new Date(d.spawned_at).toISOString() : null,
+      expiresAt: d.expires_at ? new Date(d.expires_at).toISOString() : null,
+    }))
+  );
+});
+
 app.get("/api/xp/user", (req: Req, res: Res) => {
   // if you want, read a session value when present; otherwise just return zeros
   const xp = (req as any).session?.user?.xp ?? 0;

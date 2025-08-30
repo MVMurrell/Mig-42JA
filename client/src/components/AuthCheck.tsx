@@ -2,6 +2,8 @@ import { useAuth } from "@/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Loader, AlertTriangle, Smartphone } from "lucide-react";
 import { useLocation } from "wouter";
+import AuthCard from "@/components/AuthCard";
+
 import { useEffect, useState } from "react";
 
 interface AuthCheckProps { children: React.ReactNode; }
@@ -60,57 +62,9 @@ export default function AuthCheck({ children }: AuthCheckProps) {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center">
-        <div className="text-center text-white max-w-md mx-auto p-8">
-          <h1 className="text-4xl font-bold mb-6">Welcome to Jemzy</h1>
-          <p className="text-lg mb-8">Your video sharing platform with AI-powered content discovery</p>
-
-          {/* existing error blocks stay the same */}
-          {authError && (
-            /* ... your existing authError block ... */
-            <></>
-          )}
-
-          {/* EMAIL/PASSWORD FORM */}
-          <form className="space-y-3 mb-4" onSubmit={(e) => e.preventDefault()}>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Email"
-              autoComplete="email"
-              className="w-full rounded-md px-3 py-2 text-slate-900"
-            />
-            <input
-              type="password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="Password"
-              autoComplete="current-password"
-              className="w-full rounded-md px-3 py-2 text-slate-900"
-            />
-            <div className="grid grid-cols-2 gap-3">
-              <Button onClick={onLoginClick} className="w-full bg-white text-purple-900 hover:bg-gray-100">
-                Sign in
-              </Button>
-              <Button onClick={onRegisterClick} className="w-full bg-purple-700 hover:bg-purple-600">
-                Create account
-              </Button>
-            </div>
-          </form>
-
-          {/* PWA help + notes (unchanged) */}
-          {isPWA && !authError && (
-            /* ... your existing PWA help block ... */
-            <></>
-          )}
-
-          <div className="text-sm opacity-75 space-y-1">
-            <p>Authentication uses secure cookies</p>
-            <p>PWA apps may have storage restrictions</p>
-          </div>
-        </div>
-      </div>
+       <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center px-4">
+      <AuthCard />
+    </div>
     );
   }
 

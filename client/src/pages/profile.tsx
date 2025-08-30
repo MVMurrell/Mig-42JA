@@ -31,12 +31,16 @@ export default function Profile() {
     queryFn: async () => {
       // Fetching enhanced profile data
       const response = await fetch(`/api/users/me/profile?t=${Date.now()}`, {
+        credentials: 'include',
         headers: {
           'Cache-Control': 'no-cache, no-store, must-revalidate',
           'Pragma': 'no-cache',
         }
       });
-      if (!response.ok) {
+        if (response.status === 401) {
+            return null;                        // gracefully handle logged-out
+        }
+        if (!response.ok) {
         console.error('❌ Profile fetch failed:', response.status, response.statusText);
         throw new Error('Failed to fetch profile');
       }

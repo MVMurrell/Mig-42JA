@@ -4,27 +4,42 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
 import type { AppUser } from "@/types/user";
 
+async function getMeSafe() {
+  const r = await fetch("/api/auth/me", { credentials: "include" });
+  if (r.status === 401) return null; // ← important
+  if (!r.ok) throw new Error("me_failed");
+  const j = await r.json();
+  return j.user ?? null;
+}
+
 export function useAuth() {
   const qc = useQueryClient();
 
   // whoami on app load
   const me = useQuery({
     queryKey: ["me"],
-    queryFn: async () => {
-      const r = await api.get<{ user: AppUser | null }>("/api/auth/me");
-      return r.user;
-    },
-    retry: false,
+    queryFn: getMeSafe,
+    retry: false, // ← don't auto-retry 401s
+    refetchOnWindowFocus: false,
+    refetchOnReconnect: false,
+    staleTime: 60_000,
   });
 
+  const user = me.data ?? null;
+  const isLoading = me.isLoading;
+
   // simple functions instead of UseMutationResult<T>
-  const login = useCallback(
-    async (email: string, password: string) => {
-      const u = await api.post<AppUser>("/api/auth/login", { email, password });
-      qc.setQueryData(["me"], u);
-    },
-    [qc]
-  );
+  const login = async (email: string, password: string) => {
+    const r = await fetch("/api/auth/login", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      credentials: "include",
+      body: JSON.stringify({ email, password }),
+    });
+    if (!r.ok) throw new Error((await r.json()).error || "login_failed");
+    const u = await r.json();
+    qc.setQueryData(["me"], u); // ← avoid immediate refetch loop
+  };
 
   const register = useCallback(
     async (email: string, password: string) => {
@@ -37,10 +52,10 @@ export function useAuth() {
     [qc]
   );
 
-  const logout = useCallback(async () => {
-    await api.post("/api/auth/logout", null);
+  const logout = async () => {
+    await fetch("/api/auth/logout", { method: "POST", credentials: "include" });
     qc.setQueryData(["me"], null);
-  }, [qc]);
+  };
 
   const resendVerify = useCallback(async () => {
     await api.post("/api/auth/request-verify-email", null);
@@ -58,8 +73,8 @@ export function useAuth() {
   );
 
   // compatibility fields expected by components
-  const user = me.data ?? null;
-  const isLoading = me.isLoading;
+  // const user = me.data ?? null;
+  // const isLoading = me.isLoading;
   const isAuthenticated = !!user;
   const isMobile = useMemo(() => {
     if (typeof navigator === "undefined") return false;
