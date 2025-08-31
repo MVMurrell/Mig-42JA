@@ -5,6 +5,7 @@ import { calculateXPRequiredForLevel, calculateLevelFromXP } from '@shared/xpSys
 import { useQuery } from '@tanstack/react-query';
 import { apiRequest } from '@/lib/queryClient.ts';
 import { Skeleton } from "@/components/ui/skeleton.tsx";
+import { fmtNum } from '@/lib/format.ts'; 
 
 interface XPDisplayProps {
   userId?: string;
@@ -60,7 +61,7 @@ export const XPDisplay: React.FC<XPDisplayProps> = ({
             Lv.{currentLevel}
           </Badge>
         )}
-        <span className="text-sm font-medium">{currentXP.toLocaleString()} XP</span>
+        <span className="text-sm font-medium">{fmtNum(currentXP)} XP</span>
       </div>
     );
   }
@@ -77,7 +78,7 @@ export const XPDisplay: React.FC<XPDisplayProps> = ({
             )}
           </div>
           <span className="text-xs text-muted-foreground">
-            {currentXP.toLocaleString()} / {nextLevelXP.toLocaleString()}
+            {fmtNum(currentXP)} / {fmtNum(nextLevelXP)}
           </span>
         </div>
         {showProgress && (
@@ -103,7 +104,7 @@ export const XPDisplay: React.FC<XPDisplayProps> = ({
       )}
       <div className="flex items-center space-x-2">
         <span className="text-sm font-medium">
-          {currentXP.toLocaleString()} XP
+          {fmtNum(currentXP)} XP
         </span>
         {showProgress && (
           <div className="flex items-center space-x-1">

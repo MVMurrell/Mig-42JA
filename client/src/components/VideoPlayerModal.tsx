@@ -49,6 +49,7 @@ import Hls from 'hls.js';
 import { formatDistance } from "@/lib/distanceUtils.ts";
 import type { DBUserRow } from '@shared/schema.ts';
 import  { useAuth } from "@/hooks/useAuth";
+import { fmtDate, fmtDateTime, fmtNum } from "@/lib/format.ts";
 
 
 
@@ -2017,7 +2018,7 @@ export default function VideoPlayerModal({ videos, initialIndex, onClose, onNavi
                             {`${comment.user?.firstName || ''} ${comment.user?.lastName || ''}`.trim() || 'Anonymous'}
                           </button>
                           <span className="text-xs text-gray-500">
-                            {new Date(comment.createdAt).toLocaleDateString()}
+                            {fmtDate(comment.createdAt)}
                           </span>
                         </div>
                         {/* Text comment */}
@@ -2661,7 +2662,7 @@ export default function VideoPlayerModal({ videos, initialIndex, onClose, onNavi
                   {`${selectedFullscreenComment.user?.firstName || ''} ${selectedFullscreenComment.user?.lastName || ''}`.trim() || 'Anonymous'}
                 </p>
                 <p className="text-gray-300 text-xs">
-                  {new Date(selectedFullscreenComment.createdAt).toLocaleDateString()}
+                  {fmtDate(selectedFullscreenComment.createdAt)}
                 </p>
               </div>
             </div>

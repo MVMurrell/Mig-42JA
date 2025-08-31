@@ -17,6 +17,8 @@ import {
   PopoverTrigger,
 } from '@/components/ui/popover.tsx';
 import { X, Heart, MessageCircle, Share, Bookmark, MoreVertical, Play, Pause, Volume2, VolumeX, Flag, Copy, Download, Edit, Send, Camera, Smile, Video } from 'lucide-react';
+import { fmtDate, fmtDateTime } from '@/lib/format.ts';
+
 
 interface Video {
   id: string;
@@ -1066,7 +1068,7 @@ export default function ScrollableVideoFeed({ videos, onClose, initialVideoIndex
                             {`${comment.user?.username || ''} ${comment.user?.lastName || ''}`.trim() || 'Anonymous'}
                           </button>
                           <span className="text-xs text-gray-500">
-                            {new Date(comment.createdAt).toLocaleDateString()}
+                            {fmtDate(comment.createdAt)}
                           </span>
                         </div>
 
@@ -1337,7 +1339,7 @@ export default function ScrollableVideoFeed({ videos, onClose, initialVideoIndex
                   {`${selectedFullscreenComment.user?.username || ''} ${selectedFullscreenComment.user?.lastName || ''}`.trim() || 'Anonymous'}
                 </button>
                 <p className="text-gray-300 text-xs">
-                  {new Date(selectedFullscreenComment.createdAt).toLocaleDateString()}
+                  {fmtDate(selectedFullscreenComment.createdAt)}
                 </p>
               </div>
             </div>

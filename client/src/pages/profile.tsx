@@ -17,6 +17,7 @@ import { ReadyPlayerMeInfoModal } from "@/components/ReadyPlayerMeInfoModal.tsx"
 import { NotificationBell } from "@/components/NotificationBell.tsx";
 import { XPDisplay } from "@/components/XPDisplay.tsx";
 import { useLocation } from "wouter";
+import {  fmtNum } from "@/lib/format.ts";
 
 export default function Profile() {
   const { user } = useAuth();
@@ -575,35 +576,39 @@ export default function Profile() {
     }
   };
 
-  const startCamera = async () => {
-    console.log('📸 CAMERA: Starting camera access...');
-    try {
-      const stream = await navigator.mediaDevices.getUserMedia({ 
-        video: { facingMode: 'user' } 
-      });
-      console.log('📸 CAMERA: Stream obtained successfully', stream);
-      setCameraStream(stream);
-      setIsUsingCamera(true);
-    } catch (error) {
-      console.error('📸 CAMERA: Error accessing camera:', error);
-      toast({
-        title: "Camera error",
-        description: "Unable to access camera. Please check permissions.",
-        variant: "destructive",
-      });
+// called from a click handler
+const startCamera = async () => {
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: "user" },
+      audio: false,                // no audio -> fewer autoplay issues
+    });
+    setCameraStream(stream);
+    setIsUsingCamera(true);
+
+    if (videoRef.current) {
+      videoRef.current.srcObject = stream;
+      // safer: wait for metadata, then try to play
+      videoRef.current.onloadedmetadata = async () => {
+        try { await videoRef.current!.play(); } catch { /* user gesture required; ignore */ }
+      };
     }
+  } catch (error) {
+    // toast remains as you have it
   }
+};
+
 
   // Effect to set video stream when camera starts
-  useEffect(() => {
-    if (cameraStream && videoRef.current && isUsingCamera) {
-      console.log('📸 CAMERA: Setting video source and playing...');
-      videoRef.current.srcObject = cameraStream;
-      videoRef.current.play().then(() => {
-        console.log('📸 CAMERA: Video playing successfully');
-      }).catch(console.error);
-    }
-  }, [cameraStream, isUsingCamera]);
+  // useEffect(() => {
+  //   if (cameraStream && videoRef.current && isUsingCamera) {
+  //     console.log('📸 CAMERA: Setting video source and playing...');
+  //     videoRef.current.srcObject = cameraStream;
+  //     videoRef.current.play().then(() => {
+  //       console.log('📸 CAMERA: Video playing successfully');
+  //     }).catch(console.error);
+  //   }
+  // }, [cameraStream, isUsingCamera]);
 
   const capturePhoto = () => {
     if (videoRef.current && canvasRef.current) {
