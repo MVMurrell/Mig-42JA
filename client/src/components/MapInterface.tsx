@@ -1085,12 +1085,11 @@ export default function MapInterface({
     queryFn: () => apiRequest<MapsConfig>("/api/config/maps-key"),
   });
 
-  // const canAdvanced = !!(
-  //   (window as any).google?.maps?.marker?.AdvancedMarkerElement &&
-  //   configData?.mapId
-  // );
+  const canAdvanced = !!(
+    (window as any).google?.maps?.marker?.AdvancedMarkerElement &&
+    configData?.mapId
+  );
 
-  const canAdvanced = false; // TEMP until we have a real Map ID
 
   function addMarker(
     position: google.maps.LatLngLiteral,
@@ -1160,23 +1159,16 @@ export default function MapInterface({
               center: centerLocation,
               zoom: userLocation ? 19 : 12,
               mapTypeId: google.maps.MapTypeId.ROADMAP,
-              // only use styles if NO mapId:
-              styles: [
-                {
-                  featureType: "poi",
-                  elementType: "labels",
-                  stylers: [{ visibility: "off" }],
-                },
-                {
-                  featureType: "poi.business",
-                  stylers: [{ visibility: "off" }],
-                },
-                {
-                  featureType: "transit",
-                  elementType: "labels.icon",
-                  stylers: [{ visibility: "off" }],
-                },
-              ],
+              ...(configData?.mapId
+    ? { mapId: configData.mapId }     // when using Cloud Styled Map
+    : {
+        // only use styles if NO mapId:
+        styles: [
+          { featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }] },
+          { featureType: "poi.business", stylers: [{ visibility: "off" }] },
+          { featureType: "transit", elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+        ],
+      }),
               disableDefaultUI: true, // Disable all default UI controls
               zoomControl: false,
               streetViewControl: false,
