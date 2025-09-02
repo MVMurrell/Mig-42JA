@@ -3336,6 +3336,7 @@ export default function MapInterface({
     }
   };
 
+  
   // Handle manual treasure chest spawning (for testing)
   const handleSpawnTreasureChest = async () => {
     try {

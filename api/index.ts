@@ -10,16 +10,19 @@ import { customAlphabet } from "nanoid";
 import { hash as argonHash, verify as argonVerify } from "@node-rs/argon2";
 import { Router } from "express";
 import type { RequestHandler } from "express";
+import { Resend } from "resend";
+import rateLimit from "express-rate-limit";
 
+// --- Types & Helpers ---
 type ExpressUser = Express.User;
-
-// --- add near your other imports/types ---
 type Req = import("express").Request & { session?: any; user?: any };
 type Res = import("express").Response;
 const authOnly = (req: Req, res: Res, next: any) =>
   req.session?.user
     ? next()
     : res.status(401).json({ error: "UNAUTHENTICATED" });
+const resend = new Resend(process.env.RESEND_API_KEY!);
+const MAIL_FROM = process.env.MAIL_FROM || "Jemzy <no-reply@app.jemzy.net>";
 
 // --- Setup ---
 const PGSession = connectPgSimple(session);
@@ -165,14 +168,20 @@ async function consumeToken(
   return rows[0]?.user_id as string | undefined;
 }
 
-// DEV mailer: logs link; swap to Resend/SMTP later
-async function sendEmail(
-  devLabel: string,
-  to: string,
-  subject: string,
-  html: string
-) {
-  console.log(`[MAIL:${devLabel}] to=${to} subject="${subject}"\n${html}`);
+async function sendMail(to: string, subject: string, html: string) {
+  try {
+    const { error } = await resend.emails.send({
+      from: MAIL_FROM,
+      to,
+      subject,
+      html,
+    });
+    if (error) throw error;
+    return true;
+  } catch (e) {
+    console.error("RESEND ERROR", e);
+    return false;
+  }
 }
 
 passport.serializeUser((user: any, done) => done(null, user.id));
@@ -197,15 +206,31 @@ passport.deserializeUser(async (id: string, done) => {
 
 // --- App ---
 const app = express();
+const allowed = (process.env.ALLOWED_ORIGIN ?? "")
+  .split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
 app.set("trust proxy", 1);
 app.use(helmet());
+
 app.use(
   cors({
-    origin:
-      (process.env.ALLOWED_ORIGIN ?? "").split(",").filter(Boolean) || true,
+    origin: (origin, cb) => {
+      if (!origin) return cb(null, true); // allow same-origin
+      // exact or wildcard *.vercel.app
+      const ok = allowed.some((rule) => {
+        if (rule.startsWith("*.")) {
+          const base = rule.slice(2);
+          return origin === `https://${base}` || origin.endsWith(`.${base}`);
+        }
+        return origin === rule;
+      });
+      cb(ok ? null : new Error("CORS blocked"), ok);
+    },
     credentials: true,
   })
 );
+
 app.use(express.json());
 
 // ultra-light routes first (no session / no DB)
@@ -257,6 +282,12 @@ app.get("/api/dbcheck", async (_req, res) => {
 
 // Auth
 // ----- REGISTER (ensure session fields are set) -----
+const authLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15m
+  limit: 10, // 10 attempts per IP per window
+  standardHeaders: true,
+  legacyHeaders: false,
+});
 
 const authRouter = Router();
 
@@ -265,7 +296,7 @@ authRouter.use(session(sessionOptions) as RequestHandler);
 authRouter.use(passport.initialize() as RequestHandler);
 authRouter.use(passport.session() as RequestHandler);
 
-authRouter.post("/register", async (req, res) => {
+authRouter.post("/register", authLimiter, async (req, res) => {
   const { email, password } = req.body ?? {};
   if (!email || !password)
     return res.status(400).json({ error: "email & password required" });
@@ -301,7 +332,7 @@ authRouter.post("/register", async (req, res) => {
 });
 
 // ----- LOGIN (persist session fields) -----
-authRouter.post("/login", (req, res, next) => {
+authRouter.post("/login", authLimiter, (req, res, next) => {
   passport.authenticate("local", (err, user, info) => {
     if (err) return next(err);
     if (!user)
@@ -343,12 +374,12 @@ authRouter.post("/request-verify-email", async (req, res) => {
     const { rows } = await pool.query("select email from users where id=$1", [
       userId,
     ]);
-    await sendEmail(
-      "verify",
+    await sendMail(
       rows[0].email,
       "Confirm your email",
-      `<p>Confirm: <a href="${verifyUrl}">${verifyUrl}</a></p>`
+      `<p>Confirm your email:</p><p><a href="${verifyUrl}">${verifyUrl}</a></p>`
     );
+
     res.json({ ok: true });
   } catch (e: any) {
     res.status(500).json({ error: e?.message });
@@ -372,7 +403,7 @@ authRouter.get("/verify-email", async (req, res) => {
 });
 
 // ----- PASSWORD RESET (request + reset) -----
-authRouter.post("/request-reset", async (req, res) => {
+authRouter.post("/request-reset", authLimiter, async (req, res) => {
   const email = String(req.body?.email ?? "").toLowerCase();
   if (!email) return res.status(400).json({ error: "email required" });
   try {
@@ -382,11 +413,10 @@ authRouter.post("/request-reset", async (req, res) => {
       const resetUrl = `${
         process.env.BASE_URL
       }/reset?token=${encodeURIComponent(token)}`; // or an API endpoint
-      await sendEmail(
-        "reset",
+      await sendMail(
         user.email,
         "Reset your password",
-        `<p>Reset: <a href="${resetUrl}">${resetUrl}</a></p>`
+        `<p>Reset link:</p><p><a href="${resetUrl}">${resetUrl}</a></p>`
       );
     }
     // Always OK to avoid user enumeration
@@ -415,7 +445,7 @@ authRouter.post("/reset", async (req, res) => {
   }
 });
 
-authRouter.get("/user", (req, res) => {
+authRouter.get("/user", authOnly, (req, res) => {
   const u = (req as any).user ?? null;
   if (!u)
     return res.status(401).json({ ok: false, error: "Not authenticated" });
@@ -662,6 +692,41 @@ app.get("/api/xp/user", (req: Req, res: Res) => {
   const xp = (req as any).session?.user?.xp ?? 0;
   res.json({ xp, level: 1 });
 });
+
+// GET /api/videos/in-bounds?minLat=&minLng=&maxLat=&maxLng=
+app.get("/api/videos/in-bounds", async (req, res) => {
+  const minLat = Number(req.query.minLat);
+  const minLng = Number(req.query.minLng);
+  const maxLat = Number(req.query.maxLat);
+  const maxLng = Number(req.query.maxLng);
+  if (![minLat, minLng, maxLat, maxLng].every(Number.isFinite)) {
+    return res.status(400).json({ error: "bounds_required" });
+  }
+
+  const { rows } = await pool.query(
+    `select id, title, category, latitude, longitude, user_id, video_url, created_at
+       from videos
+      where latitude  between $1 and $2
+        and longitude between $3 and $4
+      order by created_at desc
+      limit 500`,
+    [minLat, maxLat, minLng, maxLng]
+  );
+
+  res.json(
+    rows.map((v: any) => ({
+      id: v.id,
+      title: v.title,
+      category: v.category,
+      latitude: String(v.latitude),
+      longitude: String(v.longitude),
+      userId: v.user_id,
+      videoUrl: v.video_url,
+      createdAt: v.created_at ? new Date(v.created_at).toISOString() : null,
+    }))
+  );
+});
+
 app.get("/api/search/keywords", (req: Req, res: Res) => res.json([]));
 
 app.use((err: any, _req: any, res: any, _next: any) => {

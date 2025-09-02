@@ -86,6 +86,19 @@ const colors = [
 
 const getRandomColor = () => colors[Math.floor(Math.random() * colors.length)];
 
+
+type Video = {
+  id: string;
+  title: string;
+  category: string;
+  latitude: string;
+  longitude: string;
+  userId?: string | null;
+  videoUrl?: string | null;
+  createdAt?: string | null;
+};
+
+
 export default function Home() {
   const { user, isLoading: authLoading } = useAuth();
   

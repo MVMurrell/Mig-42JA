@@ -4,9 +4,10 @@ import { Input } from "@/components/ui/input";
 import { useAuth } from "@/hooks/useAuth";
 import { Loader2 } from "lucide-react";
 
-type Mode = "signin" | "signup";
 
-export default function AuthCard() {
+type Mode = "signin" | "signup";
+export default function AuthCard({ showHeader = false }: { showHeader?: boolean }) {
+
   const { login } = useAuth(); // we'll call register via fetch (works with your API today)
   const [mode, setMode] = useState<Mode>("signin");
   const [email, setEmail] = useState("");
@@ -19,6 +20,7 @@ export default function AuthCard() {
   const isEmailOk = /\S+@\S+\.\S+/.test(email);
   const isPwdOk = password.length >= 8;
   const doPasswordsMatch = mode === "signin" || password === confirm;
+  const logoPng = "client/public/icons/JemzyLogoIcon.png";
 
   const canSubmit =
     isEmailOk &&
@@ -77,6 +79,22 @@ export default function AuthCard() {
 
   return (
     <div className="w-full max-w-md mx-auto bg-white/95 rounded-2xl shadow-xl p-6">
+       {/* Header: logo + headline */}
+      {showHeader && (
+        <div className="flex flex-col items-center mb-5">
+          <img
+            src="/icons/JemzyLogoIcon.png"
+            onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/icons/icon-192.png"; }}
+            alt="Jemzy"
+            className="h-10 w-10 rounded-md shadow-sm object-contain"
+          />
+          <h1 className="mt-3 text-xl font-semibold">Welcome to Jemzy</h1>
+          <p className="mt-1 text-sm text-gray-600 text-center">
+            Your video sharing platform with AI-powered content discovery
+          </p>
+        </div>
+      )}
+
       {/* Tabs */}
       <div className="flex gap-2 mb-6">
         <button
@@ -107,6 +125,15 @@ export default function AuthCard() {
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-3">
+
+          <input
+          type="text"
+          name="username"
+          autoComplete="username"
+          className="hidden absolute opacity-0 pointer-events-none -z-10"
+          tabIndex={-1}
+        />
+        
         <div>
           <label className="block text-xs font-medium text-gray-700 mb-1">Email</label>
           <Input

@@ -1,6 +1,5 @@
 import { useAuth } from "@/hooks/useAuth";
-import { Button } from "@/components/ui/button";
-import { Loader, AlertTriangle, Smartphone } from "lucide-react";
+import { Loader } from "lucide-react";
 import { useLocation } from "wouter";
 import AuthCard from "@/components/AuthCard";
 
@@ -62,8 +61,23 @@ export default function AuthCheck({ children }: AuthCheckProps) {
 
   if (!isAuthenticated) {
     return (
-       <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center px-4">
-      <AuthCard />
+      <div className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex flex-col items-center justify-center px-4">
+      {/* LARGE HERO */}
+      <div className="flex flex-col items-center mb-8">
+        <img
+          src="/icons/JemzyLogoIcon.png"
+          onError={(e) => { (e.currentTarget as HTMLImageElement).src = "/icons/icon-192.png"; }}
+          alt="Jemzy"
+          className="h-14 w-14 rounded-md shadow-sm object-contain"
+        />
+        <h1 className="mt-4 text-3xl font-bold text-white">Welcome to Jemzy</h1>
+        <p className="mt-2 text-white/80 text-center max-w-md">
+          Your video sharing platform with AI-powered content discovery
+        </p>
+      </div>
+
+      {/* Card without its internal header */}
+      <AuthCard showHeader={false} />
     </div>
     );
   }
